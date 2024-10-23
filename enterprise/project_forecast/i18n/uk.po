@@ -1,0 +1,329 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast
+# 
+# Translators:
+# Martin Trigaux, 2016
+# Bohdan Lisnenko, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Yaroslav Molochko <onorua@gmail.com>, 2016
+# Zoriana Zaiats, 2016
+# Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:59+0000\n"
+"PO-Revision-Date: 2016-09-19 12:59+0000\n"
+"Last-Translator: Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "% Time"
+msgstr "% Час"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_kanban_inherit_project_forecast
+msgid "<span class=\"o_label\">Forecast</span>"
+msgstr "<span class=\"o_label\">Прогноз</span>"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "<span>Forecast</span>"
+msgstr "<span>Прогноз</span>"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_active
+msgid "Active"
+msgstr "Активно"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_report_activities
+msgid "Activities"
+msgstr "Дії"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_task_allow_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "Allow Forecast"
+msgstr "Дозволити прогноз"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_project_allow_forecast
+msgid "Allow forecast"
+msgstr "Дозволити прогноз"
+
+#. module: project_forecast
+#: model:ir.actions.server,name:project_forecast.project_forecast_server_action_archive
+msgid "Archive/Unarchive"
+msgstr "Зарахівувати/розархівувати"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Archived"
+msgstr "Заархівовано"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_group_by_project
+msgid "By Project"
+msgstr "По проекту"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_group_by_user
+msgid "By User"
+msgstr "За користувачами"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_color
+msgid "Color"
+msgstr "Колір"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_payment_token_count
+msgid "Count Payment Token"
+msgstr "Підрахунок платежу Токена"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.task_view_form_inherit_project_forecast
+msgid "Create a forecast"
+msgstr "Створити прогноз"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_create_date
+msgid "Created on"
+msgstr "Дата створення"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_display_name
+msgid "Display Name"
+msgstr "Назва для відображення"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_effective_hours
+msgid "Effective hours"
+msgstr "Ефективні години"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_end_date
+msgid "End date"
+msgstr "Кінцева дата"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_exclude
+msgid "Exclude"
+msgstr "Виключити"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_project
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_report_activities
+#: model:ir.ui.menu,name:project_forecast.project_forecast_menu
+#: model:ir.ui.view,arch_db:project_forecast.project_view_kanban_inherit_project_forecast
+msgid "Forecast"
+msgstr "Прогноз"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "Forecast Form"
+msgstr "Форма прогнозу"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_tree
+msgid "Forecast List"
+msgstr "Список прогнозу"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_by_project
+msgid "Forecast by project"
+msgstr "Прогноз проекту"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_by_user
+msgid "Forecast by user"
+msgstr "Прогноз користувача"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:121
+#, python-format
+msgid "Forecasted time must be positive"
+msgstr "Прогнозований час має бути позитивним"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Future"
+msgstr "Майбутні"
+
+#. module: project_forecast
+#: model:ir.actions.server,name:project_forecast.action_generate_forecast
+msgid "Generate Forecast"
+msgstr "Генерувати прогноз"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_pivot
+msgid "Graph"
+msgstr "Графік"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_id
+msgid "ID"
+msgstr "ІД"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_has_address
+msgid "Is address valid"
+msgstr "Чи дійсна адреса"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast___last_update
+msgid "Last Modified on"
+msgstr "Остання модифікація"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновив"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "My activities"
+msgstr "Мої дії"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "My projects"
+msgstr "Мої проекти"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_name
+msgid "Name"
+msgstr "Назва"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Past"
+msgstr "Минулі"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_payment_token_ids
+msgid "Payment Tokens"
+msgstr "Платежі Токенів"
+
+#. module: project_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_forecast_time
+msgid "Percentage of working time"
+msgstr "Відсоток робочого часу"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_resource_hours
+msgid "Planned hours"
+msgstr "Заплановані години"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_percentage_hours
+msgid "Progress"
+msgstr "Прогрес"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_project
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_project_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Project"
+msgstr "Проект"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "Project Forecast"
+msgstr "Прогнозування проектів"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_resource_ids
+msgid "Resource ids"
+msgstr "ID ресурсу"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_start_date
+msgid "Start date"
+msgstr "Початкова дата"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_task
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_task_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Task"
+msgstr "Завдання"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_stage_id
+msgid "Task stage"
+msgstr "Етап завдання"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_tag_ids
+msgid "Task tags"
+msgstr "Теги завдання"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:133
+#, python-format
+msgid "The start-date must be lower than end-date."
+msgstr "Початкова дата повинна бути нижчою, ніж кінцева дата."
+
+#. module: project_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_project_allow_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_task_allow_forecast
+msgid "This feature shows the Forecast link in the kanban view"
+msgstr "Ця функція показує посилання \"Прогноз\" у перегляді канбану"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "Time Scheduling"
+msgstr "Планування часу"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_user_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "User"
+msgstr "Користувач"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_res_users
+msgid "Users"
+msgstr "Користувачі"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:127
+#, python-format
+msgid "Your task is not in the selected project."
+msgstr "Ваше завдання не у вибраному проекті. "
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:63
+#, python-format
+msgid "undefined"
+msgstr "undefined"

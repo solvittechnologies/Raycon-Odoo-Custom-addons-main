@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+
+    <!-- Temando Product Packagings -->
+    <record id="temando_packaging_Box" model="product.packaging">
+        <field name="name">TEMANDO Box</field>
+        <field name="shipper_package_code">Box</field>
+        <field name="height">10</field>
+        <field name="length">10</field>
+        <field name="width">10</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_Carton" model="product.packaging">
+        <field name="name">TEMANDO Carton</field>
+        <field name="shipper_package_code">Carton</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_Document_Envelope" model="product.packaging">
+        <field name="name">TEMANDO Document Envelope</field>
+        <field name="shipper_package_code">Document Envelope</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_Letter" model="product.packaging">
+        <field name="name">TEMANDO Letter</field>
+        <field name="shipper_package_code">Letter</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_Pallet" model="product.packaging">
+        <field name="name">TEMANDO Pallet</field>
+        <field name="shipper_package_code">Pallet</field>
+        <field name="height">10</field>
+        <field name="length">10</field>
+        <field name="width">10</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_Parcel" model="product.packaging">
+        <field name="name">TEMANDO Parcel</field>
+        <field name="shipper_package_code">Parcel</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_SatchelBag" model="product.packaging">
+        <field name="name">TEMANDO Satchel/Bag</field>
+        <field name="shipper_package_code">Satchel/Bag</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+    <record id="temando_packaging_Unpackage" model="product.packaging">
+        <field name="name">TEMANDO Unpackage or N/A</field>
+        <field name="shipper_package_code">Unpackage or N/A</field>
+        <field name="package_carrier_type">temando</field>
+    </record>
+
+    <record id="delivery_carrier_temando" model="delivery.carrier">
+        <field name="name">Temando's Cheapest - Domestic</field>
+        <field name="fixed_price">0</field>
+        <field name="product_sale_ok" eval="False"/>
+        <field name="product_type">service</field>
+        <field name="delivery_type">temando</field>
+        <field name="temando_username">TEMANDOTEST</field>
+        <field name="temando_password">temandopass1</field>
+        <field name="temando_client_id">20420</field>
+        <field name="temando_hs_code">123456789012</field>
+        <field name="temando_default_packaging_id" ref="temando_packaging_Box"/>
+    </record>
+
+     <record id="delivery_carrier_temando_international" model="delivery.carrier">
+        <field name="name">Temando's Cheapest - International</field>
+        <field name="fixed_price">0</field>
+        <field name="product_sale_ok" eval="False"/>
+        <field name="product_type">service</field>
+        <field name="delivery_type">temando</field>
+        <field name="temando_delivery_nature">International</field>
+        <field name="temando_username">TEMANDOTEST</field>
+        <field name="temando_password">temandopass1</field>
+        <field name="temando_client_id">20420</field>
+        <field name="temando_hs_code">123456789012</field>
+        <field name="temando_default_packaging_id" ref="temando_packaging_Box"/>
+    </record>
+
+</data>
+</odoo>

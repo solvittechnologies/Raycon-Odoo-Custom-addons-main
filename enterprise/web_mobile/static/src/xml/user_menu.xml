@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+    <t t-extend="UserMenu">
+        <t t-jquery=".o_user_menu ul.dropdown-menu" t-operation="append">
+            <li>
+                <a href="#" class="hidden" data-menu="switch_account"> Switch/Add Account</a>
+            </li>
+        </t>
+    </t>
+
+</templates>

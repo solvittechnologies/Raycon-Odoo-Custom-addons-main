@@ -1,0 +1,76 @@
+.o_web_studio_client_action .o_web_studio_sidebar {
+    color: white;
+    background-color: @o-studio-bg-medium;
+
+    .o_web_studio_sidebar_header {
+        cursor: pointer;
+        margin-bottom: 15px;
+        padding: 0px;
+        background-color: @o-studio-bg-dark;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 @o-studio-bg-dark;
+        .o-linear-gradient(@deg: 90deg, @start-color: @o-studio-bg-medium, @end-color: @o-studio-bg-dark);
+
+        > div {
+            display: inline-block;
+            margin: 5px;
+
+            &.inactive {
+                color: grey;
+            }
+
+            > i {
+                margin: 10px;
+            }
+        }
+    }
+
+    .o_web_studio_sidebar_content {
+        @o-web-studio-sidebar-margin: 10px;
+        margin: @o-web-studio-sidebar-margin;
+        > hr { // dividers should take full width
+            margin-left: -@o-web-studio-sidebar-margin;
+            margin-right: -@o-web-studio-sidebar-margin;
+            border-color: grey;
+        }
+        > div {
+            padding: 5px 0;
+
+            > label {
+                font-size: 10px;
+                color: grey;
+            }
+
+            input, select, textarea {
+                background-color: @o-studio-bg-medium;
+                color: @o-studio-bg-light;
+                border-color: grey;
+                &:focus {
+                    border-color: @o-studio-bg-light;
+                }
+                &[type=text] {
+                    margin-bottom: 6px;
+                }
+                &[type=checkbox] {
+                    width: auto;
+                    float: right;
+                }
+                > option {
+                    color: @o-studio-bg-light;
+                }
+            }
+            .o_form_field {
+                width: 100%;
+            }
+
+            > button {
+                border: 1px solid @o-studio-bg-light;
+                background-color: @o-studio-bg-medium;
+                color: @o-studio-bg-light;
+            }
+        }
+
+        .o_web_studio_remove_warning_groups {
+            color: orange;
+        }
+    }
+}

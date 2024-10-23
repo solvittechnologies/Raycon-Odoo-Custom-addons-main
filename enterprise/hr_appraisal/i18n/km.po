@@ -1,0 +1,1368 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * hr_appraisal
+# 
+# Translators:
+# Sengtha Chay <sengtha@gmail.com>, 2016
+# Samkhann Seang <seangsamkhann@gmail.com>, 2016
+# Chan Nath <channath@gmail.com>, 2016
+# Lux Sok <sok.lux@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:39+0000\n"
+"Last-Translator: Lux Sok <sok.lux@gmail.com>, 2019\n"
+"Language-Team: Khmer (https://www.transifex.com/odoo/teams/41243/km/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: km\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: hr_appraisal
+#: model:mail.template,body_html:hr_appraisal.send_appraisal_template
+msgid ""
+"\n"
+"                \n"
+"                <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+"                    <p>Dear ${ctx.get('employee').name},</p>\n"
+"                    % if ctx.get('employee').id == object.employee_id.id:\n"
+"                        <p>Please fill out the following survey related to your appraisal.</p>\n"
+"                    % else:\n"
+"                        <p>Please fill out the following survey related to ${object.employee_id.name}'s appraisal.</p>\n"
+"                    % endif\n"
+"                    <p><a href=\"__URL__\">Click here to access the survey.</a></p>\n"
+"                    <p>Post your response for the appraisal till : ${object.date_close}</p>\n"
+"                    <p>Thank you for your participation.</p>\n"
+"                </div>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid ") Answers"
+msgstr "ការវាយតម្លៃលើដំណើរការ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid ") Sent Appraisal"
+msgstr ") បានផ្ញើការវាយតំលៃ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "<strong><span>Final Interview: </span></strong>"
+msgstr "<strong><span>ការសំភាស៌បញ្ជាប់</span></strong>"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_1
+msgid "Ability to cope with multidisciplinarity of team"
+msgstr "សមត្ថភាពក្នុងការទប់ទល់នឹងពហុជំនាញនៃក្រុមការងារ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_6
+msgid "Ability to follow and complete work as instructed"
+msgstr "សមត្ថភាពក្នុងការតាមដាននិងបំពេញការងារដូចដែលបានណែនាំ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_5
+msgid "Ability to manage planning resources, risks, budgets and deadlines"
+msgstr "សមត្ថភាពក្នុងការគ្រប់គ្រងធនធានផែនការហានិភ័យថវិកានិងពេលវេលាកំណត់"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_action_plan
+msgid "Action Plan"
+msgstr "ការវាយតម្លៃតាមកាលកំណត់ត្រូវបានបង្កើតឡើង។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_1
+msgid ""
+"Actions by Executive management show genuine interest in the well-being of "
+"employees"
+msgstr ""
+"សកម្មភាពរបស់អ្នកគ្រប់គ្រងប្រតិបត្តិបង្ហាញនូវចំណាប់អារម្មណ៍ពិតប្រាកដចំពោះសុខុមាលភាពរបស់និយោជិក"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_active
+msgid "Active"
+msgstr "សកម្ម"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_13
+msgid ""
+"Adaptability: Ability to adapt oneself to organizational changes while "
+"keeping efficiency"
+msgstr ""
+"ភាពទន់ភ្លន់: "
+"សមត្ថភាពក្នុងការសម្របខ្លួនដោយខ្លួនឯងទៅនឹងការផ្លាស់ប្តូររបស់អង្គការខណៈពេលដែលរក្សាប្រសិទ្ធភាព"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_3
+msgid "Additional Comments"
+msgstr "យោបល់​បន្ថែម"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_7
+msgid "Additional comments"
+msgstr "យោបល់បន្ថែម"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_11
+msgid "Analytical and synthetic mind"
+msgstr "ចិត្តវិភាគនិងសំយោគ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_survey_completed_ids
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Answers"
+msgstr "ចម្លើយ"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.open_view_hr_appraisal_tree
+#: model:ir.actions.act_window,name:hr_appraisal.open_view_hr_appraisal_tree2
+#: model:ir.model.fields,field_description:hr_appraisal.field_survey_user_input_appraisal_id
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_root
+#: model:ir.ui.menu,name:hr_appraisal.menu_open_view_hr_appraisal_tree
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_tree
+msgid "Appraisal"
+msgstr "ការវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.action_appraisal_report_all
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_graph
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_pivot
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Appraisal Analysis"
+msgstr "វិភាគវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_new
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_new
+msgid "Appraisal Created"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_date_close
+msgid "Appraisal Deadline"
+msgstr "ថ្ងៃផុតកំណត់វាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Appraisal Form..."
+msgstr "ទម្រង់វាយតម្លៃ ..."
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_frequency_unit
+msgid "Appraisal Frequency"
+msgstr "ភាពញឹកញាប់នៃការវាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:118
+#, python-format
+msgid "Appraisal Meeting For %s"
+msgstr "ការប្រជុំវាយតំលៃសំរាប់។%s"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.opinion_1
+msgid "Appraisal Process"
+msgstr "ដំណើរការវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:mail.template,subject:hr_appraisal.send_appraisal_template
+msgid "Appraisal Regarding"
+msgstr "ការវាយតម្លៃទាក់ទង"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_frequency
+msgid "Appraisal Repeat Every"
+msgstr "ការវាយតម្លៃឡើងវិញរាល់។"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_sent
+#, python-format
+msgid "Appraisal Sent"
+msgstr "ការវាយតម្លៃត្រូវបានបញ្ជូន។"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_appraisal_report
+msgid "Appraisal Statistics"
+msgstr "ស្ថិតិវាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_collaborators_ids
+msgid "Appraisal collaborators ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_colleagues_ids
+msgid "Appraisal colleagues ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_3
+msgid "Appraisal for Period"
+msgstr "ការវាយតម្លៃសម្រាប់រយៈពេល"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_manager_ids
+msgid "Appraisal manager ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_sent
+msgid "Appraisal sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.hr_appraisal_action_from_department
+msgid "Appraisal to start"
+msgstr "ការចាប់ផ្តើមការវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_department_view_kanban
+msgid "Appraisal(s)"
+msgstr "ការវាយតំលៃ"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:161
+#, python-format
+msgid "Appraisal(s) form have been sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_count
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_department_view_kanban
+msgid "Appraisals"
+msgstr "ការវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_department_appraisals_to_process_count
+msgid "Appraisals to Process"
+msgstr "ការវាយតម្លៃលើដំណើរការ។"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_5
+msgid "Appraiser"
+msgstr "អ្នកវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Archived"
+msgstr "ឯកសារ"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "At the conclusion of the appraisal time period"
+msgstr "នៅចុងបញ្ចប់នៃរយៈពេលវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "At the outset of the appraisal time period"
+msgstr "នៅដំណាក់កាលដំបូងនៃរយៈពេលវាយតម្លៃ"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "At the supervisor's appraisal date"
+msgstr "កាលបរិច្ឆេទវាយតម្លៃរបស់អ្នកត្រួតពិនិត្យ"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Cancel"
+msgstr "លុបចោល"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#, python-format
+msgid "Cancelled"
+msgstr "បានលុបចោល"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,help:hr_appraisal.open_view_hr_appraisal_tree
+msgid "Click to create a new appraisal."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_appraisal
+msgid "Collaborator"
+msgstr "អ្នកសហការ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_survey_id
+msgid "Collaborator's Appraisal"
+msgstr "ការវាយតម្លៃរបស់អ្នកសហការ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_collaborators
+msgid "Collaborators"
+msgstr "អ្នកសហការ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_ids
+msgid "Collaborators ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_survey_id
+msgid "Colleague's Appraisal"
+msgstr "ការវាយតម្លៃរបស់សហសេវិក។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_colleagues
+msgid "Colleagues"
+msgstr "មិត្តរួមការងារ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_ids
+msgid "Colleagues ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_color
+msgid "Color Index"
+msgstr "ការកំណត់ព័ណ៌"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_9
+msgid ""
+"Communication skills (written & verbally): clearness, concision, exactitude"
+msgstr ""
+"ជំនាញទំនាក់ទំនង(ការសរសេរ និងដោយពាក្យសម្តី): ការច្បាស់លាស់, ការសន្និដ្ឋាន, "
+"ភាពត្រឹមត្រូវ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_company_id
+msgid "Company"
+msgstr "ក្រុមហ៊ុន"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_3
+msgid ""
+"Compared to similar jobs in other companies where I could work, my total "
+"compensation..."
+msgstr ""
+"បើប្រៀបធៀបទៅនឹងការងារស្រដៀងគ្នានៅក្នុងក្រុមហ៊ុនផ្សេងទៀតដែលខ្ញុំអាចធ្វើការបានសំណងសរុបរបស់ខ្ញុំ"
+" ..."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_3
+msgid ""
+"Compliance to internal rules and processes (timesheets completion, etc.)"
+msgstr "ការអនុលោមទៅនឹងវិធាននិងដំណើរការផ្ទៃក្នុង (ការបំពេញសន្លឹកកិច្ចការ។ ល។ )"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_4
+msgid "Continuous Improvement"
+msgstr "ការកែលំអជាបន្តបន្ទាប់"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_create_date
+msgid "Create Date"
+msgstr "បង្កើតកាលបរិច្ឆេទ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_create_uid
+msgid "Created by"
+msgstr "បង្កើតដោយ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_create_date
+msgid "Created on"
+msgstr "បង្កើតនៅ"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Creation Month"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_14
+msgid "Creativity and forward looking aptitude"
+msgstr "ការច្នៃប្រឌិតនិងសម្បទាឆ្ពោះទៅមុខ"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"Critical or key elements of performance and professional development needs "
+"(if any), should also be noted at this time"
+msgstr ""
+"ធាតុសំខាន់ឬសំខាន់នៃការអនុវត្តនិងតម្រូវការអភិវឌ្ឍវិជ្ជាជីវៈ (ប្រសិនបើមាន) "
+"គួរតែត្រូវបានកត់សម្គាល់ផងដែរនៅពេលនេះ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_8
+msgid "Customer commitment"
+msgstr "សិទ្ធិអំណាចអតិថិជន"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_1_2
+msgid "Date"
+msgstr "កាលបរិច្ឆេត"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_4
+msgid "Date of review"
+msgstr "កាលបរិច្ឆេទនៃការពិនិត្រ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_deadline
+msgid "Deadline"
+msgstr "ពេលកំណត់"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Deadline:"
+msgstr "ថ្ងៃបញ្ជប់"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_7
+msgid "Decision making"
+msgstr "ការ​ធ្វើ​សេចក្តី​សម្រេច"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_2
+msgid "Delegation: Ability to efficiently assign tasks to other people"
+msgstr ""
+"ប្រតិភូ: សមត្ថភាពក្នុងការប្រគល់ភារកិច្ចដល់មនុស្សផ្សេងទៀតប្រកបដោយប្រសិទ្ធភាព"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Delete"
+msgstr "លុប"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_1
+msgid "Demonstrates genuine concern for me as a person"
+msgstr "បង្ហាញការយកចិត្តទុកដាក់ពិតប្រាកដចំពោះខ្ញុំក្នុងនាមជាមនុស្សម្នាក់"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_department_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_department_id
+msgid "Department"
+msgstr "ដេប៉ាតឺម៉ង់"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Did not meet standards and expectations"
+msgstr "មិនបានបំពេញតាមស្តង់ដារនិងការរំពឹងទុក"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_display_name
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_display_name
+msgid "Display Name"
+msgstr "ឈ្មោះសំរាប់បង្ហាញ"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+#, python-format
+msgid "Done"
+msgstr "រួចរាល"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Edit"
+msgstr "កែសម្រួល"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_3
+msgid "Effectiveness"
+msgstr "ប្រសិទ្ធិភាព"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_mail_template_id
+msgid "Email Template for Appraisal"
+msgstr "គំរូអ៊ីមែលសម្រាប់វាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_employee
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_employee_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_self
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Employee"
+msgstr "បុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_appraisal
+msgid "Employee Appraisal"
+msgstr "ការវាយតម្លៃបុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_1
+#: model:survey.survey,title:hr_appraisal.appraisal_form
+msgid "Employee Appraisal Form"
+msgstr "ទម្រង់វាយតម្លៃបុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_5
+msgid "Employee Comments"
+msgstr "មតិរបស់បុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_employee
+msgid "Employee Name"
+msgstr "មោះ​បុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:survey.survey,title:hr_appraisal.opinion_form
+msgid "Employee Opinion Form"
+msgstr "ទម្រង់បញ្ចេញមតិបុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_3
+msgid "Employee Performance in Key Areas"
+msgstr "ការបំពេញការងាររបស់និយោជិកនៅក្នុងតំបន់សំខាន់ៗ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_appraisal
+msgid "Employee appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_colleagues_survey_id
+msgid "Employee's Appraisal"
+msgstr "ការវាយតម្លៃរបស់និយោជិក។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Employee's Name"
+msgstr "ឈ្មោះរបស់បុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_1
+msgid "Engagement"
+msgstr "ការចូលរួម"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_2
+msgid "Enthusiasm & implication toward projects/assignments"
+msgstr "សាទរនិងផលប៉ះពាល់ចំពោះគម្រោង / កិច្ចការ"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.opinion_2
+msgid "Evaluation"
+msgstr "ការវាយតំលៃ"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_calendar_event
+msgid "Event"
+msgstr "ព្រិត្តិការណ៍"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Exceeds standards and expectations"
+msgstr "លើសពីបទដ្ឋាននិងការរំពឹងទុក"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Extended Filters..."
+msgstr "តម្រងបន្ថែម ..."
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Final Evaluation"
+msgstr "ការវាយតំលៃចុងក្រោយ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_date_final_interview
+msgid "Final Interview"
+msgstr "បទសម្ភាសន៍ចុងក្រោយ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Final Interview Date"
+msgstr "កាលបរិច្ឆេទសម្ភាសន៍ចុងក្រោយ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Group By"
+msgstr "Group By"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Group by..."
+msgstr "ដាក់ជាក្រុមដោយ ..."
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"His direct reports will be invited through Odoo to express a feedback on "
+"their supervisor's leadership and to give their opinion about their own "
+"engagement and effectiveness, the continuous improvement and openness in "
+"action in thecompany..."
+msgstr ""
+"របាយការណ៍ផ្ទាល់របស់គាត់នឹងត្រូវបានអញ្ជើញតាមរយៈអូដូដើម្បីបង្ហាញមតិយោបល់ពីភាពជាអ្នកដឹកនាំរបស់អ្នកគ្រប់គ្រងនិងផ្តល់យោបល់អំពីការចូលរួមនិងប្រសិទ្ធភាពរបស់ពួកគេការកែលម្អជាបន្តនិងការបើកចំហនៅក្នុងសកម្មភាពនៅក្នុងអ្នក"
+" ..."
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_department
+msgid "Hr Department"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_1
+msgid "I am proud to tell others I work here"
+msgstr "ខ្ញុំមានមោទនភាពក្នុងការប្រាប់អ្នកដទៃដែលខ្ញុំធ្វើការនៅទីនេះ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_5
+msgid ""
+"I am willing to put in a great deal of effort beyond what is expected to "
+"help my workgroup succeed"
+msgstr ""
+"ខ្ញុំមានឆន្ទៈក្នុងការប្រឹងប្រែងយ៉ាងខ្លាំងលើសពីអ្វីដែលរំពឹងទុកដើម្បីជួយឱ្យក្រុមការងាររបស់ខ្ញុំទទួលបានជោគជ័យ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_4
+msgid "I believe the information that I get from the person I report to."
+msgstr "ខ្ញុំជឿថាព័ត៌មានដែលខ្ញុំទទួលបានពីមនុស្សដែលខ្ញុំរាយការណ៍ទៅ។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_2
+msgid ""
+"I consistently acquire new knowledge, skills or understanding through "
+"contact with my supervisor. He helps me growing my compete"
+msgstr ""
+"ខ្ញុំទទួលបានចំណេះដឹងជំនាញឬការយល់ដឹងថ្មីៗជានិច្ចតាមរយៈទំនាក់ទំនងជាមួយអ្នកគ្រប់គ្រងរបស់ខ្ញុំ។"
+" គាត់ជួយខ្ញុំឱ្យរីកលូតលាស់ការប្រកួតប្រជែងរបស់ខ្ញុំ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_2
+msgid "I have enough work"
+msgstr "ខ្ញុំមានការងារគ្រប់គ្រាន់"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_2
+msgid ""
+"I have the same opportunity to succeed as others with similar experiences, "
+"performance and educational background"
+msgstr ""
+"ខ្ញុំមានឱកាសដូចគ្នាដើម្បីទទួលបានជោគជ័យដូចអ្នកដទៃដែលមានបទពិសោធន៍ការសម្តែងនិងសាវតាសិក្សាស្រដៀងគ្នា"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_5_1
+msgid "I know the company's values and live them"
+msgstr "ខ្ញុំដឹងពីគុណតម្លៃរបស់ក្រុមហ៊ុនហើយរស់នៅតាមវា"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_3
+msgid ""
+"I mostly work on value-added tasks for the company, the products or the "
+"services"
+msgstr ""
+"ខ្ញុំភាគច្រើនធ្វើការលើការងារបន្ថែមតម្លៃសម្រាប់ក្រុមហ៊ុនផលិតផលឬសេវាកម្ម"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_4
+msgid "I understand the company strategy and how my workgroup supports it"
+msgstr ""
+"ខ្ញុំយល់ពីយុទ្ធសាស្រ្តរបស់ក្រុមហ៊ុននិងរបៀបដែលក្រុមការងាររបស់ខ្ញុំគាំទ្រវា"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_3
+msgid ""
+"I would prefer to remain with this company even if a comparable job were "
+"available in another company"
+msgstr ""
+"ខ្ញុំចង់នៅជាមួយក្រុមហ៊ុននេះបើទោះបីជាមានការងារដែលអាចប្រៀបធៀបបាននៅក្នុងក្រុមហ៊ុនផ្សេងទៀតក៏ដោយ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_1
+msgid "I'm efficient at work and my achievements are successful"
+msgstr ""
+"ខ្ញុំគឺមានប្រសិទ្ធិភាពក្នុងការធ្វើការងារ និងស្នាដៃរបស់ខ្ញុំគឺទទួលបានជោគជ័យ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_4
+msgid ""
+"Identify professional, performance, or project objectives you recommend for employee’s continued career development\n"
+"over the coming year."
+msgstr ""
+"កំណត់អត្តសញ្ញាណវិជ្ជាជីវៈការសម្តែងឬគោលបំណងគម្រោងដែលអ្នកណែនាំសម្រាប់ការអភិវឌ្ឍអាជីពជាបន្តរបស់និយោជិក។\n"
+"ក្នុងឆ្នាំខាងមុខនេះ។"
+
+#. module: hr_appraisal
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_4
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_5
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_3_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_3_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_5_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_1_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_1_2
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_2
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_3
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_4
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_5
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_6
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_7
+msgid "If other, please specify:"
+msgstr "បើមានផ្សេងទៀតសូមបញ្ជាក់៖"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_action_plan
+msgid ""
+"If the evaluation does not meet the expectations, you can propose an action "
+"plan"
+msgstr ""
+"ប្រសិនបើការវាយតម្លៃមិនបំពេញតាមការរំពឹងទុកអ្នកអាចស្នើសុំផែនការសកម្មភាព។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "In progress Evaluations"
+msgstr "កំពុងវាយតម្លៃវាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_5
+msgid "Initiative and self autonomy"
+msgstr "គំនិតផ្តួចផ្តើមនិងស្វ័យភាពខ្លួនឯង"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_final_interview
+msgid "Interview"
+msgstr "សំភាសន៍"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"It is the joint responsibility of the employee and the supervisor (appraiser) to establish a feasible work plan for the\n"
+"coming year, including major employee responsibilities and corresponding benchmarks against which results will be\n"
+"evaluated."
+msgstr ""
+"វាគឺជាការទទួលខុសត្រូវរួមគ្នារបស់និយោជិកនិងអ្នកត្រួតពិនិត្យ (អ្នកវាយតម្លៃ) ដើម្បីបង្កើតផែនការការងារដែលអាចធ្វើទៅបានសម្រាប់\n"
+"ឆ្នាំក្រោយរួមទាំងទំនួលខុសត្រូវរបស់និយោជិកសំខាន់ៗនិងតារាងពិន្ទុដែលត្រូវគ្នានឹងលទ្ធផលណាមួយ។\n"
+"បានវាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"It is the primary responsibility of the supervisor to gather the necessary input from the appropriate sources of feedback\n"
+"(internal and/or external customers, peers). In case of collaboration with Odoo SA Belgium, the supervisor must\n"
+"receive completed evaluation form from the employee's Belgian project manager."
+msgstr ""
+"វាគឺជាការទទួលខុសត្រូវចម្បងរបស់អ្នកត្រួតពិនិត្យក្នុងការប្រមូលព័ត៌មានចាំបាច់ពីប្រភពមតិយោបល់សមស្រប។\n"
+"(អតិថិជនខាងក្នុងនិង / ឬអតិថិជនខាងក្រៅ) ។ ក្នុងករណីមានកិច្ចសហការជាមួយ Odoo SA បែលហ្ស៊ិកអ្នកត្រួតពិនិត្យត្រូវធ្វើ។\n"
+"ទទួលសំណុំបែបបទវាយតម្លៃពេញលេញពីអ្នកគ្រប់គ្រងគំរោងរបស់និយោជិកបែលហ្ស៊ិក។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal___last_update
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report___last_update
+msgid "Last Modified on"
+msgstr "កាលបរិច្ឆេតកែប្រែចុងក្រោយ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_write_uid
+msgid "Last Updated by"
+msgstr "ផ្លាស់ប្តូរចុងក្រោយ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_write_date
+msgid "Last Updated on"
+msgstr "ផ្លាស់ប្តូរចុងក្រោយ"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_2
+msgid "Leadership"
+msgstr "ការទំនាក់ទំនង"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_3
+msgid ""
+"Leadership: create a challenging and motivating work environment aligned "
+"with the company's strategy"
+msgstr ""
+"ភាពជាអ្នកដឹកនាំ៖ "
+"បង្កើតបរិយាកាសការងារដែលមានការប្រកួតប្រជែងនិងជំរុញទឹកចិត្តស្របតាមយុទ្ធសាស្ត្ររបស់ក្រុមហ៊ុន។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_4
+msgid "Leadership: sustain subordinates in their professional growth"
+msgstr ""
+"ភាពជាអ្នកដឹកនាំ៖ ទ្រទ្រង់អ្នកក្រោមបង្គាប់ក្នុងការរីកចម្រើនជំនាញរបស់ពួកគេ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_3
+msgid ""
+"Listens and takes into account all ideas and do his best to put in place the"
+" best of these"
+msgstr ""
+"ស្តាប់ហើយគិតពីគំនិតទាំងអស់ហើយព្យាយាមឱ្យអស់ពីសមត្ថភាពដើម្បីដាក់ឱ្យល្អបំផុត"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_appraisal
+#: model:res.groups,name:hr_appraisal.group_hr_appraisal_manager
+msgid "Manager"
+msgstr "អ្នកគ្រប់គ្រង"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_ids
+msgid "Manager ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_survey_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_manager_survey_id
+msgid "Manager's Appraisal"
+msgstr "ការវាយតម្លៃរបស់អ្នកគ្រប់គ្រង។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_manager
+msgid "Managers"
+msgstr "អ្នកគ្រប់គ្រង"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Meet standards and expectations"
+msgstr "បំពេញតាមស្តង់ដារនិងការរំពឹងទុក។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_meeting_id
+msgid "Meeting"
+msgstr "ប្រជុំ"
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_meeting
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_meeting
+msgid "Meeting Scheduled"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_6
+msgid "Miscellaneous"
+msgstr "ផ្សេងៗ"
+
+#. module: hr_appraisal
+#: selection:hr.employee,appraisal_frequency_unit:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Month"
+msgstr "ខែ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_5_2
+msgid ""
+"My best achievements have been communicated to the community, internally or "
+"to customers"
+msgstr ""
+"សមិទ្ធិផលល្អបំផុតរបស់ខ្ញុំត្រូវបានផ្សព្វផ្សាយទៅកាន់សហគមន៍នៅខាងក្នុងឬអតិថិជន"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_2
+msgid "My job provides me with a sense of personal accomplishment"
+msgstr "ការងាររបស់ខ្ញុំផ្តល់ឱ្យខ្ញុំនូវអារម្មណ៍នៃសមិទ្ធិផលផ្ទាល់ខ្លួន។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_1
+msgid ""
+"My work contributes towards the continuous improvement of the company, our "
+"services or products"
+msgstr ""
+"ការងាររបស់ខ្ញុំរួមចំណែកឆ្ពោះទៅរកការរីកចម្រើនឥតឈប់ឈររបស់ក្រុមហ៊ុនសេវាកម្មឬផលិតផលរបស់យើង"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_tree
+#: model:survey.question,question:hr_appraisal.appraisal_1_1
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_1_1
+msgid "Name of your direct supervisor"
+msgstr "ឈ្មោះអ្នកត្រួតពិនិត្យផ្ទាល់របស់អ្នក"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_date
+msgid "Next Appraisal Date"
+msgstr "កាលបរិច្ឆេទវាយតម្លៃបន្ទាប់។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_count_completed_survey
+msgid "Number of Answers"
+msgstr "ចំនួនចម្លើយ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_count_sent_survey
+msgid "Number of Sent Forms"
+msgstr "ចំនួនទម្រង់ផ្ញើ។"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_1
+msgid "Objectives"
+msgstr "គោលបំណង"
+
+#. module: hr_appraisal
+#: model:res.groups,name:hr_appraisal.group_hr_appraisal_user
+msgid "Officer"
+msgstr "មន្រ្តី"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_5
+msgid "Openness"
+msgstr "ភាពបើកចំហ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_4
+msgid ""
+"Our workgroup identifies and reduces waste of time in our activities and "
+"processes"
+msgstr ""
+"ក្រុមការងាររបស់យើងកំណត់អត្តសញ្ញាណនិងកាត់បន្ថយពេលវេលាខ្ជះខ្ជាយក្នុងសកម្មភាពនិងដំណើរការរបស់យើង"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "Overall Purpose Of Employee Appraisal"
+msgstr "គោលបំណងទូទៅនៃការវាយតម្លៃបុគ្គលិក"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_3
+msgid ""
+"Overall, I believe the quality of products and/or services my workgroup "
+"delivers is improving"
+msgstr ""
+"និយាយជារួមខ្ញុំជឿជាក់ថាគុណភាពផលិតផលនិងសេវាកម្មដែលក្រុមការងារខ្ញុំផ្តល់ជូនកំពុងធ្វើឱ្យប្រសើរឡើង"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_periodic_appraisal
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_configuration
+msgid "Periodic Appraisal"
+msgstr "ការបញ្ចូលអ្នកប្រើស្ទង់មតិ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_periodic_appraisal_created
+msgid "Periodic Appraisal has been created"
+msgstr "ការវាយតម្លៃតាមកាលកំណត់ត្រូវបានបង្កើតឡើង។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Periodicity"
+msgstr "រយៈពេល"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_2
+msgid "Personal Performance Objectives"
+msgstr "គោលបំណងនៃការអនុវត្តការងារផ្ទាល់ខ្លួន"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Plan"
+msgstr "ផែនការ។"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_2
+msgid "Position Title"
+msgstr "មុខដំណែង"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_1
+msgid "Professional Development Objectives"
+msgstr "គោលបំណងអភិវឌ្ឍន៍វិជ្ជាជីវៈ"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_4
+msgid "Professional Development and Performance Plan"
+msgstr "ផែនការអភិវឌ្ឍវិជ្ជាជីវៈនិងផែនការអនុវត្ត"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_3
+msgid "Project Objectives"
+msgstr "គោលបំណងគម្រោង"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_12
+msgid "Promptness and attendance record"
+msgstr "កំណត់ត្រាបន្ទាន់និងកំណត់ត្រាការចូលរួម"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_related_partner_id
+msgid "Related partner id"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Repeat Every"
+msgstr "ធ្វើម្តងទៀតរៀងរាល់"
+
+#. module: hr_appraisal
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_report
+msgid "Reports"
+msgstr "របាយការណ៍"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_2
+msgid "Results"
+msgstr "លទ្ធផល"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_1
+msgid ""
+"Results of the bottom-up survey and mitigation actions to face technical, "
+"organizational, structural and/or relational issues"
+msgstr ""
+"លទ្ធផលនៃការស្ទង់មតិពីក្រោមនិងសកម្មភាពកាត់បន្ថយដើម្បីប្រឈមនឹងបញ្ហាបច្ចេកទេសការរៀបចំរចនាសម្ព័ន្ធនិង"
+" / ឬទំនាក់ទំនង"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Schedule The Final Interview"
+msgstr "កំណត់ពេលសម្ភាសន៍ចុងក្រោយ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Search Appraisal"
+msgstr "ស្វែងរកការវាយតម្លៃ។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Select Appraisal Reviewer..."
+msgstr "ជ្រើសរើសអ្នកត្រួតពិនិត្យវាយតំលៃ ..."
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_survey_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_self_survey_id
+msgid "Self Appraisal"
+msgstr "ការវាយតម្លៃដោយខ្លួនឯង។"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Send Appraisal Form To"
+msgstr "ផ្ញើទម្រង់វាយតំលៃទៅ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_survey_sent_ids
+msgid "Sent Forms"
+msgstr "ទម្រង់ផ្ញើ។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Significantly below standards and expectations"
+msgstr "គួរឱ្យកត់សម្គាល់ក្រោមបទដ្ឋាននិងការរំពឹងទុក"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"Significantly exceeds standards and expectations required of the position"
+msgstr "គួរឱ្យកត់សម្គាល់លើសពីបទដ្ឋាននិងការរំពឹងទុកដែលត្រូវការនៃមុខតំណែង"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Start Appraisal and Send Forms"
+msgstr ""
+"ចាប់ផ្តើមវាយតម្លៃនិងផ្ញើទម្រង់។\n"
+" "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_state
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_state
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Status"
+msgstr "ស្ថានភាព"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_3_1
+msgid "Subject"
+msgstr "ចំណងជើង"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_3_2
+msgid "Supervisors only"
+msgstr "មានតែអ្នកគ្រប់គ្រងប៉ុណ្ណោះ"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_survey_user_input
+msgid "Survey User Input"
+msgstr "ការបញ្ចូលអ្នកប្រើស្ទង់មតិ។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_4
+msgid ""
+"Taking everything into account, how satisfied are you with your current job?"
+msgstr ""
+"ពិចារណាអ្វីៗគ្រប់យ៉ាងតើអ្នកពេញចិត្តនឹងការងារបច្ចុប្បន្នរបស់អ្នកយ៉ាងម៉េចដែរ?"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_4
+msgid ""
+"Team spirit: ability to work efficiently with peers, manage the conflicts "
+"with diplomacy"
+msgstr ""
+"ស្មារតីក្រុម៖ "
+"សមត្ថភាពធ្វើការប្រកបដោយប្រសិទ្ធភាពជាមួយមិត្តភក្ដិគ្រប់គ្រងជម្លោះជាមួយការទូត។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_10
+msgid "Technical skills regarding to the job requirements"
+msgstr "ជំនាញបច្ចេកទេសទាក់ទងនឹងតម្រូវការការងារ"
+
+#. module: hr_appraisal
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_4
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_5
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_3_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_3_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_5_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_1_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_1_2
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_2
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_3
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_4
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_5
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_6
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_7
+msgid "The answer you entered has an invalid format."
+msgstr "ចម្លើយដែលអ្នកបានបញ្ចូលមានទម្រង់មិនត្រឹមត្រូវ។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"The appraiser should rate the employee's major work accomplishments and "
+"performance according to the metric provided below"
+msgstr ""
+"អ្នកវាយតម្លៃគួរតែវាយតម្លៃសមិទ្ធផលការងារសំខាន់ៗរបស់និយោជិកនិងការងារយោងទៅតាមម៉ែត្រដែលបានផ្តល់ជូនខាងក្រោម"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+msgid ""
+"The appraiser should rate the employee’s major work accomplishments and performance according to the metric provided\n"
+"below:"
+msgstr ""
+"អ្នកវាយតម្លៃគួរតែវាយតម្លៃសមិទ្ធផលការងារសំខាន់ៗរបស់និយោជិកនិងការងារយោងទៅតាមម៉ែត្រដែលបានផ្តល់ជូន។\n"
+"ខាងក្រោម៖"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_employee.py:76
+#, python-format
+msgid "The date of the next appraisal cannot be in the past"
+msgstr "កាលបរិច្ឆេទនៃការវាយតម្លៃបន្ទាប់មិនអាចជាអតីតកាលទេ។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_employee_appraisal_date
+msgid ""
+"The date of the next appraisal is computed by the appraisal plan's dates "
+"(first appraisal + periodicity)."
+msgstr ""
+"កាលបរិច្ឆេទនៃការវាយតម្លៃបន្ទាប់ត្រូវបានគណនាដោយកាលបរិច្ឆេទនៃផែនការវាយតំលៃ "
+"(ការវាយតម្លៃដំបូង + តាមកាលកំណត់) ។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The employee may choose to offer comments or explanation regarding the "
+"completed review."
+msgstr ""
+"និយោជិកអាចជ្រើសរើសដើម្បីផ្តល់យោបល់ឬការពន្យល់ទាក់ទងនឹងការពិនិត្យឡើងវិញដែលបានបញ្ចប់"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The employee will be responsible for completing a draft of the Appraisal Form as a tool for self-appraisal and a starting\n"
+"point for the supervisor’s evaluation. The employee can add examples of achievements for each criterion.\n"
+"Once the form had been filled, the employee send it to his supervisor."
+msgstr ""
+"និយោជិកនឹងទទួលខុសត្រូវក្នុងការបំពេញសេចក្តីព្រាងបែបបទវាយតំលៃជាឧបករណ៍សំរាប់វាយតំលៃលើខ្លួនឯងនិងការចាប់ផ្តើម។"
+" ចំណុចសំរាប់ការវាយតំលៃរបស់អ្នកគ្រប់គ្រង។ "
+"និយោជិកអាចបន្ថែមឧទាហរណ៍នៃសមិទ្ធិផលសម្រាប់លក្ខណៈវិនិច្ឆ័យនីមួយៗ។ "
+"នៅពេលសំណុំបែបបទត្រូវបានបំពេញនិយោជិកបញ្ជូនវាទៅអ្នកគ្រប់គ្រងរបស់គាត់។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"The employees will send back their anonymous answers to Odoo. The data will "
+"be handled by the HR manager and a brief summary of the data will be sent to"
+" the concerned supervisor, to his team and to the supervisor's supervisor."
+msgstr ""
+"និយោជិកនឹងបញ្ជូនចម្លើយអនាមិករបស់ពួកគេទៅ Odoo វិញ។ "
+"ទិន្នន័យនឹងត្រូវបានគ្រប់គ្រងដោយអ្នកគ្រប់គ្រងធនធានមនុស្សហើយសេចក្តីសង្ខេបសង្ខេបនៃទិន្នន័យនឹងត្រូវបញ្ជូនទៅអ្នកគ្រប់គ្រងដែលពាក់ព័ន្ធក្រុមរបស់គាត់និងអ្នកត្រួតពិនិត្យរបស់អ្នកគ្រប់គ្រង។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The supervisor send the form to the HR department in India and in Belgium"
+msgstr ""
+"អ្នកត្រួតពិនិត្យបញ្ជូនសំណុំបែបបទទៅនាយកដ្ឋានធនធានមនុស្សនៅក្នុងប្រទេសឥណ្ឌានិងបែលហ្ស៊ិក"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The supervisor synthesizes and integrates all input into the completed appraisal. The motivation of the evaluation\n"
+"is explained in the ad hoc fields."
+msgstr ""
+"អ្នកត្រួតពិនិត្យសំយោគនិងបញ្ចូលរាល់ការបញ្ចូលទៅក្នុងការវាយតម្លៃដែលបានបញ្ចប់។ ការលើកទឹកចិត្តនៃការវាយតម្លៃ។\n"
+"ត្រូវបានពន្យល់នៅក្នុងវាលអាដហុក។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_color
+msgid "This color will be used in the kanban view."
+msgstr "ពណ៌នេះនឹងត្រូវបានប្រើនៅក្នុងទិដ្ឋភាពកាន។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_collaborators_appraisal
+msgid "This employee will be appraised by his collaborators"
+msgstr "បុគ្គលិករបស់គាត់នឹងត្រូវបានវាយតម្លៃដោយអ្នកសហការរបស់គាត់។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_colleagues_appraisal
+msgid "This employee will be appraised by his colleagues"
+msgstr "និយោជិកនេះនឹងត្រូវបានវាយតម្លៃដោយសហសេវិករបស់គាត់។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_manager_appraisal
+msgid "This employee will be appraised by his managers"
+msgstr "និយោជិកនេះនឹងត្រូវបានវាយតម្លៃដោយអ្នកគ្រប់គ្រងរបស់គាត់។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_employee_appraisal
+msgid "This employee will do a self-appraisal"
+msgstr "និយោជិកនេះនឹងធ្វើការវាយតំលៃដោយខ្លួនឯង។"
+
+#. module: hr_appraisal
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_4
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_5
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_3_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_3_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_5_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_1_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_1_2
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_2
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_3
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_4
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_5
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_6
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_7
+msgid "This question requires an answer."
+msgstr "សំណួរនេះទាមទារចម្លើយ។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_15
+msgid "Time management: projects/tasks are completed on time"
+msgstr "ការគ្រប់គ្រងពេលវេលា៖ គម្រោង / កិច្ចការត្រូវបានបញ្ចប់ទាន់ពេលវេលា។"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#, python-format
+msgid "To Start"
+msgstr "ចាប់ផ្ដើម"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"To assist employees in their professional growth, through the identification of strengths and opportunities for\n"
+"development"
+msgstr ""
+"ជួយបុគ្គលិកក្នុងការរីកចម្រើនជំនាញរបស់ពួកគេតាមរយៈការកំណត់អត្តសញ្ញាណភាពខ្លាំងនិងឱកាសសម្រាប់។"
+" ការអភិវឌ្ឍ។"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "To initiate a clear and open communication of performance expectations"
+msgstr ""
+"ដើម្បីផ្តួចផ្តើមការប្រាស្រ័យទាក់ទងច្បាស់លាស់និងបើកចំហនៃការរំពឹងទុកនៃការអនុវត្ត។"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_5_1
+msgid ""
+"Use the following space to make any comments regarding the above performance"
+" evaluation."
+msgstr ""
+"ប្រើកន្លែងទំនេរខាងក្រោមដើម្បីធ្វើឱ្យមានយោបល់ទាក់ទងនឹងការវាយតម្លៃលទ្ធផលខាងលើ។"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_2
+msgid ""
+"What I did several months ago is still of use to the company, the services "
+"or the products today"
+msgstr ""
+"អ្វីដែលខ្ញុំបានធ្វើកាលពីប៉ុន្មានខែមុនគឺនៅតែប្រើប្រាស់សម្រាប់ក្រុមហ៊ុនសេវាកម្មឬផលិតផលសព្វថ្ងៃ"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_2
+msgid "Work Plan"
+msgstr "ផែនការការងារ"
+
+#. module: hr_appraisal
+#: selection:hr.employee,appraisal_frequency_unit:0
+msgid "Year"
+msgstr "ឆ្នំា"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:205
+#, python-format
+msgid "You cannot delete appraisal which is in '%s' state"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,help:hr_appraisal.open_view_hr_appraisal_tree
+msgid ""
+"You will be able to choose which forms will be sent (Employee,Managers,Collaborators or Colleagues),\n"
+"            to whom and the evaluation deadline. Once you have defined it,\n"
+"            change the stage to send it and view the results."
+msgstr ""
+"អ្នកនឹងអាចជ្រើសរើសបែបបទណាមួយដែលនឹងត្រូវបញ្ជូន "
+"(និយោជិកអ្នកគ្រប់គ្រងសហការីឬមិត្តរួមការងារ)             "
+"ចំពោះអ្នកណានិងថ្ងៃផុតកំណត់វាយតម្លៃ។ នៅពេលអ្នកបានកំណត់វារួចហើយ             "
+"ផ្លាស់ប្តូរដំណាក់កាលដើម្បីផ្ញើវានិងមើលលទ្ធផល។"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_collaborators_survey_id
+msgid "collaborate's Appraisal"
+msgstr "វាយតំលៃការសហការ"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"

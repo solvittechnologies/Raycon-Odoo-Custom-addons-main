@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="database_expiration_build" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script
+                type="text/javascript"
+                src="/fastra_licence/static/src/js/database_expiration.js"
+            />
+        </xpath>
+    </template>
+</odoo>

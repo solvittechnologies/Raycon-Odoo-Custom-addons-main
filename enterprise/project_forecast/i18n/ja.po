@@ -1,0 +1,329 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast
+# 
+# Translators:
+# Yoshi Tashiro <tashiro@roomsfor.hk>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# 高木正勝 <masakatsu.takagi@pro-spire.co.jp>, 2016
+# Manami Hashi <manami@roomsfor.hk>, 2016
+# NOKA Shigekazu <shigekazu.noka@gmail.com>, 2016
+# Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:59+0000\n"
+"PO-Revision-Date: 2016-09-19 12:59+0000\n"
+"Last-Translator: Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2016\n"
+"Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "% Time"
+msgstr "% Time"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_kanban_inherit_project_forecast
+msgid "<span class=\"o_label\">Forecast</span>"
+msgstr "<span class=\"o_label\">フォーキャスト</span>"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "<span>Forecast</span>"
+msgstr "<span>フォーキャスト</span>"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_active
+msgid "Active"
+msgstr "有効"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_report_activities
+msgid "Activities"
+msgstr "活動"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_task_allow_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "Allow Forecast"
+msgstr "フォーキャスト対象"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_project_allow_forecast
+msgid "Allow forecast"
+msgstr "フォーキャスト対象"
+
+#. module: project_forecast
+#: model:ir.actions.server,name:project_forecast.project_forecast_server_action_archive
+msgid "Archive/Unarchive"
+msgstr "アーカイブ/アーカイブ取消"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Archived"
+msgstr "アーカイブ済"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_group_by_project
+msgid "By Project"
+msgstr "プロジェクト別"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_group_by_user
+msgid "By User"
+msgstr "ユーザ別"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_color
+msgid "Color"
+msgstr "色"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_payment_token_count
+msgid "Count Payment Token"
+msgstr "支払トークンをカウント"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.task_view_form_inherit_project_forecast
+msgid "Create a forecast"
+msgstr "フォーキャストを作成"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_create_uid
+msgid "Created by"
+msgstr "作成者"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_create_date
+msgid "Created on"
+msgstr "作成日"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_display_name
+msgid "Display Name"
+msgstr "表示名"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_effective_hours
+msgid "Effective hours"
+msgstr "有効時間"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_end_date
+msgid "End date"
+msgstr "終了日"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_exclude
+msgid "Exclude"
+msgstr "除外"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_project
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_report_activities
+#: model:ir.ui.menu,name:project_forecast.project_forecast_menu
+#: model:ir.ui.view,arch_db:project_forecast.project_view_kanban_inherit_project_forecast
+msgid "Forecast"
+msgstr "フォーキャスト"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "Forecast Form"
+msgstr "フォーキャストフォーム"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_tree
+msgid "Forecast List"
+msgstr "フォーキャストリスト"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_by_project
+msgid "Forecast by project"
+msgstr "プロジェクトフォーキャスト"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_by_user
+msgid "Forecast by user"
+msgstr "ユーザフォーキャスト"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:121
+#, python-format
+msgid "Forecasted time must be positive"
+msgstr "予測時間は正の値でなければなりません"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Future"
+msgstr "将来"
+
+#. module: project_forecast
+#: model:ir.actions.server,name:project_forecast.action_generate_forecast
+msgid "Generate Forecast"
+msgstr "フォーキャストを生成"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_pivot
+msgid "Graph"
+msgstr "グラフ"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Group By"
+msgstr "グループ化"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_has_address
+msgid "Is address valid"
+msgstr "アドレスは有効です"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast___last_update
+msgid "Last Modified on"
+msgstr "最終更新日"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_write_uid
+msgid "Last Updated by"
+msgstr "最終更新者"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_write_date
+msgid "Last Updated on"
+msgstr "最終更新日"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "My activities"
+msgstr "自分の活動"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "My projects"
+msgstr "自分のプロジェクト"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_name
+msgid "Name"
+msgstr "名称"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Past"
+msgstr "過去"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_payment_token_ids
+msgid "Payment Tokens"
+msgstr "支払トークン"
+
+#. module: project_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_forecast_time
+msgid "Percentage of working time"
+msgstr "労働時間のパーセンテージ"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_resource_hours
+msgid "Planned hours"
+msgstr "計画時間"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_percentage_hours
+msgid "Progress"
+msgstr "進捗"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_project
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_project_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Project"
+msgstr "プロジェクト"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "Project Forecast"
+msgstr "プロジェクトフォーキャスト"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_resource_ids
+msgid "Resource ids"
+msgstr "リソースids"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_start_date
+msgid "Start date"
+msgstr "開始日"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_task
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_task_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Task"
+msgstr "タスク"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_stage_id
+msgid "Task stage"
+msgstr "タスクステージ"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_tag_ids
+msgid "Task tags"
+msgstr "タスクタグ"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:133
+#, python-format
+msgid "The start-date must be lower than end-date."
+msgstr "開始日は終了日より前の日付でなければなりません。"
+
+#. module: project_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_project_allow_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_task_allow_forecast
+msgid "This feature shows the Forecast link in the kanban view"
+msgstr "この機能はかんばんビューの予測リンクを表示します"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "Time Scheduling"
+msgstr "時間管理"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_user_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "User"
+msgstr "ユーザ"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_res_users
+msgid "Users"
+msgstr "ユーザ"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:127
+#, python-format
+msgid "Your task is not in the selected project."
+msgstr "選択したプロジェクトにタスクがありません。"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:63
+#, python-format
+msgid "undefined"
+msgstr "未定義"

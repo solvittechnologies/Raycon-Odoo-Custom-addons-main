@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+       <record id="view_request_inventory_return_from" model="ir.ui.view">
+           <field name="name">view.request.inventory.return.from</field>
+           <field name="model">inventory.request.return</field>
+           <field name="arch" type="xml">
+               <form string="Inventory Request Return Confirmation">
+  					<field name="inv_req_id" invisible="1"/>
+  					<field name="return_product_line_ids" nolabel="1" options="{'no_create': True}">
+  						<tree string="Return Line" editable="bottom">
+  							<field name="product_id"/>
+  							<field name="qty" required="1"/>
+  						</tree>
+  					</field>
+          			<footer>
+          				<button name="action_inv_return" type="object" string="Return" class="oe_heighlight"/>
+          			</footer>
+               </form>            
+           </field>
+      	</record>
+</odoo>

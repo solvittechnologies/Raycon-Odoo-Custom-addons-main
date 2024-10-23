@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="view_sales_config" model="ir.ui.view">
+            <field name="name">sale settings (timesheets invoicing)</field>
+            <field name="model">sale.config.settings</field>
+            <field name="inherit_id" ref="sales_team.view_sale_config_settings"/>
+            <field name="arch" type="xml">
+                <xpath expr="//label[@for='sale_pricelist_setting']" position="before">
+                    <field name="invoiced_timesheet" widget="radio"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

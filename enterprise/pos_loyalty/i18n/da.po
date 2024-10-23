@@ -1,0 +1,501 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * pos_loyalty
+# 
+# Translators:
+# Jesper Carstensen <jc@danodoo.dk>, 2016
+# Morten Schou <ms@msteknik.dk>, 2016
+# Martin Trigaux, 2016
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
+# Ejner Sønniksen <ejner@vkdata.dk>, 2017
+# lhmflexerp <lhm@flexerp.dk>, 2017
+# Mads Søndergaard, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:40+0000\n"
+"Last-Translator: Mads Søndergaard, 2020\n"
+"Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_program_name
+msgid "An internal identification for the loyalty program configuration"
+msgstr "En intern identifikation for loyalitet program konfiguration"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_name
+msgid "An internal identification for this loyalty program rule"
+msgstr "En intern identifikation for denne loyalitet program regel"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_name
+msgid "An internal identification for this loyalty reward"
+msgstr "En intern identifikation for denne loyalitets belønning"
+
+#. module: pos_loyalty
+#: selection:loyalty.rule,rule_type:0
+msgid "Category"
+msgstr "Kategori"
+
+#. module: pos_loyalty
+#: model:ir.actions.act_window,help:pos_loyalty.action_loyalty_program_form
+msgid "Click to create a Loyalty Program."
+msgstr "Klik for at oprette et Loyalitetsprogram."
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_create_uid
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_create_uid
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_create_uid
+msgid "Created by"
+msgstr "Oprettet af"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_create_date
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_create_date
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_create_date
+msgid "Created on"
+msgstr "Oprettet den"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_cumulative
+msgid "Cumulative"
+msgstr "Kumulativ"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_discount
+#: selection:loyalty.reward,reward_type:0
+msgid "Discount"
+msgstr "Rabat"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_discount_product_id
+msgid "Discount Product"
+msgstr "Giv rabat på et produkt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_display_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_display_name
+msgid "Display Name"
+msgstr "Vis navn"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_rule_type
+msgid "Does this rule affects products, or a category of products ?"
+msgstr "Gælder denne regel produkter, eller en kategori af produkter ?"
+
+#. module: pos_loyalty
+#: selection:loyalty.reward,reward_type:0
+msgid "Gift"
+msgstr "Gave"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_gift_product_id
+msgid "Gift Product"
+msgstr "Gaveprodukt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_program_pp_product
+msgid "How many loyalty points are given to the customer by product sold"
+msgstr "Hvor mange loyalitets point gives til kunden per solgt produkt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_program_pp_currency
+msgid "How many loyalty points are given to the customer by sold currency"
+msgstr "Hvor mange loyalitets point gives til kunden per solgt valuta"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_program_pp_order
+msgid ""
+"How many loyalty points are given to the customer for each sale or order"
+msgstr ""
+"Hvor mange loyalitets point gives til kunden for hvert salg eller ordre"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_pp_product
+msgid "How many points the product will earn per product ordered"
+msgstr "Hvor mange point produktet vil tjene per bestilt produkt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_pp_currency
+msgid "How many points the product will earn per value sold"
+msgstr "Hvor mange point produktet vil tjene per solgt værdi"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program___last_update
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward___last_update
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule___last_update
+msgid "Last Modified on"
+msgstr "Sidst ændret den"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_write_uid
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_write_uid
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_write_uid
+msgid "Last Updated by"
+msgstr "Sidst opdateret af"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_write_date
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_write_date
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_write_date
+msgid "Last Updated on"
+msgstr "Sidst opdateret den"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_loyalty_program_id
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_loyalty_program_id
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_config_loyalty_id
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_form
+#: model:ir.ui.view,arch_db:pos_loyalty.view_pos_config_form
+msgid "Loyalty Program"
+msgstr "Loyalitetsprogram"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_name
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_form
+msgid "Loyalty Program Name"
+msgstr "Navn på Loyalitetsprogram"
+
+#. module: pos_loyalty
+#: model:ir.actions.act_window,name:pos_loyalty.action_loyalty_program_form
+#: model:ir.ui.menu,name:pos_loyalty.menu_loyalty_program
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_tree
+#: model:ir.ui.view,arch_db:pos_loyalty.view_pos_pos_form
+msgid "Loyalty Programs"
+msgstr "Loyalitetsprogrammer"
+
+#. module: pos_loyalty
+#: model:ir.actions.act_window,help:pos_loyalty.action_loyalty_program_form
+msgid ""
+"Loyalty Programs allows you customer to earn points\n"
+"                    and rewards when doing business at your shops."
+msgstr ""
+"Loyalitetsprogrammer giver dine kunder mulighed for at optjene point\n"
+"                     og belønninger, når de handler i dine butikker."
+
+#. module: pos_loyalty
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_reward_form
+msgid "Loyalty Reward"
+msgstr "Loyalitet Belønning"
+
+#. module: pos_loyalty
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_rule_form
+msgid "Loyalty Rule"
+msgstr "Loyalitet regel"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_loyalty_points
+#: model:ir.model.fields,field_description:pos_loyalty.field_res_partner_loyalty_points
+msgid "Loyalty points"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_minimum_points
+msgid "Minimum points"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_name
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_name
+msgid "Name"
+msgstr "Navn"
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_res_partner
+msgid "Partner"
+msgstr "Kontakt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_point_product_id
+msgid "Point Product"
+msgstr "Point Produkt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_point_cost
+msgid "Point cost"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_pos_order
+msgid "Point of Sale"
+msgstr "Butik"
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:6
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:71
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:81
+#, python-format
+msgid "Points"
+msgstr "Point"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_rounding
+msgid "Points Rounding"
+msgstr "Point afrunding"
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:57
+#, python-format
+msgid "Points Spent"
+msgstr "Point brugt"
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:111
+#, python-format
+msgid "Points Spent:"
+msgstr ""
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:54
+#, python-format
+msgid "Points Won"
+msgstr "Point tjent"
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:100
+#, python-format
+msgid "Points Won:"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_pp_currency
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_pp_currency
+msgid "Points per currency"
+msgstr "Point per valuta"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_pp_order
+msgid "Points per order"
+msgstr "Point pr. ordre"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_pp_product
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_pp_product
+msgid "Points per product"
+msgstr "Points per produkt"
+
+#. module: pos_loyalty
+#: selection:loyalty.rule,rule_type:0
+msgid "Product"
+msgstr "Vare"
+
+#. module: pos_loyalty
+#: selection:loyalty.reward,reward_type:0
+msgid "Resale"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_reward_form
+msgid "Reward Name"
+msgstr "Belønnings navn"
+
+#. module: pos_loyalty
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_form
+msgid "Reward the customer with gifts or discounts for loyalty points"
+msgstr "Beløn kunden med gaver eller rabatter for loyalitets point"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_reward_reward_type
+msgid "Reward type"
+msgstr ""
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:25
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_reward_ids
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_form
+#, python-format
+msgid "Rewards"
+msgstr "Belønninger"
+
+#. module: pos_loyalty
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_rule_form
+msgid "Rule Name"
+msgstr "Regel Navn"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_rule_type
+msgid "Rule type"
+msgstr "Regel type"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program_rule_ids
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_form
+msgid "Rules"
+msgstr "Regler"
+
+#. module: pos_loyalty
+#: model:ir.ui.view,arch_db:pos_loyalty.view_loyalty_program_form
+msgid ""
+"Rules change how loyalty points are earned for specific products or "
+"categories"
+msgstr ""
+"Regler ændrer hvordan loyalitetspoint optjenes for bestemte produkter eller "
+"kategorier"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_category_id
+msgid "Target Category"
+msgstr "Mål kategori"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_rule_product_id
+msgid "Target Product"
+msgstr "Mål produkt"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_loyalty_program_id
+msgid "The Loyalty Program this exception belongs to"
+msgstr "Loyalitetsprogrammet som denne undtagelse tilhører"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_loyalty_program_id
+msgid "The Loyalty Program this reward belongs to"
+msgstr "Loyalitetsprogrammet som denne belønning tilhører"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_pos_order_loyalty_points
+msgid "The amount of Loyalty points the customer won or lost with this order"
+msgstr "Antallet af Loyalitetspoint kunden vandt eller tabte med denne ordre"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_category_id
+msgid "The category affected by the rule"
+msgstr "Kategorien som reglen gælder for"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_point_cost
+msgid "The cost of the reward"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_discount
+msgid "The discount percentage"
+msgstr "Rabatprocenten"
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/models/pos_loyalty.py:56
+#, python-format
+msgid "The discount product field is mandatory for discount rewards"
+msgstr "Produkt rabat feltet er obligatorisk for rabat belønninger"
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/models/pos_loyalty.py:50
+#, python-format
+msgid "The gift product field is mandatory for gift rewards"
+msgstr "Produkt gave feltet er obligatorisk for gave belønninger"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_program_rounding
+msgid "The loyalty point amounts are rounded to multiples of this value."
+msgstr "Beløbene af loyalitetspoint afrundes til denne værdi (ganget op)."
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_res_partner_loyalty_points
+msgid "The loyalty points the user won as part of a Loyalty Program"
+msgstr "Loyalitetspointene brugeren vandt som en del af et Loyalitetsprogram"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_pos_config_loyalty_id
+msgid "The loyalty program used by this point_of_sale"
+msgstr ""
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_minimum_points
+msgid ""
+"The minimum amount of points the customer must have to qualify for this "
+"reward"
+msgstr ""
+"Det mindste antal point kunden skal have for at kunne få denne belønning"
+
+#. module: pos_loyalty
+#: code:addons/pos_loyalty/models/pos_loyalty.py:62
+#, python-format
+msgid "The point product field is mandatory for point resale rewards"
+msgstr "Produkt point feltet er obligatorisk for point gensalgs belønninger"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_cumulative
+msgid "The points won from this rule will be won in addition to other rules"
+msgstr ""
+"Tjente point fra denne regel vil blive tjent udover dem fra andre regler"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule_product_id
+msgid "The product affected by the rule"
+msgstr "Produktet denne regel gælder for"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_gift_product_id
+msgid "The product given as a reward"
+msgstr "Produktet der gives som belønning"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_point_product_id
+msgid "The product that represents a point that is sold by the customer"
+msgstr "Produktet der repræsenterer et point solgt af en kunde"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_discount_product_id
+msgid "The product used to apply discounts"
+msgstr "Produktet som anvendes til at tilføje rabatter"
+
+#. module: pos_loyalty
+#: model:ir.model.fields,help:pos_loyalty.field_loyalty_reward_reward_type
+msgid "The type of the reward"
+msgstr "Belønningens Type"
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:60
+#, python-format
+msgid "Total Points"
+msgstr "Total Point"
+
+#. module: pos_loyalty
+#. openerp-web
+#: code:addons/pos_loyalty/static/src/xml/loyalty.xml:122
+#, python-format
+msgid "Total Points:"
+msgstr "Total Point:"
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_loyalty_program
+msgid "loyalty.program"
+msgstr "loyalty.program"
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_loyalty_reward
+msgid "loyalty.reward"
+msgstr "loyalty.reward"
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_loyalty_rule
+msgid "loyalty.rule"
+msgstr "loyalty.rule"
+
+#. module: pos_loyalty
+#: model:ir.model,name:pos_loyalty.model_pos_config
+msgid "pos.config"
+msgstr "pos.config"

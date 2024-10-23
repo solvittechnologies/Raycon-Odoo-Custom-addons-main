@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="product_type_addition">
+        <field name="name">product_type_addition</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="categ_id" position="after">
+                <field name="p_type"/>
+            </field>
+
+            <field name="barcode" position="after">
+                <field name="p_desc">
+                     <tree editable ="bottom">
+                        <field name="name"/>
+                     </tree>
+                     <form>
+                        <group col="4">
+                        <field name="name"/>
+                        </group>
+                     </form>
+                </field>
+            </field>
+
+        </field>
+</record>
+
+
+<record id="product_type" model="ir.ui.view">
+            <field name="name">product.type.form</field>
+            <field name="model">product.type</field>
+            <field name="arch" type="xml">
+                <form>
+
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+                </form>
+            </field>
+    </record>
+
+<record id="action_product_type" model="ir.actions.act_window">
+            <field name="name">Product Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                    Add a new product type here.
+              </p>
+            </field>
+        </record>
+
+
+    <menuitem id="menu_product_type" sequence="3" action="action_product_type" parent="stock.menu_product_in_config_stock"/>
+
+
+
+</odoo>

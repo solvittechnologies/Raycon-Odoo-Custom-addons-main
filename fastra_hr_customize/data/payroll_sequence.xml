@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model="ir.sequence" id="seq_employee_payroll_code">
+            <field name="name">Employee Payroll Code</field>
+            <field name="code">employee.payroll.code</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record model="ir.sequence" id="seq_employee_payroll_reference">
+            <field name="name">Employee Payroll Reference</field>
+            <field name="code">employee.payroll.reference</field>
+            <field name="prefix">ABJ/%(month)s/%(range_year)s</field>
+            <field eval="True" name="use_date_range"/>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

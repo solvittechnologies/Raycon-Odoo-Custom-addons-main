@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <act_window
+        id="action_psrunpaysliplines"
+        res_model="hr.payslip.line"
+        src_model="hr.payslip.run"
+        target="current"
+        multi="True"
+        key2="client_action_multi"
+        view_mode="pivot"
+        name="See selected batche(s) as a Pivot Report"
+        view_id="pivot_payslip_lines"
+        
+        domain="[('appears_on_payslip', '=', True), ('is_aggregate', '=', False), ('slip_state', '=', 'done'), ('sliprun_id', 'in', active_ids)]"
+        />
+
+</odoo>

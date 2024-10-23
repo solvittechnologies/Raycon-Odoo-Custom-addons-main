@@ -1,0 +1,238 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk
+# 
+# Translators:
+# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2016
+# Pekko Tuomisto <pekko.tuomisto@web-veistamo.fi>, 2016
+# Miku Laitinen <miku.laitinen@gmail.com>, 2016
+# Iipponen <erno@web-veistamo.fi>, 2016
+# Kari Lindgren <kari.lindgren@emsystems.fi>, 2017
+# Veikko Väätäjä <veikko.vaataja@gmail.com>, 2018
+# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2018
+# Tuomas Lyyra <tuomas.lyyra@legenda.fi>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-09-19 13:42+0000\n"
+"Last-Translator: Tuomas Lyyra <tuomas.lyyra@legenda.fi>, 2019\n"
+"Language-Team: Finnish (https://www.transifex.com/odoo/teams/41243/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-arrow-circle-right \"/> See the feedbacks"
+msgstr "<i class=\"fa fa-arrow-circle-right \"/> Näytä palautteet"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-envelope\"/> Email :"
+msgstr "<i class=\"fa fa-envelope\"/> Sähköposti :"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i/> Customer Satisfaction Ration:"
+msgstr "<i/> Asiakastyytyväisyyden suhde:"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "<span>Show more</span><span class=\"hidden\">Show less</span>"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Assigned to</strong>"
+msgstr "<strong>Annettu tehtäväksi</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Pvm:</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Message and communication history</strong>"
+msgstr "<strong>Viestihistoria</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Reported by</strong>"
+msgstr "<strong>Raportoinut</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Average"
+msgstr "Keskinkertainen"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Bad"
+msgstr "Huono"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Current stage of this ticket"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Customer Satisfaction"
+msgstr "Asiakastyytyväisyys"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Edit Ticket"
+msgstr "Muokkaa tikettiä"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Happy"
+msgstr "Iloinen"
+
+#. module: website_helpdesk
+#: model:website.menu,name:website_helpdesk.website_menu_helpdesk
+msgid "Help"
+msgstr "Apua"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk"
+msgstr "Asiakaspalvelu"
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_team
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk Team"
+msgstr "Asiakaspalvelutiimi"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.header_footer_custom
+msgid "Helpdesk Team Customer Satisfaction"
+msgstr "Asiakaspalvelutiimin asiakastyytyväisyys"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Helpdesk Team Satisfaction"
+msgstr "Asiakaspalvelutiimin arvioinnit"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 3 months"
+msgstr "Viimeiset 3 kuukautta"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 30 days"
+msgstr "Viimeiset 30 päivää"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 7 days"
+msgstr "Viimeiset 7 päivää"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Latest Feedbacks"
+msgstr "Viimeisimmät palautteet"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "My Tickets"
+msgstr "Omat tiketit"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.content_new_team
+msgid "New Team"
+msgstr "Uusi tiimi"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.not_published_any_team
+msgid "No teams have been published."
+msgstr "Ei julkaistuja asiakaspalvelutiimejä."
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid "Save this page to activate the feature"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_ticket_access_token
+msgid "Security Token"
+msgstr "Turvatunnus"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Status"
+msgstr "Tila"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Submit an Issue"
+msgstr "Lähetä tukipyyntö"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Team Settings"
+msgstr "Tiimin asetukset"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Teams"
+msgstr "Tiimit"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "There are currently no Ticket for your account."
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Tiketti"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Ticket Number"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_menu_helpdesk
+msgid "Tickets"
+msgstr "Liput"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_team_website_rating_url
+msgid "URL to Submit Issue"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "View my Issues"
+msgstr "Katso omat tiketit"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid ""
+"View this teams ratings this page:<br/>\n"
+"                    ⇒"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "Your Tickets"
+msgstr ""

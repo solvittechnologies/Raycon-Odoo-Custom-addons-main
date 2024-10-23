@@ -1,0 +1,78 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * grid
+# 
+# Translators:
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-06 14:54+0000\n"
+"PO-Revision-Date: 2017-03-06 14:54+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2016\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:71
+#, python-format
+msgid "Add a Line"
+msgstr "Добавить строку"
+
+#. module: grid
+#: code:addons/grid/models.py:214 code:addons/grid/models.py:246
+#, python-format
+msgid "Can not use fields of type %s as grid columns"
+msgstr "Нельзя использовать поля типа %s в качестве колонок"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:69
+#, python-format
+msgid "Grid"
+msgstr "Сетка"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:400
+#, python-format
+msgid "See all the records aggregated in this cell"
+msgstr "Просмотреть все записи, агрегированные в этой ячейке"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:206
+#, python-format
+msgid ""
+"The sectioned grid view can't handle groups with different columns sets"
+msgstr ""
+"Табличный вид нельзя настроить для групп с различными наборами колонок"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:306
+#: code:addons/grid/static/src/js/grid_view.js:316
+#, python-format
+msgid "Total"
+msgstr "Итого"
+
+#. module: grid
+#: model:ir.model,name:grid.model_base
+msgid "base"
+msgstr "base"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_actions_act_window_view
+msgid "ir.actions.act_window.view"
+msgstr "ir.actions.act_window.view"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"

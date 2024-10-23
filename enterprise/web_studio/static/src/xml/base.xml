@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+<t t-name="NewFieldMany2One">
+    <t t-if="widget.mode === 'readonly'">
+        <a t-if="!widget.node_options.no_open" class="o_form_uri" href="#"/>
+        <span t-if="widget.node_options.no_open"/>
+    </t>
+    <div t-if="widget.mode === 'edit'" class="o_form_field o_form_field_many2one">
+        <div class="o_form_input_dropdown">
+            <input type="text" class="o_form_input"
+                t-att-barcode_events="widget.node_options.barcode_events"
+                t-att-tabindex="widget.field.__attrs.tabindex"
+                t-att-autofocus="widget.field.__attrs.autofocus"
+                t-att-placeholder="widget.field.__attrs.placeholder"
+                t-att-id="widget.id_for_label"/>
+            <span class="o_dropdown_button" draggable="false"/>
+        </div>
+        <button type="button" t-if="!widget.node_options.no_open" class="fa fa-external-link btn btn-default o_external_button" tabindex="-1" draggable="false"/>
+    </div>
+</t>
+
+<t t-name="NewFieldMany2ManyCheckBoxes">
+    <div>
+        <div t-foreach="widget.m2m_values" t-as="m2m_value">
+            <div class="o_checkbox">
+                <input type="checkbox" t-att-data-record-id="JSON.stringify(m2m_value[0])"/>
+                <span/>
+            </div>
+            <label class="o_form_label"><t t-esc="m2m_value[1]"/></label>
+        </div>
+    </div>
+</t>
+
+<t t-name="NewFieldSelection">
+    <span t-if="widget.mode === 'readonly'"/>
+
+    <select t-if="widget.mode !== 'readonly'"
+        class="o_form_input"
+        t-att-name="widget.name"
+        t-att-tabindex="widget.field.__attrs.tabindex"
+        t-att-autofocus="widget.field.__attrs.autofocus"
+        t-att-id="widget.id_for_label"/>
+</t>
+
+<t t-name="NewFieldRadio">
+    <span t-if="widget.mode === 'readonly'"/>
+
+    <div t-if="widget.mode !== 'readonly'" t-attf-class="o_form_field_radio #{widget.node_options.horizontal ? 'o_horizontal' : 'o_vertical'}">
+        <div t-foreach="widget.values" t-as="value" class="o_radio_item">
+            <input type="radio" class="o_form_radio" t-att-id="widget.unique_id + '_' + value[0]" t-att-name="widget.unique_id" t-att-data-value="value[0]"/>
+            <label t-if="!widget.node_options.no_radiolabel" class="o_form_label" t-att-for="widget.unique_id + '_' + value[0]"><t t-esc="value[1]"/></label>
+        </div>
+    </div>
+</t>
+
+<t t-name="NewFieldBinaryImage">
+    <div class="o_form_field_image">
+        <t t-if="widget.mode !== 'readonly'">
+            <div class="o_form_image_controls">
+                <span class="fa fa-pencil fa-lg pull-left o_select_file_button" title="Edit"/>
+                <span class="fa fa-trash-o fa-lg pull-right o_clear_file_button" title="Clear"/>
+
+                <span class="o_form_binary_progress">Uploading...</span>
+                <t t-call="HiddenInputFile">
+                    <t t-set="fileupload_id" t-value="widget.fileupload_id"/>
+                </t>
+            </div>
+        </t>
+    </div>
+</t>
+
+<t t-name="NewFieldBinaryFile">
+    <a t-if="widget.mode === 'readonly'" href="javascript:void(0)" class="o_form_uri"/>
+
+    <div t-if="widget.mode !== 'readonly'" class="o_form_field_binary_file">
+        <input type="text" class="o_form_input"
+            readonly="readonly"
+            t-att-name="widget.name"
+            t-att-tabindex="widget.field.__attrs.tabindex"
+            t-att-autofocus="widget.field.__attrs.autofocus"/>
+
+        <button type="button" class="btn btn-sm btn-primary o_select_file_button" title="Select">Upload your file</button>
+        <button type="button" class="btn btn-sm btn-default fa fa-pencil o_select_file_button" title="Select"/>
+        <button type="button" class="btn btn-sm btn-default fa fa-download o_save_file_button" title="Save As..."/>
+        <button type="button" class="btn btn-sm btn-default fa fa-trash-o o_clear_file_button" title="Clear"/>
+
+        <span class="o_form_binary_progress">Uploading...</span>
+        <t t-call="HiddenInputFile">
+            <t t-set="fileupload_id" t-value="widget.fileupload_id"/>
+            <t t-set="fileupload_style" t-translation="off">overflow-x: hidden</t>
+        </t>
+    </div>
+</t>
+
+<t t-name="NewWidgetLabel.tooltip">
+    <div class="oe_tooltip_string" t-if="widget.string">
+        <t t-esc="widget.string"/> <t t-if="debug and widget.nolabel">(nolabel)</t>
+    </div>
+    <p t-if="widget.field.__attrs.help || widget.field.help" class="oe_tooltip_help">
+        <t t-esc="widget.field.__attrs.help || widget.field.help"/>
+    </p>
+    <ul t-if="debug" class="oe_tooltip_technical">
+        <li data-item="field" t-if="widget.name">
+            <span class="oe_tooltip_technical_title">Field:</span>
+            <t t-esc="widget.name"/>
+        </li>
+        <li data-item="object">
+            <span class="oe_tooltip_technical_title">Object:</span>
+            <t t-esc="widget.model"/>
+        </li>
+        <li data-item="type">
+            <span class="oe_tooltip_technical_title">Type:</span>
+            <t t-esc="widget.field.type"/>
+        </li>
+        <li t-if="widget.field.__attrs.widget" data-item="widget">
+            <span class="oe_tooltip_technical_title">Widget:</span>
+            <t t-esc="widget.field.__attrs.widget"/>
+        </li>
+        <li t-if="widget.field.__attrs.size || widget.field.size" data-item="size">
+            <span class="oe_tooltip_technical_title">Size:</span>
+            <t t-esc="widget.field.__attrs.size || widget.field.size"/>
+        </li>
+        <li t-if="widget.field.__attrs.context || widget.field.context" data-item="context">
+            <span class="oe_tooltip_technical_title">Context:</span>
+            <t t-esc="widget.field.__attrs.context || widget.field.context"/>
+        </li>
+        <li t-if="widget.field.__attrs.domain || widget.field.domain" data-item="domain">
+            <span class="oe_tooltip_technical_title">Domain:</span>
+            <t t-esc="widget.field.__attrs.domain || widget.field.domain"/>
+        </li>
+        <li t-if="widget.field.__attrs.modifiers and widget.field.__attrs.modifiers != '{}'" data-item="modifiers">
+            <span class="oe_tooltip_technical_title">Modifiers:</span>
+            <t t-esc="widget.field.__attrs.modifiers"/>
+        </li>
+        <li t-if="widget.field and widget.field.change_default" data-item="change_default">
+            <span class="oe_tooltip_technical_title">Change default:</span>
+            Yes
+        </li>
+        <li t-if="widget.field.__attrs.on_change" data-item="on_change">
+            <span class="oe_tooltip_technical_title">On change:</span>
+            <t t-esc="widget.field.__attrs.on_change"/>
+        </li>
+        <li t-if="widget.field and widget.field.relation" data-item="relation">
+            <span class="oe_tooltip_technical_title">Relation:</span>
+            <t t-esc="widget.field.relation"/>
+        </li>
+        <li t-if="widget.field and widget.field.selection" data-item="selection">
+            <span class="oe_tooltip_technical_title">Selection:</span>
+            <ul class="oe_tooltip_technical">
+                <li t-foreach="widget.field.selection" t-as="option">
+                    [<t t-esc="option[0]"/>]
+                    <t t-if="option[1]"> - </t>
+                    <t t-esc="option[1]"/>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</t>
+
+<t t-name="NewFieldStatus">
+    <ul class="o_statusbar_status" t-att-style="widget.field.__attrs.style"/>
+</t>
+
+<t t-name="FieldStatus.content">
+    <t t-foreach="widget.selection_unfolded" t-as="i">
+        <li t-att-class="i[0] === widget.value ? 'oe_active' : ''" t-att-data-value="i[0]">
+            <span class="label"><t t-esc="i[1]"/></span>
+            <!-- are you mit ? -->
+            <span class="arrow"><span></span></span>
+        </li>
+    </t>
+    <t t-if="widget.selection_folded.length">
+        <li>
+            <span class="label oe_dropdown_toggle oe_dropdown_arrow">More</span>
+            <ul class="oe_dropdown_menu">
+                <t t-foreach="widget.selection_folded" t-as="i">
+                    <li t-att-class="i[0] === widget.value ? 'oe_active' : ''" t-att-data-value="i[0]">
+                        <span class="label"><t t-esc="i[1]"/></span>
+                    </li>
+                </t>
+            </ul>
+        </li>
+    </t>
+</t>
+
+</templates>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="module_category_project_budget_approve_level_management">
+            <field name="name">Project Budget Approve Levels</field>
+            <field name="sequence">100</field>
+        </record>
+    </data>
+</odoo>

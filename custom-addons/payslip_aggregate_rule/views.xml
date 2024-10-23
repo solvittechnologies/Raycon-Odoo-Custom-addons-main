@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_salary_rule_category_form" model="ir.ui.view">
+        <field name="name">hr.salary.rule.category.form.amount_type</field>
+        <field name="model">hr.salary.rule.category</field>
+        <field name="inherit_id" ref="hr_salary_rule_category_form_compat" />
+        
+        <field name="arch" type="xml">
+            
+            <xpath expr="//field[@name='parent_id']" position="after">
+                <field name="cat_amount_type" />
+            </xpath>
+            
+        </field>
+    </record>
+
+    <record id="hr_salary_rule_form" model="ir.ui.view">
+        <field name="name">hr.salary.rule.form.amount_type</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_salary_rule_form_compat" />
+        
+        <field name="arch" type="xml">
+            
+            <xpath expr="//div[@id='is_aggregate_field_placeholder']" position="replace">
+                <field name="rule_amount_type" />
+            </xpath>
+            
+        </field>
+    </record>
+
+</odoo>

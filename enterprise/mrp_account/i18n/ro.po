@@ -1,0 +1,228 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_account
+# 
+# Translators:
+# Cozmin Candea <office@terrabit.ro>, 2016
+# Martin Trigaux, 2016
+# Dorin Hongu <dhongu@gmail.com>, 2018
+# Foldi Robert <foldirobert@nexterp.ro>, 2020
+# Hongu Cosmin <cosmin513@gmail.com>, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:40+0000\n"
+"Last-Translator: Hongu Cosmin <cosmin513@gmail.com>, 2020\n"
+"Language-Team: Romanian (https://www.transifex.com/odoo/teams/41243/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid ", from"
+msgstr ", din"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Operations</strong>"
+msgstr "<strong>Costul total al Operațiunilor</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Raw Materials</strong>"
+msgstr ""
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Scraps</strong>"
+msgstr "<strong>Costul Total al Resturilor</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Unit Cost</strong>"
+msgstr "<strong>Cost unitar</strong>"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_costs_hour_account_id
+msgid "Analytic Account"
+msgstr "Cont analitic"
+
+#. module: mrp_account
+#: model:ir.actions.report.xml,name:mrp_account.action_cost_struct_mrp_production
+#: model:ir.ui.view,arch_db:mrp_account.mrp_production_form_inherit_view6
+#: model:ir.ui.view,arch_db:mrp_account.product_product_inherit_form_view_cost_structure
+msgid "Cost Analysis"
+msgstr "Analiză Cost"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_productivity_cost_already_recorded
+msgid "Cost Recorded"
+msgstr "Cost Înregistrat"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost Structure"
+msgstr "Structura de costuri"
+
+#. module: mrp_account
+#: model:ir.actions.report.xml,name:mrp_account.action_cost_struct_product_template
+msgid "Cost Structure Analysis"
+msgstr "Analiza Structurii Costurilor"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost for"
+msgstr "Cost pentru"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost of Operations"
+msgstr "Costul operațiilor"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost of Scraps"
+msgstr "Cost Resturi"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_costs_hour
+msgid "Cost per hour"
+msgstr "Cost pe ora"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost/hour"
+msgstr "Cost/oră"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_workcenter_view_inherit
+msgid "Costing Information"
+msgstr "Informații despre Costuri"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_cost_structure_display_name
+#: model:ir.model.fields,field_description:mrp_account.field_report_product_template_cost_structure_display_name
+msgid "Display Name"
+msgstr "Nume afișat"
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_costs_hour_account_id
+msgid ""
+"Fill this only if you want automatic analytic accounting entries on "
+"production orders."
+msgstr ""
+"Completați doar dacă doriți înregistrări contabile analitice automate ale "
+"comenzilor de producție."
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_cost_structure_id
+#: model:ir.model.fields,field_description:mrp_account.field_report_product_template_cost_structure_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_cost_structure___last_update
+#: model:ir.model.fields,field_description:mrp_account.field_report_product_template_cost_structure___last_update
+msgid "Last Modified on"
+msgstr "Ultima modificare la"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Comanda de Producție"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Operation"
+msgstr "Operație"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Operator"
+msgstr "Operator"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Quantity"
+msgstr "Cantitate"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Raw Materials"
+msgstr "Materie prima"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Scraps"
+msgstr "Rebuturi"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Some of the Manufacturing Order(s) selected are not done yet"
+msgstr ""
+"Una dintre comenzi(le) de fabricație selectate nu sunt încă finalizate"
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_costs_hour
+msgid "Specify cost of work center per hour."
+msgstr "Specificați costul centrului de lucru pe oră."
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_productivity_cost_already_recorded
+msgid ""
+"Technical field automatically checked when a ongoing production posts "
+"journal entries for its costs. This way, we can record one production's cost"
+" multiple times and only consider new entries in the work centers time "
+"lines."
+msgstr ""
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Total Cost"
+msgstr "Cost total"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Unit Cost"
+msgstr "Costul unității"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_workcenter
+msgid "Work Center"
+msgstr "Centru de lucru"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_workcenter_productivity
+msgid "Workcenter Productivity Log"
+msgstr "Jurnal productivitate centru de lucru"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Working Time"
+msgstr "Program de lucru"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "hours"
+msgstr "ore"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "manufacturing order(s)."
+msgstr "comenzi producție."
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_report_mrp_cost_structure
+msgid "report.mrp_cost_structure"
+msgstr ""
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_report_product_template_cost_structure
+msgid "report.product_template_cost_structure"
+msgstr ""

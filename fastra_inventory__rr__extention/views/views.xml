@@ -1,0 +1,106 @@
+<odoo>
+  <data>
+   
+    <record model="ir.actions.act_window" id="inventory_request_form">
+      <field name="name">Inventory Request</field>
+      <field name="res_model">request.invetory</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+              Add a new Inventory Request
+          </p>
+          <p>
+              Manage What goes in and out of your Inventory
+          </p>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="inventory_request_form_1">
+      <field name="name">Inventory Request</field>
+      <field name="model">request.invetory</field>
+      <field name="arch" type="xml">
+          <tree>
+
+              <field name="name" string='Release Name'/>
+              <field name='date' string="Date Requested"/>
+
+          </tree>
+      </field>
+  </record>
+
+<record model="ir.ui.view" id="inventory_request_form_2">
+    <field name="name">Inventory Request Form</field>
+    <field name="model">request.invetory</field>
+    <field name="arch" type="xml">
+        <form string="Idea form">
+            <header>
+                <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="finalize" string="Confirm"  attrs="{'invisible':[('state','!=', 'Approve')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <field name="state" widget="statusbar" nolabel="1"/>
+            </header>
+            <sheet>
+                <group colspan="4">
+                    <group colspan="2" col="4">
+
+                        <separator string="Request Data" colspan="4"/>
+
+                        <field name="name" string="Storekeepers Name"/>
+                        <field name="partner" string="Recievers Name" colspan="2"/>
+                        <field name="source_location" string="Source Location" domain="[('usage', '=', 'internal')]"/>
+                        <field name="destination" string="Destination Location"  domain="[('usage', '=', 'internal')]"/>
+                        <field name="date" string="Date"/>
+                        <field name="date_realse" string="Collected Date"/>
+                        <field name="date_returned" string="Returned Date"/>
+
+                    </group>
+                    <separator string="Request Items" colspan="4"/>
+                    <notebook colspan="4">
+                        <page string="request_line">
+
+                            <field
+                                    name="request_line"
+                                    widget="one2many"
+                                    mode="tree,kanban"
+                                    string="Request Line"
+                                    force_save='1'>
+
+                                <tree string="Material lines" editable="bottom">
+                                    <!-- <control>
+                                        <create string="Add a line"/>
+                                        <create string="Add a section"
+                                                context="{'default_display_type': 'line_section'}"/>
+                                    </control> -->
+                                    <field name="product" string="Product" force_save='1'/>
+                                    <field name="qty_req" string="Quantity" force_save='1'/>
+                                    <field name="description" string="Description" force_save='1'/>
+                                    <field name="state" string="Status" force_save='1'/>
+                                </tree>
+
+                            </field>
+
+                        </page>
+
+                    </notebook>
+                </group>
+            </sheet>
+
+        </form>
+    </field>
+</record> 
+
+      <menuitem sequence="30" name="Inventory Mananagement" id="inventory_management" parent="stock.menu_stock_root" action="inventory_request_form"/>
+
+    <menuitem sequence="30" name="Products Only" id="inventory_request" parent="inventory_management"  action="inventory_request_form"/>
+
+
+    <!-- <menuitem sequence="30" name="Inventory Mananagement" id="inventory_management" parent="stock.menu_stock_root" />
+
+    <menuitem sequence="30" name="Inventory Request" id="inventory_request" parent="inventory_management" action="inventory_request_form"/> -->
+
+  </data>
+</odoo>

@@ -1,0 +1,133 @@
+<odoo>
+    <data>
+        <record id="view_purchase_order_from_purchase_reques_inherit" model="ir.ui.view">
+            <field name="name">purchase.request.form.inherit</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_ref']" position="after">
+                    <field name="purchase_request_"/>
+                    <field name="location_id" required="1"/>
+                </xpath>
+                <xpath expr="//field[@name='date_order']" position="after">
+                    <field name="description"/>
+                </xpath>
+                <xpath expr="//field[@name='taxes_id']" position="attributes">
+                    <attribute name="string">Vat</attribute>
+                </xpath>
+                <xpath expr="//field[@name='amount_tax']" position="attributes">
+                    <attribute name="string">Vat</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_view_invoice'][2]" position="replace">
+                    <button name="action_view_invoice" string="Create Bill" type="object" context="{'create_bill':True}"
+                            attrs="{'invisible': ['|', '|', ('state', 'not in', ('purchase')), ('invoice_status', 'not in', ('no', 'invoiced')), ('order_line', '=', [])]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="almansur_purchase_request_form_inherit22" model="ir.ui.view">
+            <field name="name">almansur.account.purchase_request.form.inherit2</field>
+            <field name="model">purchase.request</field>
+            <field name="inherit_id" ref="purchase_request.view_purchase_request_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='description']" position="after">
+                    <!--		       <field name="send_to" attrs="{'readonly':['state','not in',('draft')]}"/>-->
+                    <field name="location_id" required="1"/>
+                    <field name="send_to"/>
+
+                </xpath>
+                <xpath expr="//field[@name='picking_type_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='origin']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='description']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_account_payment_from_inherit_invoice" model="ir.ui.view">
+            <field name="name">view.account.payment.from.inherit.invoice</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="invoice_ids" readonly="0" domain="[('partner_id', '=', partner_id), ('state', '=', 'open')]">
+                        <tree string="Invoice" delete="true">
+                            <field name="number"/>
+                            <field name="amount_total_signed" string="Total Amount"/>
+                            <field name="residual_signed" string="Amount Due Total"/>
+                        </tree>
+                    </field>
+                </xpath>
+
+                <xpath expr="//field[@name='journal_id']" position="replace">
+                    <field name="journal_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="active" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='destination_journal_id']" position="replace">
+                    <field name="destination_journal_id"
+                           attrs="{'required': [('payment_type', '=', 'transfer')], 'invisible': [('payment_type', '!=', 'transfer')], 'readonly': [('state', '!=', 'draft')]}"/>
+                </xpath>
+
+                <xpath expr="//div[@class='oe_title']" position="attributes">
+                    <attribute name="attrs">{}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='payment_transaction_id']" position="after">
+                    <field name="bank_id"/>
+                    <field name="acc_number"/>
+                    <field name="beneficiary_name"/>
+                    <field name="analytic_account_id"/>
+                </xpath>
+            </field>
+        </record>
+        <!-- Rustam name change tax to vat -->
+        <record id="view_sale_order_form_extends_for_name_change_tax_fields" model="ir.ui.view">
+            <field name="name">view.sale.order.form.extends.for.name.change.tax.fields</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree/field[@name='tax_id']" position="attributes">
+                    <attribute name="string">Vat</attribute>
+                </xpath>
+                <xpath expr="//field[@name='amount_tax']" position="attributes">
+                    <attribute name="string">Vat</attribute>
+                </xpath>
+                <xpath expr="//field[@name='analytic_account_id']" position="attributes">
+                    <attribute name="string">Project</attribute>
+                </xpath>
+
+                <xpath expr="//group[@name='sale_total']/field[@name='amount_total']" position="after">
+                    <field name="amount_total_words"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_account_invoice_form_extends_for_name_change_tax_fields" model="ir.ui.view">
+            <field name="name">view.account.invoice.form.extends.for.name.change.tax.fields</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='invoice_line_tax_ids']" position="attributes">
+                    <attribute name="string">Vat</attribute>
+                </xpath>
+                <xpath expr="//field[@name='amount_tax']" position="attributes">
+                    <attribute name="string">Vat</attribute>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.menu" id="account.menu_action_account_payments_receivable">
+            <field name="name">Incoming Payments</field>
+        </record>
+        <record model="ir.ui.menu" id="account.menu_action_account_payments_payable">
+            <field name="name">Outgoing Payments</field>
+        </record>
+
+    </data>
+</odoo>

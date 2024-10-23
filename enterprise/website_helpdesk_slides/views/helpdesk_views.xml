@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="helpdesk_team_view_form_inherit_website_helpdesk_slides" model="ir.ui.view">
+        <field name="name">helpdesk.team.form.inherit.website.slides.helpdesk</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+        <field name="model">helpdesk.team</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='use_website_helpdesk_slides']" position="replace">
+                <hr class="mt8 mb8"/>
+                <div class="text-warning mb4" attrs="{'invisible': ['|', ('use_website_helpdesk_slides', '=', False), ('elearning_url','!=',False)]}">
+                    Save this page to activate the feature
+                </div>
+                <div attrs="{'invisible': ['|', ('use_website_helpdesk_slides', '=', False), ('elearning_url','=',False)]}">
+                    View the presentations:<br/>
+                    ⇒ <field name="elearning_url" readonly="1" class="oe_inline" widget="url"/>
+                </div>
+                <div attrs="{'invisible': [('use_website_helpdesk_slides', '=', False)]}">
+                    <div>
+                        The related channel is:<br/>
+                        ⇒ <field name="elearning_id" attrs="{'required': [('use_website_helpdesk_slides', '=', True)]}" context="{'default_name': name}"/>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

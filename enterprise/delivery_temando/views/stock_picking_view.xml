@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="delivery_temando.stock_picking_temando" model="ir.ui.view">
+    <field name="name">stock.picking.form.delivery.temando</field>
+    <field name="model">stock.picking</field>
+    <field name="inherit_id" ref="delivery.view_picking_withcarrier_out_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//div[@name='tracking']" position='after'>
+            <field name="temando_carrier_name" readonly="1" attrs="{'invisible': [('temando_carrier_name','=',False)]}"/>
+            <field name="temando_delivery_method" readonly="1" attrs="{'invisible': [('temando_delivery_method','=',False)]}"/>
+            <button type='object' class="fa fa-arrow-right oe_link" name="action_print_temando_manifest" string="Get Manifest" attrs="{'invisible':['|', '|', ('carrier_tracking_ref', '=', False), ('delivery_type', '!=', 'temando'), ('state', '!=', 'done')]}"/>
+        </xpath>
+    </field>
+</record>
+
+</odoo>

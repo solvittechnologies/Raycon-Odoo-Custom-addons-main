@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- My Timesheets -->
+    <record id="hr_timesheet_sheet.menu_act_hr_timesheet_sheet_my_timesheets" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+    </record>
+    <!-- To Approve -->
+    <record id="hr_timesheet_sheet.menu_hr_to_approve" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+    </record>
+    <!-- Timesheets to Approve -->
+    <record id="hr_timesheet_sheet.menu_act_hr_timesheet_sheet_form" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+    </record>
+    <!-- Weekly -->
+    <record id="hr_timesheet_sheet.menu_act_hr_timesheet_sheet_form_my_current" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+    </record>
+</odoo>

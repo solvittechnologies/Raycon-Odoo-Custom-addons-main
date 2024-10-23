@@ -1,0 +1,1055 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * crm_voip
+# 
+# Translators:
+# Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2017
+# Martin Trigaux, 2017
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2017
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:36+0000\n"
+"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2017\n"
+"Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#. module: crm_voip
+#: model:mail.template,body_html:crm_voip.email_template_call_interrupted
+msgid ""
+"\n"
+"<p>Hello ${object.partner_id.name},</p>\n"
+"\n"
+"<p>It seems that we have been interrupted during our conversation about\n"
+"    '${object.name}'. Can you please give me your availability in order to schedule \n"
+"    a new call? </p>\n"
+"<p>Best regards,</p>"
+msgstr ""
+
+#. module: crm_voip
+#: model:mail.template,body_html:crm_voip.email_template_call_client_notAvailable
+msgid ""
+"\n"
+"<p>Hello ${object.partner_id.name},</p>\n"
+"<p>I just tried to call you concerning the subject '${object.name}'. Can you\n"
+"    please give me your availability in order to schedule a new call?</p>\n"
+"<p>Best regards,</p>"
+msgstr ""
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_log_wizard.py:87
+#, python-format
+msgid " about %s"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_nbr
+msgid "# of Cases"
+msgstr "# z prípadov"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid ""
+"<span attrs=\"{'invisible': [('show_duration', '=', False)], "
+"'required':[('show_duration', '=',True)]}\">min(s)</span>"
+msgstr ""
+"<span attrs=\"{'invisible': [('show_duration', '=', False)], "
+"'required':[('show_duration', '=',True)]}\">min</span>"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_voip_view
+msgid "<span class=\"o_stat_text\">Log a Call</span>"
+msgstr "<span class=\"o_stat_text\">Zaznamenať telefonát</span>"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_voip_view
+msgid "<span class=\"o_stat_text\">Schedule Call</span>"
+msgstr "<span class=\"o_stat_text\">Naplánovať telefonát</span>"
+
+#. module: crm_voip
+#: model:ir.actions.server,name:crm_voip.action_create_call_in_queue
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_call_kanban_view
+msgid "Add to Call Queue"
+msgstr "Pridať do poradia telefonátu"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_user_id
+msgid "Assign To"
+msgstr "Priradiť k"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:111
+#, python-format
+msgid "Backspace"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.filters,name:crm_voip.filter_crm_phonecall_sales_team
+msgid "By Sales Team"
+msgstr "od predajného tímu"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:404
+#: code:addons/crm_voip/static/src/js/crm_voip.js:415
+#: code:addons/crm_voip/static/src/js/crm_voip.js:432
+#: code:addons/crm_voip/static/src/js/crm_voip.js:440
+#: code:addons/crm_voip/static/src/js/crm_voip.js:457
+#: code:addons/crm_voip/static/src/js/crm_voip.js:563
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:83
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:124
+#, python-format
+msgid "Call"
+msgstr "Volať"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_log_wizard.py:82
+#: code:addons/crm_voip/wizard/crm_phonecall_log_wizard.py:85
+#, python-format
+msgid "Call %s min(s)"
+msgstr ""
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:89
+#, python-format
+msgid "Call All"
+msgstr "Telefonovať všetkým"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:90
+#, python-format
+msgid "Call Next One"
+msgstr "Telefonovať následujúce"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_name
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Call Summary"
+msgstr "Súhrn hovoru"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_name
+msgid "Call summary"
+msgstr "Súhrn hovoru"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:867
+#, python-format
+msgid "Calling "
+msgstr "Telefonovanie"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:386
+#: code:addons/crm_voip/static/src/js/crm_voip.js:398
+#: code:addons/crm_voip/static/src/js/crm_voip.js:567
+#, python-format
+msgid "Calling..."
+msgstr "Telefonovanie..."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Calls Date by Month"
+msgstr "Dátumy telefonátov podľa mesiaca"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:48
+#, python-format
+msgid "Cancel the call"
+msgstr "Zrušiť telefonovanie"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+msgid "Cancelled"
+msgstr "Zrušené"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Choose a date..."
+msgstr "Zvoľte dátum..."
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.crm_phonecall_view
+msgid "Click to log the summary of a phone call."
+msgstr "Kliknite pre zaznamenanie zhrnutia telefonátu."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:463
+#, python-format
+msgid "Click to unblock"
+msgstr "Kliknite pre odblokovanie."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:74
+#, python-format
+msgid "Close the Panel"
+msgstr "Zatvoriť panel"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_company_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_company_id
+msgid "Company"
+msgstr "Spoločnosť"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_partner_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_partner_id
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_create_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_create_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_create_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_create_uid
+msgid "Created by"
+msgstr "Created by "
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_create_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_create_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_create_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_create_date
+msgid "Created on"
+msgstr "Created on "
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Creation"
+msgstr "Vytvorené"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Creation Date"
+msgstr "Dátum vytvorenia"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Creation Month"
+msgstr "Mesiac vytvorenia"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_custom_duration
+msgid "Custom Duration"
+msgstr ""
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:103
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+#, python-format
+msgid "Customer"
+msgstr "Zákazník"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:422
+#, python-format
+msgid "Customer unavailable"
+msgstr "Zákaník nedostupný"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_date
+msgid "Date"
+msgstr "Dátum"
+
+#. module: crm_voip
+#: selection:sale.config.settings,mode:0
+msgid "Demo"
+msgstr "Demo"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_description
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_description
+msgid "Description"
+msgstr "Popis"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Description..."
+msgstr "Popis..."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:153
+#, python-format
+msgid "Description:"
+msgstr "Popis:"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Discard"
+msgstr "Vyradiť"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:5
+#, python-format
+msgid "Display Dialing Panel"
+msgstr "Zobraziť volací panel"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:68
+#, python-format
+msgid "Display Keypad"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_display_name
+msgid "Display Name"
+msgstr "Názov obrazovky "
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "Don't Reschedule"
+msgstr "Nepreplánovať"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_duration
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_duration
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_duration
+msgid "Duration"
+msgstr "Trvanie"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_duration
+msgid "Duration in minutes and seconds."
+msgstr "Trvanie v minútach a sekundách."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Edit the log"
+msgstr "Upraviť zápis"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_email
+msgid "Email"
+msgstr "Email"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:110
+#, python-format
+msgid "Enter the number..."
+msgstr ""
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:165
+#, python-format
+msgid "Expected Revenue:"
+msgstr "Očakávaný príjem:"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Extended Filters..."
+msgstr "Rozšírené filtre..."
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.action_report_crm_phonecall
+msgid ""
+"From this report, you can analyse the performance of your sales team, based "
+"on their phone calls. You can group or filter the information according to "
+"several criteria and drill down the information, by adding more groups in "
+"the report."
+msgstr ""
+"Z tohoto výkazu môžete analyzovať výkon vašich predajných tímov, na základe "
+"ich telefonických hovorov. Môźete zoskupiť alebo filtrovať informácie "
+"zodpovedajúc viaerým kritériam a podrobovať výcviku pridávanim viacerých "
+"skupín do výkazu."
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_sequence
+msgid "Gives the sequence order when displaying a list of Phonecalls."
+msgstr "Dáva sekvenčné poradie pri zobrazovani zoznamu Telefónnych hovorov."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Group By"
+msgstr "Zoskupiť podľa..."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:94
+#, python-format
+msgid "Hang Up"
+msgstr "Zložiť"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Held"
+msgstr "Podržať"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_id
+msgid "ID"
+msgstr "ID"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "In 1 Week"
+msgstr "O 1 týždeň"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "In 15 Day"
+msgstr "O 15 dní"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "In 2 Months"
+msgstr "O 2 mesiace"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_in_automatic_mode
+msgid "In Automatic Mode"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_in_queue
+msgid "In Call Queue"
+msgstr "V poradí telefonátu"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.crm_phonecall_view
+msgid ""
+"In order to follow up on the call, you can trigger a request for\n"
+"          another call, a meeting or an opportunity."
+msgstr ""
+"S cieľom nadviazať na hovoru môžete spustiť požiadavku na\n"
+"ďalší telefonát, stretnutie alebo príležitosť."
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_lead_in_call_center_queue
+msgid "Is in the Call Queue"
+msgstr "Je v poradí telefonátu"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall___last_update
+msgid "Last Modified on"
+msgstr "Posledná modifikácia"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_write_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_write_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_write_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_write_uid
+msgid "Last Updated by"
+msgstr "Naposledy upravoval"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_write_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_write_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_write_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_write_date
+msgid "Last Updated on"
+msgstr "Naposledy upravované"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_lead
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_opportunity_id
+msgid "Lead/Opportunity"
+msgstr "Iniciatíva/Príležitosť"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_name
+msgid "Lead/Opportunity name"
+msgstr ""
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/models/crm_lead.py:86
+#: code:addons/crm_voip/static/src/js/crm_voip.js:500
+#, python-format
+msgid "Log a call"
+msgstr "Zápis telefonátu"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_partner_mobile
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_partner_mobile
+msgid "Mobile"
+msgstr "Mobil"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_sale_config_settings_mode
+msgid "Mode"
+msgstr "Režim"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Month"
+msgstr "Mesiac"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Month of call"
+msgstr "Mesiac telefonátu"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "My Phonecalls"
+msgstr "Moje telefonáty"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "My Sales Team(s)"
+msgstr "Môj predajný tím(y)"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "My Team"
+msgstr "Môj tím"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_new_title_action
+msgid "Next Action"
+msgstr "Ďalšie akcie"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_new_date_action
+msgid "Next Action Date"
+msgstr "Dátum ďalšej akcie"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:159
+#, python-format
+msgid "Next Action:"
+msgstr "Ďalšia akcia:"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_next_activity_id
+msgid "Next Activity"
+msgstr "Ďalšia aktivita"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:50
+#, python-format
+msgid "No opportunity linked"
+msgstr "Žiadna prepojená príležitosť"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Not Held"
+msgstr "Nepodržané"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.crm_phonecall_view
+msgid ""
+"Odoo allows you to log inbound calls on the fly to track the\n"
+"          history of the communication with a customer or to inform another\n"
+"          team member."
+msgstr ""
+"Odoo umožňuje prihlásiť prichádzajúce hovory za letu pre sledovanie\n"
+"histórie komunikácie so zákazníkom alebo informovania iného\n"
+"člena tímu.,"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:104
+#, python-format
+msgid "Opportunity"
+msgstr "Príležitosť"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_sale_config_settings_pbx_ip
+msgid "PBX Server IP"
+msgstr "PBX Server IP"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_res_partner
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_partner_id
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Partner"
+msgstr "Partner"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_id
+msgid "Partner id"
+msgstr "Partnerove id"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_image_small
+msgid "Partner image"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_phone
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_partner_phone
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_partner_phone
+msgid "Phone"
+msgstr "Telefón"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_calendar_view
+msgid "Phone Calls"
+msgstr "Telefónne hovory"
+
+#. module: crm_voip
+#: model:ir.filters,name:crm_voip.filter_crm_phonecall_phone_call_to_do
+msgid "Phone Calls To Do"
+msgstr "Telefonické hovory na vykonanie"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall_report
+msgid "Phone Calls by user and team"
+msgstr "Telefonické hovory podľa používateľa a tímu"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_graph
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_pivot
+msgid "Phone calls"
+msgstr "Telefónne hovory"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Phone calls that are assigned to one of the sale teams I manage"
+msgstr ""
+"Telefonické hovory ktoré sú pridelené jednému z predajných tímov ktoré "
+"spravujem"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Phone calls which are in closed state"
+msgstr "Telefonické hovory ktoré sú v zavretom stave"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid ""
+"Phone calls which are in to do state and Phone calls which receive no answer"
+msgstr ""
+"Telefonické hovory ktoré sú v stave na vykonanie a Telefonické hovory ktoré "
+"neboli zodpovedané"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Phone calls which receive no answer"
+msgstr "Telefonické hovory ktoré neboli zodpovedané"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,name:crm_voip.crm_phonecall_view
+#: model:ir.ui.menu,name:crm_voip.crm_phonecall_report_menu
+#: model:ir.ui.menu,name:crm_voip.menu_crm_phonecall_view
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_tree_view
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Phonecalls"
+msgstr "Telefónne hovory"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,name:crm_voip.action_report_crm_phonecall
+msgid "Phonecalls Analysis"
+msgstr "Analýza telefonických hovorov"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+msgid "Planned Date"
+msgstr "Plánovaný dátum"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_planned_revenue
+msgid "Planned Revenue"
+msgstr "Plánované príjmy"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:535
+#, python-format
+msgid "Please check if a phone number is given for the current phonecall"
+msgstr ""
+"Skontrolujte, či je uvedené telefónne číslo pre aktuálny telefonický hovor"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_probability
+msgid "Probability"
+msgstr "Pravdepodobnosť"
+
+#. module: crm_voip
+#: selection:sale.config.settings,mode:0
+msgid "Production"
+msgstr "Výroba"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:63
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:71
+#, python-format
+msgid "Refresh the Panel"
+msgstr "Obnoviť panel"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_call_kanban_view
+msgid "Remove from Call Queue"
+msgstr "Odstrániť z poradia telefonátov"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:45
+#, python-format
+msgid "Remove from the queue"
+msgstr "Odstrániť z poradia"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:99
+#, python-format
+msgid "Reschedule Call"
+msgstr "Preplánovať telefonát"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_user_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_user_id
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Responsible"
+msgstr "Zodpovedný"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_team_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_team_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_team_id
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Sales Team"
+msgstr "Predajný tým"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_report_team_id
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_team_id
+msgid "Sales team to which Case belongs to."
+msgstr "Predajný tím ktorému prípad patrí."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Salesperson"
+msgstr "Predajca"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Save"
+msgstr "Uložiť"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Save and Open the Opportunity"
+msgstr "Uložiť a otvoriť príležitosť"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_reschedule_option
+msgid "Schedule A New Call"
+msgstr "Naplánovať nový telefonát"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+msgid "Schedule Call"
+msgstr "Plán hovorov"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_tree_view
+msgid "Schedule Other Call"
+msgstr "Naplánovať ostatné hovory"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+msgid "Schedule a Call"
+msgstr "Naplánovať telefonát"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:139
+#, python-format
+msgid "Scheduled Date:"
+msgstr "Naplánovaný dátum:"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Search"
+msgstr "Hľadať"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:64
+#, python-format
+msgid "Search Phone Calls..."
+msgstr "Vyhľadať telefonické hovory..."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Search Phonecalls"
+msgstr "Vyhľadávanie telefonických hovorov"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:100
+#, python-format
+msgid "Send Email"
+msgstr "Poslať email"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_sequence
+msgid "Sequence"
+msgstr "Sekvencia"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_show_duration
+msgid "Show Duration"
+msgstr ""
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_reschedule_date
+msgid "Specific Date"
+msgstr "Špecifický dátum"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:866
+#, python-format
+msgid "Start Calling"
+msgstr "Začať telefonovanie"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_start_time
+msgid "Start time"
+msgstr "Čas začatia"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_state
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_state
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Status"
+msgstr "Stav"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:93
+#, python-format
+msgid "Stop Automatic Call"
+msgstr "Zastaviť automatický telefonát"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_sale_config_settings_pbx_ip
+msgid "The IP adress of your PBX Server"
+msgstr "IP adresa vášho PBX servera"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_sale_config_settings_wsServer
+msgid "The URL of your WebSocket"
+msgstr "URL vášho WebSocket"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:422
+#, python-format
+msgid "The customer is temporary unavailable. Please try later."
+msgstr "Záazník je dočasne nedostupný. Skúste neskôr prosím."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:535
+#, python-format
+msgid "The phonecall has no number"
+msgstr "Telefonický hovor nemá žiadne číslo"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_state
+msgid ""
+"The status is set to To Do, when a case is created.\n"
+"When the call is over, the status is set to Held.\n"
+"If the call is not applicable anymore, the status can be set to Cancelled."
+msgstr ""
+"Stav je nastavený na Na vykonanie, keď je vytvorený prípad.\n"
+"Keď je telefonát ukončený, stav je nastavený na Podržané.\n"
+"Ak je telefonát už neplatný, stav môže byť nastavený na Zrušené"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "To Do"
+msgstr "Na spravenie"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_tree_view
+msgid "To Opportunity"
+msgstr "Na príležitosť"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Todo"
+msgstr "Zostáva"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:86
+#, python-format
+msgid "Toggle Dropdown"
+msgstr "Prepnúť rozbaľovanie"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "Tomorrow"
+msgstr "Zajtra"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:95
+#, python-format
+msgid "Transfer"
+msgstr "Prevod"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_transfer_choice
+msgid "Transfer choice"
+msgstr "Voľba prenosu"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Unassigned"
+msgstr "Nepriradené"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:31
+#, python-format
+msgid "Unknown"
+msgstr "Neznáme"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_voip_config
+msgid "VOIP Configuration"
+msgstr "VoIP konfigurácia"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_transfer_wizard.py:34
+#, python-format
+msgid "Warning"
+msgstr "Varovanie"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_sale_config_settings_wsServer
+msgid "WebSocket"
+msgstr "WebSocket"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_transfer_wizard.py:35
+#, python-format
+msgid ""
+"Wrong configuration for the call. There is no external phone number "
+"configured"
+msgstr ""
+"Chybná konfigurácia pre telefonát. Nie je nakonfigurované externé telefónne "
+"číslo"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:166
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+#, python-format
+msgid "at"
+msgstr "na"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall
+msgid "crm.phonecall"
+msgstr "crm.phonecall"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall_log_wizard
+msgid "crm.phonecall.log.wizard"
+msgstr "crm.phonecall.log.wizard"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall_transfer_wizard
+msgid "crm.phonecall.transfer.wizard"
+msgstr "crm.phonecall.transfer.wizard"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_schedule_phonecall
+msgid "crm.schedule_phonecall"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "e.g. Discuss proposal"
+msgstr "napr. Prediskutovať návrh"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_opportunity_id
+msgid "opportunity"
+msgstr ""
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "or"
+msgstr "alebo"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_sale_config_settings
+msgid "sale.config.settings"
+msgstr "sale.config.settings"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "transfer Option"
+msgstr "Možnosť prenosu"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_transfer_number
+msgid "transfer To"
+msgstr "previesť Na"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "transfer the Call"
+msgstr "preniesť Telefonát"
+
+#. module: crm_voip
+#: selection:crm.phonecall.transfer.wizard,transfer_choice:0
+msgid "transfer to another External Phone"
+msgstr "preniesť na iný Externý telefonát"
+
+#. module: crm_voip
+#: selection:crm.phonecall.transfer.wizard,transfer_choice:0
+msgid "transfer to your external phone"
+msgstr "preniesť na váš externý telefonát"

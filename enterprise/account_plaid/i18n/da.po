@@ -1,0 +1,44 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_plaid
+# 
+# Translators:
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
+# lhmflexerp <lhm@flexerp.dk>, 2017
+# Joe Hansen <joedalton2@yahoo.dk>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-03 13:22+0000\n"
+"PO-Revision-Date: 2016-09-07 13:35+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2019\n"
+"Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_plaid
+#: code:addons/account_plaid/models/plaid.py:42
+#, python-format
+msgid "Get %s status code for call to %s. Content message: %s"
+msgstr "Få %s-statuskode for kald til %s. Indholdsbesked: %s"
+
+#. module: account_plaid
+#: model:ir.model,name:account_plaid.model_account_online_journal
+msgid "Interface for online account journal"
+msgstr ""
+
+#. module: account_plaid
+#: model:ir.model,name:account_plaid.model_account_online_provider
+msgid "Provider for online account synchronization"
+msgstr "Leverandør af online konto synkronisering"
+
+#. module: account_plaid
+#: code:addons/account_plaid/models/plaid.py:68
+#, python-format
+msgid "Timeout: the server did not reply within 30s"
+msgstr "Timeout: serveren svarede ikke inden for 30s"

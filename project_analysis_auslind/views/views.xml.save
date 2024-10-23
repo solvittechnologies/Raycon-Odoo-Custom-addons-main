@@ -1,0 +1,117 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="project_analysis_auslind_view">
+      <field name="name">Project Analysis FormView</field>
+      <field name="model">fastra.project.analysis</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field string="Customer" name="partner_id" widget="res_partner_many2one" context="{'search_default_customer':1, 'show_address': 1, 'default_is_company': True, 'show_vat': True}" options="{&quot;always_reload&quot;: True, &quot;no_quick_create&quot;: True}" domain="[('customer', '=', True)]" required="1" />
+                <field name="project" />
+                <field name="po_number" />
+                <field name="amount" />
+              </group>
+              <group>
+                <field name="date_invoice" options="{'datepicker': {'warn_future': true}}" />
+                <field name="user_id" groups="base.group_user" />
+                <label for="currency_id" groups="base.group_multi_currency" />
+                <div groups="base.group_multi_currency">
+                  <field name="currency_id" options="{'no_create': True, 'no_open': True}" class="oe_inline" />
+                </div>
+              </group>
+            </group>
+
+            <notebook>
+              <page string="Project Analysis">
+                <field name="invoice_line_ids">
+                  <tree string="Analysis lines" editable="bottom">
+                    <field name="job_id" />
+                    <field name="name" />
+                    <field name="account_analytic_id" />
+                    <field name="account_id" />
+                    <field name="amount" />
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- <record id="view_project_list" model="ir.ui.view">
+      <field name="name">Project Analysis Tree</field>
+      <field name="model">fastra.project.analysis</field>
+      <field name="arch" type="xml">
+        <tree string="Project Analysis">
+          <field name="project" />
+          <field name="partner_id" />
+          <field name="user_id" />
+          <field name="amount" />
+        </tree>
+      </field>
+    </record> -->
+
+
+    <record id="action_project_analysis_form" model="ir.actions.act_window">
+      <field name="name">Project Analysis</field>
+      <field name="res_model">fastra.project.analysis</field>
+      <!-- <field name="view_type">form</field> -->
+      <field name="view_mode">tree,form</field>
+      <!-- <field name="view_id" ref="view_project_list" /> -->
+    </record>
+
+
+    <menuitem name="Project Analysis" id="menu_action_project_form" parent="account.menu_finance" action="action_project_analysis_form" sequence="60" />
+
+
+    <!--	<field name="context">{'type':'out_invoice'}</field>
+	<field name="search_view_id" ref="view_account_invoice_filter"/>-->
+
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="project_analysis_auslind.action_window">
+      <field name="name">project_analysis_auslind window</field>
+      <field name="res_model">project_analysis_auslind.project_analysis_auslind</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="project_analysis_auslind.action_server">
+      <field name="name">project_analysis_auslind server</field>
+      <field name="model_id" ref="model_project_analysis_auslind_project_analysis_auslind"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="project_analysis_auslind" id="project_analysis_auslind.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="project_analysis_auslind.menu_1" parent="project_analysis_auslind.menu_root"/>
+    <menuitem name="Menu 2" id="project_analysis_auslind.menu_2" parent="project_analysis_auslind.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="project_analysis_auslind.menu_1_list" parent="project_analysis_auslind.menu_1"
+              action="project_analysis_auslind.action_window"/>
+    <menuitem name="Server to list" id="project_analysis_auslind" parent="project_analysis_auslind.menu_2"
+              action="project_analysis_auslind.action_server"/>
+    -->
+  </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fastra_location_user_fastra_location_user,fastra_location_user.fastra_location_user,model_fastra_location_user_fastra_location_user,,1,0,0,0

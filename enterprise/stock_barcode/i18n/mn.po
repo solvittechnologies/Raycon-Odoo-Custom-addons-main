@@ -1,0 +1,944 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * stock_barcode
+# 
+# Translators:
+# Batzul B <batzul.active@gmail.com>, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# nasaaskii <nasaaskii@gmail.com>, 2017
+# Chinzorita <chinzorig.o@asterisk-tech.mn>, 2017
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017
+# BATKHUYAG GANBOLD <gbatkhuyag@gmail.com>, 2017
+# Martin Trigaux, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Martin Trigaux, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "(make sure your scanner uses carriage return suffix)"
+msgstr ""
+"(таны скайнер тээвэрлэлтийн буцаах дагаврыг ашигладаг эсэхийг нягтлана уу)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+").\n"
+"                            Then, print it via the <i>Print</i> menu and stick it in a visible and convenient place."
+msgstr ""
+").\n"
+"                            Дараа нь <i>Хэвлэх</i> цэсээр орж хэвлээд тохиромжтой ил газар наагаарай."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Actions barcodes:</strong> use the barcodes from"
+msgstr "<strong>Үйлдлийн баркодууд:</strong>дараах баркодыг ашиглана уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>EAN-13 barcodes:</strong> used by most retail products, they cannot be made\n"
+"                            up without proper authorization: you must pay the International\n"
+"                            Article Numbering Association a fee in exchange for an EAN code\n"
+"                            sequence (that's why no two products in a store will ever have the\n"
+"                            same EAN code). Still, as Odoo supports any string as a barcode, so\n"
+"                            you can always define your own barcode format for internal use."
+msgstr ""
+"<strong>EAN-13 баркод:</strong> ихэнхи жижиглэн худалдааны бараанд ашигладаг.\n"
+"Зохих зөвшөөрөлгүйгээр зохиох боломжгүй: та EAN кодын дараалал \n"
+"авахын тулд Олон улсын Дугаарлах Холбоонд хураамж төлөх ёстой \n"
+"(ингэснээр дэлгүүрийн бараануудын EAN код хэзээ ч давхцахгүй). \n"
+"Гэхдээ Odoo ямар ч өгөгдлийг баркод болгох чадвартай болохоор та \n"
+"хэдийд ч өөрийн дотоод хэрэгцээнд зориулж өөрийн гэсэн баркод \n"
+"форматыг тодорхойлох боломжтой."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Enjoy your Inventory management!</strong>"
+msgstr "<strong>Агуулахын менежментээ амжилттай хэрэгжүүлээрэй!</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>From the Barcode application:</strong>"
+msgstr "<strong>Баркодын модулиас:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Good location nomenclature:</strong> <i>warehouse short name - location short name - (Corridor X - Shelf Y - Height Z) </i><br/>\n"
+"                                Example: A032-025-133 (Note that you can use any string in the barcode field)"
+msgstr ""
+"<strong>Сайн байршлын нэршил:</strong><i>агуулахын товч нэр - байршлын товч нэр - (Эгнээ Х - Тавиур Y - Өндөр Z) </i><br/>\n"
+"Жишээ: A032-025-133 (Баркодын талбарт ямар ч өгөгдөл оруулах боломжтой.)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Lots Numbers</strong> can be encoded from incoming shipments, "
+"internal moves and outgoing deliveries:"
+msgstr ""
+"<strong>Цувралын дугаарыг</strong> ирж буй тээвэрлэлт, дотоод хөдөлгөөн, "
+"гарч буй хүргэлтүүдээс кодчилох боломжтой:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Product variants:</strong> be careful to add barcodes directly on "
+"the variant, and not the template product (otherwise you won't be able to "
+"differentiate them)."
+msgstr ""
+"<strong>Барааны хувилбар:</strong> зураасан кодыг үлгэр бараа биш шууд "
+"хувилбар дээр нь оруулж буй эсэхээ хянамгай шалгаарай (үгүй бол хооронд нь "
+"ялгах боломжгүй болно)."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan barcodes on picking lists:</strong> suitable if a significant "
+"percentage of your products do not have a barcode on them."
+msgstr ""
+"<strong>Бэлтгэх жагсаалт дээрх зураасан кодыг уншуулах:</strong> хэрэв таны "
+"барааны ихэнхи хувь нь дээрээ зураасан кодгүй бол тохиромжтой."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan barcodes on products:</strong> suitable if all your products "
+"already have a barcode"
+msgstr ""
+"<strong>Бараанууд дээрх зураасан кодыг уншуулах:</strong> хэрэв таны бүх "
+"бараанууд зураасан кодтой бол тохиромжтой"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan lots or serial numbers:</strong> this is more time consuming, "
+"but allows for a full traceability of the parts. It's usually used by "
+"manufacturers of sensitive products."
+msgstr ""
+"<strong>Цувралын дугаар уншуулах:</strong> энэ нь илүү цаг үрдэг ч, салангид"
+" хэсгүүдийг мөшгих бүрэн боломжийг олгодог. Үүнийг ихэвчлэн мэдрэмтгий бараа"
+" үйлдвэрлэгчид ашигладаг."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Test your configuration:</strong>"
+msgstr "<strong>Тохиргоог турших:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>The next step is to assign barcodes to your products,</strong> by "
+"setting the right value in the Barcode field of the Product form."
+msgstr ""
+"<strong>Дараагийн алхам бол бараануудад зураасан код оноох юм.</strong> "
+"Ингэхийн тулд барааны форм дээрх зураасан кодын талбарт зөв утгыг "
+"тохируулна."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>To attribute a barcode to a Location,</strong> simply enter one on "
+"the Location form (accessible from your"
+msgstr ""
+"<strong>Байршилд зураасан код оноохын тулд,</strong> байршлын форм дээр "
+"зураасан кодыг оруулна уу (энд бий:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>To make an Internal Transfer:</strong>"
+msgstr "<strong>Дотоод хөдөлгөөн хийхийн тулд:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>To process Delivery Orders from a computer or mobile "
+"device:</strong>"
+msgstr ""
+"<strong>Хүргэлтийн захиалгыг компьютер эсвэл гар утаснаас боловсруулахын "
+"тулд:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>To process printed Delivery Orders:</strong>"
+msgstr ""
+"<strong>Хэвлэсэн хүргэлтийн захиалгуудыг боловсруулахын тулд:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>We've tested a few devices for you:</strong>"
+msgstr "<strong>Бид танд зориулж хэдэн төхөөрөмжийг туршиж үзсэн:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>What is the difference between Lots and Serial Numbers?</strong>"
+msgstr "<strong>Сериал ба цувралын дугаар хоорондын ялгаа юу вэ?</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Automatic carriage return"
+msgstr "Автомат тээвэрлэлтийн буцаалт"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Automatic carriage return: <span class=\"label\">OFF</span>"
+msgstr "Автомат тээвэрлэлтийн буцаалт: <span class=\"label\">идэвхигүй</span>"
+
+#. module: stock_barcode
+#: model:ir.actions.client,name:stock_barcode.stock_barcode_action_main_menu
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory_line_product_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_pack_operation_product_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_scrap_product_barcode
+#: model:ir.ui.menu,name:stock_barcode.stock_barcode_menu
+msgid "Barcode"
+msgstr "Зураасан код"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:8
+#, python-format
+msgid "Barcode Scanning"
+msgstr "Зураасан кодыг уншиж байна"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Before we start, you should choose your working process. There are three "
+"suitable approaches to work with barcodes:"
+msgstr ""
+"Эхлээд та ажлын явцыг сонгох ёстой. Зураасан кодтой ажиллах гурван төрлийн "
+"арга бий:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"But better yet is to transform this naming into a barcode that can be "
+"scanned easily and without error."
+msgstr ""
+"Гэхдээ энэ нэрийг хялбархан ба алдаагүй уншигдах боломжтой зураасан код руу "
+"хөрвүүлсэн нь илүү дээр."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"By default, Odoo has a 50 milliseconds delay between each successive scan "
+"(it helps avoid accidental double scanning). If you want to suppress this "
+"delay, you can configure your scanner to insert a carriage return symbol at "
+"the end of each barcode. This is usually the default configuration and can "
+"be explicitly configured by scanning a specific barcode in your scanner user"
+" manual ('CR suffix ON', 'Apply Enter for suffix', etc.)"
+msgstr ""
+"Анхны утгаараа Odoo амжилттай уншилт болгоны хооронд 50 миллисекунд хүлээдэг"
+" (энэ нь санамсаргүй давхар уншуулахаас сэргийлдэг). Хэрэв та үүнийг "
+"болиулахыг хүсвэл зураасан код бүрийн төгсгөлд тээвэрлэлт буцаалтын тэмдэг "
+"оруулж байхаар уншигчаа тохируулах боломжтой. Энэ нь ихэвчлэн анхны "
+"тохируулга байдаг бөгөөд уншигчийн хэрэглэгчийн гарын авлага дээрх "
+"зориулалтын зураасан кодыг уншуулж тохируулах боломжтой."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Choose a USB barcode scanner if you plan to scan products at the computer "
+"station"
+msgstr ""
+"Хэрэв та компьютер дээрээс барааг уншуулахаар болвол USB зураасан код уншигч"
+" сонгоно уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Click on 'Inventory'"
+msgstr "'Агуулах' дээр дарна уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_config_view_form_inherit_stock_barcode
+msgid "Configure Product Barcodes"
+msgstr "Барааны баркодыг тохируулах"
+
+#. module: stock_barcode
+#: model:web.planner,tooltip_planner:stock_barcode.planner_barcode
+msgid "Configure and learn how to use your Barcode Scanner."
+msgstr "Баркод уншигчийг тохируулж, хэрхэн ашиглахыг сурна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Congratulations, you're ready to go live!"
+msgstr "Баяр хүргэе, та эхлэхэд бэлэн боллоо!"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:42
+#, python-format
+msgid ""
+"Do you want to permanently remove this message ?\n"
+"                It won't appear anymore, so make sure you don't need the barcodes sheet or you have a copy."
+msgstr ""
+"Та энэ зурвасыг нэг мөсөн арилгахыг хүсч байна уу?\n"
+"Дахиж гарч ирэхгүй болохоор танд баркодын хуудас хэрэггүй эсэх эсвэл хуулбар нь байгаа эсэхийг нягтлана уу."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:45
+#, python-format
+msgid "Don't show this message again"
+msgstr "Энэ зурвасыг дахиж битгий харуул"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"For the Odoo Team,<br/>\n"
+"                        Fabien Pinckaers, Founder"
+msgstr ""
+"Odoo-н баг<br/>\n"
+"Fabien Pinckaers, үүсгэн байгуулагч"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Go for a wireless scanner if you want to scan products at different "
+"locations"
+msgstr "Хэрэв та өөр өөр газарт барааг уншуулах бол утасгүй уншигч сонгоорой"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Here, you have three options:"
+msgstr "Танд гурван сонголт байна:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If this product should be manage by lots, a window opens to help you scan "
+"the lots / serial numbers"
+msgstr ""
+"Хэрэв энэ барааг цувралаар удирдах шаардлагатай бол цуврал / сериал дугаарыг"
+" унших цонх нээгдэнэ"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If you have a static computer station, it's better to use 'pistols' formats "
+"as they are more practical to handle and aim."
+msgstr ""
+"Хэрэв танд суурин компьютер байгаа бол 'гар буу' шиг хэлбэртэй нь илүү "
+"барьцтай, онилоход хялбар байдаг."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If you use a mobile device, you may prefer a smaller format that is "
+"connected in Bluetooth."
+msgstr ""
+"Хэрэв та гар утсаар уншуулах бол Bluetooth-тэй холбогдсон жижиг форматыг "
+"сонгосон нь дээр."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "In Odoo, there are two types of internal transfers:"
+msgstr "Odoo-д хоёр төрлийн дотоод шилжилт бий:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "In the barcode interface, scan the products you want create a lot from"
+msgstr "Зураасан кодын интерфэйс дотор цуврал үүсгэх бараануудыг уншуулна уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Inateck BCST-20:"
+msgstr "Inateck BCST-20:"
+
+#. module: stock_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_inventory_line_product_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_pack_operation_product_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_scrap_product_barcode
+msgid "International Article Number used for product identification."
+msgstr "Барааны Олон улсын хувийн дугаар"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:20
+#: model:ir.model,name:stock_barcode.model_stock_inventory
+#, python-format
+msgid "Inventory"
+msgstr "Тооллого"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "Тооллогын мөр"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Keyboard layout"
+msgstr "Гарын байрлал"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:51
+#, python-format
+msgid "Leave it"
+msgstr "Орхих"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "List of Locations"
+msgstr "Байршлуудын жагсаалт"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Load all the Delivery Orders marked as \"To Do\", and open the first one."
+msgstr ""
+"\"Хийх\" гэж тэмдэглэсэн бүх хүргэлтийн захиалгуудыг ачааллаад эхнийхийг нь "
+"нээнэ үү."
+
+#. module: stock_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_pack_operation_location_processed
+msgid "Location processed"
+msgstr "Байрлалыг боловсруулсан"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Lot numbers are attributed to several identical products, so each time you "
+"scan a Lot Number, Odoo will add one on the product count."
+msgstr ""
+"Цувралын дугаарыг хэд хэдэн ижил төстэй бараануудад холбодог, иймээс таныг "
+"цувралын дугаар уншуулах тутамд Odoo барааны тоо дээр нэгийг нэмдэг."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Motorola CS3000:"
+msgstr "Motorola CS3000:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Motorola DS4208-SR:"
+msgstr "Motorola DS4208-SR:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Move to the next Delivery Order to process by clicking on the top-right "
+"right arrow or scanning the Pager-Next barcode action."
+msgstr ""
+"Дараагийн хүргэлтийн захиалга руу шилжихийн тулд баруун дээд буланд байрлах "
+"баруун тийш сум дээр дарна уу эсвэл Дараагийн зураасан код үйлдлийг уншуулна"
+" уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Naming the locations within your warehouse(s) is crucial for a good "
+"inventory management."
+msgstr ""
+"Сайн агуулахын менежменттэй байхын тулд агуулахын байрлалуудыг нэрлэх ёстой."
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.stock_inventory_action_new_inventory
+msgid "New Inventory"
+msgstr "Шинэ агуулах"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:69
+#, python-format
+msgid "No internal picking type. Please configure one in warehouse settings."
+msgstr "Дотоод бэлтгэх төрөл алга. Агуулахын тохиргоо дотор тохируулна уу."
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:54
+#, python-format
+msgid "No lot found"
+msgstr "Бараа олдсонгүй"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:23
+#, python-format
+msgid "No picking corresponding to barcode %(barcode)s"
+msgstr "%(barcode)s баркодтой бэлтгэх алга"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:21
+#, python-format
+msgid "No picking or location corresponding to barcode %(barcode)s"
+msgstr "%(barcode)s баркодтой бэлтгэх эсвэл байршил алга"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Note that Bluetooth connections are suitable for maximum 30 feet (10 meters)"
+" so you will have to scan products nearby the computer station."
+msgstr ""
+"Bluetooth холболт нь хамгийн ихдээ 10 метр зайнд ажиллах боломжтой гэдгийг "
+"анхаарна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Now that all the flows have been tested and configured, it's time to go into"
+" production. Do a few delivery orders as an example with your workers and "
+"train them on your favorite process."
+msgstr ""
+"Ингээд бүх урсгалыг шалгаж тохируулсаны эцэст ажилдаа орох цаг боллоо. Жишээ"
+" болгож ажилчдаараа хэдэн хүргэлтийн захиалга хийлгэж дурын процесс дээр "
+"гаршуулаарай."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Odoo supports most USB, Wireless and Bluetooth barcode scanners (as they all"
+" emulate a keyboard)."
+msgstr ""
+"Odoo ихэнхи USB, утасгүй, Bluetooth зураасан код уншигчийг дэмждэг (тэд бүгд"
+" гар шиг болохоор)."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"On the opposite, a Serial Number is unique, and represented by only one "
+"barcode, sticked on only one item. This means that Odoo won't accept "
+"scanning the same Serial Number more than once per operation."
+msgstr ""
+"Эсрэгээрээ, цувралын дугаар бол нэг л зүйл дээр наагддаг, зөвхөн нэг л "
+"зураасан кодоор илэрхийлэгддэг дахин давтагддаггүй дугаар юм. Иймээс ажилбар"
+" бүрт ижил цувралын дугаарыг нэгээс олон удаа уншуулахыг Odoo зөвшөөрдөггүй."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once it's fully working, give us some feedback: we love to hear from our "
+"customer. It would be great if you can send a photo of your warehouse to"
+msgstr ""
+"Бүрэн ажиллаад эхлэхээр нь бидэнд сэтгэгдэлээ илгээнэ үү: бид харилцагчдаа "
+"сонсох дуртай. Дараах руу агуулахынхаа гэрэл зургийг илгээвэл маш сайн:  "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you scan the next product or the validate barcode, the window will "
+"close automatically"
+msgstr "Таныг дараагийн барааг уншуулмагц цонх автоматаар хаагдах болно"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you scanned all products, scan the Validate barcode action to finish "
+"the operation."
+msgstr ""
+"Бүх барааг уншуулаад дуусмагц ажилбарыг дуусгахын тулд Зураасан кодыг "
+"баталгаажуулах үйлдлийг уншуулна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you start processing your delivery orders, scan the barcode on the top-"
+"right corner of the document to load the right record on the screen."
+msgstr ""
+"Хүргэлтийн захиалгыг боловсруулж эхлэхээрээ баримтын баруун дээд буланд "
+"байрлах зураасан кодыг уншуулж зөв бичлэгийг дэлгэц дээр гаргана."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:19
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_action_kanban
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_type_action_kanban
+#, python-format
+msgid "Operations"
+msgstr "Ажилбарууд"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_pack_operation
+msgid "Packing Operation"
+msgstr "Баглах ажилбар"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Pick up and scan each listed product."
+msgstr "Аваад жагсаасан бараа бүрийг уншуулна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Pick up and scan the products"
+msgstr "Аваад бараануудыг уншуулна уу"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_action_form
+msgid "Picking"
+msgstr "Бэлтгэх"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/picking_barcode_handler.js:39
+#, python-format
+msgid "Picking %s"
+msgstr "Бэлтгэх %s"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_web_planner
+msgid "Planner"
+msgstr "Төлөвлөгч"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Print delivery orders of the day by selecting all documents from the \"To "
+"Do\" list and print \"Picking Lists\" from the top menu."
+msgstr ""
+"Тухайн өдрийн хүргэлтийн захиалгуудыг хэвлэхийн тулд \"Хийх\" жагсаалтаас "
+"бүх баримтыг сонгоод дээд цэснээс \"Бэлтгэх жагсаалтууд\" -г хэвлэнэ үү."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Print this barcode"
+msgstr "Энэ баркодыг хэвлэх"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.product_action_barcodes
+#: model:ir.ui.view,arch_db:stock_barcode.product_view_list_barcodes
+msgid "Product Barcodes"
+msgstr "Барааны баркодууд"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:48
+#, python-format
+msgid "Remove it"
+msgstr "Хасах"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:18
+#, python-format
+msgid "Scan a document to open it."
+msgstr "Нээх баримтыг уншуулна уу."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:18
+#, python-format
+msgid "Scan a location to create a new transfer from this location."
+msgstr "Шинэ шилжүүлэг үүсгэх байршлыг уншуулна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan a lot barcode, type one manually or leave empty to generate one "
+"automatically"
+msgstr ""
+"Цувралын зураасан кодыг уншуулна уу, гараар бичнэ үү, эсвэл автоматаар "
+"гаргахын тулд хоосон үлдээнэ үү"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan all the products of the location (if you have 5 identical articles, "
+"scan it 5 times, or use the keyboard to set the quantity)"
+msgstr ""
+"Байрлалын бүх барааг уншуулна уу (хэрэв танд 5 ижил бараа байвал 5 удаа "
+"уншуулна уу, эсвэл тоог нь гараар оруулна уу)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan or enter each barcode by manually editing the products or"
+msgstr ""
+"Зураасан код бүрийг уншуулах эсвэл оруулахын тулд бараануудыг гараар засаж "
+"эсвэл "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the bracode here"
+msgstr "Баркодыг энд уншуулна уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the destination location"
+msgstr "Хүрэх байршлыг уншуулна уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the location's barcode"
+msgstr "Байршлын баркодыг уншуулна уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan the source location, starting from the home of the barcode application"
+msgstr "Эхлэл байршлыг баркод аппликэшны нүүрээс эхлээд уншуулна уу"
+
+#. module: stock_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory_scan_location_id
+msgid "Scanned Location"
+msgstr "Уншсан байршил"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Set barcodes at the initial import of your products or"
+msgstr "Баркодуудыг өөрийн барааны анхны импортын үед эсвэл"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:275
+#, python-format
+msgid ""
+"The barcode \"%(barcode)s\" doesn't correspond to a proper product, package "
+"or location."
+msgstr ""
+"\"%(barcode)s\" баркод нь ямар ч бараа, баглаа, байршилд тохирохгүй байна."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/picking_barcode_handler.js:39
+#, python-format
+msgid "The picking is %s and cannot be edited."
+msgstr "Бэлтгэх нь %s, өөрчлөх боломжгүй."
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_picking_type
+msgid "The picking type determines the picking view"
+msgstr "Бэлтгэх төрөл нь бэлтгэх баримтын харагдацыг тодорхойлно"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Then, scan the barcode of every product, or scan the barcode of the product "
+"on the picking line if the barcode on the product is not easily accessible, "
+"visible or is missing."
+msgstr ""
+"Дараа нь хэрвээ бараан дээрх баркодыг уншихад хүндрэлтэй, харагдахгүй, "
+"байхгүй тохиолдолд бараа болгоны эсвэл бэлтгэлийн мөр дээрх барааны баркодыг"
+" уншуулна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"There are two approaches to process delivery orders: you can either work on "
+"printed documents (and scan lines on the documents), or on a screen (and "
+"scan products directly)."
+msgstr ""
+"Хүргэлтийн захиалгыг боловсруулах хоёр арга бий: та хэвлэсэн баримт (баримт "
+"дээрх мөрүүдийг уншуулна) эсвэл дэлгэц дээр (барааг шууд уншуулна) ажиллах "
+"боломжтой."
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:55
+#, python-format
+msgid ""
+"There is no production lot for \"%(product)s\" corresponding to "
+"\"%(barcode)s\""
+msgstr ""
+"\"%(product)s\" бараа материалд \"%(barcode)s\" - тай харгалзах "
+"үйлдвэрлэлийн цуврал алга."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Those created by a worker (for example, through the internal transfer area "
+"of the dashboard)."
+msgstr ""
+"Ажилтны үүсгэсэн (жишээ нь, хяналтын самбарын дотоод шилжүүлгийн хэсгээр)."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Those initiated automatically by the system (for example, a quality control)"
+msgstr "Систем автоматаар эхлүүлсэн (жишээ нь, чанарын хяналт)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "To Do"
+msgstr "Хийх"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "To Receive"
+msgstr "Хүлээж авах"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_picking
+msgid "Transfer"
+msgstr "Шилжүүлэх"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "Transfers"
+msgstr "Шилжүүлэлт"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"USB only, omnidirectional (eliminates the need to align bar code and "
+"scanner), rugged design, about $250"
+msgstr ""
+"Зөвхөн USB, бүх чиглэлд уншина (зураасан кодыг уншигчтай нэг шугамд "
+"байрлуулах шаардлагагүй), тэсвэртэй загвар, ойролцоогоор $250"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "USB, Wireless or Bluetooth?"
+msgstr "USB, утасгүй эсвэл Bluetooth?"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Use our"
+msgstr "Манай"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Validate the Transfer to finish it"
+msgstr "Шилжүүлгийг дуусгахын тулд батална уу"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:10
+#, python-format
+msgid ""
+"We have created a few demo data and barcodes for you to explore the "
+"features. Print the"
+msgstr "Бид танд зориулж хэдэн жишээ өгөгдөл, зураасан код үүсгэсэн. Хэвлэх"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"When you've picked all the items, click the Validate button or scan the "
+"Validate barcode action to finish the Operation."
+msgstr ""
+"Бүх барааг бэлтгэсний дараа ажилбарыг дуусгахын тулд Батлах товчийг дарна уу"
+" эсвэл Зураасан кодыг батлах үйлдлийг уншуулна уу."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"When you've scanned all the items of the location, validate the inventory "
+"manually or by scanning the 'Validate' barcode ("
+msgstr ""
+"Байрлал дахь бүх барааг уншуулсаны дараа тооллогыг гараар эсвэл 'Батлах' "
+"зураасан кодыг уншуулж батлана уу"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Which scanner format?"
+msgstr "Аль скайнерын формат вэ?"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Wireless and USB, laser, rational choice, about $50"
+msgstr "Утасгүй ба USB, лазер, ухаалаг сонголт, ойролцоогоор $50"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:274
+#, python-format
+msgid "Wrong barcode"
+msgstr "Баркод буруу байна"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"You can set up a computer station or have the worker use a mobile device "
+"connected through wireless (phone, tablet or scanner with integrated "
+"screen)."
+msgstr ""
+"Та компьютер суурилуулах эсвэл утасгүй холболттой гар төхөөрөмжөөр (гар "
+"утас, таблет, нэгдсэн дэлгэцтэй уншигч) ажиллах боломжтой."
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:23
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:38
+#, python-format
+msgid "You have already scanned the serial number \"%(barcode)s\""
+msgstr "%(barcode)s сериал дугаарыг оруулсан байна."
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:22
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:37
+#, python-format
+msgid "You have entered this serial number already"
+msgstr "Энэ сериал дугаарыг Та оруулсан байна"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"You've decided to implement barcodes in your company? Great idea. This tool "
+"will help you setup the environment to make it work."
+msgstr ""
+"Та компани дээрээ зураасан код ашиглахаар шийдсэн үү? Сайхан санаа байна. "
+"Ажиллах орчныг тохируулахад тань энэ багаж туслана."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Your barcode scanner needs to be configured to use the same keyboard layout "
+"as your operating system. Otherwise, your scanner won't translate characters"
+" correctly (replacing a 'A' with a 'Q' for example). Most scanners are "
+"configured by scanning the appropriate barcode in the user's manual."
+msgstr ""
+"Таны зураасан код уншигч үйлдлийн системтэйгээ ижил гарын байрлал ашигладаг "
+"байхаар тохируулагдсан байх ёстой. Үгүй бол уншигч нь тэмдэгтүүдийг зөв "
+"орчуулж чадахгүй (жишээлбэл 'A' -г 'Q' -р орлуулна). Ихэнхи уншигчийг "
+"тохируулахдаа хэрэглэгчийн гарын авлага дээрх зохих зураасан кодыг "
+"уншуулдаг."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "available here"
+msgstr "энд боломжтой"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "compact wireless, about $250"
+msgstr "авсаархан, утасгүй, ойролцоогоор $250"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "fast scanning interface"
+msgstr "шуурхай скандах дэлгэц"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "feedback@mail.odoo.com"
+msgstr "feedback@mail.odoo.com"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
+#, python-format
+msgid "stock barcodes sheet"
+msgstr "үлдэгдлийн баркод хүснэгт"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_scrap
+msgid "stock.scrap"
+msgstr "stock.scrap"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "then scan it, the result should be <i>YES IT WORKS.</i>"
+msgstr ""
+"дараа нь уншуулна уу, үр дүн нь <i>ТИЙМ ЭЭ, АЖИЛЛАЖ БАЙНА.</i> байх ёстой."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "this document"
+msgstr "энэ баримт"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
+#, python-format
+msgid "to check out what this module can do !"
+msgstr "энэ модулийг мэдэж аваарай !"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"to launch actions in Odoo like Save, Next Item or Validate instead of using "
+"your mouse or keyboard."
+msgstr ""
+"-г хулгана эсвэл гар ашиглахын оронд Odoo дээр Хадгалах, Дараагийн зүйл, "
+"Батлах зэрэг үйлдлийг эхлүүлэхдээ ашиглана уу."

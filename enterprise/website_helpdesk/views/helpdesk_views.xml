@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Website Helpdesk Assets">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/website_helpdesk/static/src/js/website_helpdesk.menu.js"/>
+        </xpath>
+    </template>
+
+    <record id="website_menu_helpdesk" model="website.menu">
+        <field name="name">Help</field>
+        <field name="url" eval="'/helpdesk/'"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">50</field>
+    </record>
+
+    <record id="helpdesk_team_view_form_inherit_website_helpdesk" model="ir.ui.view">
+        <field name="name">helpdesk.team.form.inherit.website.slides.helpdesk</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+        <field name="model">helpdesk.team</field>
+        <field name="arch" type="xml">
+            <xpath expr="//h1[@id='name']" position="inside">
+                    <button class="oe_stat_button oe_inline pull-right" name="website_publish_button" type="object" icon="fa-globe" attrs="{'invisible': [('use_website_helpdesk_form', '=', False), ('use_website_helpdesk_forum', '=', False), ('use_website_helpdesk_slides', '=', False)]}" style="font-size:.5em">
+                        <field name="website_published" widget="website_button"/>
+                    </button>
+            </xpath>
+            <xpath expr="//div[@id='use_website_helpdesk_rating']" position="replace">
+                <hr class="mt8 mb8"/>
+                <div class="text-warning mb4" attrs="{'invisible': ['|', ('use_website_helpdesk_rating', '=', False), ('website_rating_url','!=',False)]}">
+                    Save this page to activate the feature
+                </div>
+                <div attrs="{'invisible': ['|', ('use_website_helpdesk_rating', '=', False), ('website_rating_url','=',False)]}">
+                    View this teams ratings this page:<br/>
+                    ⇒ <field name="website_rating_url" readonly="1" class="oe_inline" widget="url"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

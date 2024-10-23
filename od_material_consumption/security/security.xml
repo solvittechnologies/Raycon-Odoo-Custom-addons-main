@@ -1,0 +1,22 @@
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!--<odoo>-->
+<!--  <data>-->
+
+<!--      <record id="group_pr_st" model="res.group">-->
+<!--          <field name="name ">PR Store Keeper</field>-->
+<!--      </record>-->
+
+<!--      <record id="group_pr_qs" model="res.group">-->
+<!--          <field name="name ">PR QS</field>-->
+<!--      </record>-->
+
+<!--      <record id="group_pr_pm" model="res.group">-->
+<!--          <field name="name ">PR Project Manager</field>-->
+<!--      </record>-->
+
+<!--      <record id="group_pr_pq" model="res.group">-->
+<!--          <field name="name ">PR Procurement Officer</field>-->
+<!--      </record>-->
+
+<!--  </data>-->
+<!--</odoo>-->

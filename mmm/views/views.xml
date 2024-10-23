@@ -1,0 +1,121 @@
+<odoo>
+  <data>
+   
+    <record model="ir.actions.act_window" id="material_request_form">
+      <field name="name">Material Request</field>
+      <field name="res_model">material.request</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+              Add a new Material Request
+          </p>
+          <p>
+              Manage What goes in and out of your Inventory
+          </p>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="material_request_form_1">
+      <field name="name">Material Request</field>
+      <field name="model">material.request</field>
+      <field name="arch" type="xml">
+          <tree>
+
+              <field name="name" string='Release Name'/>
+              <field name='date' string="Date Requested"/>
+
+          </tree>
+      </field>
+  </record>
+
+
+  <record model="ir.ui.view" id="material_request_form_2">
+    <field name="name">Material Request Form</field>
+    <field name="model">material.request</field>
+    <field name="arch" type="xml">
+        <form string="Idea form">
+            <header>
+                <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="finalize" string="Confirm"  attrs="{'invisible':[('state','!=', 'Approve')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="cancel" string="Cancel" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <field name="state" widget="statusbar" nolabel="1"/>
+            </header>
+            <sheet>
+                <group colspan="4">
+                    <group colspan="2" col="4">
+
+                        <separator string="Request Data" colspan="4"/>
+
+                        <field name="name" string="Store Keeper"/>
+                        <field name="partner" string="Requested partner" colspan="2"/>
+                        <field name="source_location" string="Location" domain="[('usage', '=', 'internal')]"/>
+                        <field name="destination" string="Direction"  domain="[('usage', '=', 'internal')]"/>
+                        <field name="shipping_policy" string="Shipping Policy"/>
+                        <field name="date" string="Date"/>
+                        <field name="date_release" string="Expected Date"/>
+
+                    </group>
+                    <separator string="Request Items" colspan="4"/>
+                    <notebook colspan="4">
+                        <page string="request_line">
+
+                            <field
+                                    name="request_line"
+                                    nolabel="1"
+                                    widget="one2many"
+                                    mode="tree,kanban"
+                                    wiget="section_and_note_many2one"
+                                    string="Request Line"
+                                    force_save='1'>
+
+                                <tree string="Material lines" editable="bottom">
+                                    <control>
+                                        <create string="Add a line"/>
+                                        <create string="Add a section"
+                                                context="{'default_display_type': 'line_section'}"/>
+                                    </control>
+                                    <field name="name" string="Name" force_save='1'/>
+                                    <field name="product" string="Product" force_save='1'/>
+                                    <field name="qty_req" string="Quantity" force_save='1'/>
+                                    <field name="qty_req_inprogress" string="Qty in Progress" force_save='1'/>
+                                    <field name="qty_req_done" string="Qty Done" force_save='1'/>
+                                    <field name="route" string="Route" force_save='1'/>
+                                    <!-- <field name="description" string="Description" force_save='1'/> -->
+                                    <field name="state" string="Status" force_save='1'/>
+                                </tree>
+
+                            </field>
+
+                        </page>
+
+                    </notebook>
+                    <!-- <group class="oe_subtotal_footer oe_right">
+                        <field name="estimated_amount" readonly="1"/>
+                        <field name="actual_amount" cols="2" readonly="1"/>
+                        <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                    </group>
+                    <group>
+                        <field name="cost_of_boq" readonly="1"/>
+                        <field name="budget_amount" readonly="1" String="Budget Amount"/>
+                        <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                    </group> -->
+                </group>
+            </sheet>
+
+        </form>
+    </field>
+</record>
+
+     <menuitem name="Material Request" id="material_request_900000000" web_icon="fastar_material_request,static/description/odoo_icon.png"/>
+
+    <menuitem sequence="1" name="Material Request" id="material_request" parent="material_request_900000000" action="material_request_form"/>
+
+
+  </data>
+</odoo>

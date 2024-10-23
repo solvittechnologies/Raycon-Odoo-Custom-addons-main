@@ -1,0 +1,125 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+
+    <record model="ir.actions.act_window" id="action_view_crm_activities">
+        <field name="name">My Activities</field>
+        <field name="res_model">custom.crm.activities</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+<record model="ir.ui.view" id="custom_lead_activities_tree">
+    <field name="name">Custom Activities View Tree</field>
+    <field name="model">custom.crm.activities</field>
+    <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+        <!-- view content: <form>, <tree>, <graph>, ... -->
+	<tree>
+	       <field name="lead_id"/>
+		<field name="client"/>
+		<field name="stage" />
+		<field name="sales_person"/>
+		<field name="activity_type"/>
+		<field name="status"/>
+
+	</tree>
+    </field>
+</record>
+
+
+
+<record model="ir.ui.view" id="custom_leade_activities_form">
+    <field name="name">Custom Lead activites From</field>
+    <field name="model">custom.crm.activities</field>
+    <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+        <!-- view content: <form>, <tree>, <graph>, ... -->
+
+	<form>
+		<header>
+			<button name="mark_done" string="Mark Done" type="object" class="oe_highlight" attrs="{'invisible':[('status','not in',['pending','postpone'])]}" />
+			<button name="action_postpone" string="Postpone" type="object" class="oe_highlight" attrs="{'invisible':[('status','not in',['pending'])]}"/> 
+                        <button name="action_pending" string="Confirm Activity" type="object" class="oe_highlight" attrs="{'invisible':[('status','not in',['draft'])]}"/> 
+			<field name="status" widget="statusbar"/>
+		</header>
+		<group>
+		<group>
+		 <field name="lead_id"  attrs="{'readonly':[('status','not in',['draft'])]}" required="1"/>
+		<field name="client" readonly="1" force_save="1"/>
+		<field name="stage" readonly="1" force_save="1" />  
+		<field name="description" required="1"/>
+		<field name="sales_person" readonly="1" force_save="1" />  
+		<field name="activity_type" attrs="{'readonly':[('status','not in',['draft'])]}" required="1"/>
+		</group>
+		<group>
+		 <field name="probability" readonly="1"/>
+		 <field name="complaints" />
+		 <field name="summary"/>
+		 <field name="schedule_upcoming_act"/>
+		 </group>
+		</group>
+
+	</form>
+    </field>
+</record>
+
+
+
+<record id="leade_activities_crm_custom" model="ir.ui.view">
+    <field name="name">Lead Activities</field>
+    <field name="model">crm.lead</field>
+    <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+    <field name="arch" type="xml">
+        <xpath expr="//page[@name='lead']" position="after">
+	<page  string="Lead Activities">
+          <field name="custom_activities" string="Lead Activities Custom">
+		<tree>
+		   <field name="client"/>
+		   <field name="stage" />
+		   <field name="sales_person"/>
+		   <field name="activity_type"/> 
+	           <field name="status"/>
+		 </tree>
+		 <form>
+		<header> 
+			<button name="mark_done" string="Mark Done" type="object" class="oe_highlight" attrs="{'invisible':[('status','not in',['pending','postpone'])]}" />
+			<button name="action_postpone" string="Postpone" type="object" class="oe_highlight" attrs="{'invisible':[('status','not in',['pending'])]}"/>
+                        <button name="action_pending" string="Confirm Activity" type="object" class="oe_highlight" attrs="{'invisible':[('status','not in',['draft'])]}"/>
+			<field name="status" widget="statusbar"/>
+		</header>
+		<group>
+		<group>
+		 <!--<field name="lead_id" attrs="{'readonly':[('status','not in',['draft'])]}" required="1"/>-->
+		<field name="client" readonly="1" force_save="1"/>
+		<field name="stage" readonly="1" force_save="1" /> 
+		<field name="description" required="1"/>
+		<field name="sales_person" readonly="1" force_save="1" />
+		<field name="activity_type" attrs="{'readonly':[('status','not in',['draft'])]}" required="1"/>
+		</group>
+		<group>
+		 <field name="probability" readonly="1"/>
+		 <field name="complaints" />
+		 <field name="summary"/>
+		 <field name="schedule_upcoming_act"/>
+		 </group>
+		</group>
+	</form>
+	</field>
+</page>
+</xpath>
+</field>
+
+</record>
+
+
+
+
+ <menuitem id="menu_crm_activities" parent="crm.crm_menu_sales" name="Activities" sequence="10"
+          action="action_view_crm_activities"/> 
+
+</data>
+
+</odoo>

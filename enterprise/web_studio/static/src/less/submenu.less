@@ -1,0 +1,76 @@
+.o_web_studio_menu {
+    height: @odoo-navbar-height;
+    background-color: @o-studio-bg-medium;
+    text-align: center;
+
+    .o_web_studio_breadcrumb {
+        display: inline-block;
+        float: left;
+        background-color: @o-studio-bg-medium;
+
+        > ol {
+            background-color: inherit;
+            margin: 12px;
+
+            > li {
+                color: @o-studio-bg-light;
+
+                &.active {
+                    color: white;
+                    font-weight: bold;
+                }
+                &.o_back_button {
+                    cursor: pointer;
+                }
+                + li:before {
+                    content: "\003E";
+                }
+            }
+        }
+    }
+
+    .o_web_studio_undo, .o_web_studio_redo {
+        display: inline-block;
+        margin: 8px;
+
+        > button {
+            background-color: @o-studio-bg-medium;
+            border: 1px solid @o-studio-bg-light;
+            color: @o-studio-bg-light;
+        }
+    }
+
+    .o_menu_sections {
+        float: right;
+        margin: 0;
+        list-style: none;
+
+        > li {
+            float: left;
+            position: relative;
+
+            > ul.dropdown-menu {
+                right: 0;
+                left: auto;
+            }
+
+            > a {
+                display: block;
+                padding: 0 10px;
+                height: @odoo-navbar-height;
+                line-height: @odoo-navbar-height;
+                color: lightgrey;
+
+                &:hover {
+                    color: white;
+                    background-color: @o-studio-bg-dark;
+                }
+                &.active {
+                    color: white;
+                    font-weight: bold;
+                    border-bottom: 2px solid @odoo-brand-optional;
+                }
+            }
+        }
+    }
+}

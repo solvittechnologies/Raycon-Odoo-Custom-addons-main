@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_multi_user,multi_access_general,model_internal_transfer_request,purchase.group_purchase_manager,1,1,1,1
+access_multi_user,multi_access_general,model_internal_transfer_request,stock.group_stock_manager,1,1,1,1
+
+
+access_general_user,multi_line_access_general,model_internal_transfer_request_line,base.group_user,1,1,1,1
+access_storekeeper,multi_line_access_storekeeper,model_internal_transfer_request_line,group_store_keeper,1,1,1,0
+access_location_pm_user_line,location_pm_line,model_internal_transfer_request_line,purchase.group_purchase_manager,1,1,1,1
+access_location_pm_user_two,location_pm,model_internal_transfer_request,purchase.group_purchase_manager,1,1,1,1
+access_PM_for_stock_picking,location_pm_picking,stock.model_stock_picking,purchase.group_purchase_manager,1,1,1,1
+access_location_pm_user__storekepper_two,location_store_keeper,model_internal_transfer_request,posh_multilocation.group_store_keeper,1,1,1,0
+access_storekeeper_stockpicking,stock picking storekeeper,stock.model_stock_picking,posh_multilocation.group_store_keeper,1,1,0,0
+access_storekeeper_stockpicking,stock picking storekeeper,stock.model_stock_picking,posh_multilocation.branch_manager,1,1,0,0
+access_storekeeper_stockpicking,stock picking storekeeper,stock.model_stock_picking,posh_multilocation.branch_accountant,1,1,0,0

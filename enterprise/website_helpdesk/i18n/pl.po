@@ -1,0 +1,239 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk
+# 
+# Translators:
+# Zdzisław Krajewski <zdzichucb@gmail.com>, 2016
+# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2016
+# Dariusz Żbikowski <darek@krokus.com.pl>, 2016
+# Martin Trigaux, 2016
+# Piotr Szlązak <szlazakpiotr@gmail.com>, 2016
+# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2016
+# Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2017
+# Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2018
+# Tomasz Leppich <t.leppich@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-09-19 13:42+0000\n"
+"Last-Translator: Tomasz Leppich <t.leppich@gmail.com>, 2019\n"
+"Language-Team: Polish (https://www.transifex.com/odoo/teams/41243/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-arrow-circle-right \"/> See the feedbacks"
+msgstr "<i class=\"fa fa-arrow-circle-right \"/> Zobacz informacje zwrotne"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-envelope\"/> Email :"
+msgstr "<i class=\"fa fa-envelope\"/> Email :"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i/> Customer Satisfaction Ration:"
+msgstr "<i/> Zadowolenie klienta:"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "<span>Show more</span><span class=\"hidden\">Show less</span>"
+msgstr "<span>Pokaż więcej</span><span class=\"hidden\">Pokaż mniej</span>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Assigned to</strong>"
+msgstr "<strong>Przydzielony do</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Data:</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Message and communication history</strong>"
+msgstr "<strong>Wiadomości i historia komunikacji</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Reported by</strong>"
+msgstr "<strong>Raportowane przez</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Average"
+msgstr "Przeciętny"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Bad"
+msgstr "Zły"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Current stage of this ticket"
+msgstr "Aktualny etap tego zgłoszenia"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Customer Satisfaction"
+msgstr "Satysfakcja klienta"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Description"
+msgstr "Opis"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Edit Ticket"
+msgstr "Edytuj zgłoszenie"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Happy"
+msgstr "Wesoły"
+
+#. module: website_helpdesk
+#: model:website.menu,name:website_helpdesk.website_menu_helpdesk
+msgid "Help"
+msgstr "Pomoc"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk"
+msgstr "Punkt Pomocy"
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_team
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk Team"
+msgstr "Zespół pomocy"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.header_footer_custom
+msgid "Helpdesk Team Customer Satisfaction"
+msgstr "Satysfakcja klientów zespołu punktu pomocy"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Helpdesk Team Satisfaction"
+msgstr "Satysfakcja zespołu punktu pomocy"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 3 months"
+msgstr "Ostatnie 3 miesiące"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 30 days"
+msgstr "Ostatnie 30 dni"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 7 days"
+msgstr "Ostatnie 7 dni"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Latest Feedbacks"
+msgstr "Ostatnie opinie"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "My Tickets"
+msgstr "Moje zgłoszenia"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.content_new_team
+msgid "New Team"
+msgstr "Nowy Zespół"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.not_published_any_team
+msgid "No teams have been published."
+msgstr "Nie opublikowano żadnych drużyn."
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid "Save this page to activate the feature"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_ticket_access_token
+msgid "Security Token"
+msgstr "Token uprawnień"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Status"
+msgstr "Status"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Submit an Issue"
+msgstr "Zgłoś problem"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Team Settings"
+msgstr "Ustawienia grup"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Teams"
+msgstr "Zespoły"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "There are currently no Ticket for your account."
+msgstr "Obecnie nie ma zgłoszeń na Twoim koncie."
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Bilet"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Ticket Number"
+msgstr "Nr zgłoszenia"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_menu_helpdesk
+msgid "Tickets"
+msgstr "Bilety"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_team_website_rating_url
+msgid "URL to Submit Issue"
+msgstr "URL do zgłoszenia problemu"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "View my Issues"
+msgstr "Pokaż moje problemy"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid ""
+"View this teams ratings this page:<br/>\n"
+"                    ⇒"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "Your Tickets"
+msgstr ""

@@ -1,0 +1,255 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_docsaway
+# 
+# Translators:
+# Maria Boyadjieva <marabo2000@gmail.com>, 2018
+# Albena Mincheva <albena_vicheva@abv.bg>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:59+0000\n"
+"PO-Revision-Date: 2016-09-19 12:59+0000\n"
+"Last-Translator: Albena Mincheva <albena_vicheva@abv.bg>, 2018\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+", and create an account. Once you are logged in, click on 'Login', then go "
+"to 'My Account'."
+msgstr ""
+", и създайте сметка. След като сте се регистрирали, натиснете на 'Влизане', "
+"след което отидете в 'Моята сметка'."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_order_view_form_inherit_print_docsaway
+msgid "DocsAway Details"
+msgstr "Данни на DocsAway"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Account"
+msgstr "Сметка Docsaway "
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_email
+msgid "Docsaway Account Email"
+msgstr "Имейл за сметка Docsaway"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Configuration"
+msgstr "Конфигурация Docsaway "
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_courier
+msgid "Docsaway Courier"
+msgstr "Куриер на Docsaway"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Help"
+msgstr "Помощ за Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_key
+msgid "Docsaway Installation Key"
+msgstr "Инсталационен ключ за Docsaway "
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_name
+msgid "Docsaway Name"
+msgstr "Име на Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_reference
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_reference
+msgid "Docsaway Reference"
+msgstr "Референция за Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_station
+msgid "Docsaway Station"
+msgstr "Станция на Docsaway "
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_status
+msgid "Docsaway Transaction Status"
+msgstr "Състояние на транзакция Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_volume
+msgid "Docsaway Volume"
+msgstr "Обем на Docsaway "
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_zone
+msgid "Docsaway Zone"
+msgstr "Зона Docsaway "
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_email
+msgid ""
+"Docsaway account email. Required to contact DocsAway server, it can be found"
+" into docsaway account preference (on docsaway.com)"
+msgstr ""
+"Имейл за сметка Docsaway. Изисква се връзка със сървъра на DocsAway, тя може"
+" да бъде открита в настройката на профила Docsaway (на docsaway.com)"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_key
+msgid ""
+"Docsaway account installation key. Required to contact DocsAway server, it "
+"can be found into docsaway account preference (on docsaway.com)"
+msgstr ""
+"Инсталационен ключ за Docsaway профил. Изисква връзка с DocsAway сървъра, "
+"може да се открие в предпочитанието за профил Docsaway (в docsaway.com)"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Failed request."
+msgstr "Неуспешна заявка"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Go to"
+msgstr "Отидете в"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#, python-format
+msgid "Host unreachable."
+msgstr "Недостижим хост"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In Email Document &gt; Settings, setup your account: Active must be set to "
+"'ON' to receive documents, and the Module Mode should be LIVE to really send"
+" the document. Select TEST to use Docsaway as a sandbox."
+msgstr ""
+"В имейл документ &gt; Настройки, настройте Вашата сметка: Активен трябва да "
+"бъде настроен на 'ВКЛЮЧЕН', за да получава документи, а модулният режим "
+"трябва да е 'НА ЖИВО', за да може действително да изпрати документа. "
+"Изберете 'ТЕСТ', за да използвате Docsaway като sandbox."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "In General &gt; Add Funds, you can add credit to your account."
+msgstr ""
+"В общи &gt; Добавете капитал, можете да добавяте кредит към сметката си."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In General &gt; Preferences, you will find your Docsaway email and Docsaway "
+"key. Copy them to the 'DocsAway Details' tab of the postal provider you want"
+" to configure."
+msgstr ""
+"В 'Общи &gt; предпочитания' ще откриете имейла си за Docsaway и ключа за "
+"Docsaway. Копирайте ги в раздела 'Подробности за DocsAway' на пощенския "
+"доставчик, който желаете да конфигурирате."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In History, you can find documents that were sent both in TEST or LIVE "
+"environment. This can help you to test your account. Be careful to correctly"
+" select the environment in your postal provider in Odoo."
+msgstr ""
+"В 'История' можете да откриете документи, изпратени както в ТЕСТОВА, така и "
+"в ЖИВА среда. Това може да Ви помогне да изпробвате сметката си. Внимавайте "
+"дали правилно избирате средата в пощенския си доставчик в Odoo."
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_name
+msgid "Name of the docsaway account."
+msgstr "Име на сметка Docsaway."
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_volume
+msgid "Number of pages printed by Docsaway."
+msgstr "Брой страници, разпечатани чрез Docsaway."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:71
+#, python-format
+msgid ""
+"Please configure your DocsAway Print Provider Account. See in Settings > "
+"Print Provider. More information on www.docsaway.com ."
+msgstr ""
+"Моля конфигурирайте сметката си за доставчик на печатни услуги DocsAway. "
+"Вижте в Настройки > Доставчик на печатни услуги. За повече информация вижте "
+"www.docsaway.com."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Please try again later."
+msgstr "Мола опитайте по-късно."
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order
+msgid "Print Order"
+msgstr "Поръчка за печат"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order_wizard
+msgid "Print Order Wizard"
+msgstr "Помощник за разпечатване на поръчки"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_provider
+msgid "Print Provider"
+msgstr "Доставчик на печатни услуги"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_reference
+msgid "Reference code of Docsaway account."
+msgstr "Референтен код на профила Docsaway"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"The 'Update' button will update this field, once your Docsaway Configuration"
+" is set up."
+msgstr ""
+"След като конфигурацията Ви Docsaway е вече настроена, бутонът "
+"'Актуализирайте' ще актуализира това поле."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:105
+#, python-format
+msgid "Unknown Error"
+msgstr "Неизвестна грешка"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:56
+#, python-format
+msgid ""
+"You must configure your Docsaway Account : the Docsaway Email and Docsaway "
+"Key are required. You will find them on www.docsaway.com"
+msgstr ""
+"Трябва да конфигурирате Docsaway профила си: за целта се изискват имейл и "
+"ключ за Docsaway, които ще откриете в www.docsaway.com"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:61
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account, since you "
+"are in Production Mode."
+msgstr ""
+"Доставчикът Ви на кредитни услуги е твърде малък. Моля конфигурирайте "
+"сметката си (> Настройки > Доставчик на печатни услуги) и въведе някакъв "
+"кредит по сметката си, тъй като сте в производствен режим."

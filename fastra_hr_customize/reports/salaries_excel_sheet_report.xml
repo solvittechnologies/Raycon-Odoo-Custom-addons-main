@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report
+                id="report_salaries_excel_sheet"
+                model="salaries.excel.sheet"
+                string="Salaries Excel Sheet"
+                name="fastra_hr_customize.report_salaries_excel_sheet_pdf"
+                file="fastra_hr_customize.report_salaries_excel_sheet_pdf"
+                report_type="qweb-pdf"
+		/>
+
+        <template id="report_salaries_excel_sheet_pdf">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+							<center><h2>Salaries Excel Sheet Report</h2></center>
+                            <div class="row mt32 mb32" name="info">
+                                <div class="col-auto mw-100 mb-2">
+                                    <strong>Period:</strong>
+                                    <span class="m-0" t-field='doc.date_from'/> - <span class="m-0" t-field='doc.date_to'/>
+                                </div>
+                                <div t-if="doc.month" class="col-auto mw-100 mb-2">
+                                    <strong>Month:</strong>
+                                    <p class="m-0" t-field="doc.month"/>
+                                </div>
+                                <div t-if="doc.employee_tag" class="col-auto mw-100 mb-2">
+                                    <strong>Employee Tag:</strong>
+                                    <p class="m-0" t-field="doc.employee_tag"/>
+                                </div>
+                                <div t-if="doc.location_id" class="col-auto mw-100 mb-2">
+                                    <strong>Location:</strong>
+                                    <p class="m-0" t-field="doc.location_id.name"/>
+                                </div>
+                                <div t-if="doc.account_analytic_id" class="col-auto mw-100 mb-2">
+                                    <strong>Project:</strong>
+                                    <p class="m-0" t-field="doc.account_analytic_id.name"/>
+                                </div>
+                            </div>
+                            <table style="width:100%" class="table table-sm">
+                                <tr>
+                                    <th>TRANSACTION REFERENCE NUMBER</th>
+                                    <th>BENEFICIARY NAME</th>
+                                    <th>PAYMENT AMOUNT</th>
+                                    <th>PAYMENT DUE DATE</th>
+                                    <th>BENEFICIARY CODE</th>
+                                    <th>BENEFICIARY ACCOUNT NUMBER</th>
+                                    <th>BENEFICIARY BANK SORT CODE</th>
+                                    <th>DEBIT ACCOUNT NUMBER</th>
+                                </tr>
+                                <t t-foreach="doc.line_ids" t-as="line">
+                                    <tr>
+                                        <td><t t-esc="line.transaction_reference_number"/></td>
+                                        <td><t t-esc="line.beneficiary_name"/></td>
+                                        <td><t t-esc="line.payment_amount"/></td>
+                                        <td><t t-esc="line.payment_due_date or ''"/></td>
+                                        <td><t t-esc="line.beneficiary_code"/></td>
+                                        <td><t t-esc="line.beneficiary_account_number"/></td>
+                                        <td><t t-esc="line.beneficiary_bank_sort_code"/></td>
+                                        <td><t t-esc="line.debit_account_number"/></td>
+                                    </tr>
+                                </t>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

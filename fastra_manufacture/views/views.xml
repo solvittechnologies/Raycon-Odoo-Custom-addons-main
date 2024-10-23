@@ -1,0 +1,77 @@
+<odoo>
+    <data>
+
+        <record id="view_mrp_extention" model="ir.ui.view">
+            <field name="name">extend</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[@name='job']" position="after">
+                    <page string="Labour" name="labour">
+                        <field
+                                name="labour"
+                                nolabel="1"
+                                widget="one2many"
+                                mode="tree,kanban"
+                                wiget="section_and_note_many2one">
+
+                            <tree string="Cost OF Labour" editable="bottom">
+                                <control>
+                                    <create string="Add a line"/>
+                                    <create string="Add a section"
+                                            context="{'default_display_type': 'line_section'}"/>
+                                    <!--                                                <create string="Add a note"-->
+                                    <!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                </control>
+                                <field name="product"/>
+                                <field name="qty"/>
+                                <field name="rate"/>
+                                <field name="total"/>
+                                <!--                        <field name="rate"/>-->
+                                <!--                        <field name="amount"/>-->
+                                <!--                        <field name="actual_amount"/>-->
+                                <!--                        <field name="budget_amount"/>-->
+
+                                <!--                                            <field name="actual_amount"/>-->
+                            </tree>
+
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="//notebook/page[@name='labour']" position="after">
+                    <page string="Material">
+                        <field
+                                name="material"
+                                nolabel="1"
+                                widget="one2many"
+                                mode="tree,kanban"
+                                wiget="section_and_note_many2one">
+
+                            <tree string="Cost OF Material" editable="bottom">
+                                <control>
+                                    <create string="Add a line"/>
+                                    <create string="Add a section"
+                                            context="{'default_display_type': 'line_section'}"/>
+                                    <!--                                                <create string="Add a note"-->
+                                    <!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                </control>
+                                <field name="product"/>
+                                <field name="qty"/>
+                                <field name="rate"/>
+                                <field name="total"/>
+                                <!--                        <field name="rate"/>-->
+                                <!--                        <field name="amount"/>-->
+                                <!--                        <field name="actual_amount"/>-->
+                                <!--                        <field name="budget_amount"/>-->
+
+                                <!--                                            <field name="actual_amount"/>-->
+                            </tree>
+
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

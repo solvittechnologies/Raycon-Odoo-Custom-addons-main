@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<t t-name="web_studio.NewElementDialog">
+    <table class="table o_web_studio_new_elements">
+        <tr>
+            <td class="o_web_studio_new_element" data-element="field"><i class="fa fa-th-list" aria-hidden="true"></i><div>Field</div></td>
+            <td class="o_web_studio_new_element" disabled="disabled" data-element="text"><i class="fa fa-text-height" aria-hidden="true"></i><div>Text</div></td>
+            <td class="o_web_studio_new_element" disabled="disabled" data-element="picture"><i class="fa fa-camera" aria-hidden="true"></i><div>Picture</div></td>
+            <td class="o_web_studio_new_element" data-element="group"><i class="fa fa-columns" aria-hidden="true"></i><div>Columns</div></td>
+            <td class="o_web_studio_new_element" data-element="notebook"><i class="fa fa-folder-o" aria-hidden="true"></i><div>Notebook</div></td>
+        </tr>
+    </table>
+</t>
+
+</templates>

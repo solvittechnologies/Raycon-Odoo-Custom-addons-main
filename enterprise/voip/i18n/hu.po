@@ -1,0 +1,405 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * voip
+# 
+# Translators:
+# krnkris, 2016
+# Martin Trigaux, 2016
+# gezza <geza.nagy@oregional.hu>, 2016
+# Ákos Nagy <akos.nagy@oregional.hu>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Ákos Nagy <akos.nagy@oregional.hu>, 2016\n"
+"Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_task_count
+msgid "# Tasks"
+msgstr "# Feladatok"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "Fizetendő, beszállító számla"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "Kintlévőség számla"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_always_transfer
+msgid "Always Redirect to Handset"
+msgstr "Mindig átirányítva kézi telefonra"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "Bank"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "A partnerre hivatkozó vállalatok"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:voip.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "Szerződések"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_uid
+msgid "Created by"
+msgstr "Készítette"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_date
+msgid "Created on"
+msgstr "Létrehozás dátuma"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_currency_id
+msgid "Currency"
+msgstr "Pénznem"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "Vásárló fizetési feltételek"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_trust
+msgid "Degree of trust you have in this debtor"
+msgstr "Ebbe az adósba vetett hitének mértéke"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_display_name
+msgid "Display Name"
+msgstr "Megjelenített név"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "Költségvetési pozíció"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:57
+#, python-format
+msgid "From "
+msgstr "Feladó"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_external_phone
+msgid "Handset Extension"
+msgstr "Kézi telefon kiterjesztés"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "Vannak egyeztetetlen tételek"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_id
+msgid "ID"
+msgstr "Azonosító ID"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:58
+#, python-format
+msgid "Incoming call"
+msgstr "Beérkező hívás"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:88
+#, python-format
+msgid "Incoming call from "
+msgstr "Beérkező hívás innen"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_warn
+msgid "Invoice"
+msgstr "Számla"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "Számlák"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_issued_total
+#: model:ir.model.fields,field_description:voip.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "Könyvelési napló tételsorok"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator___last_update
+msgid "Last Modified on"
+msgstr "Utoljára frissítve ekkor"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_uid
+msgid "Last Updated by"
+msgstr "Utoljára frissítette"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_date
+msgid "Last Updated on"
+msgstr "Utoljára frissítve "
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "Utolsó figyelmeztetés olvasottnak jelölve az alap naptárban"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+"Az ügyfélre vonatkozó legutolsó számlák & fizetések egyeztetésének "
+"időpontja. Ez elvégzett, ha nincs legalább egy könyveléssel egyeztetetlen "
+"terhelés és egy könyveléssel egyeztetetlen jóváírás vagy ha rákattintott az "
+"\"Kész\" gombra."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "Legutóbbi Számlák & Fizetések könyvelői párosításának dátuma"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "Üzenet a számláról"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_ring_number
+msgid "Number of rings"
+msgstr "Csöngések száma"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:27
+#, python-format
+msgid "One or more parameter is missing. Please check your configuration."
+msgstr "Egy vagy több paraméter hiányzik. Kérem ellenőrizze a beállításait."
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.res_user_form
+msgid "PBX Configuration"
+msgstr "PBX Beállítás"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "Szállítói tartozás limitösszege"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:153
+#, python-format
+msgid "Please check your configuration.</br> (Reason receives :"
+msgstr "Kérem ellenőrizze a beállításait.</br> (Beérkezett okok :"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:281
+#, python-format
+msgid ""
+"Problem during the connection. Check if the application is allowed to access"
+" your microphone from your browser."
+msgstr ""
+"Probléma kapcsolódás közben. Ellenőrizze ,hogy az alkalmazás hozzáfér a "
+"mikrofonjához a böngészőjéből."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_login
+msgid "SIP Login / Browser's Extension"
+msgstr "SIP belépés / Böngésző kiterjesztés"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_password
+msgid "SIP Password"
+msgstr "SIP jelszó"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_invoice_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"A \"Figyelmeztetés\" lehetőség kiválasztása a felhasználót egy üzenettel "
+"értesíti, az \"Üzenet blokkolása\" lehetőség egy kivételt küld az üzenethez "
+"és leblokkolja a folyamatot. Az üzenetet a következő mezőbe kell beírni."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_task_ids
+msgid "Tasks"
+msgstr "Feladatok"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr ""
+"Az ÁFA pozíció meghatározza a partnerre vonatkozó adókat és főkönyvi "
+"számlákat."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:179
+#, python-format
+msgid ""
+"The number is incorrect, the user credentials could be wrong or the "
+"connection cannot be made. Please check your configuration.</br> (Reason "
+"receives :%s)"
+msgstr ""
+"Ha a szám nem megfelelő, a felhasználó okmányai hibásak vagy a kapcsolat nem"
+" hozható létre. Kérem ellenőrizze a beállításait.</br> (Beérkezett okok :%s)"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_sip_ring_number
+msgid ""
+"The number of rings before the call is defined as refused by the customer."
+msgstr "A hívás ügyfél általi elutasítása előtti csengések száma."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr ""
+"Az ügyfélnek legalább egy könyveléssel egyeztetetlen terhelése és jóváírása "
+"van a legutóbbi számlák & fizetések egyeztetés végrehajtásától."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:51
+#, python-format
+msgid ""
+"The server configuration could be wrong. Please check your configuration."
+msgstr "Rossz lehet a szerver beállítása. Kérem ellenőrizze a beállításait."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:47
+#, python-format
+msgid "The websocket uri could be wrong. Please check your configuration."
+msgstr "Rossz lehet a websocket elérése. Kérem ellenőrizze a beállításait."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr ""
+"A rendszer az alapértelmezett helyett ezt a számlát fogja használni a "
+"partner szállító számlájaként."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr ""
+"A rendszer az alapértelmezett helyett ezt a számlát fogja használni ehhez a "
+"partnerhez, mint  vevői Kintlévőség számlát."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr ""
+"Ezt a fizetési feltétel használja az alapértelmezett helyett a beszerzési "
+"megrendelésekhez és beszállítói számlákhoz"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr ""
+"Ezt a fizetési feltételt használja az alapértelmezett helyett a vásárlói "
+"megrendeléseken és az értékesítési számlákon."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "Összesen számlázva"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_debit
+msgid "Total Payable"
+msgstr "Beszállítónak fizetendő összesen"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_credit
+msgid "Total Receivable"
+msgstr "Összes vevőkövetelés, kintlévőség"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "A vevő összes tartozása a vállalat felé."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "Teljes összeg, melyet ennek a beszállítónak ki kell fizetnie."
+
+#. module: voip
+#: model:ir.model,name:voip.model_res_users
+msgid "Users"
+msgstr "Felhasználók"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "Kisegítő mező az összeg pénznemének kifejezéséhez"
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.view_voip_user_config
+msgid "VOIP Configuration"
+msgstr "VOIP beállítás"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "Beszállító kifizetési feltételek"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:273
+#, python-format
+msgid ""
+"Your browser could not support WebRTC. Please check your configuration."
+msgstr ""
+"Webböngészője nem támogathatja a WebRTC-t. Kérem ellenőrizze a beállításait."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:152
+#, python-format
+msgid "the connection cannot be made. "
+msgstr "csatlakozás nem hozható létre."
+
+#. module: voip
+#: model:ir.model,name:voip.model_voip_configurator
+msgid "voip.configurator"
+msgstr "voip.configurator"

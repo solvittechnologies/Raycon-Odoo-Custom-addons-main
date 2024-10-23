@@ -1,0 +1,776 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_contract_dashboard
+# 
+# Translators:
+# Maria Boyadjieva <marabo2000@gmail.com>, 2016
+# Kaloyan Naumov <kaloyan@lumnus.net>, 2016
+# Martin Trigaux, 2016
+# kalatchev, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 14:58+0000\n"
+"PO-Revision-Date: 2016-09-29 14:58+0000\n"
+"Last-Translator: kalatchev, 2016\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:334
+#, python-format
+msgid "# of Contracts"
+msgstr "# на договори"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:345
+#, python-format
+msgid "% Complete (success)"
+msgstr "% Завършете (успех)"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:360
+#, python-format
+msgid "1 month ago"
+msgstr "Преди 1 месец"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:376
+#, python-format
+msgid "12 months ago"
+msgstr "Преди 12 месеца"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:368
+#, python-format
+msgid "3 months ago"
+msgstr "Преди 3 месеца"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:392
+#, python-format
+msgid "30 Days Ago"
+msgstr "Преди 30 дни"
+
+#. module: account_contract_dashboard
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_search
+msgid "Active invoices"
+msgstr "Активни фактури"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:370
+#, python-format
+msgid "Annual Run-Rate"
+msgstr "Годишна оценка на изпълнение"
+
+#. module: account_contract_dashboard
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_search
+msgid "Asset End Date"
+msgstr "Крайна дата на активи"
+
+#. module: account_contract_dashboard
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_search
+msgid "Asset Start Date"
+msgstr "Начална дата на актив"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1130
+#, python-format
+msgid "By Day"
+msgstr "По дни"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1130
+#, python-format
+msgid "By Month"
+msgstr "По месеци"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1130
+#, python-format
+msgid "By Week"
+msgstr "По седмици"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1130
+#, python-format
+msgid "By Year"
+msgstr "По години"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:561
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1030
+#, python-format
+msgid "Churned MRR"
+msgstr "Смесен МВП"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1203
+#, python-format
+msgid "Churned Subscriptions"
+msgstr "Смесени абонаменти"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:248
+#, python-format
+msgid "Cohort"
+msgstr "Кохортен"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:245
+#: model:ir.actions.client,name:account_contract_dashboard.action_contract_dashboard_report_cohort
+#: model:ir.ui.menu,name:account_contract_dashboard.menu_action_contract_dashboard_report_cohort
+#, python-format
+msgid "Cohort Analysis"
+msgstr "Кoхортен анализ"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:283
+#, python-format
+msgid "Cohort Interest:"
+msgstr "Кохортна лихва:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:275
+#, python-format
+msgid "Cohort Period:"
+msgstr "Кохортен период:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:440
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:466
+#, python-format
+msgid "Contract"
+msgstr "Договор"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:406
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:144
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:153
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:249
+#, python-format
+msgid "Contracts"
+msgstr "Договори"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:162
+#, python-format
+msgid "Contracts Churn:"
+msgstr "Смесване на договори"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:149
+#, python-format
+msgid "Contracts Growth:"
+msgstr "Ръст на договорите"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:24
+#, python-format
+msgid "Create a Template"
+msgstr "Създайте шаблон"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:355
+#, python-format
+msgid "Current"
+msgstr "Текущ"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:443
+#, python-format
+msgid "Current MRR"
+msgstr "Текущ МВП"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:830
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:899
+#, python-format
+msgid "Current Value: "
+msgstr "Настояща стойност: "
+
+#. module: account_contract_dashboard
+#: model:ir.ui.menu,name:account_contract_dashboard.menu_sale_subscription_dashboard
+msgid "Dashboard"
+msgstr "Табло за управление"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:49
+#, python-format
+msgid "Detailed Analysis"
+msgstr "Подробен анализ"
+
+#. module: account_contract_dashboard
+#: model:ir.actions.client,name:account_contract_dashboard.action_contract_dashboard_report_detailed
+msgid "Detailed KPI"
+msgstr "Подробен клучов показател за ефестивност"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:571
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1038
+#, python-format
+msgid "Down MRR"
+msgstr "Спад на МВП"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:18
+#, python-format
+msgid "Edit your Templates"
+msgstr "Редактирайте шаблоните си"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:566
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1034
+#, python-format
+msgid "Expansion MRR"
+msgstr "Нарастване на МВП"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:80
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:137
+#, python-format
+msgid "Exponential"
+msgstr "Експотенциален"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:319
+#, python-format
+msgid "Filter on companies"
+msgstr "Филтър на компаниите"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:299
+#, python-format
+msgid "Filter on contracts"
+msgstr "Филтър на договорите"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:309
+#, python-format
+msgid "Filter on tags"
+msgstr "Филтър на маркерите"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:424
+#, python-format
+msgid "Forecasted Annual Contracts Growth"
+msgstr "Прогнозен ръст на годишните договори"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:418
+#, python-format
+msgid "Forecasted Annual MRR Growth"
+msgstr "Прогнозен ръст на годишния МВП"
+
+#. module: account_contract_dashboard
+#: model:ir.actions.client,name:account_contract_dashboard.action_contract_dashboard_report_forecast
+msgid "Forecasted KPIs"
+msgstr "Прогнозни ключови показатели за ефективност"
+
+#. module: account_contract_dashboard
+#: model:ir.actions.act_window,help:account_contract_dashboard.action_invoice_line_entries_report
+msgid ""
+"From this view, have an analysis of your different invoice line entries."
+msgstr ""
+"От тази гледна точка анализирайте различните си записи на фактурни редове."
+
+#. module: account_contract_dashboard
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_search
+msgid "Group By"
+msgstr "Групирайте по"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:77
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:133
+#, python-format
+msgid "Growth Type:"
+msgstr "Вид прираст:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:11
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:22
+#, python-format
+msgid "Hi there!"
+msgstr "Здравейте!"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:185
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:196
+#, python-format
+msgid "In"
+msgstr "В"
+
+#. module: account_contract_dashboard
+#: model:ir.actions.act_window,name:account_contract_dashboard.action_invoice_line_entries_report
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_pivot
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_search
+msgid "Invoice Line Entries Analysis"
+msgstr "Анализ на записите на фактурни редове"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/revenue_kpis_dashboard.py:167
+#, python-format
+msgid ""
+"It makes no sense to sum MRR of different currencies. Please select "
+"companies with the same currency."
+msgstr ""
+"Безсмислено е да сумирате МВП на различни валути. Моля, изберете компании, "
+"боравещи с еднакви валути."
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:379
+#, python-format
+msgid "Lifetime Value"
+msgstr "Доживотна стойност"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:79
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:135
+#, python-format
+msgid "Linear"
+msgstr "Линеен"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:222
+#, python-format
+msgid "List of NRR invoices"
+msgstr "Списък на фактури с невъзникващи приходи"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:218
+#, python-format
+msgid "List of contract modifications"
+msgstr "Списък на корекциите по договора"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:388
+#, python-format
+msgid "Logo Churn"
+msgstr "Лого - смесване"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:422
+#, python-format
+msgid "MRR :"
+msgstr "Месечно възникващ приход - МВП :"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1023
+#, python-format
+msgid "MRR Growth"
+msgstr "Ръст на МВП"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:334
+#, python-format
+msgid "Monthly Recurring Revenue"
+msgstr "Месечно периодични приходи"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:62
+#, python-format
+msgid "Monthly Recurring Revenue Growth"
+msgstr "Месечно периодичен ръст на приходите"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:118
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:175
+#, python-format
+msgid "Months"
+msgstr "Месеци"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1046
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:468
+#, python-format
+msgid "NRR"
+msgstr "Невъзникващ приход"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:426
+#, python-format
+msgid "NRR :"
+msgstr "Невъзникващ приход :"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:576
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1042
+#, python-format
+msgid "Net New MRR"
+msgstr "Нетен нов МВП"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:343
+#, python-format
+msgid "Net Revenue"
+msgstr "Нетни приходи"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:556
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1026
+#, python-format
+msgid "New MRR"
+msgstr "Нов МВП"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/revenue_kpis_dashboard.py:165
+#, python-format
+msgid "No company selected."
+msgstr "Липсва избрана компания."
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:352
+#, python-format
+msgid "Non-Recurring Revenue"
+msgstr "Непериодични приходи"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:13
+#, python-format
+msgid ""
+"Now that you have defined a subscription template and your revenues types,"
+msgstr ""
+"След като вече сте определили шаблон за абонамент и видовете си приходи,"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1132
+#, python-format
+msgid "Number of Contracts"
+msgstr "Брой договори"
+
+#. module: account_contract_dashboard
+#: model:ir.ui.view,arch_db:account_contract_dashboard.invoice_line_entries_report_search
+msgid "OUT invoices"
+msgstr "Изходящи фактури"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:439
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:465
+#, python-format
+msgid "Partner"
+msgstr "Контрагент"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:210
+#, python-format
+msgid "Pick a salesman and a period"
+msgstr "Изберете продавач и период"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:333
+#, python-format
+msgid "Plan"
+msgstr "План"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:442
+#, python-format
+msgid "Previous MRR"
+msgstr "Предишен МВП"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:114
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:171
+#, python-format
+msgid "Projection Time:"
+msgstr "Време за проектиране:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:211
+#, python-format
+msgid "Recurring Revenue Dashboard for"
+msgstr "Табло за управление на периодичните приходи"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:397
+#, python-format
+msgid "Revenue Churn"
+msgstr "Приходи - смесване"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:105
+#, python-format
+msgid "Revenue Churn:"
+msgstr "Приходи - смесване:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:92
+#, python-format
+msgid "Revenue Growth:"
+msgstr "Ръст на приходите:"
+
+#. module: account_contract_dashboard
+#: model:ir.actions.client,name:account_contract_dashboard.action_contract_dashboard_report_main
+#: model:ir.ui.menu,name:account_contract_dashboard.menu_action_contract_dashboard_report_main
+msgid "Revenue KPIs"
+msgstr "Ключови показатели за ефективност на приходите"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/stat_types.py:361
+#, python-format
+msgid "Revenue per Contract"
+msgstr "Приходи за договор"
+
+#. module: account_contract_dashboard
+#: model:ir.actions.client,name:account_contract_dashboard.action_contract_dashboard_report_salesman
+#: model:ir.ui.menu,name:account_contract_dashboard.menu_action_contract_dashboard_report_salesman
+msgid "Salesperson Dashboard"
+msgstr "Табло за управление на търговци"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:400
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:416
+#, python-format
+msgid "Sample data"
+msgstr "Примерни данни"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:68
+#, python-format
+msgid "Select at least one company."
+msgstr "Изберете поне една компания."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:271
+#, python-format
+msgid "Start date:"
+msgstr "Начална дата:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:140
+#, python-format
+msgid "Starting Contract:"
+msgstr "Начален договор:"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:83
+#, python-format
+msgid "Starting MRR:"
+msgstr "Начален МВП :"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1203
+#, python-format
+msgid "Subscriptions"
+msgstr "Абонаменти"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:441
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:467
+#, python-format
+msgid "Template"
+msgstr "Образец"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:459
+#, python-format
+msgid "There is no NRR invoice during this period."
+msgstr "Липсва фактура за невъзникващи приходи за дадения период."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:432
+#, python-format
+msgid "There is no contract modification during this period."
+msgstr "Липсват корекции по договора за дадения период."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:263
+#, python-format
+msgid "There is no subscription for this period."
+msgstr "Липсва абонамент за дадения период."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:23
+#, python-format
+msgid ""
+"This is a sample dashboard. Your actual dashboard will be activated after"
+msgstr ""
+"Това е примерно табло за управление. Вашето същинско табло ще бъде "
+"активирано след "
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/revenue_kpis_dashboard.py:169
+#, python-format
+msgid "Unknown error"
+msgstr "Неразпозната грешка"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:294
+#, python-format
+msgid "Update"
+msgstr "Обновете"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:1132
+#, python-format
+msgid "Value of Contracts"
+msgstr "Стойност на договори"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:69
+#: code:addons/account_contract_dashboard/static/src/js/account_contract_dashboard.js:85
+#, python-format
+msgid "Warning"
+msgstr "Предупреждение"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:17
+#, python-format
+msgid ""
+"You're just missing some Deferred Revenue Types to ensure your dashboard "
+"works correctly."
+msgstr ""
+"Току-що изпуснахте някои разсрочени видове приходи, за да подсигурите "
+"правилната работа на таблото си за управление."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:14
+#, python-format
+msgid "Your Subscriptions"
+msgstr "Вашите абонаменти"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:191
+#, python-format
+msgid "churn, your MRR will be"
+msgstr "смесване, Вашият МВП ще бъде"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:202
+#, python-format
+msgid "churn, your contract base will be"
+msgstr "смесване, Вашата договорна основа ще бъде"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:200
+#, python-format
+msgid "contract growth and"
+msgstr "договорен ръст и"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:189
+#, python-format
+msgid "growth and"
+msgstr "ръст и"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:23
+#, python-format
+msgid ""
+"having defined your subscription templates and deferred revenue categories "
+"and invoiced your first subscription."
+msgstr ""
+"като определяте Вашите шаблони за абонаменти и отсрочени приходни категории "
+"и фактурирате първия си абонамент."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:13
+#, python-format
+msgid "invoice your first subscription to activate your dashboard."
+msgstr ""
+"фактурирайте първия си абонамент, за да активирате таблото си за управление."
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:187
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:198
+#, python-format
+msgid "months with"
+msgstr "Месец с"
+
+#. module: account_contract_dashboard
+#: code:addons/account_contract_dashboard/controllers/revenue_kpis_dashboard.py:128
+#: code:addons/account_contract_dashboard/controllers/revenue_kpis_dashboard.py:138
+#, python-format
+msgid "name"
+msgstr "Име"
+
+#. module: account_contract_dashboard
+#. openerp-web
+#: code:addons/account_contract_dashboard/static/src/xml/account_contract_dashboard.xml:294
+#, python-format
+msgid "to"
+msgstr "до"

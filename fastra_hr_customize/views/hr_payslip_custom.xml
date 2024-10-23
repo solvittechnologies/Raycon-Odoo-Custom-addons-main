@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_payslip_custom_tree" model="ir.ui.view">
+        <field name="name">view.hr.payslip.custom.tree</field>
+        <field name="model">hr.payslip.custom</field>
+        <field name="arch" type="xml">
+            <tree string="Payslips">
+                <field name="name"/>
+                <field name="month"/>
+                <field name="location_id"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="employee_tag"/>
+                <field name="account_analytic_id" string="Project"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_payslip_custom_form" model="ir.ui.view">
+        <field name="name">view.hr.payslip.custom.form</field>
+        <field name="model">hr.payslip.custom</field>
+        <field name="arch" type="xml">
+            <form string="Payslip">
+                <header>
+                    <button name="action_validate" string="Validate" type="object" class="oe_highlight" states="draft"/>
+                    <button name="generate_excel" type="object" string="Generate Excel" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validated"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" name="button_journal_entries"
+                                    string="Journal Entries" type="object"
+                                    attrs="{'invisible':[('move_ids','=',[])]}" icon="fa-bars"/>
+                            <field name="move_ids" invisible="1"/>
+                        </div>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name" placeholder="Name"/></h1>
+                    </div>
+                    <group col="4">
+                        <label for="date_from" string="Period"/>
+                        <div>
+                            <field name="date_from" class="oe_inline"/> - <field name="date_to" class="oe_inline"/>
+                        </div>
+                        <field name="location_id"/>
+                        <field name="month"/>
+                        <field name="account_analytic_id" string="Project" groups="analytic.group_analytic_accounting"/>
+                        <field name="employee_tag" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Lines" name="lines">
+                            <field name="payslip_custom_line_ids" nolabel="1">
+                                <tree string="Custom Lines" editable="bottom">
+                                    <field name="employee_id"/>
+                                    <field name="employee_code"/>
+                                    <field name="working_hours" sum="Total"/>
+                                    <field name="ot_hours" sum="Total"/>
+                                    <field name="sun_ot_hours" sum="Total"/>
+                                    <field name="pub_ot_hours" sum="Total"/>
+                                    <field name="basic_salary" sum="Total"/>
+                                    <field name="annual_leave" sum="Total"/>
+                                    <field name="feeding" sum="Total"/>
+                                    <field name="furniture" sum="Total"/>
+                                    <field name="housing" sum="Total"/>
+                                    <field name="medical" sum="Total"/>
+                                    <field name="ordinary_overtime" sum="Total"/>
+                                    <field name="public_overtime" sum="Total"/>
+                                    <field name="sunday_overtime" sum="Total"/>
+                                    <field name="transport" sum="Total"/>
+                                    <field name="utility" sum="Total"/>
+                                    <field name="bonus" sum="Total"/>
+                                    <field name="gross" sum="Total"/>
+                                    <field name="gross_yearly" sum="Total"/>
+                                    <field name="pension" sum="Total"/>
+                                    <field name="other_statutory_deduction" sum="Total"/>
+                                    <field name="tax_free_allowance" sum="Total"/>
+                                    <field name="consolidated_relief" sum="Total"/>
+                                    <field name="gross_income_relief" sum="Total"/>
+                                    <field name="taxable_amount" sum="Total"/>
+                                    <field name="paye" sum="Total"/>
+                                    <field name="net" sum="Total"/>
+                                    <field name="absent_deduction" sum="Total"/>
+                                    <field name="loan_deduction" sum="Total"/>
+                                    <field name="payroll_deduction" sum="Total"/>
+                                    <field name="non_taxable_payroll_deduction" sum="Total"/>
+                                    <field name="union_dues" sum="Total"/>
+                                    <field name="pay_amount" sum="Total"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Accounting">
+                            <field name="fastra_hr_payroll_account_line_ids" nolabel="1">
+                                <tree string="Custom Lines" editable="bottom">
+                                    <field name="account_debit"/>
+                                    <field name="account_credit"/>
+                                    <field name="journal_id"/>
+                                    <field name="payroll_type"/>
+                                    <field name="type_amount" sum="Total"/>
+                                    <field name="state"/>
+                                    <field name="move_id" invisible="1"/>
+                                    <field name="line_ids" invisible="1" widget="many2many_tags"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Individual Account">
+                            <field name="fastra_hr_payroll_individual_account_line_ids" nolabel="1">
+                                <tree string="Custom Lines" editable="bottom">
+                                    <field name="employee_id"/>
+                                    <field name="account_debit"/>
+                                    <field name="account_credit"/>
+                                    <field name="journal_id"/>
+                                    <field name="payroll_type"/>
+                                    <field name="type_amount" sum="Total"/>
+                                    <field name="state"/>
+                                    <field name="move_id" invisible="1"/>
+                                    <field name="line_ids" invisible="1" widget="many2many_tags"/>
+                                </tree>
+                            </field>
+                        </page>
+
+<!--                        <page string="Accounting">-->
+<!--                        <group colspan="4">-->
+<!--                            <field name="journal_id"/>-->
+<!--                            <field name="account_debit"/>-->
+<!--                            <field name="account_credit"/>-->
+<!--                            <field name="account_tax_id"/>-->
+<!--                        </group>-->
+<!--                    </page>-->
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_hr_payslip_custom_form" model="ir.actions.act_window">
+        <field name="name">Payroll</field>
+        <field name="res_model">hr.payslip.custom</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Payroll" id="menu_hr_payslip_custom_main" parent="hr_menus.hr_menus"/>
+    <menuitem action="action_view_hr_payslip_custom_form" id="menu_hr_payslip_custom" parent="fastra_hr_customize.menu_hr_payslip_custom_main"/>
+
+    <record id="view_hr_expense_filter_inherit_analytic_account" model="ir.ui.view">
+        <field name="name">view.hr.expense.filter.inherit.analytic.account</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.view_hr_expense_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='analytic_account_id']" position="attributes">
+                <attribute name="string">Project</attribute>
+            </xpath>
+            <xpath expr="//filter[@name='analyticacc']" position="attributes">
+                <attribute name="string">Project</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_hr_expense_tree_inherit_analytic_account" model="ir.ui.view">
+        <field name="name">view.hr.expense.tree.inherit.analytic.account</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.view_expenses_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='analytic_account_id']" position="attributes">
+                <attribute name="string">Project</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_hr_expense_sheet_form_inherit_analytic_account" model="ir.ui.view">
+        <field name="name">view.hr.expense.sheet.form.inherit.analytic.account</field>
+        <field name="model">hr.expense.sheet</field>
+        <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='expense_line_ids']/tree/field[@name='analytic_account_id']" position="attributes">
+                <attribute name="string">Project</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="project_invoice_form_inherit_analytic_account" model="ir.ui.view">
+        <field name="name">project.invoice.form.inherit.analytic.account</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="hr_timesheet.project_invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='analytic_account_id']" position="attributes">
+                <attribute name="string">Project</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

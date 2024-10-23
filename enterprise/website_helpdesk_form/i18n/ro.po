@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk_form
+# 
+# Translators:
+# Dorin Hongu <dhongu@gmail.com>, 2016
+# Cozmin Candea <office@terrabit.ro>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:58+0000\n"
+"PO-Revision-Date: 2016-09-19 12:58+0000\n"
+"Last-Translator: Cozmin Candea <office@terrabit.ro>, 2016\n"
+"Language-Team: Romanian (https://www.transifex.com/odoo/teams/41243/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
+msgid "Description"
+msgstr "Descriere"
+
+#. module: website_helpdesk_form
+#: model:ir.model,name:website_helpdesk_form.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr ""
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.helpdesk_team_view_form_inherit_website_helpdesk_form
+msgid "Save this page to activate the feature"
+msgstr ""
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
+msgid "Send"
+msgstr "Trimite"
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
+msgid "Subject"
+msgstr "Subiect"
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.helpdesk_team_view_form_inherit_website_helpdesk_form
+msgid ""
+"Submit an issue using this page:<br/>\n"
+"                        ⇒"
+msgstr ""
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submited
+msgid "Thank you for submitting your issue, our team will get right on it!"
+msgstr ""
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
+msgid "Ticket"
+msgstr "Tichet"
+
+#. module: website_helpdesk_form
+#: model:ir.model.fields,field_description:website_helpdesk_form.field_helpdesk_team_feature_form_url
+msgid "URL to Submit Issue"
+msgstr ""
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
+msgid "Your Email"
+msgstr "Email"
+
+#. module: website_helpdesk_form
+#: model:ir.ui.view,arch_db:website_helpdesk_form.ticket_submit
+msgid "Your Name"
+msgstr "Nume dvs."

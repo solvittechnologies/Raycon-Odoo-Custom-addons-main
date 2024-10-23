@@ -1,0 +1,467 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_usps
+# 
+# Translators:
+# Murat Kaplan <muratk@projetgrup.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Ediz Duman <neps1192@gmail.com>, 2016
+# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2016
+# Esin Kandemir <esaykandemir@gmail.com>, 2016
+# Alexander B. <road2monstercat@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Alexander B. <road2monstercat@gmail.com>, 2016\n"
+"Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Abandon"
+msgstr "Vazgeç"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Account Validated"
+msgstr "Hesap Doğrulandı"
+
+#. module: delivery_usps
+#: model:ir.model,name:delivery_usps.model_delivery_carrier
+msgid "Carrier"
+msgstr "Nakliyeci"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Check this box if your account is validated by USPS"
+msgstr "Hesabınız USPS tarafından onaylandıysa, bu kutuyu işaretleyin"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:63
+#, python-format
+msgid "Company phone number is invalid. Please insert a US phone number."
+msgstr ""
+"Şirket telefon numarası geçersiz. Lütfen bir ABD telefon numarası ekleyin."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_content_type
+msgid "Content Type"
+msgstr "İçerik Türü"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.view_delivery_carrier_form_with_provider_usps
+msgid "DHL Configuration"
+msgstr "DHL Konfigürasyonu"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_delivery_nature
+msgid "Delivery Nature"
+msgstr "Teslimat Niteliği"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Documents"
+msgstr "Belge"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "Domestic"
+msgstr "Yerli"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Express"
+msgstr "Ekspres"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "First-Class"
+msgstr "Birinci sınıf"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Flat"
+msgstr "Düz"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate"
+msgstr "Sabit Fiyat"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate Box"
+msgstr "Sabit Fiyat Kutusu"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Flat Rate Envelope"
+msgstr "Düz Oran Zarfı"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "From Company"
+msgstr "Şirketten"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Gift"
+msgstr "Hediye"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "International"
+msgstr "Uluslararası"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Large"
+msgstr "Geniş"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Large Envelope"
+msgstr "Büyük Zarf"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Large Flat Rate Box"
+msgstr "Büyük Düz Daire"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Legal Flat Rate Envelope"
+msgstr "Yasal Düz Oranı Zarf"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Letter"
+msgstr "Mektub"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_machinable
+msgid "Machinable"
+msgstr "İşlenebilir"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Medium Flat Rate Box"
+msgstr "Orta Düz Oranı Kutusu"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Merchandise"
+msgstr "Mal"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_intl_non_delivery_option
+msgid "Non delivery option"
+msgstr "Teslimat seçeneği"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Non-rectangular"
+msgstr "Sigara dikdörtgen"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Package"
+msgstr "Paket"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Package Service"
+msgstr "Paket Servis"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_girth
+msgid "Package girth (in inches)"
+msgstr "Paket çevresi (inç cinsinden)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_height
+msgid "Package height (in inches)"
+msgstr "Paket yüksekliği (inç cinsinden)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_length
+msgid "Package length (in inches)"
+msgstr "Paket uzunluğu (inç cinsinden)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_width
+msgid "Package width (in inches)"
+msgstr "Paket genişliği (inç cinsinden)"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Padded Flat Rate Envelope"
+msgstr "Dolgulu Düz Oran Zarfı"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Parcel"
+msgstr "Parsel"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:80
+#, python-format
+msgid "Please Change the Service Max. weight of this Service is 4 pounds"
+msgstr "Lütfen Hizmet Maxini Değiştirin. Bu Hizmetin ağırlığı 4 lira"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_machinable
+msgid ""
+"Please check on USPS website to ensure that your package is machinable."
+msgstr ""
+"Lütfen paketinizin işlenebilir olduğundan emin olmak için USPS web sitesini "
+"kontrol edin."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:68
+#, python-format
+msgid "Please enter a valid ZIP code in recipient address"
+msgstr "Lütfen alıcı adresine geçerli bir posta kodu girin"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:61
+#, python-format
+msgid "Please enter a valid ZIP code in your Company address"
+msgstr "Lütfen Şirket adresinize geçerli bir posta kodu girin"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:75
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "En az bir adet kargolanacak ürün sağlayın."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:59
+#, python-format
+msgid ""
+"Please set country U.S.A in your company address, Service is only available "
+"for U.S.A"
+msgstr ""
+"Lütfen şirket adresinizde ABD'yi ABD olarak ayarlayın, Hizmet sadece ABD "
+"için geçerlidir"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Postcard"
+msgstr "Kartpostal"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Priority"
+msgstr "Öncelik"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Rectangular"
+msgstr "dikdörtgen"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Redirect"
+msgstr "yönlendir"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_redirect_partner_id
+msgid "Redirect Partner"
+msgstr "Yönlendiren Ortak"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Regular"
+msgstr "Düzenli"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Regular < 12 inch"
+msgstr "Düzenli <12 inç"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Return"
+msgstr "İade"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Sample"
+msgstr "Örneklem"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:154
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Sevkiyat N° %s iptal edildi."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:131
+#, python-format
+msgid "Shipment created into USPS <br/> <b>Tracking Number : </b>%s"
+msgstr "Gönderim USPS'e oluşturuldu <br/> <b> Takip Numarası: </ b> %s"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Box"
+msgstr "Küçük Daire Ücret Kutu"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Envelope"
+msgstr "Küçük Oran Hacmi Zarfı"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_label_file_type:0
+msgid "TIF"
+msgstr "TIF"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:159
+#, python-format
+msgid "The USPS service selected (%s) cannot be used to deliver this package."
+msgstr "Seçilen USPS hizmeti ( %s ) bu paketi teslim etmek için kullanılamaz."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:57
+#, python-format
+msgid ""
+"The address of your company is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"Firma adresiniz eksik veya yanlış (Kalan alan (lar): \n"
+"%s )"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:78
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr "Ürününüzün ağırlığı olmadığı için tahmini fiyat hesaplanamadı."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:361
+#, python-format
+msgid ""
+"The recepient address can't be found. Please check that your recepient has "
+"an existing address."
+msgstr ""
+"Alınan adres bulunamadı. Lütfen alıcınızın mevcut bir adresinin olup "
+"olmadığını kontrol edin."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:66
+#, python-format
+msgid ""
+"The recipient address is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr "Alıcı adresi eksik veya yanlış (Kayıp alan (lar): \\ n %s )"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "To Company"
+msgstr "Şirkete"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_international_regular_container
+msgid "Type of USPS International regular container"
+msgstr "USPS tipi Uluslararası düzenli konteyner"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_domestic_regular_container
+msgid "Type of USPS domestic regular container"
+msgstr "USPS tipi ev tipi düzenli konteyner"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_container
+msgid "Type of container"
+msgstr "Konteyner tipi"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_domestic
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_domestic_product_product
+msgid "USPS Domestic Flat Rate Envelope"
+msgstr "USPS Yurtiçi Düz Oran Zarfı"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:72
+#, python-format
+msgid ""
+"USPS Domestic is used only to ship  inside of the U.S.A. Please change the "
+"delivery method into USPS International."
+msgstr ""
+"USPS Dahili, yalnızca ABD içinden gemi taşımak için kullanılır. Lütfen "
+"dağıtım yöntemini USPS International'a değiştirin."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_first_class_mail_type
+msgid "USPS First Class Mail Type"
+msgstr "USPS Birinci Sınıf Posta Türü"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_international
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_international_product_product
+msgid "USPS International Flat Rate Box"
+msgstr "USPS Uluslararası Düz ​​Oranı Kutusu"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:70
+#, python-format
+msgid ""
+"USPS International is used only to ship  outside of the U.S.A. Please change"
+" the delivery method into USPS Domestic."
+msgstr ""
+"USPS International, yalnızca ABD dışına gönderim amacıyla kullanılır. Lütfen"
+" dağıtım yöntemini USPS Yerli olarak değiştirin."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_label_file_type
+msgid "USPS Label File Type"
+msgstr "USPS Etiket Dosyası Türü"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_mail_type
+msgid "USPS Mail Type"
+msgstr "USPS Posta Türü"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_service
+msgid "USPS Service"
+msgstr "USPS Hizmeti"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_username
+msgid "USPS User ID"
+msgstr "USPS Kullanıcı Kimliği"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_size_container
+msgid "Usps size container"
+msgstr ""
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:363
+#, python-format
+msgid "Your company or recipient zip code is incorrect."
+msgstr "Şirket veya alıcı posta kodunuz yanlış."

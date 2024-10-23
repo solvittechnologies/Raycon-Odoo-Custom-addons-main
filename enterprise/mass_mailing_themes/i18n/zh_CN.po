@@ -1,0 +1,311 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mass_mailing_themes
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# Bo Cao, 2017
+# kevin lee <kevin80828@gmail.com>, 2017
+# e2f <projects@e2f.com>, 2018
+# 珠海-杜哥 <liangjia@qq.com>, 2018
+# keecome <7017511@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: keecome <7017511@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "1958 Royal"
+msgstr "1958 Royal"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "20%"
+msgstr "20%"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "21 Jul"
+msgstr "7月21日"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "<small>Step 1:</small>"
+msgstr "<small>第一步：</small>"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "<small>Step 2:</small>"
+msgstr "<small>第 2 步:</small>"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "<small>Step 3:</small>"
+msgstr "<small>步骤3:</small>"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid ""
+"A delicious soup made of one or more seasonal vegetables, without added fat,"
+" starches and lactose."
+msgstr "美味的汤包含一种或多种时令蔬菜，不添加脂肪、淀粉和乳糖。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "ALL DAY"
+msgstr "全天"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "BBQ Mix"
+msgstr "烧烤组合"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Call for Speakers"
+msgstr "联络演讲者"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Captain’s Salad"
+msgstr "Captain’s Salad"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Check the top electric guitar brands and their models!"
+msgstr "查看知名电吉他品牌及其型号！"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Choose"
+msgstr "选择"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Classic D8 Skate"
+msgstr "Classic D8 Skate"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Discover"
+msgstr "探索"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"Discover the new version of our software, with a great overview on all the "
+"new features."
+msgstr "发现新版本软件以及所有新功能的详细概览。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Enjoy!"
+msgstr "尽享!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "FROM YOUR NEXT ORDER!"
+msgstr "从您的下一个订单开始！"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Gibson Les Paul Junior"
+msgstr "吉布森莱斯少年Paul Junior"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Heat up the popcorn and get ready for an immersive experience."
+msgstr "加热爆米花，准备进入沉浸式体验。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Hi there!"
+msgstr "你好！"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Mains"
+msgstr "主要"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Mini Hamburgers"
+msgstr "迷你汉堡"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "More Info"
+msgstr "更多信息"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "New 45Hc-270A laptop"
+msgstr "新款 45Hc-270A 笔记本电脑"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid ""
+"Normally mirrorless cameras have always sat slightly above entry-level in "
+"terms of price.."
+msgstr "通常，无反光镜相机在价格上始终比入门级相机要高一些。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "OFF"
+msgstr "关闭"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Odoo Experience is the place to be to showcase your expertize."
+msgstr "Odoo Experience 是展现专业知识的地方。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Order"
+msgstr "订单"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Premium Pass"
+msgstr "高级通行证"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Puccini Jar"
+msgstr "Puccini Jar"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Read More"
+msgstr "阅读更多"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Read More..."
+msgstr "阅读更多"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Recipe of the day"
+msgstr "今日食谱"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Register Now!"
+msgstr "现在注册"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Registration"
+msgstr "登记"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Sony BDVE210"
+msgstr "Sony BDVE210"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Starters"
+msgstr "开胃小吃"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Tagliatelle Boscaiola"
+msgstr "Tagliatelle Boscaiola"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "The Rise Of The Drone"
+msgstr "无人机的兴起"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid ""
+"The new laptops look nearly identical to the original models, but closer "
+"inspection reveals a refined design."
+msgstr "新款笔记本电脑的外观与原始模型基本一致，但仔细观察后会发现新款笔记本电脑的设计更加精致。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"The next edition of Odoo Experience looks very promising. More than 150 talks are scheduled during those 3 days!\n"
+"                                    Find below some stand-out talks for the Business tracks."
+msgstr ""
+"下个版本的 Odoo Experience 前景一片光明。在这三天内安排了超过 150 次的会谈！\n"
+" 在下方找出一些"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid ""
+"They sit at terminals at Holloman Air Force Base, watching grainy images "
+"from a drone video feed."
+msgstr "他们坐在霍洛曼空军基地的码头，观看来自无人机视频源的模糊影像。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "This pass gives you access to the catering and evening activities!"
+msgstr "此通行证允许您进入餐饮和晚间活动！"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"To stir up your curiosity, have a look at all the great talks scheduled and "
+"highlighted in our agenda!"
+msgstr "为了激起你的好奇心，请看看我们议程中已安排和突出显示的出众会谈！"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Tomato Soup"
+msgstr "番茄汤"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Two-lens phone cameras"
+msgstr "双透镜手机摄像头"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid ""
+"We are continuing to grow and we miss seeing you be a part of it! We've "
+"increased store hours and have lot's of new brands available.<br/>To welcome"
+" you back please accept this 20% discount on you next purchase by clicking "
+"the button."
+msgstr ""
+"我们在不断成长，迫切地想看到您成为 Odoo 的一员！我们已延长商店营业时间，并提供大量新品牌。为了欢迎您的归来，单击此按钮即可在下次购买时享受 20%"
+" 的折扣。"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Your Banner Image"
+msgstr "横幅图片"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Your Logo"
+msgstr "你的Logo"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Your Picture"
+msgstr "你的图片"

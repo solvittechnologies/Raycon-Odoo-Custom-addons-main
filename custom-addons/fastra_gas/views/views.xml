@@ -1,0 +1,293 @@
+<odoo>
+  <data>
+   <!-- MENU ITEMS -->
+
+   <!-- NEW GROUP TO HIDE MENUS -->
+    <record id="group_hidden_menus" model="res.groups">
+	<field name="name"> Hidden Menu</field>
+	</record>
+
+
+
+<!-- MAIN ROOT MENU  -->
+    <menuitem
+	id="fastra_fuel_mgt_root"
+	name="FASTRA FUEL"
+	web_icon="point_of_sale,static/description/icon.png"
+	sequence="20"/>
+
+
+<!-- MENU 'OTHERS' AND SUB-MENUS -->
+    <menuitem
+	id="other_services"
+	name="OTHERS"
+	parent = "fastra_fuel_mgt_root"
+	sequence="30"/>
+
+    <menuitem 
+	id="purchase.menu_purchase_rfq"
+	name="Requests For Quotation"
+	parent="other_services"
+	sequence="7"/>
+
+
+    <menuitem
+	id="purchase.menu_procurement_management_pending_invoice"
+	name="Vendor Bills"
+	parent="other_services"
+	sequence="8"/>
+
+
+    <menuitem id="sale.res_partner_menu"
+	parent="other_services"
+	action="base.action_partner_form"
+	sequence = "9"
+	groups="sales_team.group_sale_salesman"/>
+
+    <menuitem id="all_products"
+	name="All Products"
+	parent="other_services"
+	action="stock.product_template_action_product"
+	sequence="11"/>
+
+
+    <menuitem id="purchase.menu_procurement_management_supplier_name"
+	name="Vendors"
+	parent="other_services"
+	action="base.action_partner_supplier_form" 
+	sequence="10"/>
+
+    <menuitem 
+	id="sale.menu_sale_order"
+	name="Sales Orders"
+	parent="other_services"
+	sequence="5"/>
+	
+
+
+<!-- MENU 'LPG' AND SUB-MENUS  -->
+    <menuitem
+	id="point_of_sale.menu_point_root"
+	name="LPG"
+	parent = "fastra_fuel_mgt_root"
+	groups="point_of_sale.group_pos_manager,point_of_sale.group_pos_user"
+	sequence="2"/>
+
+
+<!-- WILL STILL HIDE THIS TWO PERMANENTLY  -->
+    <menuitem id="sale.sale_menu_root"
+	name="Sales"
+	parent = "fastra_fuel_mgt_root"
+	groups="group_hidden_menus"/>
+
+    <record model="ir.ui.menu" id="purchase.menu_purchase_root">
+	<field name="groups_id" eval="[(6,0,[ref('group_hidden_menus')])]"/>
+    </record>
+
+
+
+
+<!-- USED THIS TO MOVE SESSIONS UNDER POS REPORTING  -->
+    <menuitem 
+	id="point_of_sale.menu_pos_session_all"
+	name="Session Reports"
+	parent = "general_accounting_reports"
+	action="point_of_sale.action_pos_session"
+	sequence="2"
+	groups="point_of_sale.group_pos_manager"/>
+
+<!-- MENU HR AND SUB-MENUS  -->
+    <menuitem
+	id="hr.menu_hr_root"
+	name="HR"
+	parent = "fastra_fuel_mgt_root"
+	groups="hr.group_hr_manager,hr.group_hr_user,base.group_user"
+	sequence = "40" />
+
+
+
+<!--  CONFIGURATION MENU AND SUB-MENUS   -->
+    <menuitem
+	id="general_configurations"
+	name="Configurations"
+	parent="fastra_fuel_mgt_root"
+	groups="point_of_sale.group_pos_manager"
+	sequence="40"/>
+
+    <menuitem id="point_of_sale.menu_point_config_product"
+	name="POS Configuration"
+	parent="general_configurations"
+	sequence="100"
+	groups="point_of_sale.group_pos_manager"/>
+
+
+    <menuitem id="point_of_sale.menu_products_pos_category"
+	action="point_of_sale.product_pos_category_action"
+	parent="point_of_sale.menu_point_config_product"
+	sequence="1"/>
+
+    <menuitem id="point_of_sale.pos_menu_products_attribute_action"
+	action="product.attribute_action"
+	parent="point_of_sale.menu_point_config_product"  
+	groups="product.group_product_variant,point_of_sale.group_pos_manager" 
+	sequence="2"/>
+
+    <menuitem id="point_of_sale.pos_menu_products_variants_action"
+	action="product.variants_action"
+	parent="point_of_sale.menu_point_config_product" 
+	groups="product.group_product_variant,point_of_sale.group_pos_manager" 
+	sequence="3"/>
+
+
+    <menuitem id="sale.menu_sale_config"
+	name="Sales Configuration"
+	parent="general_configurations"
+	sequence="6"
+	groups="point_of_sale.group_pos_manager"/>
+
+     <menuitem id="purchase.menu_purchase_config" 
+	name="Purchase Configuration" 
+	parent="general_configurations" 
+	sequence="100" 
+	groups="purchase.group_purchase_manager"/>
+
+
+
+
+<!--	ACCOUNTING AND REPORTING  -->
+    <menuitem id="general_accounting_reports"
+	name="Reports"
+	parent="fastra_fuel_mgt_root"
+	groups="point_of_sale.group_pos_manager,sales_team.group_sale_manager"
+	sequence="25"/>
+
+    <menuitem id="point_of_sale.menu_report_pos_order_all" 
+	name="POS Orders Analysis"
+	action="point_of_sale.action_report_pos_order_all" 
+	parent="general_accounting_reports" 
+	sequence="3"/>
+
+    <menuitem id="point_of_sale.menu_report_order_details" 
+	name="POS Sales Details" 
+	action="point_of_sale.action_report_pos_details" 
+	parent="general_accounting_reports" 
+	sequence="4"/>
+
+    <menuitem id="sale.menu_report_product_all"
+	name="Sales Order Analysis"
+	action="sale.action_order_report_all"
+	parent="general_accounting_reports" 
+	sequence="5"/>
+
+
+
+
+<!-- 	HIDDEN MENU CATEGORY   -->
+    <record model="ir.ui.menu" id="calendar.mail_menu_calendar">
+	<field name="groups_id" eval="[(6,0,[ref('group_hidden_menus')])]"/>
+    </record> 
+
+    <record model="ir.ui.menu" id="contacts.menu_contacts">
+	<field name="groups_id" eval="[(6,0,[ref('group_hidden_menus')])]"/>
+    </record>    
+
+    <record model="ir.ui.menu" id="mail.menu_root_discuss">
+	<field name="groups_id" eval="[(6,0,[ref('group_hidden_menus')])]"/> 
+    </record>
+
+    <record model="ir.ui.menu" id="website.menu_website_configuration">
+  	<field name="groups_id" eval="[(6,0,[ref('group_hidden_menus')])]"/>
+    </record>    
+
+
+
+<!-- 		POS PUMP CUSTOM VIEW 		-->
+
+    <record model="ir.ui.view" id="pos_pump_tree">
+	<field name="name">POS Pump</field>
+	<field name="model">pos.pump</field>
+	<field name="priority" eval="16"/>
+	<field name="arch" type="xml">
+	<!-- view content: <form>, <tree>, <graph>, ... -->
+	<tree>
+	    <field name="name"/>
+	    <field name="point_of_sale"/>
+	    <field name="current_meter_reading"/>
+	</tree>
+	</field>
+    </record>
+
+    <record model="ir.ui.view" id="pos_pump_form_view">
+	<field name="name">POS pump form</field>
+	<field name="model">pos.pump</field>
+	<field name="arch" type="xml">
+	<form string="POS Pump Form">
+    	    <sheet>
+		<group>
+		    <field name="name"/>
+		    <field name="point_of_sale"/>
+		</group>
+
+		<group>
+		    <field name="current_meter_reading"/>
+		</group>
+	    </sheet>
+	</form>
+	</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="pos_pump_action">
+	<field name="name">POS Pump</field>
+	<field name="res_model">pos.pump</field>
+	<field name="view_type">form</field>
+	<field name="view_mode">tree,form</field>
+	<field name="help" type="html">
+	    <p class="oe_view_nocontent_create">Create the a pos pump</p>
+	</field>
+    </record>
+
+    <menuitem id="pos_pump_menu" 
+	name="POS Pump" 
+	action="pos_pump_action" 
+	parent="point_of_sale.menu_point_config_product"
+	groups="point_of_sale.group_pos_manager"/>
+
+
+<!-- 		RECEIVING PRODUCTS			-->
+
+    <menuitem name="Recieve Product"
+	id="fastra_receive_product"
+	parent="point_of_sale.pos_config_menu_catalog"
+	action="stock.action_picking_tree_all"/>
+
+
+
+<!--	INHERIT PRODUCT TEMPLATE ACTION	-->
+
+    <record id="point_of_sale.product_template_action_pos_product" model="ir.actions.act_window">
+	<field name="domain">[('available_in_pos', '!=', False)]</field>
+    </record>
+
+
+
+
+
+    <!--<menuitem
+	id="mail.menu_root_discuss"
+	name="Disc"
+	action="mail.action_discuss"
+	groups="group_hidden_menus"
+	sequence="1"/>
+	web_icon="mail,static/description/icon.png"
+	groups="base.group_erp_manager"
+	sequence="1"/> -->
+
+<!--    <menuitem
+	id="calendar.mail_menu_calendar"
+	name="Meeting Schedules"
+	sequence="2"
+	action="calendar.action_calendar_event"
+	groups="group_hidden_menus"/>-->
+
+  </data>
+</odoo>

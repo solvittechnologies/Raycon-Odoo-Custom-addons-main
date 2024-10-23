@@ -1,0 +1,328 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast
+# 
+# Translators:
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2016
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Eric Geens <ericgeens@yahoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:59+0000\n"
+"PO-Revision-Date: 2016-09-19 12:59+0000\n"
+"Last-Translator: Eric Geens <ericgeens@yahoo.com>, 2016\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "% Time"
+msgstr "% Tijd"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_kanban_inherit_project_forecast
+msgid "<span class=\"o_label\">Forecast</span>"
+msgstr "<span class=\"o_label\">Planning</span>"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "<span>Forecast</span>"
+msgstr "<span>Planning</span>"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_active
+msgid "Active"
+msgstr "Actief"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_report_activities
+msgid "Activities"
+msgstr "Activiteiten"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_task_allow_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "Allow Forecast"
+msgstr "Planning toestaan"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_project_allow_forecast
+msgid "Allow forecast"
+msgstr "Planning toestaan"
+
+#. module: project_forecast
+#: model:ir.actions.server,name:project_forecast.project_forecast_server_action_archive
+msgid "Archive/Unarchive"
+msgstr "Archiveer/Dearchiveer"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Archived"
+msgstr "Gearchiveerd"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_group_by_project
+msgid "By Project"
+msgstr "Op project"
+
+#. module: project_forecast
+#: model:ir.ui.menu,name:project_forecast.project_forecast_group_by_user
+msgid "By User"
+msgstr "Per gebruiker"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_color
+msgid "Color"
+msgstr "Kleur"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_payment_token_count
+msgid "Count Payment Token"
+msgstr "Antal betaaltokens"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.task_view_form_inherit_project_forecast
+msgid "Create a forecast"
+msgstr "Maak een planning"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_display_name
+msgid "Display Name"
+msgstr "Weergave naam"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_effective_hours
+msgid "Effective hours"
+msgstr "Effectieve uren"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_end_date
+msgid "End date"
+msgstr "Einddatum"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_exclude
+msgid "Exclude"
+msgstr "Uitsluiten"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_project
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_report_activities
+#: model:ir.ui.menu,name:project_forecast.project_forecast_menu
+#: model:ir.ui.view,arch_db:project_forecast.project_view_kanban_inherit_project_forecast
+msgid "Forecast"
+msgstr "Planning"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "Forecast Form"
+msgstr "Planning formilier"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_tree
+msgid "Forecast List"
+msgstr "Planninglijst"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_by_project
+msgid "Forecast by project"
+msgstr "Planing per project"
+
+#. module: project_forecast
+#: model:ir.actions.act_window,name:project_forecast.project_forecast_action_by_user
+msgid "Forecast by user"
+msgstr "Planning per gebruiker"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:121
+#, python-format
+msgid "Forecasted time must be positive"
+msgstr "Plantijd moet positief zijn"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Future"
+msgstr "Toekomst"
+
+#. module: project_forecast
+#: model:ir.actions.server,name:project_forecast.action_generate_forecast
+msgid "Generate Forecast"
+msgstr "Genereer planning"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_pivot
+msgid "Graph"
+msgstr "Diagram"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Group By"
+msgstr "Groepeer op"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_has_address
+msgid "Is address valid"
+msgstr "Is adres valide"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "My activities"
+msgstr "Mijn activiteiten"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "My projects"
+msgstr "Mijn projecten"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_name
+msgid "Name"
+msgstr "Naam"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Past"
+msgstr "Verleden"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_payment_token_ids
+msgid "Payment Tokens"
+msgstr "Betaal tokens"
+
+#. module: project_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_forecast_time
+msgid "Percentage of working time"
+msgstr "Percentage van werktijd"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_resource_hours
+msgid "Planned hours"
+msgstr "Geplande uren"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_percentage_hours
+msgid "Progress"
+msgstr "Voortgang"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_project
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_project_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Project"
+msgstr "Project"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_form
+msgid "Project Forecast"
+msgstr "Projectplanning"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_res_users_resource_ids
+msgid "Resource ids"
+msgstr "Bron ids"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_start_date
+msgid "Start date"
+msgstr "Startdatum"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_task
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_task_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "Task"
+msgstr "Taak"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_stage_id
+msgid "Task stage"
+msgstr "Taak fase"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_tag_ids
+msgid "Task tags"
+msgstr "Taak labels"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:133
+#, python-format
+msgid "The start-date must be lower than end-date."
+msgstr "De startdatum moet voor de einddatum zijn."
+
+#. module: project_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_project_allow_forecast
+#: model:ir.model.fields,help:project_forecast.field_project_task_allow_forecast
+msgid "This feature shows the Forecast link in the kanban view"
+msgstr ""
+"Deze mogelijkheid toont een link naar de planning in de kanban weergave"
+
+#. module: project_forecast
+#: model:ir.ui.view,arch_db:project_forecast.project_view_form_inherit_project_forecast
+msgid "Time Scheduling"
+msgstr "Tijdsplanning"
+
+#. module: project_forecast
+#: model:ir.model.fields,field_description:project_forecast.field_project_forecast_user_id
+#: model:ir.ui.view,arch_db:project_forecast.project_forecast_view_search
+msgid "User"
+msgstr "Gebruiker"
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_res_users
+msgid "Users"
+msgstr "Gebruikers"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:127
+#, python-format
+msgid "Your task is not in the selected project."
+msgstr "Uw taak is niet in het geselecteerde project."
+
+#. module: project_forecast
+#: model:ir.model,name:project_forecast.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast
+#: code:addons/project_forecast/models/models.py:63
+#, python-format
+msgid "undefined"
+msgstr "Niet gedefinieerd"

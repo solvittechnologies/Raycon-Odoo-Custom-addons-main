@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_request_inventory,access.request.inventory,model_request_inventory,,1,1,1,1
+access_request_inventory_line,access.request.inventory.line,model_request_inventory_line,,1,1,1,1
+access_inventory_request,access.inventory.update,model_inventory_request,,1,1,1,1

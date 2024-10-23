@@ -1,0 +1,223 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast_grid
+# 
+# Translators:
+# Dorin Hongu <dhongu@gmail.com>, 2016
+# Cozmin Candea <office@terrabit.ro>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 14:58+0000\n"
+"PO-Revision-Date: 2016-09-29 14:58+0000\n"
+"Last-Translator: Martin Trigaux <mat@odoo.com>, 2016\n"
+"Language-Team: Romanian (https://www.transifex.com/odoo/teams/41243/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:29
+#, python-format
+msgid ""
+"A project must have a start date to use a forecast grid, found no start date"
+" for {project.display_name}"
+msgstr ""
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:47
+#, python-format
+msgid ""
+"A project must have an end date to use a forecast grid, found no end date "
+"for {project.display_name"
+msgstr ""
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign"
+msgstr "Alocă"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_assign
+msgid "Assign user on a task"
+msgstr "Alocă o sarcina unui utilizator"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign user on task"
+msgstr "Alocă utilizator unei sarcini"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_project
+msgid "By Project"
+msgstr "După proiect"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_user
+msgid "By User"
+msgstr "Dupa Utilizator"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:20
+#, python-format
+msgid ""
+"Can only be used for forecasts not spanning multiple months, found "
+"%(forecast_count)d forecast(s) spanning across months in %(project_name)s"
+msgstr ""
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_uid
+msgid "Created by"
+msgstr "Creat de"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_date
+msgid "Created on"
+msgstr "Creat în"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_display_name
+msgid "Display Name"
+msgstr "Nume afișat"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:41
+#, python-format
+msgid "Forecast"
+msgstr "Estimare"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_project
+msgid "Forecast By Project"
+msgstr "Estimare după proiect"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_user
+msgid "Forecast By User"
+msgstr "Estimare după utilizator"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid ""
+"Forecasting on a project requires that the project\n"
+"                        have start and end dates"
+msgstr ""
+"Estimarea pe un proiect\n"
+"are dată de început și de sfârșit"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:25
+#, python-format
+msgid ""
+"Forecasting over a project only supports monthly forecasts (got step {})"
+msgstr ""
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.project_forecast_gantt
+msgid "Gantt"
+msgstr "Gantt"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid
+msgid "Grid"
+msgstr "Grilă"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:63
+#, python-format
+msgid ""
+"Grid adjustment for project forecasts only supports the 'start_date' columns"
+" field and the 'resource_hours' cell field, got respectively "
+"%(column_field)r and %(cell_field)r"
+msgstr ""
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment___last_update
+msgid "Last Modified on"
+msgstr "Ultima modificare la"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualizare făcută de"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_date
+msgid "Last Updated on"
+msgstr "Ultima actualizare în"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Month"
+msgstr "Luna"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Monthly Forecast"
+msgstr "Estimare lunară"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_project
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_project_id
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Project"
+msgstr "Proiect"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "Project Dates"
+msgstr ""
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Project Forecast By User"
+msgstr "Estimare proiect după utilizator"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_task_id
+msgid "Task"
+msgstr "Sarcină"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_user_id
+msgid "User"
+msgstr "Utilizator"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "View Forecast"
+msgstr "Vezi estimare"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Week"
+msgstr "Săptămână"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Year"
+msgstr "An"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast_assignment
+msgid "project.forecast.assignment"
+msgstr "project.forecast.assignment"

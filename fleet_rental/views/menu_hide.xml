@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.menu" id="fleet_rental.menu_car_checklist">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet_rental.menu_car_tools">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_vehicles">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.menu_fleet_reporting_costs">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.menu_fleet_reporting_indicative_costs">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet_rental.menu_fleet_rental_analysis">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_vehicle_model_brand_menu">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_vehicle_service_types_menu">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_vehicle_contract_types_menu">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_menu_config_activity_type">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_vehicle_tag_menu">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="fleet.fleet_vehicle_state_menu">
+            <field name="groups_id" eval="[(6,0,[ref('fleet_rental.show_rental_menu_group')])]"/>
+        </record>
+    </data>
+</odoo>

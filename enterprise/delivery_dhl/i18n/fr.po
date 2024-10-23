@@ -1,0 +1,494 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_dhl
+# 
+# Translators:
+# Richard Mathot <rim@odoo.com>, 2016
+# Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2016
+# Loic <loic.richard2@gmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Adriana Ierfino <adriana.ierfino@savoirfairelinux.com>, 2016
+# Fabri Yohann <psn@fabri.pw>, 2016
+# Olivier Lenoir <olivier.lenoir@free.fr>, 2016
+# Xavier Belmere <Info@cartmeleon.com>, 2016
+# Miguel Vidali <mvidali129@gmail.com>, 2016
+# Foo Bar <mat+test@odoo.com>, 2017
+# Sébastien Le Ray <sebastien-github@orniz.org>, 2017
+# Simon Maillard <simon@ogesta.fr>, 2017
+# Eloïse Stilmant <est@odoo.com>, 2017
+# Maximilien Tantin <maximilien.tantin@horanet.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:58+0000\n"
+"PO-Revision-Date: 2016-09-19 12:58+0000\n"
+"Last-Translator: Maximilien Tantin <maximilien.tantin@horanet.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "6X4_A4_PDF"
+msgstr "6X4_A4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "6X4_PDF"
+msgstr "6X4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "6X4_thermal"
+msgstr "6X4_thermal"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_A4_PDF"
+msgstr "8X4_A4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_A4_TC_PDF"
+msgstr "8X4_A4_TC_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_CI_PDF"
+msgstr "8X4_CI_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_CI_thermal"
+msgstr "8X4_CI_thermal"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_PDF"
+msgstr "8X4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_RU_A4_PDF"
+msgstr "8X4_RU_A4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_thermal"
+msgstr "8X4_thermal"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_accessory_product_ids
+msgid ""
+"Accessories show up when the customer reviews the cart before paying (cross-"
+"sell strategy, e.g. for computers: mouse, keyboard, etc.). An algorithm "
+"figures out a list of accessories based on all the products added to cart."
+msgstr ""
+"Les accessoires s'affichent lorsque l'utilisateur passe en revue son panier "
+"avant de payer (stratégie de vente croisée, p.e. pour les ordinateurs : "
+"souris, clavier, etc.). Un algorithme détermine une liste d'accessoire en "
+"fonction des produits ajoutés au panier."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_accessory_product_ids
+msgid "Accessory Products"
+msgstr "Accessoires "
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_availability
+msgid "Adds an availability status on the web product page."
+msgstr "Ajoute une information de disponibilité sur la page produit."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_alternative_product_ids
+msgid "Alternative Products"
+msgstr "Produits alternatifs"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_region_code:0
+msgid "America"
+msgstr "Amériques"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_region_code:0
+msgid "Asia Pacific"
+msgstr "Asie Pacifique"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_availability
+msgid "Availability"
+msgstr "Disponibilité"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_availability_warning
+msgid "Availability Warning"
+msgstr "Avertissement de disponibilité"
+
+#. module: delivery_dhl
+#: model:ir.model,name:delivery_dhl.model_delivery_carrier
+msgid "Carrier"
+msgstr "Transporteur"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_public_categ_ids
+msgid ""
+"Categories can be published on the Shop page (online catalog grid) to help "
+"customers find all the items within a category. To publish them, go to the "
+"Shop page, hit Customize and turn *Product Categories* on. A product can "
+"belong to several categories."
+msgstr ""
+"Les catégories peuvent être publiées sur la page Boutique (catalogue en "
+"ligne) afin d'aider les clients à trouver tous les produits d'une catégorie."
+" Afin de les publiez, rendez-vous sur la page Boutique, cliquez sur « "
+"Personnaliser » et activez *Catégories Produits*. Un produit peut appartenir"
+" à plusieurs catégories."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "Centimètres"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_dhl_dutiable
+msgid "Check this if your package is dutiable."
+msgstr "Cochez cette case si votre colis est sujet au frais de douanes."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "D - Express Worldwide"
+msgstr "D - Express Worldwide"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_account_number
+msgid "DHL Account Number"
+msgstr "Numéro de compte DHL"
+
+#. module: delivery_dhl
+#: model:ir.ui.view,arch_db:delivery_dhl.view_delivery_carrier_form_with_provider_dhl
+msgid "DHL Configuration"
+msgstr "Configuration DHL"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_default_packaging_id
+msgid "DHL Default Packaging Type"
+msgstr "Type d'emballage DHL par défaut"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_password
+msgid "DHL Password"
+msgstr "Mot de passe DHL"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:373
+#, python-format
+msgid "DHL Site ID is missing, please modify your delivery method settings."
+msgstr ""
+"Le SiteID DHL est manquant, veuillez corriger la configuration de votre "
+"méthode de livraison."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_SiteID
+msgid "DHL SiteID"
+msgstr "SiteID DHL"
+
+#. module: delivery_dhl
+#: model:delivery.carrier,name:delivery_dhl.delivery_carrier_dhl_dom
+#: model:product.product,name:delivery_dhl.delivery_carrier_dhl_dom_product_product
+msgid "DHL USA"
+msgstr "DHL USA"
+
+#. module: delivery_dhl
+#: model:delivery.carrier,name:delivery_dhl.delivery_carrier_dhl_intl
+#: model:product.product,name:delivery_dhl.delivery_carrier_dhl_intl_product_product
+msgid "DHL USA -> International"
+msgstr "DHL USA -> International"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:377
+#, python-format
+msgid ""
+"DHL account number is missing, please modify your delivery method settings."
+msgstr ""
+"Votre numéro de compte DHL est manquant, veuillez corriger la configuration "
+"de votre méthode de livraison."
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:375
+#, python-format
+msgid "DHL password is missing, please modify your delivery method settings."
+msgstr ""
+"Le mot de passe DHL est manquant, veuillez corriger la configuration de "
+"votre méthode de livraison."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_quote_description
+msgid "Description for the quote"
+msgstr "Description pour le devis"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_description
+msgid "Description for the website"
+msgstr "Description pour le site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_website_sequence
+msgid "Determine the display order in the Website E-commerce"
+msgstr "Détermine l'ordre d'affichage sur le site de vente"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_dutiable
+msgid "Dutiable Material"
+msgstr "Matériaux taxables"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_image_format:0
+msgid "EPL2"
+msgstr "EPL2"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_region_code:0
+msgid "Europe"
+msgstr "Europe"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_product_image_ids
+msgid "Images"
+msgstr "Images"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_dimension_unit:0
+msgid "Inches"
+msgstr "Pouces"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "K - Express 9:00"
+msgstr "K - Express 9:00"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_weight_unit:0
+msgid "Kilograms"
+msgstr "Kilogrammes"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_label_image_format
+msgid "Label Image Format"
+msgstr "Format d'image pour l'étiquette"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_label_template
+msgid "Label Template"
+msgstr "Modèle d'étiquette"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "N - Domestic Express"
+msgstr "N - Domestic Express"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:178
+#, python-format
+msgid "No service available for the selected product"
+msgstr "Pas de service disponible pour le produit choisi"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:81
+#, python-format
+msgid "No shipping available for the selected DHL product"
+msgstr "Pas de service d'expédition disponible pour le produit DHL"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_image_format:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_package_dimension_unit
+msgid "Package Dimension Unit"
+msgstr "Unité de dimension pour les paquets"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_package_weight_unit
+msgid "Package Weight Unit"
+msgstr "Unité de poids pour les paquets"
+
+#. module: delivery_dhl
+#: model:ir.model,name:delivery_dhl.model_product_packaging
+msgid "Packaging"
+msgstr "Conditionnement"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:395
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Veuillez fournir au moins un élément concernant l'expédition"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_weight_unit:0
+msgid "Pounds"
+msgstr "Livres"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_product_code
+msgid "Product"
+msgstr "Article"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_rating_ids
+msgid "Rating"
+msgstr "Évaluation"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_rating_last_value
+msgid "Rating Last Value"
+msgstr "Dernier évaluation"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_rating_count
+msgid "Rating count"
+msgstr "Nombre d'évaluations"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_rating_last_value
+msgid "Rating value: 0=Unhappy, 10=Happy"
+msgstr "Évaluation : 0 = Mécontent, 10 = Très satisfait"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_region_code
+msgid "Region"
+msgstr "Région"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/delivery_dhl.py:84
+#, python-format
+msgid "Shipment created into DHL <br/> <b>Tracking Number : </b>%s"
+msgstr "Envoi créé dans DHL <br/> <b>Numéro de suivi : </b>%s"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_size_x
+msgid "Size X"
+msgstr "Taille X"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_size_y
+msgid "Size Y"
+msgstr "Taille Y"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_style_ids
+msgid "Styles"
+msgstr "Styles"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_alternative_product_ids
+msgid ""
+"Suggest more expensive alternatives to your customers (upsell strategy). "
+"Those products show up on the product page."
+msgstr ""
+"Suggérez des alternatives plus chères à vos clients. Ces produits "
+"s'afficheront sur les pages article."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "T - Express 12:00"
+msgstr "T - Express 12:00"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:383
+#, python-format
+msgid ""
+"The address of the custommer is missing or wrong (Missing field(s) :\n"
+" %s)"
+msgstr ""
+"L'adresse du destinataire est manquante ou incorrecte (Champs manquants : "
+"%s)"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:391
+#, python-format
+msgid ""
+"The address of your company warehouse is missing or wrong (Missing field(s) :\n"
+" %s)"
+msgstr ""
+"L'adresse de votre entrepôt est manquante ou incorrecte (Champs manquants : "
+"%s)"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:397
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr ""
+"Le prix estimé ne peut être calculé parce que le poids de votre article est "
+"manquant."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_website_url
+msgid "The full URL to access the document through the website."
+msgstr "Le lien complet afin d'accéder au document à travers le site web."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_published
+msgid "Visible in Website"
+msgstr "Visible sur le site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_message_ids
+msgid "Website Comments"
+msgstr "Commentaires du site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_public_categ_ids
+msgid "Website Product Category"
+msgstr "Catégorie d'articles du site Web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_sequence
+msgid "Website Sequence"
+msgstr "Séquence du Site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_url
+msgid "Website URL"
+msgstr "URL du site"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_meta_description
+msgid "Website meta description"
+msgstr "Méta description du site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Mots clefs du site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_meta_title
+msgid "Website meta title"
+msgstr "Titre du site web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_price
+msgid "Website price"
+msgstr "Prix web"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_public_price
+msgid "Website public price"
+msgstr "Prix public sur le site web"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/delivery_dhl.py:102
+#, python-format
+msgid "You can't cancel DHL shipping without pickup date."
+msgstr "Vous ne pouvez pas annuler une expédition DHL sans date de ramassage."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_image_format:0
+msgid "ZPL2"
+msgstr "ZPL2"

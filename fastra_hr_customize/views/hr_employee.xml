@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_employee_form_inherit_loan" model="ir.ui.view">
+            <field name="name">view.employee.form.inherit.loan</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[last()]" position="after">
+                    <page name="loan" string="Loan">
+                        <group>
+                            <group>
+                                <field name="total_loan_amount"/>
+                                <label for="loan_from_date" string="Period"/>
+                                <div>
+                                    <field name="loan_from_date" class="oe_inline"/> - <field name="loan_to_date" class="oe_inline"/>
+                                </div>
+                                <field name="loan_payment_method"/>
+                                <field name="loam_amount"/>
+                                <field name="loan_narration"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,313 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * timesheet_grid
+# 
+# Translators:
+# Goh Gangtai <gangtai.goh@gmail.com>, 2017
+# 종현 엄 <whd5367@naver.com>, 2017
+# Martin Trigaux, 2017
+# JH CHOI <hwangtog@gmail.com>, 2017
+# Seongseok Shin <shinss61@hotmail.com>, 2018
+# Link Up링크업 <linkup.way@gmail.com>, 2018
+# Linkup <link-up@naver.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:42+0000\n"
+"Last-Translator: Linkup <link-up@naver.com>, 2019\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_all
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_all
+msgid "All Timesheets"
+msgstr "모든 일정표"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:46
+#, python-format
+msgid "All selected timesheets are already validated"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_project_project_allow_timesheets
+#: model:ir.ui.view,arch_db:timesheet_grid.project_view_form_timesheets
+msgid "Allow timesheets"
+msgstr "일정표 허용"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "분석 명세"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Cancel"
+msgstr "취소"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Click to add projects and tasks"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_uid
+msgid "Created by"
+msgstr "작성자"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_date
+msgid "Created on"
+msgstr "작성일"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Date until which the employee's timesheets have been validated"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Describe your activity"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_display_name
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_display_name
+msgid "Display Name"
+msgstr "표시 이름"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_hr_employee
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_employee_id
+msgid "Employee"
+msgstr "임직원"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Group By"
+msgstr "그룹화"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_id
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_id
+msgid "ID"
+msgstr "ID"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable___last_update
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation___last_update
+msgid "Last Modified on"
+msgstr "최근 수정"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_month
+msgid "Last Month"
+msgstr "지난 달"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_uid
+msgid "Last Updated by"
+msgstr "최근 갱신한 사람"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_date
+msgid "Last Updated on"
+msgstr "최근 갱신 날짜"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_week
+msgid "Last Week"
+msgstr "지난 주"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Line edition and creation from grid"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Month"
+msgstr "월"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validation_search
+msgid "My Team"
+msgstr "나의 팀"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_current
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_my
+msgid "My Timesheet"
+msgstr "개인 작업표"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "My Timesheets"
+msgstr "나의 일정표"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Non Validated"
+msgstr ""
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:68
+#, python-format
+msgid ""
+"Only a Timesheets Officer is allowed to create an entry older than the "
+"validation limit."
+msgstr ""
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:83
+#, python-format
+msgid "Only a Timesheets Officer is allowed to delete a validated entry."
+msgstr ""
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:77
+#, python-format
+msgid "Only a Timesheets Officer is allowed to modify a validated entry."
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Project"
+msgstr "프로젝트"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Set if this analytic line represents a line of timesheet."
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Task"
+msgstr "업무"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:41
+#, python-format
+msgid "There aren't any timesheet to validate"
+msgstr "승인할 시간표가 없습니다"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Time Spent"
+msgstr "소요 시간"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Timesheet"
+msgstr "작업표"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Timesheet Line"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_list
+msgid "Timesheet Lines"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_month
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_week
+msgid "Timesheets To Validate"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Timesheets validation limit"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate
+msgid "To Validate"
+msgstr "승인 예정"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Users"
+msgstr "사용자 목록"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validable_ids
+msgid "Validable ids"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validate
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validate
+msgid "Validate"
+msgstr "검증"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate Timesheets"
+msgstr "시간표 승인"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate the timesheets of the selected employees up to"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_timesheet_grid_validable_validate
+msgid "Validate this employee's timesheet up to the chosen date"
+msgstr "이 직원의 시간표를 선택한 날짜까지 승인합니다"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validate_to
+msgid "Validate to"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Validated"
+msgstr "검증됨"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_validated
+msgid "Validated line"
+msgstr "승인된 항목"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validation_id
+msgid "Validation id"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Week"
+msgstr "주"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validable
+msgid "timesheet_grid.validable"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validation
+msgid "timesheet_grid.validation"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "you will be able to register your working hours on the given task"
+msgstr ""

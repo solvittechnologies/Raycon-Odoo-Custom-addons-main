@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<odoo>
+	
+	<record model="ir.ui.view" id="purchase_request_kay_petty_cash_form">
+		<field name="name">Petty Cash</field>
+		<field name="model">kay.petty.cash</field>
+		<field name="arch" type="xml">
+			<form>
+				<header>
+					<button name="button_draft" states="to_approve,approved,rejected,done" string="Reset" type="object" groups="purchase_request.group_purchase_request_manager" />
+                    <button name="button_to_approve" states="draft" string="Request approval" type="object" class="oe_highlight" groups="purchase_request.group_purchase_request_user"/>
+                    <button name="button_approved" states="to_approve" string="Approve" type="object" class="oe_highlight" groups="purchase_request.group_purchase_request_manager" />
+					<button name="button_post" states="approved" string="Post" type="object" class="oe_highlight" groups="purchase_request.group_purchase_request_manager" />
+					<button name="%(action_purchase_request_petty_cash_cancel)d" states="to_approve,approved"
+              				string="Reject" type="action" groups="purchase_request.group_purchase_request_manager"/>
+					<field name="state"  widget="statusbar" statusbar_visible="draft,approved,done"/>
+				</header>
+				<sheet>
+					<div class="oe_button_box" name="button_box">
+						<button class="oe_stat_button" name="button_journal_entries"
+								string="Accounting Entries" type="object"
+								attrs="{'invisible':[('move_ids','=',[])]}" icon="fa-bars"/>
+						<field name="move_ids" invisible="1"/>
+					</div>
+					<group>
+						<field name="cancel_reason" string="Rejection reason:" attrs="{'invisible': [('state', '!=', 'rejected')]}"/>
+					</group>
+					<group col="4">
+						<field name="name" string="Project Name" required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}" />
+						<field name="custodian_id" string="Custodian" required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}"/>
+						<field name="location" required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}"/>
+						<field name="partner_id" attrs="{'readonly':[('state','in',['validate','cancel'])]}"/>
+						<field name="journal_id" invisible="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}" />
+						<field name="custodian_account" string="Petty Cash Account"  invisible="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}"/>
+
+						<field name="custodian" invisible="1"/>
+					</group>
+					
+					<notebook>
+						<page string="Issue amount to custodian">
+							<field name="purchase_request_petty_cash_lines" widget="one2many">
+								<tree editable="bottom">
+									<field name="name"/>
+									<field name="date"/>
+									<field name="account_debit"/>
+									<field name="account_credit"/>
+									<field name="journal_id"/>
+									<field name="account_tax_id"/>
+									<field name="amount" sum="Total"/>
+								</tree>
+							</field>
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="purchase_request_kay_petty_cash_list">
+		<field name="name">Petty Cash</field>
+		<field name="model">kay.petty.cash</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name" string="Project Name"/>
+				<field name="custodian_id" string="Custodian"/>
+				<field name="custodian_account" string="Petty Cash Account"/>
+				<field name="location"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="purchase_request_kay_petty_cash_action">
+      <field name="name">Petty Cash</field>
+      <field name="res_model">kay.petty.cash</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record id="action_purchase_request_kay_petty_cash_tree" model="ir.actions.act_window.view">
+		<field eval="1" name="sequence"/>
+		<field name="view_mode">tree</field>
+		<field name="view_id" ref="purchase_request_kay_petty_cash_list"/>
+		<field name="act_window_id" ref="purchase_request_kay_petty_cash_action"/>
+	</record>
+	
+	<record id="action_purchase_request_kay_petty_cash_form" model="ir.actions.act_window.view">
+		<field eval="2" name="sequence"/>
+		<field name="view_mode">form</field>
+		<field name="view_id" ref="purchase_request_kay_petty_cash_form"/>
+		<field name="act_window_id" ref="purchase_request_kay_petty_cash_action"/>
+	</record>
+	
+	<!-- Petty Cash Menu	-->
+	<menuitem name="Petty Cash" id="kay_petty_cash_menu_project_Budget" parent="purchase_request.parent_menu_purchase_request" sequence="10" groups="purchase_request.group_purchase_request_user"
+              action="purchase_request_kay_petty_cash_action"/>
+	
+	<!--<menuitem name="Petty Cash"
+			id="kay_petty_cash_menu_purchase_request"
+			sequence="20"
+			groups="purchase_request.group_purchase_request_user"
+			parent="purchase_request.parent_menu_purchase_request"
+      />
+	<menuitem name="Manage Petty Accounts"
+			id="kay_petty_cash_menu_manage_purchase_request"
+			parent="kay_petty_cash_menu_purchase_request"
+			sequence="1"
+			groups="purchase_request.group_purchase_request_user"
+			action="kay_petty_cash.kay_petty_cash_action"/>
+
+  <menuitem name="Cash Report"
+  			id="kay_petty_cash_menu_report_purchase_request"
+  			parent="kay_petty_cash_menu_purchase_request"
+  			sequence="2"
+  			groups="purchase_request.group_purchase_request_user"                           
+	        action="kay_petty_cash.action_petty_cash_report"/>-->
+              		
+	<record id="view_kay_petty_cash_form_inherit_access" model="ir.ui.view">
+        <field name="name">view.kay.petty.cash.form.inherit.access</field>
+        <field name="model">kay.petty.cash</field>
+        <field name="inherit_id" ref="kay_petty_cash.kay_petty_cash_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='add_cash_line']/form//button[@name='action_validate']" position="attributes">
+                <attribute name="groups">purchase_request.group_purchase_request_manager</attribute>
+            </xpath>
+            <xpath expr="//field[@name='cash_line']/form//button[@name='action_post_line']" position="attributes">
+                <attribute name="groups">purchase_request.group_purchase_request_manager</attribute>
+            </xpath>
+        </field>
+    </record>
+    
+    <!-- In Account Module	-->
+    
+    <record model="ir.actions.act_window" id="account_purchase_request_kay_petty_cash_action">
+      <field name="name">Petty Cash</field>
+      <field name="res_model">kay.petty.cash</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[]</field>
+    </record>
+    
+    <record id="action_account_purchase_request_kay_petty_cash_tree" model="ir.actions.act_window.view">
+		<field eval="1" name="sequence"/>
+		<field name="view_mode">tree</field>
+		<field name="view_id" ref="purchase_request_kay_petty_cash_list"/>
+		<field name="act_window_id" ref="account_purchase_request_kay_petty_cash_action"/>
+	</record>
+	
+	<record id="action_account_purchase_request_kay_petty_cash_form" model="ir.actions.act_window.view">
+		<field eval="2" name="sequence"/>
+		<field name="view_mode">form</field>
+		<field name="view_id" ref="purchase_request_kay_petty_cash_form"/>
+		<field name="act_window_id" ref="account_purchase_request_kay_petty_cash_action"/>
+	</record>
+              	
+    <menuitem name="Petty Cash" id="account_kay_petty_cash_menu" parent="account.menu_finance" sequence="5" action="account_purchase_request_kay_petty_cash_action"/>
+</odoo>

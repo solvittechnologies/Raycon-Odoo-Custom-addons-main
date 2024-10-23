@@ -1,0 +1,840 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_ebay
+# 
+# Translators:
+# Martin Trigaux, 2016
+# kalatchev, 2016
+# Maria Boyadjieva <marabo2000@gmail.com>, 2016
+# Kaloyan Naumov <kaloyan@lumnus.net>, 2016
+# Boris Stefanov <borkata@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 12:54+0000\n"
+"PO-Revision-Date: 2015-10-30 12:54+0000\n"
+"Last-Translator: Boris Stefanov <borkata@gmail.com>, 2018\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_ebay
+#: model:mail.template,body_html:sale_ebay.ebay_desciption_default
+msgid ""
+"\n"
+"                  \n"
+"          ${object.ebay_description | safe}\n"
+"        \n"
+"      "
+msgstr ""
+"\n"
+"                  \n"
+"          ${object.ebay_description | safe}\n"
+"        \n"
+"      "
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:310
+#, python-format
+msgid ""
+" If you want to set quantity to 0, the Out Of Stock option should be enabled"
+" and the listing duration should set to Good 'Til Canceled"
+msgstr ""
+"В случай че желаете да настроите количеството на 0, трябва да активирате "
+"опицията 'Без наличност, а продължителността на списъка трябва да бъде "
+"настроена на 'Добър до отмяна'"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:313
+#, python-format
+msgid ""
+" You need to have at least 2 variations selected for a multi-variations listing.\n"
+" Or if you try to delete a variation, you cannot do it by unselecting it. Setting the quantity to 0 is the safest method to make a variation unavailable."
+msgstr ""
+" Трябва да имате поне 2 избрани варианта за списък с много варианти.\n"
+" Или ако се опитате да изтриете вариант, не можете да го направите, като го премахнете. Настройване количеството на 0 се явява най-безопасният метод за премахване на варианта."
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "10 Days"
+msgstr "10 дни"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "3 Days"
+msgstr "3 дни"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "30 Days (only for fixed price)"
+msgstr "30 дни (само за фиксирани цени)"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "5 Days"
+msgstr "5 дни"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "7 Days"
+msgstr "7 дни"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:198
+#, python-format
+msgid ""
+"All the quantities must be greater than 0 or you need to enable the Out Of "
+"Stock option."
+msgstr ""
+"Всичките количества трябва да са по-големи от 0 или трябва да активирате "
+"опцията \"Без наличност\"."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_best_offer
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_best_offer
+msgid "Allow Best Offer"
+msgstr "Позволете най-добрата оферта"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_type:0
+msgid "Auction"
+msgstr "Търг"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_res_country_ebay_available
+#: model:ir.model.fields,field_description:sale_ebay.field_res_currency_ebay_available
+msgid "Availability To Use For eBay API"
+msgstr "Наличност, която да се използва за eBay API"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_buy_it_now_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_buy_it_now_price
+msgid "Buy It Now Price"
+msgstr "Цена 'Купете сега'"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Cancel"
+msgstr "Отменете"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_category_id
+msgid "Category"
+msgstr "Категория"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_category_2_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_category_2_id
+msgid "Category 2 (Optional)"
+msgstr "Категория 2 (Незадължителна)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_id
+msgid "Category ID"
+msgstr "ИН на категория"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_parent_id
+msgid "Category Parent ID"
+msgstr "ИН на основна категория"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_type
+msgid "Category Type"
+msgstr "Вид категория"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_code
+msgid "Code"
+msgstr "Код"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Configuration"
+msgstr "Настройка"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:277
+#, python-format
+msgid "Configure The eBay Integrator Now"
+msgstr "Конфигурирайте интегратора на eBay сега"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_country
+msgid "Country"
+msgstr "Държава"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_country
+msgid "Country Where The Products Are Stored"
+msgstr "Държава, където са складирани продуктите"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_create_uid
+msgid "Created by"
+msgstr "Създадено от"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_create_date
+msgid "Created on"
+msgstr "Създадено на"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_currency
+msgid "Currency"
+msgstr "Валута"
+
+#. module: sale_ebay
+#: selection:ebay.category,category_type:0
+msgid "Custom Store Category"
+msgstr "Категория на персонализирано хранилище"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Describe the product characteristics..."
+msgstr "Опишете характеристиките на продукта ..."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_description
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_description
+msgid "Description"
+msgstr "Описание"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_template_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_template_id
+msgid "Description Template"
+msgstr "Шаблон за описание"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_dev_id
+msgid "Developer Key"
+msgstr "Ключ за разработчици"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_display_name
+msgid "Display Name"
+msgstr "Покажете име"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_duration
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_duration
+msgid "Duration"
+msgstr "Продължителност"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "End Item's Listing"
+msgstr "Списък на последния артикул"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_end_items_listings
+msgid "End Items' Listings"
+msgstr "Списък на последните артикули"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:184
+#, python-format
+msgid ""
+"Error Encountered.\n"
+" No Variant Set To Be Listed On eBay."
+msgstr ""
+"Възникнала грешка.\n"
+" Няма вариант, настроен да бъде регистриран в eBay."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:316
+#, python-format
+msgid ""
+"Error Encountered.\n"
+"'%s'"
+msgstr ""
+"Възникнала грешка.\n"
+"'%s'"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_fixed_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_fixed_price
+msgid "Fixed Price"
+msgstr "Фиксирана цена"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_type:0
+msgid "Fixed price"
+msgstr "Фиксирана цена"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_full_name
+msgid "Full Name"
+msgstr "Пълно име"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "Good 'Til Cancelled (only for fixed price)"
+msgstr "Добър 'До отмяна' (само за фиксирана цена)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_id
+msgid "ID"
+msgstr "ИН"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:306
+#, python-format
+msgid ""
+"Impossible to revise a listing into a multi-variations listing.\n"
+" Create a new listing."
+msgstr ""
+"Невъзможно е да ревизирате списък в списък с много вариации.\n"
+"Създайте нов списък."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_item_condition_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_item_condition_id
+msgid "Item Condition"
+msgstr "Състояние на артикул"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site___last_update
+msgid "Last Modified on"
+msgstr "Последно коригирано на"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_write_uid
+msgid "Last Updated by"
+msgstr "Последно актуализирано от"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_write_date
+msgid "Last Updated on"
+msgstr "Последно актуализирано на"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_last_sync
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_last_sync
+msgid "Last update"
+msgstr "Последна актуализация"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_leaf_category
+msgid "Leaf category"
+msgstr "Leaf категория"
+
+#. module: sale_ebay
+#: model:ir.actions.act_window,name:sale_ebay.action_ebay_link_listing
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Link Existing Listing"
+msgstr "Списък със съществуващи линкове"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Link Listing"
+msgstr "Списък с линкове"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Link With Existing Listing"
+msgstr "Линк със съществуващ списък"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "List Item"
+msgstr "Впишете артикул"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_list_items
+msgid "List Items"
+msgstr "Впишете артикули"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_type
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_type
+msgid "Listing Type"
+msgstr "Вид списък"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_location
+msgid "Location Where The Products Are Stored"
+msgstr "Локацията, където са складирани продуктите"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_name
+msgid "Name"
+msgstr "Име"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/sale_ebay.py:183
+#, python-format
+msgid "No Business Policies"
+msgstr "Няма бизнес политики"
+
+#. module: sale_ebay
+#: selection:ebay.category,category_type:0
+msgid "Official eBay Category"
+msgstr "Официална eBay категория"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:276
+#, python-format
+msgid "One parameter is missing."
+msgstr "Един параметър липсва."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:302
+#, python-format
+msgid "Or the condition is not compatible with the category."
+msgstr "Или условието не съответства на категорията"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_partner
+msgid "Partner"
+msgstr "Контрагент"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_payment_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_payment_policy_id
+msgid "Payment Policy"
+msgstr "Политика по плащане"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_policy_id
+msgid "Policy ID"
+msgstr "ИН на политика"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_private_listing
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_private_listing
+msgid "Private Listing"
+msgstr "Поверителен списък"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_product_product
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_ebay_tree_view
+msgid "Product"
+msgstr "Продукт"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_product_template
+msgid "Product Template"
+msgstr "Шаблон за продукт"
+
+#. module: sale_ebay
+#: selection:sale.config.settings,ebay_domain:0
+msgid "Production"
+msgstr "Производство"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_app_id
+msgid "Production App Key"
+msgstr "Ключ за производствени приложения"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_cert_id
+msgid "Production Cert Key"
+msgstr "Ключ за сертификатни приложения"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_token
+msgid "Production Token"
+msgstr "Токен за продукция"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_use
+msgid "Publish On eBay"
+msgstr "Публикувайте в eBay"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_quantity
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_quantity
+msgid "Quantity"
+msgstr "Количество"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_quantity_sold
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_quantity_sold
+msgid "Quantity Sold"
+msgstr "Продадено количество"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Relist Item"
+msgstr "Впишете повторно артикул"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_relist_items
+msgid "Relist Items"
+msgstr "Впишете повторно артикули"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_return_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_return_policy_id
+msgid "Return Policy"
+msgstr "Политика по връщане"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Revise Item"
+msgstr "Ревизирайте артикул"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_revise_items
+msgid "Revise Items"
+msgstr "Ревизирайте артикули"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sales_team
+msgid "Sales Team"
+msgstr "Търговски отдел"
+
+#. module: sale_ebay
+#: selection:sale.config.settings,ebay_domain:0
+msgid "Sandbox"
+msgstr "Sandbox"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_app_id
+msgid "Sandbox App Key"
+msgstr "Ключ за приложение в Sandbox"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_cert_id
+msgid "Sandbox Cert Key"
+msgstr "Ключ за сертификат в Sandbox"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_token
+msgid "Sandbox Token"
+msgstr "Sandbox токен"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_shipping_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_shipping_policy_id
+msgid "Shipping Policy"
+msgstr "Политика по шипинг"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_start_date
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_start_date
+msgid "Start Date"
+msgstr "Начална дата"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_price
+msgid "Starting Price for Auction"
+msgstr "Начална тръжна цена"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_store_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_store_category_id
+msgid "Store Category (Optional)"
+msgstr "Складова категория (незадължителна)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_store_category_2_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_store_category_2_id
+msgid "Store Category 2 (Optional)"
+msgstr "Складова категория 2 (незадължителна)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_subtitle
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_subtitle
+msgid "Subtitle"
+msgstr "Подзаглавие"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_short_summary
+msgid "Summary"
+msgstr "Обобщение"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync categories"
+msgstr "Категории на синхронизиране"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync countries and currencies"
+msgstr "Синхронизиране на страни и валути"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync policies"
+msgstr "Политики по синхронизиране"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync product status"
+msgstr "Синхронизиране състоянието на продукт "
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:608
+#, python-format
+msgid "The Buyer Chose The Following Delivery Method :\n"
+msgstr "Купувачът избра следния метод за доставка:\n"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:604 code:addons/sale_ebay/product.py:605
+#, python-format
+msgid "The Buyer Posted :\n"
+msgstr "Купувачът публикува:\n"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:308
+#, python-format
+msgid ""
+"The UPC value (the barcode value of your product) is not valid by using the "
+"checksum."
+msgstr ""
+"UPC стойността (стойността на баркода на продукта Ви) не е валидна чрез "
+"използването на контролна сума."
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_subtitle
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_subtitle
+msgid ""
+"The subtitle is restricted to 55 characters. Fees can be claimed by eBay for"
+" this feature"
+msgstr ""
+"Това подзаглавие е ограничено до 55 знака. За тази функция таксите могат да "
+"бъдат предявени от eBay "
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_title
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_title
+msgid "The title is restricted to 80 characters"
+msgstr "Заглавието е ограничено до 80 знака"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_category_2_id
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_category_2_id
+msgid ""
+"The use of a secondary category is not allowed on every eBay sites. Fees can"
+" be claimed by eBay for this feature"
+msgstr ""
+"Използването на вторична категория не е разрешено във всеки сайт на eBay. За"
+" тази функция таксите могат да бъдат предявени по eBay. "
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_template_id
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_template_id
+msgid "This field contains the template that will be used."
+msgstr "Това поле съдържа шаблона, който ще се използва."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_title
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_title
+msgid "Title"
+msgstr "Заглавие"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_stock_picking
+msgid "Transfer"
+msgstr "Трансфер"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_policy_type
+msgid "Type"
+msgstr "Вид"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_ebay_update_carrier
+msgid "Update eBay Carrier Information"
+msgstr "Актуализирайте информацията за eBay превозвача"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_gallery_plus
+msgid "Use Gallery Plus Option"
+msgstr "Използвайте опцията 'Галерия плюс'"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_out_of_stock
+msgid "Use Out Of Stock Option"
+msgstr "Използвайте опцията 'Без наличност'"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_sync_stock
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_sync_stock
+msgid "Use Stock Quantity"
+msgstr "Използвайте стоково количество"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_use
+msgid "Use eBay"
+msgstr "Използвайте eBay"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Variants"
+msgstr "Варианти"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_zip_code
+msgid "Zip Code Where The Products Are Stored"
+msgstr "Пощенски код на мястото, където са складирани продуктите"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.sale_ebay_category_tree_view
+msgid "eBay Categories"
+msgstr "eBay категории"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_currency
+msgid "eBay Currency"
+msgstr "eBay валута"
+
+#. module: sale_ebay
+#: model:product.category,name:sale_ebay.product_category_ebay
+msgid "eBay Delivery Services"
+msgstr "eBay доставни услуги"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_ebay_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_id
+msgid "eBay ID"
+msgstr "eBay ИН "
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "eBay Integration"
+msgstr "eBay интеграция"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_ebay_id
+msgid "eBay Listing ID"
+msgstr "ИН на eBay списък"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "eBay Sale"
+msgstr "eBay продажба"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_domain
+msgid "eBay Site"
+msgstr "eBay сайт"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_site
+msgid "eBay Site Used"
+msgstr "Използван eBay сайт"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_status
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_status
+msgid "eBay Status"
+msgstr "eBay състояние"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_res_partner_ebay_id
+msgid "eBay User ID"
+msgstr "ИН на eBay потребител"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_variant_url
+msgid "eBay Variant URL"
+msgstr "eBay вариант URL"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/sale_ebay.py:53
+#, python-format
+msgid ""
+"eBay error: Impossible to synchronize the categories. \n"
+"'%s'"
+msgstr ""
+"eBay грешка: Невъзможно е да синхронизирате категориите. \n"
+"'%s'"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:408 code:addons/sale_ebay/product.py:478
+#, python-format
+msgid ""
+"eBay error: Impossible to synchronize the products. \n"
+"'%s'"
+msgstr ""
+"eBay грешка: Невъзможно е да синхронизирате продуктите. \n"
+"'%s'"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:304
+#, python-format
+msgid "eBay is unreachable. Please try again later."
+msgstr "eBay не може да бъде достигнат. Моля, опитайте по-късно."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_url
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_url
+msgid "eBay url"
+msgstr "eBay URL"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_category
+msgid "ebay.category"
+msgstr "ebay.category"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_item_condition
+msgid "ebay.item.condition"
+msgstr "ebay.item.condition"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_link_listing
+msgid "ebay.link.listing"
+msgstr "ebay.link.listing"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_policy
+msgid "ebay.policy"
+msgstr "ebay.policy"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_site
+msgid "ebay.site"
+msgstr "ebay.site"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "or"
+msgstr "или"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_sale_config_settings
+msgid "sale.config.settings"
+msgstr "sale.config.settings"

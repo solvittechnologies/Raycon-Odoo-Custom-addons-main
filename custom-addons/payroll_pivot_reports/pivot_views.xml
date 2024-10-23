@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <act_window id="action_allpaysliplines"
+        name="All Payslip Lines"
+        res_model="hr.payslip.line"
+        view_mode="pivot,tree,form"
+        domain="[('appears_on_payslip', '=', True), ('is_aggregate', '=', False), ('slip_state', '=', 'done')]"
+        />
+    
+    <record id="pivot_payslip_lines" model="ir.ui.view">
+        <field name="name">Payslip Lines Pivot View</field>
+        <field name="model">hr.payslip.line</field>
+        
+        <field name="arch" type="xml">
+            
+            <pivot string="Monthly Payslips">
+                <field name="slip_date_to" type="row" interval="month" />
+                <field name="slip_id" string="Payslip" type="row" />
+                
+                <field name="name" string="Payslip Line Name" type="col" />
+                <field name="total" type="measure" widget="monetary" />
+            </pivot>
+            
+        </field>
+    </record>
+    
+</odoo>

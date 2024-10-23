@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="database_expired_date" model="ir.config_parameter">
+            <field name="key">database_expiration_date</field>
+            <field name="value">2022-12-31 00:00:00</field>
+        </record>
+    </data>
+</odoo>

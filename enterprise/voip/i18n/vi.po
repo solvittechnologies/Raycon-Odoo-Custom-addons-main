@@ -1,0 +1,399 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * voip
+# 
+# Translators:
+# fanha99 <fanha99@hotmail.com>, 2016
+# Phạm Lân <phamquanglan@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Hoang Loc Le Huu <loclhh@gmail.com>, 2016
+# son dang <son.dang@doda100.com>, 2016
+# ThuND <thu.nd@komit-consulting.com>, 2017
+# Dang Hanh <hanh.dtm@komit-consulting.com>, 2017
+# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2018
+# Duy BQ <duybq86@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_task_count
+msgid "# Tasks"
+msgstr "Nhiệm vụ"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "Khoản phải trả"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "Khoản phải thu"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_always_transfer
+msgid "Always Redirect to Handset"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "Ngân hàng"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "Companies that refers to partner"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:voip.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "Các hợp đồng"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "Điều khoản thanh toán của khách hàng"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_trust
+msgid "Degree of trust you have in this debtor"
+msgstr "Niềm tin của bạn với khoản nợ này"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "Vị thế tài chính"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:57
+#, python-format
+msgid "From "
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_external_phone
+msgid "Handset Extension"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "Có bút toán chưa đối soát"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_id
+msgid "ID"
+msgstr "ID"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:58
+#, python-format
+msgid "Incoming call"
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:88
+#, python-format
+msgid "Incoming call from "
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_warn
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "Các hóa đơn"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_issued_total
+#: model:ir.model.fields,field_description:voip.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "Phát sinh"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "Thông báo gần nhất được đánh dấu là đã đọc từ Lịch cơ sở"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "Hóa đơn mới nhất & Ngày thanh toán tương ứng"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "Tin nhắn cho hóa đơn"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_ring_number
+msgid "Number of rings"
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:27
+#, python-format
+msgid "One or more parameter is missing. Please check your configuration."
+msgstr ""
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.res_user_form
+msgid "PBX Configuration"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "Hạn mức phải trả"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:153
+#, python-format
+msgid "Please check your configuration.</br> (Reason receives :"
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:281
+#, python-format
+msgid ""
+"Problem during the connection. Check if the application is allowed to access"
+" your microphone from your browser."
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_login
+msgid "SIP Login / Browser's Extension"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_password
+msgid "SIP Password"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_invoice_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"Chọn tùy chọn \"Cảnh báo\" sẽ hiển thị thông điệp cho người dùng, Chọn "
+"\"Cảnh báo đóng\" sẽ thoát ra ngoài kèm cảnh báo và chặn luồng. Cảnh báo sẽ "
+"được điền ở phần thông tin dưới đây."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_task_ids
+msgid "Tasks"
+msgstr "Nhiệm vụ"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr ""
+"Vị thế tài chính sẽ xác nhận thuế và tài khoản được sử dụng cho đối tác này."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:179
+#, python-format
+msgid ""
+"The number is incorrect, the user credentials could be wrong or the "
+"connection cannot be made. Please check your configuration.</br> (Reason "
+"receives :%s)"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_sip_ring_number
+msgid ""
+"The number of rings before the call is defined as refused by the customer."
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr ""
+"Đối tác có ít nhất 1 khoản công nợ chưa được đối soát kể từ lần gần nhất bạn"
+" thực  hiện việc khớp hóa đơn và các thanh toán từ các đối tác."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:51
+#, python-format
+msgid ""
+"The server configuration could be wrong. Please check your configuration."
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:47
+#, python-format
+msgid "The websocket uri could be wrong. Please check your configuration."
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr "Tài khoản được sử dụng mặc định như là tài khoản phải trả của đối tác"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr "Tài khoản được sử dụng mặc định như là tài khoản phải thu của đối tác"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr ""
+"Điều khoản thanh toán này sẽ dùng thay điều khoản mặc định trên đơn mua hàng"
+" và biên nhận của nhà cung cấp"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr ""
+"Điều khoản thanh toán này sẽ được sử dụng thay cho điều khoản mặc định trên "
+"hợp đồng bán hàng và hóa đơn khách hàng"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "Tổng tiền hóa đơn đã xuất"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_debit
+msgid "Total Payable"
+msgstr "Tổng số tiền phải trả"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_credit
+msgid "Total Receivable"
+msgstr "Tổng phải thu"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "Tổng số tiền khách hàng này nợ bạn."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "Tổng tiền bạn phải trả cho nhà cung cấp này."
+
+#. module: voip
+#: model:ir.model,name:voip.model_res_users
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "Trường ghi nhận số tiền theo loại tiền tệ"
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.view_voip_user_config
+msgid "VOIP Configuration"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "Điều khoản Mua hàng NCC"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:273
+#, python-format
+msgid ""
+"Your browser could not support WebRTC. Please check your configuration."
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:152
+#, python-format
+msgid "the connection cannot be made. "
+msgstr ""
+
+#. module: voip
+#: model:ir.model,name:voip.model_voip_configurator
+msgid "voip.configurator"
+msgstr ""

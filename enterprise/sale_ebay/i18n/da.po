@@ -1,0 +1,839 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_ebay
+# 
+# Translators:
+# Morten Schou <ms@msteknik.dk>, 2016
+# Jesper Carstensen <jc@danodoo.dk>, 2016
+# Martin Trigaux, 2017
+# lhmflexerp <lhm@flexerp.dk>, 2017
+# Sanne Kristensen <sanne@vkdata.dk>, 2018
+# Mads Søndergaard, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 12:54+0000\n"
+"PO-Revision-Date: 2016-09-07 13:42+0000\n"
+"Last-Translator: Mads Søndergaard, 2020\n"
+"Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_ebay
+#: model:mail.template,body_html:sale_ebay.ebay_desciption_default
+msgid ""
+"\n"
+"                  \n"
+"          ${object.ebay_description | safe}\n"
+"        \n"
+"      "
+msgstr ""
+"\n"
+"                  \n"
+"          ${object.ebay_description | safe}\n"
+"        \n"
+"      "
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:310
+#, python-format
+msgid ""
+" If you want to set quantity to 0, the Out Of Stock option should be enabled"
+" and the listing duration should set to Good 'Til Canceled"
+msgstr ""
+"Hvis du vil angive mængden til 0, bør Ikke på Lager indstillingen være "
+"aktiveret, og listning varigheden bør være sat til God indtil annullering"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:313
+#, python-format
+msgid ""
+" You need to have at least 2 variations selected for a multi-variations listing.\n"
+" Or if you try to delete a variation, you cannot do it by unselecting it. Setting the quantity to 0 is the safest method to make a variation unavailable."
+msgstr ""
+"Du skal have mindst 2 varianter valgt for at oprette en multi-variations "
+"liste."
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "10 Days"
+msgstr "10 Dage"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "3 Days"
+msgstr "3 Dage"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "30 Days (only for fixed price)"
+msgstr "30 dage (kun til fast pris)"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "5 Days"
+msgstr "5 Dage"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "7 Days"
+msgstr "7 Dage"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:198
+#, python-format
+msgid ""
+"All the quantities must be greater than 0 or you need to enable the Out Of "
+"Stock option."
+msgstr ""
+"All kvantiteter skal være større end 0, eller du skal aktivere Ikke på Lager"
+" indstillingen."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_best_offer
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_best_offer
+msgid "Allow Best Offer"
+msgstr "Tillad det bedste tilbud"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_type:0
+msgid "Auction"
+msgstr "Auktion"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_res_country_ebay_available
+#: model:ir.model.fields,field_description:sale_ebay.field_res_currency_ebay_available
+msgid "Availability To Use For eBay API"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_buy_it_now_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_buy_it_now_price
+msgid "Buy It Now Price"
+msgstr "Køb Den Nu Pris"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Cancel"
+msgstr "Annuller"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_category_id
+msgid "Category"
+msgstr "Kategori"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_category_2_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_category_2_id
+msgid "Category 2 (Optional)"
+msgstr "Kategori 2 (Valgfri)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_id
+msgid "Category ID"
+msgstr "Kategori ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_parent_id
+msgid "Category Parent ID"
+msgstr "Kategori Ophavene ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_type
+msgid "Category Type"
+msgstr "Kategori type"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_code
+msgid "Code"
+msgstr "Kode"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:277
+#, python-format
+msgid "Configure The eBay Integrator Now"
+msgstr "Konfigurer eBay integratoren nu"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_country
+msgid "Country"
+msgstr "Land"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_country
+msgid "Country Where The Products Are Stored"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_create_uid
+msgid "Created by"
+msgstr "Oprettet af"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_create_date
+msgid "Created on"
+msgstr "Oprettet den"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_currency
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: sale_ebay
+#: selection:ebay.category,category_type:0
+msgid "Custom Store Category"
+msgstr "Tilpasset butik kategori"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Describe the product characteristics..."
+msgstr "Beskriv produktets karakteristika..."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_description
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_description
+msgid "Description"
+msgstr "Beskrivelse"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_template_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_template_id
+msgid "Description Template"
+msgstr "Beskrivelse skabelon"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_dev_id
+msgid "Developer Key"
+msgstr "Udvikler nøgle"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_display_name
+msgid "Display Name"
+msgstr "Vis navn"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_duration
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_duration
+msgid "Duration"
+msgstr "Varighed"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "End Item's Listing"
+msgstr "Afslut genstands listning"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_end_items_listings
+msgid "End Items' Listings"
+msgstr ""
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:184
+#, python-format
+msgid ""
+"Error Encountered.\n"
+" No Variant Set To Be Listed On eBay."
+msgstr ""
+"Fejl opstået.\n"
+"  Ingen variant angivet som listet på eBay."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:316
+#, python-format
+msgid ""
+"Error Encountered.\n"
+"'%s'"
+msgstr ""
+"Fejl opstået.\n"
+"'%s'"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_fixed_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_fixed_price
+msgid "Fixed Price"
+msgstr "Fast pris"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_type:0
+msgid "Fixed price"
+msgstr "Fast pris"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_full_name
+msgid "Full Name"
+msgstr "Fulde navn"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "Good 'Til Cancelled (only for fixed price)"
+msgstr "God indtil annulleret (kun for fast pris)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:306
+#, python-format
+msgid ""
+"Impossible to revise a listing into a multi-variations listing.\n"
+" Create a new listing."
+msgstr ""
+"Umuligt at revidere en listning til en listning med flere variationer.\n"
+"  Opret en ny listning."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_item_condition_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_item_condition_id
+msgid "Item Condition"
+msgstr "Genstands tilstand"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site___last_update
+msgid "Last Modified on"
+msgstr "Sidst ændret den"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_write_uid
+msgid "Last Updated by"
+msgstr "Sidst opdateret af"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_write_date
+msgid "Last Updated on"
+msgstr "Sidst opdateret den"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_last_sync
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_last_sync
+msgid "Last update"
+msgstr "Sidste opdatering"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_leaf_category
+msgid "Leaf category"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.actions.act_window,name:sale_ebay.action_ebay_link_listing
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Link Existing Listing"
+msgstr "Forbind eksisterende listning"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Link Listing"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Link With Existing Listing"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "List Item"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_list_items
+msgid "List Items"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_type
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_type
+msgid "Listing Type"
+msgstr "Listnings type"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_location
+msgid "Location Where The Products Are Stored"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_name
+msgid "Name"
+msgstr "Navn"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/sale_ebay.py:183
+#, python-format
+msgid "No Business Policies"
+msgstr "Ingen Virksomhedspolitikker"
+
+#. module: sale_ebay
+#: selection:ebay.category,category_type:0
+msgid "Official eBay Category"
+msgstr "Officiel eBay Kategori"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:276
+#, python-format
+msgid "One parameter is missing."
+msgstr "En parameter mangler."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:302
+#, python-format
+msgid "Or the condition is not compatible with the category."
+msgstr "Eller tilstanden er ikke kompatibel med kategorien."
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_partner
+msgid "Partner"
+msgstr "Kontakt"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_payment_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_payment_policy_id
+msgid "Payment Policy"
+msgstr "Betalingspolitik"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_policy_id
+msgid "Policy ID"
+msgstr "Police ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_private_listing
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_private_listing
+msgid "Private Listing"
+msgstr "Privat Listning"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_product_product
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_ebay_tree_view
+msgid "Product"
+msgstr "Vare"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_product_template
+msgid "Product Template"
+msgstr "Produktskabelon"
+
+#. module: sale_ebay
+#: selection:sale.config.settings,ebay_domain:0
+msgid "Production"
+msgstr "Produktion"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_app_id
+msgid "Production App Key"
+msgstr "Produktion app nøgle"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_cert_id
+msgid "Production Cert Key"
+msgstr "Produktion certifcerings nøgle"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_token
+msgid "Production Token"
+msgstr "Produktion token"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_use
+msgid "Publish On eBay"
+msgstr "Udgiv På eBay"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_quantity
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_quantity
+msgid "Quantity"
+msgstr "Antal"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_quantity_sold
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_quantity_sold
+msgid "Quantity Sold"
+msgstr "Antal solgte"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Relist Item"
+msgstr "Genlist genstand"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_relist_items
+msgid "Relist Items"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_return_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_return_policy_id
+msgid "Return Policy"
+msgstr "Returnerings police"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Revise Item"
+msgstr "Revider varen"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_revise_items
+msgid "Revise Items"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sales_team
+msgid "Sales Team"
+msgstr "Salgs team"
+
+#. module: sale_ebay
+#: selection:sale.config.settings,ebay_domain:0
+msgid "Sandbox"
+msgstr "Sandkasse"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_app_id
+msgid "Sandbox App Key"
+msgstr "Sandkasse app nøgle"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_cert_id
+msgid "Sandbox Cert Key"
+msgstr "Sandkasse certificerings nøgle"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_token
+msgid "Sandbox Token"
+msgstr "Sandkasse token"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_shipping_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_shipping_policy_id
+msgid "Shipping Policy"
+msgstr "Afsendelses måde"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_start_date
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_start_date
+msgid "Start Date"
+msgstr "Start dato"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_price
+msgid "Starting Price for Auction"
+msgstr "Startpris for auktion"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_store_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_store_category_id
+msgid "Store Category (Optional)"
+msgstr "Butiks kategori (Valgfri)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_store_category_2_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_store_category_2_id
+msgid "Store Category 2 (Optional)"
+msgstr "Butiks kategori 2 (Valgfri)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_subtitle
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_subtitle
+msgid "Subtitle"
+msgstr "Underoverskrift"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_short_summary
+msgid "Summary"
+msgstr "Sammendrag"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync categories"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync countries and currencies"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync policies"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync product status"
+msgstr ""
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:608
+#, python-format
+msgid "The Buyer Chose The Following Delivery Method :\n"
+msgstr "Køber valgte følgende leveringsmetode :\n"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:604 code:addons/sale_ebay/product.py:605
+#, python-format
+msgid "The Buyer Posted :\n"
+msgstr "Køberen skrev :\n"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:308
+#, python-format
+msgid ""
+"The UPC value (the barcode value of your product) is not valid by using the "
+"checksum."
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_subtitle
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_subtitle
+msgid ""
+"The subtitle is restricted to 55 characters. Fees can be claimed by eBay for"
+" this feature"
+msgstr ""
+"Underteksten er begrænset til 55 anslag. Gebyrer kan opkræves af eBay for "
+"denne funktion"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_title
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_title
+msgid "The title is restricted to 80 characters"
+msgstr "Titlen er begrænset til 80 anslag"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_category_2_id
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_category_2_id
+msgid ""
+"The use of a secondary category is not allowed on every eBay sites. Fees can"
+" be claimed by eBay for this feature"
+msgstr ""
+"Brugen af en sekundær kategori er ikke tilladt på enhver eBay hjemmeside. "
+"Gebyrer kan opkræves af eBay for denne funktion"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_template_id
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_template_id
+msgid "This field contains the template that will be used."
+msgstr "Dette felt indeholder skabelonen der vil blive anvendt."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_title
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_title
+msgid "Title"
+msgstr "Titel"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_stock_picking
+msgid "Transfer"
+msgstr "Overfør"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_policy_type
+msgid "Type"
+msgstr "Type"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_ebay_update_carrier
+msgid "Update eBay Carrier Information"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_gallery_plus
+msgid "Use Gallery Plus Option"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_out_of_stock
+msgid "Use Out Of Stock Option"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_sync_stock
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_sync_stock
+msgid "Use Stock Quantity"
+msgstr "Brug lager antal"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_use
+msgid "Use eBay"
+msgstr "Brug eBay"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Variants"
+msgstr "Varianter"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_zip_code
+msgid "Zip Code Where The Products Are Stored"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.sale_ebay_category_tree_view
+msgid "eBay Categories"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_currency
+msgid "eBay Currency"
+msgstr ""
+
+#. module: sale_ebay
+#: model:product.category,name:sale_ebay.product_category_ebay
+msgid "eBay Delivery Services"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_ebay_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_id
+msgid "eBay ID"
+msgstr "eBay ID"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "eBay Integration"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_ebay_id
+msgid "eBay Listing ID"
+msgstr "eBay Listnings ID"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "eBay Sale"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_domain
+msgid "eBay Site"
+msgstr "eBay hjemmeside"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_site
+msgid "eBay Site Used"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_status
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_status
+msgid "eBay Status"
+msgstr "eBay Status"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_res_partner_ebay_id
+msgid "eBay User ID"
+msgstr "eBay Bruger ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_variant_url
+msgid "eBay Variant URL"
+msgstr "eBay variant URL"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/sale_ebay.py:53
+#, python-format
+msgid ""
+"eBay error: Impossible to synchronize the categories. \n"
+"'%s'"
+msgstr ""
+"eBay fejl: Umuligt at synkronisere kategorierne. \n"
+"'%s'"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:408 code:addons/sale_ebay/product.py:478
+#, python-format
+msgid ""
+"eBay error: Impossible to synchronize the products. \n"
+"'%s'"
+msgstr ""
+"eBay fejl: Umuligt at synkronisere produkterne. \n"
+"'%s'"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:304
+#, python-format
+msgid "eBay is unreachable. Please try again later."
+msgstr "eBay kunne ikke nås. Prøv venligst igen senere."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_url
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_url
+msgid "eBay url"
+msgstr "eBay url"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_category
+msgid "ebay.category"
+msgstr "ebay.category"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_item_condition
+msgid "ebay.item.condition"
+msgstr "ebay.item.condition"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_link_listing
+msgid "ebay.link.listing"
+msgstr "ebay.link.listing"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_policy
+msgid "ebay.policy"
+msgstr "ebay.policy"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_site
+msgid "ebay.site"
+msgstr "ebay.site"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "or"
+msgstr "eller"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_sale_config_settings
+msgid "sale.config.settings"
+msgstr "Salgskonfigurations opsætninger"

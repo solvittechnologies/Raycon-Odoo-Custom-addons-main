@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<record model="ir.ui.view" id="account_invoice_changes">
+        <field name="name">account.invoice.changes</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <field name="state" widget="statusbar" nolabel="1" statusbar_visible="draft,open,paid" position="attributes">
+                    <attribute name="statusbar_visible">draft,inv_to_approve,open,paid</attribute>
+            </field>
+            <!--<button name="preview_invoice"  position="before">
+                    <button name="action_to_inv_approve" type="object" string="send for approval" states="draft" class="oe_highlight o_invoice_validate" groups="account.group_account_invoice"/>
+            </button>-->
+            <button name="action_invoice_open" type="object" states="draft" class="oe_highlight o_invoice_validate" position="attributes">
+                    <attribute name="states">inv_to_approve</attribute>
+		    <attribute name="groups">account.group_account_manager</attribute>
+            </button>
+
+        </field>
+</record>
+
+    <record id="action_invoice_awaiting_approval" model="ir.actions.act_window">
+            <field name="name">Invoice Awaiting Approval</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'inv_to_approve')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create an Invoice.
+                </p>
+            </field>
+        </record>
+
+    <record id="action_approved_invoices" model="ir.actions.act_window">
+            <field name="name">Approved Invoices</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'open')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create an Invoice.
+                </p>
+            </field>
+        </record>
+
+    <record id="action_paid_invoices" model="ir.actions.act_window">
+            <field name="name">Paid Invoices</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'paid')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create an Invoice.
+                </p>
+            </field>
+        </record>
+
+    <menuitem action="action_invoice_awaiting_approval"
+            id="menu_account_invoice_awaiting_approval" parent="account.menu_finance_receivables"
+            sequence="11"/>
+    <menuitem action="action_approved_invoices"
+            id="menu_account_approved_invoices" parent="account.menu_finance_receivables"
+            sequence="11"/>
+    <menuitem action="action_paid_invoices"
+            id="menu_account_paid_invoices" parent="account.menu_finance_receivables"
+            sequence="11"/>
+
+
+</odoo>

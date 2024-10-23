@@ -1,0 +1,257 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_docsaway
+# 
+# Translators:
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# Batbayar Bat-Erdene <yertonts@gmail.com>, 2017
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:59+0000\n"
+"PO-Revision-Date: 2016-09-19 12:59+0000\n"
+"Last-Translator: Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+", and create an account. Once you are logged in, click on 'Login', then go "
+"to 'My Account'."
+msgstr ""
+", тэгээд данс үүсгэнэ. Та нэвтэрч орсныхоо дараа, \"Нэвтрэх\" товч дээр "
+"дараад \"Миний данс\" хэсэг рүү орно уу. "
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_order_view_form_inherit_print_docsaway
+msgid "DocsAway Details"
+msgstr "DocsAway-ийн дэлгэрэнгүй мэдээлэл"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Account"
+msgstr "DocsAway-ийн данс"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_email
+msgid "Docsaway Account Email"
+msgstr "DocsAway-ийн дансны и-мэйл"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Configuration"
+msgstr "DocsAway-ийн тохиргоо"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_courier
+msgid "Docsaway Courier"
+msgstr "DocsAway-ийн буухиа"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Help"
+msgstr "DocsAway-ийн тусламж"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_key
+msgid "Docsaway Installation Key"
+msgstr "DocsAway-ийг суулгах түлхүүр"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_name
+msgid "Docsaway Name"
+msgstr "DocsAway-ийн нэр"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_reference
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_reference
+msgid "Docsaway Reference"
+msgstr "DocsAway-ийн код"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_station
+msgid "Docsaway Station"
+msgstr "DocsAway-ийн байр"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_status
+msgid "Docsaway Transaction Status"
+msgstr "DocsAway-ийн гүйлгээний төлөв"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_volume
+msgid "Docsaway Volume"
+msgstr "DocsAway-ийн хэмжээ"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_zone
+msgid "Docsaway Zone"
+msgstr "DocsAway-ийн бүс"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_email
+msgid ""
+"Docsaway account email. Required to contact DocsAway server, it can be found"
+" into docsaway account preference (on docsaway.com)"
+msgstr ""
+"DocsAway-ийн дансны и-мэйл. DocsAway-ийн сервертэй холбоо барих шаардлагатай"
+" болбол, DocsAway-ийн дансны тохиргооноос мэдээллийг авч болно (docsaway.com"
+" дээрх)"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_key
+msgid ""
+"Docsaway account installation key. Required to contact DocsAway server, it "
+"can be found into docsaway account preference (on docsaway.com)"
+msgstr ""
+"DocsAway-ийн дансны суулгах түлхүүр. DocsAway-ийн сервертэй холбоо барих "
+"шаардлагатай болбол, DocsAway-ийн бүртгэлийн тохиргооноос мэдээллийг авч "
+"болно (docsaway.com дээрх)"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Failed request."
+msgstr "Хүсэлт бүтэлгүйтлээ."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Go to"
+msgstr "Очих"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#, python-format
+msgid "Host unreachable."
+msgstr "Хостод хүрэх боломжгүй."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In Email Document &gt; Settings, setup your account: Active must be set to "
+"'ON' to receive documents, and the Module Mode should be LIVE to really send"
+" the document. Select TEST to use Docsaway as a sandbox."
+msgstr ""
+"И-мэйл баримт бичиг, тохиргоо дотор бүртгэлээ тохируулна уу: Баримт бичгийг "
+"хүлээн авахын тулд \"АСААХ\" товчийг идэвхжүүлж, баримтыг илгээхийн тулд "
+"модулийн төлөвийг ШУУД дээр тохируулна уу. Docsaway-г тестийн горимд "
+"ашиглахын тулд ШАЛГАХ гэдгийг сонгоно уу."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "In General &gt; Add Funds, you can add credit to your account."
+msgstr ""
+"Ерөнхий ба нэмэлт сан дотор та өөрийн данс дээр кредит нэмэх боломжтой."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In General &gt; Preferences, you will find your Docsaway email and Docsaway "
+"key. Copy them to the 'DocsAway Details' tab of the postal provider you want"
+" to configure."
+msgstr ""
+"Ерөнхий ба Тохиргоо дотор Docsaway имэйл ба Docsaway түлхүүр бий. Түүнийг "
+"тохируулахыг хүссэн шуудангийн үйлчилгээ үзүүлэгчийнхээ 'DocsAway-ийн "
+"дэлгэрэнгүй мэдээлэл' таб руу хуулна уу."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In History, you can find documents that were sent both in TEST or LIVE "
+"environment. This can help you to test your account. Be careful to correctly"
+" select the environment in your postal provider in Odoo."
+msgstr ""
+"Түүх дотор ШАЛГАХ, ШУУД орчинд илгээсэн баримт бичигүүд бий. Энэ нь "
+"бүртгэлээ шалгахад хэрэг болдог. Odoo дотор шуудангийн үйлчилгээ "
+"үзүүлэгчийнхээ орчинг зөв сонгохдоо хянамгай байгаарай."
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_name
+msgid "Name of the docsaway account."
+msgstr "Docsaway дансны нэр."
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_volume
+msgid "Number of pages printed by Docsaway."
+msgstr "Docsaway - р хэвлэсэн хуудасны тоо."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:71
+#, python-format
+msgid ""
+"Please configure your DocsAway Print Provider Account. See in Settings > "
+"Print Provider. More information on www.docsaway.com ."
+msgstr ""
+"DocsAway хэвлэх үйлчилгээ үзүүлэгчийн дансыг тохируулна уу. Тохиргоо > "
+"Хэвлэх үйлчилгээ үзүүлэгч дотор бий. Дэлгэрэнгүйг www.docsaway.com - оос "
+"аваарай."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Please try again later."
+msgstr "Дараа дахин оролдоно уу."
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order
+msgid "Print Order"
+msgstr "Хэвлэх захиалга"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order_wizard
+msgid "Print Order Wizard"
+msgstr "Хэвлэх захиалгын визард"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_provider
+msgid "Print Provider"
+msgstr "Хэвлэх үйлчилгээ үзүүлэгч"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_reference
+msgid "Reference code of Docsaway account."
+msgstr "Docsaway дансны лавлагааны код."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"The 'Update' button will update this field, once your Docsaway Configuration"
+" is set up."
+msgstr ""
+"Таны Docsaway тохиргоо хийгдмэгц 'Шинэчлэх' товч нь энэ талбарыг шинэчлэнэ."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:105
+#, python-format
+msgid "Unknown Error"
+msgstr "Үл мэдэгдэх Алдаа"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:56
+#, python-format
+msgid ""
+"You must configure your Docsaway Account : the Docsaway Email and Docsaway "
+"Key are required. You will find them on www.docsaway.com"
+msgstr ""
+"Та өөрийн Docsaway дансыг тохируулах ёстой : Docsaway имэйл ба Docsaway "
+"түлхүүр шаардлагатай. Эдгээрийг www.docsaway.com - оос авна уу."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:61
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account, since you "
+"are in Production Mode."
+msgstr ""
+"Таны зээлээр нийлүүлэгч хэт жижиг байна. Та үйлдвэрлэлийн горимд байгаа юм "
+"чинь дансаа тохируулаад (> Тохиргоо > Хэвлэх үйлчилгээ үзүүлэгч) данс дээрээ"
+" зээл нэмнэ үү."

@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions
+	name="quoting"
+	targetNamespace="http://api.temando.com/schema/2009_06/server.wsdl"
+	xmlns:tns="http://api.temando.com/schema/2009_06/server.wsdl"
+	xmlns:com="http://api.temando.com/schema/2009_06/common.xsd"
+	xmlns:server="http://api.temando.com/schema/2009_06/server.xsd"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/04/secext"
+	xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+	<import namespace="http://api.temando.com/schema/2009_06/server.xsd" location="server.xsd"/>
+	<import namespace="http://api.temando.com/schema/2009_06/common.xsd" location="common.xsd"/>
+
+	<message name="getQuotesByRequest">
+		<part name="getQuotesByRequest" element="server:getQuotesByRequest" />
+	</message>
+	<message name="getQuotesByRequestResponse">
+		<part name="getQuotesByRequestResponse" element="server:getQuotesByRequestResponse" />
+	</message>
+	<message name="getQuotes">
+		<part name="getQuotes" element="server:getQuotes" />
+	</message>
+	<message name="getQuotesResponse">
+		<part name="getQuotesResponse" element="server:getQuotesResponse" />
+	</message>
+	<message name="getCarriers">
+		<part name="getCarriers" element="server:getCarriers" />
+	</message>
+	<message name="getCarriersResponse">
+		<part name="getCarriersResponse" element="server:getCarriersResponse" />
+	</message>
+	<message name="makeBookingByRequest">
+		<part name="makeBookingByRequest" element="server:makeBookingByRequest" />
+	</message>
+	<message name="makeBookingByRequestResponse">
+		<part name="makeBookingByRequestResponse" element="server:makeBookingByRequestResponse" />
+	</message>
+	<message name="makeBooking">
+		<part name="makeBooking" element="server:makeBooking" />
+	</message>
+	<message name="makeBookingResponse">
+		<part name="makeBookingResponse" element="server:makeBookingResponse" />
+	</message>
+	<message name="updateRequest">
+		<part name="updateRequest" element="server:updateRequest" />
+	</message>
+	<message name="updateRequestResponse">
+		<part name="updateRequestResponse" element="server:updateRequestResponse" />
+	</message>
+<!--
+	<message name="getRequestIdByReference">
+		<part name="getRequestIdByReference" element="server:getRequestIdByReference" />
+	</message>
+	<message name="getRequestIdByReferenceResponse">
+		<part name="getRequestIdByReferenceResponse" element="server:getRequestIdByReferenceResponse" />
+	</message>
+-->
+<!--
+	<message name="lodgeRequest">
+		<part name="lodgeRequest" element="server:lodgeRequest" />
+	</message>
+	<message name="lodgeRequestResponse">
+		<part name="lodgeRequestResponse" element="server:lodgeRequestResponse" />
+	</message>
+-->
+<!--
+	<message name="makeBookingById">
+		<part name="makeBookingById" element="server:makeBookingById" />
+	</message>
+	<message name="makeBookingByIdResponse">
+		<part name="makeBookingByIdResponse" element="server:makeBookingByIdResponse" />
+	</message>
+-->
+	<message name="getRequest">
+		<part name="getRequest" element="server:getRequest" />
+	</message>
+	<message name="getRequestResponse">
+		<part name="getRequestResponse" element="server:getRequestResponse" />
+	</message>
+	<message name="getMultipleRequests">
+		<part name="getMultipleRequests" element="server:getMultipleRequests" />
+	</message>
+	<message name="getMultipleRequestsResponse">
+		<part name="getMultipleRequestsResponse" element="server:getMultipleRequestsResponse" />
+	</message>
+	<message name="getRequestsRequiringBooking">
+		<part name="getRequestsRequiringBooking" element="server:getRequestsRequiringBooking" />
+	</message>
+	<message name="getRequestsRequiringBookingResponse">
+		<part name="getRequestsRequiringBookingResponse" element="server:getRequestsRequiringBookingResponse" />
+	</message>
+	<message name="addBookingDetails">
+		<part name="addBookingDetails" element="server:addBookingDetails" />
+	</message>
+	<message name="addBookingDetailsResponse">
+		<part name="addBookingDetailsResponse" element="server:addBookingDetailsResponse" />
+	</message>
+	<message name="createClient">
+		<part name="createClient" element="server:createClient" />
+	</message>
+	<message name="createClientResponse">
+		<part name="createClientResponse" element="server:createClientResponse" />
+	</message>
+	<message name="updateClient">
+		<part name="updateClient" element="server:updateClient" />
+	</message>
+	<message name="updateClientResponse">
+		<part name="updateClientResponse" element="server:updateClientResponse" />
+	</message>
+	<message name="getClient">
+		<part name="getClient" element="server:getClient" />
+	</message>
+	<message name="getClientResponse">
+		<part name="getClientResponse" element="server:getClientResponse" />
+	</message>
+	<message name="lodgeDispatch">
+		<part name="lodgeDispatch" element="server:lodgeDispatch" />
+	</message>
+	<message name="lodgeDispatchResponse">
+		<part name="lodgeDispatchResponse" element="server:lodgeDispatchResponse" />
+	</message>
+	<message name="cancelRequest">
+		<part name="cancelRequest" element="server:cancelRequest" />
+	</message>
+	<message name="cancelRequestResponse">
+		<part name="cancelRequestResponse" element="server:cancelRequestResponse" />
+	</message>
+	<message name="updateTrackingDetails">
+		<part name="updateTrackingDetails" element="server:updateTrackingDetails" />
+	</message>
+	<message name="updateTrackingDetailsResponse">
+		<part name="updateTrackingDetailsResponse" element="server:updateTrackingDetailsResponse" />
+	</message>
+	<message name="getManifest">
+		<part name="getManifest" element="server:getManifest" />
+	</message>
+	<message name="getManifestResponse">
+		<part name="getManifestResponse" element="server:getManifestResponse" />
+	</message>
+	<message name="confirmManifest">
+		<part name="confirmManifest" element="server:confirmManifest" />
+	</message>
+	<message name="confirmManifestResponse">
+		<part name="confirmManifestResponse" element="server:confirmManifestResponse" />
+	</message>
+        <message name="confirmManifestByRequestIds">
+		<part name="confirmManifestByRequestIds" element="server:confirmManifestByRequestIds" />
+	</message>
+        <message name="confirmManifestByRequestIdsResponse">
+		<part name="confirmManifestByRequestIdsResponse" element="server:confirmManifestByRequestIdsResponse" />
+	</message>
+	<message name="getLocations">
+		<part name="getLocations" element="server:getLocations" />
+	</message>
+	<message name="getLocationsResponse">
+		<part name="getLocationsResponse" element="server:getLocationsResponse" />
+	</message>
+	<message name="createLocation">
+		<part name="createLocation" element="server:createLocation" />
+	</message>
+	<message name="createLocationResponse">
+		<part name="createLocationResponse" element="server:createLocationResponse" />
+	</message>
+	<message name="updateLocation">
+		<part name="updateLocation" element="server:updateLocation" />
+	</message>
+	<message name="updateLocationResponse">
+		<part name="updateLocationResponse" element="server:updateLocationResponse" />
+	</message>
+	<message name="getItems">
+		<part name="getItems" element="server:getItems" />
+	</message>
+	<message name="getItemsResponse">
+		<part name="getItemsResponse" element="server:getItemsResponse" />
+	</message>
+	<message name="createItem">
+		<part name="createItem" element="server:createItem" />
+	</message>
+	<message name="createItemResponse">
+		<part name="createItemResponse" element="server:createItemResponse" />
+	</message>
+	<message name="updateItem">
+		<part name="updateItem" element="server:updateItem" />
+	</message>
+	<message name="updateItemResponse">
+		<part name="updateItemResponse" element="server:updateItemResponse" />
+	</message>
+	<message name="getPackagings">
+		<part name="getPackagings" element="server:getPackagings" />
+	</message>
+	<message name="getPackagingsResponse">
+		<part name="getPackagingsResponse" element="server:getPackagingsResponse" />
+	</message>
+	<message name="createPackaging">
+		<part name="createPackaging" element="server:createPackaging" />
+	</message>
+	<message name="createPackagingResponse">
+		<part name="createPackagingResponse" element="server:createPackagingResponse" />
+	</message>
+	<message name="updatePackaging">
+		<part name="updatePackaging" element="server:updatePackaging" />
+	</message>
+	<message name="updatePackagingResponse">
+		<part name="updatePackagingResponse" element="server:updatePackagingResponse" />
+	</message>
+	<message name="deletePackaging">
+		<part name="deletePackaging" element="server:deletePackaging" />
+	</message>
+	<message name="deletePackagingResponse">
+		<part name="deletePackagingResponse" element="server:deletePackagingResponse" />
+	</message>
+	<message name="getZones">
+		<part name="getZones" element="server:getZones" />
+	</message>
+	<message name="getZonesResponse">
+		<part name="getZonesResponse" element="server:getZonesResponse" />
+	</message>
+	<message name="createZone">
+		<part name="createZone" element="server:createZone" />
+	</message>
+	<message name="createZoneResponse">
+		<part name="createZoneResponse" element="server:createZoneResponse" />
+	</message>
+	<message name="updateZone">
+		<part name="updateZone" element="server:updateZone" />
+	</message>
+	<message name="updateZoneResponse">
+		<part name="updateZoneResponse" element="server:updateZoneResponse" />
+	</message>
+	<message name="updateCarrierSettings">
+		<part name="updateCarrierSettings" element="server:updateCarrierSettings" />
+	</message>
+	<message name="updateCarrierSettingsResponse">
+		<part name="updateCarrierSettingsResponse" element="server:updateCarrierSettingsResponse" />
+	</message>
+	<message name="getBalances">
+		<part name="getBalances" element="server:getBalances" />
+	</message>
+	<message name="getBalancesResponse">
+		<part name="getBalancesResponse" element="server:getBalancesResponse" />
+	</message>
+
+	<portType name="quoting_portType">
+		<operation name="getQuotesByRequest">
+			<documentation>Returns quotes</documentation>
+			<input message="tns:getQuotesByRequest" />
+			<output message="tns:getQuotesByRequestResponse" />
+		</operation>
+		<operation name="getQuotes">
+			<documentation>Returns quotes</documentation>
+			<input message="tns:getQuotes" />
+			<output message="tns:getQuotesResponse" />
+		</operation>
+		<operation name="getCarriers">
+			<documentation>Returns carriers</documentation>
+			<input message="tns:getCarriers" />
+			<output message="tns:getCarriersResponse" />
+		</operation>
+		<operation name="makeBookingByRequest">
+			<documentation>Makes a Booking</documentation>
+			<input message="tns:makeBookingByRequest" />
+			<output message="tns:makeBookingByRequestResponse" />
+		</operation>
+		<operation name="makeBooking">
+			<documentation>Makes a Booking</documentation>
+			<input message="tns:makeBooking" />
+			<output message="tns:makeBookingResponse" />
+		</operation>
+		<operation name="updateRequest">
+			<documentation>Updates a Booking</documentation>
+			<input message="tns:updateRequest" />
+			<output message="tns:updateRequestResponse" />
+		</operation>
+		<operation name="getRequest">
+			<documentation>Returns request</documentation>
+			<input message="tns:getRequest" />
+			<output message="tns:getRequestResponse" />
+		</operation>
+		<operation name="getMultipleRequests">
+			<documentation>Returns consignment information for multiple requests</documentation>
+			<input message="tns:getMultipleRequests" />
+			<output message="tns:getMultipleRequestsResponse" />
+		</operation>
+		<operation name="getRequestsRequiringBooking">
+			<documentation>Returns requests</documentation>
+			<input message="tns:getRequestsRequiringBooking" />
+			<output message="tns:getRequestsRequiringBookingResponse" />
+		</operation>
+		<operation name="addBookingDetails">
+			<documentation>Makes a Booking</documentation>
+			<input message="tns:addBookingDetails" />
+			<output message="tns:addBookingDetailsResponse" />
+		</operation>
+		<operation name="createClient">
+			<documentation>Creates a Client account</documentation>
+			<input message="tns:createClient" />
+			<output message="tns:createClientResponse" />
+		</operation>
+		<operation name="updateClient">
+			<documentation>Update a Client account</documentation>
+			<input message="tns:updateClient" />
+			<output message="tns:updateClientResponse" />
+		</operation>
+		<operation name="getClient">
+			<documentation>Get a Clients account details.</documentation>
+			<input message="tns:getClient" />
+			<output message="tns:getClientResponse" />
+		</operation>
+		<operation name="lodgeDispatch">
+			<documentation>Lodge dispatch details for a request.</documentation>
+			<input message="tns:lodgeDispatch" />
+			<output message="tns:lodgeDispatchResponse" />
+		</operation>
+		<operation name="cancelRequest">
+			<documentation>Cancel a request.</documentation>
+			<input message="tns:cancelRequest" />
+			<output message="tns:cancelRequestResponse" />
+		</operation>
+		<operation name="updateTrackingDetails">
+			<documentation>Update a requests tracking status.</documentation>
+			<input message="tns:updateTrackingDetails" />
+			<output message="tns:updateTrackingDetailsResponse" />
+		</operation>
+		<operation name="getManifest">
+			<documentation>Retrieve manifest information.</documentation>
+			<input message="tns:getManifest" />
+			<output message="tns:getManifestResponse" />
+		</operation>
+		<operation name="confirmManifest">
+			<documentation>Confirm awaiting manifest.</documentation>
+			<input message="tns:confirmManifest" />
+			<output message="tns:confirmManifestResponse" />
+		</operation>
+                <operation name="confirmManifestByRequestIds">
+			<documentation>Confirm awaiting manifest by request ids.</documentation>
+			<input message="tns:confirmManifestByRequestIds" />
+			<output message="tns:confirmManifestByRequestIdsResponse" />
+		</operation>
+		<operation name="getLocations">
+			<documentation>Retrieve locations.</documentation>
+			<input message="tns:getLocations" />
+			<output message="tns:getLocationsResponse" />
+		</operation>
+		<operation name="createLocation">
+			<documentation>Creates a Location</documentation>
+			<input message="tns:createLocation" />
+			<output message="tns:createLocationResponse" />
+		</operation>
+		<operation name="updateLocation">
+			<documentation>Update a Location</documentation>
+			<input message="tns:updateLocation" />
+			<output message="tns:updateLocationResponse" />
+		</operation>
+		<operation name="getItems">
+			<documentation>Retrieve items.</documentation>
+			<input message="tns:getItems" />
+			<output message="tns:getItemsResponse" />
+		</operation>
+		<operation name="createItem">
+			<documentation>Creates a item</documentation>
+			<input message="tns:createItem" />
+			<output message="tns:createItemResponse" />
+		</operation>
+		<operation name="updateItem">
+			<documentation>Update a item</documentation>
+			<input message="tns:updateItem" />
+			<output message="tns:updateItemResponse" />
+		</operation>
+		<operation name="getPackagings">
+			<documentation>Retrieve Packagings.</documentation>
+			<input message="tns:getPackagings" />
+			<output message="tns:getPackagingsResponse" />
+		</operation>
+		<operation name="createPackaging">
+			<documentation>Creates a Packaging</documentation>
+			<input message="tns:createPackaging" />
+			<output message="tns:createPackagingResponse" />
+		</operation>
+		<operation name="updatePackaging">
+			<documentation>Update a Packaging</documentation>
+			<input message="tns:updatePackaging" />
+			<output message="tns:updatePackagingResponse" />
+		</operation>
+		<operation name="deletePackaging">
+			<documentation>Delete a Packaging</documentation>
+			<input message="tns:deletePackaging" />
+			<output message="tns:deletePackagingResponse" />
+		</operation>
+		<operation name="getZones">
+			<documentation>Retrieve Zones.</documentation>
+			<input message="tns:getZones" />
+			<output message="tns:getZonesResponse" />
+		</operation>
+		<operation name="createZone">
+			<documentation>Creates a Zone</documentation>
+			<input message="tns:createZone" />
+			<output message="tns:createZoneResponse" />
+		</operation>
+		<operation name="updateZone">
+			<documentation>Update a Zone</documentation>
+			<input message="tns:updateZone" />
+			<output message="tns:updateZoneResponse" />
+		</operation>
+		<operation name="updateCarrierSettings">
+			<documentation>Update a Carrier Settings</documentation>
+			<input message="tns:updateCarrierSettings" />
+			<output message="tns:updateCarrierSettingsResponse" />
+		</operation>
+		<operation name="getBalances">
+			<documentation>Retrieve financial balances</documentation>
+			<input message="tns:getBalances" />
+			<output message="tns:getBalancesResponse" />
+		</operation>
+	</portType>
+	<binding name="quoting_binding" type="tns:quoting_portType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="getQuotesByRequest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getQuotes">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="makeBookingByRequest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="makeBooking">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateRequest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getRequest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getCarriers">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getMultipleRequests">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getRequestsRequiringBooking">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="addBookingDetails">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="createClient">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateClient">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getClient">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="lodgeDispatch">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="cancelRequest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateTrackingDetails">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getManifest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="confirmManifest">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+                <operation name="confirmManifestByRequestIds">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getLocations">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="createLocation">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateLocation">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getItems">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="createItem">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateItem">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getPackagings">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="createPackaging">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updatePackaging">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="deletePackaging">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getZones">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="createZone">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateZone">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="updateCarrierSettings">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="getBalances">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="quoting_Service">
+		<port name="quoting_port" binding="tns:quoting_binding">
+			<soap:address location="http://api.temando.com/soapServer.html" />
+		</port>
+	</service>
+</definitions>

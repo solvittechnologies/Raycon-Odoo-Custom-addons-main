@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_truck_rental_form" model="ir.ui.view">
+            <field name="name">view.truck.rental.form</field>
+            <field name="model">truck.rental</field>
+            <field name="arch" type="xml">
+                <form string="Truck Rental Form">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="serial_no"/>
+                                <field name="r_no"/>
+                            </group>
+                            <group>
+                                <field name="machi"/>
+                                <field name="card_no_fastra"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_truck_rental_tree" model="ir.ui.view">
+            <field name="name">view.truck.rental.tree</field>
+            <field name="model">truck.rental</field>
+            <field name="arch" type="xml">
+                <tree string="Truck Rental Tree">
+                    <field name="serial_no"/>
+                    <field name="machi"/>
+                    <field name="r_no"/>
+                    <field name="name"/>
+                    <field name="card_no_fastra"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_truck_view" model="ir.actions.act_window">
+            <field name="name">Truck</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">truck.rental</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Truck" id="menu_truck_action" parent="fleet.fleet_configuration" action="action_truck_view"/>
+
+        <record id="view_vehicle_expense_form" model="ir.ui.view">
+            <field name="name">view.vehicle.expense.form</field>
+            <field name="model">vehicle.expense</field>
+            <field name="arch" type="xml">
+                <form string="Truck Rental Form">
+                    <header>
+                        <button name="action_send_for_approve" string="Send for Approve" type="object"
+                                attrs="{'invisible':[('state','!=','draft')]}" class="oe_highlight"/>
+                        <button name="action_approved" string="Approve" type="object"
+                                attrs="{'invisible':[('state','!=','send_for_approve')]}" class="oe_highlight"/>
+                        <button name="action_invoice_generate" string="Generate Account Entries" type="object"
+                                attrs="{'invisible':[('state','!=','approved')]}" class="oe_highlight"/>
+                        <button name="action_disapproved" string="Disapprove" type="object"
+                                attrs="{'invisible':[('state','in',['approved','disapprove'])]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,send_for_approve,approved"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" name="button_journal_entries"
+                                    string="Accounting Entries" type="object"
+                                    attrs="{'invisible':[('move_ids','=',[])]}" icon="fa-bars"/>
+                            <field name="move_ids" invisible="1"/>
+                        </div>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="truck_rental_id"/>
+                                <field name="machi"/>
+                                <field name="r_no"/>
+                                <field name="expense_category"/>
+                                <field name="amount"/>
+                            </group>
+                            <group>
+                                <field name="card_no_fastra"/>
+                                <field name="reg_no"/>
+                                <field name="date"/>
+                                <field name="description"/>
+                            </group>
+                        </group>
+
+                        <group string="Accounting">
+                            <group>
+                                <field name="journal_id"/>
+                                <field name="account_debit"/>
+                                <field name="account_credit"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_vehicle_expense_tree" model="ir.ui.view">
+            <field name="name">view.vehicle.expense.tree</field>
+            <field name="model">vehicle.expense</field>
+            <field name="arch" type="xml">
+                <tree string="Vehicle Expense Tree">
+                    <field name="truck_rental_id"/>
+                    <field name="date"/>
+                    <field name="machi"/>
+                    <field name="r_no"/>
+                    <field name="card_no_fastra" invisible="1"/>
+                    <field name="expense_category"/>
+                    <field name="amount"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_vehicle_expense_view" model="ir.actions.act_window">
+            <field name="name">Vehicle Expenses</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vehicle.expense</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Vehicle Expenses" id="menu_vehicle_expenses_action" parent="fleet_rental.menu_car_parent" action="action_vehicle_expense_view"/>
+
+    </data>
+</odoo>

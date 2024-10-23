@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk
+# 
+# Translators:
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2016\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-arrow-circle-right \"/> See the feedbacks"
+msgstr "<i class=\"fa fa-arrow-circle-right \"/>Смотреть отзывы"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-envelope\"/> Email :"
+msgstr "<i class=\"fa fa-envelope\"/> Email:"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i/> Customer Satisfaction Ration:"
+msgstr "<i/> Рацион удовлетворенности клиентов:"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "<span>Show more</span><span class=\"hidden\">Show less</span>"
+msgstr "<span>Развернуть</span><span class=\"hidden\">Свернуть</span>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Assigned to</strong>"
+msgstr "<strong>Исполнитель</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Дата:</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Message and communication history</strong>"
+msgstr "<strong>История сообщений и обсуждений</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Reported by</strong>"
+msgstr "<strong>Автор</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Average"
+msgstr "Среднее"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Bad"
+msgstr "Плохо"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Current stage of this ticket"
+msgstr "Текущий этап этой запроса"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Customer Satisfaction"
+msgstr "Удовлетворённость клиента"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Description"
+msgstr "Описание"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Edit Ticket"
+msgstr "Редактировать этот запрос"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Happy"
+msgstr "Счастлив"
+
+#. module: website_helpdesk
+#: model:website.menu,name:website_helpdesk.website_menu_helpdesk
+msgid "Help"
+msgstr "Помощь"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk"
+msgstr "Техподдержка"
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_team
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk Team"
+msgstr "Команда службы поддержки"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.header_footer_custom
+msgid "Helpdesk Team Customer Satisfaction"
+msgstr "Команда службы поддержки клиентов"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Helpdesk Team Satisfaction"
+msgstr "Команда службы поддержки удовлетворенности"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 3 months"
+msgstr "последние 3 месяца"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 30 days"
+msgstr "последние 30 дней"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 7 days"
+msgstr "последние 7 дней"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Latest Feedbacks"
+msgstr "Свежие отзывы"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "My Tickets"
+msgstr "Мои запросы"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.content_new_team
+msgid "New Team"
+msgstr "Новая Команда"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.not_published_any_team
+msgid "No teams have been published."
+msgstr "Нет команд опубликованых."
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid "Save this page to activate the feature"
+msgstr "Сохранить эту страницу, чтобы активировать функцию"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_ticket_access_token
+msgid "Security Token"
+msgstr "Маркер доступа"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Status"
+msgstr "Статус"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Submit an Issue"
+msgstr "Отправить запрос"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Team Settings"
+msgstr "Настройки команды"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Teams"
+msgstr "Команды"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "There are currently no Ticket for your account."
+msgstr "В настоящее время нет запроса для вашей учетной записи."
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Запрос"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Ticket Number"
+msgstr "Номер запроса:"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_menu_helpdesk
+msgid "Tickets"
+msgstr "Запросы"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_team_website_rating_url
+msgid "URL to Submit Issue"
+msgstr "URL чтобы отправить вопрос"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "View my Issues"
+msgstr "Просмотреть мои вопросы"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid ""
+"View this teams ratings this page:<br/>\n"
+"                    ⇒"
+msgstr ""
+"Смотреть рейтинги этой команды для этой страницы:<br/>\n"
+"                    ⇒"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "Your Tickets"
+msgstr "Ваши запросы"

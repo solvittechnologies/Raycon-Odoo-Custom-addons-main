@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_request_inventory_from" model="ir.ui.view">
+            <field name="name">view.request.inventory.from</field>
+            <field name="model">request.inventory</field>
+            <field name="arch" type="xml">
+                <form string="Request Inventory Form">
+                    <header>
+                        <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object" groups="base.group_user"/>
+                        <button name="action_request_approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object" groups="base.group_user"/>
+                        <button name="reset_to_draft" string="Reset to Draft" attrs="{'invisible':[('state','!=', 'request')]}" type="object" />
+                        <button name="inventory_request_return" type="object" string="Return" attrs="{'invisible':[('state','!=', 'approve')]}" class="oe_highlight" groups="base.group_user"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <separator string="Material Consumption" colspan="4"/>
+                        <group>
+                            <group>
+                                <field name="store_manager_id" required="1"/>
+                                <field name="request_date"/>
+                                <!--<field name="source_location_id" required="0" invisible="0"/>-->
+                            </group>
+                            <group>
+                                <field name="receiver_user_id" required="1" string="Project Manager"/>
+                                <field name="source_location_id" required="1" invisible="0" string="Source Location"/>                                
+                                <field name="destination_location_id" required="0" invisible="0"/>
+                                <!--<field name="date_returned" />-->
+                                <field name="expected_to_return" invisible="1"/>
+                            </group>
+                        </group>
+
+                        <separator string="Request Items" colspan="4"/>
+
+                        <notebook>
+                            <page string="Product Line" name="request_line">
+                                <field name="request_line_ids" nolabel="1" widget="one2many" wiget="section_and_note_many2one" force_save='1'>
+                                    <tree string="Material lines" editable="bottom">
+                                        <control>
+                                            <create string="Add a line"/>
+                                            <create string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                                        </control>
+                                        <field name="product_id" required="1"/>
+                                        <field name="quantity" attrs="{'readonly':[('expected_to_return','=',True)]}"  string="Quantity to release"/>
+                                        <field name="description"/>
+                                        <field name="expected_to_return" invisible="1"/>
+                                       <!-- <field name="qty_to_return"/>-->
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+               </form>
+            </field>
+        </record>
+
+
+        <record id="view_request_inventory_tree" model="ir.ui.view">
+            <field name="name">view.request.inventory.tree</field>
+            <field name="model">request.inventory</field>
+            <field name="arch" type="xml">
+                <tree string="Request Inventory Tree">
+                    <field name="store_manager_id" required="1"/>
+                    <field name="receiver_user_id" required="1" string="Project Manager"/>
+                    <field name="request_date" />
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inventory_request_form_action">
+            <field name="name">Stock Update</field>
+            <field name="res_model">request.inventory</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Add a new Inventory Request
+                </p>
+                <p>
+                  Manage What goes in and out of your Inventory
+                </p>
+            </field>
+        </record>
+        <!--request from inventory -->
+        <record id="request_inventory_from" model="ir.ui.view">
+            <field name="name">request.of.inventory.from</field>
+            <field name="model">inventory.request</field>
+            <field name="arch" type="xml">
+                <form string="Request  From Inventory Form">
+                    <header>
+                        <button name="submit_request" string="Submit" attrs="{'invisible':[('state_of_request','!=', 'draft')]}" class="oe_highlight" type="object" groups="base.group_user"/>
+                        <button name="action_request_approve" string="Approve" class="oe_highlight" type="object" groups="stock.group_stock_manager" attrs="{'invisible':[('state_of_request','!=', 'request')]}"/>
+                        <button name="reset_to_draft" string="Reset to Draft" attrs="{'invisible':[('state_of_request','!=', 'request')]}" type="object" />
+                        <button name="inventory_request_return" type="object" string="Return" attrs="{'invisible':[('state_of_request','!=', 'approve')]}" class="oe_highlight" groups="base.group_user"/>
+                        <button name="action_request_return_approve" string="Approve" attrs="{'invisible':[('state_of_request','!=', 'return_approve')]}" type="object" class="oe_highlight" groups="stock.group_stock_manager"/>
+                        <field name="state_of_request" widget="statusbar"/>
+                        </header>
+                        <sheet>
+                        	<div class="oe_button_box" name="button_box">
+                        		<button name="action_get_account_moves" type="object" string="Accounting Entries" icon="fa-usd" class="oe_stat_button" />
+							</div>
+                        <separator string="Material" colspan="4"/>
+                        <group>
+                            <group>
+                                <field name="store_keeper_name" required="1"/>
+                                <field name="Project_manager"/>
+                                <field name="source_location" required="1"/>
+                            </group>
+                            <group>
+                                <field name="Receiver_name" required="1"/>
+                                <field name="destination_location" required="1"/>
+                                <!--<field name="date_returned" />-->
+                                <field name="released_date"/>
+                            </group>
+                        </group>
+                        <separator string="Request Items" colspan="4"/>
+                        <notebook>
+                            <page string="Products Line" name="request_line">
+                                <field name="request_lines" nolabel="1" widget="one2many" wiget="section_and_note_many2one" force_save='1'>
+                                    <tree string="Material lines" editable="bottom">
+                                        <control>
+                                            <create string="Add a line"/>
+                                            <create string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                                        </control>
+                                        <field name="product_id" required="1"/>
+                                        <field name="quantity" attrs="{'readonly':[('expected_to_return','=',True)]}" string="Quantity to release"/>
+                                        <field name="description"/>
+                                        <field name="expected_to_return" invisible="1"/>
+                                       	<field name="qty_to_return" attrs="{'column_invisible':[('parent.state_of_request','not in',['approve','return_approve','return'])]}"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+               </form>
+            </field>
+        </record>
+        <!-- request tree-->
+        <record id="request_inventory_tree" model="ir.ui.view">
+            <field name="name">inventory.tree</field>
+            <field name="model">inventory.request</field>
+            <field name="arch" type="xml">
+                <tree string="Request From Inventory ">
+                    <field name="Receiver_name" required="1"/>
+                    <field name="released_date" />
+                    
+                    
+                </tree>
+            </field>
+        </record>
+        
+
+        <record model="ir.actions.act_window" id="inventory_of_request_action">
+            <field name="name">Inventory Of Request</field>
+            <field name="res_model">inventory.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Add  Inventory Request
+                </p>
+                <p>
+                  Manage of Inventory
+                </p>
+            </field>
+        </record>    
+
+        <menuitem  name="Release Products"
+                   id="inventory_management_root"
+                   parent="stock.menu_stock_root"
+        		action="inventory_of_request_action"
+        />
+
+        <menuitem  name="Inventory Request"
+                   id="inventory_request"
+                   parent="inventory_management_root"
+                   action="inventory_of_request_action"/>
+
+        <menuitem  name="Stock Update"
+                   id="inventory_request"
+                   parent="stock.menu_stock_warehouse_mgmt"
+                   action="inventory_request_form_action"/>
+
+        <record model="ir.ui.menu" id="stock.menu_action_location_form">
+		    <field name="groups">stock.group_stock_user</field>
+		</record>
+    </data>
+</odoo>

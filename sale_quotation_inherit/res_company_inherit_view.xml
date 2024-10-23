@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <record id="res_company_inherit" model="ir.ui.view">
+        <field name="name">my_company_address2</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <div class="o_address_format" position="after">
+                  <label for="address_str1" string="Address 2"/>
+                  <div class="o_address_format">
+                  <field name="address_str1" placeholder="Street..." class="o_address_street"/>
+                  <field name="address_str2" placeholder="Street 2..." class="o_address_street"/>
+                  <field name="address_city" placeholder="City" class="o_address_city"/>
+                  <field name="address_state" class="o_address_state" placeholder="State"/>
+                  <field name="address_zip" placeholder="ZIP" class="o_address_zip"/>
+                  <field name="address_country" placeholder="Country" class="o_address_country"/>
+                  </div>
+
+
+            </div>
+
+        </field>
+    </record>
+
+
+
+
+</odoo>

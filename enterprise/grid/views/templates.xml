@@ -1,0 +1,9 @@
+<odoo>
+    <template id="assets_backend" name="grid assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/grid/static/src/less/grid_view.less"/>
+            <script type="text/javascript" src="/grid/static/lib/snabbdom-0.5.0/snabbdom.js"/>
+            <script type="text/javascript" src="/grid/static/src/js/grid_view.js"/>
+        </xpath>
+    </template>
+</odoo>

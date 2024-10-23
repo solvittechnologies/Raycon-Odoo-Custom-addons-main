@@ -1,0 +1,330 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * timesheet_grid
+# 
+# Translators:
+# Leonardo Chianea <noamixcontenidos@gmail.com>, 2016
+# Ivan Nieto <ivan.n.s@tuta.io>, 2016
+# Mateo Tibaquirá Palacios <nestormateo@gmail.com>, 2016
+# Ana Juaristi <ajuaristio@gmail.com>, 2016
+# José Vicente <txusev@gmail.com>, 2016
+# Sergio Flores <vitavitae1@gmail.com>, 2016
+# Carles Antoli <carlesantoli@hotmail.com>, 2016
+# Antonio Trueba, 2016
+# Martin Trigaux, 2016
+# oihane <oihanecruce@gmail.com>, 2016
+# Pedro M. Baeza <pedro.baeza@gmail.com>, 2016
+# Gustavo Orozco H. <gustavo.orozco.h@app-247.com>, 2016
+# b3f3300d6588d364d534a46dbff68ebb_f82c93d <25ccc199032c6e11a5e1ece329556b43_531019>, 2017
+# Gelo Joga Landoo <gj@landoo.es>, 2017
+# e2f <projects@e2f.com>, 2018
+# Susanna Pujol, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:42+0000\n"
+"Last-Translator: Susanna Pujol, 2020\n"
+"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_all
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_all
+msgid "All Timesheets"
+msgstr "Todos los partes de horas"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:46
+#, python-format
+msgid "All selected timesheets are already validated"
+msgstr "Todos los partes de horas seleccionados están ya validados"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_project_project_allow_timesheets
+#: model:ir.ui.view,arch_db:timesheet_grid.project_view_form_timesheets
+msgid "Allow timesheets"
+msgstr "Permitir partes de horas"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea Analítica"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Click to add projects and tasks"
+msgstr "Click para añadir proyectos y tareas"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Date until which the employee's timesheets have been validated"
+msgstr "Fecha hasta la cual el parte de horas del empleado ha sido validado"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Describe your activity"
+msgstr "Describa su actividad"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_display_name
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_hr_employee
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_id
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_id
+msgid "ID"
+msgstr "ID"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable___last_update
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_month
+msgid "Last Month"
+msgstr "Último Mes"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_week
+msgid "Last Week"
+msgstr "Última Semana"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Line edition and creation from grid"
+msgstr "Creación de líneas y creación desde tabla"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Month"
+msgstr "Mes"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validation_search
+msgid "My Team"
+msgstr "Mi equipo"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_current
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_my
+msgid "My Timesheet"
+msgstr "Mi parte de horas"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "My Timesheets"
+msgstr "Mi parte de horas"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Non Validated"
+msgstr "No Validado"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:68
+#, python-format
+msgid ""
+"Only a Timesheets Officer is allowed to create an entry older than the "
+"validation limit."
+msgstr ""
+"Solo los encargados de los partes de horas tienen permitido crear entradas "
+"anteriores al límite de validación."
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:83
+#, python-format
+msgid "Only a Timesheets Officer is allowed to delete a validated entry."
+msgstr ""
+"Solo los encargados de los partes de horas tienen permitido eliminar "
+"entradas validadas."
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:77
+#, python-format
+msgid "Only a Timesheets Officer is allowed to modify a validated entry."
+msgstr ""
+"Solo los encargados de los partes de horas tiene permitido modificar "
+"entradas validadas."
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Set if this analytic line represents a line of timesheet."
+msgstr ""
+"Establecer si esta línea analítica representa una línea del parte de horas."
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Task"
+msgstr "Tarea"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:41
+#, python-format
+msgid "There aren't any timesheet to validate"
+msgstr "No hay partes de horas para validar"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Time Spent"
+msgstr "Tiempo dedicado"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Timesheet"
+msgstr "Parte de horas"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Timesheet Line"
+msgstr "Línea del parte de horas"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_list
+msgid "Timesheet Lines"
+msgstr "Líneas del Parte de horas"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_month
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_week
+msgid "Timesheets To Validate"
+msgstr "Partes de horas para validar"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Timesheets validation limit"
+msgstr "Límite para validar partes de horas"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate
+msgid "To Validate"
+msgstr "A validar"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validable_ids
+msgid "Validable ids"
+msgstr "Códigos ID validables"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validate
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validate
+msgid "Validate"
+msgstr "Validar"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate Timesheets"
+msgstr "Validar parte de horas"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate the timesheets of the selected employees up to"
+msgstr "Validar los partes de horas de los empleados seleccionados hasta"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_timesheet_grid_validable_validate
+msgid "Validate this employee's timesheet up to the chosen date"
+msgstr ""
+"Validad el parte de horas de este empleado hasta la fecha seleccionada"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validate_to
+msgid "Validate to"
+msgstr "A validar"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Validated"
+msgstr "Validado"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_validated
+msgid "Validated line"
+msgstr "Línea validada"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validation_id
+msgid "Validation id"
+msgstr "Códigos ID de validación"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Week"
+msgstr "Semana"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validable
+msgid "timesheet_grid.validable"
+msgstr "timesheet_grid.validable"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validation
+msgid "timesheet_grid.validation"
+msgstr "timesheet_grid.validation"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "you will be able to register your working hours on the given task"
+msgstr "Podrá registrar sus horas de trabajo en la tarea en cuestión."

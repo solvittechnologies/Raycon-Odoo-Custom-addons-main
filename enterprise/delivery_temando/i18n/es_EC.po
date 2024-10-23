@@ -1,0 +1,670 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_temando
+#
+# Translators:
+# Alejandro Die Sanchis <marketing@domatix.com>, 2015
+# Humberto Garza De Koster <garzadekoster@gmail.com>, 2015
+# Rick Hunter <rick_hunter_ec@yahoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-02-19 01:30+0000\n"
+"Last-Translator: Rick Hunter <rick_hunter_ec@yahoo.com>\n"
+"Language-Team: Spanish (Ecuador) (http://www.transifex.com/odoo/odoo-9/"
+"language/es_EC/)\n"
+"Language: es_EC\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54410
+#: model:product.product,name:delivery_temando.temando_54410_product_product
+msgid "All Australian Logistics via Temando"
+msgstr "Toda la logística australiana via Temado"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60006
+#: model:product.product,name:delivery_temando.temando_60006_product_product
+msgid "Allied Express (Air) via Temando"
+msgstr "Allied Express (aereo) a través Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60334
+#: model:product.product,name:delivery_temando.temando_60334_product_product
+msgid "Allied Express - Adhoc Air (Business Delivery) via Temando"
+msgstr "Allied Express - Adhoc Air (Envío Business) via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60330
+#: model:product.product,name:delivery_temando.temando_60330_product_product
+msgid "Allied Express - Adhoc Road (Business Delivery) via Temando"
+msgstr "Allied Express - Adhoc Road (Business Delivery) via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60020
+#: model:product.product,name:delivery_temando.temando_60020_product_product
+msgid "Allied Express Pallets via Temando"
+msgstr "Allied Express Pallets vía Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54381
+#: model:product.product,name:delivery_temando.temando_54381_product_product
+msgid "Allied Express via Temando"
+msgstr "Allied Express via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54432
+#: model:product.product,name:delivery_temando.temando_54432_product_product
+msgid "Capital Transport HDS via Temando"
+msgstr "Capital Transport HDS via Temando"
+
+#. module: delivery_temando
+#: model:ir.model,name:delivery_temando.model_delivery_carrier
+msgid "Carrier"
+msgstr "Transportista"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_distance_measurement_type:0
+msgid "Centimetres"
+msgstr "Centímetros"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60236
+#: model:product.product,name:delivery_temando.temando_60236_product_product
+msgid "Couriers Please (Residential Metro Parcel) via Temando"
+msgstr "Couriers Please (Residential Metro Parcel) via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60234
+#: model:product.product,name:delivery_temando.temando_60234_product_product
+msgid "Couriers Please (Residential Parcel) via Temando"
+msgstr "Couriers Please (Residential Parcel) via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60046
+#: model:product.product,name:delivery_temando.temando_60046_product_product
+msgid "Couriers Please - Parcel via Temando"
+msgstr "Couriers Please - Parcel via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60052
+#: model:product.product,name:delivery_temando.temando_60052_product_product
+msgid "Couriers Please Metro Parcel via Temando"
+msgstr "Couriers Please Metro Parcel via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54425
+#: model:product.product,name:delivery_temando.temando_54425_product_product
+msgid "Couriers Please via Temando"
+msgstr "Couriers Please via Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_hs_code
+#, fuzzy
+msgid "Default HS Code"
+msgstr "Código HS "
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_default_packaging_id
+#, fuzzy
+msgid "Default Packaging Type"
+msgstr "Tipo  pre-definido de empaque \"Te mando\""
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_delivery_type:0
+msgid "Depot to Depot"
+msgstr "Depósito a Depósito"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_delivery_nature:0
+msgid "Domestic"
+msgstr "Doméstico"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_delivery_type:0
+msgid "Door to Door"
+msgstr "Puerta a Puerta"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_pallet_nature:0
+msgid "Exchange"
+msgstr "Intercambio"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54444
+#: model:product.product,name:delivery_temando.temando_54444_product_product
+msgid "Fastway Couriers A5SAT via Temando"
+msgstr "Fastway Couriers A5SAT via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54427
+#: model:product.product,name:delivery_temando.temando_54427_product_product
+msgid "Fastway Couriers Adhoc via Temando"
+msgstr "Fastway Couriers Adhoc via Temando"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_distance_measurement_type:0
+msgid "Feet"
+msgstr "Pies"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54329
+#: model:product.product,name:delivery_temando.temando_54329_product_product
+msgid "Followmont Transport via Temando"
+msgstr "Followmont Transport via Temando"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_subclass:0
+msgid "Furniture"
+msgstr "Mobiliario"
+
+#. module: delivery_temando
+#: model:ir.ui.view,arch_db:delivery_temando.stock_picking_temando
+msgid "Get Manifest"
+msgstr "Obtener manifiesto"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_weight_measurement_type:0
+msgid "Grams"
+msgstr "Gramos"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_subclass:0
+msgid "Household Goods"
+msgstr "Mobiliario Doméstico"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54344
+#: model:product.product,name:delivery_temando.temando_54344_product_product
+msgid "Hunter Express. via Temando"
+msgstr "Hunter Express. via Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,help:delivery_temando.field_delivery_carrier_temando_preferred_carrier
+msgid ""
+"If set, Temando fetch quotations only for this carrier. If not set, the "
+"cheapest one is selected."
+msgstr ""
+"Si se establece, Temando traiga cotizaciones solo para este soporte. Si no "
+"se establece, se selecciona el más barato."
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_distance_measurement_type:0
+msgid "Inches"
+msgstr "Pulgadas"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_delivery_nature:0
+msgid "International"
+msgstr "Internacional"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_weight_measurement_type:0
+msgid "Kilograms"
+msgstr "Kilogramos"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_pallet_type:0
+msgid "Loscam"
+msgstr "Loscam"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60310
+#: model:product.product,name:delivery_temando.temando_60310_product_product
+msgid "Mainfreight (B2C) via Temando"
+msgstr "Mainfreight (B2C) via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54358
+#: model:product.product,name:delivery_temando.temando_54358_product_product
+msgid "Mainfreight via Temando"
+msgstr "Mainfreight via Temando"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/delivery_temando.py:173
+#, python-format
+msgid "Manifest for this shipping"
+msgstr "Manifiesto para este envío"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_distance_measurement_type:0
+msgid "Metres"
+msgstr "Metros"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_location_selection:0
+msgid "Most Stock"
+msgstr "Más inventario"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_location_selection:0
+msgid "Nearest"
+msgstr "Mas cercano"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_location_selection:0
+msgid "Nearest by Priority"
+msgstr "Prioridad más cercana"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/delivery_temando.py:166
+#, python-format
+msgid "No CarrierID found for this delivery order"
+msgstr "No existe el ID para esta orden de despacho"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/delivery_temando.py:164
+#, python-format
+msgid ""
+"No Temando location is associated to this warehouse, Manifest collection is "
+"not available"
+msgstr ""
+"Sin ubicación Temando asociada a esta bodega, el Manifiesto de recogida no "
+"está disponible"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_pallet_nature:0
+#: selection:delivery.carrier,temando_pallet_type:0
+msgid "Not Required"
+msgstr "No Requerido"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_subclass:0
+msgid "Other (Etc.)"
+msgstr "Otros (etc.)"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_weight_measurement_type:0
+msgid "Ounces"
+msgstr "Onzas"
+
+#. module: delivery_temando
+#: model:ir.model,name:delivery_temando.model_product_packaging
+#, fuzzy
+msgid "Packaging"
+msgstr "\"Altura\" del paquete"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_pallet_type:0
+msgid "Plain"
+msgstr "Simple"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:109
+#, python-format
+msgid ""
+"Please provide Height, Width and Length on product packaging or delivery "
+"method."
+msgstr ""
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:52
+#: code:addons/delivery_temando/models/temando_request.py:57
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Por favor, proveer al menos un dato para embarcar."
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_weight_measurement_type:0
+msgid "Pounds"
+msgstr "Libras"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_preferred_carrier
+msgid "Preferred Carrier ID"
+msgstr "ID Transportista Preferido"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_location_selection:0
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: delivery_temando
+#: model:ir.model,name:delivery_temando.model_sale_order
+msgid "Sales Order"
+msgstr "Aviso para pedido de venta"
+
+#. module: delivery_temando
+#: model:ir.model.fields,help:delivery_temando.field_stock_warehouse_temando_location
+msgid ""
+"Set this field with your Temando Location reference to enable manifesting "
+"from this location."
+msgstr ""
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/delivery_temando.py:152
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "El envío Nº %s ha sido cancelado"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/delivery_temando.py:118
+#, python-format
+msgid ""
+"Shipment created into Temando <br/> <b>Carrier: </b>%s <br/> <b>Tracking "
+"Number: </b>%s"
+msgstr ""
+"Embarque creado en <b> Transportista:  \"Temando\" <br/>: </b>%s <br/> "
+"<b>Número de Guía: </b>%s"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_label_printer_type:0
+msgid "Standard"
+msgstr ""
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54396
+#: model:product.product,name:delivery_temando.temando_54396_product_product
+msgid "Startrack - Auth To Leave via Temando"
+msgstr "Startrack - Auth To Leave via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54359
+#: model:product.product,name:delivery_temando.temando_54359_product_product
+msgid "Startrack via Temando"
+msgstr "Startrack via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54405
+#: model:product.product,name:delivery_temando.temando_54405_product_product
+msgid "Startrack__ via Temando"
+msgstr "Startrack__ via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60037
+#: model:product.product,name:delivery_temando.temando_60037_product_product
+msgid "TNT (Satchel Only) ATL via Temando"
+msgstr "TNT (Satchel Only) ATL via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60032
+#: model:product.product,name:delivery_temando.temando_60032_product_product
+msgid "TNT (Satchel Only) via Temando"
+msgstr "TNT (Satchel Only) via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60027
+#: model:product.product,name:delivery_temando.temando_60027_product_product
+msgid "TNT - Auth To Leave via Temando"
+msgstr "TNT - Auth To Leave via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60412
+#: model:product.product,name:delivery_temando.temando_60412_product_product
+msgid "TNT International AU via Temando"
+msgstr "TNT International AU via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60103
+#: model:product.product,name:delivery_temando.temando_60103_product_product
+msgid "TNT Road (B2B) Master via Temando"
+msgstr "TNT Road (B2B) Master via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60402
+#: model:product.product,name:delivery_temando.temando_60402_product_product
+msgid "TNT Road (B2B) Pallets via Temando"
+msgstr "TNT Road (B2B) Pallets via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60144
+#: model:product.product,name:delivery_temando.temando_60144_product_product
+msgid "TNT Road ATL (B2B) Master via Temando"
+msgstr "TNT Road ATL (B2B) Master via Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_54397
+#: model:product.product,name:delivery_temando.temando_54397_product_product
+msgid "TNT via Temando"
+msgstr "TNT via Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_sale_order_temando_carrier_id
+msgid "Temando Carrier ID"
+msgstr "ID Transportista \"Te mando\""
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_sale_order_temando_carrier_name
+#: model:ir.model.fields,field_description:delivery_temando.field_stock_picking_temando_carrier_name
+msgid "Temando Carrier Name"
+msgstr "Nombre del Trasportista \"Te Mando\""
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_client_id
+msgid "Temando Client Id"
+msgstr "ID Cliente \"Te mando\""
+
+#. module: delivery_temando
+#: model:ir.ui.view,arch_db:delivery_temando.view_delivery_carrier_form_with_provider_temando
+msgid "Temando Configuration"
+msgstr "Configuración \"Te mando\""
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_sale_order_temando_delivery_method
+#: model:ir.model.fields,field_description:delivery_temando.field_stock_picking_temando_delivery_method
+msgid "Temando Delivery Method"
+msgstr "Método de Envío \"Te mando\""
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_stock_warehouse_temando_location
+#, fuzzy
+msgid "Temando Location"
+msgstr "Configuración \"Te mando\""
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_password
+msgid "Temando Password"
+msgstr "Contraseña \"Te mando\""
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:160
+#: code:addons/delivery_temando/models/temando_request.py:303
+#: code:addons/delivery_temando/models/temando_request.py:336
+#: code:addons/delivery_temando/models/temando_request.py:353
+#, python-format
+msgid "Temando Server Not Found"
+msgstr "Servidor Temando no encontrado"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_username
+msgid "Temando Username"
+msgstr "Usuario Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_delivery_nature
+msgid "Temando delivery nature"
+msgstr "Naturaleza de la entrega Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_delivery_type
+msgid "Temando delivery type"
+msgstr "Tipo de entrega Temando"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:349
+#, python-format
+msgid "Temando did not return any manifest"
+msgstr "Temando no devolvió ningún manifiesto"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_distance_measurement_type
+msgid "Temando distance measurement type"
+msgstr "Tipo de medición de distancia Temando "
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_label_printer_type
+#, fuzzy
+msgid "Temando label printer type"
+msgstr "Tipo de entrega Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_location_selection
+msgid "Temando location selection"
+msgstr "Selección de ubicación Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_pallet_nature
+msgid "Temando pallet nature"
+msgstr "Naturaleza del pallet Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_pallet_type
+msgid "Temando pallet type"
+msgstr "tipo pallet Temando"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_subclass
+msgid "Temando subclass"
+msgstr "Temando subclase"
+
+#. module: delivery_temando
+#: model:ir.model.fields,field_description:delivery_temando.field_delivery_carrier_temando_weight_measurement_type
+msgid "Temando weight measurement type"
+msgstr "Tipo de medida de peso Temando"
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.delivery_carrier_temando
+#: model:product.product,name:delivery_temando.delivery_carrier_temando_product_product
+msgid "Temando's Cheapest - Domestic"
+msgstr "Temando's Cheapest - Doméstico "
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.delivery_carrier_temando_international
+#: model:product.product,name:delivery_temando.delivery_carrier_temando_international_product_product
+msgid "Temando's Cheapest - International"
+msgstr "Temando's Cheapest - Internacional"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:49
+#, python-format
+msgid ""
+"The address of your company is missing or wrong (Missing fields : %s...)."
+msgstr ""
+"La dirección de su compañía falta o es incorrecta (Campos faltantes: %s ...)."
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:59
+#, python-format
+msgid ""
+"The delivery cannot be done because the weight of some products is missing."
+msgstr "El envio no pudo hacerse porque el peso de algunos productos no existe"
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:54
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is "
+"missing."
+msgstr ""
+"El precio estimado no se puede calcular porque el peso de su producto no se "
+"encuentra."
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/temando_request.py:44
+#, python-format
+msgid "The recipient address is missing or wrong (Missing fields : %s...)."
+msgstr ""
+"La dirección del destinatario no se encuentra o es inválida  (campos "
+"faltantes: %s ...)."
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_label_printer_type:0
+msgid "Thermal"
+msgstr ""
+
+#. module: delivery_temando
+#: code:addons/delivery_temando/models/delivery_temando.py:84
+#, python-format
+msgid ""
+"This picking cannot be sent through Temando, as it has no linked sale order"
+msgstr ""
+"Esta paquete no puede ser enviado a través Temando, ya que no tiene una "
+"orden de venta vinculada"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_pallet_nature:0
+#: model:ir.model,name:delivery_temando.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: delivery_temando
+#: model:ir.model.fields,help:delivery_temando.field_delivery_carrier_temando_hs_code
+msgid "Used only if a HS code is not set on the product."
+msgstr ""
+
+#. module: delivery_temando
+#: model:ir.model,name:delivery_temando.model_stock_warehouse
+msgid "Warehouse"
+msgstr ""
+
+#. module: delivery_temando
+#: model:delivery.carrier,name:delivery_temando.temando_60434
+#: model:product.product,name:delivery_temando.temando_60434_product_product
+msgid "XPS_UPS via Temando"
+msgstr "XPS_UPS via Temando"
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_label_printer_type:0
+msgid "ZPL"
+msgstr ""
+
+#. module: delivery_temando
+#: selection:delivery.carrier,temando_pallet_type:0
+msgid "chep"
+msgstr "chep"
+
+#~ msgid "Box"
+#~ msgstr "Caja"
+
+#~ msgid "Carton"
+#~ msgstr "Cartón"
+
+#~ msgid "Document Envelope"
+#~ msgstr "Documento en sobre"
+
+#~ msgid "Fix Height if not provided on the product packaging."
+#~ msgstr "Corregir \"Altura\", si no está provista  en empaque del producto."
+
+#~ msgid "Fix Length if not provided on the product packaging."
+#~ msgstr "Corregir \"Altura\", si no está provista  en empaque del producto."
+
+#~ msgid "Fix Width if not provided on the product packaging."
+#~ msgstr "Corregir \"Ancho\", si no está provisto en el empaque del producto."
+
+#~ msgid "HS Code"
+#~ msgstr "Código HS "
+
+#~ msgid "Letter"
+#~ msgstr "Carta"
+
+#~ msgid "Package Height"
+#~ msgstr "\"Altura\" del paquete"
+
+#~ msgid "Package Length"
+#~ msgstr "\"Longitud\" del paquete"
+
+#~ msgid "Package Width"
+#~ msgstr "\"Anchura\" del paquete"
+
+#~ msgid "Pallet"
+#~ msgstr "Palet"
+
+#~ msgid "Parcel"
+#~ msgstr "Bulto"
+
+#~ msgid "Temando default packaging type"
+#~ msgstr "Tipo  pre-definido de empaque \"Te mando\""
+
+#~ msgid "Test Mode"
+#~ msgstr "Modo Prueba"
+
+#~ msgid "Uncheck this box to use production Temando Web Services"
+#~ msgstr "Desactive esta opción para utilizar Temando Servicios Web"
+
+#~ msgid "Unpackage or N/A"
+#~ msgstr "Desempaquetar o N/A"

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_request_invetory,access.request.invetory,model_request_invetory,,1,1,1,1
+access_return_invetory,access.return.invetory,model_return_invetory,,1,1,1,1
+access_return_invetory_line,access.return.invetory.line,model_return_invetory_line,,1,1,1,1
+access_request_invetory_line,access.request.invetory.line,model_request_invetory_line,,1,1,1,1

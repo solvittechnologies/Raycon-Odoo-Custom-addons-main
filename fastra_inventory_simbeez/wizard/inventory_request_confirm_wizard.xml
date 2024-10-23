@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+       <record id="view_request_inventory_confirm_from" model="ir.ui.view">
+           <field name="name">view.request.inventory.from</field>
+           <field name="model">inventory.confirm.req</field>
+           <field name="arch" type="xml">
+               <form string="Inventory Request Confirmation">
+          			<group>
+          				<group>
+          					<field name="inv_req_id" invisible="0"/>
+          					<field name="expected_to_return"/>
+          				</group>
+          			</group>
+          			<footer>
+          				<button name="action_inv_confirm" type="object" string="Confirm Inventory Request" class="oe_heighlight"/>
+          			</footer>
+               </form>            
+           </field>
+      	</record>
+</odoo>

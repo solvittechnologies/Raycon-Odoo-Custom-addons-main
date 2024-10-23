@@ -1,0 +1,138 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk_forum
+# 
+# Translators:
+# Martin Trigaux, 2016
+# Ejner Sønniksen <ejner@vkdata.dk>, 2017
+# Sanne Kristensen <sanne@vkdata.dk>, 2017
+# lhmflexerp <lhm@flexerp.dk>, 2017
+# Joe Hansen <joedalton2@yahoo.dk>, 2019
+# Mads Søndergaard, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:58+0000\n"
+"PO-Revision-Date: 2016-09-19 13:45+0000\n"
+"Last-Translator: Mads Søndergaard, 2020\n"
+"Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "<span>By </span>"
+msgstr "<span>Af </span>"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "Click here to view more result..."
+msgstr "Klik her for at se flere resultater..."
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_ticket_forum_post_id
+msgid "Forum Post"
+msgstr "Forum Indlæg"
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_ticket_use_website_helpdesk_forum
+msgid "Help Center Active"
+msgstr "Hjælp Center Aktiv"
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_team_forum_id
+msgid "Help Center Forum"
+msgstr "Hjælpecenter Forum"
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_team_forum_url
+msgid "Help Center Forum URL"
+msgstr "Hjælpecenter Forum URL"
+
+#. module: website_helpdesk_forum
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:62
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:83
+#, python-format
+msgid "Help Center not active for this team."
+msgstr "Hjælpecenter ikke aktivt for dette hold."
+
+#. module: website_helpdesk_forum
+#: model:ir.model,name:website_helpdesk_forum.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "Helpdesk team"
+
+#. module: website_helpdesk_forum
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:85
+#, python-format
+msgid "No post associated to this ticket."
+msgstr "Ingen indlæg associeret med denne billet."
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.website_helpdesk_forum_team_page
+msgid "No question yet."
+msgstr "Intet spørgsmål endnu."
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_ticket_view_form_inherit_website_helpdesk_forum
+msgid "Open Post"
+msgstr "Åbn indlæg"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.website_helpdesk_forum_team_page
+msgid "Popular Questions"
+msgstr "Populære Spørgsmål"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "Question has accepted answer"
+msgstr "Spørgsmål har accepteret svar"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "Redirect to external link"
+msgstr "Omdiriger til eksternt link"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_team_view_form_inherit_website_helpdesk_forum
+msgid "Save this page to activate the feature"
+msgstr "Gem denne side for at aktivere funktionen"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_ticket_view_form_inherit_website_helpdesk_forum
+msgid "Share on the Forum"
+msgstr "Del på forummet"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_team_view_form_inherit_website_helpdesk_forum
+msgid ""
+"The related forum is:<br/>\n"
+"                        ⇒"
+msgstr ""
+
+#. module: website_helpdesk_forum
+#: model:ir.model,name:website_helpdesk_forum.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: website_helpdesk_forum
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:76
+#, python-format
+msgid "Ticket has been shared on the %s forum."
+msgstr "Sag er blevet delt på %s forummet."
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "View"
+msgstr "Vis"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_team_view_form_inherit_website_helpdesk_forum
+msgid ""
+"View the Help Center:<br/>\n"
+"                    ⇒"
+msgstr ""

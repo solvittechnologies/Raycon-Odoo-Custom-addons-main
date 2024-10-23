@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_salary_hr_salary,hr_salary_custom_access,model_custom_hr_salary,base.group_user,1,1,1,1
+access_hr_salary_hr_salary_station,hr_salary_custom_access_line,model_station_salary_line,base.group_user,1,1,1,1 

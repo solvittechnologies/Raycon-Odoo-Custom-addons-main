@@ -1,0 +1,269 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_ups
+# 
+# Translators:
+# Sanne Kristensen <sanne@vkdata.dk>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2016
+# lhmflexerp <lhm@flexerp.dk>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: lhmflexerp <lhm@flexerp.dk>, 2017\n"
+"Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_delivery_carrier
+msgid "Carrier"
+msgstr "Fragtfirma"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "Centimeter"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "EPL"
+msgstr "EPL"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Inches"
+msgstr "Inches"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Kilograms"
+msgstr "Kilogram"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_product_packaging
+msgid "Packaging"
+msgstr "Pakning"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:207
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Vælg venligst et produkt at sende."
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Pounds"
+msgstr "Pund"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "SPL"
+msgstr "SPL"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:175
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Ordre nr: %s er blevet anulleret"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:139
+#, python-format
+msgid "Shipment created into UPS <br/> <b>Tracking Number : </b>%s"
+msgstr ""
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:146
+#, python-format
+msgid "Shipping label for packages"
+msgstr "Forsendelses etiket til pakker"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:182
+#, python-format
+msgid ""
+"The address of your company is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Din firmaadresse er forkert eller mangler\n"
+"(Manglende felt(er) : %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:192
+#, python-format
+msgid ""
+"The address of your warehouse is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Adressen til dit varehus er forkert eller mangler.\n"
+"(Manglende felt(er) : %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:212
+#, python-format
+msgid ""
+"The delivery cannot be done because the weight of your product is missing."
+msgstr "Levering er ikke muligt, da produktets vægt ikke er angivet."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:209
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr ""
+"Den anslåede pris kan ikke beregnes, da produktets vægt ikke er angivet."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:202
+#, python-format
+msgid ""
+"The recipient address is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Modtageradressen mangler eller er forkert.\n"
+"(Manglende felt(er) : %s)"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day"
+msgstr "UPS 2. dag"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day AM"
+msgstr "UPS 2. dag morgen"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 3-day Select"
+msgstr "UPS 3-dages valg"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_access_number
+msgid "UPS AccessLicenseNumber"
+msgstr ""
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_be
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_be_product_product
+msgid "UPS BE"
+msgstr "UPS BE"
+
+#. module: delivery_ups
+#: model:ir.ui.view,arch_db:delivery_ups.view_delivery_carrier_form_with_provider_ups
+msgid "UPS Configuration"
+msgstr "UPS konfiguration"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_packaging_id
+msgid "UPS Default Packaging Type"
+msgstr ""
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Ground"
+msgstr ""
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_label_file_type
+msgid "UPS Label File Type"
+msgstr "UPS label filtype"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day"
+msgstr "UPS næste dag"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day AM"
+msgstr "UPS næste dag morgen"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day Air Saver"
+msgstr ""
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_passwd
+msgid "UPS Password"
+msgstr "UPS adgangskode"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Saver"
+msgstr ""
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_service_type
+msgid "UPS Service Type"
+msgstr "UPS service type"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_shipper_number
+msgid "UPS Shipper Number"
+msgstr "UPS afsendelses nummer"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Standard"
+msgstr "UPS standard"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_us
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_us_product_product
+msgid "UPS US"
+msgstr "UPS US"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_username
+msgid "UPS Username"
+msgstr "UPS brugernavn"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Expedited"
+msgstr ""
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express"
+msgstr "UPS worldwide ekspres"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Freight"
+msgstr ""
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Plus"
+msgstr "UPS worldwide ekspres plus"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_dimension_unit
+msgid "Units for UPS Package Size"
+msgstr "Enheder for UPS pakkestørrelse"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_weight_unit
+msgid "Ups package weight unit"
+msgstr ""
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "ZPL"
+msgstr "ZPL"

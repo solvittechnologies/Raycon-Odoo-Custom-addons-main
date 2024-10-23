@@ -1,0 +1,340 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_uk_reports_hmrc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-27 11:15+0000\n"
+"PO-Revision-Date: 2019-03-27 11:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_accept_legal
+msgid "Accept Legal Statement"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_send_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:183
+#, python-format
+msgid "Charge Ref Number"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_send_wizard_form
+msgid "Connect"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_create_uid
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_create_date
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:178
+#, python-format
+msgid "Date Processed"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_hmrc_service_display_name
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_display_name
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:181
+#, python-format
+msgid "Form Bundle Number"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: selection:l10n_uk.vat.obligation,status:0
+msgid "Fulfilled"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model,name:l10n_uk_reports_hmrc.model_l10n_uk_hmrc_send_wizard
+msgid "HMRC Send Wizard"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model,name:l10n_uk_reports_hmrc.model_l10n_uk_vat_obligation
+msgid "HMRC VAT Obligation"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.actions.act_window,name:l10n_uk_reports_hmrc.action_hmrc_vat_obligation_view_menu
+msgid "HMRC VAT Obligations"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:191
+#, python-format
+msgid "HMRC auth issue : %s"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:195
+#, python-format
+msgid "HMRC other issue : %s"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model,name:l10n_uk_reports_hmrc.model_hmrc_service
+msgid "HMRC service"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_hmrc_service_id
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_id
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:80
+#, python-format
+msgid "Invalid Company VAT number. Please fill in the correct VAT on the company form. "
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:84
+#, python-format
+msgid "Invalid Status."
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,help:l10n_uk_reports_hmrc.field_res_users_l10n_uk_user_token
+msgid "Is a token given by the Odoo server used to refresh the access token. "
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:82
+#, python-format
+msgid "Issue with the selected dates."
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.actions.act_window,help:l10n_uk_reports_hmrc.action_hmrc_vat_obligation_view_menu
+msgid "It looks like you have not yet imported your obligations HMRC.  They will be loaded when you try to send\n"
+"                the VAT Return report to HMRC."
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_hmrc_service___last_update
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard___last_update
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_write_uid
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_write_date
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_need_login
+msgid "Needs login"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:86
+#, python-format
+msgid "No open obligations were found for the moment."
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_res_users_l10n_uk_hmrc_vat_token
+msgid "Oauth Access Token"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_res_users_l10n_uk_hmrc_vat_token_expiration_time
+msgid "Oauth access token expiration time"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_hmrc_send_wizard_obligation_id
+msgid "Obligation"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_vat_obligation_form
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_vat_obligation_tree
+msgid "Obligations"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: selection:l10n_uk.vat.obligation,status:0
+msgid "Open"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:180
+#, python-format
+msgid "Payment Indicator"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_date_due
+msgid "Period Due"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_date_end
+msgid "Period End"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_period_key
+msgid "Period Key"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_date_start
+msgid "Period Start"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_status
+msgid "Period Status"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_send_wizard_form
+msgid "Please check the numbers in the VAT report first while filtering\n"
+"                        on the dates of the chosen obligation.  (only accrual, posted entries)"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:100
+#, python-format
+msgid "Please fill in your VAT number on the company form.  "
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/wizard/hmrc_send_wizard.py:37
+#, python-format
+msgid "Please select an obligation first"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_l10n_uk_vat_obligation_date_received
+msgid "Received Submission date"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_send_wizard_form
+msgid "Send"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.actions.act_window,name:l10n_uk_reports_hmrc.action_hmrc_send_wizard
+msgid "Send Tax Report"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.menu,name:l10n_uk_reports_hmrc.menu_hmrc_send_wizard
+msgid "Send VAT Return"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:184
+#, python-format
+msgid "Sent Values:"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:205
+#, python-format
+msgid "Sorry, something went wrong: %s"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:192
+#, python-format
+msgid "Sorry, your credentials were refused by HMRC or your permission grant has expired. You may try to authenticate again."
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_vat_obligation.py:177
+#, python-format
+msgid "Tax return successfully posted:"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/models/hmrc_service.py:64
+#, python-format
+msgid "There was a problem refreshing the tokens.  Please log in again. "
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,help:l10n_uk_reports_hmrc.field_res_users_l10n_uk_hmrc_vat_token
+msgid "This is the token given by the government to access its api. "
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,field_description:l10n_uk_reports_hmrc.field_res_users_l10n_uk_user_token
+msgid "User Token"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model,name:l10n_uk_reports_hmrc.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.menu,name:l10n_uk_reports_hmrc.menu_hmrc_vat_obligation
+msgid "VAT Obligations"
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.model.fields,help:l10n_uk_reports_hmrc.field_res_users_l10n_uk_hmrc_vat_token_expiration_time
+msgid "When the access token expires, then it can be refreshed through the Odoo server with the user token. "
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: model:ir.ui.view,arch_db:l10n_uk_reports_hmrc.hmrc_send_wizard_form
+msgid "When you submit this VAT information you are making a legal\n"
+"                        declaration that the information is true and complete. A false declaration\n"
+"                        can result in prosecution."
+msgstr ""
+
+#. module: l10n_uk_reports_hmrc
+#: code:addons/l10n_uk_reports_hmrc/wizard/hmrc_send_wizard.py:25
+#, python-format
+msgid "You have no open obligations anymore"
+msgstr ""
+

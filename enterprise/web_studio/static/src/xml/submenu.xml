@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<ul t-name="web_studio.AppSwitcherMenu">
+    <li>
+        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
+            Customizations <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#" class="o_web_studio_import">Import</a></li>
+            <li><a href="#" class="o_web_studio_export">Export</a></li>
+        </ul>
+    </li>
+</ul>
+
+<div t-name="web_studio.Menu" class="o_web_studio_menu">
+    <div class="o_web_studio_breadcrumb"/>
+    <ul class="o_menu_sections">
+        <li><a href="#" class="active" data-toggle="collapse" role="button" aria-expanded="true" data-name="views">Views</a></li>
+        <li t-if="widget.multi_lang">
+            <a href="#" data-toggle="collapse" aria-expanded="true" data-name="translations">Translations</a>
+        </li>
+        <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="automations">Automations</a></li>
+        <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="reports">Reports</a></li>
+        <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="acl">Access Controls</a></li>
+        <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="filters">Filter Rules</a></li>
+    </ul>
+</div>
+
+</templates>

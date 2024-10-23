@@ -1,0 +1,839 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_ebay
+# 
+# Translators:
+# gokhun lekesiz <gokhun.lekesiz@rammar.com.tr>, 2016
+# Thermo Dynamic <emirhanayar2004@gmail.com>, 2016
+# Murat Kaplan <muratk@projetgrup.com>, 2016
+# Martin Trigaux, 2016
+# Ediz Duman <neps1192@gmail.com>, 2016
+# gezgin biri <gezginbiri@hotmail.com>, 2016
+# Ramiz Deniz Öner <deniz@denizoner.com>, 2016
+# selim kartal <kartalselim37@gmail.com>, 2016
+# Azar Huseynli <azerbay1984@gmail.com>, 2016
+# Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2016
+# Alexander B. <road2monstercat@gmail.com>, 2016
+# Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2017
+# Umur Akın <umura@projetgrup.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-30 12:54+0000\n"
+"PO-Revision-Date: 2015-10-30 12:54+0000\n"
+"Last-Translator: Umur Akın <umura@projetgrup.com>, 2018\n"
+"Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: sale_ebay
+#: model:mail.template,body_html:sale_ebay.ebay_desciption_default
+msgid ""
+"\n"
+"                  \n"
+"          ${object.ebay_description | safe}\n"
+"        \n"
+"      "
+msgstr ""
+"\n"
+"                  \n"
+"          ${object.ebay_description | safe}\n"
+"        \n"
+"      "
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:310
+#, python-format
+msgid ""
+" If you want to set quantity to 0, the Out Of Stock option should be enabled"
+" and the listing duration should set to Good 'Til Canceled"
+msgstr ""
+"Miktarı 0 olarak ayarlamak isterseniz, Tükenmiş seçeneği etkinleştirilmeli "
+"ve listeleme süresi  'İptal Olana Kadar İyi' olarak ayarlanmalıdır."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:313
+#, python-format
+msgid ""
+" You need to have at least 2 variations selected for a multi-variations listing.\n"
+" Or if you try to delete a variation, you cannot do it by unselecting it. Setting the quantity to 0 is the safest method to make a variation unavailable."
+msgstr ""
+"Çok varyasyonlu listeleme için en az 2 varyasyon seçmeniz gerekir.\n"
+" Veya bir varyasyonu silmeye çalışırsanız, seçimini kaldırarak bunu yapamazsınız. Miktarı 0 olarak ayarlamak, bir varyasyonu kullanmamak için en güvenli yöntemdir."
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "10 Days"
+msgstr "10 Gün"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "3 Days"
+msgstr "3 Gün"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "30 Days (only for fixed price)"
+msgstr "30 Gün  (sadece düzeltmek)"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "5 Days"
+msgstr "5 Gün"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "7 Days"
+msgstr "7 Gün"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:198
+#, python-format
+msgid ""
+"All the quantities must be greater than 0 or you need to enable the Out Of "
+"Stock option."
+msgstr ""
+"Tüm miktarlar 0 dan büyük olmalıdır ya da Tükenmiş seçeneğini "
+"etkinleştirmeniz gereklidir."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_best_offer
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_best_offer
+msgid "Allow Best Offer"
+msgstr "En İyi Teklife İzin Ver"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_type:0
+msgid "Auction"
+msgstr "Açık Arttırma Müzayede"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_res_country_ebay_available
+#: model:ir.model.fields,field_description:sale_ebay.field_res_currency_ebay_available
+msgid "Availability To Use For eBay API"
+msgstr "eBay API Kullanımı Mevcut"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_buy_it_now_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_buy_it_now_price
+msgid "Buy It Now Price"
+msgstr "Şimdi Satın Alın"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Cancel"
+msgstr "İptal"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_category_id
+msgid "Category"
+msgstr "Kategorisi"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_category_2_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_category_2_id
+msgid "Category 2 (Optional)"
+msgstr "Kategori 2 isteğe bağlı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_id
+msgid "Category ID"
+msgstr "Kategori ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_parent_id
+msgid "Category Parent ID"
+msgstr "Kategori Üst ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_category_type
+msgid "Category Type"
+msgstr "Kategori Türü"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_code
+msgid "Code"
+msgstr "Kodu"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:277
+#, python-format
+msgid "Configure The eBay Integrator Now"
+msgstr "eBay Entegratörünü Şimdi Yapılandır"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_country
+msgid "Country"
+msgstr "Ülke"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_country
+msgid "Country Where The Products Are Stored"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_create_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_create_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_currency
+msgid "Currency"
+msgstr "Para Birimi"
+
+#. module: sale_ebay
+#: selection:ebay.category,category_type:0
+msgid "Custom Store Category"
+msgstr "Özel Mağaza Kategorisi"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Describe the product characteristics..."
+msgstr "Ürün özelliklerini tanıtın"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_description
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_description
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_template_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_template_id
+msgid "Description Template"
+msgstr "Açıkla"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_dev_id
+msgid "Developer Key"
+msgstr "Üretici tuşu"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_display_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_display_name
+msgid "Display Name"
+msgstr "Adı Göstermek"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_duration
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_duration
+msgid "Duration"
+msgstr "Süre"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "End Item's Listing"
+msgstr "Son Ürünün Listelenmesi"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_end_items_listings
+msgid "End Items' Listings"
+msgstr ""
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:184
+#, python-format
+msgid ""
+"Error Encountered.\n"
+" No Variant Set To Be Listed On eBay."
+msgstr ""
+"Hatayla Karşılaşıldı. \n"
+"EBay'de Listelenecek Varyant Ayarı Yok."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:316
+#, python-format
+msgid ""
+"Error Encountered.\n"
+"'%s'"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_fixed_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_fixed_price
+msgid "Fixed Price"
+msgstr "Sabit Fiyat"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_type:0
+msgid "Fixed price"
+msgstr "Sabit Fiyat"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_full_name
+msgid "Full Name"
+msgstr "Tam Adı"
+
+#. module: sale_ebay
+#: selection:product.template,ebay_listing_duration:0
+msgid "Good 'Til Cancelled (only for fixed price)"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:306
+#, python-format
+msgid ""
+"Impossible to revise a listing into a multi-variations listing.\n"
+" Create a new listing."
+msgstr ""
+"Bir girişi çok varyasyonlu listeleme değiştirmek mümkün değildir.\n"
+" Yeni bir giriş oluştur."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_item_condition_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_item_condition_id
+msgid "Item Condition"
+msgstr "Öğe Kouşulu"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy___last_update
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site___last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_write_uid
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_write_date
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_last_sync
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_last_sync
+msgid "Last update"
+msgstr "Son Yenilik (Güncelleme)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_leaf_category
+msgid "Leaf category"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.actions.act_window,name:sale_ebay.action_ebay_link_listing
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Link Existing Listing"
+msgstr "Varolan Bağlantı Listesi"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "Link Listing"
+msgstr "Bağlantı Listesi"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Link With Existing Listing"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "List Item"
+msgstr "Eşya Listesi"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_list_items
+msgid "List Items"
+msgstr "Eşya Listesi"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_type
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_type
+msgid "Listing Type"
+msgstr "Liste Türü"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_location
+msgid "Location Where The Products Are Stored"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_category_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_item_condition_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_name
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_name
+msgid "Name"
+msgstr "Adı"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/sale_ebay.py:183
+#, python-format
+msgid "No Business Policies"
+msgstr "İş Polliçeleri Yok"
+
+#. module: sale_ebay
+#: selection:ebay.category,category_type:0
+msgid "Official eBay Category"
+msgstr "Resmi eBay Kategorisi"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:276
+#, python-format
+msgid "One parameter is missing."
+msgstr "Bir parametre eksik."
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:302
+#, python-format
+msgid "Or the condition is not compatible with the category."
+msgstr "Veya durum kategori ile uyumlu değil."
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_res_partner
+msgid "Partner"
+msgstr "İş Ortağı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_payment_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_payment_policy_id
+msgid "Payment Policy"
+msgstr "Ödeme Politikası"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_policy_id
+msgid "Policy ID"
+msgstr "Politika ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_private_listing
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_private_listing
+msgid "Private Listing"
+msgstr "Kişisel Listeleme"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_product_product
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_ebay_tree_view
+msgid "Product"
+msgstr "Ürün"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_product_template
+msgid "Product Template"
+msgstr "Ürün Şablonu"
+
+#. module: sale_ebay
+#: selection:sale.config.settings,ebay_domain:0
+msgid "Production"
+msgstr "Üretim"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_app_id
+msgid "Production App Key"
+msgstr "Üretim Uygulama Anahtarı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_cert_id
+msgid "Production Cert Key"
+msgstr "Üretim Sertifikası Anahtarı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_prod_token
+msgid "Production Token"
+msgstr "Üretim Tokeni"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_use
+msgid "Publish On eBay"
+msgstr "eBay'de Yayınla"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_quantity
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_quantity
+msgid "Quantity"
+msgstr "Miktar"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_quantity_sold
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_quantity_sold
+msgid "Quantity Sold"
+msgstr "Satılan Miktar"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Relist Item"
+msgstr "Eşyaları Yeniden Listele"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_relist_items
+msgid "Relist Items"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_return_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_return_policy_id
+msgid "Return Policy"
+msgstr "İade Politikası"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Revise Item"
+msgstr "Eşyayı Gözden Geçir"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_revise_items
+msgid "Revise Items"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sales_team
+msgid "Sales Team"
+msgstr "Satış Ekibi"
+
+#. module: sale_ebay
+#: selection:sale.config.settings,ebay_domain:0
+msgid "Sandbox"
+msgstr "Sandbox"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_app_id
+msgid "Sandbox App Key"
+msgstr "Sandbox Uygulama Anahtarı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_cert_id
+msgid "Sandbox Cert Key"
+msgstr "Sandbox Sertifika Anahtarı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_sandbox_token
+msgid "Sandbox Token"
+msgstr "Sandbox Jetonu"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_seller_shipping_policy_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_seller_shipping_policy_id
+msgid "Shipping Policy"
+msgstr "Sevkiyat Politikası"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_start_date
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_start_date
+msgid "Start Date"
+msgstr "Başlangıç Tarihi"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_price
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_price
+msgid "Starting Price for Auction"
+msgstr "Açık Artırma için Başlangıç ​​Fiyatı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_store_category_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_store_category_id
+msgid "Store Category (Optional)"
+msgstr "Depo Kategorisi (Opsiyonel)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_store_category_2_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_store_category_2_id
+msgid "Store Category 2 (Optional)"
+msgstr "Depo Kategori 2 (Opsiyonel)"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_subtitle
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_subtitle
+msgid "Subtitle"
+msgstr "Altyazı"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_short_summary
+msgid "Summary"
+msgstr "Özet"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync categories"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync countries and currencies"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync policies"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "Sync product status"
+msgstr ""
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:608
+#, python-format
+msgid "The Buyer Chose The Following Delivery Method :\n"
+msgstr "Alıcı aşağıdaki teslimat yöntemini seçti:\n"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:604 code:addons/sale_ebay/product.py:605
+#, python-format
+msgid "The Buyer Posted :\n"
+msgstr "Alıcı Postaladı : \n"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:308
+#, python-format
+msgid ""
+"The UPC value (the barcode value of your product) is not valid by using the "
+"checksum."
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_subtitle
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_subtitle
+msgid ""
+"The subtitle is restricted to 55 characters. Fees can be claimed by eBay for"
+" this feature"
+msgstr ""
+"Altyazı 55 karakterle sınırlıdır. Bu özellik için eBay tarafından ücret "
+"talep edilebilir"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_title
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_title
+msgid "The title is restricted to 80 characters"
+msgstr "Başlık 80 harfle sınırlıdır"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_category_2_id
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_category_2_id
+msgid ""
+"The use of a secondary category is not allowed on every eBay sites. Fees can"
+" be claimed by eBay for this feature"
+msgstr ""
+"Her eBay sitesinde ikinci bir kategorinin kullanımına izin verilmez. Bu "
+"özellik için eBay tarafından ücret talep edilebilir"
+
+#. module: sale_ebay
+#: model:ir.model.fields,help:sale_ebay.field_product_product_ebay_template_id
+#: model:ir.model.fields,help:sale_ebay.field_product_template_ebay_template_id
+msgid "This field contains the template that will be used."
+msgstr "Bu alan kullanılacak şablonları içermektedir."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_title
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_title
+msgid "Title"
+msgstr "Ünvan"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_policy_policy_type
+msgid "Type"
+msgstr "tip"
+
+#. module: sale_ebay
+#: model:ir.actions.server,name:sale_ebay.action_ebay_update_carrier
+msgid "Update eBay Carrier Information"
+msgstr "eBay Taşıyıcı Bilgilerini Güncelle"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_gallery_plus
+msgid "Use Gallery Plus Option"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_out_of_stock
+msgid "Use Out Of Stock Option"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_sync_stock
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_sync_stock
+msgid "Use Stock Quantity"
+msgstr "Stok Miktarını Kullan"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_use
+msgid "Use eBay"
+msgstr "eBay Kullan"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "Variants"
+msgstr "Varyantlar"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_zip_code
+msgid "Zip Code Where The Products Are Stored"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.sale_ebay_category_tree_view
+msgid "eBay Categories"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_currency
+msgid "eBay Currency"
+msgstr ""
+
+#. module: sale_ebay
+#: model:product.category,name:sale_ebay.product_category_ebay
+msgid "eBay Delivery Services"
+msgstr "eBay Teslimat Hizmetleri"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_site_ebay_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_id
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_id
+msgid "eBay ID"
+msgstr "eBay ID"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.view_sale_ebay_settings
+msgid "eBay Integration"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_ebay_link_listing_ebay_id
+msgid "eBay Listing ID"
+msgstr "eBay Liste ID"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.product_template_sale_ebay_form_view
+msgid "eBay Sale"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_domain
+msgid "eBay Site"
+msgstr "eBay Site"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_sale_config_settings_ebay_site
+msgid "eBay Site Used"
+msgstr ""
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_listing_status
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_listing_status
+msgid "eBay Status"
+msgstr "eBay Durum"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_res_partner_ebay_id
+msgid "eBay User ID"
+msgstr "eBay Kullanıcı ID"
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_variant_url
+msgid "eBay Variant URL"
+msgstr "eBay Varyant URL"
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/sale_ebay.py:53
+#, python-format
+msgid ""
+"eBay error: Impossible to synchronize the categories. \n"
+"'%s'"
+msgstr ""
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:408 code:addons/sale_ebay/product.py:478
+#, python-format
+msgid ""
+"eBay error: Impossible to synchronize the products. \n"
+"'%s'"
+msgstr ""
+
+#. module: sale_ebay
+#: code:addons/sale_ebay/product.py:304
+#, python-format
+msgid "eBay is unreachable. Please try again later."
+msgstr "eBay ulaşılamaz durumda. Lütfen daha sonra tekrar deneyin."
+
+#. module: sale_ebay
+#: model:ir.model.fields,field_description:sale_ebay.field_product_product_ebay_url
+#: model:ir.model.fields,field_description:sale_ebay.field_product_template_ebay_url
+msgid "eBay url"
+msgstr "eBay url"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_category
+msgid "ebay.category"
+msgstr "ebay.category"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_item_condition
+msgid "ebay.item.condition"
+msgstr "ebay.item.condition"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_link_listing
+msgid "ebay.link.listing"
+msgstr "ebay.link.listing"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_policy
+msgid "ebay.policy"
+msgstr "ebay.policy"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_ebay_site
+msgid "ebay.site"
+msgstr "ebay.site"
+
+#. module: sale_ebay
+#: model:ir.ui.view,arch_db:sale_ebay.ebay_link_listing_view
+msgid "or"
+msgstr "veya"
+
+#. module: sale_ebay
+#: model:ir.model,name:sale_ebay.model_sale_config_settings
+msgid "sale.config.settings"
+msgstr "sale.config.settings"

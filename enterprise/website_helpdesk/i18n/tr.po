@@ -1,0 +1,240 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk
+# 
+# Translators:
+# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2016
+# Murat Kaplan <muratk@projetgrup.com>, 2016
+# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2016
+# Ediz Duman <neps1192@gmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Saban Yildiz <sabany@projetgrup.com>, 2016
+# UNIBRAVO SOFTWARE <unibravo@gmail.com>, 2016
+# Emre Akayoğlu <emre.akayoglu@mechsoft.com.tr>, 2016
+# Fırat Kaya <firat.kaya@mechsoft.com.tr>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: Fırat Kaya <firat.kaya@mechsoft.com.tr>, 2016\n"
+"Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-arrow-circle-right \"/> See the feedbacks"
+msgstr "<i class=\"fa fa-arrow-circle-right \"/> Geri bildirimleri gör"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-envelope\"/> Email :"
+msgstr "<i class=\"fa fa-envelope\"/> Eposta :"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i/> Customer Satisfaction Ration:"
+msgstr "<i/> Müşteri Memnuniyet Oranı:"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "<span>Show more</span><span class=\"hidden\">Show less</span>"
+msgstr "<span>Daha fazla</span><span class=\"hidden\">Daha az</span>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Assigned to</strong>"
+msgstr "<strong>Görevlendirilen</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Tarih:</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Message and communication history</strong>"
+msgstr "Mesajlar ve iletişim geçmişi"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Reported by</strong>"
+msgstr "<strong>Raporlayan</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Average"
+msgstr "Ortalama"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Bad"
+msgstr "Kötü"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Current stage of this ticket"
+msgstr "Talebin mevcut aşaması"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Customer Satisfaction"
+msgstr "Müşteri Memnuniyeti"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Edit Ticket"
+msgstr "Talebi Düzenle"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Happy"
+msgstr "Mutlu"
+
+#. module: website_helpdesk
+#: model:website.menu,name:website_helpdesk.website_menu_helpdesk
+msgid "Help"
+msgstr "Yardım"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk"
+msgstr "Destek Masası"
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_team
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk Team"
+msgstr "Yardım Masası Ekibi"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.header_footer_custom
+msgid "Helpdesk Team Customer Satisfaction"
+msgstr "Yardım Masası Ekip Müşteri Memnuniyeti"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Helpdesk Team Satisfaction"
+msgstr "Yardım Masası Ekip Memnuniyeti"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 3 months"
+msgstr "Son 3 Ay"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 30 days"
+msgstr "Son 30 gün"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 7 days"
+msgstr "Son 7 gün"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Latest Feedbacks"
+msgstr "Son Geri Bildirimler"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "My Tickets"
+msgstr "Taleplerim"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.content_new_team
+msgid "New Team"
+msgstr "Yeni Ekip"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.not_published_any_team
+msgid "No teams have been published."
+msgstr "Yayınlanan hiç bir ekip yok."
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid "Save this page to activate the feature"
+msgstr "Bu özelliği aktif yapmak için sayfayı kaydedin"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_ticket_access_token
+msgid "Security Token"
+msgstr "Güvenlik Belirteç"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Status"
+msgstr "Durumu"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Submit an Issue"
+msgstr "Talep Gönder"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Team Settings"
+msgstr "Ekip Ayarları"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Teams"
+msgstr "Ekipler"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "There are currently no Ticket for your account."
+msgstr "Şu anda hesabınız herhangi bir talep yok."
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Talep"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Ticket Number"
+msgstr "Talep Numarası"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_menu_helpdesk
+msgid "Tickets"
+msgstr "Talepler"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_team_website_rating_url
+msgid "URL to Submit Issue"
+msgstr "Talep Gönderilecek URL"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "View my Issues"
+msgstr "Taleplerimi Görüntüle"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid ""
+"View this teams ratings this page:<br/>\n"
+"                    ⇒"
+msgstr ""
+"Bu ekibin değerlendirmelerini görüntüle:<br/>\n"
+"                    ⇒"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "Your Tickets"
+msgstr "Talepleriniz"

@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="project_update" model="ir.ui.view">
+            <field name="name">project update</field>
+            <field name="model">fastra.project.analysis</field>
+            <field name="inherit_id" ref="fastra_project_budget.view_fastra_project_budget_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='other_payments']" position="after">
+                    <page string="Project Payroll">
+                        <field name="custom_project_id">
+                            <tree editable="bottom">
+                                <control>
+                                    <create string="Add a More"/>
+                                </control>
+                                <field name="employee_id"/>
+                                <field name="net_salary"/>
+                                <field name="gross_salary"/>
+                                <field name="basic_salary"/>
+                                <field name="pay_amount"/>
+                                <field name="ordinary_overtime"/>
+                                <field name="public_overtime"/>
+                                <field name="sunday_overtime"/>
+
+                            </tree>
+                        </field>
+
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+        <!-- Inherit Form View to Modify it -->
+<!--        <record id="custom_id" model="ir.ui.view">-->
+<!--            <field name="name">custom</field>-->
+<!--            <field name="model">hr.payslip.custom</field>-->
+<!--            <field name="inherit_id" ref="fastra_hr_customize.view_hr_payslip_custom_form"/>-->
+<!--            <field name="arch" type="xml">-->
+
+<!--                <xpath expr="///field[@name='location_id']" position="after">-->
+<!--                    <field name="location"/>-->
+<!--                </xpath>-->
+
+<!--            </field>-->
+<!--        </record>-->
+    </data>
+</odoo>

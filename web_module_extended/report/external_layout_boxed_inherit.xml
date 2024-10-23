@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+
+<template id="external_layout_boxed_inherit" inherit_id="web.external_layout_boxed">
+       <div name="company_address" class="mb4" position="after">
+            <div name="company_address2" class="mb4">
+              <span class="company_address" t-field="company.address_str1"/>
+              <span class="company_address" t-field="company.address_str2"/>
+              <span class="company_address" t-field="company.address_city"/>
+              <span class="company_address" t-field="company.address_state"/>
+              <span class="company_address" t-field="company.address_country"/>
+                        
+           </div>
+      </div>
+    </template>
+
+</odoo>

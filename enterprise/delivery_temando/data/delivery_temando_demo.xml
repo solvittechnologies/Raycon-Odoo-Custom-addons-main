@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+
+    <!-- dirty hack time:
+         - currencies are disabled by default, except EUR and USD
+         - sometimes, Temando returns AUD...
+        (for any inquiries, please contact the Ministry of Silly Walks)
+     -->
+    <record id='base.AUD' model='res.currency'>
+        <field name='active' eval='True'/>
+    </record>
+
+</data>
+</odoo>

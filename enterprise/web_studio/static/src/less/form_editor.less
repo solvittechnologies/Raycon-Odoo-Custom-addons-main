@@ -1,0 +1,129 @@
+.o_web_studio_client_action {
+    .o_web_studio_view_editor .o_web_studio_view_renderer .o_form_view {
+        &:not(.o_form_nosheet) {
+            padding: 0;
+        }
+        .o_form_sheet_bg {
+            padding: 16px;
+        }
+        .o_form_sheet, .oe_chatter {
+            max-width: 100%;
+        }
+        .oe_chatter {
+            position: relative;
+            .o_web_studio_overlay {
+                .o-position-absolute(0, 0, 0, 0);
+            }
+        }
+
+        &.o_web_studio_form_view_editor {
+            .oe_edit_only {
+                display: inherit!important;
+            }
+            .o_web_studio_new_line {
+               :first-child {
+                  line-height: 0px;
+               }
+               span.o_web_studio_new_line_separator {
+                   display: block;
+                   position: relative;
+                   height: 5px;
+                   margin: 2px;
+               }
+               &:hover {
+                   cursor: pointer !important;
+                    span.o_web_studio_new_line_separator {
+                        border-top: 1px solid @odoo-brand-optional;
+
+                        &:after {
+                            float: right;
+                            position: absolute;
+                            left: 100%;
+                            content: "\f0fe";
+                            font-family: FontAwesome;
+                            font-size: 14px;
+                            color: @odoo-brand-optional;
+                        }
+                    }
+                }
+            }
+        }
+        .o_hovered {
+            outline: 1px dashed @odoo-brand-optional;
+            cursor: pointer;
+        }
+        .o_clicked {
+            outline: 1px dashed black;
+        }
+        .o_web_studio_button_hook {
+            width: 48px;
+            cursor: pointer;
+            text-align: center;
+            padding: 0;
+            border-left: none;
+        }
+
+        .oe_button_box:hover .o_web_studio_button_hook:before {
+            content: "\f0fe";
+            font-family: FontAwesome;
+            font-size: 16px;
+            color: @odoo-brand-optional;
+        }
+        .o_web_studio_buttonbox_hook {
+            .o-flex-display();
+            .o-justify-content(center);
+            .o-align-items(center);
+            height: 48px;
+            cursor: pointer;
+            color: @odoo-brand-optional;
+            font-weight: bold;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .o_web_studio_add_chatter {
+            .o-flex-display();
+            .o-justify-content(center);
+            .o-align-items(center);
+            .container;
+            .user-select(none);
+            margin-top: 10px;
+            height: 60px;
+            max-width: 100%;
+            cursor: pointer;
+            background-color: lightgray;
+            color: @odoo-brand-optional;
+            font-weight: bold;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+table.o_web_studio_new_elements {
+    border-collapse: separate;
+    border-spacing: 20px;
+
+    td.o_web_studio_new_element {
+        &[disabled] {
+          opacity: 0.5;
+          cursor: auto;
+        }
+        cursor: pointer;
+        border: 1px solid #ddd;
+        text-align: center;
+
+        > i {
+            font-size: 35px;
+        }
+    }
+}
+
+.o_web_studio_new_button_dialog {
+    > div {
+        margin-top: 16px;
+    }
+}

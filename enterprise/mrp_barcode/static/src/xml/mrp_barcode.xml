@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-extend="main_menu">
+        <t t-jquery="a.o_stock_barcodes_sheet" t-operation="after">
+            and 
+            <a href="/mrp_barcode/static/description/workorder_barcodes_actions.pdf" class='o_mrp_barcodes_sheet' target="_blank">mrp barcodes sheet</a>
+        </t>
+    </t>
+</templates>

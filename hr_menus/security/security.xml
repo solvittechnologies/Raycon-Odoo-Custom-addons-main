@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+                <record id="group_show_hr_menu" model="res.groups">
+                        <field name="name">Show "Human Resources" Menu</field>
+                </record>
+
+                <record id="make_invisible" model="res.groups">
+                    <field name="name">Invisible Menu</field>
+                </record>
+
+<!--                <record model="ir.rule" id="employee_inherit_record_rule">-->
+<!--                    <field name="name">See own details</field>-->
+<!--                    <field name="model_id" ref="model_hr_employee"/>-->
+<!--                     <field name="domain_force">[('resource_id.name.user_id', '=', user.id)]</field>-->
+<!--                   <field name="domain_force">[]</field>-->
+<!--                    <field name="groups" eval="[(4, ref('hr.group_hr_user'))]"/>-->
+<!--                </record>-->
+
+
+
+</data>
+</odoo>

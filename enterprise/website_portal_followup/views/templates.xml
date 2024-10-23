@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="portal_my_followup" name="My Statements">
+        <t t-call="website_portal.portal_layout">
+            <t t-if="lines">
+                <t t-call="account_reports.report_followup_public"/>
+            </t>
+            <t t-if="not lines">
+                <h3 class="page-header">Your Statement</h3>
+                <p>There are currently no statements for your account.</p>
+            </t>
+        </t>
+    </template>
+
+    <template id="portal_my_home_menu_followup" name="Portal My Home : statement menu entry" inherit_id="website_portal.portal_layout" priority="25">
+        <xpath expr="//ul[contains(@class,'o_portal_submenu')]" position="inside">
+            <li>
+                <a href="/my/statement">Statements</a>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="portal_my_home_followup" name="Portal My Home : statement entry" inherit_id="website_portal.portal_my_home" priority="25">
+        <xpath expr="//div[contains(@class,'o_my_home_content')]" position="inside">
+            <h3 class="page-header">
+                <a href="/my/statement">Your Statements
+                    <small class="ml8">
+                        <t t-if="statement_count">
+                            <span class='badge'><t t-esc="statement_count" /></span>
+                        </t>
+                        <t t-if="not statement_count">
+                            There are currently no statements for your account.
+                        </t>
+                    </small>
+                </a>
+            </h3>
+        </xpath>
+    </template>
+</odoo>

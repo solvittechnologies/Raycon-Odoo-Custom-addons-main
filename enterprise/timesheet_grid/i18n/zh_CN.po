@@ -1,0 +1,312 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * timesheet_grid
+# 
+# Translators:
+# Jeffery CHEN <jeffery9@gmail.com>, 2017
+# Yaorong Li <55yaorong.li@gmail.com>, 2017
+# e2f <projects@e2f.com>, 2018
+# keecome <7017511@qq.com>, 2018
+# liAnGjiA <liangjia@qq.com>, 2019
+# Martin Trigaux, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:42+0000\n"
+"Last-Translator: Martin Trigaux, 2019\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_all
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_all
+msgid "All Timesheets"
+msgstr "所有工时表"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:46
+#, python-format
+msgid "All selected timesheets are already validated"
+msgstr "所有选择的工时表已经被确认了"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_project_project_allow_timesheets
+#: model:ir.ui.view,arch_db:timesheet_grid.project_view_form_timesheets
+msgid "Allow timesheets"
+msgstr "允许工时表"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "分析行"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Click to add projects and tasks"
+msgstr "点击增加项目以及任务"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Date until which the employee's timesheets have been validated"
+msgstr "日期截止到验证员工时间表之后"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Describe your activity"
+msgstr "说明你的活动"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_display_name
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_hr_employee
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_employee_id
+msgid "Employee"
+msgstr "员工"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Group By"
+msgstr "分组"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_id
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_id
+msgid "ID"
+msgstr "ID"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable___last_update
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation___last_update
+msgid "Last Modified on"
+msgstr "最后修改日"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_month
+msgid "Last Month"
+msgstr "上月"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_week
+msgid "Last Week"
+msgstr "上周"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Line edition and creation from grid"
+msgstr "从网格线版和创建"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Month"
+msgstr "月"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validation_search
+msgid "My Team"
+msgstr "我的团队"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_current
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_my
+msgid "My Timesheet"
+msgstr "我的工时表"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "My Timesheets"
+msgstr "我的工时表"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Non Validated"
+msgstr "非验证"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:68
+#, python-format
+msgid ""
+"Only a Timesheets Officer is allowed to create an entry older than the "
+"validation limit."
+msgstr "只允许时间表管理员创建比验证限制更大的条目。"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:83
+#, python-format
+msgid "Only a Timesheets Officer is allowed to delete a validated entry."
+msgstr "只允许时间表管理员删除已验证的条目。"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:77
+#, python-format
+msgid "Only a Timesheets Officer is allowed to modify a validated entry."
+msgstr "只允许时间表管理员修改已验证的条目。"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Project"
+msgstr "项目"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Set if this analytic line represents a line of timesheet."
+msgstr "如果解析线代表时间表轴的话。"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Task"
+msgstr "任务"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:41
+#, python-format
+msgid "There aren't any timesheet to validate"
+msgstr "这并没有任何需要验证的时间表"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Time Spent"
+msgstr "花费的时间"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Timesheet"
+msgstr "工时表"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Timesheet Line"
+msgstr "工时表明细"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_list
+msgid "Timesheet Lines"
+msgstr "工时表明细行"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_month
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_week
+msgid "Timesheets To Validate"
+msgstr "待验证的工时表"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Timesheets validation limit"
+msgstr "工时表验证限制"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate
+msgid "To Validate"
+msgstr "待验证"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Users"
+msgstr "用户"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validable_ids
+msgid "Validable ids"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validate
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validate
+msgid "Validate"
+msgstr "验证"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate Timesheets"
+msgstr "验证工时表"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate the timesheets of the selected employees up to"
+msgstr "验证所选员工的时间表直至"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_timesheet_grid_validable_validate
+msgid "Validate this employee's timesheet up to the chosen date"
+msgstr "验证该员工的时间表直至已选定的日期"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validate_to
+msgid "Validate to"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Validated"
+msgstr "已验证"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_validated
+msgid "Validated line"
+msgstr "验证完毕的线"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validation_id
+msgid "Validation id"
+msgstr ""
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Week"
+msgstr "周"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validable
+msgid "timesheet_grid.validable"
+msgstr "timesheet_grid.validable"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validation
+msgid "timesheet_grid.validation"
+msgstr "timesheet_grid.validation"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "you will be able to register your working hours on the given task"
+msgstr ""

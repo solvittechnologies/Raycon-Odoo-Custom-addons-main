@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="view_account_currency_config_settings_inherit" model="ir.ui.view">
+            <field name="name">account settings</field>
+            <field name="model">account.config.settings</field>
+            <field name="inherit_id" ref="account.view_account_config_settings"/>
+            <field name="arch" type="xml">
+                <div name="group_multi_currency" position="after">
+                    <label for="id" string="Live Currency Rate" attrs="{'invisible': [('group_multi_currency', '!=', True)]}"/>
+                    <div attrs="{'invisible': [('group_multi_currency', '!=', True)]}">
+                        <div>
+                            <label for="currency_interval_unit"/>
+                            <field name="currency_interval_unit" class="oe_inline"/>
+                            <button string="Update Now"
+                                name="update_currency_rates"
+                                type="object"
+                                class="oe_link"/>
+                        </div>
+                        <div>
+                            <label for="currency_next_execution_date"/>
+                            <field name="currency_next_execution_date" class="oe_inline"/>
+                        </div>
+                        <div>
+                            <label for="currency_provider"/>
+                            <field name="currency_provider" class="oe_inline"/>
+                        </div>
+                    </div>
+                </div>
+            </field>
+        </record>
+
+</odoo>

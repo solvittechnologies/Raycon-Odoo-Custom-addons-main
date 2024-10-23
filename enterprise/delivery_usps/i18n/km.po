@@ -1,0 +1,461 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_usps
+# 
+# Translators:
+# Sengtha Chay <sengtha@gmail.com>, 2016
+# Chan Nath <channath@gmail.com>, 2016
+# Lux Sok <sok.lux@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:39+0000\n"
+"Last-Translator: Lux Sok <sok.lux@gmail.com>, 2019\n"
+"Language-Team: Khmer (https://www.transifex.com/odoo/teams/41243/km/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: km\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Abandon"
+msgstr "បោះបង់"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Account Validated"
+msgstr "សុពលភាពគណនី"
+
+#. module: delivery_usps
+#: model:ir.model,name:delivery_usps.model_delivery_carrier
+msgid "Carrier"
+msgstr "ក្រុមហ៊ុនដឹកជញ្ជូន"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Check this box if your account is validated by USPS"
+msgstr "ធីកប្រអប់នេះប្រសិនបើគណនីរបស់អ្នកត្រូវបានធ្វើឱ្យមានសុពលភាពដោយ USPS"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:63
+#, python-format
+msgid "Company phone number is invalid. Please insert a US phone number."
+msgstr ""
+"លេខទូរស័ព្ទក្រុមហ៊ុនមិនត្រឹមត្រូវ។ សូមបញ្ចូលលេខទូរស័ព្ទនៅសហរដ្ឋអាមេរិក។"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_content_type
+msgid "Content Type"
+msgstr "ប្រភេទមាតិកា"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.view_delivery_carrier_form_with_provider_usps
+msgid "DHL Configuration"
+msgstr "ការកំណត់រចនាសម្ព័ន្ធ DHL"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_delivery_nature
+msgid "Delivery Nature"
+msgstr "ទំលាប់ដឹកជញ្ជូន"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Documents"
+msgstr "ឯកសារ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "Domestic"
+msgstr "ក្នុងស្រុក"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Express"
+msgstr "ក្រុមហ៊ុនដឹកជញ្ជូន"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "First-Class"
+msgstr ""
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Flat"
+msgstr "ផ្ទះ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate"
+msgstr "អត្រាតំលៃផ្ទះ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate Box"
+msgstr "អត្រាតំលៃផ្ទះត្រូវបានកក់ទុក"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Flat Rate Envelope"
+msgstr "អត្រាផ្ទះល្វែង"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "From Company"
+msgstr ""
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Gift"
+msgstr "អំណេយ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "International"
+msgstr "អន្តរជាតិ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Large"
+msgstr "ធំ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Large Envelope"
+msgstr "ស្រោមសំបុត្រធំ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Large Flat Rate Box"
+msgstr "ប្រអប់តម្លៃផ្ទះល្វែងធំ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Legal Flat Rate Envelope"
+msgstr "លិខិតនៃអត្រាការប្រាក់គេហដ្ឋានស្របច្បាប់"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Letter"
+msgstr "សំបុត្រ"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_machinable
+msgid "Machinable"
+msgstr "អាចបត់បែនបាន"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Medium Flat Rate Box"
+msgstr "កញ្ចប់នៃអត្រាគេហដ្ឋានគិតជាមធ្យម"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Merchandise"
+msgstr "ទំនិញ"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_intl_non_delivery_option
+msgid "Non delivery option"
+msgstr "មិនទទួលដឹកជញ្ជូន"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Non-rectangular"
+msgstr "មិនមែនជាចតុកោណ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_label_file_type:0
+msgid "PDF"
+msgstr "ឯកសារជា PDF"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Package"
+msgstr "កញ្ជប់"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Package Service"
+msgstr "សេវាកម្មជាកញ្ចប់"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_girth
+msgid "Package girth (in inches)"
+msgstr "ទំហំកញ្ចប់(គិតជាin)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_height
+msgid "Package height (in inches)"
+msgstr "ការកើនឡើងនៃកញ្ចប់(គិតជា​ in)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_length
+msgid "Package length (in inches)"
+msgstr "ពេលវេលានៃកញ្ចប់(គិតជា in)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_width
+msgid "Package width (in inches)"
+msgstr "ទទឹងកញ្ចប់ (in inches)"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Padded Flat Rate Envelope"
+msgstr "សំបុត្រអត្រាមានការធ្លាក់ចុះ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Parcel"
+msgstr "កញ្ចប់"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:80
+#, python-format
+msgid "Please Change the Service Max. weight of this Service is 4 pounds"
+msgstr ""
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_machinable
+msgid ""
+"Please check on USPS website to ensure that your package is machinable."
+msgstr ""
+"សូមពិនិត្យមើលនៅលើគេហទំព័រ USPS ដើម្បីធានាថាកញ្ចប់របស់អ្នកអាចដំណើរការបាន។"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:68
+#, python-format
+msgid "Please enter a valid ZIP code in recipient address"
+msgstr "សូមបញ្ចូលលេខកូដតំបន់ដែលមានសុពលភាពនៅក្នុងអាស័យដ្ឋានអ្នកទទួល។"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:61
+#, python-format
+msgid "Please enter a valid ZIP code in your Company address"
+msgstr "សូមបញ្ចូលលេខកូដតំបន់ដែលមានសុពលភាពនៅក្នុងអាស័យដ្ឋានក្រុមហ៊ុនរបស់អ្នក។"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:75
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "សូមផ្ដល់យ៉ាងហោចណាស់ធាតុមួយដើម្បីបញ្ជូន។"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:59
+#, python-format
+msgid ""
+"Please set country U.S.A in your company address, Service is only available "
+"for U.S.A"
+msgstr ""
+"សូមធ្វើការរៀ​បចំអាស័យដ្ឋានក្រុមហ៊ុនរបស់អ្នកនៅក្នុងប្រទេសសហរដ្ឋអាមេរិក "
+"សេវាកម្មគឹអាចប្រើប្រាស់បានសម្រាប់នៅសហរដ្ឋអាមេរិក"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Postcard"
+msgstr "កាតប៉ុស្តាល់"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Priority"
+msgstr "អតិភាព"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Rectangular"
+msgstr "ចតុកោណកែង"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Redirect"
+msgstr "​បញ្ជូនបន្ត"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_redirect_partner_id
+msgid "Redirect Partner"
+msgstr "បញ្ជូនបន្តទៅដៃគូ"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Regular"
+msgstr "ទៀងទាត់"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Regular < 12 inch"
+msgstr "Regular < 12 inch"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Return"
+msgstr "ត្រឡប់"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Sample"
+msgstr "គំរូ"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:154
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "ការដឹកជញ្ជូនN°%sត្រូវបានលុបចោល"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:131
+#, python-format
+msgid "Shipment created into USPS <br/> <b>Tracking Number : </b>%s"
+msgstr "ការដឹកជញ្ជូនត្រូវបានបង្កើតទៅក្នុង USPS <br/> <b>លេខតាមដាន : </b>%s"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Box"
+msgstr "កញ្ចប់តូចនៃអត្រាគេហដ្ឋាន"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Envelope"
+msgstr "សំបុត្រអត្រាគេហដ្ឋានតូច"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_label_file_type:0
+msgid "TIF"
+msgstr "TIF"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:159
+#, python-format
+msgid "The USPS service selected (%s) cannot be used to deliver this package."
+msgstr ""
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:57
+#, python-format
+msgid ""
+"The address of your company is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"អាសយដ្ឋានរបស់ក្រុមហ៊ុនអ្នកបាត់ឬខុស (Missing field(s) :  \n"
+" %s)"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:78
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr ""
+"តម្លៃដែលប៉ាន់ស្មានមិនអាចគណនាបានទេព្រោះទម្ងន់នៃផលិតផលរបស់អ្នកត្រូវបានបាត់។"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:361
+#, python-format
+msgid ""
+"The recepient address can't be found. Please check that your recepient has "
+"an existing address."
+msgstr ""
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:66
+#, python-format
+msgid ""
+"The recipient address is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"អាស័យដ្ឋានអ្នកទទួលគឺបាត់ឬខុស (Missing field(s) :  \n"
+" %s)"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "To Company"
+msgstr ""
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_international_regular_container
+msgid "Type of USPS International regular container"
+msgstr "ប្រភេទនៃចំនុះដែលទៀងទាត់ជាអន្តរជាតិ"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_domestic_regular_container
+msgid "Type of USPS domestic regular container"
+msgstr "ប្រភេទនៃចំនុះUSPSធម្មតាទៀតទាត់"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_container
+msgid "Type of container"
+msgstr "ប្រភេទនៃចំណុះ"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_domestic
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_domestic_product_product
+msgid "USPS Domestic Flat Rate Envelope"
+msgstr "អត្រាគេហដ្ឋាននៅក្នុងស្រុកដោយ​USPS"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:72
+#, python-format
+msgid ""
+"USPS Domestic is used only to ship  inside of the U.S.A. Please change the "
+"delivery method into USPS International."
+msgstr ""
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_first_class_mail_type
+msgid "USPS First Class Mail Type"
+msgstr "ប្រភេទសារដំបូងនៃ USPS"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_international
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_international_product_product
+msgid "USPS International Flat Rate Box"
+msgstr "កញ្ចប់អត្រានៃUSPS អន្តរជាតិ"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:70
+#, python-format
+msgid ""
+"USPS International is used only to ship  outside of the U.S.A. Please change"
+" the delivery method into USPS Domestic."
+msgstr ""
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_label_file_type
+msgid "USPS Label File Type"
+msgstr "ប្រភេទបិទស្លាក USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_mail_type
+msgid "USPS Mail Type"
+msgstr "ប្រភេទសារ USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_service
+msgid "USPS Service"
+msgstr "សេវាកម្ម USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_username
+msgid "USPS User ID"
+msgstr "ប័ណ្ណសម្គាល់ USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_size_container
+msgid "Usps size container"
+msgstr ""
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:363
+#, python-format
+msgid "Your company or recipient zip code is incorrect."
+msgstr ""

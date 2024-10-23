@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+<t t-name="ContactSync" class="modal" id="PlannerDialog">
+    <div t-attf-class="btn btn-sm oe_stat_button"
+        widget="contact_sync" t-if="widget.is_mobile">
+        <div class="fa fa-fw  fa-user-plus o_button_icon mt8"> </div>
+        <div class="o_form_field o_stat_info">
+            <span class="o_stat_value">Add to</span>
+            <span class="o_stat_value">Mobile</span>
+        </div>
+    </div>
+</t>
+
+<t t-extend="DashboardMain">
+    <t t-jquery=".o_web_settings_dashboard_apps" t-operation="after">
+        <div class="mt8 o_dashboard_mobile_store">
+            <a class="center-block" href="https://play.google.com/store/apps/details?id=com.odoo.mobile" target="_blank">
+                <img class="center-block img img-responsive" src="/web_mobile/static/src/img/logo_google_play.png"/>
+            </a>
+        </div>
+    </t>
+</t>
+</templates>

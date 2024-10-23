@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+                    <record id="consumption_cost_entry_form" model="ir.ui.view">
+            <field name="name">Consumption Cost</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <field name="consumption" invisible="1"/>
+                    <field name="project_id" attrs="{'invisible': [('consumption', '!=', True)]}"/>
+
+                </xpath>
+             <xpath expr="//field[@name='line_ids']" position="replace">
+
+                 <field name="line_ids" widget="one2many_list" context="{'line_ids': line_ids, 'journal_id': journal_id }">
+                                <tree editable="bottom" string="Journal Items">
+                                    <field name="tax_line_id" invisible="1"/>
+                                    <field name="account_id" domain="[('company_id', '=', parent.company_id), ('deprecated', '=', False)]"/>
+                                    <field name="partner_id" domain="['|', ('parent_id', '=', False), ('is_company', '=', True)]"/>
+                                    <field name="element"/>
+                                    <field name="name"/>
+                                    <field name="analytic_account_id" groups="analytic.group_analytic_accounting"/>
+                                    <field name="analytic_tag_ids" groups="analytic.group_analytic_tags" widget="many2many_tags"/>
+                                    <field name="amount_currency" groups="base.group_multi_currency"/>
+                                    <field name="company_currency_id" invisible="1"/>
+                                    <field name="company_id" invisible="1"/>
+                                    <field name="currency_id" options="{'no_create': True}" groups="base.group_multi_currency"/>
+                                    <field name="debit" sum="Total Debit"/>
+                                    <field name="credit" sum="Total Credit"/>
+                                    <field name="tax_ids" string="Taxes Applied" widget="many2many_tags" domain="[('type_tax_use', '=?', parent.tax_type_domain)]" context="{'append_type_to_tax_name': not parent.tax_type_domain}" options="{'no_create': True}"/>
+                                    <field name="date_maturity" required="0" invisible="context.get('view_no_maturity', False)"/>
+                                    <field name="recompute_tax_line" invisible="1" readonly="1"/>
+                                    <field name="tax_line_grouping_key" invisible="1" readonly="1"/>
+                                </tree>
+
+                                <form>
+                                  <group>
+                                    <field name="tax_line_id" invisible="1"/>
+                                    <field name="account_id" domain="[('company_id', '=', parent.company_id), ('deprecated', '=', False)]"/>
+                                    <field name="partner_id" domain="['|', ('parent_id', '=', False), ('is_company', '=', True)]"/>
+                                    <field name="name"/>
+                                    <field name="analytic_account_id" groups="analytic.group_analytic_accounting"/>
+                                    <field name="analytic_tag_ids" groups="analytic.group_analytic_tags" widget="many2many_tags"/>
+                                    <field name="amount_currency" groups="base.group_multi_currency"/>
+                                    <field name="company_currency_id" invisible="1"/>
+                                    <field name="company_id" invisible="1"/>
+                                    <field name="currency_id" options="{'no_create': True}" groups="base.group_multi_currency"/>
+                                    <field name="debit" sum="Total Debit"/>
+                                    <field name="credit" sum="Total Credit"/>
+                                    <field name="tax_ids" string="Taxes Applied" widget="many2many_tags" domain="[('type_tax_use', '=?', parent.tax_type_domain)]" context="{'append_type_to_tax_name': not parent.tax_type_domain}" options="{'no_create': True}"/>
+                                    <field name="date_maturity" required="0" invisible="context.get('view_no_maturity', False)"/>
+                                    <field name="recompute_tax_line" invisible="1" readonly="1"/>
+                                    <field name="tax_line_grouping_key" invisible="1" readonly="1"/>
+                                  </group>
+                                </form>
+                            </field>
+
+
+           </xpath>
+
+            </field>
+        </record>
+
+            <record id="consumption_cost_entry_tree" model="ir.ui.view">
+            <field name="name">Consumption Cost</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='amount']" position="after">
+                    <field name="consumption" invisible="1"/>
+                    <field name="project_id" attrs="{'invisible': [('consumption', '!=', True)]}"/>
+                    
+                </xpath>
+
+
+            </field>
+        </record>
+    <record id="view_consumption_request_form" model="ir.ui.view">
+        <field name="name">tock.consumption.request.form</field>
+        <field name="model">stock.inventory</field>
+        <field name="arch" type="xml">
+            <form string="Consumption Request">
+                <header>
+                    <button name="action_start" states="draft" string="Send For Approval" groups="od_material_consumption.group_mc_user" type="object" class="oe_highlight" attrs="{'invisible': [('location_id', '!=', '_get_current_user')]}" />
+<!--                    <button name="generate_bill" states="draft" string="Journal Entry" type="object" class="oe_highlight"  />-->
+
+                    <!--                <button name="action_open_inventory_lines" states="confirm" string="Continue Consumption" type="object" class="oe_highlight" groups="stock.group_stock_user"/>-->
+                    <!--                <button name="action_validate" states="confirm" string="Validate Consumption" type="object" class="oe_highlight" groups="stock.group_stock_manager"/>-->
+                    <button name="action_validate" string="Approve Consumption" type="object"  groups="od_material_consumption.group_mc_manager"  attrs="{'invisible': ['|', ('state', '!=', 'confirm')]}" class="oe_highlight" domain="[('location_id', '!=', '_get_current_user')]" />
+                    <!-- <button name="action_validate" string="Approve Consumption" type="object" attrs="{'invisible': ['|', ('state', '!=', 'confirm')]}" class="oe_highlight" domain="[('location_id.id', '!=', '_get_current_user')]" /> -->
+
+                    <!--                <button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object"/>-->
+                    <button name="action_cancel_draft" states="confirm" string="Reject Consumption" type="object" groups="od_material_consumption.group_mc_manager" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <!--                    <button string="Product Moves" type="object"-->
+                        <!--                            name="action_view_related_move_lines"-->
+                        <!--                            class="oe_stat_button" icon="fa-exchange"-->
+                        <!--                            attrs="{'invisible': [('state', '!=', 'done')]}"-->
+                        <!--                            context="{'no_reference': True}"-->
+                        <!--                            states="confirm"/>-->
+
+                        <button name="action_get_account_moves" type="object" string="Accounting Entries" icon="fa-usd" class="oe_stat_button" />
+
+                        <button name="action_inventory_line_tree" class="oe_stat_button" icon="fa-building-o" type="object" help="List view of lines" groups="base.group_no_one" states="confirm">
+                            <div class="o_form_field o_stat_info">
+                                <span class="o_stat_text">Details</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" />
+                        <h1>
+                            <field name="name" placeholder="e.g. Annual inventory" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="location_id" string="Source Location" domain="[('usage','not in', ['supplier','production'])]" groups="stock.group_stock_multi_locations" />
+                            <field name="filter" string="Inventory of" widget='radio' attrs="{'readonly': [('state', '!=', 'draft')]}" invisible="1" />
+                            <!-- <field name="source_location" string="Source Location" domain="[('usage', '=', 'internal')]" /> -->
+                            <field name="site_name" string="Requesting Site"/>
+                            <field name="date" />
+                            <field name="date" string="Inventory Date" />
+                            <!-- <field name="shipping_policy" string="Shipping Policy"/> -->
+
+                        </group>
+                        <group>
+                            <field name="project_id"/>
+                            <field name="project_manager" string="Project Manager" colspan="2" />
+                            <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" />
+                            <field name="product_id" domain="[('type','=','product')]" attrs="{'invisible': [('filter', 'not in', ('product', 'product_owner'))], 'required': [('filter', 'in', ('product', 'product_owner'))]}" options="{'no_create': True}" />
+                            <field name="category_id" attrs="{'invisible': [('filter', 'not in','category')], 'required': [('filter', 'in', 'category')]}" options="{'no_create': True}" />
+                            <field name="lot_id" attrs="{'invisible': [('filter', '!=', 'lot')], 'required': [('filter', '=', 'lot')]}" groups="stock.group_production_lot" />
+                            <field name="partner_id" attrs="{'invisible': [('filter', 'not in', ('owner', 'product_owner'))], 'required': [('filter', 'in', ('owner', 'product_owner'))]}" groups="stock.group_tracking_owner" />
+                            <field name="package_id" attrs="{'invisible': [('filter', '!=', 'pack')], 'required': [('filter', '=', 'pack')]}" groups="stock.group_tracking_lot" />
+                            <field name="exhausted" attrs="{'invisible': [('filter', 'in', ('owner', 'product_owner','lot','pack','partial', 'product'))]}" />
+                            <field name="store_keeper" string="Store Keeper" />
+
+                            <field name="partner" string="Requester Name" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Inventory Details">
+
+                            <button name="action_reset_product_qty" states="confirm" string="⇒ Set quantities to 0" type="object" class="oe_link oe_right" groups="stock.group_stock_user" />
+                            <field name="line_ids" string="Inventory Details" context="{'default_location_id': location_id,  'default_product_id': product_id, 'default_prod_lot_id': lot_id, 'default_package_id': package_id, 'default_partner_id': partner_id}" mode="tree,kanban">
+                                <tree string="Inventory Details" editable="bottom" decoration-info="product_qty != theoretical_qty" decoration-danger="theoretical_qty &lt; 0">
+                                    <field name="product_qty"  readonly="False" invisible="True"/>
+                                    <field name="product_tracking" invisible="1" />
+                                    <field name="product_id" required="1" domain="[('type','=','product')]" attrs="{'readonly': [('parent.filter', '=', 'product')]}" force_save="1" />
+                                    <field name="element_id" required="1"/>
+                                    <field name="product_uom_id" string="UoM" groups="uom.group_uom" domain="[('category_id', '=', product_uom_category_id)]" />
+                                    <field name="product_uom_category_id" invisible="1" />
+                                    <field name="location_id" domain="[('id', 'child_of', parent.location_id)]" groups="stock.group_stock_multi_locations" />
+                                    <field name="analytical_account" required="1"/>
+                                    <field name="analytical_tag" required="1"/>
+                                    <field name="prod_lot_id" domain="[('product_id', '=', product_id)]" attrs="{'readonly': [('product_tracking', '=', 'none')]}" context="{'default_product_id': product_id}" groups="stock.group_production_lot" />
+                                    <field name="package_id" domain="['|', ('location_id','=', False), ('location_id', '=', location_id)]" groups="stock.group_tracking_lot" />
+                                    <field name="partner_id" groups="stock.group_tracking_owner" />
+                                    <field name="theoretical_qty"  string="theoretical Quantity" invisible="1" readonly="False" force_save="1"/>
+                                     <field name="product_qty"/>
+                                    <field name="qty_to_consume" string="Quantity to cusume" readonly="False" force_save="1"/>
+                                    <field name="state" invisible="True" />
+                                </tree>
+                                <kanban class="o_kanban_mobile">
+                                    <field name="product_tracking" invisible="1" />
+                                    <field name="product_id" domain="[('type','=','product')]" />
+                                    <field name="product_uom_id" groups="uom.group_uom" string="UoM" />
+                                    <field name="location_id" domain="[('id', 'child_of', parent.location_id)]" groups="stock.group_stock_multi_locations" />
+                                    <field name="prod_lot_id" domain="[('product_id', '=', product_id)]" attrs="{'readonly': [('product_tracking', '=', 'none')]}" context="{'default_product_id': product_id}" groups="stock.group_production_lot" />
+                                    <field name="package_id" domain="['|', ('location_id','=', False), ('location_id', '=', location_id)]" />
+                                    <field name="partner_id" />
+                                    <field name="theoretical_qty" readonly="False" />
+                                    <!-- <field name="analytical_account"/> -->
+                                    <field name="qty_to_consume" string="Quantity to cusume" readonly="False" />
+                                   <field name="product_qty"  readonly="False" />
+                                    <field name="state" invisible="True" />
+
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div t-attf-class="oe_kanban_global_click_edit
+                                                           #{record.product_qty.raw_value!=record.theoretical_qty.raw_value ? 'oe_kanban_color_6' : ''}
+                                                           #{record.theoretical_qty.raw_value&lt;0 ? 'oe_kanban_color_2' : ''}">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <strong>
+                                                            <field name='product_id' />
+                                                        </strong>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 text-muted">
+                                                        <span>
+                                                            <t t-esc='record.location_id.string' />
+                                                            :
+                                                            <t t-esc='record.location_id.value' />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 text-muted">
+                                                        <span>
+                                                            <t t-esc='record.theoretical_qty.string' />
+                                                            :
+                                                            <t t-esc='record.theoretical_qty.value' />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 text-muted">
+                                                        <span>
+                                                            <t t-esc='record.product_qty.string' />
+                                                            :
+                                                            <t t-esc='record.product_qty.value' />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
+                            <p></p>
+                            <h3 class="oe_grey">Notes</h3>
+                            <ul class="oe_grey">
+                                <li>Inventory adjustments will be made by comparing the theoretical and the checked quantities.</li>
+                                <li>You can delete lines to ignore some products.</li>
+                                <li>If a product is not at the right place, set the checked quantity to 0 and create a new line with correct location.</li>
+                            </ul>
+                        </page>
+                        <page string="Inventory Adjustments" attrs="{'invisible': [('state', '!=', 'done')]}">
+                            <field name="move_ids">
+                                <tree decoration-muted="scrapped == True" string="Stock Moves">
+                                    <field name="product_id" />
+                                    <field name="picking_id" invisible="1" />
+                                    <field name="create_date" invisible="1" />
+                                    <field name="date_expected" invisible="1" />
+                                    <field name="scrapped" invisible="1" />
+                                    <field name="state" invisible="1" />
+                                    <field name="location_id" string="From" />
+                                    <field name="location_dest_id" string="To" />
+                                    <field name="quantity_done" />
+                                    <field name="product_uom" options="{'no_open': True, 'no_create': True}" string="Unit of Measure" groups="uom.group_uom" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!--    <record id="view_consumption_request_form" model="ir.ui.view">-->
+    <!--        <field name="name">stock.consumption.request.form</field>-->
+    <!--        <field name="model">stock.inventory</field>-->
+    <!--        <field name="arch" type="xml">-->
+    <!--            <form string="Consumption Request">-->
+    <!--            <header>-->
+    <!--                <button name="action_start" states="draft" string="Validate" type="object" class="oe_highlight" groups="stock.group_stock_user"/>-->
+    <!--                <button name="action_open_inventory_lines" states="confirm" string="Continue Consumption" type="object" class="oe_highlight" groups="stock.group_stock_user"/>-->
+    <!--                <button name="action_validate" string="Validate Consumption" type="object" attrs="{'invisible': ['|', ('state', '!=', 'confirm'), ('line_ids', '!=', [])]}" groups="stock.group_stock_manager"/>-->
+    <!--                <button name="action_validate" string="Validate Consumption" type="object" attrs="{'invisible': ['|', ('state', '!=', 'confirm'), ('line_ids', '=', [])]}" class="oe_highlight" groups="stock.group_stock_manager"/>-->
+    <!--                <button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object"/>-->
+    <!--                <button name="action_cancel_draft" states="confirm" string="Cancel Consumption" type="object"-->
+    <!--                    confirm="If you cancel this material consumptions, all its lines will be lost. Are you sure you want to discard it ?"/>-->
+    <!--                <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done"/>-->
+    <!--            </header>-->
+    <!--            <sheet>-->
+    <!--                <field name="line_ids" invisible="1"/>-->
+    <!--                <div class="oe_button_box" name="button_box">-->
+    <!--                    <button string="Product Moves" type="object"-->
+    <!--                            name="action_view_related_move_lines"-->
+    <!--                            class="oe_stat_button" icon="fa-exchange"-->
+    <!--                            attrs="{'invisible': [('state', '!=', 'done')]}"-->
+    <!--                            context="{'no_reference': True}"/>-->
+    <!--                    <field name="has_account_moves" invisible="1"/>-->
+    <!--                    <button name="action_get_account_moves" type="object"-->
+    <!--                            string="Accounting Entries" icon="fa-usd" class="oe_stat_button"-->
+    <!--                            attrs="{'invisible': [('has_account_moves', '=', False)]}"/>-->
+    <!--                </div>-->
+    <!--                <div class="oe_title">-->
+    <!--                    <label for="name" class="oe_edit_only"/>-->
+    <!--                    <h1><field name="material_consumption_name" readonly="1" placeholder="e.g. Consumption Request"/></h1>-->
+    <!--                    <h1><field name="name" invisible="1" placeholder="e.g. Consumption Request"/></h1>-->
+    <!--                </div>-->
+    <!--                <group>-->
+    <!--                    <group>-->
+    <!--                        <field name="location_ids" options="{'no_create': True}"-->
+    <!--                               widget="many2many_tags"-->
+    <!--                               force_save="1"-->
+    <!--                               groups="stock.group_stock_multi_locations"/>-->
+    <!--                        <field name="product_ids" options="{'no_create': True}"-->
+    <!--                               widget="many2many_tags"/>-->
+    <!--                    </group>-->
+    <!--                    <group>-->
+    <!--                        <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>-->
+    <!--                        <field name="accounting_date" attrs="{'readonly':[('state','=', 'done')]}"/>-->
+    <!--                        <field name="prefill_counted_quantity" widget="radio"-->
+    <!--                               attrs="{'invisible': [('state', '!=', 'draft')]}" invisible="1"/>-->
+    <!--                    </group>-->
+    <!--                </group>-->
+    <!--            </sheet>-->
+    <!--            </form>-->
+    <!--        </field>-->
+    <!--    </record>-->
+
+    <record id="stock.action_inventory_form" model="ir.actions.act_window">
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('stock.view_inventory_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('stock.view_inventory_form')})]" />
+        <field name="domain">[('is_material_consumption', '=', False)]</field>
+    </record>
+
+    <record id="action_consumption_request_form" model="ir.actions.act_window">
+        <field name="name">Consumption Request</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stock.inventory</field>
+        <field name="domain">[('is_material_consumption', '=', True)]</field>
+        <field name="context">{'default_is_material_consumption': True}</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('stock.view_inventory_tree')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('view_consumption_request_form')})]" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create a new consumption request
+          </p>
+        </field>
+    </record>
+
+    <record id="stock_consumption_line_tree" model="ir.ui.view">
+        <field name="name">stock.consumption.line.tree2</field>
+        <field name="model">stock.inventory.line</field>
+        <field name="arch" type="xml">
+            <tree editable="top" string="Inventory Details" decoration-info="product_qty != theoretical_qty" decoration-danger="theoretical_qty &lt; 0">
+                <field name="product_tracking" invisible="1" />
+                <field name="product_id" domain="[('type','=','product')]" />
+                <field name="product_uom_id" string="UoM" groups="uom.group_uom" />
+                <field name="location_id" domain="[('id', 'child_of', inventory_location_id)]" groups="stock.group_stock_multi_locations" />
+                <field name="prod_lot_id" domain="[('product_id', '=', product_id)]" attrs="{'readonly': [('product_tracking', '=', 'none')]}" context="{'default_product_id': product_id}" groups="stock.group_production_lot" />
+                <field name="package_id" domain="['|', ('location_id','=', False), ('location_id', '=', location_id)]" groups="stock.group_tracking_lot" />
+                <field name="partner_id" groups="stock.group_tracking_owner" />
+                <field name="theoretical_qty" force_save='1' readonly="1" />
+                <field name="product_qty" string="Real Quantity" />
+                <field name="state" invisible="1" />
+                <field name="inventory_id" invisible="1" />
+                <field name="analytical_account" />
+                <field name="inventory_location_id" invisible="1" />
+            </tree>
+        </field>
+    </record>
+
+    <menuitem name="Material Consumption" action="od_material_consumption.action_consumption_request_form" id="material_consumption_menu" parent="stock.menu_stock_warehouse_mgmt" sequence="1" />
+
+</odoo>

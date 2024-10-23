@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_details,access.project.details,model_project_details,,1,1,1,1
+access_account_wht,access.account.wht,model_account_wht,,1,1,1,1
+access_project_budget_taxes,access.project.budget.taxes,model_project_budget_taxes,,1,1,1,1

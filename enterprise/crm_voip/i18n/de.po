@@ -1,0 +1,1072 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * crm_voip
+# 
+# Translators:
+# Ralf Hilgenstock <rh@dialoge.info>, 2016
+# Rudolf Schnapka <rs@techno-flex.de>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Tina Rittmüller <tr@ife.de>, 2016
+# Renzo Meister <info@jamotion.ch>, 2016
+# Anja Funk <anja.funk@afimage.de>, 2016
+# Wolfgang Taferner <wolfgang.transifex@service.wt-io-it.at>, 2016
+# darenkster <inactive+darenkster@transifex.com>, 2016
+# Henry Mineehen <info@mineehen.de>, 2016
+# JackTheHunter <Maximilian.N98@gmail.com>, 2016
+# Martin K <martinkuenz@gmail.com>, 2016
+# Philipp Hug <philipp@hug.cx>, 2016
+# Thorsten Vocks <thorsten.vocks@openbig.org>, 2016
+# Dejan Dinic <dejan.dinic@bluewin.ch>, 2016
+# key six <mobile.umts@gmail.com>, 2016
+# Niki Waibel <niki.waibel@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Niki Waibel <niki.waibel@gmail.com>, 2017\n"
+"Language-Team: German (https://www.transifex.com/odoo/teams/41243/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: crm_voip
+#: model:mail.template,body_html:crm_voip.email_template_call_interrupted
+msgid ""
+"\n"
+"<p>Hello ${object.partner_id.name},</p>\n"
+"\n"
+"<p>It seems that we have been interrupted during our conversation about\n"
+"    '${object.name}'. Can you please give me your availability in order to schedule \n"
+"    a new call? </p>\n"
+"<p>Best regards,</p>"
+msgstr ""
+"\n"
+"<p>Hallo ${object.partner_id.name},</p>\n"
+"\n"
+"<p>Es scheint, dass wir während unseres Gesprächs über unterbrochen wurden\n"
+"    '${object.name}'. Können Sie mir bitte Ihre Verfügbarkeit mitteilen um\n"
+"    ein neuen Anruf? zu planen. </p>\n"
+"<p>Mit freundlichen grüßen,</p>"
+
+#. module: crm_voip
+#: model:mail.template,body_html:crm_voip.email_template_call_client_notAvailable
+msgid ""
+"\n"
+"<p>Hello ${object.partner_id.name},</p>\n"
+"<p>I just tried to call you concerning the subject '${object.name}'. Can you\n"
+"    please give me your availability in order to schedule a new call?</p>\n"
+"<p>Best regards,</p>"
+msgstr ""
+"\n"
+"<p>Hallo ${object.partner_id.name},</p>\n"
+"<p>ich habe gerade versucht dich bezüglich '${object.name}' zu erreichen. Bitte gib mir bitte bescheid wann du erreichbar bist.</p>\n"
+"<p>Grüße,</p>"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_log_wizard.py:87
+#, python-format
+msgid " about %s"
+msgstr " über %s"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_nbr
+msgid "# of Cases"
+msgstr "Fälle"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid ""
+"<span attrs=\"{'invisible': [('show_duration', '=', False)], "
+"'required':[('show_duration', '=',True)]}\">min(s)</span>"
+msgstr ""
+"<span attrs=\"{'invisible': [('show_duration', '=', False)], "
+"'required':[('show_duration', '=',True)]}\">Min</span>"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_voip_view
+msgid "<span class=\"o_stat_text\">Log a Call</span>"
+msgstr "<span class=\"o_stat_text\">Anruf festhalten</span>"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_voip_view
+msgid "<span class=\"o_stat_text\">Schedule Call</span>"
+msgstr "<span class=\"o_stat_text\">Anruf terminieren</span>"
+
+#. module: crm_voip
+#: model:ir.actions.server,name:crm_voip.action_create_call_in_queue
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_call_kanban_view
+msgid "Add to Call Queue"
+msgstr "An Anruf-Warteschlage anhängen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_user_id
+msgid "Assign To"
+msgstr "Zuordnen zu"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:111
+#, python-format
+msgid "Backspace"
+msgstr "zurück"
+
+#. module: crm_voip
+#: model:ir.filters,name:crm_voip.filter_crm_phonecall_sales_team
+msgid "By Sales Team"
+msgstr "Nach Verkaufsteam"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:404
+#: code:addons/crm_voip/static/src/js/crm_voip.js:415
+#: code:addons/crm_voip/static/src/js/crm_voip.js:432
+#: code:addons/crm_voip/static/src/js/crm_voip.js:440
+#: code:addons/crm_voip/static/src/js/crm_voip.js:457
+#: code:addons/crm_voip/static/src/js/crm_voip.js:563
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:83
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:124
+#, python-format
+msgid "Call"
+msgstr "Anrufen"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_log_wizard.py:82
+#: code:addons/crm_voip/wizard/crm_phonecall_log_wizard.py:85
+#, python-format
+msgid "Call %s min(s)"
+msgstr "Anruf %s min(s)"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:89
+#, python-format
+msgid "Call All"
+msgstr "Alle anrufen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:90
+#, python-format
+msgid "Call Next One"
+msgstr "Nächsten anrufen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_name
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Call Summary"
+msgstr "Anruf Zusammenfassung"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_name
+msgid "Call summary"
+msgstr "Anrufzusammenfassung"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:867
+#, python-format
+msgid "Calling "
+msgstr "Rufe an"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:386
+#: code:addons/crm_voip/static/src/js/crm_voip.js:398
+#: code:addons/crm_voip/static/src/js/crm_voip.js:567
+#, python-format
+msgid "Calling..."
+msgstr "Rufe an..."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Calls Date by Month"
+msgstr "Anrufdatum nach Monat"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:48
+#, python-format
+msgid "Cancel the call"
+msgstr "Anruf abbrechen"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+msgid "Cancelled"
+msgstr "Abgebrochen"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Choose a date..."
+msgstr "Ein Datum wählen..."
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.crm_phonecall_view
+msgid "Click to log the summary of a phone call."
+msgstr "Klicken, um eine Gesprächszusammenfassung zu erfassen."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:463
+#, python-format
+msgid "Click to unblock"
+msgstr "Klicken, um Sperre aufzuheben"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:74
+#, python-format
+msgid "Close the Panel"
+msgstr "Das Panel schließen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_company_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_company_id
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_partner_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_partner_id
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_create_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_create_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_create_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_create_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_create_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_create_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_create_date
+msgid "Created on"
+msgstr "Angelegt am"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Creation"
+msgstr "Erstellungsdatum"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Creation Date"
+msgstr "Erzeugt am"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Creation Month"
+msgstr "Erstellungsmonat"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_custom_duration
+msgid "Custom Duration"
+msgstr "Benutzerdefinierte Dauer"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:103
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+#, python-format
+msgid "Customer"
+msgstr "Kunde"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:422
+#, python-format
+msgid "Customer unavailable"
+msgstr "Kunde nicht verfügbar"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_date
+msgid "Date"
+msgstr "Datum"
+
+#. module: crm_voip
+#: selection:sale.config.settings,mode:0
+msgid "Demo"
+msgstr "Demo"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_description
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_description
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Description..."
+msgstr "Beschreibung"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:153
+#, python-format
+msgid "Description:"
+msgstr "Buchungstext:"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Discard"
+msgstr "Verwerfen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:5
+#, python-format
+msgid "Display Dialing Panel"
+msgstr "Wahl-Übersicht anzeigen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:68
+#, python-format
+msgid "Display Keypad"
+msgstr "Wahlbock anzeigen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_display_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "Don't Reschedule"
+msgstr "Nicht neu einplanen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_duration
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_duration
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_duration
+msgid "Duration"
+msgstr "Dauer"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_duration
+msgid "Duration in minutes and seconds."
+msgstr "Dauer in Minuten und Sekunden"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Edit the log"
+msgstr "Das Log bearbeiten"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_email
+msgid "Email"
+msgstr "E-Mail"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:110
+#, python-format
+msgid "Enter the number..."
+msgstr "Nummer eingeben..."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:165
+#, python-format
+msgid "Expected Revenue:"
+msgstr "Erwarteter Umsatz:"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Extended Filters..."
+msgstr "Erweiterte Filter..."
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.action_report_crm_phonecall
+msgid ""
+"From this report, you can analyse the performance of your sales team, based "
+"on their phone calls. You can group or filter the information according to "
+"several criteria and drill down the information, by adding more groups in "
+"the report."
+msgstr ""
+"Mit diesem Bericht können Sie die Leistung Ihres Verkaufsteams auf Basis "
+"ihrer Telefonanrufe analysieren. Sie können ausserdem Informationen anhand "
+"verschiedener Kriterien filtern und gründlich untersuchen."
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_sequence
+msgid "Gives the sequence order when displaying a list of Phonecalls."
+msgstr "Liefert die Sortier-Reihenfolge bei Telefonat-Listanzeige."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Group By"
+msgstr "Gruppiert nach..."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:94
+#, python-format
+msgid "Hang Up"
+msgstr "Auflegen"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Held"
+msgstr "Erledigt"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_id
+msgid "ID"
+msgstr "ID"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "In 1 Week"
+msgstr "In 1 Woche"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "In 15 Day"
+msgstr "In 15 Tagen"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "In 2 Months"
+msgstr "In 2 Monaten"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_in_automatic_mode
+msgid "In Automatic Mode"
+msgstr "Im Automatik-Modus"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_in_queue
+msgid "In Call Queue"
+msgstr "In Ruf-Warteschlange"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.crm_phonecall_view
+msgid ""
+"In order to follow up on the call, you can trigger a request for\n"
+"          another call, a meeting or an opportunity."
+msgstr ""
+"Um diesem Anruf nachzufassen, können Sie einen weiteren Anruf, ein Treffen "
+"oder eine Chance terminieren."
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_lead_in_call_center_queue
+msgid "Is in the Call Queue"
+msgstr "Ist in der Warteschlange"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard___last_update
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall___last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_write_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_write_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_write_uid
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_write_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_write_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_write_date
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_lead
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_opportunity_id
+msgid "Lead/Opportunity"
+msgstr "Interessent / Chance"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_name
+msgid "Lead/Opportunity name"
+msgstr "Interessent/Chance Name"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/models/crm_lead.py:86
+#: code:addons/crm_voip/static/src/js/crm_voip.js:500
+#, python-format
+msgid "Log a call"
+msgstr "Anruf dokumentieren"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_partner_mobile
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_partner_mobile
+msgid "Mobile"
+msgstr "Mobil"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_sale_config_settings_mode
+msgid "Mode"
+msgstr "Modus"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Month"
+msgstr "Monat"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Month of call"
+msgstr "Monat des Anrufs"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "My Phonecalls"
+msgstr "Meine Anrufe"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "My Sales Team(s)"
+msgstr "Mein(e) Verkaufsteam(s)"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "My Team"
+msgstr "Mein Team"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_new_title_action
+msgid "Next Action"
+msgstr "Nächste Aktion"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_new_date_action
+msgid "Next Action Date"
+msgstr "Datum nächste Aktion"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:159
+#, python-format
+msgid "Next Action:"
+msgstr "Nächste Aktion:"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_next_activity_id
+msgid "Next Activity"
+msgstr "Nächste Aktivität"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:50
+#, python-format
+msgid "No opportunity linked"
+msgstr "Keine Chance verknüpft"
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Not Held"
+msgstr "Nicht Telefoniert"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,help:crm_voip.crm_phonecall_view
+msgid ""
+"Odoo allows you to log inbound calls on the fly to track the\n"
+"          history of the communication with a customer or to inform another\n"
+"          team member."
+msgstr ""
+"Odoo erlaubt es Ihnen eingehende Anrufe zu protokollieren, um den "
+"Kommunikationsverlauf mit Kunden zu abonnieren oder um Teammitarbeiter zu "
+"informieren."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:104
+#, python-format
+msgid "Opportunity"
+msgstr "Chance"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_sale_config_settings_pbx_ip
+msgid "PBX Server IP"
+msgstr "PBX-Server-IP"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_res_partner
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_name
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_partner_id
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Partner"
+msgstr "Partner"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_id
+msgid "Partner id"
+msgstr "Partner-ID"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_image_small
+msgid "Partner image"
+msgstr "Partnerbild"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_partner_phone
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_partner_phone
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_partner_phone
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_calendar_view
+msgid "Phone Calls"
+msgstr "Telefonanrufe"
+
+#. module: crm_voip
+#: model:ir.filters,name:crm_voip.filter_crm_phonecall_phone_call_to_do
+msgid "Phone Calls To Do"
+msgstr "Eingeplante Anrufe"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall_report
+msgid "Phone Calls by user and team"
+msgstr "Anrufe nach Nutzer und Team"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_graph
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_pivot
+msgid "Phone calls"
+msgstr "Anrufe"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Phone calls that are assigned to one of the sale teams I manage"
+msgstr "Eigene oder Anrufe des Teams"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Phone calls which are in closed state"
+msgstr "Beendete Telefonanrufe"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid ""
+"Phone calls which are in to do state and Phone calls which receive no answer"
+msgstr ""
+"Telefonate, die zu erledigen sind und solche, die nicht beantwortet werden"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Phone calls which receive no answer"
+msgstr "Telefonate, die nicht beantwortet werden"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,name:crm_voip.crm_phonecall_view
+#: model:ir.ui.menu,name:crm_voip.crm_phonecall_report_menu
+#: model:ir.ui.menu,name:crm_voip.menu_crm_phonecall_view
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_tree_view
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Phonecalls"
+msgstr "Telefonanrufe"
+
+#. module: crm_voip
+#: model:ir.actions.act_window,name:crm_voip.action_report_crm_phonecall
+msgid "Phonecalls Analysis"
+msgstr "Anrufe-Auswertung"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+msgid "Planned Date"
+msgstr "Geplantes Datum"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_planned_revenue
+msgid "Planned Revenue"
+msgstr "Geplanter Umsatz"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:535
+#, python-format
+msgid "Please check if a phone number is given for the current phonecall"
+msgstr "Prüfen Sie bitte, ob eine Rufnummer für diesen Anruf hinterlegt ist"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_opportunity_probability
+msgid "Probability"
+msgstr "Wahrscheinlichkeit"
+
+#. module: crm_voip
+#: selection:sale.config.settings,mode:0
+msgid "Production"
+msgstr "Produktivbetrieb"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:63
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:71
+#, python-format
+msgid "Refresh the Panel"
+msgstr "Das Panel auffrischen"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.lead_button_call_kanban_view
+msgid "Remove from Call Queue"
+msgstr "Aus Warteschlange entfernen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:45
+#, python-format
+msgid "Remove from the queue"
+msgstr "Aus der Warteschlange entfernen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:99
+#, python-format
+msgid "Reschedule Call"
+msgstr "Anruf neu einplanen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_user_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_user_id
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Responsible"
+msgstr "Verantwortlich"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_team_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_team_id
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_team_id
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Sales Team"
+msgstr "Verkaufsteam"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_report_team_id
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_team_id
+msgid "Sales team to which Case belongs to."
+msgstr "Verkaufsteam zu dem der Vorfall gehört."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Salesperson"
+msgstr "Verkäufer"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Save"
+msgstr "Speichern"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "Save and Open the Opportunity"
+msgstr "Speichern und Chance öffnen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_reschedule_option
+msgid "Schedule A New Call"
+msgstr "Einen neuen Anruf einplanen"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+msgid "Schedule Call"
+msgstr "Terminiere Anruf"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_tree_view
+msgid "Schedule Other Call"
+msgstr "Terminiere weiteren Anruf"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+msgid "Schedule a Call"
+msgstr "Einen Anruf einplanen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:139
+#, python-format
+msgid "Scheduled Date:"
+msgstr "Geplanter Monat:"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Search"
+msgstr "Suchen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:64
+#, python-format
+msgid "Search Phone Calls..."
+msgstr "Suche Telefonate..."
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Search Phonecalls"
+msgstr "Anruf suchen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:100
+#, python-format
+msgid "Send Email"
+msgstr "E-Mail versenden"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_sequence
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_show_duration
+msgid "Show Duration"
+msgstr "Dauer anzeigen"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_log_wizard_reschedule_date
+msgid "Specific Date"
+msgstr "Bestimmtes Datum"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:866
+#, python-format
+msgid "Start Calling"
+msgstr "Telefonieren beginnen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_start_time
+msgid "Start time"
+msgstr "Anfangszeit"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_report_state
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_state
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Status"
+msgstr "Status"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:93
+#, python-format
+msgid "Stop Automatic Call"
+msgstr "Beende automatischen Anruf"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_sale_config_settings_pbx_ip
+msgid "The IP adress of your PBX Server"
+msgstr "Die IP-Adresse Ihres PBX-Servers"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_sale_config_settings_wsServer
+msgid "The URL of your WebSocket"
+msgstr "Die URL Ihres WebSocket"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:422
+#, python-format
+msgid "The customer is temporary unavailable. Please try later."
+msgstr "Der Kunde ist vorübergehend nicht erreichbar. Bitte später versuchen."
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:535
+#, python-format
+msgid "The phonecall has no number"
+msgstr "Das Telefonat hat keine Rufnummer"
+
+#. module: crm_voip
+#: model:ir.model.fields,help:crm_voip.field_crm_phonecall_state
+msgid ""
+"The status is set to To Do, when a case is created.\n"
+"When the call is over, the status is set to Held.\n"
+"If the call is not applicable anymore, the status can be set to Cancelled."
+msgstr ""
+"Der Status ist 'zu erledigen', wenn ein Fall angelegt wird.\n"
+"Wenn der Anruf beendet ist, wird der Status 'gehalten'.\n"
+"Wenn der Anruf nicht mehr erforderlich ist, kann der Status auf 'storniert' gesetzt werden."
+
+#. module: crm_voip
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "To Do"
+msgstr "Zu erledigen"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.crm_phonecall_tree_view
+msgid "To Opportunity"
+msgstr "Zu Chance"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_report_crm_phonecall_filter
+msgid "Todo"
+msgstr "Zu erledigen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:86
+#, python-format
+msgid "Toggle Dropdown"
+msgstr "Auswahlfeld umschalten"
+
+#. module: crm_voip
+#: selection:crm.phonecall.log.wizard,reschedule_option:0
+msgid "Tomorrow"
+msgstr "Morgen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:95
+#, python-format
+msgid "Transfer"
+msgstr "Lieferung vornehmen"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_transfer_choice
+msgid "Transfer choice"
+msgstr "Weiterleitungs-Auswahl"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_crm_case_phonecalls_filter
+msgid "Unassigned"
+msgstr "Nicht zugewiesen"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/js/crm_voip.js:31
+#, python-format
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.view_voip_config
+msgid "VOIP Configuration"
+msgstr "VOIP-Konfiguration"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_transfer_wizard.py:34
+#, python-format
+msgid "Warning"
+msgstr "Warnung"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_sale_config_settings_wsServer
+msgid "WebSocket"
+msgstr "WebSocket"
+
+#. module: crm_voip
+#: code:addons/crm_voip/wizard/crm_phonecall_transfer_wizard.py:35
+#, python-format
+msgid ""
+"Wrong configuration for the call. There is no external phone number "
+"configured"
+msgstr ""
+"Falsche Einstellungen zum Anruf. Es ist keine externe Rufnummer eingestellt"
+
+#. module: crm_voip
+#. openerp-web
+#: code:addons/crm_voip/static/src/xml/crm_voip.xml:166
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+#, python-format
+msgid "at"
+msgstr "bei"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall
+msgid "crm.phonecall"
+msgstr "crm.phonecall"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall_log_wizard
+msgid "crm.phonecall.log.wizard"
+msgstr "crm.phonecall.log.wizard"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_phonecall_transfer_wizard
+msgid "crm.phonecall.transfer.wizard"
+msgstr "crm.phonecall.transfer.wizard"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_crm_schedule_phonecall
+msgid "crm.schedule_phonecall"
+msgstr "crm.schedule_phonecall"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_change_log_form_view
+msgid "e.g. Discuss proposal"
+msgstr "z.B. Angebotsbesprechung"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_schedule_phonecall_opportunity_id
+msgid "opportunity"
+msgstr "Chance"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_schedule_phonecall_view
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "or"
+msgstr "oder"
+
+#. module: crm_voip
+#: model:ir.model,name:crm_voip.model_sale_config_settings
+msgid "sale.config.settings"
+msgstr "sale.config.settings"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "transfer Option"
+msgstr "Weiterleitungsoption"
+
+#. module: crm_voip
+#: model:ir.model.fields,field_description:crm_voip.field_crm_phonecall_transfer_wizard_transfer_number
+msgid "transfer To"
+msgstr "Weiterleiten an"
+
+#. module: crm_voip
+#: model:ir.ui.view,arch_db:crm_voip.wizard_transfer_call_form_view
+msgid "transfer the Call"
+msgstr "Anruf verbinden"
+
+#. module: crm_voip
+#: selection:crm.phonecall.transfer.wizard,transfer_choice:0
+msgid "transfer to another External Phone"
+msgstr "Weiterleiten an andere externe Rufnummer"
+
+#. module: crm_voip
+#: selection:crm.phonecall.transfer.wizard,transfer_choice:0
+msgid "transfer to your external phone"
+msgstr "Weiterleiten an Ihre externe Rufnummer"

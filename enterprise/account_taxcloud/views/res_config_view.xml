@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_config_settings_taxcloud_inherit" model="ir.ui.view">
+        <field name="name">account settings</field>
+        <field name="model">account.config.settings</field>
+        <field name="inherit_id" ref="account.view_account_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='followup']" position="before">
+                <group string="TaxCloud">
+                    <label for="tic_category_id"/>
+                    <div>
+                        <field name="tic_category_id" class="oe_inline"/>
+                    </div>
+                    <label for="id" string="TaxCloud Configuration"/>
+                    <div name="taxcloud_config">
+                        <div>
+                            <label for="taxcloud_api_id"/>
+                            <field name="taxcloud_api_id" class="oe_inline"/>
+                        </div>
+                        <div>
+                            <label for="taxcloud_api_key"/>
+                            <field name="taxcloud_api_key" class="oe_inline"/>
+                        </div>
+                        <div>
+                            <button name="sync_taxcloud_category" type="object" string="Sync TaxCloud Category(TIC)" class="oe_link"/>
+                        </div>
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

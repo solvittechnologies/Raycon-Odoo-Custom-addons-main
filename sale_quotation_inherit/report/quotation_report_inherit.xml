@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <template id="report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
+
+
+
+            <div class="col-8" position="replace">
+
+
+                <div class="col-8">
+                <h5><u>Attention</u></h5>
+                <strong>
+                        <t t-set="attention" t-value="False"/>
+
+                           <t t-foreach="doc.partner_id.child_ids" t-as="contact">
+
+                             <t t-if="attention == False">
+                                 <span><t t-esc="contact.name"/></span>
+                                 <t t-set="attention" t-value="True"/>
+                             </t>
+                        </t>
+                </strong>
+
+                <strong><p class="m-0" t-field="doc.partner_id.name"/>
+                <p class="m-0" t-field="doc.partner_id.street"/>
+                <p class="m-0"><span t-field="doc.partner_id.city"/> <span t-field="doc.partner_id.state_id.name"/></p></strong>
+                <br/>
+         
+
+                </div>
+
+           </div>    
+             <p t-if="doc.payment_term_id.note" position="after">
+                    <strong>Delivery Terms: ON OR BEFORE 10 DAYS</strong>
+             </p>    
+
+
+
+    </template>
+</odoo>

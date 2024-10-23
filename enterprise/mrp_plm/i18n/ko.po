@@ -1,0 +1,1273 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_plm
+# 
+# Translators:
+# 방상우 <mrroom@gmail.com>, 2017
+# Hwang, Geon Gu <under_09@naver.com>, 2017
+# Spike Lee <rurouni24@gmail.com>, 2017
+# 경민기 <moonend@gmail.com>, 2017
+# 종현 엄 <whd5367@naver.com>, 2017
+# Goh Gangtai <gangtai.goh@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Linda Stockelova <stockeloval@btlnet.com>, 2018
+# Link Up링크업 <linkup.way@gmail.com>, 2018
+# Linkup <link-up@naver.com>, 2018
+# JH CHOI <hwangtog@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:14+0000\n"
+"PO-Revision-Date: 2016-09-07 13:40+0000\n"
+"Last-Translator: JH CHOI <hwangtog@gmail.com>, 2019\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_product_product_attachment_count
+#: model:ir.model.fields,field_description:mrp_plm.field_product_template_attachment_count
+msgid "# Attachments"
+msgstr "# 첨부 파일"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_eco_count
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_routing_eco_count
+msgid "# ECOs"
+msgstr "# ECOs"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_eco_inprogress_count
+#: model:ir.model.fields,field_description:mrp_plm.field_product_product_eco_inprogress_count
+#: model:ir.model.fields,field_description:mrp_plm.field_product_template_eco_inprogress_count
+msgid "# ECOs in progress"
+msgstr "# 진행중인 ECO"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_bom_view_kanban
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: mrp_plm
+#. openerp-web
+#: code:addons/mrp_plm/static/src/xml/mrp_plm_templates.xml:8
+#, python-format
+msgid "&times;"
+msgstr "&번;"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "<i class=\"fa fa-envelope-o\"/>&amp;nbsp;"
+msgstr "<i class=\"fa fa-envelope-o\"/>&amp;nbsp;"
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/product.py:53
+#, python-format
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                        Click to upload files to your product.\n"
+"                    </p><p>\n"
+"                        Use this feature to store any files, like drawings or specifications.\n"
+"                    </p>"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "<span>Bill of Material</span><br/>"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "<span>New</span>"
+msgstr "<span>신규</span>"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "<span>Routing</span><br/>"
+msgstr "<span>절차</span><br/>"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "<span>View</span>"
+msgstr "<span>보기</span>"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr "이 별칭에 대해 새 레코드를 만들 때 제공한 기본값을 파이썬 사전으로 평가합니다."
+
+#. module: mrp_plm
+#: selection:mrp.eco.bom.change,change_type:0
+#: selection:mrp.eco.routing.change,change_type:0
+msgid "Add"
+msgstr "추가"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_id
+msgid "Alias"
+msgstr "별명"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_contact
+msgid "Alias Contact Security"
+msgstr "연락처 별칭 보안"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_name
+msgid "Alias Name"
+msgstr "별칭 이름"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_domain
+msgid "Alias domain"
+msgstr "도메인 별칭"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_model_id
+msgid "Aliased Model"
+msgstr "별칭 모델"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "All"
+msgstr "전체"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "All Approvals have be done"
+msgstr "전체 결재 완료"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "All Validations"
+msgstr "전체 검증"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_allow_change_stage
+msgid "Allow Change Stage"
+msgstr "단계 변경 허용"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Apply Changes"
+msgstr "변경 승인"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type
+msgid "Apply on"
+msgstr "적용 대상"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_approval_roles
+msgid "Approval Roles"
+msgstr "역할 승인"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_stage_id_9760
+msgid "Approval Stage"
+msgstr "단계 승인"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_approval_type
+msgid "Approval Type"
+msgstr "유형 승인"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_ids
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_approval_template_ids
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_stage_view_form
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Approvals"
+msgstr "승인"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Approve"
+msgstr "승인"
+
+#. module: mrp_plm
+#: selection:mrp.eco,kanban_state:0 selection:mrp.eco.approval,status:0
+msgid "Approved"
+msgstr "승인됨"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_user_id
+msgid "Approved by"
+msgstr "승인자"
+
+#. module: mrp_plm
+#: selection:mrp.eco.approval.template,approval_type:0
+msgid "Approves, but the approval is optional"
+msgstr "승인합니다. 하지만 승인은 선택 사항입니다"
+
+#. module: mrp_plm
+#: selection:mrp.eco,effectivity:0
+msgid "As soon as possible"
+msgstr "최대한 빨리"
+
+#. module: mrp_plm
+#: selection:mrp.eco,effectivity:0
+msgid "At Date"
+msgstr "날에"
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/product.py:45
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_attachment_ids
+#: model:ir.model.fields,field_description:mrp_plm.field_product_product_attachment_ids
+#: model:ir.model.fields,field_description:mrp_plm.field_product_template_attachment_ids
+#: model:ir.ui.view,arch_db:mrp_plm.product_template_view_form_inherit_plm
+#, python-format
+msgid "Attachments"
+msgstr "첨부 파일"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_bom
+msgid "Bill of Material"
+msgstr "재료 명세서"
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,help:mrp_plm.mrp_bom_action_kanban
+#: model:ir.actions.act_window,name:mrp_plm.mrp_bom_action_kanban
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_id
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_boms selection:mrp.eco,type:0
+msgid "Bill of Materials"
+msgstr "재료 명세서"
+
+#. module: mrp_plm
+#: selection:mrp.eco,kanban_state:0
+msgid "Blocked"
+msgstr "차단됨"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_is_blocking
+msgid "Blocking Stage"
+msgstr "차단된 단계"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "BoM"
+msgstr "재료 명세서"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "BoM Changes"
+msgstr "재료 명세서 변경"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_new_bom_revision
+msgid "BoM Revision"
+msgstr "재료 명세서 개정"
+
+#. module: mrp_plm
+#: selection:mrp.eco,type:0
+msgid "BoM and Routing"
+msgstr "재료 명세서와 경로"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "BoM:"
+msgstr "BOM :"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_user_can_approve
+msgid "Can Approve"
+msgstr "승인 가능"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_user_can_reject
+msgid "Can Reject"
+msgstr "거부 가능"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_changes
+msgid "Changes"
+msgstr "변경"
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_tag_action
+msgid "Click to add a new tag."
+msgstr "클릭해서 새로운 태그를 추가합니다."
+
+#. module: mrp_plm
+#. openerp-web
+#: code:addons/mrp_plm/static/src/xml/mrp_plm_templates.xml:25
+#, python-format
+msgid "Close"
+msgstr "마감"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_color
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_color
+msgid "Color"
+msgstr "색상"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_color
+msgid "Color Index"
+msgstr "컬러 색인"
+
+#. module: mrp_plm
+#: selection:mrp.eco.approval,status:0
+msgid "Commented"
+msgstr "댓글을 달았습니다"
+
+#. module: mrp_plm
+#: selection:mrp.eco.approval.template,approval_type:0
+msgid "Comments only"
+msgstr "댓글 전용"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_company_id
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Company"
+msgstr "회사"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_configuration
+msgid "Configuration"
+msgstr "환경 설정"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Create Alert"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_type_action_dashboard
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_type_action_form
+msgid "Create ECO Types"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_approval
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_approval_my
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_form
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_late
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_main
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_product_tmpl
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_report
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_action_routing
+msgid "Create Engineering Change Orders"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_create_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_create_uid
+msgid "Created by"
+msgstr "작성자"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_create_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_create_date
+msgid "Created on"
+msgstr "작성일"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_dashboard
+msgid "Dashboard"
+msgstr "알림판"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_defaults
+msgid "Default Values"
+msgstr "기본 값"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Delete"
+msgstr "삭제"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Description of the change and its reason ..."
+msgstr "변경 및 그 이유에 대한 설명 ..."
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_display_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_display_name
+msgid "Display Name"
+msgstr "표시 이름"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_displayed_image_id
+msgid "Displayed Image"
+msgstr "표시된 이미지"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search selection:mrp.eco,state:0
+msgid "Done"
+msgstr "완료"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_routing_change_view_form
+msgid "Duration"
+msgstr "기간"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_eco_id
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "ECO"
+msgstr "ECO"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_graph
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_pivot
+msgid "ECO Analysis"
+msgstr "ECO 분석"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_ids
+msgid "ECO BoM Changes"
+msgstr "ECO 재로명세서 변경"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco_bom_change
+msgid "ECO Material changes"
+msgstr "ECO 자재 변경"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_ids
+msgid "ECO Routing Changes"
+msgstr "ECO 절차 변경"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_eco_stage_id
+msgid "ECO Stage"
+msgstr "ECO 단계"
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_stage_action
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_eco_stages
+msgid "ECO Stages"
+msgstr "ECO 단계"
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_tag_action
+#: model:ir.model,name:mrp_plm.model_mrp_eco_tag
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_eco_tag
+msgid "ECO Tags"
+msgstr "ECO 태그"
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_type_action_form
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_eco_types
+msgid "ECO Types"
+msgstr "ECO 유형"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_bom_change_view_form
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_routing_change_view_form
+msgid "ECO details"
+msgstr "ECO 세부사항"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_product_product_eco_inprogress
+#: model:ir.model.fields,field_description:mrp_plm.field_product_template_eco_inprogress
+msgid "ECO in progress?"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,help:mrp_plm.mrp_eco_stage_action
+msgid "ECO stages give the different stages for the Engineering Change Orders"
+msgstr "ECO 단계는 설계 변경 주문의 여러 단계를 제공합니다."
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_eco_ids
+msgid "ECO to be applied"
+msgstr "ECO 적용 대상"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_bom_view_form_inherit_plm
+msgid "ECO(s)"
+msgstr "ECO"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_nb_ecos
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_routing_eco_ids
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_eco_report
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_calendar
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_routing_view_form_inherit_plm
+#: model:ir.ui.view,arch_db:mrp_plm.product_template_view_form_inherit_plm
+msgid "ECOs"
+msgstr "ECO"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_bom_view_kanban
+msgid "Eco"
+msgstr "ECO"
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/mrp_eco.py:479
+#, python-format
+msgid "Eco BoM"
+msgstr "ECO 재료명세서"
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/mrp_eco.py:491
+#, python-format
+msgid "Eco Routing"
+msgstr "ECO 경로"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco_routing_change
+msgid "Eco Routing changes"
+msgstr "ECO 절차 변경"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Edit Task"
+msgstr "작업 편집"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_effectivity
+msgid "Effectivity"
+msgstr "유효성"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_effectivity_date
+msgid "Effectivity Date"
+msgstr "유효 날짜"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_form
+msgid "Email Alias"
+msgstr "이메일 별칭"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_eco_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_eco_id
+msgid "Engineering Change"
+msgstr "설계 변경"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco
+msgid "Engineering Change Order"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco_stage
+msgid "Engineering Change Order Stage"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_approval
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_approval_my
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_form
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_late
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_main
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_product_tmpl
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_report
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_action_routing
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_ecos
+msgid "Engineering Change Orders"
+msgstr "설계 변경 주문서"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "Engineering Changes"
+msgstr "설계 변경"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Filters"
+msgstr "필터"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_allow_apply_change
+msgid "Final Stage"
+msgstr "최종 단계"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_folded
+msgid "Folded in kanban view"
+msgstr "칸반 화면 접기"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Group by..."
+msgstr "그룹화..."
+
+#. module: mrp_plm
+#: model:ir.module.category,description:mrp_plm.module_category_plm
+msgid "Helps you manage your product's lifecycles."
+msgstr "제품의 주기를 관리할 수 있습니다."
+
+#. module: mrp_plm
+#: selection:mrp.eco,priority:0
+msgid "High"
+msgstr "높음"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
+msgstr "별칭을 담고 있는 상위 레코드의 ID (예 : 별칭을 생성한 작업을 담고 있는 프로젝트)"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Important Messages"
+msgstr "중요 메시지"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+#: selection:mrp.eco,kanban_state:0 selection:mrp.eco,state:0
+msgid "In Progress"
+msgstr "진행 중"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_is_approved
+msgid "Is approved"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_is_rejected
+msgid "Is rejected"
+msgstr ""
+
+#. module: mrp_plm
+#: selection:mrp.eco.approval.template,approval_type:0
+msgid "Is required to approve"
+msgstr "승인필요"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_kanban_state
+msgid "Kanban State"
+msgstr "칸반 상태"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_bom_view_kanban
+msgid "Kit"
+msgstr "키트"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag___last_update
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type___last_update
+msgid "Last Modified on"
+msgstr "최근 수정"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_write_uid
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_write_uid
+msgid "Last Updated by"
+msgstr "최근 갱신한 사람"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_write_date
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_write_date
+msgid "Last Updated on"
+msgstr "최근 갱신 날짜"
+
+#. module: mrp_plm
+#: model:res.groups,name:mrp_plm.group_plm_manager
+msgid "Manager"
+msgstr "관리자"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_upd_time_cycle_manual
+msgid "Manual Duration Change"
+msgstr "수동 기간 변동"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco_type
+msgid "Manufacturing Process"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_master_data
+msgid "Master Data"
+msgstr "전체 데이터"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "더 보기 <i class=\"fa fa-caret-down\"/>"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_tag_view_search
+msgid "Mrp Eco Tags"
+msgstr "자재소요계획 설계변경주문 태그"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "My Change Orders"
+msgstr "내 변경 주문서"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "My Validations"
+msgstr "내 검증"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_name
+msgid "Name"
+msgstr "이름"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_new_bom_id
+msgid "New Bill of Materials"
+msgstr "신규 재료명세서"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_new_routing_id
+msgid "New Routing"
+msgstr "새 절차"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_new_time_cycle_manual
+msgid "New manual duration"
+msgstr "신규 수동 기간"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_new_product_qty
+msgid "New revision quantity"
+msgstr "신규 수정 수량"
+
+#. module: mrp_plm
+#: selection:mrp.eco,priority:0
+msgid "Normal"
+msgstr "보통"
+
+#. module: mrp_plm
+#: selection:mrp.eco.approval,status:0
+msgid "Not Yet"
+msgstr "아직"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_note
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Note"
+msgstr "노트"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_old_time_cycle_manual
+msgid "Old manual duration"
+msgstr "이전 수동 기간"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr ""
+"회신하지 않은 것까지 모든 받는 메시지를 첨부할 스레드(레코드) ID (옵션). 설정하면 완벽하게 새로운 레코드의 생성을 억제합니다."
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_user_id
+msgid "Owner"
+msgstr "소유자"
+
+#. module: mrp_plm
+#: model:ir.module.category,name:mrp_plm.module_category_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_root
+msgid "PLM"
+msgstr "제품 생산주기관리"
+
+#. module: mrp_plm
+#: model:ir.actions.act_window,name:mrp_plm.mrp_eco_type_action_dashboard
+msgid "PLM Dashboard"
+msgstr "PLM 알림판"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_parent_model_id
+msgid "Parent Model"
+msgstr "상위 모델"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "상위 레코드 스레드 ID"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not"
+" necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr ""
+"별칭이 있는 상위 모델입니다. 별칭 참조를 포함하는 모델은 반드시 alias_model_id(예: 프로젝트(parent_model) 및 "
+"태스크(model)에서 제공하는 모델일 필요는 없습니다.)"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following channels\n"
+msgstr ""
+"메일 게이트웨이를 이용해서 문서에 메시지를 게시하는 보안정책.\\n\n"
+"- 모두: 모두다 메시지 게시 가능\n"
+"- 파트너: 인증된 파트너만 가능\n"
+"- 팔로워: 관련 문서의 팔로워만 가능\n"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_previous_bom_id
+msgid "Previous BoM"
+msgstr "이전 재료명세서"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_routing_previous_routing_id
+msgid "Previous Routing"
+msgstr "이전 절차"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_old_product_qty
+msgid "Previous revision quantity"
+msgstr "이전 수정 수량"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_priority
+msgid "Priority"
+msgstr "우선 순위"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_product_product
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_product_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_product_tmpl_id
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_bom_change_view_form
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Product"
+msgstr "상품"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_product_uom_id
+msgid "Product  UoM"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_product_template
+msgid "Product Template"
+msgstr "제품 양식"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_products
+msgid "Products"
+msgstr "제품"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_upd_product_qty
+msgid "Quantity"
+msgstr "수량"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "레코드 스레드 ID"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_name
+msgid "Reference"
+msgstr "참조"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Reject"
+msgstr "거부"
+
+#. module: mrp_plm
+#: selection:mrp.eco.approval,status:0
+msgid "Rejected"
+msgstr "거부됨"
+
+#. module: mrp_plm
+#: selection:mrp.eco.bom.change,change_type:0
+#: selection:mrp.eco.routing.change,change_type:0
+msgid "Remove"
+msgstr "제거"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_reporting
+msgid "Reporting"
+msgstr "보고"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_required_user_ids
+msgid "Requested Users"
+msgstr "요청한 사용자"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_user_id
+msgid "Responsible"
+msgstr "담당자"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Rev :"
+msgstr "갱신판 :"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_revision_ids
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_routing_revision_ids
+msgid "Revision ids"
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_name
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_name
+msgid "Role"
+msgstr "역할"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_id
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search selection:mrp.eco,type:0
+msgid "Routing"
+msgstr "연결 경로"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Routing Changes"
+msgstr "절차 변경"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_new_routing_revision
+msgid "Routing Revision"
+msgstr "절차 갱신"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Routing:"
+msgstr "절차 :"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_routing
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_routings
+msgid "Routings"
+msgstr "연결 경로"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_search
+msgid "Search"
+msgstr "검색"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_sequence
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_sequence
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_sequence
+msgid "Sequence"
+msgstr "순서"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Set Cover Image"
+msgstr "표지 이미지 설정"
+
+#. module: mrp_plm
+#. openerp-web
+#: code:addons/mrp_plm/static/src/xml/mrp_plm_templates.xml:9
+#, python-format
+msgid "Set a Cover Image"
+msgstr "표지 이미지 설정"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "Settings"
+msgstr "설정"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Short Summary"
+msgstr "요약"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_allow_apply_change
+msgid "Show Apply Change"
+msgstr "변경 사항 적용 보기"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_image_small
+msgid "Small-sized image"
+msgstr "작은 크기의 사진"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_bom_image_small
+msgid ""
+"Small-sized image of the product. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is"
+" required."
+msgstr ""
+"상품을 나타내는 작은 사진입니다. 이미지의 가로 세로 비율을 유지한 채 자동으로 64x64픽셀 이미지로 크기가 조정됩니다. 어디서나 작은"
+" 이미지가 필요할 때는 이 필드를 이용합니다."
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Someone rejected this change"
+msgstr "누군가 이 변경 사항을 거부했습니다"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_stage_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_id_9817
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Stage"
+msgstr "단계"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_stage_ids
+msgid "Stages"
+msgstr "단계"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_view_form
+msgid "Start New Revision"
+msgstr "새 갱신 시작"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "State"
+msgstr "주/도"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_status
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_state
+msgid "Status"
+msgstr "상태"
+
+#. module: mrp_plm
+#: sql_constraint:mrp.eco.tag:0
+msgid "Tag name already exists !"
+msgstr "태그명이 이미 존재합니다."
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_tag_ids
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_tag_view_form
+msgid "Tags"
+msgstr "태그"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_user_can_approve
+msgid "Technical field to check if approval by current user is required"
+msgstr "현재 사용자의 승인이 필요한지 확인하는 기술 필드"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_user_can_reject
+msgid "Technical field to check if reject by current user is possible"
+msgstr "현재 사용자가 거부할 수 있는지 확인하는 기술 필드"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_approval_template_id
+msgid "Template"
+msgstr "서식"
+
+#. module: mrp_plm
+#: model:res.groups,comment:mrp_plm.group_plm_manager
+msgid "The PLM manager manages products lifecycle management"
+msgstr "PLM 관리자는 제품의 생애주기를 관리합니다"
+
+#. module: mrp_plm
+#: model:res.groups,comment:mrp_plm.group_plm_user
+msgid "The PLM user uses products lifecycle management"
+msgstr "PLM 사용자는 제품의 생애주기 관리를 이용합니다."
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
+msgstr ""
+"이 별칭에 해당하는 모델(Odoo 문서 종류)입니다. 모든 받는 메일은 기존 레코드로 기록되지 않고 이 모델의 새 레코드로 작성됩니다. "
+"(예. 프로젝트 작업)"
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr "이메일 별칭 이름. <jobs@example.odoo.com>에 대한 이메일을 수신하도록 하려면 'jobs'라고 적습니다."
+
+#. module: mrp_plm
+#: model:ir.model.fields,help:mrp_plm.field_mrp_eco_type_alias_user_id
+msgid ""
+"The owner of records created upon receiving emails on this alias. If this "
+"field is not set the system will attempt to find the right owner based on "
+"the sender (From) address, or will use the Administrator account if no "
+"system user is found for that address."
+msgstr ""
+"이 별칭으로 이메일을 받을 때 생성되는 레코드의 소유자. 이 필드를 시스템에 설정하지 않으면 보낸 사람 주소를 기준으로 올바른 소유자를 "
+"찾기 위해 시도하거나 주소에서 해당하는 사용자를 찾지 못한 경우 관리자 계정을 사용합니다."
+
+#. module: mrp_plm
+#. openerp-web
+#: code:addons/mrp_plm/static/src/xml/mrp_plm_templates.xml:20
+#, python-format
+msgid ""
+"There is no available image to be set as cover. Send a message on the "
+"engineering order with an attached image."
+msgstr ""
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_nb_validation
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_type_view_kanban
+msgid "To Apply"
+msgstr "적용하기"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search selection:mrp.eco,state:0
+msgid "To Do"
+msgstr "할 일"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_bom_change_change_type
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_change_type
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_stage_type_id
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_id_9782
+msgid "Type"
+msgstr "유형"
+
+#. module: mrp_plm
+#: selection:mrp.eco.bom.change,change_type:0
+#: selection:mrp.eco.routing.change,change_type:0
+msgid "Update"
+msgstr "갱신"
+
+#. module: mrp_plm
+#: model:res.groups,name:mrp_plm.group_plm_user
+msgid "User"
+msgstr "사용자"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_approval_template_user_ids
+msgid "Users"
+msgstr "사용자 목록"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_bom_version
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_routing_version
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_bom_view_form_inherit_plm
+msgid "Version"
+msgstr "버전"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Waiting Any Validation"
+msgstr "미완료된 검증 절차가 있음"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_nb_approvals
+msgid "Waiting Approvals"
+msgstr "승인 대기중"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_search
+msgid "Waiting My Validation"
+msgstr "대기중인 내 검증"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "Waiting for Approvals"
+msgstr "승인 받기 대기중"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_type_nb_approvals_my
+msgid "Waiting my Approvals"
+msgstr "내 승인 대기중"
+
+#. module: mrp_plm
+#: model:ir.model.fields,field_description:mrp_plm.field_mrp_eco_routing_change_workcenter_id
+msgid "Work Center"
+msgstr "작업장"
+
+#. module: mrp_plm
+#: model:ir.ui.menu,name:mrp_plm.menu_mrp_plm_workcenters
+msgid "Work Centers"
+msgstr "작업장"
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/mrp_eco.py:460
+#, python-format
+msgid "Workorder Messages"
+msgstr ""
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/mrp_eco.py:367
+#, python-format
+msgid "You cannot change the stage, as approvals are required in the process."
+msgstr "업무 절차에서 승인이 필요하므로 단계를 변경할 수 없습니다."
+
+#. module: mrp_plm
+#: code:addons/mrp_plm/models/mrp_eco.py:357
+#, python-format
+msgid "You cannot change the stage, as approvals are still required."
+msgstr "승인이 여전히 필요하므로 단계를 변경할 수 없습니다."
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_stage_view_form
+msgid "e.g. Engineering Department"
+msgstr "예시. 기술부서"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco_approval
+msgid "mrp.eco.approval"
+msgstr "mrp.eco.approval"
+
+#. module: mrp_plm
+#: model:ir.model,name:mrp_plm.model_mrp_eco_approval_template
+msgid "mrp.eco.approval.template"
+msgstr "mrp.eco.approval.template"
+
+#. module: mrp_plm
+#: model:ir.ui.view,arch_db:mrp_plm.mrp_eco_kanban
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"

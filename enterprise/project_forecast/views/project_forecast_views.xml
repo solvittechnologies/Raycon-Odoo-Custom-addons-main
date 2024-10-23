@@ -1,0 +1,190 @@
+<odoo><data>
+
+  <!-- tree view -->
+  <record id="project_forecast_view_tree" model="ir.ui.view">
+    <field name="name">project.forecast.tree</field>
+    <field name="model">project.forecast</field>
+    <field name="arch" type="xml">
+      <tree string="Forecast List">
+        <field name="user_id"/>
+        <field name="project_id"/>
+        <field name="task_id"/>
+      </tree>
+    </field>
+  </record>
+
+  <!-- form view -->
+  <record id="project_forecast_view_form" model="ir.ui.view">
+    <field name="name">project.forecast.form</field>
+    <field name="model">project.forecast</field>
+    <field name="arch" type="xml">
+        <form string="Forecast Form">
+            <sheet string="Project Forecast">
+                <div class="oe_button_box" name="button_box">
+                    <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                        <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                    </button>
+                </div>
+                <group>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="project_id" domain="[('allow_forecast', '=', True)]"/>
+                        <field name="task_id" context="{'default_project_id': project_id}"/>
+                    </group>
+                    <group>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="resource_hours" widget="float_time"/>
+                        <field name="effective_hours" widget="float_time"/>
+                        <field name="time" string="% Time"/>
+                    </group>
+                </group>
+            </sheet>
+        </form>
+    </field>
+  </record>
+
+  <!-- search view -->
+  <record id="project_forecast_view_search" model="ir.ui.view">
+    <field name="name">project.forecast.search</field>
+    <field name="model">project.forecast</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="user_id"/>
+        <field name="project_id"/>
+        <field name="task_id"/>
+        <filter name="my_activities" string="My activities"
+                domain="[('user_id', '=', uid)]"/>
+        <filter name="my_projects" string="My projects"
+                domain="[('project_id.user_id', '=', uid)]" />
+        <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+        <separator/>
+        <filter name="future" string="Future"
+                domain="[('end_date', '>=', time.strftime('%%Y-%%m-%%d 00:00:00'))]" />
+        <filter name="past" string="Past"
+                domain="[('start_date', '&lt;=', time.strftime('%%Y-%%m-%%d 22:59:59'))]" />
+        <group string="Group By">
+          <filter name="group_by_user_id" string="User"
+                  context="{'group_by': 'user_id'}"/>
+          <filter name="group_by_project_id" string="Project"
+                  context="{'group_by': 'project_id'}"/>
+          <filter name="group_by_task_id" string="Task"
+                  context="{'group_by': 'task_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <!-- Gantt view -->
+  <record id="project_forecast_view_gantt" model="ir.ui.view">
+    <field name="name">project.forecast.gantt</field>
+    <field name="model">project.forecast</field>
+    <field name="arch" type="xml">
+      <gantt type="consolidate"
+             date_start="start_date"
+             date_stop="end_date"
+             fold_last_level="true"
+             round_dnd_dates="true"
+             consolidation="time"
+             consolidation_max = '{"user_id": 100}'
+             consolidation_exclude = "exclude"
+             >
+      </gantt>
+    </field>
+  </record>
+
+  <record id="project_forecast_view_pivot" model="ir.ui.view">
+    <field name="name">project.forecast.pivot</field>
+    <field name="model">project.forecast</field>
+    <field name="arch" type="xml">
+      <pivot string="Graph">
+        <field name="resource_hours" type="measure"/>
+        <field name="effective_hours" type="measure"/>
+        <field name="percentage_hours" type="measure"/>
+      </pivot>
+    </field>
+  </record>
+
+  <!-- Menu records -->
+  <record id="project_forecast_action_by_user" model="ir.actions.act_window">
+    <field name="name">Forecast by user</field>
+    <field name="res_model">project.forecast</field>
+    <field name="view_mode">gantt,tree,form,pivot</field>
+    <field name="context">{'group_by': ['user_id', 'project_id'],}</field>
+  </record>
+
+  <record id="project_forecast_action_by_project" model="ir.actions.act_window">
+    <field name="name">Forecast by project</field>
+    <field name="res_model">project.forecast</field>
+    <field name="view_mode">gantt,tree,form,pivot</field>
+    <field name="context">{'group_by': ['project_id', 'user_id'],}</field>
+  </record>
+
+  <record id="project_forecast_action_report_activities" model="ir.actions.act_window">
+    <field name="name">Forecast</field>
+    <field name="res_model">project.forecast</field>
+    <field name="view_mode">pivot,gantt,tree,form</field>
+    <field name="context">{'group_by': ['user_id', 'project_id'],}</field>
+  </record>
+
+  <record id="project_forecast_server_action_archive" model="ir.actions.server">
+    <field name="name">Archive/Unarchive</field>
+    <field name="condition">True</field>
+    <field name="type">ir.actions.server</field>
+    <field name="model_id" ref="model_project_forecast" />
+    <field name="state">code</field>
+    <field name="code">records.toggle_active()</field>
+</record>
+
+<record id="project_forecast_ir_values_archive" model="ir.values">
+    <field name="name">Archive/Unarchive</field>
+    <field name="action_id" ref="project_forecast_server_action_archive" />
+    <field name="value" eval="'ir.actions.server,' + str(ref('project_forecast_server_action_archive'))"/>
+    <field name="key">action</field>
+    <field name="model_id" ref="model_project_forecast" />
+    <field name="model">project.forecast</field>
+    <field name="key2">client_action_multi</field>
+</record>
+
+  <menuitem id="project_forecast_menu" name="Forecast"
+            parent="project.menu_main_pm"
+            sequence="2"/>
+
+  <menuitem id="project_forecast_group_by_user" name="By User"
+            parent="project_forecast_menu"
+            sequence="1"
+            action="project_forecast_action_by_user"/>
+
+  <menuitem id="project_forecast_group_by_project" name="By Project"
+            parent="project_forecast_menu"
+            sequence="2"
+            action="project_forecast_action_by_project"/>
+
+  <menuitem id="project_forecast_report_activities" name="Activities"
+            parent="project.menu_project_report"
+            action="project_forecast_action_report_activities"/>
+
+  <!-- modify the kanban of project -->
+  <record id="project_forecast_action_project" model="ir.actions.act_window">
+    <field name="name">Forecast</field>
+    <field name="res_model">project.forecast</field>
+    <field name="view_mode">gantt,tree,form,pivot</field>
+    <field name="context">{'group_by': ['user_id'],
+    'project_id': active_id,
+    'search_default_project_id': [active_id],
+    'search_default_group_by_user_id': 1}</field>
+  </record>
+
+    <record id="project_forecast_action_from_task" model="ir.actions.act_window">
+        <field name="name">Forecast</field>
+        <field name="res_model">project.forecast</field>
+        <field name="view_mode">gantt,tree,form,pivot</field>
+        <field name="context">{
+            'group_by': ['user_id'],
+            'task_id': active_id,
+            'search_default_task_id': [active_id],
+            'search_default_group_by_user_id': 1}</field>
+    </record>
+
+</data>
+</odoo>

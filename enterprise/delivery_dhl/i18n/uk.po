@@ -1,0 +1,483 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_dhl
+# 
+# Translators:
+# Zoriana Zaiats, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Yaroslav Molochko <onorua@gmail.com>, 2016
+# Bohdan Lisnenko, 2016
+# Martin Trigaux, 2016
+# Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:58+0000\n"
+"PO-Revision-Date: 2016-09-19 12:58+0000\n"
+"Last-Translator: Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "6X4_A4_PDF"
+msgstr "6X4_A4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "6X4_PDF"
+msgstr "6X4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "6X4_thermal"
+msgstr "6X4_thermal"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_A4_PDF"
+msgstr "8X4_A4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_A4_TC_PDF"
+msgstr "8X4_A4_TC_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_CI_PDF"
+msgstr "8X4_CI_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_CI_thermal"
+msgstr "8X4_CI_thermal"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_PDF"
+msgstr "8X4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_RU_A4_PDF"
+msgstr "8X4_RU_A4_PDF"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_template:0
+msgid "8X4_thermal"
+msgstr "8X4_thermal"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_accessory_product_ids
+msgid ""
+"Accessories show up when the customer reviews the cart before paying (cross-"
+"sell strategy, e.g. for computers: mouse, keyboard, etc.). An algorithm "
+"figures out a list of accessories based on all the products added to cart."
+msgstr ""
+"Аксесуари з'являються, коли користувач переглядає кошик перед оплатою "
+"(стратегія крос-продаж, наприклад, для комп'ютерів: миша, клавіатура тощо). "
+"Алгоритм викладає список аксесуарів на основі всіх товарів, доданих у кошик."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_accessory_product_ids
+msgid "Accessory Products"
+msgstr "Аксесуари"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_availability
+msgid "Adds an availability status on the web product page."
+msgstr "Додає статус доступності на веб-сторінці товару."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_alternative_product_ids
+msgid "Alternative Products"
+msgstr "Альтернативні товари"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_region_code:0
+msgid "America"
+msgstr "Америка"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_region_code:0
+msgid "Asia Pacific"
+msgstr "Азіатсько-Тихоокеанський регіон"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_availability
+msgid "Availability"
+msgstr "Наявність"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_availability_warning
+msgid "Availability Warning"
+msgstr "Наявність попередження"
+
+#. module: delivery_dhl
+#: model:ir.model,name:delivery_dhl.model_delivery_carrier
+msgid "Carrier"
+msgstr "Перевізник"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_public_categ_ids
+msgid ""
+"Categories can be published on the Shop page (online catalog grid) to help "
+"customers find all the items within a category. To publish them, go to the "
+"Shop page, hit Customize and turn *Product Categories* on. A product can "
+"belong to several categories."
+msgstr ""
+"Категорії можуть бути опубліковані на сторінці Магазину (мережа каталогів "
+"онлайн), щоб допомогти клієнтам знайти всі елементи в межах однієї "
+"категорії. Щоб опублікувати їх, перейдіть на сторінку \"Магазин\", натисніть"
+" \"Налаштувати\" та ввімкніть * Категорії товарів *. Товар може належати до "
+"кількох категорій."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "Сантиметри"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_dhl_dutiable
+msgid "Check this if your package is dutiable."
+msgstr "Перевірте це, якщо ваша упаковка підлягає сплаті мита."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "D - Express Worldwide"
+msgstr "D - Експрес по всьому світу"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_account_number
+msgid "DHL Account Number"
+msgstr "Номер рахунку DHL"
+
+#. module: delivery_dhl
+#: model:ir.ui.view,arch_db:delivery_dhl.view_delivery_carrier_form_with_provider_dhl
+msgid "DHL Configuration"
+msgstr "Налаштування DHL"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_default_packaging_id
+msgid "DHL Default Packaging Type"
+msgstr "Тип упаковки DHL за замовчуванням"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_password
+msgid "DHL Password"
+msgstr "Пароль DHL"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:373
+#, python-format
+msgid "DHL Site ID is missing, please modify your delivery method settings."
+msgstr ""
+"ID сайту DHL відсутній, будь ласка, змініть налаштування способу доставки."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_SiteID
+msgid "DHL SiteID"
+msgstr "ID сайту DHL"
+
+#. module: delivery_dhl
+#: model:delivery.carrier,name:delivery_dhl.delivery_carrier_dhl_dom
+#: model:product.product,name:delivery_dhl.delivery_carrier_dhl_dom_product_product
+msgid "DHL USA"
+msgstr "DHL USA"
+
+#. module: delivery_dhl
+#: model:delivery.carrier,name:delivery_dhl.delivery_carrier_dhl_intl
+#: model:product.product,name:delivery_dhl.delivery_carrier_dhl_intl_product_product
+msgid "DHL USA -> International"
+msgstr "DHL USA -> Міжнародний "
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:377
+#, python-format
+msgid ""
+"DHL account number is missing, please modify your delivery method settings."
+msgstr ""
+"Номер рахунку DHL відсутній, будь ласка, змініть налаштування способу "
+"доставки."
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:375
+#, python-format
+msgid "DHL password is missing, please modify your delivery method settings."
+msgstr ""
+"Пароль DHL відсутній, будь ласка, змініть налаштування способу доставки."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_quote_description
+msgid "Description for the quote"
+msgstr "Опис пропозиції"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_description
+msgid "Description for the website"
+msgstr "Опис вебсайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_website_sequence
+msgid "Determine the display order in the Website E-commerce"
+msgstr "Визначте порядок відображення в інтернет-магазині"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_dutiable
+msgid "Dutiable Material"
+msgstr "Матеріал, який підлягає сплаті мита"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_image_format:0
+msgid "EPL2"
+msgstr "EPL2"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_region_code:0
+msgid "Europe"
+msgstr "Європа"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_product_image_ids
+msgid "Images"
+msgstr "Зображення"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_dimension_unit:0
+msgid "Inches"
+msgstr "Дюйми"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "K - Express 9:00"
+msgstr "K - Express 9:00"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_weight_unit:0
+msgid "Kilograms"
+msgstr "Кілограми"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_label_image_format
+msgid "Label Image Format"
+msgstr "Формат зображення логотипу"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_label_template
+msgid "Label Template"
+msgstr "Шаблон логотипу"
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "N - Domestic Express"
+msgstr "N - Вітчизняний експерс"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:178
+#, python-format
+msgid "No service available for the selected product"
+msgstr "Немає доступної послуги для вибраного товару"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:81
+#, python-format
+msgid "No shipping available for the selected DHL product"
+msgstr "Немає доступної доставки для вибраного товару DHL "
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_image_format:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_package_dimension_unit
+msgid "Package Dimension Unit"
+msgstr "Одиниця виміру розмірів упаковки"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_package_weight_unit
+msgid "Package Weight Unit"
+msgstr "Одиниця виміру ваги упаковки"
+
+#. module: delivery_dhl
+#: model:ir.model,name:delivery_dhl.model_product_packaging
+msgid "Packaging"
+msgstr "Пакування"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:395
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Будь ласка, надішліть щонайменше один товар для доставки."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_package_weight_unit:0
+msgid "Pounds"
+msgstr "Фунти"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_product_code
+msgid "Product"
+msgstr "Товар"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_rating_ids
+msgid "Rating"
+msgstr "Оцінка"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_rating_last_value
+msgid "Rating Last Value"
+msgstr "Оцінювання останнього значення"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_rating_count
+msgid "Rating count"
+msgstr "Підрахунок оцінювання"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_rating_last_value
+msgid "Rating value: 0=Unhappy, 10=Happy"
+msgstr "Значення оцінювання: 0=Нещасливий, 10=Щасливий"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_dhl_region_code
+msgid "Region"
+msgstr "Регіон"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/delivery_dhl.py:84
+#, python-format
+msgid "Shipment created into DHL <br/> <b>Tracking Number : </b>%s"
+msgstr "Доставка створена в DHL <br/> <b>Номер відслідковування : </b>%s"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_size_x
+msgid "Size X"
+msgstr "Розмір X"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_size_y
+msgid "Size Y"
+msgstr "Розмір Y"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_style_ids
+msgid "Styles"
+msgstr "Стилі"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_alternative_product_ids
+msgid ""
+"Suggest more expensive alternatives to your customers (upsell strategy). "
+"Those products show up on the product page."
+msgstr ""
+"Запропонуйте дорожчі альтернативи для ваших клієнтів (стратегія підвищення)."
+" Ці товари відображаються на сторінці продукту."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_product_code:0
+msgid "T - Express 12:00"
+msgstr "T - Express 12:00"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:383
+#, python-format
+msgid ""
+"The address of the custommer is missing or wrong (Missing field(s) :\n"
+" %s)"
+msgstr ""
+"Немає адреси клієнта або вона неправильна (відсутнє поле(я) :\n"
+" %s)"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:391
+#, python-format
+msgid ""
+"The address of your company warehouse is missing or wrong (Missing field(s) :\n"
+" %s)"
+msgstr ""
+"Відсутня адреса складу вашої компанії або вона неправильна (відсутнє поле(я) :\n"
+" %s)"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/dhl_request.py:397
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr ""
+"Оцінювана вартість не може бути обчислена, оскільки вага вашого товару "
+"відсутня."
+
+#. module: delivery_dhl
+#: model:ir.model.fields,help:delivery_dhl.field_delivery_carrier_website_url
+msgid "The full URL to access the document through the website."
+msgstr "URL-адреса повністю, для доступу до документації через сайт"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_published
+msgid "Visible in Website"
+msgstr "Видимий на сайті"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_message_ids
+msgid "Website Comments"
+msgstr "Коментарі вебсайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_public_categ_ids
+msgid "Website Product Category"
+msgstr "Категорія товару на сайті"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_sequence
+msgid "Website Sequence"
+msgstr "Послідовність веб-сайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_url
+msgid "Website URL"
+msgstr "URL сайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_meta_description
+msgid "Website meta description"
+msgstr "Мета-опис сайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Мета-ключі сайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_meta_title
+msgid "Website meta title"
+msgstr "Мета-заголовок сайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_price
+msgid "Website price"
+msgstr "Ціна веб-сайту"
+
+#. module: delivery_dhl
+#: model:ir.model.fields,field_description:delivery_dhl.field_delivery_carrier_website_public_price
+msgid "Website public price"
+msgstr "Відкрита ціна веб-сайту"
+
+#. module: delivery_dhl
+#: code:addons/delivery_dhl/models/delivery_dhl.py:102
+#, python-format
+msgid "You can't cancel DHL shipping without pickup date."
+msgstr "Ви не можете закрити доставку DHL без дати отримання."
+
+#. module: delivery_dhl
+#: selection:delivery.carrier,dhl_label_image_format:0
+msgid "ZPL2"
+msgstr "ZPL2"

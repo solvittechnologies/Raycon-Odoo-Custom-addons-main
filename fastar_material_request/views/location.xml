@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+
+    <record id="stock_location_extention" model="ir.ui.view">
+      <field name="name">stock.location.extention</field>
+      <field name="model">stock.location</field>
+      <field name="inherit_id" ref="stock.view_location_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='return_location']" position="after">
+          <field name="store_keeper" string="Store Keeper"/>
+          <field name="project_manager" string="Project Manager"/>
+
+        </xpath>
+      </field>
+    </record>
+
+    </data>
+
+</odoo>

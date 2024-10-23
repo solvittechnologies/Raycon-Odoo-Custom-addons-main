@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_invoice_supplier_tree_inherit_total" model="ir.ui.view">
+            <field name="name">view.invoice.supplier.tree.inherit.total</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_tree"/>
+            <field name="arch" type="xml">
+                <field name="amount_total_signed" position="replace">
+                    <field name="amount_total" string="Total" sum="Total"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_account_invoice_bill_form_inherit_delivery" model="ir.ui.view">
+            <field name="name">view.account.invoice.bill.form.inherit.delivery</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <!--<xpath expr="//field[@name='amount_tax']" position="after">
+                    <field name="delivery_cost"/>
+                </xpath>-->
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="after">
+                    <field name="discount_type"/>
+                    <field name="discount_rate" attrs="{'invisible':[('discount_type', '=', 'amount')]}"/>
+                    <field name="discount_fixed" attrs="{'invisible':[('discount_type', '=', 'percentage')]}"/>
+                    <field name="delivery_cost"/>
+                </xpath>
+                <xpath expr="//field[@name='partner_bank_id']" position="after">
+                    <field name="bank_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_account_invoice_form_inherit_delivery" model="ir.ui.view">
+            <field name="name">view.account.invoice.form.inherit.delivery</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="after">
+                    <field name="discount_type"/>
+                    <field name="discount_rate" attrs="{'invisible':[('discount_type', '=', 'amount')]}"/>
+                    <field name="discount_fixed" attrs="{'invisible':[('discount_type', '=', 'percentage')]}"/>
+                </xpath>
+                <xpath expr="//group[@class='oe_subtotal_footer oe_right']/field[@name='amount_total']" position="after">
+				<field name="amount_total_words"/>
+			</xpath>
+            </field>
+        </record>
+
+        <template id="invoice_report_inherit_delivery" inherit_id="account.report_invoice_document">
+            <!--<xpath expr="//tr[@class='border-black o_total']" position="before">
+                <tr style="">
+                    <td><strong>Delivery</strong></td>
+                    <td class="text-right">
+                        <span t-field="o.delivery_cost"/>
+                    </td>
+                </tr>
+            </xpath>-->
+            <xpath expr="//thead/tr/th[5]" position="after">
+                <th>Delivery</th>
+            </xpath>
+            <xpath expr="//tbody[@class='invoice_tbody']//tr//td[5]" position="after">
+                <td><span t-field="line.delivery_cost"/></td>
+            </xpath>
+        </template>
+    </data>
+</odoo>

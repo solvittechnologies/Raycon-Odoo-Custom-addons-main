@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="helpdesk_team_view_form_inherit_website_helpdesk_livechat" model="ir.ui.view">
+        <field name="name">helpdesk.team.form.inherit.website.livechat.helpdesk</field>
+        <field name="model">helpdesk.team</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='im_livechat']" position="replace">
+                <hr class="mt8 mb8"/>
+                <div class="text-warning mb4" attrs="{'invisible': ['|', ('feature_livechat_channel_id','!=',False), ('use_website_helpdesk_livechat', '=', False)]}">
+                    Save this page to activate the feature
+                </div>
+                <div attrs="{'invisible': ['|', ('feature_livechat_channel_id','=',False), ('use_website_helpdesk_livechat', '=', False)]}">
+                    <p>
+                        Test the livechat widget from this page:<br/>
+                        ⇒ <field name="feature_livechat_web_page" readonly="1" class="oe_inline" widget="url"/>
+                    </p>
+                    <p>
+                        Setup the
+                        <strong>
+                            <field name="feature_livechat_channel_id" readonly="1" class="oe_online"/>
+                        </strong>
+                        channel to define auto-popup rules and geolocation filters.
+                    </p>
+                </div>
+            </xpath>
+            <xpath expr="//div[@id='sla']" position="after">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"/>
+                        <div class="form-control" style="float: none;">
+                            <span class="fa fa-3x fa-ellipsis-h pull-right"/>
+                            <label string="Canned Responses"/>
+                            <div class="text-muted">
+                                Predefined answers available in the message composer (e.g.: ":hello")
+                            </div>
+                            <div>
+                                <hr class="mt8 mb8"/>
+                                <button name="%(im_livechat.im_livechat_canned_response_action)d" type="action" string="Configure Canned Responses" class="btn-link"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

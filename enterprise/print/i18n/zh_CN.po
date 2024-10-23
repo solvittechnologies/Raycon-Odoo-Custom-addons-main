@@ -1,0 +1,613 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# liAnGjiA <liangjia@qq.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: liAnGjiA <liangjia@qq.com>, 2016\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: print
+#: model:mail.template,body_html:print.print_user_notify_failed_email_template
+msgid ""
+"\n"
+"                <body>\n"
+"                      <p>Dear ${object.partner_id.name},</p>\n"
+"\n"
+"                      <p>During the last process of \"Print and Send\" documents, some mistakes appear. Here is a list of the failed Print Order you authored.</p>\n"
+"                      <p>Please, some errors have been detected. You can find them in <i>Settings > Print Orders</i>.</p>\n"
+"\n"
+"                      % if ctx.get('print_errors'):\n"
+"                            <p>\n"
+"                            Print Order ID  |    Error Message <br/>\n"
+"                            -------------------------------------- <br/>\n"
+"                                  % for print_order_id, error_text in ctx.get('print_errors'):\n"
+"                                        ${print_order_id}    |    ${error_text} <br/>\n"
+"                                  % endfor\n"
+"                            </p>\n"
+"                      % endif\n"
+"                </body>\n"
+"              \n"
+"            "
+msgstr ""
+"\n"
+"                <body>\n"
+"                      <p>Dear ${object.partner_id.name},</p>\n"
+"\n"
+"                      <p>During the last process of \"Print and Send\" documents, some mistakes appear. Here is a list of the failed Print Order you authored.</p>\n"
+"                      <p>Please, some errors have been detected. You can find them in <i>Settings > Print Orders</i>.</p>\n"
+"\n"
+"                      % if ctx.get('print_errors'):\n"
+"                            <p>\n"
+"                            Print Order ID  |    Error Message <br/>\n"
+"                            -------------------------------------- <br/>\n"
+"                                  % for print_order_id, error_text in ctx.get('print_errors'):\n"
+"                                        ${print_order_id}    |    ${error_text} <br/>\n"
+"                                  % endfor\n"
+"                            </p>\n"
+"                      % endif\n"
+"                </body>\n"
+"              \n"
+"            "
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid ""
+"<b> Credit error :</b> Your Provider Credit account is negative. Please "
+"refill your provider account to send documents."
+msgstr "<b> 信贷错误 :</b> 你的供应商信用账户是负的。请发送文件来补充提供者账户。"
+
+#. module: print
+#: code:addons/print/wizard/print_order_wizard.py:63
+#, python-format
+msgid "At least one of the document you want to send contains a mistake."
+msgstr "至少有一个你要发出的文档有错误"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_user_id
+msgid "Author"
+msgstr "作者"
+
+#. module: print
+#: selection:print.order,ink:0 selection:print.order.wizard,ink:0
+msgid "Black & White"
+msgstr "黑白"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_city
+msgid "City"
+msgstr "城市"
+
+#. module: print
+#: selection:print.order,ink:0 selection:print.order.wizard,ink:0
+msgid "Colour"
+msgstr "彩色"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Compute price"
+msgstr "计算价格"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_price
+msgid "Cost to Deliver"
+msgstr "送货费用"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_country_id
+msgid "Country"
+msgstr "国家"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_create_uid
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_create_uid
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_create_uid
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_create_uid
+#: model:ir.model.fields,field_description:print.field_print_provider_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_create_date
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_create_date
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_create_date
+#: model:ir.model.fields,field_description:print.field_print_provider_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_create_date
+msgid "Creation Date"
+msgstr "创建日期"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_provider_balance
+msgid "Credit"
+msgstr "Credit"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_currency_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_currency_id
+msgid "Currency"
+msgstr "币种"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_base_config_settings_default_print_provider
+msgid "Default Print Provider"
+msgstr "默认的打印服务商"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_mixin_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_display_name
+#: model:ir.model.fields,field_description:print.field_print_provider_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Document Detail"
+msgstr "文档详情"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_environment
+#: model:ir.model.fields,field_description:print.field_print_provider_environment
+msgid "Environment"
+msgstr "环境"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_error_message
+msgid "Error"
+msgstr "错误"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_error_message
+msgid "Error Message"
+msgstr "错误消息"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Failed"
+msgstr "失败的"
+
+#. module: print
+#: model:mail.template,subject:print.print_user_notify_failed_email_template
+msgid "Failed Print Orders"
+msgstr "失败的打印订单"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Group By..."
+msgstr "分组..."
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_mixin_id
+#: model:ir.model.fields,field_description:print.field_print_order_id
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_id
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_id
+#: model:ir.model.fields,field_description:print.field_print_provider_id
+msgid "ID"
+msgstr "ID"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_ink
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_ink
+msgid "Ink"
+msgstr "喷墨"
+
+#. module: print
+#: model:ir.model,name:print.model_account_invoice
+msgid "Invoice"
+msgstr "发票"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_res_partner_has_address
+msgid "Is address valid"
+msgstr "有效地址"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_mixin___last_update
+#: model:ir.model.fields,field_description:print.field_print_order___last_update
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard___last_update
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard___last_update
+#: model:ir.model.fields,field_description:print.field_print_order_wizard___last_update
+#: model:ir.model.fields,field_description:print.field_print_provider___last_update
+msgid "Last Modified on"
+msgstr "最后修改日"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_account_invoice_print_sent_date
+#: model:ir.model.fields,field_description:print.field_print_mixin_print_sent_date
+#: model:ir.model.fields,field_description:print.field_sale_order_print_sent_date
+msgid "Last Postal Sent Date"
+msgstr "最后信息日期"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_last_send_date
+msgid "Last Send Date"
+msgstr "上一次发送日期"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_write_uid
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_write_uid
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_write_uid
+#: model:ir.model.fields,field_description:print.field_print_order_write_uid
+#: model:ir.model.fields,field_description:print.field_print_provider_write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_write_date
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_write_date
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_write_date
+#: model:ir.model.fields,field_description:print.field_print_order_write_date
+#: model:ir.model.fields,field_description:print.field_print_provider_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_print_order_line_wizard_ids
+msgid "Lines"
+msgstr "明细行"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_res_model
+msgid "Model Name"
+msgstr "模型名称"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "My Print Orders"
+msgstr "我的打印订单"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_name
+#: model:ir.model.fields,field_description:print.field_print_provider_name
+msgid "Name"
+msgstr "名字"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_nbr_pages
+msgid "Number of Pages"
+msgstr "页数"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_res_id
+msgid "Object ID"
+msgstr "对象ID"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Order Information"
+msgstr "订单信息"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+msgid "Orders"
+msgstr "订单"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Orders Failed"
+msgstr "订单失败"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Orders Waiting"
+msgstr "订单等待中"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_attachment_id
+msgid "PDF"
+msgstr "PDF"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_paper_weight
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_paper_weight
+msgid "Paper Weight"
+msgstr "纸张重量"
+
+#. module: print
+#: model:ir.model,name:print.model_res_partner
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Partner"
+msgstr "合作伙伴"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Postal Order"
+msgstr "邮寄订单"
+
+#. module: print
+#: model:ir.ui.menu,name:print.root_print_menu
+msgid "Postal Printings"
+msgstr "邮寄打印"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_provider_view_form
+#: model:ir.ui.view,arch_db:print.print_provider_view_tree
+msgid "Postal Provider"
+msgstr "邮寄服务商"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "Postal Wizard Order"
+msgstr "邮寄向导订单"
+
+#. module: print
+#: model:ir.model,name:print.model_print_mixin
+msgid "Print Mixin (Printable Object)"
+msgstr "打印mixin（可打印对象）"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order
+msgid "Print Order"
+msgstr "打印订单"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_line_wizard_view_tree
+msgid "Print Order Lines"
+msgstr "打印订单行"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_print_order_wizard_id
+msgid "Print Order Wizard"
+msgstr "打印订单向导"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_action
+#: model:ir.ui.menu,name:print.print_order_menu
+#: model:ir.ui.view,arch_db:print.print_order_view_tree
+msgid "Print Orders"
+msgstr "打印订单"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_provider_action
+#: model:ir.model,name:print.model_print_provider
+#: model:ir.model.fields,field_description:print.field_print_order_provider_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_id
+#: model:ir.ui.menu,name:print.print_provider_menu
+msgid "Print Provider"
+msgstr "打印服务商"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_print_order_ids
+msgid "Print order ids"
+msgstr "打印订单ids"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Printing Detail"
+msgstr "打印详情"
+
+#. module: print
+#: selection:print.provider,environment:0
+msgid "Production"
+msgstr "生产"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_provider_provider
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Provider"
+msgstr "服务商"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_balance
+msgid "Provider Credit"
+msgstr "服务商信用"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_provider_view_form
+msgid "Provider Information"
+msgstr "供应商信息"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Ready"
+msgstr "就绪"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Recipient Address"
+msgstr "收件地址"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_partner_id
+#: model:ir.model.fields,field_description:print.field_print_order_partner_id
+msgid "Recipient partner"
+msgstr "收件人"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Reset to Draft"
+msgstr "重置为草稿"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_res_id
+msgid "Resource ID"
+msgstr "资源ID"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_res_model
+msgid "Resource Model"
+msgstr "资源模型"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "Send"
+msgstr "发送"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_wizard_action_multi_print
+msgid "Send Invoices by post"
+msgstr "邮递发票"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.account_invoice_view_form_inherit_print
+msgid "Send Letter"
+msgstr "发送信函"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Send Now"
+msgstr "现在发送"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+msgid "Send Now Postal Wizard Order"
+msgstr "现在发送快递向导单"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_sendnow_action_multi
+msgid "Send Now by post"
+msgstr "立即快递发送"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_wizard_action
+msgid "Send by Post"
+msgstr "邮递"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_sent_date
+msgid "Sending Date"
+msgstr "发送日期"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Sent"
+msgstr "送出"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_state
+#: model:ir.model.fields,field_description:print.field_print_order_partner_state_id
+msgid "State"
+msgstr "省份"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_state
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Status"
+msgstr "状态"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_street
+msgid "Street"
+msgstr "街道"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_street2
+msgid "Street2"
+msgstr "街道 2"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Technical Informations"
+msgstr "技术信息"
+
+#. module: print
+#: selection:print.provider,environment:0
+msgid "Test"
+msgstr "测试"
+
+#. module: print
+#: code:addons/print/models/print_provider.py:191
+#, python-format
+msgid ""
+"The document has no associated PDF : you have to give select an Attachment "
+"file, or set up the Object ID and Model Name fields."
+msgstr "这张单子没有相关的PDF:有必须要选定一个附件或者设置对象ID和模型名字字段"
+
+#. module: print
+#: code:addons/print/models/print_provider.py:186
+#, python-format
+msgid ""
+"The document you want to print and send is not printable. There is no report"
+" action (ir.actions.report.xml) for the model %s."
+msgstr "你想要打印并发送的单子不可打印。模型%s没有报表动作（ir.actions.report.xml）"
+
+#. module: print
+#: code:addons/print/wizard/print_order_wizard.py:61
+#, python-format
+msgid "The document you want to send contains the following mistake : %s"
+msgstr "你想要发送的文档包含以下错误：%s"
+
+#. module: print
+#: code:addons/print/models/account_invoice.py:20
+#, python-format
+msgid ""
+"This invoice was sent by post with the provider %(provider_name)s at the "
+"following address.                     <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s %(partner_zip)s"
+"                     <br/>%(partner_country)sprovider_name<i>%s</i>"
+msgstr ""
+"这张发票被快递 %(provider_name)s发送给以下地址 <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s %(partner_zip)s"
+"                     <br/>%(partner_country)sprovider_name<i>%s</i>"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_provider_view_form
+msgid "Update"
+msgstr "更新"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "When the error is resolved, please click on 'Reset to draft'."
+msgstr "问题解决后，然后点击‘重设为草稿’"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_zip
+msgid "Zip"
+msgstr "邮政编码"
+
+#. module: print
+#: model:ir.model,name:print.model_base_config_settings
+msgid "base.config.settings"
+msgstr "base.config.settings"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "or"
+msgstr "或"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order_line_wizard
+msgid "print.order.line.wizard"
+msgstr "print.order.line.wizard"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order_sendnow_wizard
+msgid "print.order.sendnow.wizard"
+msgstr "print.order.sendnow.wizard"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order_wizard
+msgid "print.order.wizard"
+msgstr "print.order.wizard"

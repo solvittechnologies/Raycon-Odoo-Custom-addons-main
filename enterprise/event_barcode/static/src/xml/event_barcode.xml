@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+
+    <t t-name="event_barcode_template">
+        <div class="o_event_barcode_bg">
+            <div class="o_event_barcode_detail text-center mt32">
+                <div class="col-md-3 col-xs-12 o_event_date">
+                    <span class="o_event_day mt24"><t t-esc="widget.data.date"/></span>
+                    <span class="o_event_month"><t t-esc="widget.data.month"/></span>
+                </div>
+                <div class="col-md-6 col-xs-9 o_event_info text-center">
+                    <div class="o_event_info_name text-center">
+                        <h2 class="o_event_title"><t t-esc="widget.data.name"/></h2>
+                        <p class="o_event_desc">
+                            <t t-if="widget.data.city and widget.data.country">
+                                <t t-esc="widget.data.city"/> - <t t-esc="widget.data.country"/>
+                            </t>
+                            <t t-if="widget.data.city and !widget.data.country" t-esc="widget.data.city"/>
+                            <t t-if="widget.data.country and !widget.data.city" t-esc="widget.data.country"/>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 o_event_social">
+                    <div class="o_event_reg_attendee">0</div>
+                    <div class="o_event_total_attendee">
+                        <t t-esc="widget.data.total_attendee"/>
+                    </div>
+                </div>
+            </div>
+            <div class="o_event_barcode_main mt16 mb16">
+                <h1 class="mt0">Barcode Scanning</h1>
+                <img class="mt16" src="/event_barcode/static/img/barcode.png"/>
+                <input class="mt32" type="text" id="event_barcode" placeholder="Waiting for barcode scan..." size="40"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="event_barcode_success">
+        <div class="o_notification o_event_success" t-translation="off">
+            <a t-if="widget.sticky" class="fa fa-times o_close" href="#"/>
+            <div class="o_notification_title">
+                <span class="o_icon fa fa-3x fa-thumbs-up"/>
+                <t t-raw="widget.title"/>
+            </div>
+        </div>
+    </t>
+
+</templates>

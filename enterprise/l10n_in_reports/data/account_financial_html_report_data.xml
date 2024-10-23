@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_financial_report_l10n_in_report" model="account.financial.html.report">
+        <field name="name">Tax</field>
+        <field name="report_type">no_date_range</field>
+        <field name='parent_id' ref='l10n_in.account_reports_in_statements_menu'/>
+        <field name="tax_report" eval="1"/>
+    </record>
+    <record id="account_financial_report_l10n_in_line_0" model="account.financial.html.report.line">
+        <field name="name">Tax to Pay</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_in_report"/>
+        <field name="level" eval="0" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INTAXPAY</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INCFORM.balance+INEXCDUTY.balance+INSALETAX.balance+INSERTAX.balance+INVAT.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_1" model="account.financial.html.report.line">
+        <field name="name">C Forms</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_0"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INCFORM</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INCFORMSALE.balance+INCFORMPURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_2" model="account.financial.html.report.line">
+        <field name="name">C Forms Tax Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_1"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INCFORMSALE</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_03')]), ('credit', '>', 0)]" />
+        <field name="formulas">balance = sum.credit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_3" model="account.financial.html.report.line">
+        <field name="name">C Forms Tax Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_1"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INCFORMPURCHASE</field>
+        <field name="show_domain">never</field>
+                <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_04')]), ('debit', '>', 0)]" />
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_4" model="account.financial.html.report.line">
+        <field name="name">Excise Duty</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_0"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INEXCDUTY</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INEXCDUTY12_36.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_5" model="account.financial.html.report.line">
+        <field name="name">Excise Duty 12.36%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_4"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INEXCDUTY12_36</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INEXCDUTY12_36SALES.balance+INEXCDUTY12_36EDUCESS2SALES.balance+INEXCDUTY12_36HIGEDUCESS1SALES.balance+INEXCDUTY12_36PURCHASE.balance+INEXCDUTY12_36EDUCESS2PURCHASE.balance+INEXCDUTY12_36HIGEDUCESS1PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_6" model="account.financial.html.report.line">
+        <field name="name">Excise Duty Collected on Sales</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_5"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INEXCDUTY12_36SALES</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_07')]), ('credit', '>', 0)]" />
+        <field name="formulas">balance = sum.credit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_7" model="account.financial.html.report.line">
+        <field name="name">Education Cess 2% Excise Duty Collected on Sales</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_5"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INEXCDUTY12_36EDUCESS2SALES</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_08')]), ('credit', '>', 0)]" />
+        <field name="formulas">balance = sum.credit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_8" model="account.financial.html.report.line">
+        <field name="name">Higher Education Cess 1% Excise Duty Collected on Sales</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_5"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="3"/>
+        <field name="code">INEXCDUTY12_36HIGEDUCESS1SALES</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_09')]), ('credit', '>', 0)]" />
+        <field name="formulas">balance = sum.credit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_9" model="account.financial.html.report.line">
+        <field name="name">Excise Duty Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_5"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="4"/>
+        <field name="code">INEXCDUTY12_36PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_10')]), ('debit', '>', 0)]" />
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_10" model="account.financial.html.report.line">
+        <field name="name">Education Cess 2% Excise Duty Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_5"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="5"/>
+        <field name="code">INEXCDUTY12_36EDUCESS2PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_11')]), ('debit', '>', 0)]" />
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_11" model="account.financial.html.report.line">
+        <field name="name">Higher Education Cess 1% Excise Duty Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_5"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="6"/>
+        <field name="code">INEXCDUTY12_36HIGEDUCESS1PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_12')]), ('debit', '>', 0)]" />
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_12" model="account.financial.html.report.line">
+        <field name="name">Sales Tax</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_0"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="3"/>
+        <field name="code">INSALETAX</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = INSALESTAX4.balance+INSALESTAX12.balance+INSALESTAX15.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_13" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 4%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_12"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INSALESTAX4</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = INSALESTAX4SALE.balance+INSALESTAX4PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_14" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 4% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_13"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INSALESTAX4SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_15')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_15" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 4% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_13"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INSALESTAX4PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_16')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_16" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 12%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_12"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INSALESTAX12</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = INSALESTAX12SALE.balance+INSALESTAX12PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_17" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 12% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_16"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INSALESTAX12SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_18')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_18" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 12% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_16"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INSALESTAX12PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_19')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_19" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 15%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_12"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="3"/>
+        <field name="code">INSALESTAX15</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INSALESTAX15SALE.balance+INSALESTAX15PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_20" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 15% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_19"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INSALESTAX15SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_21')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_21" model="account.financial.html.report.line">
+        <field name="name">Sales Tax 15% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_19"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INSALESTAX15PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_22')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_22" model="account.financial.html.report.line">
+        <field name="name">Service Tax</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_0"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="4"/>
+        <field name="code">INSERTAX</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INSERTAX12_36.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_23" model="account.financial.html.report.line">
+        <field name="name">Service Tax 12.36%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_22"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INSERTAX12_36</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INSERTAX12_36SALES.balance+INSERTAX12_36EDUCESS2SALES.balance+INSERTAX12_36HIGHEDUCESS1SALES.balance+INSERTAX12_36PURCHASE.balance+INSERTAX12_36EDUCESS2PURCHASE.balance+INSERTAX12_36EDUCESS1PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_24" model="account.financial.html.report.line">
+        <field name="name">Service Tax Collected on Sales of Services</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_23"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INSERTAX12_36SALES</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_25')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_25" model="account.financial.html.report.line">
+        <field name="name">Education Cess 2% Service Tax Collected on Sales of Services</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_23"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INSERTAX12_36EDUCESS2SALES</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_26')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_26" model="account.financial.html.report.line">
+        <field name="name">Higher Education Cess 1% Service Tax Collected on Sales of Services</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_23"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="3"/>
+        <field name="code">INSERTAX12_36HIGHEDUCESS1SALES</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_27')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_27" model="account.financial.html.report.line">
+        <field name="name">Service Tax Paid on Purchase of Services</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_23"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="4"/>
+        <field name="code">INSERTAX12_36PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_28')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_28" model="account.financial.html.report.line">
+        <field name="name">Education Cess 2% Service Tax Paid on Purchase of Services</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_23"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="5"/>
+        <field name="code">INSERTAX12_36EDUCESS2PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_29')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_29" model="account.financial.html.report.line">
+        <field name="name">Higher Education Cess 1% Service Tax Paid on Purchase of Services</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_23"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="6"/>
+        <field name="code">INSERTAX12_36EDUCESS1PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_30')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_30" model="account.financial.html.report.line">
+        <field name="name">VAT</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_0"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="5"/>
+        <field name="code">INVAT</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INVAT4.balance+INVAT8.balance+INVAT10.balance+INVAT12_5.balance+INADDVAT1.balance+INADDVAT2_5.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_31" model="account.financial.html.report.line">
+        <field name="name">VAT 4%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_30"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT4</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INVAT4SALE.balance+INVAT4PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_32" model="account.financial.html.report.line">
+        <field name="name">VAT 4% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_31"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT4SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_33')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_33" model="account.financial.html.report.line">
+        <field name="name">VAT 4% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_31"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INVAT4PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_34')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_34" model="account.financial.html.report.line">
+        <field name="name">VAT 8%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_30"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT8</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INVAT8SALE.balance+INVAT8PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_35" model="account.financial.html.report.line">
+        <field name="name">VAT 8% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_34"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT8SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_36')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_36" model="account.financial.html.report.line">
+        <field name="name">VAT 8% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_34"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INVAT8PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_37')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_37" model="account.financial.html.report.line">
+        <field name="name">VAT 10%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_30"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT10</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INVAT10SALE.balance+INVAT10PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_38" model="account.financial.html.report.line">
+        <field name="name">VAT 10% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_37"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT10SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_39')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_39" model="account.financial.html.report.line">
+        <field name="name">VAT 10% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_37"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INVAT10PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_40')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_40" model="account.financial.html.report.line">
+        <field name="name">VAT 12.5%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_30"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT12_5</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INVAT12_5SALE.balance+INVAT12_5PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_41" model="account.financial.html.report.line">
+        <field name="name">VAT 12.5% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_40"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INVAT12_5SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_42')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_42" model="account.financial.html.report.line">
+        <field name="name">VAT 12.5% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_40"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INVAT12_5PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_43')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_43" model="account.financial.html.report.line">
+        <field name="name">Additional VAT 1%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_30"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INADDVAT1</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INADDVAT1SALE.balance+INADDVAT1PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_44" model="account.financial.html.report.line">
+        <field name="name">Additional VAT 1% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_43"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INADDVAT1SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_45')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_45" model="account.financial.html.report.line">
+        <field name="name">Additional VAT 1% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_43"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INADDVAT1PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_46')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_46" model="account.financial.html.report.line">
+        <field name="name">Additional VAT 2.5%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_30"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INADDVAT2_5</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INADDVAT2_5SALE.balance+INADDVAT2_5PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_47" model="account.financial.html.report.line">
+        <field name="name">Additional VAT 2.5% Collected on Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_46"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INADDVAT2_5SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_48')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_48" model="account.financial.html.report.line">
+        <field name="name">Additional VAT 2.5% Paid on Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_46"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INADDVAT2_5PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_in.st_tag_in_49')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_49" model="account.financial.html.report.line">
+        <field name="name">Tax Bases</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_in_report"/>
+        <field name="level" eval="0" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INTAXBASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASECFORM.balance+INBASEEXCDUTY.balance+INBASESALETAX.balance+INBASESERTAX.balance+INBASEVAT.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_50" model="account.financial.html.report.line">
+        <field name="name">Base C Forms</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_49"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASECFORM</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASECFORMSALE.balance+INBASECPURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_51" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_50"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASECFORMSALE</field>
+        <field name="show_domain">never</field>
+                <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_52')]), ('credit', '>', 0)]" />
+        <field name="formulas">balance = sum.credit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_52" model="account.financial.html.report.line">
+        <field name="name">Base of  Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_50"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASECPURCHASE</field>
+        <field name="show_domain">never</field>
+                <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_53')]), ('debit', '>', 0)]" />
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_53" model="account.financial.html.report.line">
+        <field name="name">Base Excise Duty</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_49"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEEXCDUTY</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEEXCDUTY12_36.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_54" model="account.financial.html.report.line">
+        <field name="name">Base Excise Duty 12.36%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_53"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEEXCDUTY12_36</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEEXCDUTY12_36SALE.balance+INBASEEXCDUTY12_36PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_55" model="account.financial.html.report.line">
+        <field name="name">Base of  Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_54"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEEXCDUTY12_36SALE</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_56')]), ('credit', '>', 0)]" />
+        <field name="formulas">balance = sum.credit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_56" model="account.financial.html.report.line">
+        <field name="name">Base of  Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_54"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEEXCDUTY12_36PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_57')]), ('debit', '>', 0)]" />
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_57" model="account.financial.html.report.line">
+        <field name="name">Base Sales Tax</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_49"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="3"/>
+        <field name="code">INBASESALETAX</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASESALETAX4.balance+INBASESALETAX12.balance+INBASESALETAX15.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_58" model="account.financial.html.report.line">
+        <field name="name">Base Sales Tax 4%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_57"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESALETAX4</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASESALETAX4SALE.balance+INBASESALETAX4PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_59" model="account.financial.html.report.line">
+        <field name="name">Base of  Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_58"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESALETAX4SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_60')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_60" model="account.financial.html.report.line">
+        <field name="name">Base of  Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_58"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASESALETAX4PURCHASE</field>
+        <field name="show_domain">never</field>
+         <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_61')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_61" model="account.financial.html.report.line">
+        <field name="name">Base Sales Tax 12%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_57"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESALETAX12</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASESALETAX12SALE.balance+INBASESALETAX12PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_62" model="account.financial.html.report.line">
+        <field name="name">Base of  Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_61"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESALETAX12SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_63')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_63" model="account.financial.html.report.line">
+        <field name="name">Base of  Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_61"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASESALETAX12PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_64')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_64" model="account.financial.html.report.line">
+        <field name="name">Base Sales Tax 15%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_57"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESALETAX15</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASESALETAX15SALE.balance+INBASESALETAX15PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_65" model="account.financial.html.report.line">
+        <field name="name">Base of  Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_64"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESALETAX15SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_66')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_66" model="account.financial.html.report.line">
+        <field name="name">Base of  Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_64"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASESALETAX15PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_67')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_67" model="account.financial.html.report.line">
+        <field name="name">Base Service Tax</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_49"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="4"/>
+        <field name="code">INBASESERTAX</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASESERTAX12_36.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_68" model="account.financial.html.report.line">
+        <field name="name">Base Service Tax 12.36%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_67"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESERTAX12_36</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASESERTAX12_36SALE.balance+INBASESERTAX12_36PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_69" model="account.financial.html.report.line">
+        <field name="name">Base of  Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_68"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASESERTAX12_36SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_70')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_70" model="account.financial.html.report.line">
+        <field name="name">Base of  Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_68"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASESERTAX12_36PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_71')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_71" model="account.financial.html.report.line">
+        <field name="name">Base VAT</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_49"/>
+        <field name="level" eval="1" />
+        <field name="sequence" eval="5"/>
+        <field name="code">INBASEVAT</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEVAT4.balance+INBASEVAT8.balance+INBASEVAT10.balance+INBASEVAT12_5.balance+INBASEADDVAT1.balance+INBASEADDVAT2_5.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_72" model="account.financial.html.report.line">
+        <field name="name">Base VAT 4%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_71"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT4</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEVAT4SALE.balance+INBASEVAT4PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_73" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_72"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT4SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_74')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_74" model="account.financial.html.report.line">
+        <field name="name">Base of Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_72"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEVAT4PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_75')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_75" model="account.financial.html.report.line">
+        <field name="name">Base VAT 8%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_71"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT8</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEVAT8SALE.balance+INBASEVAT8PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_76" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_75"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT8SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_77')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_77" model="account.financial.html.report.line">
+        <field name="name">Base of Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_75"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEVAT8PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_78')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_78" model="account.financial.html.report.line">
+        <field name="name">Base VAT 10%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_71"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT10</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEVAT10SALE.balance+INBASEVAT10PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_79" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_78"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT10SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_80')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_80" model="account.financial.html.report.line">
+        <field name="name">Base of Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_78"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEVAT10PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_81')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_81" model="account.financial.html.report.line">
+        <field name="name">Base VAT 12.5%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_71"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT12_5</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEVAT12_5SALE.balance+INBASEVAT12_5PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_82" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_81"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEVAT12_5SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_83')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_83" model="account.financial.html.report.line">
+        <field name="name">Base of Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_81"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEVAT12_5PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_84')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_84" model="account.financial.html.report.line">
+        <field name="name">Base Additional VAT 1%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_71"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEADDVAT1</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEADDVAT1SALE.balance+INBASEADDVAT1PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_85" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_84"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEADDVAT1SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_86')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_86" model="account.financial.html.report.line">
+        <field name="name">Base of Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_84"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEADDVAT1PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_87')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_l10n_in_line_87" model="account.financial.html.report.line">
+        <field name="name">Base Additional VAT 2.5%</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_71"/>
+        <field name="level" eval="2" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEADDVAT2_5</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance=INBASEADDVAT2_5SALE.balance+INBASEADDVAT2_5PURCHASE.balance</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_88" model="account.financial.html.report.line">
+        <field name="name">Base of Sale</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_87"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="1"/>
+        <field name="code">INBASEADDVAT2_5SALE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = sum.credit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_89')]), ('credit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="account_financial_report_l10n_in_line_89" model="account.financial.html.report.line">
+        <field name="name">Base of Purchase</field>
+        <field name="parent_id" ref="account_financial_report_l10n_in_line_87"/>
+        <field name="level" eval="3" />
+        <field name="sequence" eval="2"/>
+        <field name="code">INBASEADDVAT2_5PURCHASE</field>
+        <field name="show_domain">never</field>
+        <field name="formulas">balance = - sum.debit</field>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_in.st_tag_in_90')]), ('debit', '>', 0)]" />
+        <field name="special_date_changer">strict_range</field>
+    </record>
+</odoo>

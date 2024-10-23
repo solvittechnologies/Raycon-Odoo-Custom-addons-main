@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fastra__pr__p_request_fastra__pr__p_request,fastra__pr__p_request.fastra__pr__p_request,model_fastra__pr__p_request_fastra__pr__p_request,,1,0,0,0

@@ -1,0 +1,1486 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_sign
+# 
+# Translators:
+# Martin Trigaux, 2017
+# odmunkh enkh-ochir <odmunkh0609@gmail.com>, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017
+# Adyasuren Amarsanaa <adyashde19@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:58+0000\n"
+"PO-Revision-Date: 2016-09-07 09:58+0000\n"
+"Last-Translator: Adyasuren Amarsanaa <adyashde19@gmail.com>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_sign
+#: model:mail.template,body_html:website_sign.website_sign_mail_template
+msgid ""
+"\n"
+"            <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>\n"
+"\n"
+"            <div style=\"width:90%; max-width:600px; margin:auto; font-size:10pt; padding:20px 0; font-family:'Lato', serif;\">\n"
+"                <div style=\"background-color:#EFEDED; padding: 20px;\">\n"
+"                    % if ctx['template_type'] == \"request\":\n"
+"                        ${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:#428BCA; text-decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}</a>) has requested your signature on this document :\n"
+"                    % endif\n"
+"                    % if ctx['template_type'] == \"follower\":\n"
+"                        ${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:#428BCA; text-decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}</a>) has added you as a Follower of this Signature Request :\n"
+"                    % endif\n"
+"                    % if ctx['template_type'] == \"completed\":\n"
+"                        This document has been completed and signed by everyone :\n"
+"                    % endif\n"
+"\n"
+"                    <h1 style=\"font-size:1.25em; margin:15px 0 25px 0;\">${object['reference']}</h1>\n"
+"                    \n"
+"                    <div style=\"margin:0 -15px\">\n"
+"                        <a style=\"float:left; display:inline-block; margin:0 15px 10px 15px; padding:5px 10px; border-radius: 3px; background-color:#5C6ED0; text-align:center; text-decoration:none; color:#F7FBFD;\" href=${ctx['link']}>\n"
+"                            % if ctx['template_type'] == \"request\":\n"
+"                                Sign Document Now\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"follower\":\n"
+"                                View Signature Request\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"completed\":\n"
+"                                View Signed Document\n"
+"                            % endif\n"
+"                        </a>\n"
+"                        \n"
+"                        <div style=\"font-size:0.8em; color:#999999; margin:0 15px 10px 15px\">\n"
+"                            % if ctx['template_type'] == \"request\":\n"
+"                                <strong style=\"font-weight:bold; color:black;\">Warning: do not forward this email to other people!</strong><br/>\n"
+"                                They will be able to access this document and sign it as yourself.\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"follower\":\n"
+"                                You will be notified once the document has been signed by everyone involved.\n"
+"                            % endif\n"
+"                        </div>\n"
+"                        <div style=\"clear:both;\"/>\n"
+"                    </div>\n"
+"                    \n"
+"                    % if ctx['msgbody']:\n"
+"                    <div style=\"background-color:white; padding:10px;\">\n"
+"                        ${ctx['msgbody']|safe}\n"
+"                    </div>\n"
+"                    % endif\n"
+"                </div>\n"
+"                \n"
+"                <div style=\"font-size:0.8em; margin-top:10px;\">\n"
+"                    <span style=\"color:#428BCA;\">Sent with <strong style=\"font-weight:bold;\">Odoo Sign</strong></span>\n"
+"                </div>\n"
+"            </div>\n"
+"        \n"
+"        "
+msgstr ""
+"\n"
+"            <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>\n"
+"\n"
+"            <div style=\"width:90%; max-width:600px; margin:auto; font-size:10pt; padding:20px 0; font-family:'Lato', serif;\">\n"
+"                <div style=\"background-color:#EFEDED; padding: 20px;\">\n"
+"                    % if ctx['template_type'] == \"request\":\n"
+"                        ${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:#428BCA; text-decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}</a>) дараах баримт дээр таны гарын үсгийг хүссэн :\n"
+"                    % endif\n"
+"                    % if ctx['template_type'] == \"follower\":\n"
+"                        ${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:#428BCA; text-decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}</a>) таныг дараах Гарын үсэг хүсэлтийн дагагчаар нэмсэн :\n"
+"                    % endif\n"
+"                    % if ctx['template_type'] == \"completed\":\n"
+"                        Энэ баримт нь дууссан ба бүгд гарын үсгээ зурсан байна :\n"
+"                    % endif\n"
+"\n"
+"                    <h1 style=\"font-size:1.25em; margin:15px 0 25px 0;\">${object['reference']}</h1>\n"
+"                    \n"
+"                    <div style=\"margin:0 -15px\">\n"
+"                        <a style=\"float:left; display:inline-block; margin:0 15px 10px 15px; padding:5px 10px; border-radius: 3px; background-color:#5C6ED0; text-align:center; text-decoration:none; color:#F7FBFD;\" href=${ctx['link']}>\n"
+"                            % if ctx['template_type'] == \"request\":\n"
+"                                Баримт дээр одоо гарын үсэг зурах\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"follower\":\n"
+"                                Гарын үсгийн хүсэлтийг үзэх\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"completed\":\n"
+"                                Гарын үсэг зурсан баримтыг үзэх\n"
+"                            % endif\n"
+"                        </a>\n"
+"                        \n"
+"                        <div style=\"font-size:0.8em; color:#999999; margin:0 15px 10px 15px\">\n"
+"                            % if ctx['template_type'] == \"request\":\n"
+"                                <strong style=\"font-weight:bold; color:black;\">Анхаар: Энэ имэйлийг өөр хүмүүс рүү илгээхийг хориглоно!</strong><br/>\n"
+"                                Тэд энэ баримт руу хандаж таны өмнөөс гарын үсэг зурах боломжтой болно.\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"follower\":\n"
+"                                Баримтад хамаатай бүх хүмүүс гарын үсэг зурж дуусмагц танд мэдэгдэх болно.\n"
+"                            % endif\n"
+"                        </div>\n"
+"                        <div style=\"clear:both;\"/>\n"
+"                    </div>\n"
+"                    \n"
+"                    % if ctx['msgbody']:\n"
+"                    <div style=\"background-color:white; padding:10px;\">\n"
+"                        ${ctx['msgbody']|safe}\n"
+"                    </div>\n"
+"                    % endif\n"
+"                </div>\n"
+"                \n"
+"                <div style=\"font-size:0.8em; margin-top:10px;\">\n"
+"                    <span style=\"color:#428BCA;\"><strong style=\"font-weight:bold;\">Odoo Sign</strong>-аас илгээв</span>\n"
+"                </div>\n"
+"            </div>\n"
+"        \n"
+"        "
+
+#. module: website_sign
+#: model:mail.template,subject:website_sign.website_sign_mail_template
+msgid "${ctx['subject']|safe}"
+msgstr "${ctx['subject']|safe}"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "<br/>(the email access has not been sent)"
+msgstr "<br/>(имэйлийн хандалт илгээгдээгүй)"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_item_type_view_form
+msgid "<span>(1.0 = full page size)</span>"
+msgstr "<span>(1.0 = бүрэн хуудсын хэмжээ)</span>"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1058
+#, python-format
+msgid "A copy has been sent to the new followers."
+msgstr "Хуулбарыг шинэ дагагчид руу илгээсэн."
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_search
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "Active"
+msgstr "Идэвхитэй"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:182
+#, python-format
+msgid "Add Initials"
+msgstr "Нэрийн эхний үсэг оруулах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:191
+#, python-format
+msgid "Add on all pages"
+msgstr "Бүх хуудас дээр нэмэх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:187
+#, python-format
+msgid "Add once"
+msgstr "Нэг удаа нэмэх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:709
+#, python-format
+msgid "Adopt Your Signature"
+msgstr "Гарын үсэг сонгох"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:714
+#, python-format
+msgid "Adopt and Sign"
+msgstr "Сонгоод зурах"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_kanban
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "Archive"
+msgstr "Хадгалах газар"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_archived
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_archived
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_search
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "Archived"
+msgstr "Архивласан"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_attachment_id
+msgid "Attachment"
+msgstr "Хавсралт"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:55
+#, python-format
+msgid "Auto"
+msgstr "Авто"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_auto_field
+msgid "Automatic Partner Field"
+msgstr "Автомат Харилцагч талбар"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:61
+#, python-format
+msgid ""
+"By clicking Adopt and Sign, I agree that the chosen signature/initials will "
+"be a valid electronic representation of my hand-written signature/initials "
+"for all purposes when it is used on documents, including legally binding "
+"contracts."
+msgstr ""
+"Сонгоод зурах дээр дарсанаар, сонгосон гарын үсэг/нэрийн эхний үсгүүд нь "
+"хууль ёсны заавал биелүүлэх гэрээ зэрэг баримтууд дээр бүх зорилгоор ашиглах"
+" үед миний гараар бичсэн гарын үсэг/нэрийн эхний үсгүүдийн зөв цахим "
+"төлөөлөл байх болно гэдгийг би зөвшөөрч байна."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:237
+#: code:addons/website_sign/static/src/js/website_sign_common.js:282
+#: code:addons/website_sign/static/src/js/website_sign_common.js:717
+#: code:addons/website_sign/static/src/js/website_sign_common.js:972
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+#, python-format
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1123
+#, python-format
+msgid "Cancel Request"
+msgstr "Хүсэлтийг Цуцлах"
+
+#. module: website_sign
+#: selection:signature.request,state:0
+msgid "Canceled"
+msgstr "Цуцлагдсан"
+
+#. module: website_sign
+#: code:addons/website_sign/models/signature_request.py:365
+#, python-format
+msgid "Canceled."
+msgstr "Цуцласан."
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_request_template_action
+#: model:ir.actions.act_window,name:website_sign.signature_request_template_with_archived_action
+msgid "Choose a Template"
+msgstr "Үлгэр сонгоно уу"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:53
+#, python-format
+msgid "Clear Signature"
+msgstr "Гарын үсгийг арилгах"
+
+#. module: website_sign
+#: model:ir.actions.act_window,help:website_sign.signature_request_action
+msgid ""
+"Click on <em>Request a Signature</em> to upload a template (or use an existing one) to automate\n"
+"                your signature process for employment contracts, trade sale, NDA to sign, ..."
+msgstr ""
+"<em>Гарын үсэг хүсэх</em> дээр дарж хөдөлмөрийн гэрээ, худалдааны борлуулалт, NDA, ... \n"
+"зэргийн гарын үсэг зурах явцыг автоматжуулахын тулд үлгэр ачааллаарай (эсвэл байгааг ашиглаарай)"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:857
+#, python-format
+msgid "Click to start"
+msgstr "Эхлэх бол дарна уу"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_color
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_color
+msgid "Color"
+msgstr "Өнгө"
+
+#. module: website_sign
+#: model:signature.item.party,name:website_sign.signature_item_party_company
+#: model:signature.item.type,name:website_sign.signature_item_type_company
+msgid "Company"
+msgstr "Компани"
+
+#. module: website_sign
+#: selection:signature.request.item,state:0
+msgid "Completed"
+msgstr "Дууссан"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_completed_document
+msgid "Completed Document"
+msgstr "Дууссан баримт"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_nb_closed
+msgid "Completed Signatures"
+msgstr "Дууссан гарын үсгүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:363
+#: code:addons/website_sign/static/src/js/website_sign_common.js:449
+#: code:addons/website_sign/static/src/js/website_sign_common.js:461
+#, python-format
+msgid "Create: \""
+msgstr "Үүсгэх: \""
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_create_uid
+msgid "Created by"
+msgstr "Үүсгэгч"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_last_action_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_create_date
+msgid "Created on"
+msgstr "Үүсгэсэн"
+
+#. module: website_sign
+#: model:signature.item.party,name:website_sign.signature_item_party_customer
+msgid "Customer"
+msgstr "Захиалагч"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:135
+#, python-format
+msgid "Customize Field"
+msgstr "Талбарыг өөриймшүүлэх"
+
+#. module: website_sign
+#: model:signature.item.type,name:website_sign.signature_item_type_date
+msgid "Date"
+msgstr "Огноо"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_default_height
+msgid "Default Height"
+msgstr "Үндсэн өндөр"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_default_width
+msgid "Default Width"
+msgstr "Үндсэн өргөн"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_kanban
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "Delete"
+msgstr "Устгах"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.digital_signatures_menu
+msgid "Digital Signatures"
+msgstr "Дижитал гарын үсгүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1066
+#, python-format
+msgid "Discard"
+msgstr "Хэрэгсэхгүй"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_item_view_form
+msgid "Display"
+msgstr "Дэлгэц"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_display_name
+msgid "Display Name"
+msgstr "Дэлгэцийн Нэр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:109
+#, python-format
+msgid "Do you also send documents to sign?"
+msgstr "Та мөн гарын үсэг зурах баримтууд илгээдэг үү?"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_follower_ids
+msgid "Document Followers"
+msgstr "Баримтын Дагагчид"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_page
+msgid "Document Page"
+msgstr "Баримтын Хуудас"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:106
+#, python-format
+msgid "Document Sign"
+msgstr "Баримтын гарын үсэг"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_template_id
+msgid "Document Template"
+msgstr "Баримтын үлгэр"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.signature_request_template_menu
+msgid "Document Templates"
+msgstr "Баримтын үлгэрүүд"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_request
+msgid "Document To Sign"
+msgstr "Гарын үсэг зурах баримт"
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_request_action
+#: model:ir.ui.menu,name:website_sign.menu_document
+msgid "Documents"
+msgstr "Баримтууд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:966
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+#, python-format
+msgid "Download Document"
+msgstr "Баримтыг татах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:77
+#, python-format
+msgid "Download original document"
+msgstr "Эх баримтыг татах"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+#: selection:signature.request,state:0
+#: selection:signature.request.item,state:0
+msgid "Draft"
+msgstr "Ноорог"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_nb_draft
+msgid "Draft Requests"
+msgstr "Ноорог хүсэлтүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:118
+#, python-format
+msgid "Drag & Drop a field in the PDF"
+msgstr "PDF дотор талбар чирж тавих"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:56
+#, python-format
+msgid "Draw"
+msgstr "Зурах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:916
+#, python-format
+msgid "Duplicated Template"
+msgstr "Хуулбарласан үлгэр"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_form
+msgid "Edit fields"
+msgstr "Талбаруудыг засах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:98
+#, python-format
+msgid "Edit template name"
+msgstr "Үлгэрийн нэрийг засах"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signer_email
+#: model:signature.item.type,name:website_sign.signature_item_type_email
+msgid "Email"
+msgstr "Имэйл"
+
+#. module: website_sign
+#: model:signature.item.party,name:website_sign.signature_item_party_employee
+msgid "Employee"
+msgstr "Ажилтан"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:452
+#, python-format
+msgid "Enter email (and name if you want)"
+msgstr "Имэйл оруулах (хүсвэл мөн нэр)"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:473
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1217
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1260
+#, python-format
+msgid "Error"
+msgstr "Алдаа"
+
+#. module: website_sign
+#: code:addons/website_sign/controllers/main.py:170
+#, python-format
+msgid "Everybody Signed."
+msgstr "Бүгд гарын үсэг зурсан."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_favorited_ids
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_favorited_ids
+msgid "Favorite of"
+msgstr "Эрхэмлэгч"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_search
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "Favorites"
+msgstr "Эрхэм"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_name
+msgid "Field Name"
+msgstr "Талбарын нэр"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.signature_item_type_menu
+msgid "Field Types"
+msgstr "Талбарын төрлүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:62
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_reference
+#, python-format
+msgid "Filename"
+msgstr "Файлын нэр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:950
+#, python-format
+msgid "Final Validation"
+msgstr "Сүүлийн батламжлал"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Followers ("
+msgstr "Дагагчид ("
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:45
+#, python-format
+msgid "Full Name"
+msgstr "Бүтэн нэр"
+
+#. module: website_sign
+#: selection:signature.request,state:0
+msgid "Fully Signed"
+msgstr "Бүрэн гарын үсэг зурсан"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+msgid "Get Completed Document"
+msgstr "Дууссан баримт авах"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_height
+msgid "Height"
+msgstr "Өндөр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:262
+#, python-format
+msgid "History"
+msgstr "Түүх"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_id_3491
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_id_3460
+msgid "ID"
+msgstr "ID"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:35
+#, python-format
+msgid ""
+"If you leave your document without any fields, the signers will be requested"
+" for an unique signature alongside the document"
+msgstr ""
+"Хэрэв та баримтыг ямар ч талбаргүй үлдээвэл, гарын үсэг зурагчдаас баримтын "
+"хамт давтагдашгүй гарын үсэг оруулахыг хүсэх болно"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_item_view_form
+msgid "Information"
+msgstr "Мэдээлэл"
+
+#. module: website_sign
+#: selection:signature.item.type,type:0
+msgid "Initial"
+msgstr "Нэрийн эхний үсэг"
+
+#. module: website_sign
+#: model:signature.item.type,name:website_sign.signature_item_type_initial
+msgid "Initials"
+msgstr "Нэрийн эхний үсгүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:109
+#, python-format
+msgid ""
+"It's easy, incredibly efficient and totally free: you just have to create an"
+" Odoo account."
+msgstr ""
+"Энэ хялбархан, маш үр ашигтай бас бүхэлдээ үнэгүй: та зүгээр л Odoo бүртгэл "
+"үүсгэх хэрэгтэй."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_request___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template___last_update
+msgid "Last Modified on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_write_uid
+msgid "Last Updated by"
+msgstr "Сүүлийн засвар хийсэн"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_write_date
+msgid "Last Updated on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_latitude
+msgid "Latitude"
+msgstr "Өргөрөг"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:77
+#, python-format
+msgid "Link to Share"
+msgstr "Хуваалцах холбоос"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:57
+#, python-format
+msgid "Load"
+msgstr "Ачааллах"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_longitude
+msgid "Longitude"
+msgstr "Уртраг"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:15
+#, python-format
+msgid "Mandatory field"
+msgstr "Шаардлагатай талбар"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:56
+#, python-format
+msgid "Message"
+msgstr "Мессеж"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.deleted_sign_request
+msgid "Missing signature request"
+msgstr "Гарын үсгийн хүсэлт алга"
+
+#. module: website_sign
+#: selection:signature.item.type,type:0
+msgid "Multiline Text"
+msgstr "Олон мөртэй Текст"
+
+#. module: website_sign
+#: model:signature.item.type,name:website_sign.signature_item_type_multiline_text
+msgid "Multiline text"
+msgstr "Олон мөртэй текст"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:404
+#, python-format
+msgid "Multiple Signature Requests"
+msgstr "Олон гарын үсгийн хүсэлтүүд"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "My documents"
+msgstr "Миний баримтууд"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_name
+#: model:signature.item.type,name:website_sign.signature_item_type_name
+msgid "Name"
+msgstr "Нэр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:57
+#, python-format
+msgid "Need a valid PDF to add signature fields !"
+msgstr "Гарын үсгийн талбаруудыг нэмэхэд зөв PDF шаардлагатай !"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.doc_sign
+msgid "Need to sign? Check your inbox to get your secure access"
+msgstr "Гарын үсэг зурах уу? Мэйлээ шалгаж аюулгүй хандалтаа аваарай"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:377
+#, python-format
+msgid "New Document"
+msgstr "Шинэ баримт"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:88
+#, python-format
+msgid "New Template"
+msgstr "Шинэ үлгэр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:467
+#: code:addons/website_sign/static/src/js/website_sign_common.js:476
+#, python-format
+msgid "New: "
+msgstr "Шинэ:"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1168
+#, python-format
+msgid "Ok"
+msgstr "Тийм"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_kanban
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "Open"
+msgstr "Нээх"
+
+#. module: website_sign
+#: model:ir.actions.act_window,help:website_sign.signature_request_template_action
+msgid "Or, you can"
+msgstr "Эсвэл та"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.signature_item_party_menu
+msgid "Parties"
+msgstr "Талууд"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_partner_id
+msgid "Partner"
+msgstr "Харилцагч"
+
+#. module: website_sign
+#: model:ir.model.fields,help:website_sign.field_signature_item_type_auto_field
+msgid "Partner field to use to auto-complete the fields of this type"
+msgstr "Энэ төрлийн талбаруудыг автоматаар бөглөхад ашиглах хамтрагч талбар"
+
+#. module: website_sign
+#: model:signature.item.type,name:website_sign.signature_item_type_phone
+msgid "Phone"
+msgstr "Утас"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_placeholder
+msgid "Placeholder"
+msgstr "Орлуулагч"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.doc_sign
+msgid "Please Review And Act On This Document"
+msgstr "Энэ баримтыг үзээд хариулна уу"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_posX
+msgid "Position X"
+msgstr "Байрлал Х"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_posY
+msgid "Position Y"
+msgstr "Байрлал Y"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:76
+#, python-format
+msgid "Print original document"
+msgstr "Эх баримтыг хэвлэх"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_progress
+msgid "Progress"
+msgstr "Явц"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:147
+#, python-format
+msgid "Remove"
+msgstr "Хасах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:65
+#, python-format
+msgid "Request a Signature"
+msgstr "Гарын үсэг хүсэх"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_request_item_infos
+msgid "Request item infos"
+msgstr "Хүсэх зүйлийн мэдээлэл"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_required
+msgid "Required"
+msgstr "Шаардлагатай"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1142
+#, python-format
+msgid "Resend the invitation"
+msgstr "Урилгыг дахин илгээх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1087
+#, python-format
+msgid "Resent !"
+msgstr "Дахин илгээсэн !"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:6
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:25
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_responsible_id
+#, python-format
+msgid "Responsible"
+msgstr "Хариуцлага"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_role_id
+msgid "Role"
+msgstr "Дүр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:97
+#, python-format
+msgid "Saved"
+msgstr "Хадгалсан"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_access_token
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_access_token
+msgid "Security Token"
+msgstr "Аюулгүй байдлын тасалбар"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:52
+#, python-format
+msgid "Select Signature Style"
+msgstr "Гарын үсгийн загварыг сонгоно уу"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:356
+#, python-format
+msgid "Select the responsible"
+msgstr "Хариуцагчийг сонгоно уу"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:234
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:740
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1050
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+#, python-format
+msgid "Send"
+msgstr "Илгээх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:230
+#, python-format
+msgid "Send Signature Request"
+msgstr "Гарын үсгийн хүсэлтийг илгээх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1116
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:88
+#, python-format
+msgid "Send a copy"
+msgstr "Хуулбар илгээх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:40
+#, python-format
+msgid "Send a copy to"
+msgstr "Хуулбарыг хэнд илгээх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1044
+#, python-format
+msgid "Send a copy to third parties"
+msgstr "Хуулбарыг гуравдагч талуудад илгээх"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:24
+#, python-format
+msgid "Send a note..."
+msgstr "Тэмдэглэл илгээх..."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:270
+#, python-format
+msgid "Send note"
+msgstr "Тэмдэглэлийг илгээх"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Sender"
+msgstr "Илгээгч"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_nb_wait
+msgid "Sent Requests"
+msgstr "Илгээгдсэн хүсэлтүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:746
+#, python-format
+msgid "Share"
+msgstr "Хуваалцах"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_share_link
+msgid "Share Link"
+msgstr "Хуваалцах Холбоос"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:75
+#, python-format
+msgid ""
+"Share this link and Odoo will create a new document per person who clicks on"
+" the link. The link is private, only those that receive the link will be "
+"able to sign it."
+msgstr ""
+"Энэ холбоосыг түгээвэл түүн дээр дарсан хүн бүрт Odoo шинэ баримт үүсгэнэ. "
+"Холбоос нь хувийн бөгөөд зөвхөн холбоосыг хүлээн авагчид гарын үсгээ зурах "
+"боломжтой байна."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1105
+#, python-format
+msgid "Sign"
+msgstr "Гарын үсэг зурах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1100
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+#, python-format
+msgid "Sign Document"
+msgstr "Баримт дээр гарын үсэг зурах"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signature
+#: model:signature.item.type,name:website_sign.signature_item_type_signature
+#: selection:signature.item.type,type:0
+msgid "Signature"
+msgstr "Гарын үсэг"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item
+msgid "Signature Field For Document To Sign"
+msgstr "Гарын үсэг зурах баримтын гарын үсгийн талбар"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item_value
+msgid "Signature Field Value For Document To Sign"
+msgstr "Гарын үсэг зурах баримтын гарын үсгийн талбарын утга"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_signature_item_id
+msgid "Signature Item"
+msgstr "Гарын үсгийн зүйл"
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_item_party_action
+msgid "Signature Item Party"
+msgstr "Гарын үсгийн зүйлийн тал"
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_item_type_action
+msgid "Signature Item Type"
+msgstr "Гарын үсгийн зүйлийн төрөл"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_signature_item_ids
+msgid "Signature Items"
+msgstr "Гарын үсгийн зүйлс"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:52
+#: model:ir.model,name:website_sign.model_signature_request_item
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_signature_request_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signature_request_id
+#, python-format
+msgid "Signature Request"
+msgstr "Гарын үсгийн хүсэлт"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_request_template
+msgid "Signature Request Template"
+msgstr "Гарын үсгийн хүсэлтийн үлгэр"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_signature_request_ids
+#: model:ir.ui.menu,name:website_sign.signature_request_menu
+msgid "Signature Requests"
+msgstr "Гарын үсгийн хүсэлтүүд"
+
+#. module: website_sign
+#: selection:signature.request,state:0
+msgid "Signatures in Progress"
+msgstr "Боловсруулж буй гарын үсгүүд"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "Signed"
+msgstr "Гарын үсэг зурсан"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Signed ("
+msgstr "Гарын үсэг зурсан ("
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signing_date
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Signed on"
+msgstr "Гарын үсэг зурсан огноо"
+
+#. module: website_sign
+#: code:addons/website_sign/controllers/main.py:168
+#, python-format
+msgid "Signed."
+msgstr "Гарын үсэг зурсан."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:287
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_request_item_ids
+#, python-format
+msgid "Signers"
+msgstr "Гарын үсэг зурагчид"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:101
+#, python-format
+msgid "So you can close the window and come back later."
+msgstr "Ингэснээр та цонхыг хааж дараа эргэн ирэх боломжтой."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1200
+#, python-format
+msgid "Some fields have still to be completed !"
+msgstr "Зарим талбаруудыг бөглөх шаардлагатай !"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:905
+#, python-format
+msgid "Somebody is already filling a document which uses this template"
+msgstr "Хэн нэгэн энэ үлгэрийг ашигладаг баримтыг аль хэдийн бөглөж байна"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1216
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1259
+#, python-format
+msgid "Sorry, an error occured, please try to fill the document again."
+msgstr "Уучлаарай, алдаа гарсан, баримтыг дахин бөглөх гэж оролдоно уу."
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item_type
+msgid "Specialized type for signature fields"
+msgstr "Гарын үсгийн талбаруудад зориулагдсан тусгай төрлүүд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1005
+#, python-format
+msgid "Start Using Odoo Sign Now"
+msgstr "Odoo Sign - г одоо хэрэглэж эхлэ"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_state
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_state
+msgid "State"
+msgstr "Төлөв"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:64
+#, python-format
+msgid "Styles"
+msgstr "Загварууд"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:50
+#, python-format
+msgid "Subject"
+msgstr "Сэдэв"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:373
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1058
+#: code:addons/website_sign/static/src/js/website_sign_common.js:276
+#, python-format
+msgid "Success"
+msgstr "Амжилттай"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_id
+msgid "Template"
+msgstr "Үлгэр"
+
+#. module: website_sign
+#: model:signature.item.type,name:website_sign.signature_item_type_text
+#: selection:signature.item.type,type:0
+msgid "Text"
+msgstr "Текст"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:999
+#, python-format
+msgid "Thank You !"
+msgstr "Баярлалаа !"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.deleted_sign_request
+msgid ""
+"The signature access you are trying to reach does not exist. Maybe the signature request has been deleted or modified. <br/>\n"
+"                    If there still exists a signature request for this document, check your inbox to get your access!"
+msgstr ""
+"Таны хүрэхийг оролдож буй гарын үсгийн хандалт алга. Магадгүй гарын үсгийн хүсэлтийг устгасан эсвэл өөрчилсөн. <br/>\n"
+"Хэрэв энэ баримтад гарын үсгийн хүсэлт байсаар байгаа бол хандалтыг авахын тулд та мэйлээ шалгана уу!"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.doc_sign
+msgid "This document cannot be filled right now"
+msgstr "Энэ баримтыг яг одоогоор бөглөх боломжгүй"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:102
+#, python-format
+msgid ""
+"This template is used by some signature requests.\n"
+"            If you want to edit it,"
+msgstr ""
+"Энэ үлгэрийг зарим гарын үсгийн хүсэлтүүд ашиглаж байна.\n"
+"Хэрэв та үүнийг засмаар байвал, "
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+msgid ""
+"This will delete all the already completed documents of this request and "
+"disable every sent accesses, are you sure?"
+msgstr ""
+"Энэ хүсэлтийн аль хэдийн дууссан бүх баримтуудыг устгаж, илгээгдсэн хандалт "
+"бүрийг идэвхигүй болгоно, та итгэлтэй байна уу?"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_tip
+msgid "Tip"
+msgstr "Зөвлөгөө"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "To Sign"
+msgstr "Гарын үсэг зурах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:82
+#, python-format
+msgid ""
+"To be able to share, there must be only one responsible for all fields !"
+msgstr ""
+"Түгээх боломжтой байхын тулд бүх талбарт зөвхөн нэг хариуцагч байх ёстой !"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_type
+msgid "Type"
+msgstr "Төрөл"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item_party
+msgid "Type of partner which can access a particular signature field"
+msgstr "Тодорхой гарын үсгийн талбар руу хандах эрхтэй харилцагчийн төрөл"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_kanban
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "Unarchive"
+msgstr "Архиваас гаргах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:56
+#, python-format
+msgid "Upload a PDF Template"
+msgstr "PDF үлгэр ачааллах"
+
+#. module: website_sign
+#: model:ir.actions.act_window,help:website_sign.signature_request_template_action
+#: model:ir.actions.act_window,help:website_sign.signature_request_template_with_archived_action
+msgid "Upload a PDF of contract to sign."
+msgstr "Гарын үсэг зурах гэрээний PDF ачааллах."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:955
+#, python-format
+msgid "Validate & Send"
+msgstr "Батлаад илгээх"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Validate &amp; Send Completed Document"
+msgstr "Дууссан баримтыг батлаад илгээх"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_value
+msgid "Value"
+msgstr "Утга"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+msgid "View"
+msgstr "Дэлгэц"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:967
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+#, python-format
+msgid "View History"
+msgstr "Түүхийг харах"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Waiting Signatures ("
+msgstr "Хүлээгдсэн гарын үсгүүд ("
+
+#. module: website_sign
+#: selection:signature.request.item,state:0
+msgid "Waiting for completion"
+msgstr "Дуусахыг хүлээж байна"
+
+#. module: website_sign
+#: code:addons/website_sign/models/signature_request.py:355
+#, python-format
+msgid "Waiting for signatures."
+msgstr "Гарын үсгүүдийг хүлээж байна."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1200
+#, python-format
+msgid "Warning"
+msgstr "Сануулга"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:101
+#, python-format
+msgid "We will let you know by email once everyone has signed."
+msgstr "Бүгд гарын үсэг зурж дуусмагц бид танд мэдэгдэх болно."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_width
+msgid "Width"
+msgstr "Өргөн"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:305
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:42
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:90
+#, python-format
+msgid "Write email or search contact..."
+msgstr "Имэйл хаягийг бичнэ үү эсвэл холбогчийг хайна уу..."
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.doc_sign
+msgid "You have completed the document"
+msgstr "Та баримтыг дуусгасан"
+
+#. module: website_sign
+#: model:ir.actions.act_window,help:website_sign.signature_request_action
+msgid "You have no document to sign."
+msgstr "Танд гарын үсэг зурах баримт алга."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:93
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:95
+#, python-format
+msgid "Your email"
+msgstr "Таны имэйл"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:276
+#, python-format
+msgid "Your message has been sent."
+msgstr "Таны зурвас илгээгдсэн."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:87
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:89
+#, python-format
+msgid "Your name"
+msgstr "Таны нэр"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:1000
+#, python-format
+msgid "Your signature has been saved."
+msgstr "Таны гарын үсэг хадгалагдсан."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:104
+#, python-format
+msgid "click here"
+msgstr "энд дарна уу"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "comment"
+msgstr "сэтгэгдэл"
+
+#. module: website_sign
+#: model:ir.actions.act_window,help:website_sign.signature_request_template_action
+msgid "load our templates of contract"
+msgstr "манай гэрээний үлгэрүүдийг ачааллах"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:33
+#, python-format
+msgid "on"
+msgstr "дээр"
+
+#. module: website_sign
+#: model:ir.actions.act_window,help:website_sign.signature_request_template_action
+msgid "to quickly evaluate this application."
+msgstr "энэ аппликэшнийг гялс үнэлэхийн тулд."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:104
+#, python-format
+msgid "to start a new template from this one !"
+msgstr "үүнд шинэ үлгэр эхлүүлэх бол !"

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="rfq_changes">
+        <field name="name">rfq.changes</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+
+            <field name="state" widget="statusbar" statusbar_visible="draft,sent,purchase" readonly="1" position="attributes">
+                   <attribute name="statusbar_visible">draft,to approve,sent,purchase</attribute>
+            </field>
+            <button name="print_quotation" type="object" states="draft" class="oe_highlight" position="before">
+                    <button name="action_rfq_send" type="object" string="Send for Approval" states="draft" class="oe_highlight"/>
+            </button>
+            <button name="button_confirm" type="object" states="draft" id="draft_confirm" position="attributes">
+                    <attribute name="states"> </attribute>
+            </button>
+
+            <button name="button_approve" type="object" states="to approve" class="oe_highlight" position="after">
+                    <button name="button_disapprove" type="object" string="Disapprove" states="to approve" groups="purchase.group_purchase_manager"/>
+            </button>          
+
+        </field>
+    </record>
+
+    <record id="action_po_to_vendor_bills" model="ir.actions.act_window">
+            <field name="name">PO to Vendor Bills</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="purchase.view_purchase_order_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'purchase')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+            </field>
+        </record>
+
+<!--          <record id="product_description" model="ir.ui.view">
+        <field name="name">product.description.tree</field>
+        <field name="model">product.description</field>
+        <field name="arch" type="xml">
+            <tree string="Descriptions">
+                <field name="name"/>
+                <field name="product_id"/>
+            </tree>
+        </field>
+    </record>
+
+                <record id="product_description" model="ir.ui.view">
+            <field name="name">product.description.form</field>
+            <field name="model">product.description</field>
+            <field name="arch" type="xml">
+                <form>
+
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="product_id"/>
+                    </group>
+                </sheet>
+                </form>
+            </field>
+    </record>
+
+    <record id="action_product_description" model="ir.actions.act_window">
+            <field name="name">Product Description</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.description</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                    Add a new product description here.
+              </p>
+            </field>
+        </record>
+
+
+    <menuitem id="menu_product_description" sequence="3" action="action_product_description" parent="purchase.menu_purchase_config"/>
+-->
+
+
+        <menuitem action="action_po_to_vendor_bills"
+            id="menu_po_to_vendor_bills" parent="account.menu_finance_payables"
+            sequence="2"/>
+
+</odoo>

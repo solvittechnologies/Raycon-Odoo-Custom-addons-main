@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk
+# 
+# Translators:
+# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# William Surya Permana <zarambie_game@yahoo.com>, 2016
+# Rizky Fajar Ryanda <rizky.rikuverse@gmail.com>, 2016
+# Deddy Ddr <deddy.ddr@gmail.com>, 2016
+# Bonny Useful <bonny.useful@gmail.com>, 2017
+# Muhammad Syarif <mhdsyarif.ms@gmail.com>, 2017
+# Ryanto The <ry.the77@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: Ryanto The <ry.the77@gmail.com>, 2017\n"
+"Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-arrow-circle-right \"/> See the feedbacks"
+msgstr "<i class=\"fa fa-arrow-circle-right \"/> Melihat tanggapan"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i class=\"fa fa-envelope\"/> Email :"
+msgstr "<i class=\"fa fa-envelope\"/> Alamat Email :"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "<i/> Customer Satisfaction Ration:"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "<span>Show more</span><span class=\"hidden\">Show less</span>"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Assigned to</strong>"
+msgstr "<strong>Ditugaskan ke</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Tanggal:</strong>"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Message and communication history</strong>"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "<strong>Reported by</strong>"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Average"
+msgstr "Rata-rata"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Bad"
+msgstr "Bad"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Current stage of this ticket"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Customer Satisfaction"
+msgstr "Kepuasan pelanggan"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Description"
+msgstr "Keterangan"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "Edit Ticket"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_progress_data
+msgid "Happy"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:website.menu,name:website_helpdesk.website_menu_helpdesk
+msgid "Help"
+msgstr "Bantuan"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_team
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Helpdesk Team"
+msgstr "Tim Helpdesk"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.header_footer_custom
+msgid "Helpdesk Team Customer Satisfaction"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Helpdesk Team Satisfaction"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 3 months"
+msgstr "3 bulan terakhir"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 30 days"
+msgstr "30 hari terakhir"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Last 7 days"
+msgstr "7 hari terakhir"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team_rating_data
+msgid "Latest Feedbacks"
+msgstr "Tanggapan terbaru"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.tickets_followup
+msgid "My Tickets"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.content_new_team
+msgid "New Team"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.not_published_any_team
+msgid "No teams have been published."
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid "Save this page to activate the feature"
+msgstr "Simpan Halaman ini untuk mengaktifkan fitur"
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_ticket_access_token
+msgid "Security Token"
+msgstr "Keamanan Token"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Status"
+msgstr "Status"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Submit an Issue"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "Team Settings"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.index
+msgid "Teams"
+msgstr "Tim"
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "There are currently no Ticket for your account."
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.model,name:website_helpdesk.model_helpdesk_ticket
+msgid "Ticket"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+msgid "Ticket Number"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_menu_helpdesk
+msgid "Tickets"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.model.fields,field_description:website_helpdesk.field_helpdesk_team_website_rating_url
+msgid "URL to Submit Issue"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.team
+msgid "View my Issues"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.helpdesk_team_view_form_inherit_website_helpdesk
+msgid ""
+"View this teams ratings this page:<br/>\n"
+"                    ⇒"
+msgstr ""
+
+#. module: website_helpdesk
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_helpdesk_ticket
+#: model:ir.ui.view,arch_db:website_helpdesk.portal_my_home_helpdesk_ticket
+msgid "Your Tickets"
+msgstr ""

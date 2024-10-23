@@ -1,0 +1,288 @@
+<odoo>
+  <data>
+
+
+	<record model="ir.ui.view" id="kay_petty_cash_form">
+	<field name="name">Petty Cash</field>
+      	<field name="model">kay.petty.cash</field>
+      	<field name="arch" type="xml">
+        <form>
+	<header>		
+            <button name="action_validate" string="Validate" class="oe_highlight" states="draft" type="object" groups="account.group_account_invoice" />
+            <button name="action_cancel" string="Cancel Entry" class="oe_highlight" states="validate" type="object"/>
+            <field name="state"  widget="statusbar" />
+	</header>
+
+  	<sheet>
+         <group col="4">
+	 <field name="name"  required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}" />
+         <field name="custodian" string="Custodian" required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}" />
+         <field name="journal_id" required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}" />
+         <field name="location" required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}"/>
+         </group>
+
+        <group col="4">
+         <field name="custodian_account"  required="1" attrs="{'readonly':[('state','in',['validate','cancel'])]}"/>
+	
+                <field name="amount" readonly="1"/>
+                <field name="amount_left" readonly="1" />
+              
+        </group>
+
+        <notebook>
+          <page string="Issue amount to custodian">
+          <field name="add_cash_line" widget="one2many">
+                    <tree delete = "false" >
+			<field name="date"/>
+                        <field name="amount"/>
+                        <field name="journal_entry"/>
+                        <field name="state"/>
+		    </tree>	
+		   <form>
+
+			<header>
+		  	<button class="oe_highlight" type="object" name="action_validate" string="Post" states="draft"  groups="account.group_account_invoice"/> 
+		  	<button name="action_cancel" string="Cancel Entry" class="oe_highlight" states="validate" type="object" groups="account.group_account_invoice"/> 
+		  	<button  class="oe_highlight" type="object" name="unlink" string="Delete" attrs="{'invisible':[('state','in',['validate'])]}"/>
+		  	<!--<field name="state" widget="statusbar"/>-->     
+			</header>
+		
+		        <sheet>
+			<group>
+			<field name="date"  attrs="{'readonly':[('state','in',['validate'])]}" required="1"/>
+                        <field name="amount"  attrs="{'readonly':[('state','in',['validate'])]}" required="1"/>
+			<field name="journal_entry" readonly="0" />
+                        <field name="currency_id"  attrs="{'readonly':[('state','in',['validate'])]}" />
+                        <field name="payable_account"  attrs="{'readonly':[('state','in',['validate'])]}" />
+                       <field name="state"/>
+			</group>
+			</sheet>
+		  </form>
+	  </field>
+
+		<!--<div class="oe_chatter">
+    			<field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+    			<field name="message_ids" widget="mail_thread"/>
+		</div>-->
+	  </page>
+
+
+	  <page string="Add Petty Cash lines">
+	  <field name="cash_line" widget="one2many">
+          	<tree edittable="bottom"  delete="false">
+  		        <field name="description" />
+			<field name="amount"/>
+                        <field name="petty_line_account"/>
+			<field name="date" />
+			<field name="state"/>
+     			<!--<button name="unlink" icon="gtk-delete" attrs="{'invisible':[('state','in',['posted'])]}"/>-->	
+	 	</tree>
+
+		<form> 
+			   <header>
+                           <button class="oe_highlight" type="object" name="action_post_line" string="Post" states="draft" groups="account.group_account_invoice"/>
+                           <button class="oe_highlight" type="object" name="action_cancel" string="Cancel" states="posted" groups="account.group_account_invoice" />   
+			   <button class="oe_highlight" type="object" name="unlink" string ="Delete" attrs="{'invisible':[('state','in',['posted'])]}"/>
+			   </header>
+			   <sheet>
+		 	   <group>
+				<field name="description" required="1"/>
+				<field name="amount"  attrs="{'readonly':[('state','in',['posted'])]}" required="1"/>
+                                <field name="petty_line_account"   attrs="{'readonly':[('state','in',['posted'])]}"/> 
+                                <field name="journal_entry" readonly="0"/>
+                        	<field name="date"  attrs="{'readonly':[('state','in',['posted'])]}" required="1"/>
+                        	<field name="state"/>
+			</group>
+			</sheet>
+			</form>
+
+		</field>
+		</page>
+	</notebook>
+        </sheet>
+	    <!--<div class="oe_chatter">
+    		<field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+    		<field name="message_ids" widget="mail_thread"/>
+	    </div>-->
+      </form>
+    </field>
+  </record>
+
+
+<!--<record model="ir.ui.view" id="update_amount_modal_view">
+ <field name="name">Update Amount</field>
+  <field name="model">kay.petty.cash</field>
+<field name="arch" type="xml">
+  <field name
+
+
+</field>
+
+
+</record>
+-->
+
+<record model="ir.ui.view" id="kay_petty_cash_list">
+      <field name="name">Petty Cash</field>
+      <field name="model">kay.petty.cash</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="custodian"/>
+		<field name="name"        />
+                <field name="amount"/>
+		<field name="amount_left"/>
+        </tree>
+      </field>
+    </record>
+
+  <record model="ir.actions.act_window" id="kay_petty_cash_action">
+      <field name="name">Petty Cash</field>
+      <field name="res_model">kay.petty.cash</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+<record model="ir.ui.view" id="petty_cash_report_modal">
+    <field name="name">Petty cash Report</field>
+    <field name="model">petty.cash.report</field>
+    <field name="arch" type="xml">
+        <form>
+		<group>
+		<group>
+		   <field name="user"/>
+		</group>
+		<group>
+		   <field name="year" />
+		</group>
+		</group>
+		<field name="lines">
+		<tree>
+			<field name="date"/>
+			<field name="journal_entry"/>
+			<field name="amount"/>
+			<field name="state"/>
+		</tree>
+		</field>
+		<group>
+		<group col="10">
+		</group>
+		<group col="2">
+
+       <!-- <field name="previous_year_allocated_amount"  widget="monetary" style="color:black ! important;font-size:23px ! important" readonly="1"/><newline/>-->
+	<field name="total_amount_allocated" widget="monetary" style="color:green ! important;font-size:25px ! important;" readonly="1" nolabel="1"/>
+       
+        <field name="currency_id" invisible="1" />
+
+	</group>
+	</group>
+
+	<footer>
+                   
+                    <button string="Cancel" class="btn-default" special="cancel"/>   
+                </footer>
+
+	</form>
+    </field>
+</record>
+
+
+
+
+<record model="ir.actions.act_window" id="action_petty_cash_report">
+    <field name="name">Cash Report</field>
+    <field name="res_model">petty.cash.report</field>
+    <field name="view_mode">form</field>
+    <field name="view_type">form</field>
+    <field name="target">new</field>
+</record>
+
+
+
+
+
+  <!--<menuitem name="Petty Cash" id="kay_petty_cash_menu" parent="account.menu_finance" sequence="5" groups="account.group_account_invoice"
+      />  
+  <menuitem name="Manage Petty Accounts" id="kay_petty_cash_menu_manage" parent="kay_petty_cash_menu" sequence="1" groups="account.group_account_invoice"
+              action="kay_petty_cash_action"/>
+
+  <menuitem name="Cash Report" id="kay_petty_cash_menu_report" parent="kay_petty_cash_menu" sequence="2" groups="account.group_account_invoice"                               
+	        action="action_petty_cash_report"/> 
+
+	<menuitem name="Petty Cash" id="kay_petty_cash_menu_project_Budget" parent="kay_petty_cash_menu" sequence="1" groups="account.group_account_invoice"
+              action="kay_petty_cash_action"/>-->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="kay_petty_cash.list">
+      <field name="name">kay_petty_cash list</field>
+      <field name="model">kay_petty_cash.kay_petty_cash</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="kay_petty_cash.action_window">
+      <field name="name">kay_petty_cash window</field>
+      <field name="res_model">kay_petty_cash.kay_petty_cash</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="kay_petty_cash.action_server">
+      <field name="name">kay_petty_cash server</field>
+      <field name="model_id" ref="model_kay_petty_cash_kay_petty_cash"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="kay_petty_cash" id="kay_petty_cash.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="kay_petty_cash.menu_1" parent="kay_petty_cash.menu_root"/>
+    <menuitem name="Menu 2" id="kay_petty_cash.menu_2" parent="kay_petty_cash.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="kay_petty_cash.menu_1_list" parent="kay_petty_cash.menu_1"
+              action="kay_petty_cash.action_window"/>
+    <menuitem name="Server to list" id="kay_petty_cash" parent="kay_petty_cash.menu_2"
+              action="kay_petty_cash.action_server"/>
+    -->
+  </data>
+</odoo>

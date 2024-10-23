@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payslip_custom,hr.payslip.custom,model_hr_payslip_custom,,1,1,1,1
+access_hr_payslip_custom_line,hr.payslip.custom.line,model_hr_payslip_custom_line,,1,1,1,1
+access_salaries_excel_sheet,access.salaries.excel.sheet,model_salaries_excel_sheet,,1,1,1,1
+access_salaries_excel_line,access.salaries.excel.line,model_salaries_excel_line,,1,1,1,1
+access_employee_loan,access.employee.loan,model_employee_loan,,1,1,1,1
+access_employee_loan_allocation_line,access.employee.loan.allocation.line,model_employee_loan_allocation_line,,1,1,1,1
+access_employee_loan_payment_line,access.employee.loan.payment.line,model_employee_loan_payment_line,,1,1,1,1
+access_fastra_hr_payslip_account_line,access.fastra.hr.payslip.account.line,model_fastra_hr_payslip_account_line,,1,1,1,1
+access_fastra_hr_payslip_individual_account_line,access.fastra.hr.payslip.individual.account.line,model_fastra_hr_payslip_individual_account_line,,1,1,1,1

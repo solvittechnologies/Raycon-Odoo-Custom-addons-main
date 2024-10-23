@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+                 <record model="ir.actions.act_window" id="consumption_cost_entry">
+            <field name="name">Consumption Cost</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,form</field>
+           <field name="domain">[('consumption','=',True)]</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Consumption Cost
+                </p>
+                <p>
+                    Consumption Cost
+                </p>
+            </field>
+        </record>
+
+        <menuitem sequence="3"
+                  name="Consumption Cost"
+                  id="consumption_cost_entry_list"
+                  parent="project_costing.menu_root"
+                  action="consumption_cost_entry"
+                  groups="project_costing.group_project_costing_manager"
+        />
+
+
+        <record model="ir.actions.act_window" id="project_labour">
+            <field name="name">Project Labour</field>
+            <field name="res_model">project.labour</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new Project Labour
+                </p>
+                <p>
+                    Project Labour
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project_costing">
+            <field name="name">Project Costing</field>
+            <field name="res_model">project_cost.project_cost</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new Project Costing
+                </p>
+                <p>
+                    Project Costing
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="project_labour_tree">
+            <field name="name">project labour</field>
+            <field name="model">project.labour</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    
+                    <field name="analytical_account"/>
+                    <field name="project_manager"/>
+                    <field name="date"/>
+                    <field name="total_labour_cost" sum="Total"/>
+                    <field name="type"/>
+                          <field name="day" attrs="{'invisible':[('type','!=', 'daily')]}"/>
+                                <field name="week" attrs="{'invisible':[('type','!=', 'weekly')]}"/>
+                    <field name="state"/>
+                    
+                </tree>
+            </field>
+        </record>
+        
+        <record id="project_labour_view_form" model="ir.ui.view">
+            <field name="name">project labour</field>
+            <field name="model">project.labour</field>
+            <field name="arch" type="xml">
+                <form string="project labour">
+                                        <header>
+                        <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'wait_approve')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <field name="state" widget="statusbar" nolabel="1"/>
+                    </header>
+                        <sheet>
+                        <group colspan="4">
+                            <group colspan="2" col="4">
+
+                            <field name="analytical_account" required="1"/>
+                            <field name="project_manager"/>
+                            <field name="date" required="1"/>
+                                 <field name="type" required="1"/>
+                                 <field name="day" attrs="{'invisible':[('type','!=', 'daily')]}"/>
+                                <field name="week" attrs="{'invisible':[('type','!=', 'weekly')]}"/>
+                                <field name="total_labour_cost" string="Total Actual Cost"/>
+                                <field name="weekly_description" attrs="{'invisible':[('type','!=', 'weekly')]}"/>
+
+                            </group>
+
+
+                            <notebook colspan="4">
+                                <page string="Labour Cost">
+
+                                    <field
+                                            name="labour_cost"
+                                            nolabel="1"
+                                            widget="one2many"
+                                            mode="tree,kanban"
+                                            attrs="{'invisible':[('type','!=', 'weekly')]}"
+                                            >
+
+                                         <tree string="Labour Cost" editable="bottom">
+                                               <field name="description"/>
+                                <field name="element"/>
+				 <field name="category"/>
+                                <field name="trade"/>
+                                <field name="hrs_worked" sum="Total"/>
+                                <field name="head_foreman" sum="Total"/>
+                                <field name="skilled" sum="Total"/>
+                                <field name="semi_skilled" sum="Total"/>
+                                <field name="unskilled" sum="Total"/>
+                                             <field name="output_qty"/>
+                                             <field name="output_unit"/>
+                                             <field name="total_actual_cost"   sum="Total"/>
+                                             <field name="budget_rate" sum="Total"/>
+                                              <field name="actual_rate" sum="Total"/>
+                                              <field name="total_budget_cost" sum="Total"/>
+                                              <field name="cost_variance" sum="Total"/>
+                                              <field name="remark"/>
+
+                                        </tree>
+
+                                    </field>
+
+                                                                        <field
+                                            name="daily_labour_cost"
+                                            nolabel="1"
+                                            widget="one2many"
+                                            mode="tree,kanban"
+                                            attrs="{'invisible':[('type','!=', 'daily')]}"
+                                            >
+
+                                         <tree string="Labour Cost" editable="bottom">
+                                <field name="description"/>
+                                <field name="building"/>
+				                <field name="level"/>
+                                <field name="trade"/>
+                                <field name="hrs_worked" sum="Total"/>
+                                <field name="head_foreman" sum="Total"/>
+                                <field name="skilled" sum="Total"/>
+                                <field name="semi_skilled" sum="Total"/>
+                                <field name="unskilled" sum="Total"/>
+                                <field name="output_qty" sum="Total"/>
+                                <field name="output_unit" sum="Total"/>
+                                <field name="total_actual_cost" sum="Total"/>
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+
+
+                            </notebook>
+                            <group col="2" >
+                                <field name="headman_rate" required="1"/>
+                                <field name="skilled_rate" required="1"/>
+                                <field name="semi_skilled_rate" required="1"/>
+                                <field name="unskilled_rate" class="oe_subtotal_footer_separator" required="1"/>
+
+                                <!--                                    <field name="outstanding_credits_debits_widget" colspan="2" nolabel="1" widget="payment" attrs="{'invisible': [('state', 'not in', 'open')]}"/>-->
+                            </group>
+                         </group>
+
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+        
+                <record model="ir.ui.view" id="project_cost_1">
+            <field name="name">Open Academy list</field>
+            <field name="model">project_cost.project_cost</field>
+            <field name="arch" type="xml">
+                <tree>
+
+
+                    <field name="analytical_account"/>
+                    <field name="project_manager"/>
+                    <field name="create_date"/>
+                    <field name="target_cost"/>
+                   <field name="actual_amount" />
+                   <field name="difference" />
+                    <field name="state"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="form_2">
+            <field name="name">Project Costing</field>
+            <field name="model">project_cost.project_cost</field>
+            <field name="arch" type="xml">
+                <form string="Idea form">
+                    <header>
+                        <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="finalize" string="Confirm"  attrs="{'invisible':[('state','!=', 'Approve')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <field name="state" widget="statusbar" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <group colspan="4">
+                            <group colspan="2" col="4">
+
+<!--                                <field name="name" String="Project"/>-->
+                                <field name="analytical_account" String="Project"/>
+                                <field name="project_manager" String="Project Manger" colspan="2"/>
+                                <field name="cost_of_boq" String="Cost Of BOQ" readonly="1"/>
+
+                                <field name="actual_amount"/>
+                                <field name="target_cost"/>
+
+                            </group>
+
+                            <!--                            <group colspan="2" col="4">-->
+                            <!--                                <separator string="Estimate" colspan="4"/>-->
+                            <!--                                <field name="project_id"/>-->
+                            <!--                                &lt;!&ndash;                <field name="lecturer" readonly="1"/>&ndash;&gt;-->
+                            <!--                            </group>-->
+                            <separator string="Budget" colspan="4"/>
+                            <notebook colspan="4">
+                                <page string="Budget">
+
+                                    <field
+                                            name="budget"
+                                            nolabel="1"
+                                            widget="one2many"
+                                            mode="tree,kanban"
+                                            >
+
+                                         <tree string="Project Budget" editable="bottom">
+                                           <field name="element_no"/>
+                                           <field name="category"/>
+                                            <field name="element"/>
+                                            <field name="item"/>
+                                            <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="unit"/>
+                                            <field name="cost_qob_rate"/>
+                                            <field name="cost_qob_amount" sum="Total"/>
+                                            <field name="material_rate"/>
+                                            <field name="material_amount" sum="Total"/>
+                                            <field name="labour_rate"/>
+                                             <field name="labour_amount" sum="Total"/>
+                                            <field name="plant_amount" string="Plant Amount"/>
+                                            <field name="subcontractor_rate" string="Subcontractor Rate" sum="Total"/>
+                                            <field name="subcontractor_amount" sum="Total"/>
+                                            <field name="target_cost" sum="Total"/>
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+
+                            </notebook>
+                            <group class="oe_subtotal_footer oe_right">
+                                <!--                                    <field name="employees_amount" readonly="1" String="Labour"/>-->
+                                <!--                                    <field name="cost_of_boq" readonly="1"/>-->
+                                <!--                                    <field name="budget_amount" readonly="1" String="Budget Amount"/>-->
+                                <field name="target_cost" readonly="1"/>
+                                <field name="actual_amount" cols="2" />
+                                <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                                <!--                                    <field name="outstanding_credits_debits_widget" colspan="2" nolabel="1" widget="payment" attrs="{'invisible': [('state', 'not in', 'open')]}"/>-->
+                            </group>
+                         </group>
+
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <menuitem sequence="1"
+                  name="Project Costing"
+                  id="project_costing_list"
+                  parent="project_costing.menu_root"
+                  action="project_costing" groups="project_costing.group_project_costing_manager"/>
+        
+        <menuitem sequence="2"
+                  name="Project Labour"
+                  id="project_Labour_list"
+                  parent="project_costing.menu_root"
+                  action="project_labour"
+        groups="project_costing.group_project_costing_user"/>
+
+
+    </data>
+</odoo>

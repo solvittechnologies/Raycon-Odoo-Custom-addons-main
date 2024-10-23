@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_labour,mrp.labour,model_mrp_labour,,1,1,1,1
+access_mrp_material,mrp.material,model_mrp_material,,1,1,1,1
+access_fastra_manufacture_fastra_manufacture,fastra_manufacture.fastra_manufacture,model_fastra_manufacture_fastra_manufacture,,1,0,0,0

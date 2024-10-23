@@ -1,0 +1,79 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * grid
+# 
+# Translators:
+# Martin Trigaux, 2016
+# Duy BQ <duybq86@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-06 14:54+0000\n"
+"PO-Revision-Date: 2017-03-06 14:54+0000\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:71
+#, python-format
+msgid "Add a Line"
+msgstr "Thêm một dòng"
+
+#. module: grid
+#: code:addons/grid/models.py:214 code:addons/grid/models.py:246
+#, python-format
+msgid "Can not use fields of type %s as grid columns"
+msgstr "Không thể dùng kiểu dữ liệu %s với cột grid"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:69
+#, python-format
+msgid "Grid"
+msgstr "Khung lưới"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:400
+#, python-format
+msgid "See all the records aggregated in this cell"
+msgstr "Xem tất cả các bản ghi được tổng hợp trong ô này"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:206
+#, python-format
+msgid ""
+"The sectioned grid view can't handle groups with different columns sets"
+msgstr ""
+"Chế độ Khung lưới không thể xử lý các nhóm có các tập hợp cột khác nhau"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:306
+#: code:addons/grid/static/src/js/grid_view.js:316
+#, python-format
+msgid "Total"
+msgstr "Tổng"
+
+#. module: grid
+#: model:ir.model,name:grid.model_base
+msgid "base"
+msgstr "cơ bản"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_actions_act_window_view
+msgid "ir.actions.act_window.view"
+msgstr "ir.actions.act_window.view"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"

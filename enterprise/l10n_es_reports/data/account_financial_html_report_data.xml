@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="financial_report_l10n_es" model="account.financial.html.report">
+        <field name="name">Plan de impuestos español</field>
+        <field name="report_type">date_range</field>
+        <field name='parent_id' ref='l10n_es.account_reports_es_statements_menu'/>
+        <field name="tax_report" eval="1"/>
+    </record>
+    <record id="financial_report_line_es_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_100</field>
+        <field name="name">IVA devengado. Base imponible</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_101.balance + ESTAX_102.balance + ESTAX_103.balance + ESTAX_104.balance + ESTAX_105.balance + ESTAX_106.balance + ESTAX_107.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_101</field>
+        <field name="name">Régimen general IVA devengado. Base imponible 4%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_21')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_102</field>
+        <field name="name">Régimen general IVA devengado. Base imponible 10%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_22')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_103</field>
+        <field name="name">Régimen general IVA devengado. Base imponible 21%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_23'), ref('l10n_es.tax_tag_20')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_104</field>
+        <field name="name">Recargo equivalencia base imponible 0.5%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_24')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_105</field>
+        <field name="name">Recargo equivalencia base imponible 1.4%</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_25')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_106</field>
+        <field name="name">Recargo equivalencia base imponible 5.2%</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_26')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_01_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_107</field>
+        <field name="name">Adquisiciones intracomunitarias. Base imponible</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_39'), ref('l10n_es.tax_tag_33'), ref('l10n_es.tax_tag_48'), ref('l10n_es.tax_tag_36'), ref('l10n_es.tax_tag_51'), ref('l10n_es.tax_tag_45'), ref('l10n_es.tax_tag_42')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_200</field>
+        <field name="name">Base adquisiciones exentas</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="0"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_53')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_300</field>
+        <field name="name">Base ventas exentas</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="0"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_52')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_400</field>
+        <field name="name">IVA deducible. Base imponible</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_401.balance + ESTAX_402.balance + ESTAX_403.balance + ESTAX_404.balance + ESTAX_405.balance + ESTAX_406.balance + ESTAX_407.balance + ESTAX_408.balance + ESTAX_409.balance + ESTAX_410.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_401</field>
+        <field name="name">Recargo equivalencia ded. Base imponible 1.4%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_28')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_402</field>
+        <field name="name">Recargo equivalencia ded. Base imponible 0.5%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_27')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_403</field>
+        <field name="name">Base de compensaciones Régimen Especial A., G. y P. 12%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_5')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_404</field>
+        <field name="name">Recargo equivalencia ded. Base imponible 5.2%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_29')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_405</field>
+        <field name="name">Base operaciones interiores bienes inversión</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_4051.balance + ESTAX_4052.balance + ESTAX_4053.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_05_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4051</field>
+        <field name="name">Base operaciones interiores bienes inversión (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_2')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_05_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4052</field>
+        <field name="name">Base operaciones interiores bienes inversión (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_4')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_05_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4053</field>
+        <field name="name">Base operaciones interiores bienes inversión (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_7')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_406</field>
+        <field name="name">Base operaciones interiores corrientes</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_4061.balance + ESTAX_4062.balance + ESTAX_4063.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_06_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4061</field>
+        <field name="name">Base operaciones interiores corrientes (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_1')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_06_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4062</field>
+        <field name="name">Base operaciones interiores corrientes (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_3')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_06_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4063</field>
+        <field name="name">Base operaciones interiores corrientes (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_6'), ref('l10n_es.tax_tag_20')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_407</field>
+        <field name="name">Base importaciones bienes y servicios corrientes</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_8')])]"/>
+        <field name="formulas">balance = ESTAX_4071.balance + ESTAX_4072.balance + ESTAX_4073.balance + sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_07_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4071</field>
+        <field name="name">Base importaciones bienes y servicios corrientes (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_10')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_07"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_07_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4072</field>
+        <field name="name">Base importaciones bienes y servicios corrientes (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_12')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_07"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_07_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4073</field>
+        <field name="name">Base importaciones bienes y servicios corrientes (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_14')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_07"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_08" model="account.financial.html.report.line">
+        <field name="code">ESTAX_408</field>
+        <field name="name">Base importaciones bienes inversión</field>
+        <field name="sequence" eval="8"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_9')])]"/>
+        <field name="formulas">balance = ESTAX_4081.balance + ESTAX_4082.balance + ESTAX_4083.balance + sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_08_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4081</field>
+        <field name="name">Base importaciones bienes inversión (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_11')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_08"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_08_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4082</field>
+        <field name="name">Base importaciones bienes inversión (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_13')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_08"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_08_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4083</field>
+        <field name="name">Base importaciones bienes inversión (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_15')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_08"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_09" model="account.financial.html.report.line">
+        <field name="code">ESTAX_409</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes y serv. corrientes</field>
+        <field name="sequence" eval="9"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_4091.balance + ESTAX_4092.balance + ESTAX_4093.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_09_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4091</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes y serv. corr. (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_33')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_09"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_09_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4092</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes y serv. corr. (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_39')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_09"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_09_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4093</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes y serv. corr. (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_45'), ref('l10n_es.tax_tag_51')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_09"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_10" model="account.financial.html.report.line">
+        <field name="code">ESTAX_410</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes inversión</field>
+        <field name="sequence" eval="10"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_4101.balance + ESTAX_4102.balance + ESTAX_4103.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_10_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4101</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes inversión (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_36')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_10_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4102</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes inversión (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_42')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_04_10_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_4103</field>
+        <field name="name">Base adquisiciones intracomunitarias bienes inversión (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_48')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_04_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_500</field>
+        <field name="name">IVA cuota total devengada</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_501.balance + ESTAX_502.balance + ESTAX_503.balance + ESTAX_504.balance + ESTAX_505.balance + ESTAX_506.balance + ESTAX_507.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_501</field>
+        <field name="name">Régimen general IVA devengado. Cuota 4%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_21')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_502</field>
+        <field name="name">Régimen general IVA devengado. Cuota 10%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_22')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_503</field>
+        <field name="name">Régimen general IVA devengado. Cuota 21%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_23'), ref('l10n_es.tax_tag_18')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_504</field>
+        <field name="name">Recargo equivalencia. Cuota 0.5%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_24')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_505</field>
+        <field name="name">Recargo equivalencia. Cuota 1.4%</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_25')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_506</field>
+        <field name="name">Recargo equivalencia. Cuota 5.2%</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_26')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_05_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_507</field>
+        <field name="name">Adquisiciones intracomunitarias. Cuota</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_50'), ref('l10n_es.tax_tag_38'), ref('l10n_es.tax_tag_32'), ref('l10n_es.tax_tag_47'), ref('l10n_es.tax_tag_35'), ref('l10n_es.tax_tag_44'), ref('l10n_es.tax_tag_41')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_600</field>
+        <field name="name">IVA deducible (Cuota)- Total a deducir [Mod.303]</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_601.balance + ESTAX_602.balance + ESTAX_603.balance + ESTAX_604.balance + ESTAX_605.balance + ESTAX_606.balance + ESTAX_607.balance + ESTAX_608.balance + ESTAX_609.balance + ESTAX_610.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_601</field>
+        <field name="name">Recargo equivalencia ded. Cuota 0.5%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_27')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_602</field>
+        <field name="name">Recargo equivalencia ded. Cuota 1.4%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_28')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_603</field>
+        <field name="name">Recargo equivalencia ded. Cuota 5.2%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_29')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_604</field>
+        <field name="name">Cuotas soportadas operaciones interiores corrientes</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_6041.balance + ESTAX_6042.balance + ESTAX_6043.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_04_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6041</field>
+        <field name="name">Cuotas soportadas operaciones interiores corrientes (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_1')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_04_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6042</field>
+        <field name="name">Cuotas soportadas operaciones interiores corrientes (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_3')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_04_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6043</field>
+        <field name="name">Cuotas soportadas operaciones interiores corrientes (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_6'), ref('l10n_es.tax_tag_19')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_605</field>
+        <field name="name">Cuotas soportadas operaciones interiores bienes inversión</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_6051.balance + ESTAX_6052.balance + ESTAX_6053.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_05_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6051</field>
+        <field name="name">Cuotas soportadas operaciones interiores bienes inversión (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_2')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_05_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6052</field>
+        <field name="name">Cuotas soportadas operaciones interiores bienes inversión (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_4')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_05_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6053</field>
+        <field name="name">Cuotas soportadas operaciones interiores bienes inversión (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_7')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_606</field>
+        <field name="name">Cuotas devengadas importaciones bienes y servicios corrientes</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_8')])]"/>
+        <field name="formulas">balance = ESTAX_6061.balance + ESTAX_6062.balance + ESTAX_6063.balance + sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_06_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6061</field>
+        <field name="name">Cuotas devengadas importaciones bienes y serv. corr. (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_10')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_06_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6062</field>
+        <field name="name">Cuotas devengadas importaciones bienes y serv. corr. (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_12')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_06_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6063</field>
+        <field name="name">Cuotas devengadas importaciones bienes y serv. corr. (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_14')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_607</field>
+        <field name="name">Cuotas devengadas importaciones bienes inversión</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_9')])]"/>
+        <field name="formulas">balance = ESTAX_6071.balance + ESTAX_6072.balance + ESTAX_6073.balance + sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_07_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6071</field>
+        <field name="name">Cuotas devengadas importaciones bienes inversión (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_11')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_07"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_07_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6072</field>
+        <field name="name">Cuotas devengadas importaciones bienes inversión (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_13')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_07"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_07_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6073</field>
+        <field name="name">Cuotas devengadas importaciones bienes inversión (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_15')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_07"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_08" model="account.financial.html.report.line">
+        <field name="code">ESTAX_608</field>
+        <field name="name">En adquisiciones intracomunitarias bienes y servicios corrientes</field>
+        <field name="sequence" eval="8"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_6081.balance + ESTAX_6082.balance + ESTAX_6083.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_08_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6081</field>
+        <field name="name">En adquisiciones intracomunitarias bienes y serv. corr. (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_31')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_08"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_08_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6082</field>
+        <field name="name">En adquisiciones intracomunitarias bienes y serv. corr. (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_37')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_08"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_08_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6083</field>
+        <field name="name">En adquisiciones intracomunitarias bienes y serv. corr. (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_43'), ref('l10n_es.tax_tag_49')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_08"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_09" model="account.financial.html.report.line">
+        <field name="code">ESTAX_609</field>
+        <field name="name">En adquisiciones intracomunitarias bienes inversión</field>
+        <field name="sequence" eval="9"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = ESTAX_6091.balance + ESTAX_6092.balance + ESTAX_6093.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_09_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6091</field>
+        <field name="name">En adquisiciones intracomunitarias bienes inversión (4%)</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_34')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_09"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_09_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6092</field>
+        <field name="name">En adquisiciones intracomunitarias bienes inversión (10%)</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_40')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_09"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_09_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_6093</field>
+        <field name="name">En adquisiciones intracomunitarias bienes inversión (21%)</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_46')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06_09"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_06_10" model="account.financial.html.report.line">
+        <field name="code">ESTAX_610</field>
+        <field name="name">Compensaciones Régimen Especial A., G. y P. 12%</field>
+        <field name="sequence" eval="10"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_5')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_06"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_700</field>
+        <field name="name">Entregas intracomunitarias</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="0"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_30')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_08" model="account.financial.html.report.line">
+        <field name="code">ESTAX_800</field>
+        <field name="name">Exportaciones y operaciones asimiladas</field>
+        <field name="sequence" eval="8"/>
+        <field name="level" eval="0"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_16')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_09" model="account.financial.html.report.line">
+        <field name="code">ESTAX_900</field>
+        <field name="name">Inversión del sujeto pasivo</field>
+        <field name="sequence" eval="9"/>
+        <field name="level" eval="0"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_20')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible</field>
+        <field name="sequence" eval="10"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_B_IRPF1.balance + ESTAX_B_IRPF15.balance + ESTAX_B_IRPF2.balance + ESTAX_B_IRPF20.balance + ESTAX_B_IRPF21.balance + ESTAX_B_IRPF7.balance + ESTAX_B_IRPF9.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF1</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 1%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_54')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF15</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 15%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_58')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF2</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 2%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_55')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF20</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 20%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_59')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF21</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 21%</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_60')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF7</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 7%</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_56')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_10_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF9</field>
+        <field name="name">IRPF retenciones practicadas. Base imponible 9%</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_57')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_10"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible</field>
+        <field name="sequence" eval="11"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_B_IRPF15_AC.balance + ESTAX_B_IRPF1_AC.balance + ESTAX_B_IRPF20_AC.balance + ESTAX_B_IRPF21_AC.balance + ESTAX_B_IRPF2_AC.balance + ESTAX_B_IRPF7_AC.balance + ESTAX_B_IRPF9_AC.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF15_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 15%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_65')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF1_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 1%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_61')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF20_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 20%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_66')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF21_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 21%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_67')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF2_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 2%</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_62')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF7_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 7%</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_63')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_11_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_B_IRPF9_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Base imponible 9%</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_es.tax_tag_64')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_11"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF</field>
+        <field name="name">IRPF retenciones practicadas. Total cuota</field>
+        <field name="sequence" eval="12"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_IRPF1.balance + ESTAX_IRPF15.balance + ESTAX_IRPF2.balance + ESTAX_IRPF20.balance + ESTAX_IRPF21.balance + ESTAX_IRPF7.balance + ESTAX_IRPF9.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF1</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 1%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_54')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF15</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 15%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_58')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF2</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 2%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_55')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF20</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 20%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_59')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF21</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 21%</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_60')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF7</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 7%</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_56')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_12_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF9</field>
+        <field name="name">IRPF retenciones practicadas. Cuota 9%</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_57')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_12"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Total cuota</field>
+        <field name="sequence" eval="13"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = ESTAX_IRPF15_AC.balance + ESTAX_IRPF1_AC.balance + ESTAX_IRPF20_AC.balance + ESTAX_IRPF21_AC.balance + ESTAX_IRPF2_AC.balance + ESTAX_IRPF7_AC.balance + ESTAX_IRPF9_AC.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_es"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_01" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF15_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 15%</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_65')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_02" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF1_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 1%</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_61')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_03" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF20_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 20%</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_66')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_04" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF21_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 21%</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_67')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_05" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF2_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 2%</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_62')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_06" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF7_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 7%</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_63')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_es_13_07" model="account.financial.html.report.line">
+        <field name="code">ESTAX_IRPF9_AC</field>
+        <field name="name">IRPF retenciones a cuenta. Cuota 9%</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_es.tax_tag_64')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_es_13"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+</odoo>

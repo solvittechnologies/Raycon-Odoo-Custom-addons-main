@@ -1,0 +1,2939 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_reports
+# 
+# Translators:
+# Martin Trigaux, 2016
+# fanha99 <fanha99@hotmail.com>, 2016
+# Hoang Loc Le Huu <loclhh@gmail.com>, 2016
+# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2016
+# sao sang <saosangmo@yahoo.com>, 2016
+# Phạm Lân <phamquanglan@gmail.com>, 2016
+# son dang <son.dang@doda100.com>, 2016
+# Tuan Tran <tmtuan.projects@gmail.com>, 2017
+# Jean-Charles Drubay <jcdrubay@gmail.com>, 2017
+# Dang Hanh <hanh.dtm@komit-consulting.com>, 2017
+# Duy BQ <duybq86@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-03 13:22+0000\n"
+"PO-Revision-Date: 2016-11-03 13:22+0000\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:297
+#: code:addons/account_reports/models/account_followup_report.py:298
+#, python-format
+msgid " Date "
+msgstr " Ngày "
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:297
+#: code:addons/account_reports/models/account_followup_report.py:298
+#, python-format
+msgid " Due Date "
+msgstr " Ngày đến hạn "
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:298
+#, python-format
+msgid " Excluded "
+msgstr " Ngoại trừ "
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:298
+#, python-format
+msgid " Expected Date "
+msgstr " Ngày dự kiến "
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:297
+#: code:addons/account_reports/models/account_followup_report.py:298
+#, python-format
+msgid " Total Due "
+msgstr " Tổng đến hạn "
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:380
+#, python-format
+msgid "%s - %s days ago"
+msgstr "%s - %s ngày trước"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:357
+#, python-format
+msgid "%s Payment Reminder"
+msgstr "%s nhắc nhở thanh toán"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:6
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:12
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:64
+#, python-format
+msgid "&times;"
+msgstr "&times;"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:387
+#, python-format
+msgid "(as of %s)"
+msgstr "(tính đến %s)"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#, python-format
+msgid "0 - 30"
+msgstr "0 - 30"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:156
+#, python-format
+msgid "10% remaining!"
+msgstr "10% remaining!"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#, python-format
+msgid "30 - 60"
+msgstr "30 - 60"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#, python-format
+msgid "60 - 90"
+msgstr "60 - 90"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#, python-format
+msgid "90 - 120"
+msgstr "90 - 120"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_letter_body
+msgid ""
+"<br/>\n"
+"            Customer ref:"
+msgstr ""
+"<br/>\n"
+"            Mã khách hàng:"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "<i class=\"fa fa-circle\" style=\"color: green;\"/> Good Debtor"
+msgstr "<i class=\"fa fa-circle\" style=\"color: green;\"/> Nợ tốt"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "<i class=\"fa fa-circle\" style=\"color: grey;\"/> Normal Debtor"
+msgstr "<i class=\"fa fa-circle\" style=\"color: grey;\"/> Nợ bình thường"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "<i class=\"fa fa-circle\" style=\"color: red;\"/> Bad Debtor"
+msgstr "<i class=\"fa fa-circle\" style=\"color: red;\"/> Nợ xấu"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid "<span aria-hidden=\"true\">&amp;times;</span>"
+msgstr "<span aria-hidden=\"true\">&amp;times;</span>"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.partner_view_buttons
+msgid "<span class=\"o_stat_text\">Overdue</span>"
+msgstr "<span class=\"o_stat_text\">Quá hạn</span>"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view_account_manager
+msgid "<span title=\"Latest Statement\">Latest Statement</span>"
+msgstr "<span title=\"Latest Statement\">Sao kê mới nhất</span>"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid ""
+"<strong>Good job!</strong> All followup letters and emails have been sent."
+msgstr ""
+"<strong>Rất tốt!</strong> Tất cả thư và email nhắc nhở thanh toán đều đã "
+"được gửi."
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup
+msgid ""
+"<strong>Warning!</strong> No action needs to be taken for this partner."
+msgstr ""
+"<strong>Cảnh báo!</strong> Không cần thực hiện hành động nào cho đối tác "
+"này."
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid ""
+"<strong>Warning!</strong> The following emails have not been sent :<br/>"
+msgstr "<strong>Cảnh báo!</strong> Các email sau chưa được gửi :<br/>"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_financial_html_report_context
+#: model:ir.model,name:account_reports.model_account_report_context_common
+msgid "A particular context for a financial report"
+msgstr "Một ngữ cảnh cụ thể cho một báo cáo tài chính"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_partner_ledger_context
+msgid "A particular context for the Partner Ledger report"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo Sổ cái đối tác"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_context_aged_payable
+msgid "A particular context for the aged payable"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo tuổi nợ phải trả"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_context_aged_receivable
+msgid "A particular context for the aged receivable"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo tuổi nợ phải thu"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_context_bank_rec
+msgid "A particular context for the bank reconciliation report"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo đối soát ngân hàng"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_context_coa
+msgid "A particular context for the chart of account"
+msgstr "Một ngữ cảnh cụ thể cho hệ thống tài khoản"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_context_followup
+msgid "A particular context for the followup report"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo theo dõi thanh toán"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_context_general_ledger
+msgid "A particular context for the general ledger"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo sổ cái"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_context_tax
+msgid "A particular context for the generic tax report"
+msgstr "Một ngữ cảnh cụ thể cho báo cáo kê khai thuế"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_context_followup_all
+msgid "A progress bar for followup reports"
+msgstr "Thanh xử lý của các báo cáo"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_total_assets0
+msgid "ASSETS"
+msgstr "TÀI SẢN"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#, python-format
+msgid "Account"
+msgstr "Tài khoản"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_financial_html_report
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_form
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_search
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_tree
+msgid "Account Report"
+msgstr "Báo cáo tài khoản"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_financial_html_report_line
+msgid "Account Report Line"
+msgstr "Chi tiết báo cáo kế toán"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_account_type
+msgid "Account Type"
+msgstr "Loại tài khoản"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:222
+#, python-format
+msgid "Accounts"
+msgstr "Các tài khoản"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+msgid "Accrual Basis"
+msgstr "Kế toán dồn tích"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:159
+#, python-format
+msgid "Accrual Basis,"
+msgstr "Kế toán dồn tích,"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_action_id
+msgid "Action id"
+msgstr "Mã hoạt động"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_prepayments_received0
+msgid "Advance Payments received from customers"
+msgstr "Các khoản thanh toán trước nhận được từ khách hàng"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_paid0
+msgid "Advance payments made to suppliers"
+msgstr "Các khoản thanh toán trước cho các nhà cung cấp"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_aged_partner
+msgid "Aged Partner Balances"
+msgstr "Số dư đối tác theo tuổi"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/models/account_aged_partner_balance.py:153
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:109
+#: model:ir.actions.client,name:account_reports.action_account_report_ap
+#: model:ir.model,name:account_reports.model_account_aged_payable
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_payable
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+#, python-format
+msgid "Aged Payable"
+msgstr "Tuổi nợ phải trả"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Aged Payables"
+msgstr "Tuổi nợ phải trả"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/models/account_aged_partner_balance.py:99
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:108
+#: model:ir.actions.client,name:account_reports.action_account_report_ar
+#: model:ir.model,name:account_reports.model_account_aged_receivable
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_aged_receivable
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+#, python-format
+msgid "Aged Receivable"
+msgstr "Tuổi nợ khách hàng"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Aged Receivables"
+msgstr "Tuổi nợ khách hàng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:187
+#, python-format
+msgid "All journals"
+msgstr "Tất cả sổ nhật kí"
+
+#. module: account_reports
+#: selection:account.report.context.followup.all,partner_filter:0
+msgid "All partners in need of action"
+msgstr "Tất cả đối tác cần thực hiện"
+
+#. module: account_reports
+#: selection:account.report.context.followup.all,partner_filter:0
+msgid "All partners with overdue invoices"
+msgstr "Tất cả đối tác có hóa đơn quá hạn thanh toán"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_financial_html_report_xml_export
+msgid "All the xml exports available for the financial reports"
+msgstr "Tất cả báo cáo xml hiện có cho phần báo cáo tài chính"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_analytic
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_analytic
+msgid "Allow analytic accounting"
+msgstr "Cho phép quản lý tài khoản phân tích"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_multi_company
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_multi_company
+msgid "Allow multi-company"
+msgstr "Cho phép đa công ty"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,show_domain:0
+msgid "Always"
+msgstr "Luôn luôn"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:195
+#, python-format
+msgid "Amount"
+msgstr "Tổng tiền"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_report_type
+msgid "Analysis Periods"
+msgstr "Kì phân tích"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:217
+#, python-format
+msgid "Analytic"
+msgstr "Phân tích"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_analytic_manager_id
+msgid "Analytic Filters Manager"
+msgstr "Quản lý bộ lọc phân tích"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_analytic_account_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_analytic_account_ids
+msgid "Analytic account ids"
+msgstr "Mã tài khoản phân tích"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_analytic_tag_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_analytic_tag_ids
+msgid "Analytic tag ids"
+msgstr "Mã từ khóa phân tích"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:112
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+#, python-format
+msgid "Annotate"
+msgstr "Chú thích"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:105
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:125
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:132
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:152
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:230
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:240
+#, python-format
+msgid "Apply"
+msgstr "Áp dụng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:262
+#, python-format
+msgid "April"
+msgstr "Tháng Tư"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:257
+#, python-format
+msgid "As of %s"
+msgstr "Tính đến %s"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "At the beginning of the period"
+msgstr "Vào lúc bắt đầu của kì"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:263
+#, python-format
+msgid "August"
+msgstr "Tháng Tám"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Auto"
+msgstr "Tự động"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_available_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_available_company_ids
+msgid "Available company ids"
+msgstr "Mã công ty hiện có"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_available_journal_ids
+msgid "Available journal ids"
+msgstr "Mã các sổ nhật kí hiện có"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_avgcre0
+msgid "Average creditors days"
+msgstr "Ngày chủ nợ trung bình"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_avdebt0
+msgid "Average debtors days"
+msgstr "Ngày nợ trung bình"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_balancesheet0
+msgid "BALANCE SHEET"
+msgstr "BẢNG CÂN ĐỐI KẾ TOÁN"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:338
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#, python-format
+msgid "Balance"
+msgstr "Số dư"
+
+#. module: account_reports
+#: model:account.financial.html.report,name:account_reports.account_financial_report_balancesheet0
+#: model:ir.actions.client,name:account_reports.action_account_report_bs
+msgid "Balance Sheet"
+msgstr "Bảng cân đối kế toán"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:189
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_journals
+#, python-format
+msgid "Bank Accounts"
+msgstr "Tài khoản ngân hàng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:165
+#: model:ir.actions.client,name:account_reports.action_account_report_bank_reconciliation
+#: model:ir.actions.client,name:account_reports.action_account_report_bank_reconciliation_with_journal
+#, python-format
+msgid "Bank Reconciliation"
+msgstr "Đối soát ngân hàng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:188
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_journal_id
+#, python-format
+msgid "Bank account"
+msgstr "Tài khoản ngân hàng"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_bank_view0
+msgid "Bank and Cash Accounts"
+msgstr "Tài khoản ngân hàng và tiền mặt"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_bank_reconciliation_report
+msgid "Bank reconciliation report"
+msgstr "Báo cáo đối soát tài khoản ngân hàng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:282
+#, python-format
+msgid "Base Amount"
+msgstr "Tổng gốc"
+
+#. module: account_reports
+#: selection:account.financial.html.report,report_type:0
+msgid "Based on a single date"
+msgstr "Dựa trên một ngày"
+
+#. module: account_reports
+#: selection:account.financial.html.report,report_type:0
+msgid "Based on a single date with the analytic filter"
+msgstr "Theo 1 ngày cụ thể kèm bộ lọc phân tích"
+
+#. module: account_reports
+#: selection:account.financial.html.report,report_type:0
+msgid "Based on date ranges"
+msgstr "Dựa trên khoản thời gian"
+
+#. module: account_reports
+#: selection:account.financial.html.report,report_type:0
+msgid "Based on date ranges with the analytic filter"
+msgstr "Dựa trên khoản thời gian theo bộ lọc phân tích"
+
+#. module: account_reports
+#: selection:account.financial.html.report,report_type:0
+msgid "Bases on date ranges and cash basis method"
+msgstr "Dựa trên phạm vi ngày và phương thức tiền mặt cơ bản"
+
+#. module: account_reports
+#: model:ir.ui.menu,name:account_reports.account_reports_business_statements_menu
+msgid "Business Statements"
+msgstr "Báo cáo kinh doanh"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash0
+msgid "CASH"
+msgstr "TIỀN MẶT"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_current_year_earnings0
+msgid "CURRENT YEAR EARNINGS"
+msgstr "LỢI NHUẬN NĂM HIỆN TẠI"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+msgid "Cash Basis"
+msgstr "Kế toán theo dòng tiền"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:166
+#, python-format
+msgid "Cash Basis Method"
+msgstr "Phương thức kế toán theo dòng tiền"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:158
+#, python-format
+msgid "Cash Basis,"
+msgstr "Kế toán theo dòng tiền,"
+
+#. module: account_reports
+#: model:account.financial.html.report,name:account_reports.account_financial_report_cashsummary0
+#: model:ir.actions.client,name:account_reports.action_account_report_cs
+msgid "Cash Flow Statement"
+msgstr "Báo cáo lưu chuyển tiền tệ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_opening_balance0
+msgid "Cash and cash equivalents, beginning of period"
+msgstr "Tiền và tương đương tiền, số dư đầu kỳ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_closing_balance0
+msgid "Cash and cash equivalents, closing balance"
+msgstr "Tiền và tương đương tiền, số dư cuối kì"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_financing0
+msgid "Cash flows from financing activities"
+msgstr "Dòng tiền từ hoạt động tài chính"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_investing0
+msgid "Cash flows from investing & extraordinary activities"
+msgstr "Dòng tiền từ hoạt động đầu tư & hoạt động bất thường"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_operating0
+msgid "Cash flows from operating activities"
+msgstr "Dòng tiền từ hoạt động vận hành doanh nghiệp"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_unclassified0
+msgid "Cash flows from unclassified activities"
+msgstr "Dòng tiền từ hoạt động không xác định"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_financing_in0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_investing_in0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_unclassified_in0
+msgid "Cash in"
+msgstr "Tiền vào"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_financing_out0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_investing_out0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_unclassified_out0
+msgid "Cash out"
+msgstr "Tiền ra"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_spent0
+msgid "Cash paid for"
+msgstr "Tiền đã trả"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_received0
+msgid "Cash received"
+msgstr "Tiền nhận được"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_cash_received0
+msgid "Cash received from customers"
+msgstr "Tiền nhận được từ khách hàng"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_spent0
+msgid "Cash spent"
+msgstr "Tiền đã xài"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_cash_surplus0
+msgid "Cash surplus"
+msgstr "Số dư quỹ tiền mặt"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_line
+msgid "Change expected payment date/note"
+msgstr "Thay đổi ghi chú/ngày thanh toán dự kiến"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_coa.py:105
+#, python-format
+msgid "Chart of Account"
+msgstr "Hệ thống tài khoản"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_coa_report
+msgid "Chart of Account Report"
+msgstr "Báo cáo hệ thống tài khoản"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_children_ids
+msgid "Children"
+msgstr "Con"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
+msgid "Children Lines"
+msgstr "Dòng con"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_coa.py:81
+#, python-format
+msgid "Class %s"
+msgstr "Cấp %s"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:49
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+#, python-format
+msgid "Click to add an introductory explanation"
+msgstr "Bấm để thêm phần giới thiệu giải thích"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:64
+#, python-format
+msgid "Close"
+msgstr "Đóng"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_closing_bank_balance0
+msgid "Closing bank balance"
+msgstr "Số dư ngân hàng cuối kì"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_code
+msgid "Code"
+msgstr "Mã"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_column
+msgid "Column"
+msgstr "Cột"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:297
+#: code:addons/account_reports/models/account_followup_report.py:298
+#: code:addons/account_reports/models/account_general_ledger.py:338
+#, python-format
+msgid "Communication"
+msgstr "Thông tin trao đổi giao dịch"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:173
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+#, python-format
+msgid "Companies:"
+msgstr "Công ty:"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_company_ids
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_company_ids
+msgid "Company ids"
+msgstr "Mã Công ty"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_date_filter_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_date_filter_cmp
+msgid "Comparison date filter used"
+msgstr "Bộ lọc so sánh ngày được dùng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:109
+#, python-format
+msgid "Comparison:"
+msgstr "So sánh:"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:288
+#, python-format
+msgid "Comparison<br />"
+msgstr "So sánh<br />"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
+msgid "Computation"
+msgstr "Tính toán"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
+msgid "Cosmetics"
+msgstr "Cosmetics"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cost_sales0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_direct_costs0
+msgid "Cost of Revenue"
+msgstr "Giá vốn hàng bán"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_create_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_create_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_financial_report.py:678
+#: code:addons/account_reports/models/account_general_ledger.py:338
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#: code:addons/account_reports/models/account_report_coa.py:149
+#: code:addons/account_reports/models/account_report_coa.py:152
+#: code:addons/account_reports/models/account_report_coa.py:153
+#, python-format
+msgid "Credit"
+msgstr "Có"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_creditors0
+msgid "Creditors"
+msgstr "Chủ nợ"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:338
+#, python-format
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_assets0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_assets_view0
+msgid "Current Assets"
+msgstr "Tài sản lưu động và đầu tư ngắn hạn"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:89
+#, python-format
+msgid "Current Balance in GL"
+msgstr "Số dư hiện tại theo Sổ cái"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_liabilities0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_liabilities1
+msgid "Current Liabilities"
+msgstr "Nợ ngắn hạn"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_ca_to_l0
+msgid "Current assets to liabilities"
+msgstr "Tài sản lưu động đến nợ phải trả"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:67
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:86
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:113
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:133
+#, python-format
+msgid "Custom"
+msgstr "Tùy chỉnh"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "Customer Statement"
+msgstr "Sao kê giao dịch của khách hàng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:204
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:210
+#, python-format
+msgid "Customers"
+msgstr "Khách hàng"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_followup
+#: model:ir.actions.client,name:account_reports.action_account_followup_all
+#: model:ir.ui.menu,name:account_reports.menu_action_followups
+msgid "Customers Statement"
+msgstr "Sao kê giao dịch của khách hàng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:208
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:214
+#, python-format
+msgid "Customers and suppliers"
+msgstr "Khách hàng và nhà cung cấp"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_detailed_net_profit0
+msgid "DETAILED NET PROFIT"
+msgstr "CHI TIẾT LỢI NHUẬN RÒNG"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:195
+#: code:addons/account_reports/models/account_general_ledger.py:353
+#, python-format
+msgid "Date"
+msgstr "Ngày tháng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:98
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:145
+#, python-format
+msgid "Date :"
+msgstr "Ngày :"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_date_filter
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_date_filter
+msgid "Date filter used"
+msgstr "Bộ lọc ngày đã dùng"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_move_line_next_action_date
+msgid ""
+"Date where the next action should be taken for a receivable item. Usually, "
+"automatically set when sending reminders through the customer statement."
+msgstr ""
+"Ngày hành động tiếp theo nên được thực hiện cho một khoản phải thu. Thông "
+"thường, tự động được thiết lập khi gửi lời nhắc thông qua bảng sao kê khách "
+"hàng."
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:59
+#, python-format
+msgid "Date:"
+msgstr "Ngày:"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_financial_report.py:678
+#: code:addons/account_reports/models/account_general_ledger.py:338
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#: code:addons/account_reports/models/account_report_coa.py:149
+#: code:addons/account_reports/models/account_report_coa.py:152
+#: code:addons/account_reports/models/account_report_coa.py:153
+#, python-format
+msgid "Debit"
+msgstr "Nợ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_debtors0
+msgid "Debtors"
+msgstr "Con nợ"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:263
+#, python-format
+msgid "December"
+msgstr "Tháng Mười hai"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_depreciation0
+msgid "Depreciation"
+msgstr "Khấu hao"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view_account_manager
+msgid "Difference"
+msgstr "Chênh lệch"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_partner_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_payable_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_receivable_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_bank_reconciliation_report_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_coa_report_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_xml_export_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_followup_report_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_general_ledger_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_generic_tax_report_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_display_name
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_extra_options
+msgid "Display the extra options dropdown (with cash basis and draft entries)"
+msgstr "Các tùy chọn hiển thị thêm (theo dòng tiền và bút toán nháp)"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Do it Later"
+msgstr "Thực hiện sau"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_letter_body
+msgid ""
+"Document: Customer account statement<br/>\n"
+"            Date:"
+msgstr ""
+"Tài liệu: Sao kê tài khoản khách hàng<br/>\n"
+"                    Ngày:"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_domain
+msgid "Domain"
+msgstr "Miền"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:154
+#, python-format
+msgid "Don't follow-up before :"
+msgstr "Đừng theo dõi trước:"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Done"
+msgstr "Hoàn thành"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_equity0
+msgid "EQUITY"
+msgstr "VỐN CHỦ SỞ HỮU"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:39
+#, python-format
+msgid "EXPORT (XLSX)"
+msgstr "XUẤT (XLSX)"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:40
+#, python-format
+msgid "EXPORT (XML)"
+msgstr "XUẤT (XML)"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:12
+#, python-format
+msgid "Email not sent because of email address of partner not filled in."
+msgstr "Email chưa được gửi vì địa chỉ email của đối tác chưa được điền."
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_cash_basis
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_cash_basis
+msgid "Enable cash basis columns"
+msgstr "Kích hoạt cột Kế toán theo dòng tiền"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_comparison
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_comparison
+msgid "Enable comparison"
+msgstr "Bật so sánh"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:95
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:142
+#, python-format
+msgid "End Date :"
+msgstr "Ngày kết thúc :"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_date_to
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_date_to
+msgid "End date"
+msgstr "Ngày kết thúc"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_date_to_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_date_to_cmp
+msgid "End date for comparison"
+msgstr "Ngày kết thúc của so sánh"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:75
+#, python-format
+msgid "End of Last Financial Year"
+msgstr "Kết thúc của năm tài chính trước"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:73
+#, python-format
+msgid "End of Last Month"
+msgstr "Kết thúc của tháng trước"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:74
+#, python-format
+msgid "End of Last Quarter"
+msgstr "Kết thúc của quý trước"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:160
+#, python-format
+msgid "Equal Last Statement Balance"
+msgstr "Cân đối số dư sao kê mới nhất"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:47
+#, python-format
+msgid "Error"
+msgstr "Lỗi"
+
+#. module: account_reports
+#: model:account.financial.html.report,name:account_reports.account_financial_report_executivesummary0
+msgid "Executive Summary"
+msgstr "Bảng tóm tắt hoạt động"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:139
+#: model:ir.model.fields,field_description:account_reports.field_account_move_line_expected_pay_date
+#, python-format
+msgid "Expected Payment Date"
+msgstr "Ngày thanh toán dự kiến"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_move_line_expected_pay_date
+msgid ""
+"Expected payment date as manually set through the customer statement (e.g: "
+"if you had the customer on the phone and want to remember the date he "
+"promised he would pay)"
+msgstr ""
+"Ngày thanh toán dự kiến thường được ghi nhận thủ công thông qua sao kê khách"
+" hàng (ví dụ: ví dụ bạn có một khách hàng kèm theo số điện thoại và muốn "
+"nhắc nhở người đó ngày người đó hứa trả)"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_expenses0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_expense0
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_less_expenses0
+msgid "Expenses"
+msgstr "Chi phí"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:262
+#, python-format
+msgid "February"
+msgstr "Tháng Hai"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_financial_report_id
+msgid "Financial Report"
+msgstr "Báo cáo tài chính"
+
+#. module: account_reports
+#: model:ir.actions.act_window,name:account_reports.action_account_financial_report_tree
+#: model:ir.ui.menu,name:account_reports.menu_account_financial_reports_tree
+msgid "Financial Reports"
+msgstr "Báo cáo tài chính"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,figure_type:0
+msgid "Float"
+msgstr "Float"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,show_domain:0
+msgid "Foldable"
+msgstr "Gom lại"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:32
+#, python-format
+msgid "Follow-ups Done / Total Follow-ups"
+msgstr "Follow-ups Hoàn thành / Tổng Follow-ups"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:95
+#: model:ir.model,name:account_reports.model_account_followup_report
+#, python-format
+msgid "Followup Report"
+msgstr "Báo cáo theo dõi"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_footnote
+msgid "Footnote for reports"
+msgstr "Chân trang báo cáo"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_footnotes
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_footnotes
+msgid "Footnotes"
+msgstr "Chân trang"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_footnotes_manager_id
+msgid "Footnotes Manager"
+msgstr "Quản lý ghi chú chân trang"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_financial_html_report_report_type
+msgid "For report like the balance sheet that do not work with date ranges"
+msgstr ""
+"Dành cho báo cáo như báo cáo số dư sẽ không chạy theo dạng phạm vi ngày"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "Force given dates for all accounts and account types"
+msgstr "Buộc có ngày tháng cho tất cả tài khoản và loại tài khoản"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_formulas
+msgid "Formulas"
+msgstr "Công thức"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:258
+#, python-format
+msgid "From %s <br/> to  %s"
+msgstr "Từ %s <br/> tới  %s"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "From the beginning"
+msgstr "Từ khi bắt đầu"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/models/account_general_ledger.py:302
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:107
+#: model:ir.actions.client,name:account_reports.action_account_general_ledger_force_account
+#: model:ir.actions.client,name:account_reports.action_account_report_general_ledger
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_general_ledger
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+#, python-format
+msgid "General Ledger"
+msgstr "Sổ cái"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_general_ledger
+msgid "General Ledger Report"
+msgstr "Báo cáo Sổ cái"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_report_gt
+#: model:ir.model,name:account_reports.model_account_generic_tax_report
+msgid "Generic Tax Report"
+msgstr "Báo cáo thuế chung"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_gross_profit0
+msgid "Gross Profit"
+msgstr "Lợi nhuận gộp"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_gross_profit0
+msgid "Gross profit"
+msgstr "Lợi nhuận gộp"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_gpmargin0
+msgid "Gross profit margin (gross profit / operating income)"
+msgstr "Lợi nhuận biên gộp (lợi nhuận gộp / hoạt động kinh doanh)"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_groupby
+msgid "Group by"
+msgstr "Nhóm theo"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:151
+#, python-format
+msgid "Halfway through!"
+msgstr "Được một nửa!"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:157
+#, python-format
+msgid "Hang in there, you're nearly done."
+msgstr "Trong đó, bạn đã gần xong rồi."
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_hide_if_zero
+msgid "Hide if zero"
+msgstr "Ẩn nếu là 0"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:168
+#, python-format
+msgid "Hierarchy"
+msgstr "Phân cấp bậc"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:168
+#, python-format
+msgid "Hierarchy and Subtotals"
+msgstr "Phân cấp bậc và thành tiền"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "History <span class=\"caret\"/>"
+msgstr "Lịch sử <span class=\"caret\"/>"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_partner_id
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_payable_id
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_receivable_id
+#: model:ir.model.fields,field_description:account_reports.field_account_bank_reconciliation_report_id
+#: model:ir.model.fields,field_description:account_reports.field_account_coa_report_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_xml_export_id
+#: model:ir.model.fields,field_description:account_reports.field_account_followup_report_id
+#: model:ir.model.fields,field_description:account_reports.field_account_general_ledger_id
+#: model:ir.model.fields,field_description:account_reports.field_account_generic_tax_report_id
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_id
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_totalincome0
+msgid "INCOME"
+msgstr "DOANH THU"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:8
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:17
+#, python-format
+msgid "In Need of Action"
+msgstr "Có nhu cầu thực hiện"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:167
+#, python-format
+msgid "Include Unposted Entries"
+msgstr "Cả bút toán chưa vào sổ"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:167
+#, python-format
+msgid "Include unposted entries"
+msgstr "Cả bút toán chưa vào sổ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_income0
+msgid "Income"
+msgstr "Doanh thu"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:193
+#: code:addons/account_reports/models/account_partner_ledger.py:148
+#: code:addons/account_reports/models/account_report_coa.py:147
+#, python-format
+msgid "Initial Balance"
+msgstr "Dư đầu kỳ"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:19
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:163
+#, python-format
+msgid "Insert foot note here"
+msgstr "Điền ghi chú chân trang ở đây"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:142
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:157
+#, python-format
+msgid "Insert note here"
+msgstr "Điền ghi chú ở đây"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_move_line_internal_note
+msgid "Internal Note"
+msgstr "Ghi chú nội bộ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_invoice_address_id
+msgid "Invoice Address"
+msgstr "Địa chỉ xuất hóa đơn"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_green_on_positive
+msgid "Is growth good when positive"
+msgstr "Là tăng trưởng tốt nếu số dương"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#, python-format
+msgid "JRNL"
+msgstr "JRNL"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:262
+#, python-format
+msgid "January"
+msgstr "Tháng Một"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_move_line
+msgid "Journal Item"
+msgstr "Phát sinh"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "Journal Items"
+msgstr "Phát sinh"
+
+#. module: account_reports
+#: model:ir.actions.server,name:account_reports.action_journal_items
+msgid "Journal Items by tax"
+msgstr "Phát sinh có thuế"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_journal_ids
+msgid "Journal ids"
+msgstr "Mã Phát sinh"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:184
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+#, python-format
+msgid "Journals:"
+msgstr "Phát sinh:"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:263
+#, python-format
+msgid "July"
+msgstr "Tháng Bảy"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:262
+#, python-format
+msgid "June"
+msgstr "Tháng Sáu"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_liabilities_view0
+msgid "LIABILITIES"
+msgstr "NỢ"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:83
+#, python-format
+msgid "Last Financial Year"
+msgstr "Năm tài chính trước"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_partner___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_payable___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_aged_receivable___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_bank_reconciliation_report___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_coa_report___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_xml_export___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_followup_report___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_general_ledger___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_generic_tax_report___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike___last_update
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:62
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:81
+#, python-format
+msgid "Last Month"
+msgstr "Tháng trước"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:63
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:82
+#, python-format
+msgid "Last Quarter"
+msgstr "Quý trước"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_write_uid
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_analytic_manager_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnotes_manager_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_multicompany_manager_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_write_date
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối lúc"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:64
+#, python-format
+msgid "Last Year"
+msgstr "Năm ngoái"
+
+#. module: account_reports
+#: model:ir.ui.menu,name:account_reports.account_reports_legal_statements_menu
+msgid "Legal Statements"
+msgstr "Báo cáo luật định"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_level
+msgid "Level"
+msgstr "Mức độ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_ids
+msgid "Lines"
+msgstr "Chi tiết"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_report_id
+msgid "Linked financial report"
+msgstr "Liên kết báo cáo tài chính"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Log a Note"
+msgstr "Ghi chú"
+
+#. module: account_reports
+#: model:mail.message.subtype,name:account_reports.followup_logged_action
+msgid "Logged followup action"
+msgstr "Logged followup action"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
+msgid "Main Info"
+msgstr "Thông tin chính"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_manager_id
+msgid "Manager id"
+msgstr "Id quản lý"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Manual"
+msgstr "Thủ công"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:262
+#, python-format
+msgid "March"
+msgstr "Tháng Ba"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#, python-format
+msgid "Matching Number"
+msgstr "Mã số đối ứng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:262
+#, python-format
+msgid "May"
+msgstr "Tháng Năm"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_menuitem_created
+msgid "Menu Has Been Created"
+msgstr "Menu đã được tạo"
+
+#. module: account_reports
+#: model:mail.message.subtype,description:account_reports.followup_logged_action
+msgid "Messages created after a followup action has been executed"
+msgstr ""
+"Thông báo được tạo sau khi hoạt động nhắc nhở thanh toán được thực hiện"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:158
+#, python-format
+msgid "Minus Missing Statements"
+msgstr "Trừ các sao kê thiếu"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:116
+#, python-format
+msgid "Minus Unreconciled Payments"
+msgstr "Trừ các thanh toán chưa đối soát"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:143
+#, python-format
+msgid "Minus Unreconciled Statement Lines"
+msgstr "Trừ các dòng sao kê chưa đối soát"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_regulator0
+msgid ""
+"Minus previously recorded advance payments (already in the starting balance)"
+msgstr ""
+"Trừ đi phần tiền ghi nhận trước đây đối với các khoản trả trước (đã có trong"
+" số dư ban đầu)"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_ir_module_module
+msgid "Module"
+msgstr "Mô đun"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_multicompany_manager_id
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_multicompany_manager_id
+msgid "Multi-company Manager"
+msgstr "Quản lý đa công ty"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_net_assets0
+msgid "NET ASSETS"
+msgstr "TÀI SẢN RÒNG"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_net_profit0
+msgid "NET PROFIT"
+msgstr "LỢI NHUẬN RÒNG"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:280
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_name
+#, python-format
+msgid "Name"
+msgstr "Tên"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_generic_tax_report.py:167
+#: code:addons/account_reports/models/account_generic_tax_report.py:169
+#: code:addons/account_reports/models/account_generic_tax_report.py:172
+#, python-format
+msgid "Net"
+msgstr "Thực tế"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "Net Audit"
+msgstr "Thực tế kiểm toán"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_profit0
+msgid "Net Profit"
+msgstr "Lợi nhuận ròng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:197
+#, python-format
+msgid "Net Tax Lines"
+msgstr "Các dòng thuế thuần"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_net_assets0
+msgid "Net assets"
+msgstr "Tài sản ròng"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_cashsummary_net_increase0
+msgid "Net increase in cash and cash equivalents"
+msgstr "Lưu chuyển tiền thuần trong kỳ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_npmargin0
+msgid "Net profit margin (net profit / income)"
+msgstr "Lợi nhuận ròng (lợi nhuận ròng / thu nhập)"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,show_domain:0
+msgid "Never"
+msgstr "Không bao giờ"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_partner_payment_next_action
+msgid "Next Action"
+msgstr "Hành động tiếp theo"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_move_line_next_action_date
+#: model:ir.model.fields,field_description:account_reports.field_res_partner_payment_next_action_date
+msgid "Next Action Date"
+msgstr "Ngày Hành động Kế tiếp"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Next Reminder:"
+msgstr "Nhắc nhở kế tiếp:"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:266
+#, python-format
+msgid "Next action date: "
+msgstr "Ngày hoạt động kế: "
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_next_footnote_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_next_footnote_number
+msgid "Next footnote number"
+msgstr "Số ghi chú phía ở dưới kế"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:117
+#, python-format
+msgid "No Comparison"
+msgstr "Không so sánh"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,figure_type:0
+msgid "No Unit"
+msgstr "Không"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:65
+#, python-format
+msgid "No fiscal year was found. Using the current civil year."
+msgstr "Không tìm thấy năm tài chính. Đang sử dụng năm tài chính hiện tại."
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid "No followup to send !"
+msgstr "Không có gì cần gửi!"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:110
+#, python-format
+msgid "None"
+msgstr "Không có"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#, python-format
+msgid "Not due on %s"
+msgstr "Chưa phải trả %s"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:141
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:156
+#, python-format
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_res_partner_payment_next_action
+msgid "Note regarding the next action."
+msgstr "Ghi chú liên quan tới hoạt động tiếp theo."
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_move_line_internal_note
+msgid ""
+"Note you can set through the customer statement about a receivable journal "
+"item"
+msgstr ""
+"Ghi chú bạn có thể ghi nhận trong phần sao kê khách hàng ở phần các khoản "
+"phảithu"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:263
+#, python-format
+msgid "November"
+msgstr "Tháng mười một"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_number
+msgid "Number"
+msgstr "Số"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_company_days_between_two_followups
+msgid "Number of days between two follow-ups"
+msgstr "Số ngày giữa 2 lần theo dõi"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_config_settings_days_between_two_followups
+msgid "Number of days between two follow-ups *"
+msgstr "Số ngày giữa 2 lần theo dõi *"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_periods_number
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_periods_number
+msgid "Number of periods"
+msgstr "Số kì"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:121
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:128
+#, python-format
+msgid "Number of periods :"
+msgstr "Số kì :"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:263
+#, python-format
+msgid "October"
+msgstr "Tháng Mười"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#, python-format
+msgid "Older"
+msgstr "Cũ hơn"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:150
+#, python-format
+msgid "One month"
+msgstr "Một tháng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:148
+#, python-format
+msgid "One week"
+msgstr "Một tuần"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_financial_html_report_context_report_id
+msgid "Only if financial report"
+msgstr "Chỉ nếu là báo cáo tài chính"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_income0
+msgid "Operating Income"
+msgstr "Thu nhập từ kinh doanh"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:156
+#, python-format
+msgid "Options:"
+msgstr "Các lựa chọn:"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_other_income0
+msgid "Other Income"
+msgstr "Thu nhập khác"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_performance0
+msgid "PERFORMANCE"
+msgstr "HIỆU SUẤT"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_position0
+msgid "POSITION"
+msgstr "VỊ THẾ"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:38
+#, python-format
+msgid "PRINT PREVIEW"
+msgstr "IN XEM TRƯỚC"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_profitability0
+msgid "PROFITABILITY"
+msgstr "LỢI NHUẬN"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_parent_id
+msgid "Parent"
+msgstr "Cha"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_parent_id
+msgid "Parent id"
+msgstr "Id Cha"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:338
+#: model:ir.model,name:account_reports.model_res_partner
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_partner_id
+#, python-format
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_partner_filter
+msgid "Partner Filter"
+msgstr "Bộ lọc đối tác"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_partner_ledger.py:176
+#: model:ir.actions.client,name:account_reports.action_account_report_partner_ledger
+#: model:ir.model,name:account_reports.model_account_partner_ledger
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_partner_ledger
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+#, python-format
+msgid "Partner Ledger"
+msgstr "Sổ cái đối tác"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:7
+#, python-format
+msgid "Partners:"
+msgstr "Đối tác:"
+
+#. module: account_reports
+#: selection:account.partner.ledger.context,account_type:0
+msgid "Payable Accounts"
+msgstr "Các tài khoản phải trả"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_current_liabilities_payable
+msgid "Payables"
+msgstr "Phải trả"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_percentage
+msgid "Percentage"
+msgstr "Phần trăm"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,figure_type:0
+msgid "Percents"
+msgstr "Phần trăm"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:60
+#, python-format
+msgid "Period:"
+msgstr "Chu kỳ:"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_fixed_assets_view0
+msgid "Plus Fixed Assets"
+msgstr "Tài sản cố định bổ sung"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:156
+#, python-format
+msgid "Plus Missing Statements"
+msgstr "Cộng sao kê thiếu"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_non_current_assets_view0
+msgid "Plus Non-current Assets"
+msgstr "Cộng Tài sản dài hạn"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_non_current_liabilities0
+msgid "Plus Non-current Liabilities"
+msgstr "Cộng Nợ cố định"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:114
+#, python-format
+msgid "Plus Unreconciled Payments"
+msgstr "Cộng Thanh toán chưa đối soát"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:129
+#, python-format
+msgid "Plus Unreconciled Statement Lines"
+msgstr "Cộng Chi tiết sao kê chưa đối soát"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:162
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+#, python-format
+msgid "Posted Entries Only"
+msgstr "Chỉ bút toán vào sổ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_prepayements0
+msgid "Prepayments"
+msgstr "Trả trước"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:119
+#, python-format
+msgid "Previous Period"
+msgstr "Kì trước"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:111
+#, python-format
+msgid "Previous Periods"
+msgstr "Kì trước"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Print Letter"
+msgstr "In thư"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_report_pnl
+msgid "Profit And Loss"
+msgstr "Kết quả kinh doanh"
+
+#. module: account_reports
+#: model:account.financial.html.report,name:account_reports.account_financial_report_profitandloss0
+msgid "Profit and Loss"
+msgstr "Lãi và lỗ"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_generic_tax_report.py:109
+#, python-format
+msgid "Purchase"
+msgstr "Mua hàng"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup
+msgid "Put back in the list"
+msgstr "Bỏ lại vào danh sách"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:250
+#: code:addons/account_reports/models/account_report_context_common.py:333
+#, python-format
+msgid "Quarter #"
+msgstr "Quý #"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_retained_earnings0
+msgid "RETAINED EARNINGS"
+msgstr "LỢI NHUẬN GIỮ LẠI"
+
+#. module: account_reports
+#: selection:account.partner.ledger.context,account_type:0
+msgid "Receivable Accounts"
+msgstr "Các tài khoản phải thu"
+
+#. module: account_reports
+#: selection:account.partner.ledger.context,account_type:0
+msgid "Receivable and Payable Accounts"
+msgstr "Các Tài khoản Phải thu và Phải trả"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_receivable0
+msgid "Receivables"
+msgstr "Có thể thu"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.account_reports_journal_dashboard_kanban_view
+msgid "Reconciliation Report"
+msgstr "Báo cáo đối soát"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_partner_ledger.py:207
+#, python-format
+msgid "Ref"
+msgstr "Mã"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_bank_reconciliation_report.py:195
+#, python-format
+msgid "Reference"
+msgstr "Mã"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Reference number"
+msgstr "Mã tham chiếu"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_form
+msgid "Report Line"
+msgstr "Chi tiết báo cáo"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_line_tree
+msgid "Report Lines"
+msgstr "Chi tiết báo cáo"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.view_account_financial_report_search
+msgid "Report Type"
+msgstr "Loại báo cáo"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_comparison
+msgid "Reports allow comparisons"
+msgstr "Báo cáo cho phép so sánh"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_cash_basis
+msgid "Reports always use cash basis"
+msgstr "Báo cáo luôn dùng cash basis"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_analytic
+msgid "Reports enable the analytic filter"
+msgstr "Kích hoạt báo cáo cho bộ lọc phân tích"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_type_date_range
+msgid "Reports use a date range and not a single date"
+msgstr "Báo cáo dùng phạm vi ngày và không là một ngày đơn lẻ"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_return_investment0
+msgid "Return on investments (net profit / assets)"
+msgstr "Lợi tức đầu tư (lợi nhuận / tài sản ròng)"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_generic_tax_report.py:109
+#, python-format
+msgid "Sale"
+msgstr "Bán"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:112
+#, python-format
+msgid "Same Last Year"
+msgstr "Cùng năm ngoái"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:126
+#, python-format
+msgid "Same Period Last Year"
+msgstr "Cùng kì năm ngoái"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:20
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:54
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:68
+#, python-format
+msgid "Save"
+msgstr "Lưu"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_name
+msgid "Section Name"
+msgstr "Tên phần"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "See bank statement"
+msgstr "Xem sao kê ngân hàng"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_body
+msgid "Send by email"
+msgstr "Gửi qua email"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:350
+#, python-format
+msgid "Sent a followup email"
+msgstr "Gửi email theo dõi"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:344
+#, python-format
+msgid "Sent a followup letter"
+msgstr "Gửi thư theo dõi"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:263
+#, python-format
+msgid "September"
+msgstr "Tháng Chín"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_sequence
+msgid "Sequence"
+msgstr "Thứ tự"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_account_financial_html_report_tax_report
+msgid ""
+"Set to True to automatically filter out journal items that have the boolean "
+"field 'tax_exigible' set to False"
+msgstr ""
+"Đặt là Có để tự động lọc ra các chi tiết bút toán có phần khai báo thuế được"
+" thiết lập là không đủ điều kiện"
+
+#. module: account_reports
+#: model:account.financial.html.report.line,name:account_reports.account_financial_report_executivesummary_st_cash_forecast0
+msgid "Short term cash forecast"
+msgstr "Dự báo tiền mặt ngắn hạn"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_debit_credit
+msgid "Show Credit and Debit Columns"
+msgstr "Xem cột Nợ và Có"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_show_domain
+msgid "Show domain"
+msgstr "Hiển thị domain"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_hierarchy_3
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_hierarchy_3
+msgid "Show hierarchies"
+msgstr "Xem cấu trúc"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_skipped_partners_ids
+msgid "Skipped partners"
+msgstr "Đã bỏ qua đối tác"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_special_date_changer
+msgid "Special date changer"
+msgstr "Thay đổi ngày cụ thể"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:88
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:135
+#, python-format
+msgid "Start Date :"
+msgstr "Ngày bắt đầu :"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_date_from
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_date_from
+msgid "Start date"
+msgstr "Ngày bắt đầu"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_date_from_cmp
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_date_from_cmp
+msgid "Start date for comparison"
+msgstr "Ngày bắt đầu để so sánh"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_started
+msgid "Starting time"
+msgstr "Thời gian bắt đầu"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_summary
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_summary
+msgid "Summary"
+msgstr "Tóm tắt"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:205
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:211
+#, python-format
+msgid "Suppliers"
+msgstr "Nhà cung cấp"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:232
+#, python-format
+msgid "Tags"
+msgstr "Từ khóa"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_target_id
+msgid "Target id"
+msgstr "Mã mục tiêu"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_generic_tax_report.py:167
+#: code:addons/account_reports/models/account_generic_tax_report.py:169
+#: code:addons/account_reports/models/account_generic_tax_report.py:172
+#, python-format
+msgid "Tax"
+msgstr "Thuế"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:282
+#, python-format
+msgid "Tax Amount"
+msgstr "Số tiền thuế"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "Tax Audit"
+msgstr "Kiểm toán thuế"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:270
+#, python-format
+msgid "Tax Declaration"
+msgstr "Khai báo Thuế"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:197
+#, python-format
+msgid "Tax Lines"
+msgstr "Chi tiết thuế"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_generic_tax_report.py:142
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_tax_report
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_gt
+#, python-format
+msgid "Tax Report"
+msgstr "Báo cáo Thuế"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_text
+#: model:ir.model.fields,field_description:account_reports.field_account_report_tag_ilike_text
+msgid "Text"
+msgstr "Văn bản"
+
+#. module: account_reports
+#: model:ir.model.fields,help:account_reports.field_res_partner_payment_next_action_date
+msgid "The date before which no action should be taken."
+msgstr "Ngày trước khi không có hoạt động nào được thực hiện."
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:152
+#, python-format
+msgid "The first half took you %ss."
+msgstr "Nửa đầu cho bạn %ss."
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:6
+#, python-format
+msgid "The followup report was successfully emailed !"
+msgstr "Các bản nhắc nhở thanh toán đã được gửi email thành công !"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_general_ledger.py:247
+#: code:addons/account_reports/models/account_partner_ledger.py:165
+#, python-format
+msgid ""
+"There are more than 80 items in this list, click here to see all of them"
+msgstr ""
+"Có nhiều hơn 80 dòng trong danh sách này, nhấn vào đây để xem tất cả chúng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:81
+#, python-format
+msgid "This Financial Year"
+msgstr "Năm tài chính này"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:67
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:79
+#, python-format
+msgid "This Month"
+msgstr "Tháng này"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:66
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:80
+#, python-format
+msgid "This Quarter"
+msgstr "Quý này"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:65
+#, python-format
+msgid "This Year"
+msgstr "Năm nay"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:61
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:72
+#, python-format
+msgid "Today"
+msgstr "Hôm nay"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:68
+#: code:addons/account_reports/models/account_aged_partner_balance.py:125
+#: code:addons/account_reports/models/account_aged_partner_balance.py:179
+#: code:addons/account_reports/models/account_financial_report.py:444
+#: code:addons/account_reports/models/account_financial_report.py:521
+#: code:addons/account_reports/models/account_general_ledger.py:260
+#: code:addons/account_reports/models/account_partner_ledger.py:156
+#: code:addons/account_reports/models/account_report_coa.py:153
+#, python-format
+msgid "Total"
+msgstr "Tổng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_aged_partner_balance.py:58
+#: code:addons/account_reports/models/account_general_ledger.py:238
+#, python-format
+msgid "Total "
+msgstr "Tổng "
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:77
+#, python-format
+msgid "Total Due"
+msgstr "Tổng tới hạn"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_followup_report.py:89
+#, python-format
+msgid "Total Overdue"
+msgstr "Tổng quá hạn"
+
+#. module: account_reports
+#: model:ir.actions.client,name:account_reports.action_account_report_coa
+#: model:ir.ui.menu,name:account_reports.menu_action_account_report_coa
+msgid "Trial Balance"
+msgstr "Cân đối tài khoản"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:151
+#, python-format
+msgid "Two months"
+msgstr "Hai tháng"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:149
+#, python-format
+msgid "Two weeks"
+msgstr "Hai tuần"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_figure_type
+#: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_type
+msgid "Type"
+msgstr "Loại"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_unfolded_partners
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_unfolded_partners
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_unfolded_accounts
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_unfolded_accounts
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_unfolded_lines
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_unfolded_partners
+msgid "Unfolded lines"
+msgstr "Không gom dòng"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_res_partner_unreconciled_aml_ids
+msgid "Unreconciled aml ids"
+msgstr "Mã ami chưa đối soát"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_payable_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_context_aged_receivable_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_context_coa_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_context_general_ledger_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_context_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_partner_ledger_context_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_bank_rec_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_common_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_entries
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_tax_all_entries
+msgid "Use all entries (not only posted ones)"
+msgstr "Dùng tất cả bút toán (không chỉ những cái đã vào sổ)"
+
+#. module: account_reports
+#: selection:account.financial.html.report.line,special_date_changer:0
+msgid "Use given dates"
+msgstr "Dùng ngày được cho"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_move_line.py:19
+#, python-format
+msgid "View Bank Statement"
+msgstr "Xem sao kê ngân hàng"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_move_line.py:24
+#, python-format
+msgid "View Invoice"
+msgstr "Xem hóa đơn"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:111
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+#: model:ir.ui.view,arch_db:account_reports.report_followup_line
+#, python-format
+msgid "View Journal Entry"
+msgstr "Xem bút toán"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_move_line.py:25
+#, python-format
+msgid "View Move"
+msgstr "Xem chi tiết"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_move_line.py:21
+#, python-format
+msgid "View Payment"
+msgstr "Xem thanh toán"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_financial_line.xml:65
+#, python-format
+msgid "Warning!"
+msgstr "Cảnh báo!"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:161
+#: model:ir.ui.view,arch_db:account_reports.report_financial_body
+#, python-format
+msgid "With Draft Entries"
+msgstr "Với bút toán nháp"
+
+#. module: account_reports
+#. openerp-web
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:11
+#: code:addons/account_reports/static/src/xml/account_report_backend.xml:18
+#, python-format
+msgid "With Overdue Invoices"
+msgstr "Với các hóa đơn quá hạn"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid "You have sent"
+msgstr "Bạn đã gửi"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_public_body
+msgid "Your Statement"
+msgstr "Sao kê của bạn"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_config_settings
+msgid "account.config.settings"
+msgstr "account.config.settings"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_tag_ilike
+msgid "account.report.tag.ilike"
+msgstr "account.report.tag.ilike"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_type
+msgid "account.report.type"
+msgstr "account.report.type"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_valuenow
+msgid "current amount of invoices done"
+msgstr "tổng hiện tại của hóa đơn hoàn tất"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:238
+#, python-format
+msgid "get_columns_names not implemented"
+msgstr "get_columns_names chưa được triển khai"
+
+#. module: account_reports
+#: code:addons/account_reports/models/account_report_context_common.py:149
+#, python-format
+msgid "get_report_obj not implemented"
+msgstr "get_report_obj chưa được triển khai"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_analytic_manager
+msgid "manages analytic filters for reports"
+msgstr "quản lý bộ lọc phân tích cho báo cáo"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_footnotes_manager
+msgid "manages footnotes"
+msgstr "quản lý chân trang"
+
+#. module: account_reports
+#: model:ir.model,name:account_reports.model_account_report_multicompany_manager
+msgid "manages multicompany for reports"
+msgstr "quản lý đa công ty dành cho báo cáo"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_last_page
+msgid "number of pages"
+msgstr "số trang"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid "reports in"
+msgstr "báo cáo trong"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid "s per report."
+msgstr "s trên mỗi báo cáo."
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_followup_all
+msgid ""
+"s<br/>\n"
+"                        That means you have spent on average"
+msgstr ""
+"s<br/>\n"
+"                        Điều này có nghĩa bạn đã dùng trung bình"
+
+#. module: account_reports
+#: model:ir.model.fields,field_description:account_reports.field_account_report_context_followup_all_valuemax
+msgid "total amount of invoices to do"
+msgstr "tổng tiền trên hóa đơn cần làm"
+
+#. module: account_reports
+#: model:ir.ui.view,arch_db:account_reports.report_financial_line
+msgid "⇒ journal entries"
+msgstr "⇒ bút toán"

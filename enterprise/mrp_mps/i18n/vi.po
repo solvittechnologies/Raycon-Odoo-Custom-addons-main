@@ -1,0 +1,471 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_mps
+# 
+# Translators:
+# Phạm Lân <phamquanglan@gmail.com>, 2016
+# Martin Trigaux, 2016
+# fanha99 <fanha99@hotmail.com>, 2016
+# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2016
+# Hoang Loc Le Huu <loclhh@gmail.com>, 2016
+# son dang <son.dang@doda100.com>, 2016
+# Duy BQ <duybq86@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-18 14:29+0000\n"
+"PO-Revision-Date: 2017-08-18 14:29+0000\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "&lt;&amp;hellip;&lt;"
+msgstr "&lt;&amp;hellip;&lt;"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"fa fa-fw\">-</span> Demand Forecast"
+msgstr "<span class=\"fa fa-fw\">-</span> Nhu cầu dự báo"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"fa fa-fw\">-</span> Indirect Demand"
+msgstr "<span class=\"fa fa-fw\">-</span> Nhu cầu gián tiếp"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid ""
+"<span class=\"fa fa-fw\">=</span> \n"
+"                                    Forecasted Inventory"
+msgstr ""
+"<span class=\"fa fa-fw\">=</span> \n"
+"                                    Tồn dự kiến"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"text-muted\"> by</span>"
+msgstr "<span class=\"text-muted\"> theo</span>"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.mrp_mps_report_view_form
+msgid "Add Product"
+msgstr "Thêm sản phẩm"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:155
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+#, python-format
+msgid "Add a Product"
+msgstr "Thêm 1 sản phẩm"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "Apply"
+msgstr "Áp dụng"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_apply_active
+msgid "Apply active"
+msgstr "Áp dụng kích hoạt"
+
+#. module: mrp_mps
+#: selection:sale.forecast,mode:0
+msgid "Automatic"
+msgstr "Tự động"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.mrp_mps_report_view_form
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: mrp_mps
+#: model:stock.inventory.line,product_name:mrp_mps.mps_stock_inventory_line_1
+msgid "Computer SC234"
+msgstr "Máy tính SC234"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_create_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_create_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_create_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_create_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:15
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:21
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Daily"
+msgstr "Hàng ngày"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_date
+msgid "Date"
+msgstr "Ngày tháng"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_sale_forecast_product_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr ""
+"Đơn vị đo mặc định dùng cho tất cả các hoạt động liên quan đến hàng tồn kho."
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_mrp_config_settings_manufacturing_period
+#: model:ir.model.fields,help:mrp_mps.field_res_company_manufacturing_period
+msgid ""
+"Default value for the time ranges in Master Production Schedule report."
+msgstr ""
+"Giá trị mặc định cho phạm vi thời gian dùng trong báo cáo Kế hoạch sản xuất "
+"tổng thể."
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:37
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_forecast_qty
+#, python-format
+msgid "Demand Forecast"
+msgstr "Dự báo nhu cầu"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_display_name
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_display_name
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: mrp_mps
+#: selection:sale.forecast,state:0
+msgid "Done"
+msgstr "Hoàn thành"
+
+#. module: mrp_mps
+#: selection:sale.forecast,state:0
+msgid "Forecast"
+msgstr "Dự báo"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:52
+#, python-format
+msgid "Forecast Inventory"
+msgstr "Tồn kho dự kiến"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:176
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+#, python-format
+msgid "Forecast Product"
+msgstr "Sản phẩm dự kiến"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_forecasted
+msgid "Forecasted Target"
+msgstr "Mục tiêu dự kiến"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_sale_forecast_to_supply
+msgid "If mode is Manual, this is the forced value"
+msgstr "Nếu ở chế độ Thủ công, giá trị này cần phải có"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:42
+#, python-format
+msgid "Indirect Demand"
+msgstr "Nhu cầu gián tiếp"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_quantity
+msgid "Indirect Quantity"
+msgstr "Số lượng gián tiếp"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report___last_update
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast___last_update
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_write_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_write_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_write_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_write_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối lúc"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_apply
+msgid "Latest Apply"
+msgstr "Áp dụng mới nhất"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "Launch Procurement"
+msgstr "Chạy sản xuất"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:6
+#, python-format
+msgid "Launch green cells"
+msgstr "Chạy ô xanh"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_active
+msgid "MPS Active"
+msgstr "Chạy KHSX"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "MPS in Main Warehouse"
+msgstr "KHSX tổng quan ở Kho chính"
+
+#. module: mrp_mps
+#: selection:sale.forecast,mode:0
+msgid "Manual"
+msgstr "Thủ công"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_config_settings_manufacturing_period
+#: model:ir.model.fields,field_description:mrp_mps.field_res_company_manufacturing_period
+msgid "Manufacturing Period"
+msgstr "Kì sản xuất"
+
+#. module: mrp_mps
+#: model:ir.actions.client,name:mrp_mps.mrp_mps_report_action_client
+#: model:ir.ui.menu,name:mrp_mps.mrp_mps_report_menu
+msgid "Master Production Schedule"
+msgstr "Kế hoạch sản xuât Tổng thể"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_max_supply
+msgid "Maximum to Supply"
+msgstr "Tối đa để áp dụng"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_min_supply
+msgid "Minimum to Supply"
+msgstr "Tối thiểu để áp dụng"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_mode
+msgid "Mode"
+msgstr "Chế độ"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:13
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:19
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Monthly"
+msgstr "Hàng tháng"
+
+#. module: mrp_mps
+#: model:stock.inventory.line,product_name:mrp_mps.mps_stock_inventory_line_0
+msgid "Mouse, Wireless"
+msgstr "Chuột, không dây"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:84
+#, python-format
+msgid "Only Integer Value should be valid."
+msgstr "Chỉ chấp nhận giá trị số nguyên."
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:190
+#, python-format
+msgid "Only Integer or Float Value should be valid."
+msgstr "Chỉ chấp nhận giá trị số nguyên hoặc số thập phân."
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_period
+msgid "Period"
+msgstr "Chu kỳ"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:11
+#, python-format
+msgid "Period:"
+msgstr "Chu kỳ:"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_procurement_id
+msgid "Procurement Generated"
+msgstr "Cung ứng được tạo"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_group_id
+msgid "Procurement Group"
+msgstr "Nhóm cung ứng"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_product_product
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_product_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_product_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_product_origin_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_product_id
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_product_uom_id
+msgid "Product UoM"
+msgstr "Đơn vị đo sản phẩm"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_warehouse_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_warehouse_id
+msgid "Production Location"
+msgstr "Địa điểm Sản xuất"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:25
+#, python-format
+msgid "Rows"
+msgstr "Dòng"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Save"
+msgstr "Lưu"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:32
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+#, python-format
+msgid "Starting Inventory"
+msgstr "Kho khởi điểm"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_state
+msgid "State"
+msgstr "Giai đoạn"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:47
+#, python-format
+msgid "To Produce"
+msgstr "Cần sản xuất"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_to_supply
+msgid "To Supply"
+msgstr "Để cung ứng"
+
+#. module: mrp_mps
+#: code:addons/mrp_mps/models/mrp_mps_report.py:124
+#, python-format
+msgid "To Supply / Produce"
+msgstr "Cần cung ứng/sản xuất"
+
+#. module: mrp_mps
+#: code:addons/mrp_mps/models/mrp_mps_report.py:151
+#, python-format
+msgid "Week %s"
+msgstr "Tuần %s"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:14
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:20
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Weekly"
+msgstr "Hàng tuần"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:84
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:190
+#, python-format
+msgid "Wrong value entered!"
+msgstr "Giá trị nhập sai!"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "double click in order to empty"
+msgstr "nhấn 2 lần vào đơn để trống"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_mrp_config_settings
+msgid "mrp.config.settings"
+msgstr "thiết lập sản xuất"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_mrp_mps_report
+msgid "mrp.mps.report"
+msgstr "báo cáo sản xuất"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_sale_forecast
+msgid "sale.forecast"
+msgstr "dự kiến bán"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_sale_forecast_indirect
+msgid "sale.forecast.indirect"
+msgstr "dự kiến bán không chính thức"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "set min-max"
+msgstr "đặt mức tối thiểu-tối đa"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "set target"
+msgstr "lập mục tiêu"

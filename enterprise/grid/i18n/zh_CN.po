@@ -1,0 +1,79 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * grid
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# 苏州远鼎 <tiexinliu@126.com>, 2017
+# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-06 14:54+0000\n"
+"PO-Revision-Date: 2017-03-06 14:54+0000\n"
+"Last-Translator: 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:71
+#, python-format
+msgid "Add a Line"
+msgstr "添加明细"
+
+#. module: grid
+#: code:addons/grid/models.py:214 code:addons/grid/models.py:246
+#, python-format
+msgid "Can not use fields of type %s as grid columns"
+msgstr "不能使用类型 %s 的字段作为表格栏位"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:69
+#, python-format
+msgid "Grid"
+msgstr "网络"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:400
+#, python-format
+msgid "See all the records aggregated in this cell"
+msgstr "升序查看单元格内的所有记录"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:206
+#, python-format
+msgid ""
+"The sectioned grid view can't handle groups with different columns sets"
+msgstr "分段网格视图不能处理具有不同列集的组。"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:306
+#: code:addons/grid/static/src/js/grid_view.js:316
+#, python-format
+msgid "Total"
+msgstr "总计"
+
+#. module: grid
+#: model:ir.model,name:grid.model_base
+msgid "base"
+msgstr "基础"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_actions_act_window_view
+msgid "ir.actions.act_window.view"
+msgstr "ir.actions.act_window.view"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"

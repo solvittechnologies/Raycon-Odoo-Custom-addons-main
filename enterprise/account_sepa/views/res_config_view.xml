@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_config_settings_form_inherit_account_sepa" model="ir.ui.view">
+        <field name="name">view.account.config.sepa.form.inherit</field>
+        <field name="model">account.config.settings</field>
+        <field name="inherit_id" ref="account.view_account_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='followup']" position="before">
+                <group string="SEPA" name="sepa">
+                    <label for="sepa_initiating_party_name"/>
+                    <div>
+                        <field name="sepa_initiating_party_name" class="oe_inline"/>
+                    </div>
+                    <label for="sepa_orgid_id"/>
+                    <div>
+                        <field name="sepa_orgid_id" class="oe_inline"/>
+                    </div>
+                    <label for="sepa_orgid_issr"/>
+                    <div>
+                        <field name="sepa_orgid_issr" class="oe_inline"/>
+                    </div>
+                    <label for="sepa_pain_version" groups="base.group_no_one"/>
+                    <div groups="base.group_no_one">
+                        <field name="sepa_pain_version" class="oe_inline"/>
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

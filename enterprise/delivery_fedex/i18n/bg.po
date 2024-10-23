@@ -1,0 +1,358 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_fedex
+# 
+# Translators:
+# Martin Trigaux, 2016
+# kalatchev, 2016
+# Vladimir Petrov <vladimir.petrov@gmail.com>, 2017
+# Maria Boyadjieva <marabo2000@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Maria Boyadjieva <marabo2000@gmail.com>, 2018\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ", click on \"Get Production Key\" and follow all the steps."
+msgstr ""
+", натиснете на \"Получете производствен ключ\" и последвайте всичките "
+"стъпки."
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"<br/>According to your needs, you will need to contact different "
+"certifications :"
+msgstr ""
+"<br/>Според нуждите Ви, ще трябва да се свържете с различни инстанции за "
+"сертифициране:"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_account_number
+msgid "Account Number"
+msgstr "Номер на сметка"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services with Label Certification"
+msgstr "Разширени услуги със сертифициране на етикети"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services without Label Certification"
+msgstr "Разширени услуги без сертифициране на етикети"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "BUSINESS_SERVICE_CENTER"
+msgstr "BUSINESS_SERVICE_CENTER"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_delivery_carrier
+msgid "Carrier"
+msgstr "Превозвач"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Certification Process"
+msgstr "Процес по сертифициране"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "DROP_BOX"
+msgstr "DROP_BOX"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_default_packaging_id
+msgid "Default Package Type"
+msgstr "Стандартен тип опаковка"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_key
+msgid "Developer Key"
+msgstr "Ключ за разработчици"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "EPL2"
+msgstr "EPL2"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_file_type
+msgid "FEDEX Label File Type"
+msgstr "FEDEX вид файл на етикет"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY"
+msgstr "FEDEX_2_DAY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY_AM"
+msgstr "FEDEX_2_DAY_AM"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_GROUND"
+msgstr "FEDEX_GROUND"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FIRST_OVERNIGHT"
+msgstr "FIRST_OVERNIGHT"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "FedEx Web Services \"Move to Production\""
+msgstr "FedEx уеб услуги \"Преместете в производство\""
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Configuration"
+msgstr "Fedex конфигурация"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_inter
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_inter_product_product
+msgid "Fedex International"
+msgstr "Fedex международен"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Tutorial"
+msgstr "Fedex инструкция"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_us
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_us_product_product
+msgid "Fedex US"
+msgstr "Fedex САЩ"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Website"
+msgstr "Fedex уебсайт"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_droppoff_type
+msgid "Fedex drop-off type"
+msgstr "Fedex тип отпадане"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_stock_type
+msgid "Fedex label stock type"
+msgstr "Fedex етикет на типа наличност"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_service_type
+msgid "Fedex service type"
+msgstr "Fedex вид услуга"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_weight_unit
+msgid "Fedex weight unit"
+msgstr "Fedex единица за тегло"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Go to"
+msgstr "Отидете на"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_ECONOMY"
+msgstr "INTERNATIONAL_ECONOMY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_PRIORITY"
+msgstr "INTERNATIONAL_PRIORITY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "KG"
+msgstr "Килограми"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "LB"
+msgstr "Фунтове"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_meter_number
+msgid "Meter Number"
+msgstr "Номер на брояча"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Once your account is created, go to"
+msgstr "След като създадете сметката си, отидете на"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X6"
+msgstr "PAPER_4X6"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X8"
+msgstr "PAPER_4X8"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X9"
+msgstr "PAPER_4X9"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_7X4.75"
+msgstr "PAPER_7X4.75"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+msgstr "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_TOP_HALF_LABEL"
+msgstr "PAPER_8.5X11_TOP_HALF_LABEL"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_LETTER"
+msgstr "PAPER_LETTER"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PNG"
+msgstr "PNG"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "PRIORITY_OVERNIGHT"
+msgstr "PRIORITY_OVERNIGHT"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_product_packaging
+msgid "Packaging"
+msgstr "Опаковане"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_password
+msgid "Password"
+msgstr "Парола"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REGULAR_PICKUP"
+msgstr "REGULAR_PICKUP"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REQUEST_COURIER"
+msgstr "REQUEST_COURIER"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "STANDARD_OVERNIGHT"
+msgstr "STANDARD_OVERNIGHT"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "STATION"
+msgstr "СТАНЦИЯ"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6"
+msgstr "STOCK_4X6"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_LEADING_DOC_TAB"
+msgstr "STOCK_4X6.75_LEADING_DOC_TAB"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_TRAILING_DOC_TAB"
+msgstr "STOCK_4X6.75_TRAILING_DOC_TAB"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X8"
+msgstr "STOCK_4X8"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_LEADING_DOC_TAB"
+msgstr "STOCK_4X9_LEADING_DOC_TAB"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_TRAILING_DOC_TAB"
+msgstr "STOCK_4X9_TRAILING_DOC_TAB"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:333
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Пратка № %s е отменена"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:252
+#: code:addons/delivery_fedex/models/delivery_fedex.py:294
+#, python-format
+msgid "Shipment created into Fedex <br/> <b>Tracking Number : </b>%s"
+msgstr "Пратка, създадена във Fedex <br/> <b>Номер на проследяване : </b>%s"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:256
+#, python-format
+msgid "Shipping label for package %s"
+msgstr "Шипинг етикет за опаковка %s"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Standard Services"
+msgstr "Стандартни услуги "
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "The last step is the"
+msgstr "последната стъпка е"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"These certifications usually require that you contact the FedEx support team"
+" by email."
+msgstr ""
+"Тези сертификати обикновено изискват да се свържете с екипа за поддръжка на "
+"FedEx по имейл."
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "ZPLII"
+msgstr "ZPLII"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "to create a FedEx account of the following type:"
+msgstr "за да създадете FedEx сметка от следния тип:"

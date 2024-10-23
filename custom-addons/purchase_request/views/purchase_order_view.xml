@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!-- Copyright 2018-2019 Eficent Business and IT Consulting Services S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl-3.0) -->
+<odoo>
+        <template id="purchase_inherit report" inherit_id="purchase.report_purchasequotation_document">
+
+    <xpath expr="//table"  position="before">
+             <t t-if="o.description">
+               <h2>Description <span t-field="o.description"/></h2>
+            </t>
+
+
+    </xpath>
+        </template>
+
+    <record id="purchase_order_form" model="ir.ui.view">
+        <field name="name">purchase.order.form</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree"
+                   position="inside">
+                <field name="purchase_request_lines" invisible="1"/>
+                <button string="Purchase Request lines"
+                    attrs="{'invisible': [('purchase_request_lines', '=', [])]}"
+                    name="action_openRequestLineTreeView"
+                    type="object"
+                    icon="fa-folder-open-o"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="purchase_order_line_form2" model="ir.ui.view">
+        <field name="name">purchase.order.line.form2</field>
+        <field name="model">purchase.order.line</field>
+        <field name="inherit_id" ref="purchase.purchase_order_line_form2"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <separator string="Purchase Request Lines"/>
+                <field name="purchase_request_lines"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="purchase_order_line_tree" model="ir.ui.view">
+        <field name="name">purchase.order.line.tree</field>
+        <field name="model">purchase.order.line</field>
+        <field name="inherit_id" ref="purchase.purchase_order_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <field name="purchase_request_lines" invisible="1"/>
+                <button string="Purchase Request lines"
+                    attrs="{'invisible': [('purchase_request_lines', '=', [])]}"
+                    name="action_openRequestLineTreeView"
+                    type="object"
+                    icon="fa-folder-open-o"/>
+            </xpath>
+
+
+        </field>
+    </record>
+       <record id="purchase_order_form_inherit" model="ir.ui.view">
+        <field name="name">purchase.order</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_ref']" position="attributes">
+                <attribute name="invisible">False</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='account_analytic_id']" position="attributes">
+                <attribute name="required">False</attribute>
+            </xpath>
+            <xpath expr="//field[@name='analytic_tag_ids']" position="attributes">
+                <attribute name="required">False</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_rfq_send']" position="before">
+                <button name="action_qs_send" type="object" string="Send to QS" states="draft"/>
+                <button name="action_management_send" type="object" string="Send to Management" states="sent"/>
+
+            </xpath>
+
+
+            <!-- <xpath expr="//button[@name='button_confirm']" position="attributes">
+                <attribute name="string">Approve</attribute>
+            </xpath>-->
+
+            <xpath expr="//button[@name='button_cancel']" position="attributes">
+                <attribute name="string">Disapprove</attribute>
+            </xpath>
+             <xpath expr="//button[@name='action_rfq_send']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+          
+
+        </field>
+    </record>
+
+</odoo>

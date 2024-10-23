@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * grid
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2016
+# Mateus Lopes <mateus1@gmail.com>, 2016
+# Rodrigo Macedo <rmsolucoeseminformatic4@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-06 14:54+0000\n"
+"PO-Revision-Date: 2017-03-06 14:54+0000\n"
+"Last-Translator: Rodrigo Macedo <rmsolucoeseminformatic4@gmail.com>, 2016\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/odoo/teams/41243/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:71
+#, python-format
+msgid "Add a Line"
+msgstr "Adicionar uma linha"
+
+#. module: grid
+#: code:addons/grid/models.py:214 code:addons/grid/models.py:246
+#, python-format
+msgid "Can not use fields of type %s as grid columns"
+msgstr "Não é possível usar campos do tipo %s Como colunas de grade"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:69
+#, python-format
+msgid "Grid"
+msgstr "Grade"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:400
+#, python-format
+msgid "See all the records aggregated in this cell"
+msgstr ""
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:206
+#, python-format
+msgid ""
+"The sectioned grid view can't handle groups with different columns sets"
+msgstr ""
+"A exibição de grade seccionada não pode manipular grupos com conjuntos de "
+"colunas diferentes"
+
+#. module: grid
+#. openerp-web
+#: code:addons/grid/static/src/js/grid_view.js:306
+#: code:addons/grid/static/src/js/grid_view.js:316
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: grid
+#: model:ir.model,name:grid.model_base
+msgid "base"
+msgstr "base"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_actions_act_window_view
+msgid "ir.actions.act_window.view"
+msgstr "ir.actions.act_window.view"
+
+#. module: grid
+#: model:ir.model,name:grid.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"

@@ -1,0 +1,236 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast_grid
+# 
+# Translators:
+# Marcin Młynarczyk <mlynarczyk@gmail.com>, 2016
+# Piotr Szlązak <szlazakpiotr@gmail.com>, 2016
+# Martin Trigaux, 2016
+# zieloo <zieloo@gmail.com>, 2016
+# Tomasz Leppich <t.leppich@gmail.com>, 2018
+# Paweł Wodyński <pw@myodoo.pl>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 14:58+0000\n"
+"PO-Revision-Date: 2016-09-29 14:58+0000\n"
+"Last-Translator: Paweł Wodyński <pw@myodoo.pl>, 2018\n"
+"Language-Team: Polish (https://www.transifex.com/odoo/teams/41243/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:29
+#, python-format
+msgid ""
+"A project must have a start date to use a forecast grid, found no start date"
+" for {project.display_name}"
+msgstr ""
+"Projekt musi mieć datę rozpoczęcia, aby użyć siatki prognozy, nie znaleziono"
+" daty rozpoczęcia dla projektu: {project.display_name}"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:47
+#, python-format
+msgid ""
+"A project must have an end date to use a forecast grid, found no end date "
+"for {project.display_name"
+msgstr ""
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign"
+msgstr "Przypisz"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_assign
+msgid "Assign user on a task"
+msgstr "Przypisz użytkownika na zadaniu"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign user on task"
+msgstr "Przypisywanie użytkownika do zadania"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_project
+msgid "By Project"
+msgstr "Wg projektu"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_user
+msgid "By User"
+msgstr "Wg użytkowników"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:20
+#, python-format
+msgid ""
+"Can only be used for forecasts not spanning multiple months, found "
+"%(forecast_count)d forecast(s) spanning across months in %(project_name)s"
+msgstr ""
+"Może być używany tylko w przypadku prognoz nieobjętych wieloma miesiącami, "
+"znaleziono %(forecast_count)d prognozy obejmujące miesiące w "
+"%(project_name)s"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_uid
+msgid "Created by"
+msgstr "Utworzona przez"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_date
+msgid "Created on"
+msgstr "Data utworzenia"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_display_name
+msgid "Display Name"
+msgstr "Nazwa wyświetlana"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:41
+#, python-format
+msgid "Forecast"
+msgstr "Prognoza"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_project
+msgid "Forecast By Project"
+msgstr "Prognoza według projektu"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_user
+msgid "Forecast By User"
+msgstr "Prognoza według użytkownika"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid ""
+"Forecasting on a project requires that the project\n"
+"                        have start and end dates"
+msgstr ""
+"Prognozowanie projektu wymaga, aby projekt\n"
+"                        miał datę rozpoczęcia i zakończenia"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:25
+#, python-format
+msgid ""
+"Forecasting over a project only supports monthly forecasts (got step {})"
+msgstr ""
+"Prognozy dotyczące projektu obsługują tylko prognozy miesięczne (otrzymałem "
+"krok {})"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.project_forecast_gantt
+msgid "Gantt"
+msgstr "Wykres Gantta"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid
+msgid "Grid"
+msgstr "Tabela"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:63
+#, python-format
+msgid ""
+"Grid adjustment for project forecasts only supports the 'start_date' columns"
+" field and the 'resource_hours' cell field, got respectively "
+"%(column_field)r and %(cell_field)r"
+msgstr ""
+"Korekta siatki dla prognoz projektowych obsługuje tylko pole kolumny "
+"'start_date' i pole komórki 'resource_hours', otrzymano odpowiednio "
+"%(column_field)r i %(cell_field)r"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment___last_update
+msgid "Last Modified on"
+msgstr "Data ostatniej modyfikacji"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_uid
+msgid "Last Updated by"
+msgstr "Ostatnio aktualizowane przez"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_date
+msgid "Last Updated on"
+msgstr "Data ostatniej aktualizacji"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Month"
+msgstr "Miesiąc"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Monthly Forecast"
+msgstr "Prognoza miesięczna"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_project
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_project_id
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Project"
+msgstr "Projekt"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "Project Dates"
+msgstr "Daty projektów"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Project Forecast By User"
+msgstr "Prognoza projektu według użytkownika"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_task_id
+msgid "Task"
+msgstr "Zadanie"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_user_id
+msgid "User"
+msgstr "Użytkownik"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "View Forecast"
+msgstr "Wyświetl prognozę"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Week"
+msgstr "Tydzień"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Year"
+msgstr "Rok"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast_assignment
+msgid "project.forecast.assignment"
+msgstr "project.forecast.assignment"

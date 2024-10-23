@@ -1,0 +1,105 @@
+@o-studio-black: #292e36;
+.o-studio-app-creator-background {
+    .o-linear-gradient(@deg: 90deg, @start-color: #565d78, @end-color: #65545c);
+}
+
+// App switcher in studio mode
+.o_web_client.o_in_studio .o_application_switcher {
+    .o-studio-app-creator-background();
+
+    .o_application_switcher_footer,
+    .o_menu_search,
+    .database_expiration_panel {
+        visibility: hidden;
+    }
+    .o_app {
+        &:not(.o_web_studio_new_app) {
+            cursor: default;
+        }
+        &.o_web_studio_new_app {
+            .o_app_icon {
+                border: 1px @odoo-brand-lightsecondary dashed;
+            }
+            &:hover {
+                .o_app_icon {
+                    border-color: white;
+                }
+                .o_caption {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// App creator - style
+.o_web_studio_app_creator {
+    .o-studio-app-creator-background();
+
+    .o_web_studio_app_creator_box {
+        color: @o-studio-black;
+        border-radius: 3px;
+        box-shadow: 0 1px 5px @o-studio-black;
+
+        .o_web_studio_app_creator_left {
+            background-color: white;
+        }
+        .o_web_studio_app_creator_right {
+            background-color: @o-studio-black;
+            .o_web_studio_app_creator_leave {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+}
+
+// App creator - layout
+.o_web_studio_app_creator {
+    min-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .o_web_studio_app_creator_box {
+        position: relative;
+        margin: auto;
+        height: 320px;
+        width: 700px;
+
+        .o_web_studio_app_creator_left, .o_web_studio_app_creator_right {
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 16px 32px;
+        }
+        .o_web_studio_app_creator_left {
+            .o-flex-display();
+            .o-flex-flow(column, nowrap);
+
+            .o_web_studio_app_creator_left_content {
+                .o-flex(1, 1, 100%);
+                padding-top: 50px;
+            }
+            .o_web_studio_app_creator_buttons {
+                .o-flex(0, 0, auto);
+
+                .o_web_studio_app_creator_next {
+                    float: right;
+                }
+            }
+        }
+        .o_web_studio_app_creator_right {
+            .o-flex-display();
+            .o-justify-content(center);
+            .o-align-items(center);
+
+            .o_web_studio_app_creator_leave {
+                .o-position-absolute(@right: 16px, @top:16px);
+            }
+            .o_web_studio_app_creator_right {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}

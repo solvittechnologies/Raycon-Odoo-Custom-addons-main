@@ -1,0 +1,56 @@
+@o-sidebar-width: 270px;
+
+.o_web_studio_client_action {
+    .o_web_studio_view_editor {
+        .o-flex-display();
+        height: 100%;
+
+        .o_web_studio_view_renderer {
+            .o-flex(1, 1, auto);
+            overflow: auto;
+            min-width: 0;
+
+            .o_web_studio_no_preview {
+                padding: 20px;
+                color: @o-studio-bg-light;
+                font-size: x-large;
+            }
+            .o_web_studio_show_invisible {
+                opacity: 0.8;
+                background: repeating-linear-gradient(
+                    45deg,
+                    #F8F8FF,
+                    #F8F8FF 5px,
+                    #DCDCDC 10px,
+                    #DCDCDC 11px
+                );
+            }
+            .o_web_studio_list_view_editor, > div.table-responsive, .o_kanban_view {
+                padding: 12px;
+            }
+
+            // TO REMOVE: hack to display old views in studio (for missing renderers)
+            .o_web_studio_old_view_renderer {
+                position: relative;
+                height: 100%;
+                .o_view_manager_content {
+                    position: relative; // override position: absolute
+                    .o_calendar_sidebar_container {
+                        display: none;
+                    }
+                }
+                .o_web_studio_overlay {
+                    .o-position-absolute(0, 0, 0, 0);
+                }
+            }
+        }
+
+        .o_web_studio_sidebar {
+            .o-flex(0, 0, @o-sidebar-width);
+            overflow: auto;
+        }
+        .o_ace_view_editor {
+            .o-flex(0, 0, auto);
+        }
+    }
+}

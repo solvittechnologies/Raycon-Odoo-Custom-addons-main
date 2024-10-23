@@ -1,0 +1,176 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk_livechat
+# 
+# Translators:
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:58+0000\n"
+"PO-Revision-Date: 2016-09-19 12:58+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2016\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:48
+#, python-format
+msgid " This channel is private. People must be invited to join it."
+msgstr "Этот личный канал. Люди должны быть приглашены присоединиться к нему."
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:51
+#, python-format
+msgid ""
+"<br><br>\n"
+"                    You can create a new ticket by typing <b>/helpdesk \"ticket title\"</b>.<br>\n"
+"                    You can search ticket by typing <b>/helpdesk_search \"Keywords1 Keywords2 etc\"</b><br>\n"
+"                    "
+msgstr ""
+"<br><br>\n"
+"                    Вы можете создать новый билет, набрав <b>/helpdesk \"название билет\"</b>.<br>\n"
+"                    Вы можете искать билет, введя <b>/helpdesk_search \"Keywords1 Keywords2 b и др.\"</b><br>\n"
+"                    "
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid "Canned Responses"
+msgstr "Подготовленные ответы"
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid "Configure Canned Responses"
+msgstr "Настройка шаблона ответов"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:36
+#, python-format
+msgid "Create a new helpdesk ticket"
+msgstr "Создать новый билет для службы поддержки"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:71
+#, python-format
+msgid "Created a new ticket and request: %s"
+msgstr "Создан новый билет и запрос: %s"
+
+#. module: website_helpdesk_livechat
+#: model:ir.model,name:website_helpdesk_livechat.model_mail_channel
+msgid "Discussion channel"
+msgstr "Канал обсуждения"
+
+#. module: website_helpdesk_livechat
+#: model:ir.model,name:website_helpdesk_livechat.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "Команда службы поддержки"
+
+#. module: website_helpdesk_livechat
+#: model:ir.model.fields,field_description:website_helpdesk_livechat.field_helpdesk_team_feature_livechat_channel_id
+msgid "Live Chat Channel"
+msgstr "Канал чата"
+
+#. module: website_helpdesk_livechat
+#: model:ir.model.fields,field_description:website_helpdesk_livechat.field_helpdesk_team_feature_livechat_web_page
+msgid "Live Chat Test Page"
+msgstr "Живой чат тестовая страница"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:100
+#, python-format
+msgid ""
+"No tickets found related to the search query. <br> make sure to use the "
+"right format: (/helpdesk_search Keyword1 Keyword2 etc...)"
+msgstr ""
+"Билеты не найдены, относящиеся к поисковому запросу.<br>убедитесь, что "
+"используется правильный формат: (/helpdesk_search Keyword1 Keyword2 и др...)"
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid "Predefined answers available in the message composer (e.g.: \":hello\")"
+msgstr ""
+"Предварительно определенные ответы, доступные в сообщении композитора (нап.:"
+" \"привет\")"
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid "Save this page to activate the feature"
+msgstr "Сохранить эту страницу, чтобы активировать функцию"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:75
+#, python-format
+msgid "Search for a helpdesk ticket"
+msgstr "Поиск билета для технической поддержки"
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid "Setup the"
+msgstr "Установка"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:41
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:80
+#, python-format
+msgid "Something is missing or wrong in command"
+msgstr "Что-то отсутствует или неправильно в команде"
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid ""
+"Test the livechat widget from this page:<br/>\n"
+"                        ⇒"
+msgstr ""
+"Тест виджета живого чата из этой страницы:<br>⇒\n"
+"                        ⇒"
+
+#. module: website_helpdesk_livechat
+#: model:ir.model.fields,help:website_helpdesk_livechat.field_helpdesk_team_feature_livechat_web_page
+msgid ""
+"URL to a static page where you client can discuss with the operator of the "
+"channel."
+msgstr ""
+"URL к статической странице, где ваш клиент может обсудить с оператором "
+"канала."
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:98
+#, python-format
+msgid "We found some matched ticket(s) related to the search query: %s"
+msgstr ""
+"Мы нашли некоторые соответствующие билет(ы), относящиеся к поисковому "
+"запросу: %s"
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:50
+#, python-format
+msgid "You are in a private conversation with <b>@%s</b>."
+msgstr "У вас приватная беседа с <b>@%s</b>."
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:46
+#, python-format
+msgid "You are in channel <b>#%s</b>."
+msgstr "Вы находитесь в канале <b>#%s</b>."
+
+#. module: website_helpdesk_livechat
+#: code:addons/website_helpdesk_livechat/models/helpdesk.py:83
+#, python-format
+msgid ""
+"You can search ticket by typing <b>/helpdesk_search \"Keywords1 Keywords2 "
+"etc\"</b><br>"
+msgstr ""
+"Вы можете искать билет, набрав <b>/helpdesk_search \"Keywords1 Keywords2 и "
+"др\"</b><br>"
+
+#. module: website_helpdesk_livechat
+#: model:ir.ui.view,arch_db:website_helpdesk_livechat.helpdesk_team_view_form_inherit_website_helpdesk_livechat
+msgid "channel to define auto-popup rules and geolocation filters."
+msgstr ""
+"канал для определения автоматически всплывающих правил и геолокационные "
+"фильтры."

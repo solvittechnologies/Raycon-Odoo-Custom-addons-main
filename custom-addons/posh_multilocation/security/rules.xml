@@ -1,0 +1,281 @@
+<odoo>
+  <data> 
+
+    <record id="group_store_keeper" model="res.groups">
+    <field name="name">Branch Store Keeper</field>
+    </record>
+
+
+<!--    <record id="group_waseem_custom_group" model="res.groups">   -->
+<!--       <field name="name">Waseem Custom</field>-->
+<!--    </record>-->
+
+      <record id="branch_manager" model="res.groups">
+    <field name="name">Branch Manager</field>
+    </record>
+
+
+    <record id="branch_accountant" model="res.groups">
+       <field name="name">Branch Account</field>
+    </record>
+
+            <record id="stock_location_store_keeper_manger" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_location" />
+    <field name="name">location_storekeeper_manager</field>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="groups" eval="[(4,ref('stock.group_stock_manager'))]"/>
+            <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+    </record>
+
+<!--   <record id="branch_store_keeper" model="res.groups">-->
+<!--    <field name="name">Branch Store Keeper</field>-->
+<!--    </record>-->
+
+<!-- This filters the locations and only displays each storekeeper/projectManager location
+    <record id="id_pm_location_rule" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_location" />
+    <field name="name">ProjectManager</field>
+    <field name="domain_force">[('partner_id','=',user.partner_id.id)]</field>
+    <field name="groups" eval="[(4,ref('purchase_request.group_purchase_request_user'))]"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="0"/>
+    <field name="perm_create" eval="0"/>
+    <field name="perm_unlink" eval="0" />
+    
+    </record>
+
+
+    <record id="id_storekeeper_location_rule" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_location" />
+    <field name="name">storekeepers_location</field>
+    <field name="domain_force">[('store_keeper','=',user.id)]</field>
+    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+     <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="0"/>
+    <field name="perm_create" eval="0"/>
+    <field name="perm_unlink" eval="0" />
+    </record>
+-->
+
+    <record id="id_storekeeper_rule" model="ir.rule">
+    <field name="model_id" ref="model_internal_transfer_request" />
+    <field name="name">storekeepers</field>
+    <field name="domain_force">[('request_location.store_keeper.id','=',user.id)]</field>
+     <field name="global" eval="True"/>  
+    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+    </record>
+
+    
+    <!--<record id="id_sender_pm" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_picking" />
+    <field name="name">releasing_location_pm</field>
+    <field name="domain_force">['|',('location_id.partner_id.id','=', user.partner_id.id),('location_dest_id.partner_id.id','=', user.partner_id.id)]</field>  
+    <field name="groups" eval="[(4,ref('purchase_request.group_purchase_request_user'))]"/>
+    </record>-->
+
+<!--    <record id="id_procurement_officer" model="ir.rule">-->
+<!--    <field name="model_id" ref="stock.model_stock_picking" />-->
+<!--    <field name="name">releasing_location_procurement</field>-->
+<!--    <field name="domain_force">[(1,'=',1)]</field>-->
+<!--    <field name="groups" eval="[(4,ref('purchase_request.group_purchase_request_officer'))]"/>-->
+<!--    </record>-->
+
+
+    <record id="id_store_keeper" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_picking" />
+    <field name="name">releasing_location_storekeeper</field>
+    <field name="domain_force">[('location_dest_id.store_keeper.id','=', user.id)]</field>
+    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+                    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+    </record>
+    <record id="stock_location_store_keeper" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_location" />
+    <field name="name">location_storekeeper</field>
+    <field name="domain_force">[('store_keeper.id', '=', user.id),]</field>
+    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+            <field name="perm_read" eval="0"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+    </record>
+
+    <record id="id_transfer_project_manager" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_picking" />
+    <field name="name">releasing_location_projectmanager</field>
+    <field name="domain_force">[('location_dest_id.branch_manager.id','=', user.id)]</field>
+    <field name="groups" eval="[(4,ref('branch_manager'))]"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+    </record>
+
+  
+    <record id="id_inventory_request_project_manager" model="ir.rule">
+    <field name="model_id" ref="model_internal_transfer_request" />
+    <field name="name">requesting_location_projectmanager</field>
+    <field name="domain_force">[('request_location.branch_manager.id','=', user.id)]</field>
+    <field name="groups" eval="[(4,ref('branch_manager'))]"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+  </record>
+  <record id="id_inventory_request_store_keeper" model="ir.rule">
+    <field name="model_id" ref="model_internal_transfer_request" />
+    <field name="name">requesting_location_storekeeper</field>
+    <field name="domain_force">[('request_location.store_keeper.id','=', user.id)]</field>
+    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+  </record>
+
+<!--    <record id="id_store_keeper_loc" model="ir.rule">-->
+<!--    <field name="model_id" ref="stock.model_stock_location" />-->
+<!--    <field name="name">releasing_location_storekeeper</field>-->
+<!--    <field name="domain_force">['|', ('store_keeper.partner_id.id', '=', user.partner_id.id), ('branch_accountant.partner_id.id', '=', user.partner_id.id)]</field>-->
+<!--    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>-->
+<!--                    <field name="perm_read" eval="1"/>-->
+<!--    <field name="perm_write" eval="1"/>-->
+<!--    <field name="perm_create" eval="1"/>-->
+<!--    <field name="perm_unlink" eval="1" />-->
+<!--    </record>-->
+
+    <record id="id_assigned_stock_manager" model="ir.rule">
+    <field name="model_id" ref="model_internal_transfer_request" />
+    <field name="name">manager_assigned</field>
+    <field name="domain_force">[('assigned_to.id','=', user.id)]</field>
+    <field name="groups" eval="[(4,ref('stock.group_stock_manager'))]"/>
+    </record>
+
+<!--    <record id="id_store_keeper" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_location" />
+    <field name="name">Branch</field>
+    <field name="domain_force">[('branch_accountant.partner_id.id', '=', user.partner_id.id)]</field>    
+    <field name="groups" eval="[(4,ref('branch_accountant'))]"/>
+    </record> -->
+
+
+
+
+   <record id="id____a" model="ir.rule">
+    <field name="model_id" ref="model_internal_transfer_request" />
+    <field name="name">Approvers</field>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="groups" eval="[(4,ref('stock.group_stock_manager'))]"/>
+    </record>
+
+
+
+  <!--<record id="rule_id" model="ir.rule">
+    <field name="name">Project Managers</field>
+    <field name="model_id" ref="model_internal_transfer_request"/>
+    <field name="domain_force">[('requested_by.id','=',user.id)]</field>    
+    <field name="groups" eval="[(4,ref('purchase_request.group_purchase_request_user'))]"/>
+    </record>-->
+
+
+    <record id="id_model2" model="ir.rule">
+    <field name="model_id" ref="model_internal_transfer_request_line" />
+    <field name="name">Approver</field>
+    <field name="domain_force">[(1,'=',1)]</field>
+    <field name="groups" eval="[(4,ref('stock.group_stock_manager'))]"/>
+    </record>
+
+    <!-- Inventory view -->
+    <record id="id_branch_manager" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_inventory" />
+    <field name="name">branch_manager</field>
+    <field name="domain_force">[('location_id.branch_manager.partner_id.id', '=', user.partner_id.id)]</field>
+    <field name="groups" eval="[(4,ref('branch_manager'))]"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="0"/>
+    <field name="perm_unlink" eval="1" />
+    </record>
+
+    <record id="id_branch_accountant" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_inventory" />
+    <field name="name">branch_accountant</field>
+    <field name="domain_force">[('location_id.branch_accountant.partner_id.id', '=', user.partner_id.id)]</field>
+    <field name="groups" eval="[(4,ref('branch_accountant'))]"/>
+    </record>
+     <record id="id_store_keeper" model="ir.rule">
+    <field name="model_id" ref="stock.model_stock_inventory" />
+    <field name="name">branch_store_kepper</field>
+    <field name="domain_force">[('location_id.store_keeper.partner_id.id', '=', user.partner_id.id)]</field>
+    <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+    <field name="perm_read" eval="1"/>
+    <field name="perm_write" eval="1"/>
+    <field name="perm_create" eval="1"/>
+    <field name="perm_unlink" eval="1" />
+    </record>
+
+    <record id="id_stock_picking_store_keeper" model="ir.rule">
+      <field name="model_id" ref="stock.model_stock_picking" />
+      <field name="name">Stock Picking Store Keeper</field>
+      <field name="domain_force">['|',('location_id.store_keeper.id','=',user.id),('location_dest_id.store_keeper.id','=', user.id)]</field>
+      <field name="groups" eval="[(4,ref('group_store_keeper'))]"/>
+      <field name="perm_read" eval="1"/>
+      <field name="perm_write" eval="1"/>
+      <field name="perm_create" eval="1"/>
+      <field name="perm_unlink" eval="1" />
+    </record>
+
+
+
+
+<!-- <record id="action_location_form2" model="ir.actions.act_window">
+        <field name="name">Locations</field>
+        <field name="res_model">stock.location</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_location_tree2"/>
+        <field name="search_view_id" ref="view_location_search"/>
+        <field name="context">{'search_default_in_location':1}</field>
+        <field name="domain">[('store_keeper','=',uid)]</field>
+        <field name="groups_id" eval="[(6, 0, [ref('alm_multi_location.group_store_keeper')])]"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a location.
+          </p>
+          <p>
+            Define your locations to reflect your warehouse structure and organization. Odoo is able to manage physical locations
+            (warehouses, shelves, bin, etc), partner locations (customers,vendors) and virtual locations which are the counterpart of
+            the stock operations like the manufacturing orders
+            consumptions, inventories, etc.
+          </p>
+          <p>
+            Every stock operation in Odoo moves the products from one
+            location to another one.  For instance, if you receive products
+            from a vendor, Odoo will move products from the Vendor
+            location to the Stock location. Each report can be performed on
+            physical, partner or virtual locations.</p>
+        </field>
+    </record>
+
+      <menuitem action="action_location_form2" id="menu_action_location_form2"
+       groups="alm_multi_location.group_store_keeper"
+       parent="stock.menu_stock_root" sequence="3"/> -->
+
+
+
+
+ 
+<!--    <record id="rule_id_model2" model="ir.rule">
+    <field name="name">Project Manager</field>
+    <field name="model_id" ref="model_internal_transfer_request_line"/>
+    <field name="domain_force">[('requested_by.id','=',user.id)]</field>
+    <field name="groups" eval="[(4,ref('purchase_request.group_purchase_request_user'))]"/>
+    </record>-->
+
+  </data>
+</odoo>

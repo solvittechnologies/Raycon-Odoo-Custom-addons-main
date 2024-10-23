@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<div t-name="web_studio.NewButtonBoxDialog" class="o_web_studio_new_button_dialog">
+    <div>
+        <label>Label</label>
+        <input name="string" type="text" placeholder="My Button"/>
+    </div>
+    <div>
+        <label>Icon</label>
+        <input name="icon" type="text" value="fa-usd"/>
+    </div>
+    <div>
+        <label>Select a related field</label>
+        <div class="js_many2one_field"/>
+    </div>
+</div>
+
+</templates>

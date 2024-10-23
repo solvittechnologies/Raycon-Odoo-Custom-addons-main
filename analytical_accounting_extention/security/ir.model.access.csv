@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_analytical_accounting_extention_analytical_accounting_extention,analytical_accounting_extention.analytical_accounting_extention,model_analytical_accounting_extention_analytical_accounting_extention,,1,0,0,0

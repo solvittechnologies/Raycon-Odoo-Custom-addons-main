@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="project.project_project_5" model="project.project">
+            <field name="allow_forecast" eval="True"/>
+            <field name="date_start" eval="(datetime.now().date().replace(day=1) + relativedelta(months=-3)).isoformat()"/>
+            <field name="date" eval="(datetime.now().date().replace(day=1) + relativedelta(months=4, days=-1)).isoformat()"/>
+        </record>
+        <record id="project.project_project_4" model="project.project">
+            <field name="allow_forecast" eval="True"/>
+            <field name="date_start" eval="(datetime.now().date().replace(day=1) + relativedelta(months=1)).isoformat()"/>
+            <field name="date" eval="(datetime.now().date().replace(day=1) + relativedelta(months=18, days=-1)).isoformat()"/>
+        </record>
+        <record id="project.project_project_1" model="project.project">
+            <field name="allow_forecast" eval="True"/>
+            <field name="date_start" eval="datetime.now().date().replace(day=1).isoformat()"/>
+            <field name="date" eval="(datetime.now().date().replace(day=1) + relativedelta(months=3, days=-1)).isoformat()"/>
+        </record>
+
+        <delete model="project.forecast" search="[]"/>
+        <record id="project.project_project_2" model="project.project">
+            <field name="allow_forecast" eval="False"/>
+        </record>
+        <record id="project.project_project_3" model="project.project">
+            <field name="allow_forecast" eval="False"/>
+        </record>
+    </data>
+</odoo>

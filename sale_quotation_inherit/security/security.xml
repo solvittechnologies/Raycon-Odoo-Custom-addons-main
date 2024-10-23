@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+                <record model="ir.module.category" id="module_category_sales_double_validation">
+            <field name="name">Sales Validation</field>
+            <field name="description">Sales Validation</field>
+            <!--<field name="sequence">7</field>-->
+        </record>
+
+
+<!--                <record id="group_show_sales_order_to_confirm_menu" model="res.groups">-->
+<!--                        <field name="name">Show "Quotations Accepted by Customers" Menu</field>-->
+<!--                        <field name="category_id" ref="module_category_sales_double_validation"/>-->
+<!--                </record>-->
+
+<!--                <record id="group_show_sales_order_to_approve_menu" model="res.groups">-->
+<!--                        <field name="name">Show "Sale Orders to Approve" Menu</field>-->
+<!--                        <field name="category_id" ref="module_category_sales_double_validation"/>-->
+<!--                </record>-->
+
+<!--        <record id="group_show_send_to_manager" model="res.groups">-->
+<!--                        <field name="name">Show "Send to Manager" Button on Sales Order</field>-->
+<!--                        <field name="category_id" ref="module_category_sales_double_validation"/>-->
+<!--                </record>-->
+
+<!--        <record id="group_show_receive_send_to_manager" model="res.groups">-->
+<!--                        <field name="name">Receive "Send to Manager" SO Email on Sales Order</field>-->
+<!--                        <field name="category_id" ref="module_category_sales_double_validation"/>-->
+<!--                </record>-->
+
+<!--        <record id="group_show_send_for_validation_btn" model="res.groups">-->
+<!--                        <field name="name">Show "Send Accepted Quote for Conversion to Sales Order" Button on Sales Order</field>-->
+<!--                        <field name="category_id" ref="module_category_sales_double_validation"/>-->
+<!--                <field name="implied_ids" eval="[(4, ref('group_show_sales_order_to_confirm_menu'))]"/>-->
+<!--                </record>-->
+
+
+                <record id="group_show_approve_btn" model="res.groups">
+                        <field name="name">Show "Approve Sale Order" Button on Sales Order</field>
+                        <field name="category_id" ref="module_category_sales_double_validation"/>
+                </record>
+
+                <record id="group_show_confirm_btn" model="res.groups">
+                        <field name="name">Show "Convert Quote to Sale Order" button on Sales Order</field>
+                        <field name="category_id" ref="module_category_sales_double_validation"/>
+                </record>
+
+                <record id="group_cannot_edit_margin" model="res.groups">
+                        <field name="name">Cannot "Edit Sale Order Line" Margin Field</field>
+                        <field name="category_id" ref="module_category_sales_double_validation"/>
+                </record>
+
+                <record id="group_can_edit_margin" model="res.groups">
+                        <field name="name">Can "Edit Sale Order Line" Margin Field</field>
+                        <field name="category_id" ref="module_category_sales_double_validation"/>
+                </record>
+
+                <record id="group_can_edit_margin" model="res.groups">
+                        <field name="name">Can "Edit Sale Order Line" Margin Field</field>
+                        <field name="category_id" ref="module_category_sales_double_validation"/>
+                </record>
+                 <record id="group_can_approve_invoice" model="res.groups"> 
+                         <field name="name">Show Approve invoice button(MD and Auditor)</field>  
+                          <field name="category_id" ref="base.module_category_accounting_and_finance"/> 
+                 </record>
+
+                <record id="group_invisible" model="res.groups">
+                        <field name="name">Invisible</field>
+                </record>
+
+
+
+
+<!--            <record id="group_show_approve_btn" model="res.groups">-->
+<!--                        <field name="name">Show "Approve Sale Order" button on Sales Order</field>-->
+<!--                        <field name="category_id" ref="module_category_sales_double_validation"/>-->
+<!--                <field name="implied_ids" eval="[(4, ref('group_show_sales_order_to_confirm_menu'))]"/>-->
+<!--                </record>-->
+
+          
+          <record id="custom_res_partner_record_rule" model="ir.rule">
+            <field name="name">Custom Res Partner Rules</field>
+            <field ref="model_res_partner" name="model_id"/>
+            <field name="domain_force">[('create_uid','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('sales_team.group_sale_salesman'))]"/>
+           
+         </record>
+
+
+          <record id="custom_res_partner_support_rule" model="ir.rule">
+            <field name="name">Custom Res Partner support  Rules</field>
+            <field ref="model_res_partner" name="model_id"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('sales_team.group_sale_support'))]"/>
+            
+         </record>
+
+
+         <record id="base.res_partner_rule_private_employee" model="ir.rule">
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_create" eval="True"/>
+         </record>
+
+<!--
+         <record id="base.res_partner_rule_private_employee" model="ir.rule">
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_create" eval="True"/>
+         </record>
+-->
+       
+
+ </data>
+</odoo>

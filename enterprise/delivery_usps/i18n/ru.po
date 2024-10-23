@@ -1,0 +1,467 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_usps
+# 
+# Translators:
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2016\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Abandon"
+msgstr "Отказываться"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Account Validated"
+msgstr "Аккаунт подтвержден"
+
+#. module: delivery_usps
+#: model:ir.model,name:delivery_usps.model_delivery_carrier
+msgid "Carrier"
+msgstr "Перевозчик"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Check this box if your account is validated by USPS"
+msgstr "Установите этот флажок, если ваша учетная запись проверена USPS"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:63
+#, python-format
+msgid "Company phone number is invalid. Please insert a US phone number."
+msgstr "Недопустимый номер телефона компании. Укажите номер телефона в США."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_content_type
+msgid "Content Type"
+msgstr "Тип данных"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.view_delivery_carrier_form_with_provider_usps
+msgid "DHL Configuration"
+msgstr "Конфигурация DHL"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_delivery_nature
+msgid "Delivery Nature"
+msgstr "Характер доставки"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Documents"
+msgstr "Документы"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "Domestic"
+msgstr "Внутренние"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Express"
+msgstr "Экспресс"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "First-Class"
+msgstr "Первый класс"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Flat"
+msgstr "Плоский"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate"
+msgstr "Плоский тариф"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate Box"
+msgstr "Плоская тарифная коробка"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Flat Rate Envelope"
+msgstr "Плоский тарифный конверт"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "From Company"
+msgstr "От компании"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Gift"
+msgstr "Подарок"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "International"
+msgstr "Международный"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Large"
+msgstr "Большой"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Large Envelope"
+msgstr "Большой конверт"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Large Flat Rate Box"
+msgstr "Большая плоская тариф коробки"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Legal Flat Rate Envelope"
+msgstr "Юридический плоский тариф конверта"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Letter"
+msgstr "Письмо"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_machinable
+msgid "Machinable"
+msgstr "Обрабатываемый"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Medium Flat Rate Box"
+msgstr "Средняя плоская коробка тарифов"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Merchandise"
+msgstr "Торговец"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_intl_non_delivery_option
+msgid "Non delivery option"
+msgstr "Без доставки"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Non-rectangular"
+msgstr "Непрямоугольная"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Package"
+msgstr "Пакет"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Package Service"
+msgstr "Служба посылок"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_girth
+msgid "Package girth (in inches)"
+msgstr "Обхват упаковки (в дюймах)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_height
+msgid "Package height (in inches)"
+msgstr "Высота упаковки (в дюймах)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_length
+msgid "Package length (in inches)"
+msgstr "Длина упаковки (в дюймах)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_width
+msgid "Package width (in inches)"
+msgstr "Ширина упаковки (в дюймах)"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Padded Flat Rate Envelope"
+msgstr "Мягкий конверт малого размера"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Parcel"
+msgstr "Пакет"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:80
+#, python-format
+msgid "Please Change the Service Max. weight of this Service is 4 pounds"
+msgstr ""
+"Измените максимальный уровень обслуживания. Вес данной услуги составляет 4 "
+"фунта"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_machinable
+msgid ""
+"Please check on USPS website to ensure that your package is machinable."
+msgstr ""
+"Пожалуйста, проверьте на сайте USPS, чтобы убедиться, что ваш пакет можно "
+"обрабатывать."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:68
+#, python-format
+msgid "Please enter a valid ZIP code in recipient address"
+msgstr "Укажите действительный почтовый индекс в адресе получателя"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:61
+#, python-format
+msgid "Please enter a valid ZIP code in your Company address"
+msgstr "Введите действительный почтовый индекс в адрес вашей компании"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:75
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Укажите, пожалуйста, хотя бы один элемент для отгрузки."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:59
+#, python-format
+msgid ""
+"Please set country U.S.A in your company address, Service is only available "
+"for U.S.A"
+msgstr ""
+"Пожалуйста, укажите страну США в адресе вашей компании, Сервис доступен "
+"только для США"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Postcard"
+msgstr "Открытка"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Priority"
+msgstr "Приоритет"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Rectangular"
+msgstr "Прямоугольный"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Redirect"
+msgstr "Перенаправление"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_redirect_partner_id
+msgid "Redirect Partner"
+msgstr "Партнер переадресации"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Regular"
+msgstr "Обычный"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Regular < 12 inch"
+msgstr "Обычный <12 дюймов"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Return"
+msgstr "Возврат"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Sample"
+msgstr "Образец"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:154
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Отгрузка № %s была отменена"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:131
+#, python-format
+msgid "Shipment created into USPS <br/> <b>Tracking Number : </b>%s"
+msgstr "Отправка, созданная в USPS <br/> <b> Номер отслеживания: </b>%s"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Box"
+msgstr "Малая плоская коробка тарифа"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Envelope"
+msgstr "Конверт малого размера"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_label_file_type:0
+msgid "TIF"
+msgstr "TIF"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:159
+#, python-format
+msgid "The USPS service selected (%s) cannot be used to deliver this package."
+msgstr ""
+"Выбранная служба USPS (%s) не может использоваться для доставки этого "
+"пакета."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:57
+#, python-format
+msgid ""
+"The address of your company is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"Адрес вашей компании отсутствует или неправильно (Отсутствующих полей: \n"
+"%s)"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:78
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr "Невозможно произвести оценку стоимости, т. к. не указан вес."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:361
+#, python-format
+msgid ""
+"The recepient address can't be found. Please check that your recepient has "
+"an existing address."
+msgstr ""
+"Адрес получателя не найден. Убедитесь, что у вашего получателя есть "
+"существующий адрес."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:66
+#, python-format
+msgid ""
+"The recipient address is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"Адрес получателя отсутствует или неправильно (отсутствующих полей: \n"
+"%s)"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "To Company"
+msgstr "В компанию"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_international_regular_container
+msgid "Type of USPS International regular container"
+msgstr "Тип регулярного контейнера USPS международный"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_domestic_regular_container
+msgid "Type of USPS domestic regular container"
+msgstr "Тип внутреннего регулярного контейнера USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_container
+msgid "Type of container"
+msgstr "Тип контейнера"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_domestic
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_domestic_product_product
+msgid "USPS Domestic Flat Rate Envelope"
+msgstr "USPS внутренний единый тарифный ящик"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:72
+#, python-format
+msgid ""
+"USPS Domestic is used only to ship  inside of the U.S.A. Please change the "
+"delivery method into USPS International."
+msgstr ""
+"USPS внутренние используется только для того, чтобы корабль внутри США. "
+"Пожалуйста, измените метод доставки в USPS Международный."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_first_class_mail_type
+msgid "USPS First Class Mail Type"
+msgstr "Тип почты первого класса USPS"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_international
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_international_product_product
+msgid "USPS International Flat Rate Box"
+msgstr "USPS Международный единый тарифный ящик"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:70
+#, python-format
+msgid ""
+"USPS International is used only to ship  outside of the U.S.A. Please change"
+" the delivery method into USPS Domestic."
+msgstr ""
+"USPS международный используется только для отправки за пределы США. "
+"Пожалуйста, измените способ доставки на USPS внутренние."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_label_file_type
+msgid "USPS Label File Type"
+msgstr "Тип файла ярлыка USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_mail_type
+msgid "USPS Mail Type"
+msgstr "Почтовый тип USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_service
+msgid "USPS Service"
+msgstr "Служба USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_username
+msgid "USPS User ID"
+msgstr "ID пользователя USPS"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_size_container
+msgid "Usps size container"
+msgstr "Контейнер размера Usps"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:363
+#, python-format
+msgid "Your company or recipient zip code is incorrect."
+msgstr "Неправильный почтовый индекс вашей компании или получателя."

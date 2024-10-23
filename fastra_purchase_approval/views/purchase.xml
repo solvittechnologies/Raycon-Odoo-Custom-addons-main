@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase_order_view_form_inherit_approval_level" model="ir.ui.view">
+        <field name="name">purchase.order.view.form.inherit.approval.level</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@id='bid_confirm']" position="attributes">
+                <attribute name="states">approve_level_4</attribute>
+                <attribute name="groups">fastra_purchase_approval.group_purchase_level_4</attribute>
+            </xpath>
+            <xpath expr="//header/button[@id='draft_confirm']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//header/button[@name='button_cancel']" position="attributes">
+                <attribute name="states">purchase</attribute>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button name="action_button_approve_level" type="object" states="draft,sent" string="Approve Order" class="oe_highlight" id="approve_level_1" groups="fastra_purchase_approval.group_purchase_level_1"/>
+                <button name="action_button_approve_level" type="object" states="approve_level_1" string="Approve Order" class="oe_highlight" id="approve_level_2" groups="fastra_purchase_approval.group_purchase_level_2"/>
+                <button name="action_button_approve_level" type="object" states="approve_level_2" string="Approve Order" class="oe_highlight" id="approve_level_3" groups="fastra_purchase_approval.group_purchase_level_3"/>
+                <button name="action_button_approve_level" type="object" states="approve_level_3" string="Approve Order" class="oe_highlight" id="approve_level_4" groups="fastra_purchase_approval.group_purchase_level_4"/>
+
+                <button name="action_button_reject_level" type="object" states="draft,sent" string="Reject Order" id="reject_level_1" groups="fastra_purchase_approval.group_purchase_level_1"/>
+                <button name="action_button_reject_level" type="object" states="approve_level_1" string="Reject Order" id="reject_level_2" groups="fastra_purchase_approval.group_purchase_level_2"/>
+                <button name="action_button_reject_level" type="object" states="approve_level_2" string="Reject Order" id="reject_level_3" groups="fastra_purchase_approval.group_purchase_level_3"/>
+                <button name="action_button_reject_level" type="object" states="approve_level_3" string="Reject Order" id="reject_level_4" groups="fastra_purchase_approval.group_purchase_level_4"/>
+
+                <button name="action_button_approve_level" type="object" states="reject_level_1" string="Re-Submit Order" id="resubmit_level_1_draft" groups="fastra_purchase_approval.group_purchase_level_1"/>
+                <button name="action_button_approve_level" type="object" states="reject_level_2" string="Re-Submit Order" id="resubmit_level_1" groups="fastra_purchase_approval.group_purchase_level_1"/>
+                <button name="action_button_approve_level" type="object" states="reject_level_3" string="Re-Submit Order" id="resubmit_level_2" groups="fastra_purchase_approval.group_purchase_level_2"/>
+                <button name="action_button_approve_level" type="object" states="reject_level_4" string="Re-Submit Order" id="resubmit_level_3" groups="fastra_purchase_approval.group_purchase_level_3"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

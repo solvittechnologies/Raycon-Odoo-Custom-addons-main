@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_config_settings_form_inherit_check_printing" model="ir.ui.view">
+        <field name="name">view.account.config.us_check_printing.form.inherit</field>
+        <field name="inherit_id" ref="account.view_account_config_settings"/>
+        <field name="model">account.config.settings</field>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='followup']" position="before">
+                <group name="us_check_printing" string="US Check Printing">
+                    <label for="us_check_layout"/>
+                    <div>
+                        <field name="us_check_layout" class="oe_inline"/>
+                    </div>
+                    <label for="us_check_multi_stub"/>
+                    <div>
+                        <field name="us_check_multi_stub" class="oe_inline"/>
+                    </div>
+                    <label for="us_check_margin_top"/>
+                    <div>
+                        <field name="us_check_margin_top" class="oe_inline"/>
+                        <label string="in"/>
+                    </div>
+                    <label for="us_check_margin_left"/>
+                    <div>
+                        <field name="us_check_margin_left" class="oe_inline"/>
+                        <label string="in"/>
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

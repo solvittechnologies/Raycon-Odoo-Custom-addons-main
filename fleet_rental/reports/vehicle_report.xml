@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report
+                id="report_vehicle_expense"
+                model="vehicle.report"
+                string="Vehicle Expense"
+                name="fleet_rental.report_vehicle_expense_report"
+                file="fleet_rental.report_vehicle_expense_report"
+                report_type="qweb-pdf"
+		/>
+
+        <template id="report_vehicle_expense_report">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+							<center><h2>RENTAL VEHICLE Report</h2></center>
+                            <t t-set="total_truck_cost" t-value="doc.get_vehicle_expense()"/>
+                            <t t-set="total_truck_income" t-value="doc.get_vehicle_income()"/>
+                            <table style="width:100%" class="table table-sm">
+                                <tr>
+                                    <td>Date</td>
+                                    <td colspan="3"><t t-esc='doc.rent_start_date.strftime("%d-%m-%Y") + " to " + doc.rent_end_date.strftime("%d-%m-%Y")'/></td>
+                                    <td colspan="3" style="text-align:center">Profit/Loss</td>
+                                </tr>
+                                <tr>
+                                    <th>MACHI</th>
+                                    <th>R. NO.</th>
+                                    <th>REG.NO.</th>
+                                    <th>CARD NUMBER</th>
+                                    <th>Cost</th>
+                                    <th>Income</th>
+                                    <th>Net Difference</th>
+                                </tr>
+                                <tr>
+                                    <td><t t-esc="doc.truck_rental_id.machi"/></td>
+                                    <td><t t-esc="doc.truck_rental_id.r_no"/></td>
+                                    <td><t t-esc="doc.truck_rental_id.name"/></td>
+                                    <td><t t-esc="doc.truck_rental_id.card_no_fastra"/></td>
+                                    <td><t t-esc="total_truck_cost"/></td>
+                                    <td><t t-esc="total_truck_income"/></td>
+                                    <td><t t-esc="total_truck_income - total_truck_cost"/></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4" style="text-align:right">Totals</th>
+                                    <th><t t-esc="total_truck_cost"/></th>
+                                    <th><t t-esc="total_truck_income"/></th>
+                                    <th><t t-esc="total_truck_income - total_truck_cost"/></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

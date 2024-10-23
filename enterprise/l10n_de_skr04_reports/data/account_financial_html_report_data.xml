@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="financial_report_l10n_de" model="account.financial.html.report">
+        <field name="name">Steuerkonten Umsatzsteuer SKR04 (Deutschland)</field>
+        <field name="report_type">date_range</field>
+        <field name='parent_id' ref='l10n_de.account_reports_de_statements_menu'/>
+        <field name="tax_report" eval="1"/>
+    </record>
+    <record id="financial_report_line_de_01" model="account.financial.html.report.line">
+        <field name="name">Verbleibende Umsatzsteuer-Vorauszahlung / Verbleibender Überschuss - bitte dem Betrag ein Minuszeichen voranstellen</field>
+        <field name="code">DETAX04_83</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = DETAX04_39.balance + DETAX04_AST.balance + DETAX04_U.balance + DETAX04_VST.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_de"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0101" model="account.financial.html.report.line">
+        <field name="name">Anrechnung (Abzug) der festgesetzten Sondervorauszahlung für Dauerfristverlängerung (nur auszufüllen in der letzten Voranmeldung des Besteuerungszeitraums, in der Regel Dezember)</field>
+        <field name="code">DETAX04_39</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0102" model="account.financial.html.report.line">
+        <field name="name">Andere Steuerbeträge</field>
+        <field name="code">DETAX04_AST</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = DETAX04_69.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010201" model="account.financial.html.report.line">
+        <field name="name">In Rechnungen unrichtig oder unberechtigt ausgewiesene Steuerbeträge (§ 14c UStG) sowie Steuerbeträge, die nach § 4 Nr. 4a Satz 1 Buchst. a Satz 2, § 6a Abs. 4 Satz 2, § 17 Abs. 1 Satz 6 oder § 25b Abs. 2 UStG geschuldet werden</field>
+        <field name="code">DETAX04_69</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0102"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103" model="account.financial.html.report.line">
+        <field name="name">Umsatzsteuer</field>
+        <field name="code">DETAX04_U</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = DETAX04_UZ19.balance + DETAX04_UZ33.balance + DETAX04_UZ39.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010301" model="account.financial.html.report.line">
+        <field name="name">Lieferungen und sonstige Leistungen (einschließlich unentgeltlicher Wertabgaben)</field>
+        <field name="code">DETAX04_UZ19</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_UZ26.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0103"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_01030101" model="account.financial.html.report.line">
+        <field name="name">Steuerpflichtige Umsätze (Lieferungen und sonstige Leistungen einschl. unentgeltlicher Wertabgaben)</field>
+        <field name="code">DETAX04_UZ26</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_36.balance + DETAX04_811.balance + DETAX04_861.balance + DETAX04_UZ30.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_010301"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103010101" model="account.financial.html.report.line">
+        <field name="name">zu anderen Steuersätzen</field>
+        <field name="code">DETAX04_36</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103010102" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 19 %</field>
+        <field name="code">DETAX04_811</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_09')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103010103" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 7%</field>
+        <field name="code">DETAX04_861</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_10')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103010104" model="account.financial.html.report.line">
+        <field name="name">Umsätze land- und forstwirtschaftlicher Betrieb nach § 24 UStG</field>
+        <field name="code">DETAX04_UZ30</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = DETAX04_80.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030101"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010301010401" model="account.financial.html.report.line">
+        <field name="name">Umsätze, für die eine Steuer nach § 24 UStG zu entrichten ist (Sägewerkserzeugnisse, Getränke und alkohol. Flüssigkeiten, z.B. Wein)</field>
+        <field name="code">DETAX04_80</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="5"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0103010104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010302" model="account.financial.html.report.line">
+        <field name="name">Innergemeinschaftliche Erwerbe</field>
+        <field name="code">DETAX04_UZ33</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_UZ35.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0103"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_01030201" model="account.financial.html.report.line">
+        <field name="name">Steuerpflichtige innergemeinschaftliche Erwerbe</field>
+        <field name="code">DETAX04_UZ35</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_891.balance + DETAX04_931.balance + DETAX04_96.balance + DETAX04_98.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_010302"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103020101" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 19 %</field>
+        <field name="code">DETAX04_891</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_15')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103020102" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 7%</field>
+        <field name="code">DETAX04_931</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_54')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103020103" model="account.financial.html.report.line">
+        <field name="name">neuer Fahrzeuge von Lieferern ohne USt-IdNr. zum allgemeinen Steuersatz</field>
+        <field name="code">DETAX04_96</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103020104" model="account.financial.html.report.line">
+        <field name="name">zu anderen Steuersätzen</field>
+        <field name="code">DETAX04_98</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010303" model="account.financial.html.report.line">
+        <field name="name">Ergänzende Angaben zu Umsätzen </field>
+        <field name="code">DETAX04_UZ39</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_UZ46.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0103"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_01030301" model="account.financial.html.report.line">
+        <field name="name">Umsätze, für die als Leistungsempfänger die Steuer nach § 13b Abs. 2 UStG geschuldet wird</field>
+        <field name="code">DETAX04_UZ46</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_53.balance + DETAX04_65.balance + DETAX04_74.balance + DETAX04_85.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_010303"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103030101" model="account.financial.html.report.line">
+        <field name="name">Leistungen eines im Ausland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 1 und 5 UStG)</field>
+        <field name="code">DETAX04_53</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030301"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103030102" model="account.financial.html.report.line">
+        <field name="name">Steuer infolge Wechsels der Besteuerungsform sowie Nachsteuer auf versteuerte Anzahlungen u. ä. wegen Steuersatzänderung</field>
+        <field name="code">DETAX04_65</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030301"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103030103" model="account.financial.html.report.line">
+        <field name="name">Lieferungen sicherungsübereigneter Gegenstände und Umsätze, die unter das GrEStG fallen (§ 13b Abs. 1 Satz 1 Nr. 2 und 3 UStG)</field>
+        <field name="code">DETAX04_74</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030301"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0103030104" model="account.financial.html.report.line">
+        <field name="name">Bauleistungen eines im Inland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 4 UStG)</field>
+        <field name="code">DETAX04_85</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01030301"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0104" model="account.financial.html.report.line">
+        <field name="name">Abziehbare Vorsteuerbeträge</field>
+        <field name="code">DETAX04_VST</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = DETAX04_59.balance + DETAX04_61.balance + DETAX04_62.balance + DETAX04_63.balance + DETAX04_64.balance + DETAX04_66.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010401" model="account.financial.html.report.line">
+        <field name="name">Vorsteuerabzug für innergemeinschaftliche Lieferungen neuer Fahrzeuge außerhalb eines Unternehmens (§ 2a UStG) sowie von Kleinunternehmern im Sinne des § 19 Abs. 1 UStG (§ 15 Abs. 4a UStG)</field>
+        <field name="code">DETAX04_59</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010402" model="account.financial.html.report.line">
+        <field name="name">Vorsteuerbeträge aus dem innergemeinschaftlichen Erwerb von Gegenständen (§ 15 Abs. 1 Satz 1 Nr. 3 UStG)</field>
+        <field name="code">DETAX04_61</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_27')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010403" model="account.financial.html.report.line">
+        <field name="name">Entrichtete Einfuhrumsatzsteuer (§ 15 Abs. 1 Satz 1 Nr. 2 UStG)</field>
+        <field name="code">DETAX04_62</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_28')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010404" model="account.financial.html.report.line">
+        <field name="name">Vorsteuerbeträge, die nach allgemeinen Durchschnittssätzen berechnet sind (§§ 23 und 23a UStG)</field>
+        <field name="code">DETAX04_63</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010405" model="account.financial.html.report.line">
+        <field name="name">Berichtigung des Vorsteuerabzugs (§ 15a UStG)</field>
+        <field name="code">DETAX04_64</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_010406" model="account.financial.html.report.line">
+        <field name="name">Vorsteuerbeträge aus Rechnungen von anderen Unternehmern (§ 15 Abs. 1 Satz 1 Nr. 1 UStG), aus Leistungen im Sinne des § 13a Abs. 1 Nr. 6 UStG (§ 15 Abs. 1 Satz 1 Nr. 5 UStG) und aus innergemeinschaftlichen Dreiecksgeschäften (§ 25b Abs. 5 UStG)</field>
+        <field name="code">DETAX04_66</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_de.tag_de_31')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02" model="account.financial.html.report.line">
+        <field name="name">Bemessungsgrundlage</field>
+        <field name="code">DETAX04_B</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = DETAX04_BU.balance + DETAX04_BV.balance</field>
+        <field name="financial_report_id" ref="financial_report_l10n_de"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201" model="account.financial.html.report.line">
+        <field name="name">Umsatzsteuer</field>
+        <field name="code">DETAX04_BU</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = DETAX04_BZ19.balance + DETAX04_BZ33.balance + DETAX04_BZ39.balance + DETAX04_BZ46.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020101" model="account.financial.html.report.line">
+        <field name="name">Lieferungen und sonstige Leistungen (einschließlich unentgeltlicher Wertabgaben)</field>
+        <field name="code">DETAX04_BZ19</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_BZ20.balance + DETAX04_BZ24.balance + DETAX04_BZ26.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0201"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010101" model="account.financial.html.report.line">
+        <field name="name">Steuerfreie Umsätze mit Vorsteuerabzug</field>
+        <field name="code">DETAX04_BZ20</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_41.balance + DETAX04_43.balance + DETAX04_44.balance + DETAX04_49.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020101"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010101" model="account.financial.html.report.line">
+        <field name="name">Innergemeinschaftliche Lieferungen (§ 4 Nr. 1 Buchst. b UStG) an Abnehmer mit USt-IdNr</field>
+        <field name="code">DETAX04_41</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_36')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010102" model="account.financial.html.report.line">
+        <field name="name">Weitere steuerfreie Umsätze mit Vorsteuerabzug (z.B. Ausfuhrlieferungen, Umsätze nach § 4 Nr. 2 bis 7 UStG)</field>
+        <field name="code">DETAX04_43</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_37')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010103" model="account.financial.html.report.line">
+        <field name="name">neuer Fahrzeuge an Abnehmer ohne USt-IdNr</field>
+        <field name="code">DETAX04_44</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010104" model="account.financial.html.report.line">
+        <field name="name">neuer Fahrzeuge außerhalb eines Unternehmens (§ 2a UStG)</field>
+        <field name="code">DETAX04_49</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010101"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010102" model="account.financial.html.report.line">
+        <field name="name">Steuerfreie Umsätze ohne Vorsteuerabzug</field>
+        <field name="code">DETAX04_BZ24</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_48.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020101"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010201" model="account.financial.html.report.line">
+        <field name="name">Umsätze nach § 4 Nr. 8 bis 28 UStG</field>
+        <field name="code">DETAX04_48</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010102"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010103" model="account.financial.html.report.line">
+        <field name="name">Steuerpflichtige Umsätze (Lieferungen und sonstige Leistungen einschl. unentgeltlicher Wertabgaben)</field>
+        <field name="code">DETAX04_BZ26</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_35.balance + DETAX04_81.balance + DETAX04_86.balance + DETAX04_BZ30.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020101"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010301" model="account.financial.html.report.line">
+        <field name="name">zu anderen Steuersätzen</field>
+        <field name="code">DETAX04_35</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010103"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010302" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 19 %</field>
+        <field name="code">DETAX04_81</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_44')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010103"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010303" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 7%</field>
+        <field name="code">DETAX04_86</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_45')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010103"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201010304" model="account.financial.html.report.line">
+        <field name="name">Umsätze land- und forstwirtschaftlicher Betrieb nach § 24 UStG</field>
+        <field name="code">DETAX04_BZ30</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = DETAX04_76.balance + DETAX04_77.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010103"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020101030401" model="account.financial.html.report.line">
+        <field name="name">Umsätze, für die eine Steuer nach § 24 UStG zu entrichten ist (Sägewerkserzeugnisse, Getränke und alkohol. Flüssigkeiten, z.B. Wein)</field>
+        <field name="code">DETAX04_76</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="5"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0201010304"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020101030402" model="account.financial.html.report.line">
+        <field name="name">Lieferungen in das übrige Gemeinschaftsgebiet an Abnehmer mit Ust-IdNr.</field>
+        <field name="code">DETAX04_77</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="5"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0201010304"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020102" model="account.financial.html.report.line">
+        <field name="name">Innergemeinschaftliche Erwerbe</field>
+        <field name="code">DETAX04_BZ33</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_BZ34.balance + DETAX04_BZ35.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0201"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010201" model="account.financial.html.report.line">
+        <field name="name">Steuerfreie innergemeinschaftliche Erwerbe</field>
+        <field name="code">DETAX04_BZ34</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_91.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020102"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201020101" model="account.financial.html.report.line">
+        <field name="name">Erwerbe nach § 4b UStG</field>
+        <field name="code">DETAX04_91</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010202" model="account.financial.html.report.line">
+        <field name="name">Steuerpflichtige innergemeinschaftliche Erwerbe</field>
+        <field name="code">DETAX04_BZ35</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = DETAX04_89.balance + DETAX04_93.balance + DETAX04_94.balance + DETAX04_95.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020102"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201020201" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 19 %</field>
+        <field name="code">DETAX04_89</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="4"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_53')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010202"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201020202" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 7%</field>
+        <field name="code">DETAX04_93</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010202"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201020203" model="account.financial.html.report.line">
+        <field name="name">neuer Fahrzeuge von Lieferern ohne USt-IdNr. zum allgemeinen Steuersatz</field>
+        <field name="code">DETAX04_94</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010202"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0201020204" model="account.financial.html.report.line">
+        <field name="name">zu anderen Steuersätzen</field>
+        <field name="code">DETAX04_95</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="4"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02010202"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020103" model="account.financial.html.report.line">
+        <field name="name">Ergänzende Angaben zu Umsätzen</field>
+        <field name="code">DETAX04_BZ39</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_42.balance + DETAX04_45.balance + DETAX04_60.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0201"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010301" model="account.financial.html.report.line">
+        <field name="name">Lieferungen des ersten Abnehmers bei innergemeinschaftlichen Dreiecksgeschäften (§ 25b Abs. 2 UStG)</field>
+        <field name="code">DETAX04_42</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020103"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010302" model="account.financial.html.report.line">
+        <field name="name">Nicht steuerbare Umsätze (Leistungsort nicht im Inland)</field>
+        <field name="code">DETAX04_45</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_59')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020103"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010303" model="account.financial.html.report.line">
+        <field name="name">Steuerpflichtige Umsätze im Sinne des § 13b Abs. 1 Satz 1 Nr. 1 bis 5 UStG, für die der Leistungsempfänger die Steuer schuldet</field>
+        <field name="code">DETAX04_60</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020103"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020104" model="account.financial.html.report.line">
+        <field name="name">Umsätze, für die als Leistungsempfänger die Steuer nach § 13b Abs. 2 UStG geschuldet wird</field>
+        <field name="code">DETAX04_BZ46</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_52.balance + DETAX04_73.balance + DETAX04_84.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0201"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010401" model="account.financial.html.report.line">
+        <field name="name">Leistungen eines im Ausland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 1 und 5 UStG)</field>
+        <field name="code">DETAX04_52</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010402" model="account.financial.html.report.line">
+        <field name="name">Lieferungen sicherungsübereigneter Gegenstände und Umsätze, die unter das GrEStG fallen (§ 13b Abs. 1 Satz 1 Nr. 2 und 3 UStG)</field>
+        <field name="code">DETAX04_73</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02010403" model="account.financial.html.report.line">
+        <field name="name">Bauleistungen eines im Inland ansässigen Unternehmers (§ 13b Abs. 1 Satz 1 Nr. 4 UStG)</field>
+        <field name="code">DETAX04_84</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="3"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020104"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_0202" model="account.financial.html.report.line">
+        <field name="name">Vorsteuer (dient lediglich der Verprobung)</field>
+        <field name="code">DETAX04_BV</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = DETAX04_BAUS.balance + DETAX04_BRV.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_02"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020201" model="account.financial.html.report.line">
+        <field name="name">Einfuhren</field>
+        <field name="code">DETAX04_BAUS</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_BAUS19.balance + DETAX04_BAUS7.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0202"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02020101" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 19 %</field>
+        <field name="code">DETAX04_BAUS19</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_67')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02020102" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 7 %</field>
+        <field name="code">DETAX04_BAUS7</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_68')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020201"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_020202" model="account.financial.html.report.line">
+        <field name="name">Rechnungen von anderen Unternehmern (§ 15 Abs. 1 Satz 1 Nr. 1 UStG), Leistungen im Sinne des § 13a Abs. 1 Nr. 6 UStG (§ 15 Abs. 1 Satz 1 Nr. 5 UStG) und innergemeinschaftliche Dreiecksgeschäfte (§ 25b Abs. 5 UStG)</field>
+        <field name="code">DETAX04_BRV</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = DETAX04_BRV19.balance + DETAX04_BRV7.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_0202"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02020201" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 19 %</field>
+        <field name="code">DETAX04_BRV19</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_70')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020202"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+    <record id="financial_report_line_de_02020202" model="account.financial.html.report.line">
+        <field name="name">zum Steuersatz von 7 %</field>
+        <field name="code">DETAX04_BRV7</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_de.tag_de_71')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="financial_report_line_de_020202"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+</odoo>

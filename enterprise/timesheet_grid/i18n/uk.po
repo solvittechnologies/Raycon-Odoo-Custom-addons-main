@@ -1,0 +1,311 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * timesheet_grid
+# 
+# Translators:
+# Bohdan Lisnenko, 2016
+# Martin Trigaux, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Alina Lisnenko <alinasemeniuk1@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2017\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_all
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_all
+msgid "All Timesheets"
+msgstr "Усі табелі"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:46
+#, python-format
+msgid "All selected timesheets are already validated"
+msgstr "Всі вибрані розклади вже підтверджені"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_project_project_allow_timesheets
+#: model:ir.ui.view,arch_db:timesheet_grid.project_view_form_timesheets
+msgid "Allow timesheets"
+msgstr "Дозволити розклади"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Рядок аналітики"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Click to add projects and tasks"
+msgstr "Натисніть, щоб додати проекти та завдання"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_create_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_create_date
+msgid "Created on"
+msgstr "Дата створення"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Date until which the employee's timesheets have been validated"
+msgstr "Дата, до якої наведені перевірки часу роботи працівника"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Describe your activity"
+msgstr "Опишіть свою діяльність"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_display_name
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_display_name
+msgid "Display Name"
+msgstr "Назва для відображення"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_hr_employee
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_employee_id
+msgid "Employee"
+msgstr "Співробітник"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_id
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_id
+msgid "ID"
+msgstr "ІД"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable___last_update
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation___last_update
+msgid "Last Modified on"
+msgstr "Остання модифікація"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_month
+msgid "Last Month"
+msgstr "Останній місяць"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_uid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновив"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_write_date
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate_previous_week
+msgid "Last Week"
+msgstr "Останній тиждень"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Line edition and creation from grid"
+msgstr "Редагування рядка та створення з сітки"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Month"
+msgstr "Місяць"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validation_search
+msgid "My Team"
+msgstr "Моя команда"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_current
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_my
+msgid "My Timesheet"
+msgstr "Мій табель"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "My Timesheets"
+msgstr "Мої табелі"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Non Validated"
+msgstr "Не перевірено"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:68
+#, python-format
+msgid ""
+"Only a Timesheets Officer is allowed to create an entry older than the "
+"validation limit."
+msgstr ""
+"Тільки співробітник Розкладу може створювати запис, який перевищує ліміт "
+"перевірки."
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:83
+#, python-format
+msgid "Only a Timesheets Officer is allowed to delete a validated entry."
+msgstr "Тільки співробітник Розкладу може видалити перевірений запис."
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:77
+#, python-format
+msgid "Only a Timesheets Officer is allowed to modify a validated entry."
+msgstr "Тільки співробітник розкладу може змінювати перевірений запис."
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Project"
+msgstr "Проект"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Set if this analytic line represents a line of timesheet."
+msgstr "Встановіть, якщо цей аналітичний рядок являє собою рядок розкладу."
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Task"
+msgstr "Завдання"
+
+#. module: timesheet_grid
+#: code:addons/timesheet_grid/models/models.py:41
+#, python-format
+msgid "There aren't any timesheet to validate"
+msgstr "Немає жодного розкладу для перевірки"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_form
+msgid "Time Spent"
+msgstr "Витрачений час"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Timesheet"
+msgstr "Табель часу"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_is_timesheet
+msgid "Timesheet Line"
+msgstr "Рядок табелю"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_list
+msgid "Timesheet Lines"
+msgstr "Рядки розкладу"
+
+#. module: timesheet_grid
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_month
+#: model:ir.actions.act_window,name:timesheet_grid.action_timesheet_previous_week
+msgid "Timesheets To Validate"
+msgstr "Розклади для перевірки"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_hr_employee_timesheet_validated
+msgid "Timesheets validation limit"
+msgstr "Ліміт перевірки розкладів"
+
+#. module: timesheet_grid
+#: model:ir.ui.menu,name:timesheet_grid.menu_timesheet_grid_validate
+msgid "To Validate"
+msgstr "Перевірити"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Users"
+msgstr "Користувачі"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validable_ids
+msgid "Validable ids"
+msgstr "Недійсні ID"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validate
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_validate
+msgid "Validate"
+msgstr "Підтвердити"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate Timesheets"
+msgstr "Перевірити розклади"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.validable_form
+msgid "Validate the timesheets of the selected employees up to"
+msgstr "Перевірте розклади вибраних співробітників до"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,help:timesheet_grid.field_timesheet_grid_validable_validate
+msgid "Validate this employee's timesheet up to the chosen date"
+msgstr "Перевірте розклад роботи цього працівника до вибраної дати"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validation_validate_to
+msgid "Validate to"
+msgstr "Перевірити до"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid_search
+msgid "Validated"
+msgstr "Підтверджено"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_account_analytic_line_validated
+msgid "Validated line"
+msgstr "Перевірені рядки"
+
+#. module: timesheet_grid
+#: model:ir.model.fields,field_description:timesheet_grid.field_timesheet_grid_validable_validation_id
+msgid "Validation id"
+msgstr "id перевірки"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "Week"
+msgstr "Тиждень"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validable
+msgid "timesheet_grid.validable"
+msgstr "timesheet_grid.validable"
+
+#. module: timesheet_grid
+#: model:ir.model,name:timesheet_grid.model_timesheet_grid_validation
+msgid "timesheet_grid.validation"
+msgstr "timesheet_grid.validation"
+
+#. module: timesheet_grid
+#: model:ir.ui.view,arch_db:timesheet_grid.view_timesheet_grid
+msgid "you will be able to register your working hours on the given task"
+msgstr "ви зможете зареєструвати свій розклад за заданим завданням"

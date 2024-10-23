@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sale_ebay_settings" model="ir.ui.view">
+      <field name="name">ebay.settings</field>
+      <field name="model">sale.config.settings</field>
+      <field name="inherit_id" ref="sales_team.view_sale_config_settings"/>
+      <field name="arch" type="xml">
+      <data>
+        <div id="main" position="inside">
+          <separator for="id" string="eBay Integration"/>
+          <group>
+            <label for="id" string="Configuration"/>
+            <div>
+              <div>
+                <button name="sync_ebay_details" type="object" string="Sync countries and currencies" class="oe_link"/>
+                <button name="button_sync_categories" type="object" string="Sync categories" class="oe_link"/>
+                <button name="sync_policies" type="object" string="Sync policies" class="oe_link"/>
+                <button name="button_sync_product_status" type="object" string="Sync product status" class="oe_link"/>
+              </div>
+              <div>
+                <label for="ebay_sales_team"/>
+                <field name="ebay_sales_team" class="oe_inline"/>
+              </div>
+              <div>
+                <label for="ebay_currency"/>
+                <field name="ebay_currency" class="oe_inline" context="{'active_test': False}" options="{'no_create': True, 'no_open': True}"/>
+              </div>
+              <div>
+                <label for="ebay_country"/>
+                <field name="ebay_country" class="oe_inline" options="{'no_create': True, 'no_open': True}"/>
+              </div>
+              <div>
+                <label for="ebay_zip_code"/>
+                <field name="ebay_zip_code" class="oe_inline"/>
+              </div>
+              <div>
+                <label for="ebay_location"/>
+                <field name="ebay_location" class="oe_inline"/>
+              </div>
+              <div>
+                <label for="ebay_domain"/>
+                <field name="ebay_domain" class="oe_inline"/>
+              </div>
+              <div>
+                <label for="ebay_site"/>
+                <field name="ebay_site" class="oe_inline" options="{'no_create': True, 'no_open': True}"/>
+              </div>
+              <div>
+                <label for="ebay_out_of_stock"/>
+                <field name="ebay_out_of_stock" class="oe_inline"/>
+              </div>
+              <div>
+                <label for="ebay_gallery_plus"/>
+                <field name="ebay_gallery_plus" class="oe_inline"/>
+              </div>
+              <div>
+                <label for="ebay_dev_id"/>
+                <field name="ebay_dev_id" class="oe_inline"/>
+              </div>
+              <div attrs="{'invisible': [('ebay_domain','=', 'prod')]}">
+                <div>
+                  <label for="ebay_sandbox_token"/>
+                  <field name="ebay_sandbox_token" class="oe_inline"/>
+                </div>
+                <div>
+                  <label for="ebay_sandbox_app_id"/>
+                  <field name="ebay_sandbox_app_id" class="oe_inline"/>
+                </div>
+                <div>
+                  <label for="ebay_sandbox_cert_id"/>
+                  <field name="ebay_sandbox_cert_id" class="oe_inline"/>
+                </div>
+              </div>
+              <div attrs="{'invisible': [('ebay_domain','=', 'sand')]}">
+                <div>
+                  <label for="ebay_prod_token"/>
+                  <field name="ebay_prod_token" class="oe_inline"/>
+                </div>
+                <div>
+                  <label for="ebay_prod_app_id"/>
+                  <field name="ebay_prod_app_id" class="oe_inline"/>
+                </div>
+                <div>
+                  <label for="ebay_prod_cert_id"/>
+                  <field name="ebay_prod_cert_id" class="oe_inline"/>
+                </div>
+              </div>
+            </div>
+          </group>
+        </div>
+      </data>
+      </field>
+    </record>
+</odoo>

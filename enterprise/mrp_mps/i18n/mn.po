@@ -1,0 +1,466 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_mps
+# 
+# Translators:
+# Martin Trigaux, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# Batzul B <batzul.active@gmail.com>, 2017
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-18 14:29+0000\n"
+"PO-Revision-Date: 2017-08-18 14:29+0000\n"
+"Last-Translator: Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "&lt;&amp;hellip;&lt;"
+msgstr "&lt;&amp;hellip;&lt;"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"fa fa-fw\">-</span> Demand Forecast"
+msgstr "<span class=\"fa fa-fw\">-</span> Шаардлагын урьдчилсан таамаг"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"fa fa-fw\">-</span> Indirect Demand"
+msgstr "<span class=\"fa fa-fw\">-</span> Шууд бус шаардлага"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid ""
+"<span class=\"fa fa-fw\">=</span> \n"
+"                                    Forecasted Inventory"
+msgstr ""
+"<span class=\"fa fa-fw\">=</span> \n"
+"                                    Урьдчилан таамагласан агуулах"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"text-muted\"> by</span>"
+msgstr "<span class=\"text-muted\"> </span>"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.mrp_mps_report_view_form
+msgid "Add Product"
+msgstr "Бараа нэмэх"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:155
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+#, python-format
+msgid "Add a Product"
+msgstr "Бараа нэмэх"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "Apply"
+msgstr "Хэрэглэх"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_apply_active
+msgid "Apply active"
+msgstr "Идэвхитэйг хэрэглэх"
+
+#. module: mrp_mps
+#: selection:sale.forecast,mode:0
+msgid "Automatic"
+msgstr "Автомат"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.mrp_mps_report_view_form
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_res_company
+msgid "Companies"
+msgstr "Компаниуд"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_company_id
+msgid "Company"
+msgstr "Компани"
+
+#. module: mrp_mps
+#: model:stock.inventory.line,product_name:mrp_mps.mps_stock_inventory_line_1
+msgid "Computer SC234"
+msgstr "Компьютер SC234"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_create_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_create_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_create_uid
+msgid "Created by"
+msgstr "Үүсгэгч"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_create_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_create_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_create_date
+msgid "Created on"
+msgstr "Үүсгэсэн"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:15
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:21
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Daily"
+msgstr "Өдөр тутмын"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_date
+msgid "Date"
+msgstr "Огноо"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_sale_forecast_product_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "Агуулахын бүх үйлдэлд ашиглах үндсэн хэмжих нэгж."
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_mrp_config_settings_manufacturing_period
+#: model:ir.model.fields,help:mrp_mps.field_res_company_manufacturing_period
+msgid ""
+"Default value for the time ranges in Master Production Schedule report."
+msgstr ""
+"Үйлдвэрлэлийн Мастер Товлогооны тайлан доторх цагийн хязгаарын үндсэн утга."
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:37
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_forecast_qty
+#, python-format
+msgid "Demand Forecast"
+msgstr "Шаардлагын урьдчилсан таамаг"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_display_name
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_display_name
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_display_name
+msgid "Display Name"
+msgstr "Дэлгэцийн Нэр"
+
+#. module: mrp_mps
+#: selection:sale.forecast,state:0
+msgid "Done"
+msgstr "Дууссан"
+
+#. module: mrp_mps
+#: selection:sale.forecast,state:0
+msgid "Forecast"
+msgstr "Урьдчилсан таамаг"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:52
+#, python-format
+msgid "Forecast Inventory"
+msgstr "Агуулахыг урьдчилан таамаглах"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:176
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+#, python-format
+msgid "Forecast Product"
+msgstr "Барааг урьдчилан таамаглах"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_forecasted
+msgid "Forecasted Target"
+msgstr "Урьдчилан таамагласан зорилт"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_sale_forecast_to_supply
+msgid "If mode is Manual, this is the forced value"
+msgstr "Гар горимд бол энэ нь тулгасан утга юм"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:42
+#, python-format
+msgid "Indirect Demand"
+msgstr "Шууд бус шаардлага"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_quantity
+msgid "Indirect Quantity"
+msgstr "Шууд бус тоо хэмжээ"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report___last_update
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast___last_update
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect___last_update
+msgid "Last Modified on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_write_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_write_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_write_uid
+msgid "Last Updated by"
+msgstr "Сүүлийн засвар хийсэн"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_write_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_write_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_write_date
+msgid "Last Updated on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_apply
+msgid "Latest Apply"
+msgstr "Хамгийн сүүлийнхийг ашиглана"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "Launch Procurement"
+msgstr "Татан авалтыг эхлүүлэх"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:6
+#, python-format
+msgid "Launch green cells"
+msgstr "Ногоон эсүүдийг эхлүүлэх"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_active
+msgid "MPS Active"
+msgstr "Идэвхитэй Үйлдвэрлэлийн Мастер Товлогоо"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "MPS in Main Warehouse"
+msgstr "Үндсэн агуулахын Үйлдвэрлэлийн Мастер Товлогоо"
+
+#. module: mrp_mps
+#: selection:sale.forecast,mode:0
+msgid "Manual"
+msgstr "Гарын авлага"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_config_settings_manufacturing_period
+#: model:ir.model.fields,field_description:mrp_mps.field_res_company_manufacturing_period
+msgid "Manufacturing Period"
+msgstr "Үйлдвэрлэлийн мөчлөг"
+
+#. module: mrp_mps
+#: model:ir.actions.client,name:mrp_mps.mrp_mps_report_action_client
+#: model:ir.ui.menu,name:mrp_mps.mrp_mps_report_menu
+msgid "Master Production Schedule"
+msgstr "Үйлдвэрлэлийн Мастер Товлогоо"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_max_supply
+msgid "Maximum to Supply"
+msgstr "Нөөцлөх дээд хэмжээ"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_min_supply
+msgid "Minimum to Supply"
+msgstr "Нөөцлөх доод хэмжээ"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_mode
+msgid "Mode"
+msgstr "Горим"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:13
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:19
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Monthly"
+msgstr "Сар бүр"
+
+#. module: mrp_mps
+#: model:stock.inventory.line,product_name:mrp_mps.mps_stock_inventory_line_0
+msgid "Mouse, Wireless"
+msgstr "Хулгана, утасгүй"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:84
+#, python-format
+msgid "Only Integer Value should be valid."
+msgstr "Зөвхөн бүхэл тоо байх ёстой."
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:190
+#, python-format
+msgid "Only Integer or Float Value should be valid."
+msgstr "Зөвхөн бүхэл эсвэл бутархай тоо байх ёстой."
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_period
+msgid "Period"
+msgstr "Мөчлөг"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:11
+#, python-format
+msgid "Period:"
+msgstr "Мөчлөг:"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_procurement_id
+msgid "Procurement Generated"
+msgstr "Татан авалт боловсруулагдсан"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_group_id
+msgid "Procurement Group"
+msgstr "Татан авах бүлэг"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_product_product
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_product_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_product_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_product_origin_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_product_id
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Product"
+msgstr "Бараа"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_product_uom_id
+msgid "Product UoM"
+msgstr "Барааны х.н"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_warehouse_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_warehouse_id
+msgid "Production Location"
+msgstr "Үйлдвэрлэлийн байрлал"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:25
+#, python-format
+msgid "Rows"
+msgstr "Мөрүүд"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Save"
+msgstr "Хадгалах"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:32
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+#, python-format
+msgid "Starting Inventory"
+msgstr "Тооллого эхлүүлж байгаа"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_state
+msgid "State"
+msgstr "Төлөв"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:47
+#, python-format
+msgid "To Produce"
+msgstr "Үйлдвэрлэх"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_to_supply
+msgid "To Supply"
+msgstr "Нөөцлөх"
+
+#. module: mrp_mps
+#: code:addons/mrp_mps/models/mrp_mps_report.py:124
+#, python-format
+msgid "To Supply / Produce"
+msgstr "Нөөцлөх / үйлдвэрлэх"
+
+#. module: mrp_mps
+#: code:addons/mrp_mps/models/mrp_mps_report.py:151
+#, python-format
+msgid "Week %s"
+msgstr "%s-р 7 хоног"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:14
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:20
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Weekly"
+msgstr "Долоо хоног бүр"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:84
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:190
+#, python-format
+msgid "Wrong value entered!"
+msgstr "Буруу утга оруулсан байна!"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "double click in order to empty"
+msgstr "хоослохын тулд хоёр дарна уу"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_mrp_config_settings
+msgid "mrp.config.settings"
+msgstr "mrp.config.settings"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_mrp_mps_report
+msgid "mrp.mps.report"
+msgstr "mrp.mps.report"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_sale_forecast
+msgid "sale.forecast"
+msgstr "sale.forecast"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_sale_forecast_indirect
+msgid "sale.forecast.indirect"
+msgstr "sale.forecast.indirect"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "set min-max"
+msgstr "доод дээд хязгаарыг тогтоох"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "set target"
+msgstr "зорилт тохируулах"

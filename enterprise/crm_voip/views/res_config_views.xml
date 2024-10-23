@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_voip_config" model="ir.ui.view">
+      <field name="name">voip.settings</field>
+      <field name="model">sale.config.settings</field>
+      <field name="inherit_id" ref="sales_team.view_sale_config_settings"/>
+      <field name="arch" type="xml">
+        <data>
+          <div id="main" position="inside">
+            <group string="VOIP Configuration">
+              <field name="pbx_ip"/>
+              <field name="wsServer"/>
+              <field name="mode" class="oe_inline"/>
+            </group>
+          </div>
+        </data>
+      </field>
+    </record>
+
+</odoo>

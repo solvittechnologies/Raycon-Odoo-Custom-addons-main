@@ -1,0 +1,51 @@
+.o_web_client.o_in_studio .o_main_navbar {
+    background-color: @o-studio-bg-dark;
+    border: none;
+    box-shadow: none;
+
+    > ul > li > a {
+        color: lightgrey;
+        height: @odoo-navbar-height;
+    }
+
+    .o_menu_brand {
+        margin-left: @odoo-horizontal-padding;
+    }
+
+    .o_web_studio_navbar_item {
+        background-color: @o-studio-bg-medium;
+    }
+
+    .o_web_edit_menu {
+        display: inline;
+        border: 1px solid lightgrey;
+        margin-left: 15px;
+        padding: 2px 10px 2px 10px;
+        font-size: 10px;
+
+        &:hover {
+            background-color: inherit;
+            color: white;
+            border-color: white;
+        }
+    }
+    .o_web_studio_notes {
+        height: 100%;
+        display: table;
+        float: right;
+        margin: 0 20px;
+
+        > a {
+            color: @o-studio-bg-light;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+.o_web_client .o_main_navbar {
+    .o_disabled {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+}

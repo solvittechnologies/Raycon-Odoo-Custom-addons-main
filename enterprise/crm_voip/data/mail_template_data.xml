@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Mail template are declared in a NOUPDATE block
+         so users can freely customize/delete them -->
+    <data noupdate="1">
+        <record id="email_template_call_client_notAvailable" model="mail.template">
+            <field name="name">Client not available</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+<p>Hello ${object.partner_id.name},</p>
+<p>I just tried to call you concerning the subject '${object.name}'. Can you
+    please give me your availability in order to schedule a new call?</p>
+<p>Best regards,</p>]]></field>
+        </record>
+
+        <record id="email_template_call_interrupted" model="mail.template">
+            <field name="name">Call interrupted</field>
+            <field name="model_id" ref="crm.model_crm_lead"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+<p>Hello ${object.partner_id.name},</p>
+
+<p>It seems that we have been interrupted during our conversation about
+    '${object.name}'. Can you please give me your availability in order to schedule 
+    a new call? </p>
+<p>Best regards,</p>]]></field>
+        </record>
+    </data>
+</odoo>

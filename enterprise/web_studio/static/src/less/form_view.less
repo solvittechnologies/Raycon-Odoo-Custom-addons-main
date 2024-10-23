@@ -1,0 +1,10 @@
+.o_form_view {
+    .o_field_one2many {
+        display: block;
+    }
+    &.o_form_editable .o_form_field.o_field_one2many {
+        td.o_readonly {
+            background-color: lightgrey;  // Readonly fields on edit mode
+        }
+    }
+}

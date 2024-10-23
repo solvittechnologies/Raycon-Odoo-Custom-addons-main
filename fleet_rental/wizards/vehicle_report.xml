@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_vehicle_rental_report_form" model="ir.ui.view">
+            <field name="name">view.vehicle.rental.report.form</field>
+            <field name="model">vehicle.report</field>
+            <field name="arch" type="xml">
+                <form string="Vehicle Rental Report Form">
+                    <group>
+                        <group>
+                            <field name="truck_rental_id" required="1"/>
+                            <field name="rent_start_date" required="1"/>
+                            <field name="rent_end_date" required="1"/>
+                        </group>
+                        <group>
+                            <field name="excel_file" filename="file_name" invisible="1"/>
+                            <field name="file_name" invisible="1"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="PDF" name="action_pdf" type="object"
+                                class="btn-primary"/>
+                        <button string="XLSX" name="action_xlsx" type="object"
+                                class="btn-primary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_vehicle_rental_report" model="ir.actions.act_window">
+            <field name="name">Vehicle Rental Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vehicle.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem name="Vehicle Rental" id="vehicle_rental_menu" parent="fleet.menu_fleet_reporting" action="action_vehicle_rental_report"/>
+
+    </data>
+</odoo>

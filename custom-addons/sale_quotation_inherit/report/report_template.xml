@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--    <template id="report_quotation_html_report">-->
+<!--        <t t-call="web.html_container">-->
+<!--            <t t-foreach="docs" t-as="doc">-->
+<!--                <h2>Test PPrint</h2>-->
+
+<!--            </t>-->
+<!--        </t>-->
+<!--    </template>-->
+
+    <template id="report_quotation_html">
+        <t t-call="web.internal_layout">
+        <t t-call="web.html_container">
+            <div class="page">
+                <div class="oe_structure">
+                    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+                    <h2>Quotation Report</h2>
+                    <table>
+                        <tr>
+                            <th> <b>S/N</b> </th>
+                            <th> <b>Quote No</b> </th>
+                            <th> <b>Date</b> </th>
+                            <th> <b>Customer</b> </th>
+                            <th> <b>Account Manager</b> </th>
+                            <th> <b>Total Cost</b> </th>
+                            <th> <b>Selling Price</b> </th>
+                            <th> <b>Margin</b> </th>
+                        </tr>
+                    <t t-set="i" t-value="1"/>
+                    <t t-foreach="docs" t-as="doc">
+                        <t t-foreach="doc.order_line" t-as="ord_line">
+                        <tr>
+                            <td><t t-esc="i"/></td>
+                            <td><t t-esc="doc.quote_name"/></td>
+                            <td><t t-esc="doc.date_order"/></td>
+                            <td><t t-esc="doc.partner_id.name"/></td>
+                            <td><t t-esc="doc.user_id.name"/></td>
+                            <td><t t-esc="ord_line.purchase_price"/></td>
+                            <td><t t-esc="ord_line.price_unit"/></td>
+                            <td><t t-esc="ord_line.profit"/></td>
+                            <t t-set="i" t-value="i+1"/>
+
+                        </tr>
+
+                        </t>
+
+                    </t>
+                </table>
+                </div>
+            </div>
+        </t>
+        </t>
+    </template>
+
+
+
+     <template id="report_sale_html">
+        <t t-call="web.internal_layout">
+        <t t-call="web.html_container">
+            <div class="page">
+                <div class="oe_structure">
+                    <style>
+
+                     table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+                    <h2>Sales Report</h2>
+                    <table>
+                        <tr>
+                            <th> <b>S/N</b> </th>
+                            <th> <b>Prospect and Customer</b> </th>
+                            <th> <b>Proposed Solution</b> </th>
+ <!--                           <th> <b>Actions Taken (Summary)</b> </th>-->
+                            <th> <b>Complaints/ Escalations/ Issues</b> </th>
+                            <th> <b>Probability of Closing Deal %</b> </th>
+                            <th> <b>Amount Quoted (Naira)</b> </th>
+                        </tr>
+
+                        <t t-set="i" t-value="1"/>
+                    <t t-foreach="docs" t-as="doc">
+                       
+                        <tr>
+                            <td><t t-esc="i"/></td>
+                            <t t-if="doc.partner_id">
+                            <td><t t-esc="doc.partner_id.name"/></td>
+                            </t>
+                            <t t-if="doc.name">
+                            <td><t t-esc="doc.name"/></td>
+                            </t>
+<!--                            <t t-foreach="doc.activities[0:1]" t-as="act">
+                            <t t-if="act.subject">
+                            <td><t t-esc="act.subject"/></td>
+                            </t>
+                            </t>-->
+                            <t t-if="doc.complaints">
+                            <td><t t-esc="doc.complaints"/></td>
+                            </t>
+                            <td><t t-esc="doc.probability"/></td>
+                            <td><t t-esc="doc.planned_revenue"/></td>
+                            
+                            <t t-set="i" t-value="i+1"/>
+
+                        </tr>
+
+                    </t>
+                </table>
+                </div>
+            </div>
+        </t>
+        </t>
+    </template>
+
+
+
+
+</odoo>

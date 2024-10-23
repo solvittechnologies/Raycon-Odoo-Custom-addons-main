@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_inherit_tree,hr_inherit_tree,model_hr_inherit_tree,base.group_user,1,1,1,1
+access_professional_training_inherit,employee_professional_trainingrs,model_professional_training_inherit,base.group_user,1,1,1,1
+access_employee_working_experience,employee_working_experinces,model_employee_working_experience,base.group_user,1,1,1,1
+renumerations_breakdownlist,renumeration_breakdown_list,model_renumeration_breakdown_list,base.group_user,1,1,1,1
+access_medical_history,medical_history,model_medical_history,base.group_user,1,1,1,1
+hobbies_socials,hobbies_socials,model_hobbies_socials,base.group_user,1,1,1,1
+likes_dislikes,likes_dislikes,model_likes_dislikes,base.group_user,1,1,1,1

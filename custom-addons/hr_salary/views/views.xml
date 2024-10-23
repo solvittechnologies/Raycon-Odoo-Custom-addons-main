@@ -1,0 +1,201 @@
+<odoo>
+  <data>
+
+
+	<record id="salary_form_view" model="ir.ui.view">
+    <field name="name">HR Salary</field>
+    <field name="model">custom.hr.salary</field>
+      <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+       
+
+	<form string="HR Salary">
+          <header>
+
+            <button name="action_post_payment_entry" string="Post this Payment" type="object" class="oe_highlight" attrs="{'invisible':[('state','not in',['approved'])]}"/>
+                    <button name="action_send" string="Send for Approval" type="object" class="oe_highlight" attrs="{'invisible':[('state','not in',['draft'])]}"/>
+
+                    <button name="action_approve" string="Approve" type="object" class="oe_highlight" attrs="{'invisible':[('state','not in',['awaiting'])]}"  groups="point_of_sale.group_pos_manager"/>
+                    <button name="action_reject" string="Disapprove" type="object" class="oe_highlight" attrs="{'invisible':[('state','not in',['awaiting'])]}"  groups="point_of_sale.group_pos_manager"/>
+                
+                    <button name="action_cancel" string="Cancel" type="object" class="oe_highlight" attrs="{'invisible':[('state','not in',['approved'])]}"  groups="point_of_sale.group_pos_manager"/>
+            <field name="state" widget="statusbar"/>
+
+        </header>
+
+	  <sheet>
+   
+        <group col="4">
+        
+            <field name="name" attrs="{'readonly':[('state','not in',['draft'])]}" required="1"/>
+            <field name="manager"  attrs="{'readonly':[('state','not in',['draft'])]}" required="1"/>
+                <field name="currency_id" required="1"/>
+               <field name="payment_date" required="1"/>
+        </group>
+
+        <group col="4">
+ 
+            <field name="start_date"  attrs="{'readonly':[('state','not in',['draft'])]}" required="1"/>
+            <field name="end_date"  attrs="{'readonly':[('state','not in',['draft'])]}" required="1"/>
+	   <field name="journal_id"  attrs="{'readonly':[('state','not in',['draft'])]}" required="1"/>
+
+	    <field name="total_amount" attrs="{'readonly':[('state','not in',['draft'])]}" readonly="1"/>
+	 
+	   <field name="move_id" readonly="1" />
+			
+        </group>
+        <notebook colspan="4">
+            <page string="Salary lines">
+                <field name="salary_line"  attrs="{'readonly':[('state','not in',['draft'])]}">
+			<tree editable="bottom">
+			   <field name="employee" />
+			  <field name="description" />
+                          <field name="gross_amount" />
+                           <field name="deductions" />
+                            <field name="bonus"/>
+			   <field name="amount"/>
+		
+
+			</tree>
+
+		</field>
+            </page>
+        </notebook>
+
+       
+     </sheet>
+   </form>
+    </field>
+</record>
+
+
+<record id="salary_tree_view" model="ir.ui.view">
+    <field name="name">HR Salary</field>
+    <field name="model">custom.hr.salary</field>
+      <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+
+
+<tree string="Salary list">
+    <field name="name"/>
+    <field name="manager"/>
+    <field name="start_date"/>
+    <field name="end_date" />
+
+</tree>
+
+
+</field>
+</record>
+
+
+<record model="ir.actions.act_window" id="salary_action">
+            <field name="name">HR Salary</field>
+            <field name="res_model">custom.hr.salary</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+
+        <menuitem id="salary_menu" name="HR Salary"
+                  parent="hr.menu_hr_root"
+                  action="salary_action" groups="group_salary_manager" sequence="3"/>
+
+
+
+	<menuitem id="quotation_menuitem" parent="fastra_gas.other_services" 
+		action="sale.action_quotations_with_onboarding" 
+	    string="Quotation" 
+	    name="Quotation" sequence="4"
+	   />
+       <menuitem id="purchase_menuitem" parent="fastra_gas.other_services" 
+		action="purchase.purchase_form_action" string="Purchase Order" name="Purchase Order"
+		sequence="6"
+	/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="hr_salary.list">
+      <field name="name">hr_salary list</field>
+      <field name="model">hr_salary.hr_salary</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="hr_salary.action_window">
+      <field name="name">hr_salary window</field>
+      <field name="res_model">hr_salary.hr_salary</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="hr_salary.action_server">
+      <field name="name">hr_salary server</field>
+      <field name="model_id" ref="model_hr_salary_hr_salary"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="hr_salary" id="hr_salary.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="hr_salary.menu_1" parent="hr_salary.menu_root"/>
+    <menuitem name="Menu 2" id="hr_salary.menu_2" parent="hr_salary.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="hr_salary.menu_1_list" parent="hr_salary.menu_1"
+              action="hr_salary.action_window"/>
+    <menuitem name="Server to list" id="hr_salary" parent="hr_salary.menu_2"
+              action="hr_salary.action_server"/>
+    -->
+  </data>
+</odoo>

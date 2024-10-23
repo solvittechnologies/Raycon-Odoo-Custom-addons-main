@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record id="hmrc_send_wizard_form" model="ir.ui.view">
+            <field name="name">l10n_uk.hmrc.send.wizard.form</field>
+            <field name="model">l10n_uk.hmrc.send.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="need_login" invisible="1"/>
+                        <field name="obligation_id" options="{'no_create': True}" attrs="{'invisible': [('need_login','=', True)]}"/>
+                    </group>
+                    <div class="alert alert-info" role="alert" style="margin-bottom:0px;" attrs="{'invisible': [('need_login', '=', True)]}">
+                        Please check the numbers in the VAT report first while filtering
+                        on the dates of the chosen obligation.  (only accrual, posted entries)
+                    </div>
+                    <br/>
+                    <div attrs="{'invisible': [('need_login', '=', True)]}">
+                        <field name="accept_legal" no_label="1"/>
+                        When you submit this VAT information you are making a legal
+                        declaration that the information is true and complete. A false declaration
+                        can result in prosecution.
+                    </div>
+                    <footer>
+                        <button string="Cancel" special="cancel"/>
+                        <button string="Send" class="oe_highlight" type="object" name="send"
+                                attrs="{'invisible': [('accept_legal', '=', False)]}"/>
+                        <button string="Connect" class="oe_highlight" type="object" name="send"
+                                attrs="{'invisible': [('need_login', '=', False)]}"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_hmrc_send_wizard" model="ir.actions.act_window">
+            <field name="name">Send Tax Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">l10n_uk.hmrc.send.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="hmrc_send_wizard_form"/>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_hmrc_send_wizard" parent="l10n_uk.account_reports_uk_statements_menu" name="Send VAT Return"
+      action="action_hmrc_send_wizard"/>
+    </data>
+</odoo>

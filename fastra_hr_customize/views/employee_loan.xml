@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="employee_loan_form_view" model="ir.ui.view">
+            <field name="name">employee.loan.form.view</field>
+            <field name="model">employee.loan</field>
+            <field name="arch" type="xml">
+                <form string="Employee Loan Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="employee_id" placeholder="Employee"/>
+                                <field name="job_id"/>
+                            </group>
+                            <group>
+                                <field name="employee_bank_account"/>
+                                <field name="allocation_date" readonly="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="allocation_line" string="Loan Allocation">
+                                <field name="allocation_line_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="total_loan_amount"/>
+                                        <field name="loan_from_date"/>
+                                        <field name="loan_to_date"/>
+                                        <field name="loan_payment_method"/>
+                                        <field name="loam_amount"/>
+                                        <field name="loan_narration"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="payment_line" string="Loan Payment">
+                                <field name="loan_payment_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="total_amount"/>
+                                        <field name="account_debit"/>
+                                        <field name="account_credit"/>
+                                        <field name="journal_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="employee_loan_tree_view" model="ir.ui.view">
+            <field name="name">employee.loan.tree.view</field>
+            <field name="model">employee.loan</field>
+            <field name="arch" type="xml">
+                <tree string="Employee Loan Tree">
+                    <field name="employee_id"/>
+                    <field name="allocation_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="employee_loan_act_window" model="ir.actions.act_window">
+            <field name="name">Loan</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.loan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Loan" id="employee_loan_menu"
+                  parent="hr_menus.hr_menus"
+                  action="employee_loan_act_window"/>
+
+    </data>
+</odoo>

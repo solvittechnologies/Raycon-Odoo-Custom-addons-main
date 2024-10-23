@@ -1,0 +1,265 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_ups
+# 
+# Translators:
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2016\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_delivery_carrier
+msgid "Carrier"
+msgstr "Перевозчик"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "Сантиметров"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "EPL"
+msgstr "EPL"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Inches"
+msgstr "Дюймы "
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Kilograms"
+msgstr "Килограммы "
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_product_packaging
+msgid "Packaging"
+msgstr "Упаковка"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:207
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Укажите, пожалуйста, хотя бы один элемент для отгрузки."
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Pounds"
+msgstr "Фунты"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "SPL"
+msgstr "SPL"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:175
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Отгрузка № %s была отменена"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:139
+#, python-format
+msgid "Shipment created into UPS <br/> <b>Tracking Number : </b>%s"
+msgstr "Отгрузка произведена в UPS <br/> <b>Номер отправления: </b>%s"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:146
+#, python-format
+msgid "Shipping label for packages"
+msgstr "Отгрузочная метка для упаковки"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:182
+#, python-format
+msgid ""
+"The address of your company is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Адрес вашей компании ошибочен или не указан.\n"
+"(Отсутствующие строки: %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:192
+#, python-format
+msgid ""
+"The address of your warehouse is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Адрес вашего склада ошибочен или не указан.\n"
+"(Отсутствующие строки: %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:212
+#, python-format
+msgid ""
+"The delivery cannot be done because the weight of your product is missing."
+msgstr "Невозможно произвести отправку, т. к. не указан вес."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:209
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr "Невозможно произвести оценку стоимости, т. к. не указан вес."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:202
+#, python-format
+msgid ""
+"The recipient address is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Адрес получателя ошибочен или не указан.\n"
+"(Отсутствующие строки: %s)"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day"
+msgstr "UPS 2ой день"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day AM"
+msgstr "UPS 2ой день AM"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 3-day Select"
+msgstr "UPS 3-день выбрать"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_access_number
+msgid "UPS AccessLicenseNumber"
+msgstr "UPS Номер лицензии доступа"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_be
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_be_product_product
+msgid "UPS BE"
+msgstr "UPS BE"
+
+#. module: delivery_ups
+#: model:ir.ui.view,arch_db:delivery_ups.view_delivery_carrier_form_with_provider_ups
+msgid "UPS Configuration"
+msgstr "UPS конфигурация"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_packaging_id
+msgid "UPS Default Packaging Type"
+msgstr "UPS Тип упаковки по умолчанию"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Ground"
+msgstr "UPS Ground"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_label_file_type
+msgid "UPS Label File Type"
+msgstr "UPS Тип файла метки"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day"
+msgstr "UPS следующий день"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day AM"
+msgstr "UPS следующий день AM"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day Air Saver"
+msgstr "UPS на следующий день Air поддержки"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_passwd
+msgid "UPS Password"
+msgstr "UPS пароль"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Saver"
+msgstr "UPS Поддержка"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_service_type
+msgid "UPS Service Type"
+msgstr "Тип обслуживания UPS"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_shipper_number
+msgid "UPS Shipper Number"
+msgstr "Номер отправителя UPS"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Standard"
+msgstr "UPS стандарт"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_us
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_us_product_product
+msgid "UPS US"
+msgstr "UPS US"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_username
+msgid "UPS Username"
+msgstr "UPS Имя пользователя"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Expedited"
+msgstr "UPS Ускоренная доставка по всему миру"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express"
+msgstr "UPS Всемирный Экспресс"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Freight"
+msgstr "UPS Всемирный Экспресс перевозки"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Plus"
+msgstr "UPS Всемирный Экспресс Плюс"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_dimension_unit
+msgid "Units for UPS Package Size"
+msgstr "Единицы для UPS размера упаковки"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_weight_unit
+msgid "Ups package weight unit"
+msgstr "Ups единица веса упаковки"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "ZPL"
+msgstr "ZPL"

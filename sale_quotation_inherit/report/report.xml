@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <report
+    id="crm_general_excel_report"
+    string="General Pipeline Report"
+    model="crm.lead"
+    report_type="xlsx"
+    name="crm.general_sales_report_xls"
+    file="crm.general_sales_report_xls"
+    />
+
+
+    <report
+    id="quotation_excel_report"
+    string="Generate Quotation Report"
+    model="sale.order"
+    report_type="xlsx"
+    name="sale.quotation_report_xls"
+    file="sale.quotation_report_xls"
+    />
+
+    <report
+    id="report_quotation_html_report"
+    string="Preview Quotation Report"
+    model="sale.order"
+    report_type="qweb-html"
+    file="sale_quotation_inherit.report_quotation_html"
+    name="sale_quotation_inherit.report_quotation_html"
+    />
+
+
+    <report
+    id="report_sales_html_report"
+    string="Preview Sale Report"
+    model="crm.lead"
+    report_type="qweb-html"
+    file="sale_quotation_inherit.report_sale_html"
+    name="sale_quotation_inherit.report_sale_html"
+    />
+
+
+
+</odoo>

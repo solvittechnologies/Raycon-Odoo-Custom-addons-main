@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * currency_rate_live
+# 
+# Translators:
+# ExcaliberX <excaliberx@gmail.com>, 2017
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:36+0000\n"
+"Last-Translator: ExcaliberX <excaliberx@gmail.com>, 2017\n"
+"Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+
+#. module: currency_rate_live
+#: model:ir.model,name:currency_rate_live.model_res_company
+msgid "Companies"
+msgstr "חברות"
+
+#. module: currency_rate_live
+#: selection:res.company,currency_interval_unit:0
+msgid "Daily"
+msgstr "יוי"
+
+#. module: currency_rate_live
+#: selection:res.company,currency_provider:0
+msgid "European Central Bank"
+msgstr "הבנק האירופי המרכזי"
+
+#. module: currency_rate_live
+#: model:ir.model.fields,field_description:currency_rate_live.field_account_config_settings_currency_interval_unit
+#: model:ir.model.fields,field_description:currency_rate_live.field_res_company_currency_interval_unit
+msgid "Interval Unit"
+msgstr "יחידות הפרש"
+
+#. module: currency_rate_live
+#: model:ir.ui.view,arch_db:currency_rate_live.view_account_currency_config_settings_inherit
+msgid "Live Currency Rate"
+msgstr "שער עדכני"
+
+#. module: currency_rate_live
+#: selection:res.company,currency_interval_unit:0
+msgid "Manually"
+msgstr "ידנית"
+
+#. module: currency_rate_live
+#: selection:res.company,currency_interval_unit:0
+msgid "Monthly"
+msgstr "חודשי"
+
+#. module: currency_rate_live
+#: model:ir.model.fields,field_description:currency_rate_live.field_account_config_settings_currency_next_execution_date
+#: model:ir.model.fields,field_description:currency_rate_live.field_res_company_currency_next_execution_date
+msgid "Next Execution Date"
+msgstr "ההפעלה הבאה"
+
+#. module: currency_rate_live
+#: model:ir.model.fields,field_description:currency_rate_live.field_account_config_settings_currency_provider
+#: model:ir.model.fields,field_description:currency_rate_live.field_res_company_currency_provider
+msgid "Service Provider"
+msgstr "נותן שירות"
+
+#. module: currency_rate_live
+#: code:addons/currency_rate_live/models/account_config_setting.py:38
+#, python-format
+msgid ""
+"Unable to connect to the online exchange rate platform. The web service may "
+"be temporary down. Please try again in a moment."
+msgstr ""
+"לא ניתן להתחבר לשירות המרת מטבע. השירות ככל הנראה נפול זמנית. אנא נסה שוב "
+"בקרוב."
+
+#. module: currency_rate_live
+#: model:ir.ui.view,arch_db:currency_rate_live.view_account_currency_config_settings_inherit
+msgid "Update Now"
+msgstr "עדכן עכשיו"
+
+#. module: currency_rate_live
+#: selection:res.company,currency_interval_unit:0
+msgid "Weekly"
+msgstr "שבועי"
+
+#. module: currency_rate_live
+#: selection:res.company,currency_provider:0
+msgid "Yahoo"
+msgstr "יאהו"
+
+#. module: currency_rate_live
+#: model:ir.model,name:currency_rate_live.model_account_config_settings
+msgid "account.config.settings"
+msgstr "account.config.settings"

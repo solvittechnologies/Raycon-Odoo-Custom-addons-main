@@ -1,0 +1,322 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mass_mailing_themes
+# 
+# Translators:
+# Maria Boyadjieva <marabo2000@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Albena Mincheva <albena_vicheva@abv.bg>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: Albena Mincheva <albena_vicheva@abv.bg>, 2018\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "1958 Royal"
+msgstr "1958 Royal"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "20%"
+msgstr "20%"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "21 Jul"
+msgstr "21 юли"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "<small>Step 1:</small>"
+msgstr "<small>Стъпка 1:</small>"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "<small>Step 2:</small>"
+msgstr "<small>Стъпка 2:</small>"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "<small>Step 3:</small>"
+msgstr "<small>Стъпка 3:</small>"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid ""
+"A delicious soup made of one or more seasonal vegetables, without added fat,"
+" starches and lactose."
+msgstr ""
+"Вкусна супа, приготвена от една или повече зеленчукови подправки, без "
+"добавена мазнина, скорбяла и лактоза."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "ALL DAY"
+msgstr "ЦЯЛ ДЕН"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "BBQ Mix"
+msgstr "Скара - микс"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Call for Speakers"
+msgstr "Покана за говорители"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Captain’s Salad"
+msgstr "Салатата на капитана"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Check the top electric guitar brands and their models!"
+msgstr "Проверете най-добрите марки електрически китари и техните модели!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Choose"
+msgstr "Изберете"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Classic D8 Skate"
+msgstr "Класически D8 Skate"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Discover"
+msgstr "Открийте"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"Discover the new version of our software, with a great overview on all the "
+"new features."
+msgstr ""
+"Открийте новата версия на нашия софтуер, със страхотен общ преглед на всички"
+" нови функции."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Enjoy!"
+msgstr "Наслаждавайте се!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "FROM YOUR NEXT ORDER!"
+msgstr "ОТ СЛЕДВАЩАТА ВИ ПОРЪЧКА"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Gibson Les Paul Junior"
+msgstr "Китара Gibson Les Paul Junior"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Heat up the popcorn and get ready for an immersive experience."
+msgstr "Слагайте пуканките и се подгответе да се потопите."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Hi there!"
+msgstr "Привет!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Mains"
+msgstr "Главни части"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Mini Hamburgers"
+msgstr "Мини хамбургери"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "More Info"
+msgstr "Повече информация"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "New 45Hc-270A laptop"
+msgstr "Новият лаптоп 45Hc-270A"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid ""
+"Normally mirrorless cameras have always sat slightly above entry-level in "
+"terms of price.."
+msgstr ""
+"Обикновено камерите без огледало винаги стоят малко над входното ниво по "
+"отношение на цената."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "OFF"
+msgstr "ПРЕКРАТЕТЕ"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Odoo Experience is the place to be to showcase your expertize."
+msgstr "Odoo Experience е мястото, където да заявите своя опит."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Order"
+msgstr "Поръчка"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Premium Pass"
+msgstr "Premium пропуск"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Puccini Jar"
+msgstr "Puccini Jar"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Read More"
+msgstr "Четете повеч"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Read More..."
+msgstr "Четете повече"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Recipe of the day"
+msgstr "Рецепта на деня"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Register Now!"
+msgstr "Регистрирайте сега!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Registration"
+msgstr "Регистрация"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid "Sony BDVE210"
+msgstr "Sony BDVE210"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Starters"
+msgstr "Предястия"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Tagliatelle Boscaiola"
+msgstr "Талиатели Boscaiola"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "The Rise Of The Drone"
+msgstr "Възходът на търтея"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid ""
+"The new laptops look nearly identical to the original models, but closer "
+"inspection reveals a refined design."
+msgstr ""
+"Новите лаптопи изглеждат почти идентични с оригиналните модели, но по-"
+"прецизен поглед разкрива изящния им дизайн."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"The next edition of Odoo Experience looks very promising. More than 150 talks are scheduled during those 3 days!\n"
+"                                    Find below some stand-out talks for the Business tracks."
+msgstr ""
+"Следващото издание на Odoo Experience изглежда доста обещаващо. За тези 3 дни са насрочени повече от 150 разговора!\n"
+"                                    По-долу ще откриете някои забележителни беседи относто бизнес направленията."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid ""
+"They sit at terminals at Holloman Air Force Base, watching grainy images "
+"from a drone video feed."
+msgstr ""
+"Те седят в терминали на Военно-въздушната база Holloman и гледат зърнести "
+"изображения от видеозаписи, направени с дрон."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "This pass gives you access to the catering and evening activities!"
+msgstr "Този пропуск Ви дава достъп до кетъринг и вечерни дейности!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"To stir up your curiosity, have a look at all the great talks scheduled and "
+"highlighted in our agenda!"
+msgstr ""
+"За да раздвижите любопитството си, хвърлете поглед към всички страхотни "
+"беседи, насрочени и изведени на преден план в нашата програма!"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+msgid "Tomato Soup"
+msgstr "Доматена супа"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Two-lens phone cameras"
+msgstr "Двулещни камери за телефон"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+msgid ""
+"We are continuing to grow and we miss seeing you be a part of it! We've "
+"increased store hours and have lot's of new brands available.<br/>To welcome"
+" you back please accept this 20% discount on you next purchase by clicking "
+"the button."
+msgstr ""
+"Ние продължаваме да се развиваме и ни липсва да Ви виждаме като част от "
+"всичко това! Увеличихме работното време на магазините и сме ги заредили с "
+"много нови марки.<br/>За да Ви приветстваме отново, моля, приемете тази "
+"20-процентна отстъпка за следваща покупка, като натиснете бутона."
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Your Banner Image"
+msgstr "Вашето банерно изображение"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Your Logo"
+msgstr "Вашето лого"
+
+#. module: mass_mailing_themes
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_airmail_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_resto_template
+#: model:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+msgid "Your Picture"
+msgstr "Вашата снимка"

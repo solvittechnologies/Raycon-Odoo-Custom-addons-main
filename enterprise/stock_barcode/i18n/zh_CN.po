@@ -1,0 +1,841 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * stock_barcode
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# liAnGjiA <liangjia@qq.com>, 2016
+# 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "(make sure your scanner uses carriage return suffix)"
+msgstr "(请确保你的扫描枪开启了自动回车)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+").\n"
+"                            Then, print it via the <i>Print</i> menu and stick it in a visible and convenient place."
+msgstr ""
+").\n"
+"                            然后, 通过 <i>打印</i> 菜单打印，并且把它黏贴在一个看得到且方便黏贴的地方."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Actions barcodes:</strong> use the barcodes from"
+msgstr "<strong>动作条码：</strong> 用条码从"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>EAN-13 barcodes:</strong> used by most retail products, they cannot be made\n"
+"                            up without proper authorization: you must pay the International\n"
+"                            Article Numbering Association a fee in exchange for an EAN code\n"
+"                            sequence (that's why no two products in a store will ever have the\n"
+"                            same EAN code). Still, as Odoo supports any string as a barcode, so\n"
+"                            you can always define your own barcode format for internal use."
+msgstr ""
+"<strong>EAN-13条码：</strong>大多被用来零售的产品，如果没有正确的授权使不能被使用的\n"
+"这里你还必须给国际物品编码协会支付一笔费用换取一个EAN编码序列号（这就是为什么仓库中从来没\n"
+"有任何两个产品会有相同的EAN条码）。尽管如此，Odoo支持所有字符串类型的条码，所以你可以在Odoo中定义你自己\n"
+"的格式作为内部使用"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Enjoy your Inventory management!</strong>"
+msgstr "<strong>好好享用你的库存管理!</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>From the Barcode application:</strong>"
+msgstr "<strong>从条码应用程序:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Good location nomenclature:</strong> <i>warehouse short name - location short name - (Corridor X - Shelf Y - Height Z) </i><br/>\n"
+"                                Example: A032-025-133 (Note that you can use any string in the barcode field)"
+msgstr ""
+"<strong>好的位置命名规则:</strong> <i>仓库缩写－位置缩写－（走廊x－货架x－高度ｘ）</i><br/>\n"
+"例如：A032-025-133（注意你可以在条码字段用任何字符串）"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Lots Numbers</strong> can be encoded from incoming shipments, "
+"internal moves and outgoing deliveries:"
+msgstr "<strong>批次号</strong> 可以根据入库送货，内部调拨，以及出向交货进行编码；"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Product variants:</strong> be careful to add barcodes directly on "
+"the variant, and not the template product (otherwise you won't be able to "
+"differentiate them)."
+msgstr "<strong>产品变体:</strong> 在产品变体上而不是产品模板中直接添加条码要小心  (要不然你可能会混淆它们) "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan barcodes on picking lists:</strong> suitable if a significant "
+"percentage of your products do not have a barcode on them."
+msgstr "<strong>扫描拣货清单上的条码：</strong> 适用于大部分产品没有条码。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan barcodes on products:</strong> suitable if all your products "
+"already have a barcode"
+msgstr "<strong>扫描产品上的条码：</strong> 适用于所有的产品都有条码 "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan lots or serial numbers:</strong> this is more time consuming, "
+"but allows for a full traceability of the parts. It's usually used by "
+"manufacturers of sensitive products."
+msgstr "<strong>扫描批次或者序列号：</strong> 这消耗更多的时间，但是允许零件的完整追踪。通常用在敏感产品的制造。 "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Test your configuration:</strong>"
+msgstr "<strong>测试你的配置：</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>The next step is to assign barcodes to your products,</strong> by "
+"setting the right value in the Barcode field of the Product form."
+msgstr "<strong>下一步是给产品分配条码,</strong> 通过在产品的条码字段设置条码数值来完成 "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>To attribute a barcode to a Location,</strong> simply enter one on "
+"the Location form (accessible from your"
+msgstr "<strong>给位置分配条码号,</strong> 通过进入位置编辑页面（访问它于 "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>To make an Internal Transfer:</strong>"
+msgstr "<strong>生成内部调拨:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>To process Delivery Orders from a computer or mobile "
+"device:</strong>"
+msgstr "<strong>从电脑或者移动设备上完成发货单:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>To process printed Delivery Orders:</strong>"
+msgstr "<strong>完成打印好的发货单:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>We've tested a few devices for you:</strong>"
+msgstr "<strong>我们已经测试过一些设备:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>What is the difference between Lots and Serial Numbers?</strong>"
+msgstr "<strong>批次和序列号之间有什么区别?</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Automatic carriage return"
+msgstr "自动回车"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Automatic carriage return: <span class=\"label\">OFF</span>"
+msgstr "自动回车: <span class=\"label\">OFF</span>"
+
+#. module: stock_barcode
+#: model:ir.actions.client,name:stock_barcode.stock_barcode_action_main_menu
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory_line_product_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_pack_operation_product_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_scrap_product_barcode
+#: model:ir.ui.menu,name:stock_barcode.stock_barcode_menu
+msgid "Barcode"
+msgstr "条码"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:8
+#, python-format
+msgid "Barcode Scanning"
+msgstr "条码扫描"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Before we start, you should choose your working process. There are three "
+"suitable approaches to work with barcodes:"
+msgstr "在我们开始之前，你应该选择你的工作流程，我们有三种方式用条码的方式"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"But better yet is to transform this naming into a barcode that can be "
+"scanned easily and without error."
+msgstr "更好的方式是将这个名字转换为条码，能够被快捷扫描并且极少出错。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"By default, Odoo has a 50 milliseconds delay between each successive scan "
+"(it helps avoid accidental double scanning). If you want to suppress this "
+"delay, you can configure your scanner to insert a carriage return symbol at "
+"the end of each barcode. This is usually the default configuration and can "
+"be explicitly configured by scanning a specific barcode in your scanner user"
+" manual ('CR suffix ON', 'Apply Enter for suffix', etc.)"
+msgstr ""
+"默认情况下，Odoo在连续扫描之间有50毫秒的延迟（这有助于避免意外的重复扫描）。如果你想避免这个延迟，你可以配置你的扫描器在每次扫描之后插入回车符号。这通常是默认的配置，并且能用用户手册中的特定条码（'CR"
+" suffix ON'，'用回车键做后缀'，等）被明确配置"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Choose a USB barcode scanner if you plan to scan products at the computer "
+"station"
+msgstr "如果你计划在计算机工作站扫描产品，请选用一个USB扫描枪"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Click on 'Inventory'"
+msgstr "点击‘盘点’"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_config_view_form_inherit_stock_barcode
+msgid "Configure Product Barcodes"
+msgstr "配置产品条码"
+
+#. module: stock_barcode
+#: model:web.planner,tooltip_planner:stock_barcode.planner_barcode
+msgid "Configure and learn how to use your Barcode Scanner."
+msgstr "配置并学习怎样使用条码扫描枪"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Congratulations, you're ready to go live!"
+msgstr "恭喜你，你已经上线了"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:42
+#, python-format
+msgid ""
+"Do you want to permanently remove this message ?\n"
+"                It won't appear anymore, so make sure you don't need the barcodes sheet or you have a copy."
+msgstr ""
+"你想永久删除这条消息吗？\n"
+"                 它不会再出现，所以确保你不需要条形码表或者你有一个副本。"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:45
+#, python-format
+msgid "Don't show this message again"
+msgstr "不再显示此消息"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"For the Odoo Team,<br/>\n"
+"                        Fabien Pinckaers, Founder"
+msgstr ""
+"对于Odoo团队,<br/>\n"
+"                        Fabien Pinckaers, 创始人"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Go for a wireless scanner if you want to scan products at different "
+"locations"
+msgstr "如果你想在不同位置扫描产品，最好用无线扫描枪"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Here, you have three options:"
+msgstr "这里，你有三个选项"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If this product should be manage by lots, a window opens to help you scan "
+"the lots / serial numbers"
+msgstr "如果产品能够通过批次管理，一个窗口会弹出帮你扫描批次／序列号"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If you have a static computer station, it's better to use 'pistols' formats "
+"as they are more practical to handle and aim."
+msgstr "如果你有一个静态的电脑工作站，最好使用‘pistols’格式因为他们在处理和瞄准上更实用"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If you use a mobile device, you may prefer a smaller format that is "
+"connected in Bluetooth."
+msgstr "如果你在使用移动设备，你可能更加倾向于和蓝牙链接的更小的格式"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "In Odoo, there are two types of internal transfers:"
+msgstr "在Odoo中，有两种类型的内部调拨"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "In the barcode interface, scan the products you want create a lot from"
+msgstr "在条码界面，扫描创建批次的产品"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Inateck BCST-20:"
+msgstr "Inateck BCST-20:"
+
+#. module: stock_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_inventory_line_product_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_pack_operation_product_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_scrap_product_barcode
+msgid "International Article Number used for product identification."
+msgstr "国际物品编码用于产品标识"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:20
+#: model:ir.model,name:stock_barcode.model_stock_inventory
+#, python-format
+msgid "Inventory"
+msgstr "库存"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "盘点明细"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Keyboard layout"
+msgstr "键盘布局"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:51
+#, python-format
+msgid "Leave it"
+msgstr "离开它"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "List of Locations"
+msgstr "位置列表"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Load all the Delivery Orders marked as \"To Do\", and open the first one."
+msgstr "下载所有标识为“To-Do”的发货单并打开第一个"
+
+#. module: stock_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_pack_operation_location_processed
+msgid "Location processed"
+msgstr "处理过的位置"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Lot numbers are attributed to several identical products, so each time you "
+"scan a Lot Number, Odoo will add one on the product count."
+msgstr "在这里批次号成为一些被标识的产品的一个属性，所以每次一旦你扫描批次号，Odoo将会添加一个产品总数"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Motorola CS3000:"
+msgstr "Motorola CS3000:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Motorola DS4208-SR:"
+msgstr "Motorola DS4208-SR:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Move to the next Delivery Order to process by clicking on the top-right "
+"right arrow or scanning the Pager-Next barcode action."
+msgstr "通过点击右上角的向右箭头，或者扫描‘下一页’动作条码移向下一交货单。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Naming the locations within your warehouse(s) is crucial for a good "
+"inventory management."
+msgstr "在仓库内命名位置，对于库存管理是很关键的。"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.stock_inventory_action_new_inventory
+msgid "New Inventory"
+msgstr "新盘点"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:69
+#, python-format
+msgid "No internal picking type. Please configure one in warehouse settings."
+msgstr "没有内部调拨类型，请在仓库中配置一个"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:54
+#, python-format
+msgid "No lot found"
+msgstr "找不到批次"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:23
+#, python-format
+msgid "No picking corresponding to barcode %(barcode)s"
+msgstr "没有与条码%(barcode)s对应的拣货"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:21
+#, python-format
+msgid "No picking or location corresponding to barcode %(barcode)s"
+msgstr "没有与条码%(barcode)s对应的位置或者拣货"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Note that Bluetooth connections are suitable for maximum 30 feet (10 meters)"
+" so you will have to scan products nearby the computer station."
+msgstr "请注意，蓝牙连接适用于最大30米（10米）的距离，因此您必须在计算机附近扫描产品。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Now that all the flows have been tested and configured, it's time to go into"
+" production. Do a few delivery orders as an example with your workers and "
+"train them on your favorite process."
+msgstr "现在所有的流程已经被测试和配置过了，该进入生产环境了和操作员一块做几张发货单并且用你最喜欢的流程培训他们"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Odoo supports most USB, Wireless and Bluetooth barcode scanners (as they all"
+" emulate a keyboard)."
+msgstr "Odoo支持大多数USB、无线或蓝牙的条码扫描器（因为它们原理都是仿键盘式的）。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"On the opposite, a Serial Number is unique, and represented by only one "
+"barcode, sticked on only one item. This means that Odoo won't accept "
+"scanning the same Serial Number more than once per operation."
+msgstr "相反的，序列号是唯一的，只代表一个条码，只能黏贴在一个物品上。这就意味着Odoo不会接受同一个序列号作业多次。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once it's fully working, give us some feedback: we love to hear from our "
+"customer. It would be great if you can send a photo of your warehouse to"
+msgstr "一旦正常工作，请给我们一些回馈：我们很期望从顾客那边得到好的消息。如果你能把你的仓库的照片发给你，那就很好了。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you scan the next product or the validate barcode, the window will "
+"close automatically"
+msgstr "一旦你扫描下一个产品，或者验证条码，窗口会自动关闭。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you scanned all products, scan the Validate barcode action to finish "
+"the operation."
+msgstr "一旦扫描完所有产品，扫描验证动作条码来完成这个作业。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you start processing your delivery orders, scan the barcode on the top-"
+"right corner of the document to load the right record on the screen."
+msgstr "一旦开始处理交货订单，扫描单据右上角的条码加载正确的记录到屏幕。"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:19
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_action_kanban
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_type_action_kanban
+#, python-format
+msgid "Operations"
+msgstr "作业"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_pack_operation
+msgid "Packing Operation"
+msgstr "打包作业"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Pick up and scan each listed product."
+msgstr "捡起并扫描每一个被列出的产品"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Pick up and scan the products"
+msgstr "捡起并扫描产品"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_action_form
+msgid "Picking"
+msgstr "拣货"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/picking_barcode_handler.js:39
+#, python-format
+msgid "Picking %s"
+msgstr "拣货%s"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_web_planner
+msgid "Planner"
+msgstr "计划"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Print delivery orders of the day by selecting all documents from the \"To "
+"Do\" list and print \"Picking Lists\" from the top menu."
+msgstr "从\"待办\"列表中选择的某一天的发货单并且从最上方的菜单打印\"拣货列表\""
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Print this barcode"
+msgstr "打印此条码"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.product_action_barcodes
+#: model:ir.ui.view,arch_db:stock_barcode.product_view_list_barcodes
+msgid "Product Barcodes"
+msgstr "产品条码"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:48
+#, python-format
+msgid "Remove it"
+msgstr "移除它"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:18
+#, python-format
+msgid "Scan a document to open it."
+msgstr "扫描单据以打开它。"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:18
+#, python-format
+msgid "Scan a location to create a new transfer from this location."
+msgstr "扫描位置，从这个位置创建新调拨"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan a lot barcode, type one manually or leave empty to generate one "
+"automatically"
+msgstr "扫描一个批次条码，手工键入，或者留空自动生成一个"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan all the products of the location (if you have 5 identical articles, "
+"scan it 5 times, or use the keyboard to set the quantity)"
+msgstr "扫描这个位置的所有产品（如果你有五个相同的产品，就扫描五次，或者用键盘设置数量）"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan or enter each barcode by manually editing the products or"
+msgstr "扫描或者手工键入编辑中产品的条码或者"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the bracode here"
+msgstr "在这里扫描条码"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the destination location"
+msgstr "扫描目的位置"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the location's barcode"
+msgstr "扫描位置的条码"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan the source location, starting from the home of the barcode application"
+msgstr "从条码应用之家开始扫描源位置"
+
+#. module: stock_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory_scan_location_id
+msgid "Scanned Location"
+msgstr "被扫描的位置"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Set barcodes at the initial import of your products or"
+msgstr "在最初导入您的产品或者设置条形码"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:275
+#, python-format
+msgid ""
+"The barcode \"%(barcode)s\" doesn't correspond to a proper product, package "
+"or location."
+msgstr "条码%(barcode)s不能够对应到正确的产品, 包裹, 或者 库存位置"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/picking_barcode_handler.js:39
+#, python-format
+msgid "The picking is %s and cannot be edited."
+msgstr "拣货是 %s并且不能被编辑"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_picking_type
+msgid "The picking type determines the picking view"
+msgstr "拣货类型决定拣货视图"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Then, scan the barcode of every product, or scan the barcode of the product "
+"on the picking line if the barcode on the product is not easily accessible, "
+"visible or is missing."
+msgstr "然后，扫描每个产品的条码，或者如果产品上的条码不容易扫到或者丢失那么就在拣货行上扫描产品的条码"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"There are two approaches to process delivery orders: you can either work on "
+"printed documents (and scan lines on the documents), or on a screen (and "
+"scan products directly)."
+msgstr "有两种方法去完成发货单：你可以在打印出来的文档上（在文档上逐行扫描）操作也可以在屏幕（直接扫描产品）上"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:55
+#, python-format
+msgid ""
+"There is no production lot for \"%(product)s\" corresponding to "
+"\"%(barcode)s\""
+msgstr "没有与条码\"%(barcode)s\"对应的产品\"%(product)s\"的生产批次"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Those created by a worker (for example, through the internal transfer area "
+"of the dashboard)."
+msgstr "由工人创建的这些(例如，通过仪表板上的'内部调拨'区域)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Those initiated automatically by the system (for example, a quality control)"
+msgstr "系统自动初始化这些（例如，质量控制）"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "To Do"
+msgstr "待办"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "To Receive"
+msgstr "待接收"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_picking
+msgid "Transfer"
+msgstr "调拨"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "Transfers"
+msgstr "调拨"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"USB only, omnidirectional (eliminates the need to align bar code and "
+"scanner), rugged design, about $250"
+msgstr "仅USB，全向（无需对齐条形码和扫描仪），坚固的设计，约250美元"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "USB, Wireless or Bluetooth?"
+msgstr "USB，无线或者蓝牙？"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Use our"
+msgstr "用我们的"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Validate the Transfer to finish it"
+msgstr "验证调拨来完成它"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:10
+#, python-format
+msgid ""
+"We have created a few demo data and barcodes for you to explore the "
+"features. Print the"
+msgstr ""
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"When you've picked all the items, click the Validate button or scan the "
+"Validate barcode action to finish the Operation."
+msgstr "当捡完所有的项目后，点击验证按钮，或者扫描验证动作条码完成这个作业。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"When you've scanned all the items of the location, validate the inventory "
+"manually or by scanning the 'Validate' barcode ("
+msgstr "在扫描了位置中的所有条目，手工的确认盘点或者扫描‘确认’条码（"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Which scanner format?"
+msgstr "哪种扫描枪格式？"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Wireless and USB, laser, rational choice, about $50"
+msgstr "无线和USB，激光，合理选择，约50美元"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:274
+#, python-format
+msgid "Wrong barcode"
+msgstr "错误的条码"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"You can set up a computer station or have the worker use a mobile device "
+"connected through wireless (phone, tablet or scanner with integrated "
+"screen)."
+msgstr "您可以设置计算机工作站或让工作人员使用通过无线方式连接的移动设备（手机，平板电脑或集成屏幕的扫描仪）。"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:23
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:38
+#, python-format
+msgid "You have already scanned the serial number \"%(barcode)s\""
+msgstr "你已经扫描过序列号 \"%(barcode)s\""
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:22
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:37
+#, python-format
+msgid "You have entered this serial number already"
+msgstr "你早已输入了这个序列号"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"You've decided to implement barcodes in your company? Great idea. This tool "
+"will help you setup the environment to make it work."
+msgstr "你已经决定在你的公司使用条码了吗？这是个好主意！这个工具将会帮你设置让它运转起来的环境。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Your barcode scanner needs to be configured to use the same keyboard layout "
+"as your operating system. Otherwise, your scanner won't translate characters"
+" correctly (replacing a 'A' with a 'Q' for example). Most scanners are "
+"configured by scanning the appropriate barcode in the user's manual."
+msgstr ""
+"你的扫描枪需要被配置成和你的操作系统一样的键盘布局，否则，你的扫描枪将不会正确的翻译字符（例如用'A'代替'Q'）。大多数扫描枪通过扫描用户手册中的相应的条码来配置它。"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "available here"
+msgstr "这儿可用的"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "compact wireless, about $250"
+msgstr "紧凑无线， 大约$250"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "fast scanning interface"
+msgstr "快速扫描界面"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "feedback@mail.odoo.com"
+msgstr "feedback@mail.odoo.com"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
+#, python-format
+msgid "stock barcodes sheet"
+msgstr "库存条码表格"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_scrap
+msgid "stock.scrap"
+msgstr "stock.traceability.report"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "then scan it, the result should be <i>YES IT WORKS.</i>"
+msgstr "然后扫描它，结果应该是 <i>YES IT WORKS.</i>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "this document"
+msgstr "此单据"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
+#, python-format
+msgid "to check out what this module can do !"
+msgstr "看看这个模块可以做什么！"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"to launch actions in Odoo like Save, Next Item or Validate instead of using "
+"your mouse or keyboard."
+msgstr "用扫描枪代替鼠标和键盘来执行Odoo中的动作，例如保存，下一条，或者验证"

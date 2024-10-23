@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_cost_project_cost,project_cost.project_cost,model_project_cost_project_cost,,1,1,1,1
+access_project_material,project.material,model_project_material,,1,1,1,1
+access_project_plant,project.plant,model_project_plant,,1,1,1,1
+access_project_expenses,project.expenses,model_project_expenses,,1,1,1,1
+access_project_labour,project.labour,model_project_labour,,1,1,1,1
+access_project_labour_cost,project.labour.cost,model_project_labour_cost,,1,1,1,1
+access_project_subcontract,project.subcontract,model_project_subcontract,,1,1,1,1
+access_project_costofboq,project.costofboq,model_project_costofboq,,1,1,1,1
+access_project_element_category,project.element.category,model_project_element_category,,1,1,1,1
+access_project_element,project.element,model_project_element,,1,1,1,1
+access_project_budget,project.budget,model_project_budget,,1,1,1,1
+access_project_trade,project.trade,model_project_trade,,1,1,1,1
+

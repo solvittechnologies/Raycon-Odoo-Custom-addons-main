@@ -1,0 +1,33 @@
+id,name,temando_preferred_carrier,delivery_type,temando_default_packaging_id:id,active,fixed_price,product_sale_ok,product_type
+temando_54329,Followmont Transport via Temando,54329,temando,temando_packaging_Box,0,0,0,service
+temando_54344,Hunter Express. via Temando,54344,temando,temando_packaging_Box,0,0,0,service
+temando_54358,Mainfreight via Temando,54358,temando,temando_packaging_Box,0,0,0,service
+temando_54359,Startrack via Temando,54359,temando,temando_packaging_Box,0,0,0,service
+temando_54381,Allied Express via Temando,54381,temando,temando_packaging_Box,0,0,0,service
+temando_54396,Startrack - Auth To Leave via Temando,54396,temando,temando_packaging_Box,0,0,0,service
+temando_54397,TNT via Temando,54397,temando,temando_packaging_Box,0,0,0,service
+temando_54405,Startrack__ via Temando,54405,temando,temando_packaging_Box,0,0,0,service
+temando_54410,All Australian Logistics via Temando,54410,temando,temando_packaging_Box,0,0,0,service
+temando_54425,Couriers Please via Temando,54425,temando,temando_packaging_Box,0,0,0,service
+temando_54427,Fastway Couriers via Temando,54427,temando,temando_packaging_Box,0,0,0,service
+temando_54427,Fastway Couriers Adhoc via Temando,54427,temando,temando_packaging_Box,0,0,0,service
+temando_54432,Capital Transport HDS via Temando,54432,temando,temando_packaging_Box,0,0,0,service
+temando_54444,Fastway Couriers A5SAT via Temando,54444,temando,temando_packaging_Box,0,0,0,service
+temando_60006,Allied Express - Express via Temando,60006,temando,temando_packaging_Box,0,0,0,service
+temando_60006,Allied Express (Air) via Temando,60006,temando,temando_packaging_Box,0,0,0,service
+temando_60020,Allied Express Pallets via Temando,60020,temando,temando_packaging_Box,0,0,0,service
+temando_60027,TNT - Auth To Leave via Temando,60027,temando,temando_packaging_Box,0,0,0,service
+temando_60032,TNT (Satchel Only) via Temando,60032,temando,temando_packaging_Box,0,0,0,service
+temando_60037,TNT (Satchel Only) ATL via Temando,60037,temando,temando_packaging_Box,0,0,0,service
+temando_60046,Couriers Please - Parcel via Temando,60046,temando,temando_packaging_Box,0,0,0,service
+temando_60052,Couriers Please Metro Parcel via Temando,60052,temando,temando_packaging_Box,0,0,0,service
+temando_60103,TNT Road (B2B) Master via Temando,60103,temando,temando_packaging_Box,0,0,0,service
+temando_60144,TNT Road ATL (B2B) Master via Temando,60144,temando,temando_packaging_Box,0,0,0,service
+temando_60234,Couriers Please (Residential Parcel) via Temando,60234,temando,temando_packaging_Box,0,0,0,service
+temando_60236,Couriers Please (Residential Metro Parcel) via Temando,60236,temando,temando_packaging_Box,0,0,0,service
+temando_60310,Mainfreight (B2C) via Temando,60310,temando,temando_packaging_Box,0,0,0,service
+temando_60330,Allied Express - Adhoc Road (Business Delivery) via Temando,60330,temando,temando_packaging_Box,0,0,0,service
+temando_60334,Allied Express - Adhoc Air (Business Delivery) via Temando,60334,temando,temando_packaging_Box,0,0,0,service
+temando_60402,TNT Road (B2B) Pallets via Temando,60402,temando,temando_packaging_Box,0,0,0,service
+temando_60412,TNT International AU via Temando,60412,temando,temando_packaging_Box,0,0,0,service
+temando_60434,XPS_UPS via Temando,60434,temando,temando_packaging_Box,0,0,0,service

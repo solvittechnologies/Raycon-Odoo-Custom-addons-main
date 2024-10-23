@@ -1,0 +1,95 @@
+@o-studio-view-type-width: 115px;
+
+.o_web_studio_client_action {
+    .o_web_studio_action_editor {
+        .o-flex-display();
+        .o-flex-flow(row, nowrap);
+        .o-justify-content(center);
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: @o-studio-bg-light;
+
+        .o_web_studio_sidebar {
+            .o-flex(0, 0, @o-sidebar-width);
+            overflow: auto;
+        }
+        .o_web_studio_views {
+            .o-flex(1, 1, auto);
+            overflow: auto;
+
+            .o_web_studio_view_category {
+                padding: 40px 16px;
+                text-align: center;
+
+                .o_web_studio_view_type {
+                    .o-inline-flex-display();
+                    .o-justify-content(center);
+                    .o-align-items(center);
+                    position: relative;
+                    height: 140px;
+                    width: @o-studio-view-type-width;
+                    margin-bottom: 20px;
+                    background-color: white;
+
+                    & + .o_web_studio_view_type {
+                        margin-left: 30px;
+                    }
+
+                    &.o_web_studio_inactive {
+                        opacity: 0.5;
+                        .o_web_studio_more {
+                            display: none;
+                        }
+                    }
+
+                    .o_web_studio_thumbnail {
+                        height: 80px;
+                        cursor: pointer;
+                    }
+
+                    .o_web_studio_default_view {
+                        .o-position-absolute(@top: 10px, @right: 10px);
+                        color: @odoo-brand-optional;
+                    }
+
+                    .o_web_studio_name {
+                        .o-position-absolute(@bottom: 10px, @left: 10px);
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #15161A;
+                        text-transform: capitalize;
+                    }
+
+                    .o_web_studio_more {
+                        .o-position-absolute(@bottom: 7px, @right: 7px);
+                        padding: 5px 9px;
+                        border-radius: 50%;
+                        font-size: 10px;
+                        cursor: pointer;
+                        color: @o-studio-bg-dark;
+
+                        &:hover, &:focus {
+                            background-color: @o-studio-bg-light;
+                        }
+                    }
+                    > .dropdown-menu {
+                        left: @o-studio-view-type-width - 25px;
+
+                        .o_web_studio_view_type_default {
+                            pointer-events: none;
+                            opacity: 0.5;
+
+                            > i {
+                                position: absolute;
+                                left: 8px;
+                                bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

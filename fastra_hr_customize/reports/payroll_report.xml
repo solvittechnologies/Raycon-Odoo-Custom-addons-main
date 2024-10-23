@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_payroll_landscape" model="report.paperformat">
+            <field name="name">A4</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">40</field>
+            <field name="margin_bottom">28</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">35</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report
+                id="report_hr_payroll_sheet"
+                model="hr.payslip.custom"
+                string="Payroll Sheet"
+                name="fastra_hr_customize.report_hr_payroll_sheet_pdf"
+                file="fastra_hr_customize.report_hr_payroll_sheet_pdf"
+                report_type="qweb-pdf"
+                paperformat="paperformat_payroll_landscape"
+		/>
+
+        <template id="report_hr_payroll_sheet_pdf">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+							<center><h2>Payroll Report</h2></center>
+                            <div class="row mt32 mb32" name="info">
+                                <div class="col-auto mw-100 mb-2">
+                                    <strong>Period:</strong>
+                                    <span class="m-0" t-field='doc.date_from'/> - <span class="m-0" t-field='doc.date_to'/>
+                                </div>
+                                <div t-if="doc.month" class="col-auto mw-100 mb-2">
+                                    <strong>Month:</strong>
+                                    <p class="m-0" t-field="doc.month"/>
+                                </div>
+                                <div t-if="doc.employee_tag" class="col-auto mw-100 mb-2">
+                                    <strong>Employee Tag:</strong>
+                                    <p class="m-0" t-field="doc.employee_tag"/>
+                                </div>
+                                <div t-if="doc.location_id" class="col-auto mw-100 mb-2">
+                                    <strong>Location:</strong>
+                                    <p class="m-0" t-field="doc.location_id.name"/>
+                                </div>
+                                <div t-if="doc.account_analytic_id" class="col-auto mw-100 mb-2">
+                                    <strong>Project:</strong>
+                                    <p class="m-0" t-field="doc.account_analytic_id.name"/>
+                                </div>
+                            </div>
+                            <table style="width:100%" class="table table-sm">
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Employee ID</th>
+                                    <th>Working Hours</th>
+                                    <th>OT Hours</th>
+                                    <th>SUN OT Hours</th>
+                                    <th>PUB OT Hours</th>
+                                    <th>Basic Salary</th>
+                                    <th>Annual Leave</th>
+                                    <th>Feeding</th>
+                                    <th>Furniture</th>
+                                    <th>Housing</th>
+                                    <th>Medical</th>
+                                    <th>Ordinary Over-Time</th>
+                                    <th>Public Over-Time</th>
+                                    <th>Sunday Over-Time</th>
+                                    <th>Transport</th>
+                                    <th>Utility</th>
+                                    <th>Bonus</th>
+                                    <th>Gross</th>
+                                    <th>Pension</th>
+                                    <th>Other Statutory Deduction</th>
+                                    <th>Tax-Free Allowance</th>
+                                    <th>Consolidated Relief (CRA)</th>
+                                    <th>Gross Income Relief</th>
+                                    <th>Taxable amount</th>
+                                    <th>PAYE</th>
+                                    <th>Net</th>
+                                    <th>ABSENT DEDUCTION</th>
+                                    <th>Loan</th>
+                                    <th>Payroll DEDUCTION</th>
+                                    <th>Non Taxable Payroll DEDUCTION</th>
+                                    <th>Union Dues</th>
+                                    <th>Pay Amount</th>
+                                </tr>
+                                <t t-foreach="doc.payslip_custom_line_ids" t-as="line">
+                                    <tr>
+                                        <td><t t-esc="line.employee_id and line.employee_id.name or ''"/></td>
+                                        <td><t t-esc="line.employee_code"/></td>
+                                        <td><t t-esc="round(float(line.working_hours),2)"/></td>
+                                        <td><t t-esc="round(float(line.ot_hours),2)"/></td>
+                                        <td><t t-esc="round(float(line.sun_ot_hours),2)"/></td>
+                                        <td><t t-esc="round(float(line.pub_ot_hours),2)"/></td>
+                                        <td><t t-esc="round(float(line.basic_salary),2)"/></td>
+                                        <td><t t-esc="round(float(line.annual_leave),2)"/></td>
+                                        <td><t t-esc="round(float(line.feeding),2)"/></td>
+                                        <td><t t-esc="round(float(line.furniture),2)"/></td>
+                                        <td><t t-esc="round(float(line.housing),2)"/></td>
+                                        <td><t t-esc="round(float(line.medical),2)"/></td>
+                                        <td><t t-esc="round(float(line.ordinary_overtime),2)"/></td>
+                                        <td><t t-esc="round(float(line.public_overtime),2)"/></td>
+                                        <td><t t-esc="round(float(line.sunday_overtime),2)"/></td>
+                                        <td><t t-esc="round(float(line.transport),2)"/></td>
+                                        <td><t t-esc="round(float(line.utility),2)"/></td>
+                                        <td><t t-esc="round(float(line.bonus),2)"/></td>
+                                        <td><t t-esc="round(float(line.gross),2)"/></td>
+                                        <td><t t-esc="round(float(line.pension),2)"/></td>
+                                        <td><t t-esc="round(float(line.other_statutory_deduction),2)"/></td>
+                                        <td><t t-esc="round(float(line.tax_free_allowance),2)"/></td>
+                                        <td><t t-esc="round(float(line.consolidated_relief),2)"/></td>
+                                        <td><t t-esc="round(float(line.gross_income_relief),2)"/></td>
+                                        <td><t t-esc="round(float(line.taxable_amount),2)"/></td>
+                                        <td><t t-esc="round(float(line.paye),2)"/></td>
+                                        <td><t t-esc="round(float(line.net),2)"/></td>
+                                        <td><t t-esc="round(float(line.absent_deduction),2)"/></td>
+                                        <td><t t-esc="round(float(line.loan_deduction),2)"/></td>
+                                        <td><t t-esc="round(float(line.payroll_deduction),2)"/></td>
+                                        <td><t t-esc="round(float(line.non_taxable_payroll_deduction),2)"/></td>
+                                        <td><t t-esc="round(float(line.union_dues),2)"/></td>
+                                        <td><t t-esc="round(float(line.pay_amount),2)"/></td>
+                                    </tr>
+                                </t>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

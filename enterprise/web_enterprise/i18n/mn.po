@@ -1,0 +1,378 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * web_enterprise
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2017
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-11 14:05+0000\n"
+"PO-Revision-Date: 2017-01-11 14:05+0000\n"
+"Last-Translator: Otgonbayar.A <gobi.mn@gmail.com>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:187
+#, python-format
+msgid "(Enterprise Edition)"
+msgstr "(Байгууллагын Хувилбар)"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:62
+#, python-format
+msgid "1 month"
+msgstr "1 сар"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base_mobile.xml:6
+#, python-format
+msgid "Action"
+msgstr "Үйлдэл"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:223
+#: code:addons/web_enterprise/static/src/xml/base.xml:226
+#: code:addons/web_enterprise/static/src/xml/base.xml:232
+#: code:addons/web_enterprise/static/src/xml/base.xml:235
+#: code:addons/web_enterprise/static/src/xml/base.xml:241
+#: code:addons/web_enterprise/static/src/xml/base.xml:244
+#: code:addons/web_enterprise/static/src/xml/base.xml:250
+#: code:addons/web_enterprise/static/src/xml/base.xml:253
+#: code:addons/web_enterprise/static/src/xml/base.xml:259
+#: code:addons/web_enterprise/static/src/xml/base.xml:262
+#: code:addons/web_enterprise/static/src/xml/base.xml:268
+#: code:addons/web_enterprise/static/src/xml/base.xml:271
+#: code:addons/web_enterprise/static/src/xml/base.xml:277
+#: code:addons/web_enterprise/static/src/xml/base.xml:280
+#: code:addons/web_enterprise/static/src/xml/base.xml:286
+#: code:addons/web_enterprise/static/src/xml/base.xml:289
+#: code:addons/web_enterprise/static/src/xml/base.xml:295
+#: code:addons/web_enterprise/static/src/xml/base.xml:298
+#, python-format
+msgid "Alt"
+msgstr "Өөр"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:226
+#: code:addons/web_enterprise/static/src/xml/base.xml:235
+#: code:addons/web_enterprise/static/src/xml/base.xml:244
+#: code:addons/web_enterprise/static/src/xml/base.xml:253
+#: code:addons/web_enterprise/static/src/xml/base.xml:262
+#: code:addons/web_enterprise/static/src/xml/base.xml:271
+#: code:addons/web_enterprise/static/src/xml/base.xml:280
+#: code:addons/web_enterprise/static/src/xml/base.xml:289
+#: code:addons/web_enterprise/static/src/xml/base.xml:298
+#, python-format
+msgid "Control"
+msgstr "Хяналт"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:248
+#, python-format
+msgid "Create a new record"
+msgstr "Шинэ бичлэг үүсгэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:196
+#, python-format
+msgid "Database expiration:"
+msgstr "Өгөгдлийн баазын дуусах хугацаа:"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:214
+#, python-format
+msgid "Description"
+msgstr "Тодорхойлолт"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:239
+#, python-format
+msgid "Discard a record modification"
+msgstr "Бичлэгийн өөрчлөлтийг хаях"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:230
+#, python-format
+msgid "Edit a record"
+msgstr "Бичлэг засварлах"
+
+#. module: web_enterprise
+#: model:ir.model,name:web_enterprise.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP шилжүүлэг"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/js/widgets/user_menu.js:19
+#, python-format
+msgid "Keyboard Shortcuts"
+msgstr "Гарын товчлол"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:93
+#, python-format
+msgid "Log in as an administrator to correct the issue."
+msgstr "Асуудлыг засахын тулд админаар нэвтэрч орно уу."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:213
+#, python-format
+msgid "Mac"
+msgstr "Мак"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/js/views/form_view.js:83
+#: code:addons/web_enterprise/static/src/xml/base_desktop.xml:14
+#, python-format
+msgid "More"
+msgstr "Цааш үзэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:44
+#, python-format
+msgid "No result"
+msgstr "Үр дүн алга"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:189
+#, python-format
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:107
+#, python-format
+msgid "Odoo Help"
+msgstr "Odoo Тусламж"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:284
+#, python-format
+msgid "Open the next record"
+msgstr "Дараагийн бичлэгийг нээх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:275
+#, python-format
+msgid "Open the previous record"
+msgstr "Өмнөх бичлэгийг нээх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:266
+#, python-format
+msgid "Open to kanban view"
+msgstr "Канбан харагдацад нээх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:257
+#, python-format
+msgid "Open to list view"
+msgstr "Жагсаалт харагдацад нээх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:115
+#, python-format
+msgid "Paste code here"
+msgstr "Энд код оруулна уу"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:86
+#: code:addons/web_enterprise/static/src/xml/base.xml:91
+#, python-format
+msgid "Refresh subscription status"
+msgstr "Захиалгын төлвийг дахин ачааллах"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:117
+#, python-format
+msgid "Register"
+msgstr "Бүртгэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:82
+#, python-format
+msgid "Register your subscription"
+msgstr "Өөрийн захиалгыг бүртгүүлэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:85
+#, python-format
+msgid "Renew your subscription"
+msgstr "Өөрийн захиалгыг шинэчлэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:221
+#, python-format
+msgid "Save a record"
+msgstr "Бичлэг хадгалах"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:8
+#, python-format
+msgid "Search..."
+msgstr "Хайх..."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:203
+#, python-format
+msgid "Shortcuts"
+msgstr "Товчлолууд"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:106
+#, python-format
+msgid ""
+"Something went wrong while registering your database. You can try again or "
+"contact"
+msgstr ""
+"Таны өгөгдлийн санг бүртгэх үед алдаа гарлаа. Дахин оролдоно уу эсвэл "
+"дараахаар холбогдоно уу"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:112
+#, python-format
+msgid "Subscription Code:"
+msgstr "Захиалгын код:"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:100
+#, python-format
+msgid ""
+"Thank you, your registration was successful! Your database is valid until"
+msgstr ""
+"Баярлалаа, таны бүртгэл амжилттай боллоо! Таны өгөгдлийн сангийн дуусах "
+"хугацаа"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:76
+#, python-format
+msgid "This database has expired."
+msgstr "Энэ өгөгдлийн сангийн хугацаа дууссан."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:72
+#, python-format
+msgid "This database will expire in"
+msgstr "Энэ өгөгдлийн сангийн хугацаа дуустал"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:69
+#, python-format
+msgid "This demo database will expire in"
+msgstr "Энэ демо өгөгдлийн сангийн хугацаа дуустал"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:293
+#, python-format
+msgid "Toggle home menu"
+msgstr "Нүүр дээрх цэсийг эвхэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:90
+#, python-format
+msgid "Upgrade your subscription"
+msgstr "Өөрийн захиалгыг шинэчлэх"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:215
+#, python-format
+msgid "Windows/Linux"
+msgstr "Windows/Linux"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:88
+#, python-format
+msgid "You have more users than your subscription allows."
+msgstr "Таны захиалга дээр зөвшөөрснөөс олон хэрэглэгч байна."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:58
+#, python-format
+msgid ""
+"You will be able to register your database once you have installed your "
+"first app."
+msgstr ""
+"Та анхны апп-ыг суулгамагц өгөгдлийн сангаа бүртгүүлэх боломжтой болно."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:115
+#, python-format
+msgid "Your subscription code"
+msgstr "Таны захиалгын код"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:103
+#, python-format
+msgid "Your subscription was updated and is valid until"
+msgstr "Таны захиалга шинэчлэгдсэн ба дуусах хугацаа нь"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:82
+#, python-format
+msgid "buy a subscription"
+msgstr "захиалга худалдаж авах"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:66
+#, python-format
+msgid "days"
+msgstr "өдөр"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:82
+#, python-format
+msgid "or"
+msgstr "эсвэл"

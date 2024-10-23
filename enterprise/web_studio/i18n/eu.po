@@ -1,0 +1,2232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * web_studio
+# 
+# Translators:
+# Martin Trigaux, 2017
+# Esther Martín Menéndez <esthermartin001@gmail.com>, 2017
+# Gorka Toledo <gorka.toledo@gmail.com>, 2017
+# oihane <oihanecruce@gmail.com>, 2017
+# ibinka lete <ilete@fpbidasoa.net>, 2017
+# Eneko <eastigarraga@codesyntax.com>, 2018
+# Mikel Lizarralde <mikellizarralde@gmail.com>, 2018
+# Victor Laskurain <blaskurain@binovo.es>, 2019
+# Naomi Hidalgo <naomihid96@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-22 14:26+0000\n"
+"PO-Revision-Date: 2016-11-22 14:24+0000\n"
+"Last-Translator: Naomi Hidalgo <naomihid96@gmail.com>, 2019\n"
+"Language-Team: Basque (https://www.transifex.com/odoo/teams/41243/eu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:175
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:177
+#, python-format
+msgid " records"
+msgstr "erregistroak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_utils.js:111
+#, python-format
+msgid "'%s' is not a correct float"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_utils.js:121
+#, python-format
+msgid "'%s' is not a correct integer"
+msgstr "'%s' ez da zenbaki oso zuzena"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:98
+#, python-format
+msgid "(nolabel)"
+msgstr "(etiketarik ez)"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/edit_menu.xml:6
+#, python-format
+msgid "+ Edit Menu"
+msgstr "+ Editatu Menua "
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_ir_model_abstract
+msgid "Abstract"
+msgstr "Abstraktua "
+
+#. module: web_studio
+#: code:addons/web_studio/controllers/main.py:35
+#, python-format
+msgid "Access Control Lists"
+msgstr "Sarbide kontrol zerrendak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:13
+#, python-format
+msgid "Access Controls"
+msgstr "Atzipenen-kontrola"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_groups
+msgid "Access Groups"
+msgstr "Sarbide taldeak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/web_client.js:22
+#, python-format
+msgid "Access error"
+msgstr "Sarbide errorea "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:128
+#: code:addons/web_studio/static/src/xml/sidebar.xml:20
+#, python-format
+msgid "Action"
+msgstr "Ekintza"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_action_rule_line_test
+msgid "Action Rule Line Test"
+msgstr "Ekintza arauaren lerroen proba"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_action_rule_lead_test
+msgid "Action Rule Test"
+msgstr "Ekintza arauaren proba "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_action_rule
+msgid "Action Rules"
+msgstr "Ekintza arauak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:27
+#, python-format
+msgid "Action's title"
+msgstr "Ekintzaren titulua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:742
+#, python-format
+msgid "Activate"
+msgstr "Aktibatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:741
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:745
+#, python-format
+msgid "Active"
+msgstr "Gaituta"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:222
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:92
+#, python-format
+msgid "Add"
+msgstr "Gehitu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editors/form_editor.js:60
+#, python-format
+msgid "Add Chatter Widget"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editors/new_buttonbox_dialog.js:20
+#, python-format
+msgid "Add a Button"
+msgstr "Botoia gehitu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editors/form_editor.js:69
+#, python-format
+msgid "Add a Button Box"
+msgstr "Botoi kutxa gehitu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editors/new_element_dialog.js:15
+#, python-format
+msgid "Add an Element"
+msgstr "Elementua gehitu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:231
+#, python-format
+msgid "Add: "
+msgstr "Gehitu:"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_report_paperformat
+msgid "Allows customization of a report."
+msgstr "Txosten baten pertsonalizazioa baimentzen du."
+
+#. module: web_studio
+#: selection:ir.model.fields,track_visibility:0
+msgid "Always"
+msgstr "Beti"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_module_category
+msgid "Application"
+msgstr "Aplikazioa"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:217
+#, python-format
+msgid "Apply"
+msgstr "Aplikatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:746
+#, python-format
+msgid "Archive"
+msgstr "Artxibo"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:745
+#, python-format
+msgid "Archived"
+msgstr "Artxibatua"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:218
+#, python-format
+msgid "Are you sure that you want to remove this column ?"
+msgstr "Ziur zutabe hau ezabatu nahi duzula?"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editor_sidebar.js:174
+#, python-format
+msgid "Are you sure you want to remove the chatter from the view?"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editor_sidebar.js:177
+#, python-format
+msgid "Are you sure you want to remove this %s form the view?"
+msgstr "Ziur %s hau ikuspegitik ezabatu nahi duzula?"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:6
+#, python-format
+msgid "Authorize Google"
+msgstr "Baimendu Google"
+
+#. module: web_studio
+#: code:addons/web_studio/controllers/main.py:50
+#, python-format
+msgid "Automated Actions"
+msgstr "Akzio automatizatuak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:11
+#, python-format
+msgid "Automations"
+msgstr "Automatizazioak "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_bank
+msgid "Bank"
+msgstr "Bankoa"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Banku Kontuak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:75
+#, python-format
+msgid "Can Create"
+msgstr "Sortu daiteke "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:85
+#, python-format
+msgid "Can Delete"
+msgstr "Ezabatu daiteke "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:80
+#, python-format
+msgid "Can Edit"
+msgstr "Editatu daiteke "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/edit_menu.js:50
+#: code:addons/web_studio/static/src/js/edit_menu.js:168
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:225
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:69
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/upgrade.js:41
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:212
+#: code:addons/web_studio/static/src/js/view_editors/new_buttonbox_dialog.js:24
+#: code:addons/web_studio/static/src/js/view_editors/new_element_dialog.js:18
+#: model:ir.ui.view,arch_db:web_studio.simplified_form_view_import_module
+#, python-format
+msgid "Cancel"
+msgstr "Ezeztatu"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_shortcode
+msgid "Canned Response / Shortcode"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_change_password_wizard
+msgid "Change Password Wizard"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_change_password_user
+msgid "Change Password Wizard User"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:137
+#, python-format
+msgid "Change default:"
+msgstr "Lehenetsitakoak aldatu"
+
+#. module: web_studio
+#: model:ir.model.fields,help:web_studio.field_ir_model_data_studio
+msgid "Checked if it has been edited with Studio."
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:62
+#: code:addons/web_studio/static/src/xml/base.xml:86
+#, python-format
+msgid "Clear"
+msgstr "Garbitu"
+
+#. module: web_studio
+#: model:ir.ui.view,arch_db:web_studio.simplified_form_view_import_module
+msgid "Close"
+msgstr "Irten"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_element_dialog.xml:10
+#, python-format
+msgid "Columns"
+msgstr "Zutabeak "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_company
+msgid "Companies"
+msgstr "Enpresak"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_todo
+msgid "Configuration Wizards"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/edit_menu.js:49
+#: code:addons/web_studio/static/src/js/edit_menu.js:167
+#: code:addons/web_studio/static/src/js/view_editors/new_buttonbox_dialog.js:23
+#, python-format
+msgid "Confirm"
+msgstr "Baieztatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:191
+#, python-format
+msgid "Context"
+msgstr "Testuinguru "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:125
+#, python-format
+msgid "Context:"
+msgstr "Testuingurua:"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:530
+#, python-format
+msgid "Could not display the selected image."
+msgstr "Aukeratutako irudia ezin izan da bistaratu."
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_country
+msgid "Country"
+msgstr "Herrialdea"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_country_group
+msgid "Country Group"
+msgstr "Herrialde taldea"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_country_state
+msgid "Country state"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:48
+#, python-format
+msgid "Create"
+msgstr "Sortu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:427
+#, python-format
+msgid "Create \"<strong>%s</strong>\""
+msgstr "Sortu \"<strong>%s</strong>\""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:45
+#, python-format
+msgid "Create a %s"
+msgstr "%s sortu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/edit_menu.js:166
+#, python-format
+msgid "Create a new Menu"
+msgstr "Menu berria sortu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:436
+#, python-format
+msgid "Create and Edit..."
+msgstr "Sortu eta editatu..."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:59
+#, python-format
+msgid "Create and edit"
+msgstr "Sortu eta editatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:29
+#, python-format
+msgid "Create your App"
+msgstr "Zure App-a sortu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/icon_creator.xml:5
+#, python-format
+msgid "Create your Icon"
+msgstr "Zure ikonoa sortu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:196
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:481
+#, python-format
+msgid "Create: "
+msgstr "Sortu:"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_currency
+msgid "Currency"
+msgstr "Moneta"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_currency_rate
+msgid "Currency Rate"
+msgstr "Moneta tasa"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/systray.xml:6
+#, python-format
+msgid "Customization"
+msgstr "Pertsonalizazioa "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:6
+#, python-format
+msgid "Customizations"
+msgstr "Pertsonalizazioak "
+
+#. module: web_studio
+#: code:addons/web_studio/models/ir_actions_report_xml.py:25
+#: code:addons/web_studio/models/ir_actions_report_xml.py:26
+#, python-format
+msgid "Customize : "
+msgstr "Pertsonalizatu: "
+
+#. module: web_studio
+#: model:ir.actions.client,name:web_studio.action_web_studio_report_editor
+msgid "Customize Report"
+msgstr "Txostena pertsonalizatu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:742
+#, python-format
+msgid "Deactivate"
+msgstr "Desaktibatu"
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_res_users_device_identity_ids
+msgid "Device identities"
+msgstr "Tresnaren identitatea "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/action_editor.xml:28
+#, python-format
+msgid "Disable"
+msgstr "Desgaitu "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_channel
+msgid "Discussion channel"
+msgstr "Eztabaida kanala "
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_studio_mixin_display_name
+msgid "Display Name"
+msgstr "Izena erakutsi"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_followers
+msgid "Document Followers"
+msgstr "Dokumentuaren jarraitzaileak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:186
+#, python-format
+msgid "Domain"
+msgstr "Domeinua"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:129
+#, python-format
+msgid "Domain:"
+msgstr "Domeinua:"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:83
+#, python-format
+msgid "Don't forget the alerts displayed in the reddish area"
+msgstr "Ez ahaztu gune gorrixka batean agertzen diren alertak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/edit_menu.js:46
+#, python-format
+msgid "Drag a menu to the right to create a sub-menu"
+msgstr "Arrastatu menua eskuinera azpi-menua sortzeko"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:61
+#, python-format
+msgid "Edit"
+msgstr "Editatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:228
+#, python-format
+msgid "Edit Column"
+msgstr "Zutabea editatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/edit_menu.js:45
+#, python-format
+msgid "Edit Menu"
+msgstr "Menua editatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:214
+#, python-format
+msgid "Edit Subscription of "
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:92
+#, python-format
+msgid "Editable"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_alias
+msgid "Email Aliases"
+msgstr "Eposta ezizenak"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_email_template_preview
+msgid "Email Template Preview"
+msgstr "Eposta txantiloiaren aurrebista "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_template
+msgid "Email Templates"
+msgstr "Eposta txantiloiak"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_thread
+msgid "Email Thread"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Email composition wizard"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/hr_attendance.js:14
+#, python-format
+msgid "Employee Presence<br/>Green: checked in<br/>Red: checked out"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:31
+#, python-format
+msgid "Empty List Message"
+msgstr "Mezuen zerrenda hutsik"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:46
+#, python-format
+msgid "English"
+msgstr "Ingelesa "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:45
+#, python-format
+msgid "English (edit mode)"
+msgstr "Ingelesa (editatu modua)"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editor_manager.js:236
+#: code:addons/web_studio/static/src/js/view_editor_manager.js:445
+#, python-format
+msgid "Error"
+msgstr "Errorea!"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:11
+#, python-format
+msgid "Export"
+msgstr "Esportatu"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_element_dialog.xml:7
+#, python-format
+msgid "Field"
+msgstr "Arlo"
+
+#. module: web_studio
+#: code:addons/web_studio/models/ir_model.py:86
+#, python-format
+msgid "Field \"Mail Thread\" cannot be changed to \"False\"."
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:105
+#, python-format
+msgid "Field:"
+msgstr "Eremua:"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_model_fields
+msgid "Fields"
+msgstr "Eremuak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:441
+#, python-format
+msgid "File Upload"
+msgstr "Fitxategi igoera"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:421
+#, python-format
+msgid "File upload"
+msgstr "Fitxategi igoera"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:26
+#, python-format
+msgid "Filter Rules"
+msgstr "Iragazkien arauak "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_filters
+msgid "Filters"
+msgstr "Iragazkiak"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_font
+msgid "Fonts available"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP bideratzea"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:152
+#, python-format
+msgid "Help Tooltip"
+msgstr "Tresna-barra laguntzailea"
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_studio_mixin_id
+msgid "ID"
+msgstr "ID"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_buttonbox_dialog.xml:10
+#: code:addons/web_studio/static/src/xml/sidebar.xml:228
+#, python-format
+msgid "Icon"
+msgstr "Ikono"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:530
+#, python-format
+msgid "Image"
+msgstr "Irudia"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:10
+#: model:ir.ui.view,arch_db:web_studio.simplified_form_view_import_module
+#, python-format
+msgid "Import"
+msgstr "Inportatu"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_module
+msgid "Import Module"
+msgstr "Inportatu modulua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:741
+#, python-format
+msgid "Inactive"
+msgstr "Ez-aktibo"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_language_install
+msgid "Install Language"
+msgstr "Instalatu hizkuntza"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:138
+#, python-format
+msgid "Invisible"
+msgstr "Ikusezina "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:242
+#, python-format
+msgid "Invite Follower"
+msgstr "Gonbidatu jarraitzailea "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_wizard_invite
+msgid "Invite wizard"
+msgstr "Gonbidapen-laguntzailea"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_buttonbox_dialog.xml:6
+#: code:addons/web_studio/static/src/xml/sidebar.xml:147
+#: code:addons/web_studio/static/src/xml/sidebar.xml:203
+#, python-format
+msgid "Label"
+msgstr "Etiketa "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:213
+#, python-format
+msgid "Label Text"
+msgstr "Etiketa testua "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_language_import
+msgid "Language Import"
+msgstr "Inportatu hizkuntza "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_lang
+msgid "Languages"
+msgstr "Hizkuntzak"
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_studio_mixin___last_update
+msgid "Last Modified on"
+msgstr "Azken aldaketa"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_channel_partner
+msgid "Last Seen Many2many"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_resource_calendar_leaves
+msgid "Leave Detail"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:15
+#, python-format
+msgid "Leave Studio"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:35
+#: code:addons/web_studio/static/src/xml/sidebar.xml:181
+#, python-format
+msgid "Limit visibility to groups"
+msgstr "Mugatu ikusgarritasuna taldeetara"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/chatter.js:40
+#, python-format
+msgid "Log"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.ui.view,arch_db:web_studio.model_search_view
+msgid "Mail Thread"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_tracking_value
+msgid "Mail Tracking Value"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_ir_model_mail_thread
+msgid "Mail thread"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_message
+msgid "Message"
+msgstr "Mezua"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_notification
+msgid "Message Notifications"
+msgstr "Mezuen jakinarazpenak "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_message_subtype
+msgid "Message subtypes"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:35
+#: code:addons/web_studio/static/src/xml/edit_menu.xml:58
+#, python-format
+msgid "Model"
+msgstr "Eredua"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_model
+msgid "Models"
+msgstr "Ereduak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:133
+#, python-format
+msgid "Modifiers:"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_module_module
+msgid "Module"
+msgstr "Modulua"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_module_upgrade
+msgid "Module Upgrade"
+msgstr "Modulua berritzea "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_module_module_dependency
+msgid "Module dependency"
+msgstr "Moduluen mendekotasuna "
+
+#. module: web_studio
+#: model:ir.ui.view,arch_db:web_studio.simplified_form_view_import_module
+msgid "Module file (.zip)"
+msgstr "Modulu fitxategia (.zip)"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/form_renderer.js:385
+#: code:addons/web_studio/static/src/xml/base.xml:175
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:112
+#, python-format
+msgid "More"
+msgstr "Gehiago"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:5
+#, python-format
+msgid "More Parameters"
+msgstr "Parametro gehiago "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/app_creator.js:45
+#: code:addons/web_studio/static/src/xml/app_creator.xml:32
+#, python-format
+msgid "My App"
+msgstr "Nire App"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_buttonbox_dialog.xml:7
+#, python-format
+msgid "My Button"
+msgstr "Nire botoia "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/edit_menu.xml:55
+#, python-format
+msgid "My Menu"
+msgstr "Nire menua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:31
+#: code:addons/web_studio/static/src/xml/edit_menu.xml:54
+#, python-format
+msgid "Name"
+msgstr "Izena"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:43
+#, python-format
+msgid "New App"
+msgstr "App berria "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/edit_menu.xml:46
+#, python-format
+msgid "New Menu"
+msgstr "Menu berria "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:11
+#, python-format
+msgid "Next"
+msgstr "Hurrengoa"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:190
+#, python-format
+msgid "No follower"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editors/kanban_editor.js:21
+#, python-format
+msgid "No records to display"
+msgstr "Ez dago bistaratzeko erregistrorik "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:442
+#, python-format
+msgid "No results to show..."
+msgstr "Ez dago emaitzarik erakusteko..."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_element_dialog.xml:11
+#, python-format
+msgid "Notebook"
+msgstr "Koadernoa "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:109
+#, python-format
+msgid "Object:"
+msgstr "Objektu:"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/upgrade.js:52
+#, python-format
+msgid "Odoo Enterprise"
+msgstr "Odoo enpresa"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:24
+#, python-format
+msgid "Odoo Studio"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:753
+#, python-format
+msgid "Off"
+msgstr "Itzali"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:207
+#, python-format
+msgid "Ok"
+msgstr "Ados"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:753
+#, python-format
+msgid "On"
+msgstr "Piztu "
+
+#. module: web_studio
+#: selection:ir.model.fields,track_visibility:0
+msgid "On Change"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:17
+#, python-format
+msgid "On Website"
+msgstr "Webgunean "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:141
+#, python-format
+msgid "On change:"
+msgstr "Aldaketak:"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:192
+#, python-format
+msgid "One follower"
+msgstr "Jarraitzaile bat"
+
+#. module: web_studio
+#: code:addons/web_studio/models/ir_model.py:109
+#, python-format
+msgid "Only custom models can be modified."
+msgstr "Pertsonalizatutako moduluak bakarrik aldatu daitezke."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:286
+#, python-format
+msgid "Open: "
+msgstr "Ireki:"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_mail
+msgid "Outgoing Mails"
+msgstr "Irteerako mezuak"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_fetchmail_server
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP Zerbitzaria "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_partner
+msgid "Partner"
+msgstr "Kidea"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_partner_category
+msgid "Partner Tags"
+msgstr "Kide etiketak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_element_dialog.xml:9
+#, python-format
+msgid "Picture"
+msgstr "Irudia"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:157
+#, python-format
+msgid "Placeholder"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:159
+#, python-format
+msgid "Placeholder Text"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_web_planner
+msgid "Planner"
+msgstr "Planifikatzaile "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/chatter.js:164
+#, python-format
+msgid "Please complete partner's informations"
+msgstr "Mesedez bete kidearen informazioa"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/many2many_tags_email.js:37
+#, python-format
+msgid "Please complete partner's informations and Email"
+msgstr "Mesedez bate kidearen informazioa eta eposta "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:64
+#, python-format
+msgid ""
+"Please enter your Etherpad credentials through the menu 'Settings > General "
+"Settings > Configure your company data', in the 'Configuration' tab of your "
+"company."
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/app_creator.js:50
+#, python-format
+msgid "Please set a model."
+msgstr "Mesedez eredu bat ezarri. "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_portal_wizard
+msgid "Portal Access Management"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_portal_wizard_user
+msgid "Portal User Config"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:749
+#, python-format
+msgid "Production Environment"
+msgstr "Produkzioaren ingurumena "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/website.js:19
+#, python-format
+msgid "Published"
+msgstr "Argitaratua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:102
+#, python-format
+msgid "Quick Create"
+msgstr "Sortu azkar "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:172
+#, python-format
+msgid "Read only"
+msgstr "Irakurri bakarrik"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/mrp.js:21
+#, python-format
+msgid "Ready to produce"
+msgstr "Produzitzeko prest"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/submenu.js:113
+#, python-format
+msgid "Redo"
+msgstr "Berregin "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:145
+#, python-format
+msgid "Relation:"
+msgstr "Erlazioa: "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:9
+#, python-format
+msgid "Remove from View"
+msgstr "Ezabatu ikuspegitik "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:46
+#: model:ir.model,name:web_studio.model_report
+#, python-format
+msgid "Report"
+msgstr "Txostena"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/controllers/main.py:88
+#: code:addons/web_studio/static/src/xml/submenu.xml:24
+#, python-format
+msgid "Reports"
+msgstr "Txostenak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:162
+#, python-format
+msgid "Required"
+msgstr "Beharrezkoa "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_resource_calendar
+msgid "Resource Calendar"
+msgstr "Baliabideen egutegia "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_resource_resource
+msgid "Resource Detail"
+msgstr "Baliabideen xehetasuna "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:457
+#: code:addons/web_studio/static/src/xml/base.xml:85
+#, python-format
+msgid "Save As..."
+msgstr "Gorde honela..."
+
+#. module: web_studio
+#: code:addons/web_studio/controllers/main.py:73
+#, python-format
+msgid "Search Filters"
+msgstr "Bilatu iragazkiak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:407
+#, python-format
+msgid "Search More..."
+msgstr "Bilatu gehiago..."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:481
+#, python-format
+msgid "Search: "
+msgstr "Bilatu:"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:83
+#: code:addons/web_studio/static/src/xml/base.xml:84
+#, python-format
+msgid "Select"
+msgstr "Aukeratu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:81
+#, python-format
+msgid "Select a product and put your order comments on the note."
+msgstr "Hautatu produktua eta jarri eskaera iruzkina oharrean."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_buttonbox_dialog.xml:14
+#, python-format
+msgid "Select a related field"
+msgstr "Aukeratu erlazionatutako eremua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editors/new_buttonbox_dialog.js:57
+#, python-format
+msgid "Select a related field."
+msgstr "Aukeratu erlazionatutako eremua."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/main.js:142
+#, python-format
+msgid "Select a view"
+msgstr "Aukeratu ikuspegia"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editor_manager.js:544
+#, python-format
+msgid "Select or create a field"
+msgstr "Aukeratu edo sortu eremua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:149
+#, python-format
+msgid "Selection:"
+msgstr "Aukeratu:"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_server_object_lines
+msgid "Server Action value mapping"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/action_editor.xml:26
+#, python-format
+msgid "Set another view"
+msgstr "Beste ikuspegi bat ezarri "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/action_editor.xml:22
+#, python-format
+msgid "Set as Default"
+msgstr "Ezarri lehenetsi gisa "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:112
+#, python-format
+msgid "Show invisible elements"
+msgstr "Erakutsi elementu ikusezinak "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:121
+#, python-format
+msgid "Size:"
+msgstr "Tamaina: "
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_ir_model_data_studio
+msgid "Studio"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.actions.client,name:web_studio.action_web_studio_app_creator
+msgid "Studio App Creator"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.ui.view,arch_db:web_studio.studio_customizations_filter
+msgid "Studio Customizations"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.actions.client,name:web_studio.action_web_studio_main
+msgid "Studio Main"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/web_client.js:22
+#, python-format
+msgid "Studio is only available for the Administrator"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:754
+#, python-format
+msgid "Switch Off"
+msgstr "Itzali "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:754
+#, python-format
+msgid "Switch On"
+msgstr "Piztu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:750
+#, python-format
+msgid "Switch to production environment"
+msgstr "Aldatu produkzioaren ingurunera"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:750
+#, python-format
+msgid "Switch to test environment"
+msgstr "Aldatu proben ingurunera "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:749
+#, python-format
+msgid "Test Environment"
+msgstr "Proben ingurunea "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_test
+msgid "Test Mail Model"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/new_element_dialog.xml:8
+#, python-format
+msgid "Text"
+msgstr "Textua"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/rtoken.js:37
+#, python-format
+msgid ""
+"The Google Management API key needs to be configured before you can use it, "
+"do you want to do it now?"
+msgstr ""
+"Google Management API pasahitza konfiguratu behar duzu erabili aurretik, "
+"orain egin nahi duzu?"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:25
+#, python-format
+msgid "The fastest way to create a web application."
+msgstr "Web aplikazioa sortzeko modurik azkarrena."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:457
+#, python-format
+msgid "The field is empty, there's nothing to save !"
+msgstr "Eremua hutsik dago, ez dago ezer gordetzeko!"
+
+#. module: web_studio
+#: code:addons/web_studio/controllers/main.py:456
+#, python-format
+msgid "The related field of a button has to be a many2one to %s."
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editor_manager.js:236
+#, python-format
+msgid ""
+"The requested change caused an error in the view.  It could be because a "
+"field was deleted, but still used somewhere else."
+msgstr ""
+"Eskatutako aldaketak errorea eragin du ikuspegian. Eremua ezabatu delako "
+"izan daiteke, baina beste nonbait ere erabiltzen ari da. "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:420
+#, python-format
+msgid "The selected file exceed the maximum file size of %s."
+msgstr ""
+"Hautatutako fitxategiak gehienezko fitxategien tamaina gainditzen du %s."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:441
+#, python-format
+msgid "There was a problem while uploading your file"
+msgstr "Arazo bat egon da zure fitxategia kargatzean"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:80
+#, python-format
+msgid "This is the first time you order a meal"
+msgstr "Lehen aldia da otordua eskatzen duzula "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/view_editor_manager.js:445
+#, python-format
+msgid "This operation caused an error, probably because a xpath was broken"
+msgstr ""
+"Eragiketa honek errore bat eragin du, seguruenik xpath-a hautsita dagoelako "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/pad.js:59
+#, python-format
+msgid "This pad will be initialized on first edit"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_web_tour_tour
+msgid "Tours"
+msgstr "Bidaiak"
+
+#. module: web_studio
+#: model:ir.model.fields,field_description:web_studio.field_ir_model_fields_track_visibility
+msgid "Tracking"
+msgstr "Jarraipena"
+
+#. module: web_studio
+#: code:addons/web_studio/controllers/main.py:143
+#, python-format
+msgid "Translate view"
+msgstr "Itzuli ikuspegia "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:21
+#, python-format
+msgid "Translations"
+msgstr "Itzulpenak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:113
+#, python-format
+msgid "Type:"
+msgstr "Mota:"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/pad.js:55
+#, python-format
+msgid "Unable to load pad"
+msgstr "Ezin da kargatu pad-a"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/basic_fields.js:746
+#, python-format
+msgid "Unarchive"
+msgstr "Desartxibatu "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/kanban_column.js:47
+#: code:addons/web_studio/static/src/js/renderers/list_renderer.js:42
+#, python-format
+msgid "Undefined"
+msgstr "Definitu gabea"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/submenu.js:98
+#, python-format
+msgid "Undo"
+msgstr "Desegin "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/website.js:23
+#, python-format
+msgid "Unpublished"
+msgstr "Argitaratu gabea"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_module_update
+msgid "Update Module"
+msgstr "Eguneratzeko modulua "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/upgrade.js:35
+#, python-format
+msgid "Upgrade now"
+msgstr "Berritu orain"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:83
+#, python-format
+msgid "Upload your file"
+msgstr "Fitxategia igo"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:64
+#: code:addons/web_studio/static/src/xml/base.xml:88
+#, python-format
+msgid "Uploading..."
+msgstr "Igotzen..."
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_bus_presence
+msgid "User Presence"
+msgstr "Erabiltzailearen presentzia "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_users
+msgid "Users"
+msgstr "Erabiltzaileak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:62
+#, python-format
+msgid "View"
+msgstr "Ikusi"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/submenu.xml:19
+#, python-format
+msgid "Views"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/mrp.js:21
+#, python-format
+msgid "Waiting Materials"
+msgstr "Materialak itxaroten "
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:306
+#, python-format
+msgid ""
+"Warning! \n"
+" If you remove a follower, he won't be notified of any email or discussion on this document.\n"
+" Do you really want to remove this follower ?"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/app_creator.xml:23
+#, python-format
+msgid "Welcome to"
+msgstr "Ongi etorri "
+
+#. module: web_studio
+#: model:ir.model.fields,help:web_studio.field_ir_model_fields_track_visibility
+msgid ""
+"When set, every modification to this field will be tracked in the chatter."
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model.fields,help:web_studio.field_ir_model_abstract
+msgid "Wheter this model is abstract"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model.fields,help:web_studio.field_ir_model_mail_thread
+msgid "Whether this model supports messages and notifications."
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:117
+#, python-format
+msgid "Widget:"
+msgstr "Tresna:"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_resource_calendar_attendance
+msgid "Work Detail"
+msgstr "Laneko xehetasunak"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:13
+#, python-format
+msgid "XML Editor"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/base.xml:137
+#, python-format
+msgid "Yes"
+msgstr "Bai"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/relational_fields.js:75
+#, python-format
+msgid "You are creating a new %s, are you sure it does not exist yet?"
+msgstr ""
+"%s berri bat sortzen ari zara, ziur al zaude oraindik ez dela existitzen?"
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/rtoken.js:33
+#, python-format
+msgid ""
+"You will be redirected to Google to authorize access to your Analytics "
+"Account!"
+msgstr ""
+"Google Analytics kontura sarbidea baimentzeko Google-ra birbideratuko zara."
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/extra_addons_field_widgets_templates.xml:82
+#, python-format
+msgid "Your favorite meals will be created based on your last orders."
+msgstr "Zure gogoko janaria zure azken aginduetan oinarrituta sortuko dira."
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model__unknown
+msgid "_unknown"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base
+msgid "base"
+msgstr "oinarri "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_config_settings
+msgid "base.config.settings"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_language_export
+msgid "base.language.export"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_module_configuration
+msgid "base.module.configuration"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_update_translations
+msgid "base.update.translations"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_import
+msgid "base_import.import"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_char
+msgid "base_import.tests.models.char"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_char_noreadonly
+msgid "base_import.tests.models.char.noreadonly"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_char_readonly
+msgid "base_import.tests.models.char.readonly"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_char_required
+msgid "base_import.tests.models.char.required"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_char_states
+msgid "base_import.tests.models.char.states"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_char_stillreadonly
+msgid "base_import.tests.models.char.stillreadonly"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_m2o
+msgid "base_import.tests.models.m2o"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_m2o_related
+msgid "base_import.tests.models.m2o.related"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_m2o_required
+msgid "base_import.tests.models.m2o.required"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_m2o_required_related
+msgid "base_import.tests.models.m2o.required.related"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_o2m
+msgid "base_import.tests.models.o2m"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_o2m_child
+msgid "base_import.tests.models.o2m.child"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_base_import_tests_models_preview
+msgid "base_import.tests.models.preview"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:96
+#, python-format
+msgid "bottom"
+msgstr "behean "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_bus_bus
+msgid "bus.bus"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/js/renderers/field_widgets/followers.js:194
+#, python-format
+msgid "followers"
+msgstr "jarraitzaileak "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_act_url
+msgid "ir.actions.act_url"
+msgstr "ir.actions.act_url"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_act_window
+msgid "ir.actions.act_window"
+msgstr "ir.actions.act_window"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_act_window_view
+msgid "ir.actions.act_window.view"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_act_window_close
+msgid "ir.actions.act_window_close"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_actions
+msgid "ir.actions.actions"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_client
+msgid "ir.actions.client"
+msgstr "ir.actions.client"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_report_xml
+msgid "ir.actions.report.xml"
+msgstr "ir.actions.report.xml"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_actions_server
+msgid "ir.actions.server"
+msgstr "ir.actions.server"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_attachment
+msgid "ir.attachment"
+msgstr "ir.attachment"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_autovacuum
+msgid "ir.autovacuum"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_config_parameter
+msgid "ir.config_parameter"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_cron
+msgid "ir.cron"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_exports
+msgid "ir.exports"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_exports_line
+msgid "ir.exports.line"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_fields_converter
+msgid "ir.fields.converter"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_logging
+msgid "ir.logging"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_mail_server
+msgid "ir.mail_server"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_model_access
+msgid "ir.model.access"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_model_constraint
+msgid "ir.model.constraint"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_model_data
+msgid "ir.model.data"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_model_relation
+msgid "ir.model.relation"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_needaction_mixin
+msgid "ir.needaction_mixin"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_property
+msgid "ir.property"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb
+msgid "ir.qweb"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field
+msgid "ir.qweb.field"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_barcode
+msgid "ir.qweb.field.barcode"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_contact
+msgid "ir.qweb.field.contact"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_date
+msgid "ir.qweb.field.date"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_datetime
+msgid "ir.qweb.field.datetime"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_duration
+msgid "ir.qweb.field.duration"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_float
+msgid "ir.qweb.field.float"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_html
+msgid "ir.qweb.field.html"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_image
+msgid "ir.qweb.field.image"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_integer
+msgid "ir.qweb.field.integer"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_many2one
+msgid "ir.qweb.field.many2one"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_monetary
+msgid "ir.qweb.field.monetary"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_qweb
+msgid "ir.qweb.field.qweb"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_relative
+msgid "ir.qweb.field.relative"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_selection
+msgid "ir.qweb.field.selection"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_qweb_field_text
+msgid "ir.qweb.field.text"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_rule
+msgid "ir.rule"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_sequence
+msgid "ir.sequence"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_sequence_date_range
+msgid "ir.sequence.date_range"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_translation
+msgid "ir.translation"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_ui_menu
+msgid "ir.ui.menu"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_ui_view_custom
+msgid "ir.ui.view.custom"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_ir_values
+msgid "ir.values"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_alias_mixin
+msgid "mail.alias.mixin"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_mail_push_device
+msgid "mail_push.device"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_publisher_warranty_contract
+msgid "publisher_warranty.contract"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_report_abstract_report
+msgid "report.abstract_report"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_report_base_report_irmodulereference
+msgid "report.base.report_irmodulereference"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_config
+msgid "res.config"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_config_installer
+msgid "res.config.installer"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_partner_title
+msgid "res.partner.title"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_request_link
+msgid "res.request.link"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_res_users_log
+msgid "res.users.log"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_studio_mixin
+msgid "studio.mixin"
+msgstr ""
+
+#. module: web_studio
+#. openerp-web
+#: code:addons/web_studio/static/src/xml/sidebar.xml:95
+#, python-format
+msgid "top"
+msgstr "Goialdean "
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_web_editor_converter_test
+msgid "web_editor.converter.test"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_web_editor_converter_test_sub
+msgid "web_editor.converter.test.sub"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_wizard_ir_model_menu_create
+msgid "wizard.ir.model.menu.create"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_workflow
+msgid "workflow"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_workflow_activity
+msgid "workflow.activity"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_workflow_instance
+msgid "workflow.instance"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_workflow_transition
+msgid "workflow.transition"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_workflow_triggers
+msgid "workflow.triggers"
+msgstr ""
+
+#. module: web_studio
+#: model:ir.model,name:web_studio.model_workflow_workitem
+msgid "workflow.workitem"
+msgstr ""

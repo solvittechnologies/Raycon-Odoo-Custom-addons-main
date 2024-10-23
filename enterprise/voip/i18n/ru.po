@@ -1,0 +1,407 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * voip
+# 
+# Translators:
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2016\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_task_count
+msgid "# Tasks"
+msgstr "Кол-во задач"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "Счета к оплате"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "Дебиторская задолженность"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_always_transfer
+msgid "Always Redirect to Handset"
+msgstr "Всегда перенаправлять на телефон"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "Банк"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "Связанные с партнёром организации"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:voip.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "Договоры"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_uid
+msgid "Created by"
+msgstr "Создал"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_date
+msgid "Created on"
+msgstr "Создано"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_currency_id
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "Условия оплаты для покупателя"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_trust
+msgid "Degree of trust you have in this debtor"
+msgstr "Степень доверия у вас к этому должнику"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "Система налогов"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:57
+#, python-format
+msgid "From "
+msgstr "От"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_external_phone
+msgid "Handset Extension"
+msgstr "Расширение телефонноа"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "Имеет несогласованные проводки"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_id
+msgid "ID"
+msgstr "ID"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:58
+#, python-format
+msgid "Incoming call"
+msgstr "Входящий вызов"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:88
+#, python-format
+msgid "Incoming call from "
+msgstr "Входящий звонок от"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_warn
+msgid "Invoice"
+msgstr "Счет"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "Счета"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_issued_total
+#: model:ir.model.fields,field_description:voip.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "Элементы журнала"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_date
+msgid "Last Updated on"
+msgstr "Последний раз обновлено"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr ""
+"Последнее уведомление, отмеченное как прочитанное, из основного Календаря"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+"Последний раз  было выполнено сопоставление  счетов-фактур и платежей для "
+"данного партнера. Он устанавливается или если нет, по крайней мере, не "
+"согласован дебет и кредит или если вы нажмете кнопку \"Готово\"."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "Последние Счета & Платежи, Соответствующие Дате"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "Сообщение при выставлении счета"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_ring_number
+msgid "Number of rings"
+msgstr "Количество звонков"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:27
+#, python-format
+msgid "One or more parameter is missing. Please check your configuration."
+msgstr ""
+"Один или более параметр отсутствует. Пожалуйста, проверьте конфигурацию."
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.res_user_form
+msgid "PBX Configuration"
+msgstr "Конфигурация АТС"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "Лимит Кредиторской Задолженности"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:153
+#, python-format
+msgid "Please check your configuration.</br> (Reason receives :"
+msgstr "Пожалуйста, проверьте конфигурацию. </br> (Причина получает.:"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:281
+#, python-format
+msgid ""
+"Problem during the connection. Check if the application is allowed to access"
+" your microphone from your browser."
+msgstr ""
+"Проблема во время соединения. Проверьте, если приложению разрешен доступ к "
+"микрофону из браузера."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_login
+msgid "SIP Login / Browser's Extension"
+msgstr "SIP Логин / Дополнение Браузера"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_password
+msgid "SIP Password"
+msgstr "SIP Пароль"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_invoice_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"\"Предупреждение\" - сообщить пользователю. \"Блокирующее сообщение\" - "
+"исключительная ситуация, сообщить пользователю и заблокировать рабочий "
+"процесс. Текст сообщения должен быть записан в следующее поле."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_task_ids
+msgid "Tasks"
+msgstr "Задачи"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr ""
+"Система налогов будет определять налоги и счета, используемые для партнера."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:179
+#, python-format
+msgid ""
+"The number is incorrect, the user credentials could be wrong or the "
+"connection cannot be made. Please check your configuration.</br> (Reason "
+"receives :%s)"
+msgstr ""
+"Номер неправильный, учетные данные пользователя могут быть неправильно или "
+"невозможно установить соединение. Пожалуйста, проверьте ваши "
+"настройки.</br>(Получает причина: %s)"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_sip_ring_number
+msgid ""
+"The number of rings before the call is defined as refused by the customer."
+msgstr "Количество звонков перед вызовом определяется как отказ клиента."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr ""
+"У партнера есть по крайней мере один невыверенный дебет и кредит с прошлого "
+"раза, когда согласование счет-фактур и платежей были выполнены."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:51
+#, python-format
+msgid ""
+"The server configuration could be wrong. Please check your configuration."
+msgstr ""
+"Конфигурация сервера может быть ошибочна. Пожалуйста, проверьте "
+"конфигурацию."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:47
+#, python-format
+msgid "The websocket uri could be wrong. Please check your configuration."
+msgstr ""
+"WebSocket URI может быть ошибочный. Пожалуйста, проверьте конфигурацию."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr ""
+"Этот счет будет использоваться, вместо счета по умолчанию, как кредитовый "
+"для текущего контрагента"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr ""
+"Этот счёт будет использоваться вместо счёта по умолчанию в качестве счёта "
+"дебиторской задолженности по текущему партнеру."
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr ""
+"Это условие оплаты для заказов на покупку и счетов поставщика будет "
+"использоваться вместо установленного по умолчанию "
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr ""
+"Это условие оплаты для заказов продаж и счетов-фактур покупателей будет "
+"использоваться вместо используемого по умолчанию"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "Итого по счетам"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_debit
+msgid "Total Payable"
+msgstr "Итого кредиторской задолженности"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_credit
+msgid "Total Receivable"
+msgstr "Итого дебиторской задолженности"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "Итоговая сумма долга покупателя перед вами"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "Итоговая сумма к оплате этому поставщику."
+
+#. module: voip
+#: model:ir.model,name:voip.model_res_users
+msgid "Users"
+msgstr "Пользователи"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "Служебное поле, чтобы выразить суммы в валюте"
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.view_voip_user_config
+msgid "VOIP Configuration"
+msgstr "Настройка "
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "Условия оплаты поставщика"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:273
+#, python-format
+msgid ""
+"Your browser could not support WebRTC. Please check your configuration."
+msgstr ""
+"Ваш браузер не может поддерживать WebRTC. Пожалуйста, проверьте "
+"конфигурацию."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:152
+#, python-format
+msgid "the connection cannot be made. "
+msgstr "соединение не может быть сделано."
+
+#. module: voip
+#: model:ir.model,name:voip.model_voip_configurator
+msgid "voip.configurator"
+msgstr "voip.configurator"

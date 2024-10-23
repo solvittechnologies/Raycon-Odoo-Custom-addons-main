@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_request_form_purchase_request_form,purchase_request_form.purchase_request_form,model_purchase_request_form_purchase_request_form,,1,1,1,1
+access_purchase_request_form_purchase_request_line,purchase_request_form.purchase_request_line,model_purchase_request_form_purchase_request_line,,1,1,1,1

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<record model="ir.ui.view" id="vendor_bill_changes">
+        <field name="name">vendor_bill.changes</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <field name="state" widget="statusbar" nolabel="1" statusbar_visible="draft,open,paid" position="attributes">
+                    <attribute name="statusbar_visible">draft,inv_to_approve,open,paid</attribute>
+            </field>
+            <header position="inside">
+                    <button name="action_to_inv_approve" type="object" string="Send for approval" states="draft" class="oe_highlight o_invoice_validate" groups="account.group_account_invoice"/>
+            </header>
+            <button name="action_invoice_open" type="object" states="draft" class="oe_highlight" position="attributes">
+                    <attribute name="states">inv_to_approve</attribute>
+                    <attribute name="groups">sale_quotation_inherit.group_can_approve_invoice</attribute> 
+            </button>
+
+        </field>
+</record>
+
+
+    <record id="action_bills_awaiting_approval" model="ir.actions.act_window">
+            <field name="name">Vendor Bills Awaiting Approval</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'inv_to_approve')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Vendor Bills.
+                </p>
+            </field>
+        </record>
+
+    <record id="action_approved_bills" model="ir.actions.act_window">
+            <field name="name">Approved Vendor Bills</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'open')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Vendor Bill.
+                </p>
+            </field>
+        </record>
+
+    <record id="action_paid_bills" model="ir.actions.act_window">
+            <field name="name">Paid Vendor Bills</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'paid')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Vendor Bill.
+                </p>
+            </field>
+        </record>
+
+    <menuitem action="action_bills_awaiting_approval"
+            id="menu_account_bills_awaiting_approval" parent="account.menu_finance_payables"
+            sequence="11"/>
+    <menuitem action="action_approved_bills"
+            id="menu_account_approved_bills" parent="account.menu_finance_payables"
+            sequence="11"/>
+    <menuitem action="action_paid_bills"
+            id="menu_account_paid_bills" parent="account.menu_finance_payables"
+            sequence="11"/>
+
+</odoo>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <record model="ir.actions.act_window" id="project_costing">
+            <field name="name">Project Costing</field>
+            <field name="res_model">project_cost.project_cost</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new Project
+                </p>
+                <p>
+                    Open School is a model that deals with school management with functions like course and session
+                    creation
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="project_cost_1">
+            <field name="name">Open Academy list</field>
+            <field name="model">project_cost.project_cost</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="form_2">
+            <field name="name">Project Costing</field>
+            <field name="model">project_cost.project_cost</field>
+            <field name="arch" type="xml">
+                <form string="Idea form">
+                    <header>
+                        <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="finalize" string="Confirm"  attrs="{'invisible':[('state','!=', 'Approve')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <field name="state" widget="statusbar" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <group colspan="4">
+                            <group colspan="2" col="4">
+                                <separator string="Project Name" colspan="4"/>
+                                <field name="name" String="Project"/>
+                                <field name="project_manager" String="Project Manger" colspan="2"/>
+                                <field name="cost_of_boq" String="Cost Of BOQ" readonly="1"/>
+                                <field name="project_id"/>
+                                <field name="budget_amount"/>
+                                <field name="analytical_account"/>
+                                <field name="estimated_amount"/>
+                                <field name="analytical_account"/>
+
+                            </group>
+
+                            <!--                            <group colspan="2" col="4">-->
+                            <!--                                <separator string="Estimate" colspan="4"/>-->
+                            <!--                                <field name="project_id"/>-->
+                            <!--                                &lt;!&ndash;                <field name="lecturer" readonly="1"/>&ndash;&gt;-->
+                            <!--                            </group>-->
+                            <separator string="Budget" colspan="4"/>
+                            <notebook colspan="4">
+                                <page string="Material">
+
+                                    <field
+                                            name="material"
+                                            nolabel="1"
+                                            widget="one2many"
+                                            mode="tree,kanban"
+                                            wiget="section_and_note_many2one">
+
+                                        <tree string="Material lines" editable="bottom">
+                                            <control>
+                                                <create string="Add a line"/>
+                                                <create string="Add a section"
+                                                        context="{'default_display_type': 'line_section'}"/>
+                                                <!--                                                <create string="Add a note"-->
+                                                <!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                            </control>
+                                            <field name="element"/>
+                                            <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="rate"/>
+                                            <field name="analytical_account"/>
+                                            <field name="budget_amount"/>
+                                            <field name="actual_amount"/>
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+                                <page string="Labour">
+
+                                    <field
+                                            name="labour"
+                                            nolabel="1"
+                                            widget="section_and_note_one2many"
+                                            mode="tree,kanban"
+                                    >
+
+                                        <tree string="Expenses lines" editable="bottom">
+                                            <control>
+                                                <create string="Add a line"/>
+                                                <create string="Add a section"
+                                                        context="{'default_display_type': 'line_section'}"/>
+                                                <!--                                                <create string="Add a note"-->
+                                                <!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                            </control>
+                                            <field name="element"/>
+                                            <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="rate"/>
+                                            <field name="analytical_account"/>
+                                            <field name="budget_amount"/>
+                                            <field name="actual_amount"/>
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+                                <page string="Plant">
+
+                                    <field
+                                            name="plant"
+                                            nolabel="1"
+                                            widget="section_and_note_one2many"
+                                            mode="tree,kanban"
+                                    >
+
+                                        <tree string="Plant lines" editable="bottom">
+                                            <control>
+                                                <create string="Add a line"/>
+                                                <create string="Add a section"
+                                                        context="{'default_display_type': 'line_section'}"/>
+                                                <!--                                                <create string="Add a note"-->
+                                                <!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                            </control>
+                                            <field name="element"/>
+                                            <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="rate"/>
+                                            <field name="analytical_account"/>
+                                            <field name="budget_amount"/>
+                                            <field name="actual_amount"/>
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+
+                                <page string="Subcontract">
+
+                                    <field
+                                            name="subcontract"
+                                            nolabel="1"
+                                            widget="section_and_note_one2many"
+                                            mode="tree,kanban"
+                                    >
+
+                                        <tree string="Subcontract lines" editable="bottom">
+                                            <control>
+                                                <create string="Add a line"/>
+                                                <create string="Add a section"
+                                                        context="{'default_display_type': 'line_section'}"/>
+                                                <!--                                                <create string="Add a note"-->
+                                                <!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                            </control>
+                                            <field name="element" string="Element"/>
+                                            <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="rate"/>
+                                            <field name="analytical_account"/>
+                                            <field name="budget_amount"/>
+                                            <field name="actual_amount"/>
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+                            </notebook>
+                            <group class="oe_subtotal_footer oe_right">
+                                <!--                                    <field name="employees_amount" readonly="1" String="Labour"/>-->
+                                <!--                                    <field name="cost_of_boq" readonly="1"/>-->
+                                <!--                                    <field name="budget_amount" readonly="1" String="Budget Amount"/>-->
+                                <field name="estimated_amount" readonly="1"/>
+                                <field name="actual_amount" cols="2" readonly="1"/>
+                                <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                                <!--                                    <field name="outstanding_credits_debits_widget" colspan="2" nolabel="1" widget="payment" attrs="{'invisible': [('state', 'not in', 'open')]}"/>-->
+                            </group>
+                            <group>
+                                <field name="cost_of_boq" readonly="1"/>
+                                <field name="budget_amount" readonly="1" String="Budget Amount"/>
+                                <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <menuitem sequence="1"
+                  name="Project Costing"
+                  id="project_costing_list"
+                  parent="project_costing.menu_root"
+                  action="project_costing"/>
+
+
+    </data>
+</odoo>

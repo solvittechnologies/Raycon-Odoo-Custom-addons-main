@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="purchase_request_form_action_window">
+      <field name="name">Purchase Request</field>
+      <field name="res_model">purchase_request_form.purchase_request_form</field>
+<!--      <field name="view_type">form</field>-->
+      <field name="view_mode">tree,form</field>
+    </record>
+      <record model="ir.ui.view" id="project_cost_1">
+            <field name="name">Purchase Request</field>
+            <field name="model">purchase_request_form.purchase_request_form</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="project_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+      <record model="ir.ui.view" id="form_4">
+            <field name="name">Purchase Request</field>
+            <field name="model">purchase_request_form.purchase_request_form</field>
+            <field name="arch" type="xml">
+                <form string="Idea form">
+                    <header>
+                        <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <button name="finalize" string="Confirm"  attrs="{'invisible':[('state','!=', 'Approve')]}" class="oe_highlight" type="object"
+                                groups="base.group_user"/>
+                        <field name="state" widget="statusbar" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <group colspan="4">
+                            <group colspan="2" col="4">
+                                <separator string="Project Name" colspan="4"/>
+                                <field name="project_id" />
+                                <field name="request_refrence" colspan="2"/>
+                                <field name="requested_by"/>
+                                <field name="approved_by"/>
+                                <field name="request_date"/>
+
+                            </group>
+
+<!--                            <group colspan="2" col="4">-->
+<!--                                <separator string="Estimate" colspan="4"/>-->
+<!--                                <field name="project_id"/>-->
+<!--                                &lt;!&ndash;                <field name="lecturer" readonly="1"/>&ndash;&gt;-->
+<!--                            </group>-->
+                            <separator string="Purchase Request Line" colspan="4"/>
+                            <notebook colspan="4">
+                                <page string="Purchase Request Line">
+
+                                    <field
+                                            name="purchase_request"
+                                            nolabel="1"
+                                            widget="one2many"
+                                            mode="tree,kanban"
+                                            wiget="section_and_note_many2one">
+
+                                         <tree string="Purchase lines" editable="bottom">
+                                            <control>
+                                                <create string="Add a line"/>
+                                                <create string="Add a section"
+                                                        context="{'default_display_type': 'line_section'}"/>
+<!--                                                <create string="Add a note"-->
+<!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                            </control>
+                                            <field name="element"/>
+                                            <field name="phases"/>
+                                            <field name="description"/>
+                                            <field name="qty"/>
+                                            <field name="analytical_account"/>
+                                            <field name="uom_project"/>
+<!--                                            <field name="actual_amount"/>-->
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+
+
+    <record id="purchase_request_form_search" model="ir.ui.view">
+             <field name="name">Purchase Request Form Search</field>
+             <field name="model">purchase_request_form.purchase_request_form</field>
+             <field name="arch" type="xml">
+             <search>
+                 <field name="project_id"/>
+             </search>
+             </field>
+        </record>
+
+
+
+
+    <!-- Top menu item -->
+<!--    <menuitem name="Project Purchase Request" id="purchase_request_form_base_menu_root"/>-->
+<!--    &lt;!&ndash; actions &ndash;&gt;-->
+<!--    <menuitem name="Purchase Reqest" id="purchase_request_form_menu_1_list" parent="purchase_request_form_base_menu_root"-->
+<!--              action="purchase_request_form_action_window"/>-->
+
+<!--      <menuitem sequence="2"-->
+<!--                  name="Project Purchase Request"-->
+<!--                  id="purchase_request_form_menu_1_list"-->
+<!--                  parent="project_costing.menu_root"-->
+<!--                  action="purchase_request_form_action_window"/>-->
+
+  </data>
+</odoo>

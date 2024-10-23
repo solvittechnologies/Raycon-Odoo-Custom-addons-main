@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<div t-name="web_studio.Sidebar.Parameters">
+    <button class="btn btn-default o_web_studio_parameters">More Parameters</button>
+</div>
+
+<div t-name="web_studio.Sidebar.Remove">
+    <button class="btn btn-default o_web_studio_remove">Remove from View</button>
+</div>
+
+<div t-name="web_studio.Sidebar.Warning.Groups" class="o_web_studio_remove_warning_groups">
+    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        This field is placed after another element that is only displayed under certain conditions.
+    </p>
+    You need to be part of these groups to see this field:<br/>
+    <ul>
+        <t t-foreach="widget.attrs['studio-view-group-names'].split(',')" t-as="group_name">
+            <li><t t-esc="group_name"/></li>
+        </t>
+    </ul>
+</div>
+
+<div t-name="web_studio.Sidebar.XMLEditor" t-if="widget.debug">
+    <button class="btn btn-default o_web_studio_xml_editor">XML Editor</button>
+</div>
+
+<div t-name="web_studio.ActionEditorSidebar" class="o_web_studio_sidebar">
+    <!-- Header -->
+    <div class="o_web_studio_sidebar_header">
+        <div>
+            <i class="fa fa-television" aria-hidden="true"/> Action
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="o_web_studio_sidebar_content">
+        <div>
+            <label for="name">Action's title</label>
+            <input id="name" name="name" t-att-value="widget.action_attrs.name" type="text"/>
+        </div>
+        <div>
+            <label for="help">Empty List Message</label>
+            <textarea id="help" name="help" cols="40" rows="5"><t t-esc="widget.action_attrs.help"/></textarea>
+        </div>
+        <div>
+            <label for="groups">Limit visibility to groups</label>
+            <div class="o_groups"/>
+        </div>
+        <t t-call="web_studio.Sidebar.Parameters"/>
+    </div>
+</div>
+
+<div t-name="web_studio.ReportEditorSidebar" class="o_web_studio_sidebar">
+    <!-- Header -->
+    <div class="o_web_studio_sidebar_header">
+        <div>
+            <i class="fa fa-television" aria-hidden="true"/> Report
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="o_web_studio_sidebar_content">
+        <t t-call="web_studio.Sidebar.Parameters"/>
+        <hr/>
+        <t t-call="web_studio.Sidebar.XMLEditor"/>
+    </div>
+</div>
+
+<div t-name="web_studio.ViewEditorSidebar" class="o_web_studio_sidebar">
+    <!-- Header -->
+    <div class="o_web_studio_sidebar_header">
+        <div name="view" t-attf-class="o_web_studio_view #{widget.mode !== 'view' ? 'inactive' : ''}">
+            <i class="fa fa-television" aria-hidden="true"/> View
+        </div>
+        <div t-if="widget.mode !== 'view'" t-att-name="widget.mode">
+            <i class="fa fa-server" aria-hidden="true"/>
+            <t t-esc="widget.mode.charAt(0).toUpperCase() + widget.mode.slice(1)"/>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="o_web_studio_sidebar_content o_display_view">
+        <t t-if="widget.mode === 'view'">
+            <t t-if="widget.view_type === 'list' or widget.view_type == 'form'">
+                <div>
+                    <label for="create">Can Create</label>
+                    <input id="create" name="create" type="checkbox"
+                        t-att-checked="widget.view_attrs.create ? undefined : 'checked'"/>
+                </div>
+                <div>
+                    <label for="edit">Can Edit</label>
+                    <input id="edit" name="edit" type="checkbox"
+                        t-att-checked="widget.view_attrs.edit ? undefined : 'checked'"/>
+                </div>
+                <div>
+                    <label for="delete">Can Delete</label>
+                    <input id="delete" name="delete" type="checkbox"
+                        t-att-checked="widget.view_attrs.delete ? undefined : 'checked'"/>
+                </div>
+            </t>
+            <t t-if="widget.view_type == 'list'">
+                <div>
+                    <label for="editable">Editable</label>
+                    <select id="editable" name="editable">
+                        <option></option>
+                        <option t-att-selected="widget.view_attrs.editable === 'top' ? 'selected' : undefined">top</option>
+                        <option t-att-selected="widget.view_attrs.editable === 'bottom' ? 'selected' : undefined">bottom</option>
+                    </select>
+                </div>
+            </t>
+            <t t-if="widget.view_type == 'kanban'">
+                <div>
+                    <label for="quick_create">Quick Create</label>
+                    <input id="quick_create" name="quick_create" type="checkbox"
+                        t-att-checked="widget.view_attrs.quick_create ? undefined : 'checked'"/>
+                </div>
+            </t>
+            <t t-call="web_studio.Sidebar.Parameters"/>
+            <hr/>
+            <t t-call="web_studio.Sidebar.XMLEditor"/>
+            <t t-if="widget.view_type == 'form' || widget.view_type == 'list'">
+                <div>
+                    <label for="show_invisible">Show invisible elements</label>
+                    <input id="show_invisible" type="checkbox"/>
+                </div>
+            </t>
+        </t>
+    </div>
+    <div t-if="widget.mode === 'field'" class="o_web_studio_sidebar_content o_display_field">
+        <t t-call="web_studio.ViewEditorSidebar.field"/>
+    </div>
+    <div t-if="widget.mode === 'page'" class="o_web_studio_sidebar_content o_display_page">
+        <t t-call="web_studio.ViewEditorSidebar.page"/>
+    </div>
+    <div t-if="widget.mode === 'group'" class="o_web_studio_sidebar_content o_display_group">
+        <t t-call="web_studio.ViewEditorSidebar.group"/>
+    </div>
+    <div t-if="widget.mode === 'chatter'" class="o_web_studio_sidebar_content">
+        <t t-call="web_studio.ViewEditorSidebar.chatter"/>
+    </div>
+    <div class="o_web_studio_sidebar_content o_display_button">
+        <t t-if="widget.mode === 'button'" t-call="web_studio.ViewEditorSidebar.button"/>
+    </div>
+</div>
+
+<!-- FieldEditor -->
+<t t-name="web_studio.ViewEditorSidebar.field">
+    <div>
+        <label for="invisible">Invisible</label>
+        <input id="invisible" name="invisible" type="checkbox"
+            t-if="!(widget.modifiers.invisible and widget.modifiers.invisible !== true)"
+            t-att-checked="widget.attrs.invisible ? 'checked' : undefined"/>
+        <input type="text" disabled="disabled"
+            t-if="widget.modifiers.invisible and widget.modifiers.invisible !== true"
+            t-att-value="JSON.stringify(widget.modifiers.invisible)"/>
+    </div>
+    <div>
+        <label for="string">Label</label>
+        <input id="string" name="string" type="text"
+            t-att-value="widget.attrs.string"/>
+    </div>
+    <div t-if="widget.view_type === 'form'">
+        <label for="help">Help Tooltip</label>
+        <input id="help" name="help" type="text"
+            t-att-value="widget.attrs.help"/>
+    </div>
+    <div>
+        <label for="placeholder">Placeholder</label>
+        <input id="placeholder" name="placeholder" type="text" placeholder="Placeholder Text"
+            t-att-value="widget.attrs.placeholder"/>
+    </div>
+    <div>
+        <label for="required">Required</label>
+        <input id="required" name="required" type="checkbox"
+            t-if="!(widget.modifiers.required and widget.modifiers.required !== true)"
+            t-att-checked="widget.attrs.required ? 'checked' : undefined"
+            t-att-disabled="widget.field_parameters.required ? 'disabled': undefined"/>
+            <input type="text" disabled="disabled"
+                t-if="widget.modifiers.required and widget.modifiers.required !== true"
+                t-att-value="JSON.stringify(widget.modifiers.required)"/>
+    </div>
+    <div>
+        <label for="readonly">Read only</label>
+        <input id="readonly" name="readonly" type="checkbox"
+            t-if="!(widget.modifiers.readonly and widget.modifiers.readonly !== true)"
+            t-att-checked="widget.attrs.readonly ? 'checked' : undefined"/>
+            <input type="text" disabled="disabled"
+                t-if="widget.modifiers.readonly and widget.modifiers.readonly !== true"
+                t-att-value="JSON.stringify(widget.modifiers.readonly)"/>
+    </div>
+    <div>
+        <label for="groups">Limit visibility to groups</label>
+        <div class="o_groups"/>
+    </div>
+    <t t-if="_.contains(['many2many', 'many2one', 'one2many'], widget.field_parameters.type)">
+        <div>
+            <label for="domain">Domain</label>
+            <input id="domain" name="domain" type="text"
+                t-att-value="widget.attrs.domain"/>
+        </div>
+        <div>
+            <label for="context">Context</label>
+            <input id="context" name="context" type="text"
+                t-att-value="JSON.stringify(widget.attrs.context)"/>
+        </div>
+    </t>
+    <t t-call="web_studio.Sidebar.Parameters"/>
+    <t t-call="web_studio.Sidebar.Remove"/>
+    <t t-if="widget.attrs['studio-view-group-names']">
+        <hr/>
+        <t t-call="web_studio.Sidebar.Warning.Groups"/>
+    </t>
+</t>
+
+<!-- PageEditor -->
+<t t-name="web_studio.ViewEditorSidebar.page">
+    <div>
+        <label for="string">Label</label>
+        <input id="string" name="string" type="text"
+            t-att-value="widget.attrs.string"/>
+    </div>
+    <t t-call="web_studio.Sidebar.Remove"/>
+    <t t-if="widget.attrs['studio-view-group-names']">
+        <hr/>
+        <t t-call="web_studio.Sidebar.Warning.Groups"/>
+    </t>
+</t>
+
+<!-- GroupEditor -->
+<t t-name="web_studio.ViewEditorSidebar.group">
+    <div>
+        <label for="string">Label Text</label>
+        <input id="string" name="string" type="text"
+            t-att-value="widget.attrs.string"/>
+    </div>
+    <t t-call="web_studio.Sidebar.Remove"/>
+    <t t-if="widget.attrs['studio-view-group-names']">
+        <hr/>
+        <t t-call="web_studio.Sidebar.Warning.Groups"/>
+    </t>
+</t>
+
+<!-- ChatterEditor -->
+<t t-name="web_studio.ViewEditorSidebar.chatter">
+    <t t-call="web_studio.Sidebar.Remove"/>
+</t>
+
+<!-- ButtonEditor -->
+<t t-name="web_studio.ViewEditorSidebar.button">
+    <div>
+        <label>Icon</label>
+        <input name="icon" type="text"
+            t-att-value="widget.attrs.icon"/>
+    </div>
+    <t t-call="web_studio.Sidebar.Remove"/>
+</t>
+
+</templates>

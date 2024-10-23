@@ -1,0 +1,304 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * inter_company_rules
+# 
+# Translators:
+# Bohdan Lisnenko, 2016
+# Yaroslav Molochko <onorua@gmail.com>, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Alina Lisnenko <alinasemeniuk1@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2017\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/account_invoice.py:84
+#, python-format
+msgid " Invoice: "
+msgstr "Рахунок:"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_account_invoice_auto_generated
+msgid "Auto Generated Document"
+msgstr "Автоматично сгенерований документ"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_purchase_order_auto_generated
+msgid "Auto Generated Purchase Order"
+msgstr "Автогенероване замовлення на купівлю"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_sale_order_auto_generated
+msgid "Auto Generated Sale Order"
+msgstr "Автогенероване замовлення на продаж"
+
+#. module: inter_company_rules
+#: model:ir.model,name:inter_company_rules.model_res_company
+msgid "Companies"
+msgstr "Компанії"
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/purchase_order.py:82
+#: code:addons/inter_company_rules/models/sale_order.py:77
+#, python-format
+msgid ""
+"Configure correct warehouse for company(%s) from Menu: "
+"Settings/Users/Companies"
+msgstr ""
+"Налаштуйте правильний склад для компанії(%s) з меню: "
+"Налаштування/Користувачі/Компанії"
+
+#. module: inter_company_rules
+#: selection:base.config.settings,rule_type:0
+msgid "Create Invoice/Refunds when encoding invoice/refunds"
+msgstr ""
+"Створити рахунок-фактуру/повернення коштів під час кодування рахунку-"
+"фактури/повернення коштів"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_res_company_auto_generate_invoices
+msgid ""
+"Create Invoices/Refunds when encoding invoices/refunds made to this company"
+msgstr ""
+"Створити рахунки-фактуру/повернення коштів під час кодування рахунків-"
+"фактур/повернення коштів, наданих цій компанії"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_base_config_settings_po_from_so
+#: model:ir.model.fields,field_description:inter_company_rules.field_res_company_po_from_so
+msgid "Create Purchase Orders when selling to this company"
+msgstr "Створити замовлення на купівлю, під час продажу цій компанії"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_base_config_settings_so_from_po
+#: model:ir.model.fields,field_description:inter_company_rules.field_res_company_so_from_po
+msgid "Create Sale Orders when buying to this company"
+msgstr "Створити замовлення на продаж, під час купівлі у цієї компанії"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_base_config_settings_warehouse_id
+msgid ""
+"Default value to set on Purchase Orders that will be created based on Sale "
+"Orders made to this company."
+msgstr ""
+"Значення за замовчуванням встановлюється на замовленнях на купівлю, які "
+"будуть створені на основі продажних замовлень, що вносяться до цієї "
+"компанії."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_res_company_warehouse_id
+msgid ""
+"Default value to set on Purchase(Sales) Orders that will be created based on"
+" Sale(Purchase) Orders made to this company"
+msgstr ""
+"Значення за замовчуванням встановлюється на замовлення на купівлю (продаж), "
+"яке буде створено на основі замовлень на продаж (купівлю), зроблених на цю "
+"компанію"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_res_company_auto_generate_invoices
+msgid ""
+"Generate Customer/Vendor Bills (and refunds) when encoding invoices (or refunds) made to this company.\n"
+" e.g: Generate a Customer Invoice when a Vendor Bill with this company as vendor is created."
+msgstr ""
+"Створюйте рахунки для клієнтів/постачальників (і повернення коштів) під час кодування рахунків-фактур (або повернень), що надходять до цієї компанії.\n"
+"наприклад: створити рахунок-фактуру клієнта, коли створюється рахунок постачальника з цією компанією як постачальника."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_base_config_settings_po_from_so
+msgid ""
+"Generate a Purchase Order when a Sale Order with this company as customer is"
+" created."
+msgstr ""
+"Створіть замовлення на купівлю, коли створюється замовлення на продаж у цієї"
+" компанії як клієнта."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_res_company_po_from_so
+msgid ""
+"Generate a Purchase Order when a Sale Order with this company as customer is created.\n"
+" The intercompany user must at least be Purchase User."
+msgstr ""
+"Створіть замовлення на купівлю, коли створюється замовлення на продаж у цієї компанії як клієнта.\n"
+"Дочірній користувач повинен принаймні бути користувачем Купівлі."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_base_config_settings_so_from_po
+msgid ""
+"Generate a Sale Order when a Purchase Order with this company as vendor is "
+"created."
+msgstr ""
+"Створити замовлення продажу, коли створюється замовлення на купівлю з цією "
+"компанією як постачальником."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_res_company_so_from_po
+msgid ""
+"Generate a Sale Order when a Purchase Order with this company as vendor is created.\n"
+" The intercompany user must at least be Sale User."
+msgstr ""
+"Створити замовлення на продаж, коли створюється замовлення на купівлю з цією компанією як постачальником.\n"
+"Дочірній користувач повинен, принаймні, користуватися продажем."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_res_company_intercompany_user_id
+msgid "Inter Company User"
+msgstr "Користувач внутрішня компанія"
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/purchase_order.py:43
+#: code:addons/inter_company_rules/models/sale_order.py:46
+#, python-format
+msgid "Inter company user of company %s doesn't have enough access rights"
+msgstr ""
+"Внутрішня компанія користувач компанії %s немає достатніх прав доступу"
+
+#. module: inter_company_rules
+#: model:ir.ui.view,arch_db:inter_company_rules.view_company_inter_change_inherit_form
+msgid "Inter-Company Rules"
+msgstr "Правила внутрішньої компанії"
+
+#. module: inter_company_rules
+#: model:ir.model,name:inter_company_rules.model_account_invoice
+msgid "Invoice"
+msgstr "Рахунок"
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/account_invoice.py:75
+#, python-format
+msgid "Please define %s journal for this company: \"%s\" (id:%d)."
+msgstr "Будь ласка, визначте %s журнал для цієї компанії: \"%s\" (id:%d)."
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/purchase_order.py:40
+#, python-format
+msgid "Provide at least one user for inter company relation for % "
+msgstr ""
+"Забезпечте принаймні одного користувача для зв'язку між компаніями за %"
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/account_invoice.py:40
+#: code:addons/inter_company_rules/models/sale_order.py:43
+#, python-format
+msgid "Provide one user for intercompany relation for % "
+msgstr "Надайте одного користувача для співвідношення між компаніями для %"
+
+#. module: inter_company_rules
+#: model:ir.model,name:inter_company_rules.model_purchase_order
+msgid "Purchase Order"
+msgstr "Замовлення на купівлю"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_res_company_intercompany_user_id
+msgid ""
+"Responsible user for creation of documents triggered by intercompany rules."
+msgstr ""
+"Відповідальний користувач для створення документів, спричинених міжвідомчими"
+" правилами."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_base_config_settings_rule_type
+msgid "Rule type"
+msgstr "Тип правила"
+
+#. module: inter_company_rules
+#: selection:base.config.settings,rule_type:0
+msgid "SO and PO setting for inter company"
+msgstr "SO та PO налаштування для внутрішньої компанії"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_base_config_settings_auto_validation
+#: model:ir.model.fields,field_description:inter_company_rules.field_res_company_auto_validation
+msgid "Sale/Purchase Orders Auto Validation"
+msgstr "Автоматична перевірка замовлень на продаж та/або купівлю"
+
+#. module: inter_company_rules
+#: model:ir.model,name:inter_company_rules.model_sale_order
+msgid "Sales Order"
+msgstr "Замовлення на продаж"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_base_config_settings_rule_type
+msgid "Select the type to setup inter company rules in selected company."
+msgstr ""
+"Виберіть тип для встановлення правил між компаніями у вибраній компанії."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_account_invoice_auto_invoice_id
+msgid "Source Invoice"
+msgstr "Початковий рахунок"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_sale_order_auto_purchase_order_id
+msgid "Source Purchase Order"
+msgstr "Початкове замовлення на купівлю"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_purchase_order_auto_sale_order_id
+msgid "Source Sale Order"
+msgstr "Документ замовлення"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_res_company_warehouse_id
+msgid "Warehouse"
+msgstr "Склад"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,field_description:inter_company_rules.field_base_config_settings_warehouse_id
+msgid "Warehouse For Purchase Orders"
+msgstr "Склад для замовлень на купівлю"
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_base_config_settings_auto_validation
+msgid ""
+"When a Sale Order or a Purchase Order is created by a multi\n"
+"            company rule for this company, it will automatically validate it."
+msgstr ""
+"Коли замовлення на продаж або замовлення на купівлю створюють мультикомпанією правила\n"
+"для цієї компанії, вона автоматично перевірятиме її."
+
+#. module: inter_company_rules
+#: model:ir.model.fields,help:inter_company_rules.field_res_company_auto_validation
+msgid ""
+"When a Sale Order or a Purchase Order is created by a multi company rule for"
+" this company, it will automatically validate it"
+msgstr ""
+"Коли замовлення на продаж або замовлення на купівлю створюються за правилом "
+"для декількох компаній для цієї компанії, він автоматично перевірить його"
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/purchase_order.py:47
+#, python-format
+msgid ""
+"You cannot create SO from PO because sale price list currency is different "
+"than purchase price list currency."
+msgstr ""
+"Ви не можете створити SO від PO, оскільки валюта продажу цін відрізняється "
+"від валюти покупки цін."
+
+#. module: inter_company_rules
+#: code:addons/inter_company_rules/models/res_company.py:32
+#, python-format
+msgid ""
+"You cannot select to create invoices based on other invoices\n"
+"                    simultaneously with another option ('Create Sale Orders when buying to this\n"
+"                    company' or 'Create Purchase Orders when selling to this company')!"
+msgstr ""
+"Ви не можете вибрати для створення рахунків-фактур на основі інших рахунків-фактур\n"
+"одночасно з іншим варіантом (\"Створити замовлення на продаж, під час купівлі у цієї\"\n"
+"компанії \"або\" Створення замовлень на купівлю при продажу для цієї компанії\")!"
+
+#. module: inter_company_rules
+#: model:ir.model,name:inter_company_rules.model_base_config_settings
+msgid "base.config.settings"
+msgstr "base.config.settings"

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_material_request,material.request,model_material_request,,1,1,1,1
+access_material_request_line,material.request.line,model_material_request_line,,1,1,1,1
+access_material_consumtion,material.consumtion,model_material_consumtion,,1,1,1,1
+access_material_consumtion_line,material.consumtion.line,model_material_consumtion_line,,1,1,1,1

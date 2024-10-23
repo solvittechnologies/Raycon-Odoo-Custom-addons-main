@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="sale_quotation_inherit" model="ir.ui.view">
+            <field name="name">sale.quotation.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+<!--                <field name="payment_term_id" position="after">-->
+<!--                    <field name="date_order"/>-->
+<!--                </field>-->
+
+<!--                <field name="partner_id" position="after">-->
+<!--                    <field name="quote_no"/>-->
+<!--                </field>-->
+
+
+                <field name="date_order" position="before">
+                    <field name="date_quote" string="Quote Date" attrs="{'invisible': [('state', 'not in', ['draft','sent'])]}"/>
+                </field>
+
+                <field name="date_order" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                    <attribute name="attrs">{'invisible': [('state', 'in', ['draft','sent'])]}</attribute>
+                </field>
+
+                <field name="payment_term_id" position="after">
+                    <field name="sale_shipping_term_id" invisible="1" attrs="{'readonly': [('invoice_status','=', 'invoiced')]}"/>
+                </field>
+
+                <field name="payment_term_id" options="{'no_create': True}" position="attributes">
+                    <attribute name="options"/>
+                </field>
+
+                <field name="client_order_ref" position="replace"/>
+                <field name="team_id" position="replace"/>
+                 <field name="analytic_account_id" position="after">
+                <field name="client_order_ref" string="PO Reference"/>
+                 <field name="quote_name" string="Quote No"/> 
+                 <field name="team_id" string="Sales Channel" required="1"/>
+                </field>
+
+                <field name="name" readonly="1" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+
+                <field name="name" readonly="1" position="after">
+                 <field name="quote_name" readonly="1"/>  
+                </field>
+                <field name="note" position="after">
+                      <group>
+			<field name="total_cost" force_save="1"/>
+			<field name="gross_profit" force_save="1"/>
+		      </group>
+		</field>
+           
+
+
+                 <field name="partner_id" widget="res_partner_many2one" domain="[('customer','=',True)]" context="{'search_default_customer':1, 'show_address': 1, 'show_vat': True}" options="{&quot;always_reload&quot;: True, 'no_create_edit': True, 'no_create': True}" position="after">
+                     <field name="branches" options="{'no_create_edit': True, 'no_create': True}"/>
+		     <field name="subject"/>
+                 </field>
+
+		<field name="partner_id" widget="res_partner_many2one" domain="[('customer','=',True)]" context="{'search_default_customer':1, 'show_address': 1, 'show_vat': True}" options="{&quot;always_reload&quot;: True}" position="attributes">
+			<attribute name="options"> {'no_create_edit': True, 'no_create': True} </attribute>
+		</field>
+
+
+            </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="sale_margin_sale_order">
+        <field name="name">sale.order.margin.view.form</field>
+        <field name="model">sale.order</field>
+        <field name="groups_id" eval="[(4, ref('sale_quotation_inherit.group_can_edit_margin'))]"/>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="state" widget="statusbar" statusbar_visible="draft,sent,sale,done" position="attributes">
+                    <attribute name="statusbar_visible">draft,to_accept,quote_approved,sent,sale,cancel</attribute>
+            </field>
+            <button name="print_quotation" position="after">
+                    <button name="action_quote_sent" type="object" string="Send for Approval" states="draft"/>
+<!--                    <button name="action_to_accept" type="object" string="Accept" states="sent"/>-->
+                    <button name="action_send_to_cust" type="object" string="Send to Customer manually" states="draft, to_accept"/>
+                    <button name="action_quote_approve" type="object" string="Approve" states="to_accept" groups="sale_quotation_inherit.group_show_approve_btn"/>
+                    <button name="action_quote_disapprove" type="object" string="Disapprove" states="to_accept" groups="sale_quotation_inherit.group_show_approve_btn"/>
+           
+                    <button name="action_to_draft" type="object" string="Send back to draft" states="no_sale"/>
+            </button>
+              
+           <button name="preview_sale_order" position="after">
+                   <button name="action_send_to_cust" type="object" string="Send to Customer manually" states="quote_approved"/>
+                   <button name="action_quotation_send" type="object" states="quote_approved" class="btn-primary" string="Send to customer by Email"/>
+           </button>
+
+            <button name="action_quotation_send" type="object" states="draft" class="btn-primary" position="attributes">
+                    <attribute name="states">draft, to_accept, quote_approved</attribute>
+                    <attribute name="string">Send to customer by Email</attribute>
+
+            </button>
+
+            <button name="action_quotation_send" type="object" groups="sale.group_proforma_sales" class="btn-primary" attrs="{'invisible': ['|', ('state', '!=', 'draft'), ('invoice_count','&gt;=',1)]}" context="{'proforma': True}" position="attributes">
+                    <attribute name="attrs"> {'invisible': ['|', ('state', '!=', 'quote_approved')]} </attribute>
+            </button>
+
+            <button name="action_confirm" id="action_confirm" class="btn-primary" type="object" attrs="{'invisible': [('state', 'not in', ['sent'])]}" position="attributes">
+                    <attribute name="string">Convert to SO</attribute>
+                    <attribute name="groups">sales_team.group_sale_manager</attribute>
+            </button>             
+ 
+            <button name="action_confirm" type="object"
+                        attrs="{'invisible': [('state', 'not in', ['draft'])]}" position="attributes">
+                     <attribute name="attrs"> {'invisible': [('state', 'not in', [''])]} </attribute>
+            </button>
+
+            <xpath expr="//field[@name='order_line']/tree//field[@name='name']" position="after">
+                    <field name="product_desc" widget="many2many_tags"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree//field[@name='name']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="replace">
+                    <field name="price_unit" attrs="{'readonly': [('qty_invoiced', '&gt;', 0)]}"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom_qty']" position="before">
+                    <field name="product_cat"/>
+                    <field name="p_type"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_uom_qty']" position="after">
+                    <field name="purchase_price"/>
+<!--                    <field name="margin" attrs="{'readonly': [('state', 'in', ('draft','sent'))]}"/>-->
+                    <field name="margin" readonly="0"/>
+                    <field name="total_purchase_price"/>
+                    <field name="profit"/>
+                    <field name="route_id" invisible="1"/>
+            </xpath>
+<!--            <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="attributes">-->
+<!--                    <attribute name="invisible">1</attribute>-->
+<!--            </xpath>-->
+
+            <xpath expr="//field[@name='order_line']" position="attributes">
+                <attribute name="attrs">   {'readonly':[('state','in',['cancel'])]}   </attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sale_margin_readonly_sale_order">
+        <field name="name">sale.order.margin.view.form.margin.readonly</field>
+        <field name="model">sale.order</field>
+        <field name="groups_id" eval="[(4, ref('sale_quotation_inherit.group_cannot_edit_margin'))]"/>
+        <field name="inherit_id" ref="sale_quotation_inherit.sale_margin_sale_order"/>
+<!--        <field name="inherit_id" ref="sale.view_order_form"/>-->
+        <field name="arch" type="xml">
+            <field name="margin" attrs="{'readonly': [('state', 'in', ('draft','sent'))]}" position="attributes">
+                <attribute name="readonly"> 1 </attribute>
+            </field>           
+            <xpath expr="//field[@name='order_line']" position="attributes">
+                <attribute name="attrs">   {'readonly':[('state','not in',['draft'])]}   </attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sale_quotation_list_inherit" model="ir.ui.view">
+            <field name="name">sale.quotation.list.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+            <field name="arch" type="xml">
+                <field name="name" position="replace">
+                    <field name="quote_name"/> 
+                </field>
+                <field name="amount_total" position="after">
+			<field name="gross_profit"/>
+		</field>
+                 <field name="amount_total" position="before">     
+			<field name="total_cost"/>
+		</field>
+            </field>
+    </record>
+
+    <record id="action_orders_sale_awaiting_acceptance" model="ir.actions.act_window">
+            <field name="name">Quotations Awaiting Acceptance</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'to_accept')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p><p>
+                    Your next actions should flow efficiently: confirm the Quotation to a Sale Order, then create the Invoice and collect t$
+                </p><p>
+                    Note that once a Quotation becomes a Sale Order, it will be moved from the Quotations list to the Sales Order list.
+                </p>
+            </field>
+        </record>
+
+     <record id="action_orders_sale_awaiting_conversion" model="ir.actions.act_window">
+            <field name="name">Quotations Awaiting Conversion</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'waiting')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p><p>
+                    Your next actions should flow efficiently: confirm the Quotation to a Sale Order, then create the Invoice and collect t$
+                </p><p>
+                    Note that once a Quotation becomes a Sale Order, it will be moved from the Quotations list to the Sales Order list.
+                </p>
+            </field>
+        </record>
+
+
+    <record id="action_orders_sale_to_approve" model="ir.actions.act_window">
+            <field name="name">Sale Orders To Approve</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'so_to_approve')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p><p>
+                    Your next actions should flow efficiently: confirm the Quotation to a Sale Order, then create the Invoice and collect t$
+                </p><p>
+                    Note that once a Quotation becomes a Sale Order, it will be moved from the Quotations list to the Sales Order list.
+                </p>
+            </field>
+        </record>
+
+    <record id="action_orders_sale_approve" model="ir.actions.act_window">
+            <field name="name">Sale Orders Approved</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{'show_sale': True}</field>
+            <field name="domain">[('state', '=', 'sale')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a Quotation, the first step of a new sale.
+                </p><p>
+                    Your next actions should flow efficiently: confirm the Quotation to a Sale Order, then create the Invoice and collect t$
+                </p><p>
+                    Note that once a Quotation becomes a Sale Order, it will be moved from the Quotations list to the Sales Order list.
+                </p>
+            </field>
+        </record>
+
+
+
+        <record id="base.action_partner_form" model="ir.actions.act_window">
+            
+            <field name="domain">[('customer', '=', True)]</field>
+        </record>    	
+
+
+
+        <record id="base.action_partner_supplier_form" model="ir.actions.act_window">
+            <field name="domain">[('supplier', '=', True)]</field>
+        </record>
+
+
+
+    <menuitem action="action_orders_sale_awaiting_acceptance"
+            id="menu_sale_order_awaiting_acceptance" parent="sale.sale_order_menu"
+            sequence="11"/>
+    <menuitem action="action_orders_sale_awaiting_conversion"
+            id="menu_sale_order_awaiting_conversion" parent="sale.sale_order_menu"
+            sequence="11"/>
+    <menuitem action="action_orders_sale_to_approve"
+            id="menu_sale_order_to_approve" parent="sale.sale_order_menu"
+            sequence="11"/>
+    <menuitem action="action_orders_sale_approve"
+            id="menu_sale_order_approve" parent="sale.sale_order_menu"
+            sequence="11"/>
+
+
+    <menuitem action="base.action_partner_form"
+            id="sale.res_partner_menu" parent="sale.sale_order_menu"
+            sequence="11"/>
+
+
+
+<!--
+    <record id="sale.res_partner_menu" model="ir.ui.menu">
+        <field name="action">action_new_partner_form</field>
+    </record>
+-->
+    <record id="sale.menu_sale_invoicing" model="ir.ui.menu">
+        <field name="groups">group_invisible</field>
+    </record>
+
+<!--    <record id="purchase.menu_procurement_management_pending_invoice" model="ir.ui.menu">-->
+<!--        <field name="parent">account.menu_finance_payables</field>-->
+<!--        <field name="name">PO to Vendor Bills</field>-->
+<!--    </record>-->
+
+
+
+
+
+
+
+</odoo>

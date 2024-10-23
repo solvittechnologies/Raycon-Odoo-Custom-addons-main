@@ -1,0 +1,359 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_fedex
+# 
+# Translators:
+# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2016
+# Martin Trigaux, 2016
+# Ediz Duman <neps1192@gmail.com>, 2016
+# eren b <inactive+erenbn@transifex.com>, 2016
+# Alexander B. <road2monstercat@gmail.com>, 2016
+# Umur Akın <umura@projetgrup.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Umur Akın <umura@projetgrup.com>, 2018\n"
+"Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ", click on \"Get Production Key\" and follow all the steps."
+msgstr ", \"Üretim Anahtarı Al\"a tıkla ve adımları izle."
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"<br/>According to your needs, you will need to contact different "
+"certifications :"
+msgstr ""
+"<br/>İsteklerine göre,farklı bir sertifikasyon ile temasa geçmelisiniz."
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_account_number
+msgid "Account Number"
+msgstr "Hesap Numarası"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services with Label Certification"
+msgstr "Gelişmis servisler Sertifikasyon Etiketi ile"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services without Label Certification"
+msgstr "Gelişmiş servisler Sertifikasyon etiketi olmadan"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "BUSINESS_SERVICE_CENTER"
+msgstr "TİCARİ_HİZMET_MERKEZİ"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_delivery_carrier
+msgid "Carrier"
+msgstr "Nakliyeci"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Certification Process"
+msgstr "Sertifikasyon Süreci"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "DROP_BOX"
+msgstr "DROP_BOX"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_default_packaging_id
+msgid "Default Package Type"
+msgstr "Varsayılan Paket Türü"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_key
+msgid "Developer Key"
+msgstr "Üretici tuşu"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "EPL2"
+msgstr "EPL2"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_file_type
+msgid "FEDEX Label File Type"
+msgstr "FEDEX Etiket Dosya Türü"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY"
+msgstr "FEDEX_2_GÜN"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY_AM"
+msgstr "FEDEX_2GÜN_ÖÖ"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_GROUND"
+msgstr "FEDEX_MESAFE"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FIRST_OVERNIGHT"
+msgstr "BİRGECE"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "FedEx Web Services \"Move to Production\""
+msgstr "FedEx Web Servisleri \"Üretime Taşı\""
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Configuration"
+msgstr "Fedex Yapılandırma"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_inter
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_inter_product_product
+msgid "Fedex International"
+msgstr "Fedex Uluslararası"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Tutorial"
+msgstr "Fedex Öğretici"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_us
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_us_product_product
+msgid "Fedex US"
+msgstr "Fedex ABD"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Website"
+msgstr "Web Sitesi"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_droppoff_type
+msgid "Fedex drop-off type"
+msgstr "Fedex teslimat türü"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_stock_type
+msgid "Fedex label stock type"
+msgstr "Fedex stok etiket türü"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_service_type
+msgid "Fedex service type"
+msgstr "Fedex servis türü"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_weight_unit
+msgid "Fedex weight unit"
+msgstr "Fedex agırlık birimi"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Go to"
+msgstr "Git"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_ECONOMY"
+msgstr "ULUSLARARASİ_EKONOMİ"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_PRIORITY"
+msgstr "ULUSLARARASI_ÖNCELİKLİ"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "KG"
+msgstr "KG"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "LB"
+msgstr "LB"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_meter_number
+msgid "Meter Number"
+msgstr "Sayaç Numarası"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Once your account is created, go to"
+msgstr "Bir kerelik hesabınız oluşturuldu,buraya git"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X6"
+msgstr "KAĞIT_4X6"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X8"
+msgstr "KAĞIT_4X8"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X9"
+msgstr "KAĞIT_4X9"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_7X4.75"
+msgstr "KAĞIT_7X4.75"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+msgstr "KAĞIT_8.5X11_ALT_YARIM_ETİKET"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_TOP_HALF_LABEL"
+msgstr "KAĞIT_8.5X11_ÜST_ETİKET"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_LETTER"
+msgstr "KAĞIT_HARF"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PNG"
+msgstr "PNG"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "PRIORITY_OVERNIGHT"
+msgstr "ÖNCELİKLİ_BİRGECELİK"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_product_packaging
+msgid "Packaging"
+msgstr "Paketleme"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_password
+msgid "Password"
+msgstr "Parola"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REGULAR_PICKUP"
+msgstr "SÜREKLİ_TOPLA"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REQUEST_COURIER"
+msgstr "İSTE_KURYE"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "STANDARD_OVERNIGHT"
+msgstr "STANDART_BİRGECELİK"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "STATION"
+msgstr "DURAK"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6"
+msgstr "STOCK_4X6"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_LEADING_DOC_TAB"
+msgstr "STOCK_4X6.75_LEADING_DOC_TAB"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_TRAILING_DOC_TAB"
+msgstr "STOCK_4X6.75_TRAILING_DOC_TAB"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X8"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_LEADING_DOC_TAB"
+msgstr "STOCK_4X9_LEADING_DOC_TAB"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_TRAILING_DOC_TAB"
+msgstr "STOCK_4X9_TRAILING_DOC_TAB"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:333
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Sevkiyat N° %s iptal edildi."
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:252
+#: code:addons/delivery_fedex/models/delivery_fedex.py:294
+#, python-format
+msgid "Shipment created into Fedex <br/> <b>Tracking Number : </b>%s"
+msgstr ""
+"Sevkiyat Fedex'e gönderildi <br/> <b>Takip Numarası :\n"
+"</b>%s"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:256
+#, python-format
+msgid "Shipping label for package %s"
+msgstr "Paketleme için Nakliyat etiketi %s"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Standard Services"
+msgstr "Standart Hizmetler"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "The last step is the"
+msgstr "Son adım"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"These certifications usually require that you contact the FedEx support team"
+" by email."
+msgstr ""
+"Bu sertifikasyonlar genellikle FedEx destek ekibi tarafından e-posta yoluyla"
+" iletişime gerek duyar."
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "ZPLII"
+msgstr "ZPLII"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "to create a FedEx account of the following type:"
+msgstr "FedEx hesabı oluşturmak için şu yolları izleyin:"

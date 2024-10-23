@@ -1,0 +1,236 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast_grid
+# 
+# Translators:
+# Bohdan Lisnenko, 2016
+# Zoriana Zaiats, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Martin Trigaux, 2016
+# Yaroslav Molochko <onorua@gmail.com>, 2016
+# Alina Semeniuk <alinasemeniuk1@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 14:58+0000\n"
+"PO-Revision-Date: 2016-09-29 14:58+0000\n"
+"Last-Translator: Alina Semeniuk <alinasemeniuk1@gmail.com>, 2018\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:29
+#, python-format
+msgid ""
+"A project must have a start date to use a forecast grid, found no start date"
+" for {project.display_name}"
+msgstr ""
+"Проект має мати дату початку використання прогнозованої сітки, не знайшов "
+"дати початку для {project.display_name}"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:47
+#, python-format
+msgid ""
+"A project must have an end date to use a forecast grid, found no end date "
+"for {project.display_name"
+msgstr ""
+"Проект повинен мати кінцеву дату для використання прогнозованої сітки, не "
+"знайшов кінцевої дати для {project.display_name"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign"
+msgstr "Призначити"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_assign
+msgid "Assign user on a task"
+msgstr "Призначити користувача на завдання"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign user on task"
+msgstr "Призначити користувача на завдання"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_project
+msgid "By Project"
+msgstr "По проекту"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_user
+msgid "By User"
+msgstr "За користувачами"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:20
+#, python-format
+msgid ""
+"Can only be used for forecasts not spanning multiple months, found "
+"%(forecast_count)d forecast(s) spanning across months in %(project_name)s"
+msgstr ""
+"Може використовуватися лише для прогнозів, що не охоплюють кілька місяців "
+"%(forecast_count)d прогноз (и), що охоплює місяці %(project_name)s"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_date
+msgid "Created on"
+msgstr "Дата створення"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_display_name
+msgid "Display Name"
+msgstr "Назва для відображення"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:41
+#, python-format
+msgid "Forecast"
+msgstr "Прогноз"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_project
+msgid "Forecast By Project"
+msgstr "Прогноз проекту"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_user
+msgid "Forecast By User"
+msgstr "Прогноз користувача"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid ""
+"Forecasting on a project requires that the project\n"
+"                        have start and end dates"
+msgstr ""
+"Прогнозування проекту вимагає наявності у проекті\n"
+"                       початкової та кінцевої дати"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:25
+#, python-format
+msgid ""
+"Forecasting over a project only supports monthly forecasts (got step {})"
+msgstr ""
+"Прогнозування за проектом підтримує лише щомісячні прогнози (got step {})"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.project_forecast_gantt
+msgid "Gantt"
+msgstr "Діаграма Ґанта"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid
+msgid "Grid"
+msgstr "Сітка"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:63
+#, python-format
+msgid ""
+"Grid adjustment for project forecasts only supports the 'start_date' columns"
+" field and the 'resource_hours' cell field, got respectively "
+"%(column_field)r and %(cell_field)r"
+msgstr ""
+"Коригування сітки для прогнозів проектів підтримує тільки поле стовпців "
+"'start_date' та 'resource_hours' cell field, got respectively "
+"%(column_field)r and %(cell_field)r"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_id
+msgid "ID"
+msgstr "ІД"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment___last_update
+msgid "Last Modified on"
+msgstr "Остання модифікація"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновив"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Month"
+msgstr "Місяць"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Monthly Forecast"
+msgstr "Щомісячний прогноз"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_project
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_project_id
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Project"
+msgstr "Проект"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "Project Dates"
+msgstr "Дати проекту"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Project Forecast By User"
+msgstr "Прогноз проекту користувача"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_task_id
+msgid "Task"
+msgstr "Завдання"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_user_id
+msgid "User"
+msgstr "Користувач"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "View Forecast"
+msgstr "Переглянути прогноз"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Week"
+msgstr "Тиждень"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Year"
+msgstr "Рік"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast_assignment
+msgid "project.forecast.assignment"
+msgstr "project.forecast.assignment"

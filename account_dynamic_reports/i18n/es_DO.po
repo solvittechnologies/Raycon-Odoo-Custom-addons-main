@@ -1,0 +1,1474 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_dynamic_reports
+#	* dynamic_xlsx
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-04 09:11+0000\n"
+"PO-Revision-Date: 2021-02-04 09:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:194
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:194
+#, python-format
+msgid " To "
+msgstr " A "
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:107
+#, python-format
+msgid "\"Bucket order must be ascending\""
+msgstr "\"El orden del segmento debe ser ascendente\""
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:245
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:229
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:217
+#, python-format
+msgid "\"Date from\" must be less than or equal to \"Date to\""
+msgstr "\ "Fecha desde \" debe ser menor o igual que \ "Fecha hasta \""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:48
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:49
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1153
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1154
+#, python-format
+msgid "&nbsp;"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "*** END OF DOCUMENT ***"
+msgstr "*** FIN DEL DOCUMENTO ***"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+msgid ": General ledger"
+msgstr ": Libro mayor"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid ": Partner Ageing"
+msgstr ": Envejecimiento de la pareja"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid ": Partner ledger"
+msgstr ": Libro mayor de socios"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid ": Trial Balance"
+msgstr ": Balance de prueba"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<span>&amp;nbsp;</span>\n"
+"                                                <span>&amp;nbsp;</span>\n"
+"                                                <span>&amp;nbsp;</span>"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<span>Ending Balance</span>"
+msgstr "<span>Balance final</span>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<span>Initial Balance</span>"
+msgstr "<span> Saldo inicial </span>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid "<span>Total</span>"
+msgstr "<span>Total</span>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Accounts:</strong>"
+msgstr "<strong> Cuentas: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+msgid "<strong>Analytic Tag:</strong>"
+msgstr "<strong> Etiqueta analítica: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Analytic:</strong>"
+msgstr "<strong> Analítica: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid "<strong>As on Date:</strong>"
+msgstr "<strong> Como en la fecha: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "<strong>Comparison Date From:</strong>"
+msgstr "<strong> Fecha de comparación desde: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "<strong>Comparison Date To:</strong>"
+msgstr "<strong> Fecha de comparación hasta: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Date From:</strong>"
+msgstr "<strong> Fecha desde: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Date To:</strong>"
+msgstr "<strong> Fecha hasta: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Display Account</strong>"
+msgstr "<strong> Mostrar cuenta </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+msgid "<strong>Journals:</strong>"
+msgstr "<strong> Revistas: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Partner Tags:</strong>"
+msgstr "<strong> Etiquetas de socio: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+msgid "<strong>Partners:</strong>"
+msgstr "<strong> Socias: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Reconciled:</strong>"
+msgstr "<strong> Conciliado: </strong>"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "<strong>Target Moves:</strong>"
+msgstr "<strong>Movimientos señalados:</strong>"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:233
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:159
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:203
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:317
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:537
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:592
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:777
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1065
+#: model:ir.model,name:account_dynamic_reports.model_account_account
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:241
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:159
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:203
+#, python-format
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_ins_account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_form
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_tree
+msgid "Account Report"
+msgstr "Informe de cuenta"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:186
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:186
+#, python-format
+msgid "Account Tags"
+msgstr "Etiquetas de cuenta"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:466
+#, python-format
+msgid "Account Tags:"
+msgstr "Etiquetas de cuenta:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:700
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:956
+#, python-format
+msgid "Account Type:"
+msgstr "Tipo de cuenta:"
+
+#. module: account_dynamic_reports
+#: model:ir.ui.menu,name:account_dynamic_reports.account_reports_ins_wiz
+msgid "Accounting Reports"
+msgstr "Informes de contabilidad"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:178
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:171
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:178
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:171
+#, python-format
+msgid "Accounts"
+msgstr "Cuentas"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:455
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:989
+#, python-format
+msgid "Accounts:"
+msgstr "Cuentas:"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_res_company_form
+msgid "Ageing Bucket"
+msgstr "Cubo de envejecimiento"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "All Entries"
+msgstr "Todos los asientos"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+msgid "All Posted Entries"
+msgstr "Todos los asientos asentados"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:194
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:165
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:194
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:165
+#, python-format
+msgid "Analytic Accounts"
+msgstr "Cuentas analíticas"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:202
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:202
+#, python-format
+msgid "Analytic Tags"
+msgstr "Etiquetas analíticas"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:188
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:488
+#, python-format
+msgid "Analytic Tags:"
+msgstr "Etiquetas analíticas:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:177
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:477
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1368
+#, python-format
+msgid "Analytic:"
+msgstr "Analítica:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:102
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:384
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:667
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:911
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1295
+#, python-format
+msgid "Apply"
+msgstr "Aplicar"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:130
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:130
+#, python-format
+msgid "As on Date"
+msgstr "Como en la fecha"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:675
+#, python-format
+msgid "As on Date :"
+msgstr "Como en la fecha :"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:156
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:186
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:189
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:229
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:238
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:198
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:206
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:209
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:215
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:221
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:20
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:250
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:320
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:782
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:852
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1068
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1071
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1074
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:163
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:193
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:196
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:237
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:246
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:198
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:206
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:209
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:215
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:221
+#, python-format
+msgid "Balance"
+msgstr "Saldo pendiente"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_balance_sheet_report
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_bs_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_bl
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_bs_wiz
+msgid "Balance Sheet"
+msgstr "Hoja de balance"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:251
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:783
+#, python-format
+msgid "Balance in FC"
+msgstr "Equilibrio en FC"
+
+#. module: dynamic_xlsx
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:181
+#, python-format
+msgid "Branch"
+msgstr "Rama"
+
+#. module: dynamic_xlsx
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:121
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:210
+#, python-format
+msgid "Branches"
+msgstr "Rama"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:164
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:442
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1355
+#, python-format
+msgid "Branches:"
+msgstr "Rama"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:686
+#, python-format
+msgid "Bucket-1"
+msgstr "Cubo-1"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:688
+#, python-format
+msgid "Bucket-2"
+msgstr "Cubo-2"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:690
+#, python-format
+msgid "Bucket-3"
+msgstr "Cubo-3"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:692
+#, python-format
+msgid "Bucket-4"
+msgstr "Cubo-4"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:694
+#, python-format
+msgid "Bucket-5"
+msgstr "Cubo-5"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_cf_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_cf_wiz
+msgid "Cash Flow"
+msgstr "Flujo de efectivo"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_cash_flow_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_cashflow
+msgid "Cash Flow Report"
+msgstr "Informe de flujo de caja"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:232
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:240
+#, python-format
+msgid "Code"
+msgstr "Código"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:128
+#, python-format
+msgid "Comparison"
+msgstr "Comparación"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:123
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:130
+#, python-format
+msgid "Comparison Date from"
+msgstr "Fecha de comparación desde"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:132
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:139
+#, python-format
+msgid "Comparison Date to"
+msgstr "Fecha de comparación hasta"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:154
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:227
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:236
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:196
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:204
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:207
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:213
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:219
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:15
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:249
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:319
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:781
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:851
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1067
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1070
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1073
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:161
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:235
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:244
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:196
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:204
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:207
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:213
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:219
+#, python-format
+msgid "Credit"
+msgstr "Haber"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_res_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:5
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#, python-format
+msgid "Current Cash Balance"
+msgstr "Saldo de caja actual"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:105
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:110
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:387
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:670
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:914
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1298
+#, python-format
+msgid "Custom"
+msgstr "Personalizada"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:684
+#, python-format
+msgid "Custom Buckets"
+msgstr "Cubos personalizados"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:714
+#, python-format
+msgid "Customers Only"
+msgstr "Clientes solamente"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:213
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:182
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:243
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:775
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:221
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:182
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:199
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:411
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:938
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1322
+#, python-format
+msgid "Date Range:"
+msgstr "Rango de fechas:"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:103
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:129
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:114
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:139
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:103
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:129
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:114
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:139
+#, python-format
+msgid "Date from"
+msgstr "Fecha de"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:112
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:134
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:119
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:144
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:112
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:134
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:119
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:144
+#, python-format
+msgid "Date to"
+msgstr "Fecha hasta"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:105
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:387
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:670
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:914
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1298
+#, python-format
+msgid "Dates"
+msgstr "fechas"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:152
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:225
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:234
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:194
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:202
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:205
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:211
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:217
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:14
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:248
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:318
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:780
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:850
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1066
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1069
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1072
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:159
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:233
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:242
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:194
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:202
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:205
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:211
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:217
+#, python-format
+msgid "Debit"
+msgstr "Debe"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+msgid "Discard"
+msgstr "Descartar"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:144
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:129
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:150
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:144
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:129
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:150
+#, python-format
+msgid "Display accounts"
+msgstr "Mostrar cuentas"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:157
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:535
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:157
+#, python-format
+msgid "Due Date"
+msgstr "Fecha de vencimiento"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_res_company_form
+msgid "Dynamic Reports"
+msgstr "Informes dinámicos"
+
+#. module: account_dynamic_reports
+#: model:ir.ui.menu,name:account_dynamic_reports.account_reports_ins
+msgid "Dynamic Reports(Wiz)"
+msgstr "Informes dinámicos (Wiz)"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:119
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:137
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:399
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:926
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1310
+#, python-format
+msgid "End Date :"
+msgstr "Fecha final :"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1062
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#, python-format
+msgid "Ending Balance"
+msgstr "Balance final"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:156
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:156
+#, python-format
+msgid "Entry #"
+msgstr "Entrada #"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:223
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:192
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:247
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:534
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:779
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:231
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:192
+#, python-format
+msgid "Entry Label"
+msgstr "Etiqueta de entrada"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:97
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:379
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:662
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:906
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1290
+#, python-format
+msgid "Export (XLSX)"
+msgstr "Exportar (XLSX)"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_ins_report_financial
+#: model:ir.actions.report,name:dynamic_xlsx.action_ins_financial_report_xlsx
+msgid "Financial Report"
+msgstr "Informe financiero"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_account_financial_report_tree
+#: model:ir.model,name:account_dynamic_reports.model_ins_financial_report
+#: model:ir.ui.menu,name:account_dynamic_reports.ins_account_financial_report
+#: model:ir.model,name:dynamic_xlsx.model_ins_financial_report
+msgid "Financial Reports"
+msgstr "Reportes financieros"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.report,name:account_dynamic_reports.ins_financial_report_pdf
+msgid "Financial reports"
+msgstr "Reportes financieros"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:145
+#, python-format
+msgid "From date and To date are mandatory to generate this report"
+msgstr "Desde la fecha y Hasta la fecha son obligatorios para generar este informe"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:228
+#, python-format
+msgid "From date and To dates are mandatory for this report"
+msgstr "Desde la fecha y Hasta la fecha son obligatorios para generar este informe"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:151
+#, python-format
+msgid "From date is mandatory to generate this report"
+msgstr "Desde la fecha es obligatorio para generar este informe"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:225
+#, python-format
+msgid "From date must not be less than to date"
+msgstr "Desde la fecha es obligatorio para generar este informe"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:373
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_general_ledger_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_general_ledger
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_gl
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_gl_wiz
+#: model:ir.actions.report,name:dynamic_xlsx.action_ins_general_ledger_xlsx
+#, python-format
+msgid "General Ledger"
+msgstr "Libro mayor"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_gl_report
+msgid "General Ledger Report"
+msgstr "Informe del libro mayor"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: model:ir.model,name:account_dynamic_reports.model_ins_general_ledger
+#: model:ir.model,name:dynamic_xlsx.model_ins_general_ledger
+msgid "General Ledger Reports"
+msgstr "Informe del libro mayor"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "If checked the accounts will act strict to the date range                                     else it will consider initial balance to account"
+msgstr ""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:503
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:746
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1026
+#, python-format
+msgid "Include Details"
+msgstr "Incluir detalles"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:154
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:139
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:504
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1027
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1060
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.trial_balance
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:154
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:139
+#, python-format
+msgid "Initial Balance"
+msgstr "Saldo inicial"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:4
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#, python-format
+msgid "Initial Cash Balance"
+msgstr "Saldo de caja inicial"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+msgid "It will show detailed lines in reports"
+msgstr "Mostrará líneas detalladas en los informes."
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:215
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:184
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:244
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:776
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:223
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:184
+#, python-format
+msgid "JRNL"
+msgstr "JRNL"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:158
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:536
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:158
+#, python-format
+msgid "Journal"
+msgstr "Diario"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:162
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:147
+#: code:addons/account_dynamic_reports/report/report_trial_balance_xlsx.py:157
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:162
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:147
+#: code:addons/dynamic_xlsx/reports/report_trial_balance_xlsx.py:157
+#, python-format
+msgid "Journals"
+msgstr "Revistas"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:151
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:429
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:976
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1342
+#, python-format
+msgid "Journals:"
+msgstr "Revistas"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:210
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:422
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:949
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1333
+#, python-format
+msgid "Last Month"
+msgstr "El mes pasado"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:211
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:423
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:950
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1334
+#, python-format
+msgid "Last Quarter"
+msgstr "Último cuarto"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:209
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:421
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:948
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1332
+#, python-format
+msgid "Last Week"
+msgstr "La semana pasada"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:212
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:424
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:951
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1335
+#, python-format
+msgid "Last Year"
+msgstr "El año pasado"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:221
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:190
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:246
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:778
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:229
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:190
+#, python-format
+msgid "Move"
+msgstr "Movimiento"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:150
+#: code:addons/account_dynamic_reports/report/report_financial_report_xlsx.py:181
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:157
+#: code:addons/dynamic_xlsx/reports/report_financial_report_xlsx.py:188
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:5
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_report_financial
+#, python-format
+msgid "Net Cash Balance"
+msgstr "Saldo de caja neto"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:217
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:499
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:742
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1022
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1379
+#, python-format
+msgid "Options:"
+msgstr "Opciones:"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "PDF"
+msgstr "PDF"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+msgid "Parent Report"
+msgstr "Informe de padres"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:217
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:161
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:186
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:201
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:245
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:849
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:225
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:161
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:186
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:201
+#, python-format
+msgid "Partner"
+msgstr "Empresa"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:656
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_partner_ageing_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_partner_ageing
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pa
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pa_wiz
+#: model:ir.actions.report,name:dynamic_xlsx.action_ins_partner_ageing_xlsx
+#, python-format
+msgid "Partner Ageing"
+msgstr "Envejecimiento de la pareja"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_pa_report
+msgid "Partner Ageing Report"
+msgstr "Informe de envejecimiento de socios"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: model:ir.model,name:account_dynamic_reports.model_ins_partner_ageing
+#: model:ir.model,name:dynamic_xlsx.model_ins_partner_ageing
+msgid "Partner Ageing Reports"
+msgstr "Informes de envejecimiento de socios"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:900
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_partner_ledger_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_partner_ledger
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_plg
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_plg_wiz
+#: model:ir.actions.report,name:dynamic_xlsx.action_ins_partner_ledger_xlsx
+#, python-format
+msgid "Partner Ledger"
+msgstr "Libro mayor de socios"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_plg_report
+msgid "Partner Ledger Report"
+msgstr "Informe del libro mayor de socios"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: model:ir.model,name:account_dynamic_reports.model_ins_partner_ledger
+#: model:ir.model,name:dynamic_xlsx.model_ins_partner_ledger
+msgid "Partner Ledger Reports"
+msgstr "Informe del libro mayor de socios"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:145
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:163
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:145
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:163
+#, python-format
+msgid "Partner Tag"
+msgstr "Etiqueta de socio"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:731
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1011
+#, python-format
+msgid "Partner Tag:"
+msgstr "Etiqueta de socio:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:710
+#, python-format
+msgid "Partner Type:"
+msgstr "Tipo de socio:"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:170
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:137
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:155
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:170
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:137
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:155
+#, python-format
+msgid "Partners"
+msgstr "Socios"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:720
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1000
+#, python-format
+msgid "Partners:"
+msgstr "Socios:"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:705
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:961
+#, python-format
+msgid "Payable Accounts Only"
+msgstr "Solo cuentas a pagar"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:136
+#, python-format
+msgid "Please choose \"Custom Date Range\" for the report head %s"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:562
+#: code:addons/account_dynamic_reports/wizard/general_ledger.py:798
+#: code:addons/account_dynamic_reports/wizard/partner_ageing.py:576
+#: code:addons/account_dynamic_reports/wizard/partner_ledger.py:767
+#: code:addons/account_dynamic_reports/wizard/trial_balance.py:576
+#, python-format
+msgid "Please install a free module \"dynamic_xlsx\".You can get it by contacting \"pycustech@gmail.com\". It is free"
+msgstr ""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:96
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:378
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:661
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:905
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1289
+#, python-format
+msgid "Print (Pdf)"
+msgstr "Imprimir (PDF)"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_profit_and_loss_report
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_pl_report
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pandl
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_pl_wiz
+msgid "Profit and Loss"
+msgstr "Ganancia y perdida"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:704
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:960
+#, python-format
+msgid "Receivable Accounts Only"
+msgstr "Solo cuentas por cobrar"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:134
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:970
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:134
+#, python-format
+msgid "Reconciled"
+msgstr "Reconciliada"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:966
+#, python-format
+msgid "Reconciled:"
+msgstr "Reconciliada:"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.general_ledger
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ledger
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_form
+msgid "Report"
+msgstr "Informe"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.view_ins_account_financial_report_search
+msgid "Report Type"
+msgstr "Tipo de informe"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:221
+#, python-format
+msgid "Show Debit Credit"
+msgstr "Mostrar crédito de débito"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1384
+#, python-format
+msgid "Show hierarchy"
+msgstr "Mostrar jerarquía"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:149
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:149
+#, python-format
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:112
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:130
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:392
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:919
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1303
+#, python-format
+msgid "Start Date :"
+msgstr "Fecha de inicio :"
+
+#. module: account_dynamic_reports
+#: code:addons/account_dynamic_reports/wizard/financial_report.py:264
+#, python-format
+msgid "Start date is mandatory!"
+msgstr "La fecha de inicio es obligatoria"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:715
+#, python-format
+msgid "Suppliers Only"
+msgstr "Solo proveedores"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: code:addons/account_dynamic_reports/report/report_general_ledger_xlsx.py:139
+#: code:addons/account_dynamic_reports/report/report_partner_ledger_xlsx.py:124
+#: code:addons/dynamic_xlsx/reports/report_general_ledger_xlsx.py:139
+#: code:addons/dynamic_xlsx/reports/report_partner_ledger_xlsx.py:124
+#, python-format
+msgid "Target moves"
+msgstr "El objetivo se mueve"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:205
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:417
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:944
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1328
+#, python-format
+msgid "This Month"
+msgstr "Este mes"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:206
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:418
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:945
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1329
+#, python-format
+msgid "This Quarter"
+msgstr "Este cuarto"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:204
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:416
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:943
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1327
+#, python-format
+msgid "This Week"
+msgstr "Esta semana"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:207
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:419
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:946
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1330
+#, python-format
+msgid "This Year"
+msgstr "Este año"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:203
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:415
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:942
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1326
+#, python-format
+msgid "Today"
+msgstr "Hoy"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:168
+#: code:addons/account_dynamic_reports/report/report_partner_ageing_xlsx.py:190
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:596
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:638
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.partner_ageing
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:168
+#: code:addons/dynamic_xlsx/reports/report_partner_ageing_xlsx.py:190
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1284
+#: model:ir.actions.act_window,name:account_dynamic_reports.action_ins_trial_balance_wizard
+#: model:ir.actions.report,name:account_dynamic_reports.action_print_trial_balance
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_tb
+#: model:ir.ui.menu,name:account_dynamic_reports.account_report_tb_wiz
+#: model:ir.actions.report,name:dynamic_xlsx.action_ins_trial_balance_xlsx
+#, python-format
+msgid "Trial Balance"
+msgstr "Balance de prueba"
+
+#. module: account_dynamic_reports
+#: model:ir.actions.client,name:account_dynamic_reports.action_dynamic_allinone_tb_report
+msgid "Trial Balance Report"
+msgstr ""
+
+#. modules: account_dynamic_reports, dynamic_xlsx
+#: model:ir.model,name:account_dynamic_reports.model_ins_trial_balance
+#: model:ir.model,name:dynamic_xlsx.model_ins_trial_balance
+msgid "Trial Balance Reports"
+msgstr "Informe de balance de comprobación"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:271
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:330
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:554
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:606
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:803
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:862
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1088
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1166
+#, python-format
+msgid "Unfolded"
+msgstr "Desplegada"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:971
+#, python-format
+msgid "Unreconciled"
+msgstr "No reconciliado"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "VIEW"
+msgstr "VER"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:67
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1095
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1174
+#, python-format
+msgid "View General Ledger"
+msgstr "Ver libro mayor"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:278
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:561
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:810
+#, python-format
+msgid "View Source move"
+msgstr "Ver movimiento de fuente"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1029
+#, python-format
+msgid "With Balance < Zero"
+msgstr "Con saldo <cero"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1030
+#, python-format
+msgid "With Balance > Zero"
+msgstr "Con Balance> Cero"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:505
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1028
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1383
+#, python-format
+msgid "With Balance not Zero"
+msgstr "Con Balance no Cero"
+
+#. module: account_dynamic_reports
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_financial_report_wiz_modified
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ageing_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_partner_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_dynamic_reports.ins_trial_balance_wizard
+msgid "XLSX"
+msgstr "XLSX"
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:208
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:420
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:947
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1331
+#, python-format
+msgid "Yesterday"
+msgstr "Ayer"
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_general_ledger
+msgid "report.account_dynamic_reports.general_ledger"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_partner_ageing
+msgid "report.account_dynamic_reports.partner_ageing"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_partner_ledger
+msgid "report.account_dynamic_reports.partner_ledger"
+msgstr ""
+
+#. module: account_dynamic_reports
+#: model:ir.model,name:account_dynamic_reports.model_report_account_dynamic_reports_trial_balance
+msgid "report.account_dynamic_reports.trial_balance"
+msgstr ""
+
+#. module: dynamic_xlsx
+#: model:ir.model,name:dynamic_xlsx.model_report_dynamic_xlsx_ins_financial_report_xlsx
+msgid "report.dynamic_xlsx.ins_financial_report_xlsx"
+msgstr ""
+
+#. module: dynamic_xlsx
+#: model:ir.model,name:dynamic_xlsx.model_report_dynamic_xlsx_ins_general_ledger_xlsx
+msgid "report.dynamic_xlsx.ins_general_ledger_xlsx"
+msgstr ""
+
+#. module: dynamic_xlsx
+#: model:ir.model,name:dynamic_xlsx.model_report_dynamic_xlsx_ins_partner_ageing_xlsx
+msgid "report.dynamic_xlsx.ins_partner_ageing_xlsx"
+msgstr ""
+
+#. module: dynamic_xlsx
+#: model:ir.model,name:dynamic_xlsx.model_report_dynamic_xlsx_ins_partner_ledger_xlsx
+msgid "report.dynamic_xlsx.ins_partner_ledger_xlsx"
+msgstr ""
+
+#. module: dynamic_xlsx
+#: model:ir.model,name:dynamic_xlsx.model_report_dynamic_xlsx_ins_trial_balance_xlsx
+msgid "report.dynamic_xlsx.ins_trial_balance_xlsx"
+msgstr ""
+
+#. module: account_dynamic_reports
+#. openerp-web
+#: code:addons/account_dynamic_reports/static/src/xml/view.xml:1061
+#, python-format
+msgid "to"
+msgstr ""
+

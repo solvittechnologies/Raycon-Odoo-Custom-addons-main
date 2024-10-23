@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../blc/.idea/blc.iml" filepath="$PROJECT_DIR$/../blc/.idea/blc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../project_costing/.idea/project_costing.iml" filepath="$PROJECT_DIR$/../project_costing/.idea/project_costing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../purchase_request/.idea/purchase_request.iml" filepath="$PROJECT_DIR$/../purchase_request/.idea/purchase_request.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,295 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_batch_deposit
+# 
+# Translators:
+# ExcaliberX <excaliberx@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Moshe Flam <pashute@gmail.com>, 2017
+# Yihya Hugirat <hugirat@gmail.com>, 2017
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-03 14:36+0000\n"
+"PO-Revision-Date: 2016-09-07 13:35+0000\n"
+"Last-Translator: Yihya Hugirat <hugirat@gmail.com>, 2017\n"
+"Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/models/account_payment.py:42
+#, python-format
+msgid ""
+"All payments to print as a deposit slip must belong to the same journal."
+msgstr "כל התשלומים להדפסה כפיקדון להפקיד חייבים להיות שייכים לאותו גורנאל."
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_amount
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+msgid "Amount"
+msgstr "סכום"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,help:account_batch_deposit.field_account_journal_batch_deposit_sequence_id
+msgid "Automatically generates references for batch deposits."
+msgstr "מייצר באופן אוטומטי הפניות עבור הפקדות אצווה."
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_journal_id
+msgid "Bank"
+msgstr "בנק"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Bank Journal"
+msgstr "יומן הבנק"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "דף חשבון"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "תנועה בדף החשבון"
+
+#. module: account_batch_deposit
+#: model:account.payment.method,name:account_batch_deposit.account_payment_method_batch_deposit
+#: model:ir.actions.act_window,name:account_batch_deposit.action_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_batch_deposit
+#: model:ir.ui.menu,name:account_batch_deposit.menu_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.account_journal_dashboard_kanban_view_inherited
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Batch Deposit"
+msgstr "הפקדת אצווה"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_journal_batch_deposit_sequence_id
+msgid "Batch Deposit Sequence"
+msgstr "הרצף המספרי של הפקדת אצווה"
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/models/account_journal.py:43
+#, python-format
+msgid "Batch Deposits Sequence"
+msgstr "הרצף המספרי של הפקדות אצווה"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_payment_batch_deposit_id
+msgid "Batch deposit id"
+msgstr "מספר זיהוי הפקדת אצווה"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_journal_batch_deposit_payment_method_selected
+msgid "Batch deposit payment method selected"
+msgstr "שיטת תשלום נבחרת להפקדת אצווה"
+
+#. module: account_batch_deposit
+#: model:ir.actions.act_window,help:account_batch_deposit.action_batch_deposit
+msgid ""
+"Batch deposits allows you to group received checks before you deposit them to the bank.\n"
+"                    The amount deposited to your bank will then appear as a single transaction on your bank statement.\n"
+"                    When you proceed with the reconciliation, simply select the corresponding batch deposit to reconcile the payments."
+msgstr ""
+"הפקדות אצווה מאפשרות לכם לקבץ יחד שיקים שהתקבלו בטרם הפקדתם אותם בבנק. \n"
+"הסכום המופקד לבנק יופיע כתנועה אחת בדף החשבון.\n"
+"כאשר תתחילו את תהליך ההתאמה החשבונאית, בחרו את אצוות ההפקדה המתאימה, על מנת לבצע התאמה ממוחשבת בין  התשלומים שהתקבלו לשיקים המופקדים. "
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/models/account_journal.py:68
+#: model:ir.actions.server,name:account_batch_deposit.action_account_create_batch_deposit
+#, python-format
+msgid "Create Batch Deposit"
+msgstr "צור הפקדת אצווה"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_create_uid
+msgid "Created by"
+msgstr "נוצר על ידי"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_create_date
+msgid "Created on"
+msgstr "נוצר בתאריך "
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_currency_id
+msgid "Currency id"
+msgstr "מזהה סוג מטבע"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Customer"
+msgstr "לקוח"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_date
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+msgid "Date"
+msgstr "תאריך"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_display_name
+#: model:ir.model.fields,field_description:account_batch_deposit.field_report_account_batch_deposit_print_batch_deposit_display_name
+msgid "Display Name"
+msgstr "השם המוצג"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Group By"
+msgstr "קבץ לפי"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_id
+#: model:ir.model.fields,field_description:account_batch_deposit.field_report_account_batch_deposit_print_batch_deposit_id
+msgid "ID"
+msgstr "מספר זיהוי"
+
+#. module: account_batch_deposit
+#. openerp-web
+#: code:addons/account_batch_deposit/static/src/js/account_reconciliation_widgets.js:94
+#, python-format
+msgid "Incorrect Operation"
+msgstr "פעולה שגויה"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_journal
+msgid "Journal"
+msgstr "יומן"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit___last_update
+#: model:ir.model.fields,field_description:account_batch_deposit.field_report_account_batch_deposit_print_batch_deposit___last_update
+msgid "Last Modified on"
+msgstr "תאריך שינוי אחרון"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_write_uid
+msgid "Last Updated by"
+msgstr "עודכן לאחרונה על ידי"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_write_date
+msgid "Last Updated on"
+msgstr "עודכן לאחרונה בתאריך"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+msgid "Memo"
+msgstr "הערה"
+
+#. module: account_batch_deposit
+#: selection:account.batch.deposit,state:0
+msgid "New"
+msgstr "חדש"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_payment
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_payment_ids
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Payments"
+msgstr "תשלומים"
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/models/account_payment.py:38
+#, python-format
+msgid ""
+"Payments to print as a deposit slip must have 'Batch Deposit' selected as "
+"payment method, not be part of an existing batch deposit and not have "
+"already been reconciled"
+msgstr ""
+"תשלומים להדפסה כ שובר הפקדה, צריך לבחור 'הפקדת אצווה' כשיטה תשלום, לא להיות "
+"חלק מהפקדת אצווה קיימת וכבר לא הותאם "
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Print"
+msgstr "הדפס"
+
+#. module: account_batch_deposit
+#: model:ir.actions.report.xml,name:account_batch_deposit.action_print_batch_deposit
+msgid "Print Batch Deposit"
+msgstr "הדפס הפקדת אצווה"
+
+#. module: account_batch_deposit
+#: model:ir.actions.server,name:account_batch_deposit.action_account_print_batch_deposit
+msgid "Print Batch Deposits"
+msgstr "הדפס הפקדות אצווה"
+
+#. module: account_batch_deposit
+#: selection:account.batch.deposit,state:0
+msgid "Printed"
+msgstr "הודפס"
+
+#. module: account_batch_deposit
+#: selection:account.batch.deposit,state:0
+msgid "Reconciled"
+msgstr "עבר התאמה חשבונאית"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_name
+msgid "Reference"
+msgstr "אסמכתא"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Register Payment"
+msgstr "רשום תשלום"
+
+#. module: account_batch_deposit
+#. openerp-web
+#: code:addons/account_batch_deposit/static/src/xml/account_reconciliation.xml:8
+#, python-format
+msgid "Select a Batch Deposit"
+msgstr "בחר הפקדת אצווה"
+
+#. module: account_batch_deposit
+#. openerp-web
+#: code:addons/account_batch_deposit/static/src/js/account_reconciliation_widgets.js:91
+#, python-format
+msgid ""
+"Some journal items from the selected batch deposit are already selected in "
+"another reconciliation : "
+msgstr "חלק מפקודות היומן מהפקדות האצווה שנבחרו, נבחרו כבר בהתאמות אחרות:"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_state
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "State"
+msgstr "מחוז"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,help:account_batch_deposit.field_account_journal_batch_deposit_payment_method_selected
+msgid ""
+"Technical feature used to know whether batch deposit was enabled as payment "
+"method."
+msgstr "תכונה טכנית המשמשת כדי לדעת אם הפקדה אצווה הופעלה כשיטת התשלום."
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Total"
+msgstr "סך הכל"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Unreconciled"
+msgstr "לא מותאם"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "auto ..."
+msgstr "אוטומטי ..."
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_report_account_batch_deposit_print_batch_deposit
+msgid "report.account_batch_deposit.print_batch_deposit"
+msgstr ""

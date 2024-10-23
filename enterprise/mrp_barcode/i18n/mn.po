@@ -1,0 +1,185 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_barcode
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2017
+# Batzul B <batzul.active@gmail.com>, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# nasaaskii <nasaaskii@gmail.com>, 2017
+# BATKHUYAG GANBOLD <gbatkhuyag@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: BATKHUYAG GANBOLD <gbatkhuyag@gmail.com>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mrp_barcode
+#: model:ir.model.fields,field_description:mrp_barcode.field_stock_move_product_barcode
+msgid "Barcode"
+msgstr "Зураасан код"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:44
+#, python-format
+msgid "Can not find consumed material for this corresponding barcode %s."
+msgstr "%s бар кодоор зарлагадсан материал олдсонгүй."
+
+#. module: mrp_barcode
+#: model:ir.model.fields,help:mrp_barcode.field_stock_move_product_barcode
+msgid "International Article Number used for product identification."
+msgstr "Барааны Олон улсын хувийн дугаар"
+
+#. module: mrp_barcode
+#: model:ir.model.fields,field_description:mrp_barcode.field_stock_move_lots_lot_barcode
+msgid "Lot/Serial Number"
+msgstr "Цувралын дугаар"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:39
+#, python-format
+msgid "Manufacturing %s"
+msgstr "Үйлдвэрлэж байна %s"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Үйлдвэрлэлийн Захиалга"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:33
+#, python-format
+msgid "No found"
+msgstr "Олдсонгүй"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:82
+#, python-format
+msgid "No lot found"
+msgstr "Бараа олдсонгүй"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/controllers/main.py:22
+#, python-format
+msgid "No picking or manufacturing corresponding to barcode %(barcode)s"
+msgstr ""
+"%(barcode)s баркодтой үйлдвэрлэж буй болон хүлээн авсан мэдээлэл алга."
+
+#. module: mrp_barcode
+#: model:ir.actions.act_window,name:mrp_barcode.mrp_production_form_action_barcode
+#: model:ir.actions.act_window,name:mrp_barcode.mrp_production_kanban_mrp_barcode
+msgid "Operations"
+msgstr "Ажиллагаанууд"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_stock_move_lots
+msgid "Quantities to Process by lots"
+msgstr "Цувралаар Боловсруулах Тоо хэмжээ"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_mrp_product_produce
+msgid "Record Production"
+msgstr "Үйлдвэрлэлийг Хөтлөх"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_stock_move
+msgid "Stock Move"
+msgstr "Нөөцийн хөдөлгөөн"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:39
+#, python-format
+msgid "The manufacturing order is %s and cannot be edited."
+msgstr "Үйлдвэрлэлийн захиалга %s өөрчлөх боломжгүй."
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_stock_picking_type
+msgid "The picking type determines the picking view"
+msgstr "Бэлтгэх төрөл нь бэлтгэх баримтын харагдацийг тодорхойлно"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:34
+#, python-format
+msgid "There is no lot for %s barcode"
+msgstr "%sбаркодтой бараа алга байна"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_mrp_workorder.py:39
+#, python-format
+msgid ""
+"There is no lot for these product for corresponding barcode %(barcode)s"
+msgstr "%(barcode)s баркодтой бараа материал байхгүй байна."
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:83
+#, python-format
+msgid ""
+"There is no production lot for \"%(product)s\" corresponding to "
+"\"%(barcode)s\""
+msgstr ""
+"%(barcode)s бүтээгдэхүүнтэй хамааралтай %(product)s бараа материал байхгүй "
+"байна."
+
+#. module: mrp_barcode
+#: model:ir.ui.view,arch_db:mrp_barcode.stock_picking_type_kanban_mrp_barcodee
+msgid "To Do"
+msgstr "Хийх"
+
+#. module: mrp_barcode
+#: model:ir.model.fields,help:mrp_barcode.field_stock_move_lots_lot_barcode
+msgid "Unique Lot/Serial Number"
+msgstr "Давтагдахгүй цувралын дугаар"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:45
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:122
+#, python-format
+msgid "Warning"
+msgstr "Сануулга"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_mrp_workorder
+msgid "Work Order"
+msgstr "Ажлын Захиалга"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_mrp_workorder.py:27
+#: code:addons/mrp_barcode/models/inherited_mrp_workorder.py:32
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:58
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:73
+#, python-format
+msgid "You have already scanned the serial number \"%(barcode)s\""
+msgstr "%(barcode)s сериал дугаарыг оруулсан байна."
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:57
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:72
+#, python-format
+msgid "You have entered this serial number already"
+msgstr "Энэ сериал дугаарыг Та оруулсан байна"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/xml/mrp_barcode.xml:4
+#, python-format
+msgid "and"
+msgstr "мөн"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/xml/mrp_barcode.xml:6
+#, python-format
+msgid "mrp barcodes sheet"
+msgstr "mrp баркодын хүснэгт"

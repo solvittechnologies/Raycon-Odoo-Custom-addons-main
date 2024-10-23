@@ -1,0 +1,29 @@
+-
+    Creating demo data that require looking for accounts
+-
+    !python {model: ir.model.data, id: False} : |
+        rev_account_id = self.env['account.account'].search([('user_type_id', '=', ref('account.data_account_type_revenue'))], limit=1).id
+        rec_account_id = self.env['account.account'].search([('user_type_id', '=', ref('account.data_account_type_receivable'))], limit=1).id
+        if rev_account_id and rec_account_id:
+            import time
+            vals = {
+                'company_id': ref('base.main_company'),
+                'partner_id': ref('portal.partner_demo_portal'),
+                'currency_id': ref('base.EUR'),
+                'type': 'out_invoice',
+                'date_invoice': time.strftime('%Y')+'-01-01',
+                'account_id': rec_account_id,
+                'payment_term_id': ref('account.account_payment_term'),
+            }
+            self._update('account.invoice', 'website_portal_followup', vals, 'followup_demo_invoice_1')
+            vals = {
+                'name': 'Dell Inspiron Laptop without OS',
+                'product_id': ref('product.consu_delivery_03'),
+                'price_unit': 642.0,
+                'quantity': 5,
+                'invoice_id': ref('followup_demo_invoice_1'),
+                'account_id': rev_account_id,
+            }
+            self._update('account.invoice.line', 'website_portal_followup', vals, 'followup_demo_invoice_line_1')
+            self.env['account.invoice'].browse(ref('followup_demo_invoice_1')).action_invoice_open()
+            self.env['account.invoice'].browse(ref('followup_demo_invoice_1')).message_subscribe([ref('portal.partner_demo_portal')])

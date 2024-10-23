@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_phonecall_manager,crm_phonecall_manager,model_crm_phonecall,sales_team.group_sale_manager,1,1,1,1
+access_crm_phonecall_salesman,crm_phonecall_salesman,model_crm_phonecall,sales_team.group_sale_salesman,1,1,1,0
+access_crm_phonecall_user,crm_phonecall_user,model_crm_phonecall,base.group_user,1,1,1,0
+access_crm_phonecall_report_manager,crm_phonecall_report_manager,model_crm_phonecall_report,sales_team.group_sale_manager,1,1,1,1
+access_crm_phonecall_report_salesman,crm_phonecall_report_salesman,model_crm_phonecall_report,sales_team.group_sale_salesman,1,1,1,0
+access_crm_phonecall_report_user,crm_phonecall_report_user,model_crm_phonecall_report,base.group_user,1,0,0,0

@@ -1,0 +1,186 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_barcode
+# 
+# Translators:
+# Mahmoud M. Soliman <mahmoud_soliman4@alex-comm.edu.eg>, 2016
+# Mustafa Rawi <mustafa@cubexco.com>, 2016
+# Mohammed Ibrahim <m.ibrahim@mussder.com>, 2016
+# Akram Alfusayal <akram_ma@hotmail.com>, 2016
+# Martin Trigaux, 2016
+# Shaima Safar <shaima.safar@open-inside.com>, 2017
+# nle_odoo, 2017
+# zahi chemaly <zahi@sercotex.net>, 2017
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:40+0000\n"
+"Last-Translator: zahi chemaly <zahi@sercotex.net>, 2017\n"
+"Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: mrp_barcode
+#: model:ir.model.fields,field_description:mrp_barcode.field_stock_move_product_barcode
+msgid "Barcode"
+msgstr "باركود"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:44
+#, python-format
+msgid "Can not find consumed material for this corresponding barcode %s."
+msgstr "لا يمكن العثور على المواد المستهلكة لهذا الباركود s%"
+
+#. module: mrp_barcode
+#: model:ir.model.fields,help:mrp_barcode.field_stock_move_product_barcode
+msgid "International Article Number used for product identification."
+msgstr "رقم المادة الدولي المستخدم لتحديد المنتج."
+
+#. module: mrp_barcode
+#: model:ir.model.fields,field_description:mrp_barcode.field_stock_move_lots_lot_barcode
+msgid "Lot/Serial Number"
+msgstr "الحصة/الرقم المسلسل"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:39
+#, python-format
+msgid "Manufacturing %s"
+msgstr "التصنيع s%"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "أمر الإنتاج"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:33
+#, python-format
+msgid "No found"
+msgstr "لم يوجد"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:82
+#, python-format
+msgid "No lot found"
+msgstr "لم يتم العثور على الكثير"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/controllers/main.py:22
+#, python-format
+msgid "No picking or manufacturing corresponding to barcode %(barcode)s"
+msgstr "لا قطف أو تصنيع المقابلة الباركود  %(barcode)s"
+
+#. module: mrp_barcode
+#: model:ir.actions.act_window,name:mrp_barcode.mrp_production_form_action_barcode
+#: model:ir.actions.act_window,name:mrp_barcode.mrp_production_kanban_mrp_barcode
+msgid "Operations"
+msgstr "العمليات"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_stock_move_lots
+msgid "Quantities to Process by lots"
+msgstr "كميات للتصنيع على حدة"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_mrp_product_produce
+msgid "Record Production"
+msgstr "تسجيل الإنتاج"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_stock_move
+msgid "Stock Move"
+msgstr "حركة المخزون"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:39
+#, python-format
+msgid "The manufacturing order is %s and cannot be edited."
+msgstr "أمر التصنيع هو s% ولا يمكن تحريره."
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_stock_picking_type
+msgid "The picking type determines the picking view"
+msgstr "نوع الالتقاط يحدد عرض الالتقاط "
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:34
+#, python-format
+msgid "There is no lot for %s barcode"
+msgstr "ليس هناك حصة للباركود s%"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_mrp_workorder.py:39
+#, python-format
+msgid ""
+"There is no lot for these product for corresponding barcode %(barcode)s"
+msgstr ""
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:83
+#, python-format
+msgid ""
+"There is no production lot for \"%(product)s\" corresponding to "
+"\"%(barcode)s\""
+msgstr ""
+
+#. module: mrp_barcode
+#: model:ir.ui.view,arch_db:mrp_barcode.stock_picking_type_kanban_mrp_barcodee
+msgid "To Do"
+msgstr "في انتظار التنفيذ"
+
+#. module: mrp_barcode
+#: model:ir.model.fields,help:mrp_barcode.field_stock_move_lots_lot_barcode
+msgid "Unique Lot/Serial Number"
+msgstr "لوط فريد / الرقم التسلسلي"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:45
+#: code:addons/mrp_barcode/static/src/js/mrp_barcode_handler.js:122
+#, python-format
+msgid "Warning"
+msgstr "تحذير"
+
+#. module: mrp_barcode
+#: model:ir.model,name:mrp_barcode.model_mrp_workorder
+msgid "Work Order"
+msgstr "امر العمل"
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_mrp_workorder.py:27
+#: code:addons/mrp_barcode/models/inherited_mrp_workorder.py:32
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:58
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:73
+#, python-format
+msgid "You have already scanned the serial number \"%(barcode)s\""
+msgstr "لقد تم مسحها ضوئيا بالفعل الرقم التسلسلي \"٪ (الباركود) s\""
+
+#. module: mrp_barcode
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:57
+#: code:addons/mrp_barcode/models/inherited_stock_move.py:72
+#, python-format
+msgid "You have entered this serial number already"
+msgstr "لقد دخلت هذا الرقم التسلسلي بالفعل"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/xml/mrp_barcode.xml:4
+#, python-format
+msgid "and"
+msgstr "و"
+
+#. module: mrp_barcode
+#. openerp-web
+#: code:addons/mrp_barcode/static/src/xml/mrp_barcode.xml:6
+#, python-format
+msgid "mrp barcodes sheet"
+msgstr ""

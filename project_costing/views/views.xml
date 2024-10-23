@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+<!--    <record id="project_costing" model="ir.actions.act_window">-->
+<!--      <field name="name">Project Costing</field>-->
+<!--            <field name="res_model">project_cost.project_cost</field>-->
+<!--&lt;!&ndash;            <field name="view_type">form</field>&ndash;&gt;-->
+<!--            <field name="view_mode">tree,form</field>-->
+<!--    </record>-->
+            <record id="element_view_tree" model="ir.ui.view">
+          <field name="name">element_view_tree</field>
+          <field name="model">project.element</field>
+          <field name="arch" type="xml">
+              <tree editable="bottom">
+                  <field name="name"/>
+                  <field name="category"/>
+              </tree>
+          </field>
+      </record>
+      <record id="element_category_view_tree" model="ir.ui.view">
+          <field name="name">element_category_view_tree</field>
+          <field name="model">project.element.category</field>
+          <field name="arch" type="xml">
+              <tree editable="bottom">
+                  <field name="name"/>
+              </tree>
+          </field>
+      </record>
+      <record id="element_category" model="ir.actions.act_window">
+      <field name="name">Project Element Category</field>
+            <field name="res_model">project.element.category</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+            <record id="element" model="ir.actions.act_window">
+      <field name="name">Project Element</field>
+            <field name="res_model">project.element</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+      <record id="project_material" model="ir.actions.act_window">
+      <field name="name">Project Material</field>
+            <field name="res_model">project.material</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+      <record id="project_plant" model="ir.actions.act_window">
+      <field name="name">Project Plant</field>
+            <field name="res_model">project.plant</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+      <record id="project_expenses" model="ir.actions.act_window">
+      <field name="name">Project Expenses</field>
+            <field name="res_model">project.expenses</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+      <record id="project_subcontract" model="ir.actions.act_window">
+      <field name="name">Project Sub Contractor</field>
+            <field name="res_model">project.subcontract</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+
+      <record id="cost_of_boq_" model="ir.actions.act_window">
+      <field name="name">Project Cost Of BOQ</field>
+            <field name="res_model">project.costofboq</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+
+          <record id="project_budget_action" model="ir.actions.act_window">
+      <field name="name">Project Budget</field>
+            <field name="res_model">project.budget</field>
+<!--            <field name="view_type">form</field>-->
+            <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!-- model.name tree view -->
+    <record id="project_budget_tree" model="ir.ui.view">
+      <field name="name">Project Budget</field>
+      <field name="model">project.budget</field>
+      <field name="arch" type="xml">
+                        <tree string="Project Budget" editable="bottom">
+                                           <field name="element_no"/>
+                                           <field name="category"/>
+                                            <field name="element"/>
+                            <field name="item"/>
+                                            <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="unit"/>
+                                            <field name="cost_qob_rate"/>
+                                            <field name="cost_qob_amount" sum="Total"/>
+                                            <field name="material_rate"/>
+                                            <field name="material_amount" sum="Total"/>
+                                            <field name="labour_rate"/>
+                             <field name="labour_amount" sum="Total"/>
+                                             <field name="plant_amount" string="Plant Amount"/>
+                                            <field name="subcontractor_rate" string="Subcontractor Rate" sum="Total"/>
+                                            <field name="subcontractor_amount" sum="Total"/>
+                            <field name="target_cost" sum="Total"/>
+
+                            <field name="project_id"/>
+
+<!--                                            <field name="actual_amount"/>-->
+                                        </tree>
+      </field>
+    </record>
+
+      <record model="ir.ui.view" id="form_2_2">
+            <field name="name">Cost Of BOQ Form</field>
+            <field name="model">project.costofboq</field>
+            <field name="arch" type="xml">
+                <form string="Idea form">
+                    <sheet>
+                        <group colspan="4">
+                            <group colspan="2" col="4">
+                                <separator string="BOQ Name" colspan="4"/>
+                                <field name="name" String="Project"/>
+                                <field name="project" String="Project Manger" colspan="2"/>
+                                <field name="amount" readonly="1" />
+<!--                                <field name="description"/>-->
+                            </group>
+
+                            <group colspan="2" col="4">
+<!--                                <separator string="Description" colspan="4"/>-->
+                                <field name="description"/>
+                                <!--                <field name="lecturer" readonly="1"/>-->
+                            </group>
+                            <separator string="Cost Of BOQ" colspan="4"/>
+                            <notebook colspan="4">
+                                <page string="Cost of BOQ">
+
+                                    <field
+                                            name="boq_lines"
+                                            nolabel="1"
+                                            widget="one2many"
+                                            mode="tree,kanban"
+                                            wiget="section_and_note_many2one">
+
+                                         <tree string="Cost OF BOQ lines" editable="bottom">
+                                            <control>
+                                                <create string="Add a line"/>
+                                                <create string="Add a section"
+                                                        context="{'default_display_type': 'line_section'}"/>
+<!--                                                <create string="Add a note"-->
+<!--                                                        context="{'default_display_type': 'line_note'}"/>-->
+                                            </control>
+                                            <field name="element"/>
+                                             <field name="description"/>
+                                            <field name="quantity"/>
+                                            <field name="unit"/>
+                                            <field name="rate"/>
+                                            <field name="amount"/>
+                                            <field name="actual_amount"/>
+                                            <field name="budget_amount"/>
+
+<!--                                            <field name="actual_amount"/>-->
+                                        </tree>
+
+                                    </field>
+
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+
+      <menuitem name="Project Costing" id="project_costing.menu_root" web_icon="project_costing,static/description/icon.png"
+      groups="project_costing.group_project_costing_user"/>
+      <menuitem sequence="4"
+              name="Master Data"
+              id="project_costing_master"
+              parent="project_costing.menu_root" groups="project_costing.group_project_costing_user"/>
+      <menuitem sequence="3"
+              name="Project Costing"
+              id="project_costing.list"
+              parent="project_costing_master" groups="project_costing.group_project_costing_manager"/>
+
+
+             <menuitem sequence="2"
+              name="Project Budget"
+              parent="project_costing_master"
+              id="project_budget_menu"
+              action="project_budget_action" groups="project_costing.group_project_costing_manager"/>
+
+      <menuitem
+              name="ProjectElement"
+              parent="project_costing_master"
+              id="element_menu"
+              action="element"/>
+      <menuitem
+              name="ProjectElementCategory"
+              parent="project_costing_master"
+              id="category_menu"
+              action="element_category"/>
+
+<!--      <menuitem sequence="2"-->
+<!--              name="Project Material"-->
+<!--              id="project_material_list"-->
+<!--              parent="project_costing.list"-->
+<!--              action="project_material"/>-->
+
+<!--      <menuitem sequence="3"-->
+<!--              name="Project Plant"-->
+<!--              id="project_plant_list"-->
+<!--              parent="project_costing.list"-->
+<!--              action="project_plant"/>-->
+
+<!--      <menuitem sequence="4"-->
+<!--              name="Project Expenses"-->
+<!--              id="project_expenses_list"-->
+<!--              parent="project_costing.list"-->
+<!--              action="project_expenses"/>-->
+
+<!--      <menuitem sequence="5"-->
+<!--              name="Project Sub Contractor"-->
+<!--              id="project_subcontract_list"-->
+<!--              parent="project_costing.list"-->
+<!--              action="project_subcontract"/>-->
+
+
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="project_costing.menu_1_list" parent="project_costing.menu_1"
+              action="project_costing.action_window"/>
+    <menuitem name="Server to list" id="project_costing" parent="project_costing.menu_2"
+              action="project_costing.action_server"/>
+-->
+  </data>
+</odoo>

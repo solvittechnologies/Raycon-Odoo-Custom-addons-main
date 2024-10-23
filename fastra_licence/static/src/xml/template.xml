@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <t t-extend="AppsMenu">
+        <t t-jquery=".dropdown-menu" t-operation="prepend">
+            <div
+                class="alert alert-info database_block_warning_message"
+                style="display: none"
+            />
+            <div style="display: none">
+                <div
+                    class="block_ui database_block_message alert alert-danger"
+                    onclick="$('a.full').trigger('click');"
+                >Your database is blocked</div>
+            </div>
+        </t>
+    </t>
+</template>

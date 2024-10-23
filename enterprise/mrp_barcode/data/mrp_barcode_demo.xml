@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="product.product_product_27" model="product.product">
+            <field name="barcode">9873031254663</field> <!-- Laptop Customize -->
+        </record>
+        <record id="mrp.product_product_laptop_charger" model="product.product">
+            <field name="barcode">9789878466514</field> <!-- Laptop Charger -->
+        </record>
+        <record id="mrp.product_product_laptop_keypad" model="product.product">
+            <field name="barcode">1312465423164</field> <!-- Laptop Keypad -->
+        </record>
+        <record id="mrp.product_product_19" model="product.product">
+            <field name="barcode">6548978946196</field> <!-- HDD On Demand -->
+        </record>
+        <record id="product.product_product_17" model="product.product">
+            <field name="barcode">5478592110363</field> <!-- HDD SH-1 -->
+        </record>
+        <record id="mrp.product_product_computer_desk_head" model="product.product">
+            <field name="barcode">7845854641328</field> <!-- Table Head -->
+            <field name="tracking">lot</field>
+        </record>
+        <record id="mrp.product_product_computer_desk" model="product.product">
+            <field name="barcode">8798465112398</field> <!-- Computer Desk -->
+        </record>
+
+        <record id="mrp.lot_product_27_0" model="stock.production.lot">
+            <field name="name">LOT-000003</field>
+            <field name="ref">LOT-000003</field>
+        </record>
+        <record id="mrp.lot_product_27_1" model="stock.production.lot">
+            <field name="name">LOT-000004</field>
+            <field name="ref">LOT-000004</field>
+        </record>
+        <record id="mrp.lot_product_laptop_charger" model="stock.production.lot">
+            <field name="name">LOT-000005</field>
+            <field name="ref">LOT-000005</field>
+        </record>
+        <record id="mrp.lot_product_laptop_keypad" model="stock.production.lot">
+            <field name="name">LOT-000006</field>
+            <field name="ref">LOT-000006</field>
+        </record>
+    </data>
+</odoo>

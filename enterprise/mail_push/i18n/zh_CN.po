@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mail_push
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# hman tsao <herman.tsao@gmail.com>, 2016
+# e2f <projects@e2f.com>, 2018
+# 珠海-杜哥 <liangjia@qq.com>, 2018
+# keecome <7017511@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: keecome <7017511@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.inherited_view_partner_form
+msgid "Cloud Messaging"
+msgstr "云消息"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_name
+msgid "Device Name"
+msgstr "设备名称"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_partner_device_identity_ids
+msgid "Device identities"
+msgstr "设备标识符"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_channel
+msgid "Discussion channel"
+msgstr "讨论频道"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.inherited_view_general_configuration
+msgid "Generate API and Sender ID"
+msgstr "生成 API 和发送者 ID"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.inherited_view_general_configuration
+msgid "Google Firebase Push Notification"
+msgstr "谷歌Firebase推送通知"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP 路由"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device___last_update
+msgid "Last Modified on"
+msgstr "最后修改日"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_service_type
+msgid "Notification Service"
+msgstr "通知服务"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_res_partner
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_partner_id
+msgid "Partner"
+msgstr "业务伙伴"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_base_config_settings_fcm_project_id
+msgid "Sender ID"
+msgstr "发送者 ID"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_base_config_settings_fcm_api_key
+msgid "Server API Key"
+msgstr "服务器 API 密钥"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_subscription_id
+msgid "Subscription ID"
+msgstr "订阅 ID"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_base_config_settings
+msgid "base.config.settings"
+msgstr "base.config.settings"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_push_device
+msgid "mail_push.device"
+msgstr "mail_push.device"

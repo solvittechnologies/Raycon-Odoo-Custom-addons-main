@@ -1,0 +1,235 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_maintenance
+# 
+# Translators:
+# Martin Trigaux, 2016
+# fanha99 <fanha99@hotmail.com>, 2016
+# Duy BQ <duybq86@gmail.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workorder_view_form_inherit_maintenance
+msgid "<span class=\"o_stat_text\">Maintenance Request</span>"
+msgstr "<span class=\"o_stat_text\">Yêu cầu bảo trì</span>"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_production_view_form_inherit_maintenance
+msgid "<span class=\"o_stat_text\">Maintenance</span>"
+msgstr "<span class=\"o_stat_text\">Bảo trì</span>"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,help:mrp_maintenance.field_maintenance_equipment_estimated_next_failure
+msgid "Computed as Latest Failure Date + MTBF"
+msgstr "Tính là Ngày hỏng gần nhất + MTBF"
+
+#. module: mrp_maintenance
+#: model:maintenance.equipment,name:mrp_maintenance.equipment_furniture1
+msgid "Crosscut Saw: 8 ppi."
+msgstr "Cưa cắt ngang: 8 ppi."
+
+#. module: mrp_maintenance
+#: model:maintenance.equipment,name:mrp_maintenance.equipment_furniture3
+msgid "Drill Machine"
+msgstr "Máy khoan"
+
+#. module: mrp_maintenance
+#: model:ir.model,name:mrp_maintenance.model_maintenance_equipment
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workcenter_view_form_inherit_maintenance
+msgid "Equipment"
+msgstr "Thiết bị"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workcenter_view_form_inherit_maintenance
+msgid "Equipments"
+msgstr "Thiết bị"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workcenter_view_form_inherit_maintenance
+msgid "Est. Next Failure"
+msgstr "Dự kiến lần hỏng kế tiếp"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "Estimated Next Failure"
+msgstr "Dự kiến hỏng kế tiếp"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_equipment_estimated_next_failure
+msgid "Estimated time before next failure (in days)"
+msgstr "Dự kiến thời gian trước khi hỏng tiếp theo (tính theo ngày)"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_equipment_expected_mtbf
+msgid "Expected MTBF"
+msgstr "Dự kiến thời gian trung bình giữa các lần hỏng"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,help:mrp_maintenance.field_maintenance_equipment_expected_mtbf
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "Expected Mean Time Between Failure"
+msgstr "Thời gian trung bình dự kiến giữa các lần hỏng"
+
+#. module: mrp_maintenance
+#: model:maintenance.equipment.category,name:mrp_maintenance.equipment_furniture_tools
+msgid "Furniture Tools"
+msgstr "Dụng cụ đồ gỗ"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "Latest Failure"
+msgstr "Lần hỏng gần đây"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_equipment_latest_failure_date
+msgid "Latest Failure Date"
+msgstr "Ngày hỏng gần đây"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_equipment_mtbf
+msgid "MTBF"
+msgstr "Thời gian trung bình giữa các lần hỏng"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_equipment_mttr
+msgid "MTTR"
+msgstr "Thời gian trung bình để sửa chữa"
+
+#. module: mrp_maintenance
+#: model:ir.ui.menu,name:mrp_maintenance.menu_equipment_dashboard
+msgid "Machines & Tools"
+msgstr "Máy móc và dụng cụ"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workcenter_view_kanban_inherit_maintenance
+msgid "Maintenance"
+msgstr "Bảo trì"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_mrp_workcenter_equipment_ids
+msgid "Maintenance Equipment"
+msgstr "Thiết bị bảo trì"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_production_view_form_inherit_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workorder_tablet_view_form_inherit_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.mrp_workorder_view_form_inherit_maintenance
+msgid "Maintenance Request"
+msgstr "Yêu cầu Bảo trì"
+
+#. module: mrp_maintenance
+#: code:addons/mrp_maintenance/models/mrp_maintenance.py:96
+#: code:addons/mrp_maintenance/models/mrp_maintenance.py:126
+#: model:ir.actions.act_window,name:mrp_maintenance.maintenance_request_action_reports
+#: model:ir.model,name:mrp_maintenance.model_maintenance_request
+#: model:ir.ui.menu,name:mrp_maintenance.maintenance_request_reporting
+#, python-format
+msgid "Maintenance Requests"
+msgstr "Yêu cầu Bảo trì"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_mrp_workorder_maintenance_request_count
+msgid "Maintenance request count"
+msgstr ""
+
+#. module: mrp_maintenance
+#: model:ir.model,name:mrp_maintenance.model_mrp_production
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_request_production_id
+msgid "Manufacturing Order"
+msgstr "Lệnh sản xuất"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "Mean Time Between Failure"
+msgstr "Thời gian trung bình giữa các lần hỏng"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,help:mrp_maintenance.field_maintenance_equipment_mtbf
+msgid ""
+"Mean Time Between Failure, computed based on done corrective maintenances."
+msgstr ""
+"Thời gian trung bình giữa các lần hỏng, được tính toán dựa trên các hoạt "
+"động sửa chữa được thực hiện."
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,help:mrp_maintenance.field_maintenance_equipment_mttr
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "Mean Time To Repair"
+msgstr "Thời gian trung bình để sửa chữa"
+
+#. module: mrp_maintenance
+#: code:addons/mrp_maintenance/models/mrp_maintenance.py:83
+#: code:addons/mrp_maintenance/models/mrp_maintenance.py:144
+#, python-format
+msgid "New Maintenance Request"
+msgstr "Yêu cầu bảo trì mới"
+
+#. module: mrp_maintenance
+#: model:ir.actions.act_window,help:mrp_maintenance.maintenance_request_action_reports
+msgid "No maintenance request."
+msgstr "Chưa có yêu cầu bảo trì nào."
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_mrp_production_maintenance_count
+msgid "Number of maintenance requests"
+msgstr "Số lượng yêu cầu bảo trì"
+
+#. module: mrp_maintenance
+#: model:ir.ui.menu,name:mrp_maintenance.maintenance_reporting
+msgid "Reporting"
+msgstr "Báo cáo"
+
+#. module: mrp_maintenance
+#: model:ir.model.fields,field_description:mrp_maintenance.field_mrp_production_request_ids
+msgid "Request ids"
+msgstr ""
+
+#. module: mrp_maintenance
+#: model:maintenance.equipment,name:mrp_maintenance.equipment_furniture2
+msgid "Scrub Plane"
+msgstr "Máy chà nhám"
+
+#. module: mrp_maintenance
+#: model:ir.model,name:mrp_maintenance.model_mrp_workcenter
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_equipment_workcenter_id
+msgid "Work Center"
+msgstr "Năng lực Sản xuất"
+
+#. module: mrp_maintenance
+#: model:ir.ui.menu,name:mrp_maintenance.menu_workcenter_tree
+msgid "Work Centers"
+msgstr "Năng lực Sản xuất"
+
+#. module: mrp_maintenance
+#: model:ir.model,name:mrp_maintenance.model_mrp_workorder
+#: model:ir.model.fields,field_description:mrp_maintenance.field_maintenance_request_workorder_id
+msgid "Work Order"
+msgstr "Hoạt động Sản xuất"
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "WorkCenter"
+msgstr ""
+
+#. module: mrp_maintenance
+#: model:ir.ui.view,arch_db:mrp_maintenance.maintenance_equipment_view_form_inherit_mrp
+msgid "days"
+msgstr "ngày"
+
+#. module: mrp_maintenance
+#: code:addons/mrp_maintenance/models/mrp_maintenance.py:50
+#, python-format
+msgid "work centers"
+msgstr "năng lực sản xuất"

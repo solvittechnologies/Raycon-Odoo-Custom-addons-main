@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_docsaway
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# e2f <projects@e2f.com>, 2018
+# 珠海-杜哥 <liangjia@qq.com>, 2018
+# e2f_cn c5 <jarvisn@ecinnovations.com>, 2018
+# keecome <7017511@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:59+0000\n"
+"PO-Revision-Date: 2016-09-19 12:59+0000\n"
+"Last-Translator: keecome <7017511@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+", and create an account. Once you are logged in, click on 'Login', then go "
+"to 'My Account'."
+msgstr "，并创建一个帐户。当你登录后，点击“登录”，然后进入“我的帐户”。"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_order_view_form_inherit_print_docsaway
+msgid "DocsAway Details"
+msgstr "DocsAway详细信息"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Account"
+msgstr "Docsaway账户"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_email
+msgid "Docsaway Account Email"
+msgstr "Docsaway账户邮箱"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Configuration"
+msgstr "Docsaway配置"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_courier
+msgid "Docsaway Courier"
+msgstr "Docsaway快递"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Help"
+msgstr "Docsaway 帮助中心"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_key
+msgid "Docsaway Installation Key"
+msgstr "Docsaway安装密钥"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_name
+msgid "Docsaway Name"
+msgstr "Docsaway名字"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_reference
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_reference
+msgid "Docsaway Reference"
+msgstr "Docsaway参考"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_station
+msgid "Docsaway Station"
+msgstr "Docsaway站台"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_status
+msgid "Docsaway Transaction Status"
+msgstr "Docsaway 交易状态"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_volume
+msgid "Docsaway Volume"
+msgstr "Docsaway数量"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_zone
+msgid "Docsaway Zone"
+msgstr "Docsaway区"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_email
+msgid ""
+"Docsaway account email. Required to contact DocsAway server, it can be found"
+" into docsaway account preference (on docsaway.com)"
+msgstr ""
+"Docsaway 账户电子邮件。需要联系 DocsAway 服务器，可以在 docsaway 账户个人设置中找到它（位于 docsaway.com）"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_key
+msgid ""
+"Docsaway account installation key. Required to contact DocsAway server, it "
+"can be found into docsaway account preference (on docsaway.com)"
+msgstr ""
+"Docsaway 账户安装密钥。需要联系 DocsAway 服务器，可以在 docsaway 账户个人设置中找到它（位于 docsaway.com）"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Failed request."
+msgstr "失败的需求"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Go to"
+msgstr "去"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#, python-format
+msgid "Host unreachable."
+msgstr "主机无法到达"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In Email Document &gt; Settings, setup your account: Active must be set to "
+"'ON' to receive documents, and the Module Mode should be LIVE to really send"
+" the document. Select TEST to use Docsaway as a sandbox."
+msgstr ""
+"在“电子邮件文件 > 设置”中，设置您的账户：必须将“激活”设置为“打开”才能接收文件，并且应将“模块模式”设置为 LIVE "
+"才能真正发送文件。选择“测试”以使用 Docsaway 作为沙箱。"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "In General &gt; Add Funds, you can add credit to your account."
+msgstr "在“常规 > 添加资金”中，您可以将信用卡添加到账户。"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In General &gt; Preferences, you will find your Docsaway email and Docsaway "
+"key. Copy them to the 'DocsAway Details' tab of the postal provider you want"
+" to configure."
+msgstr ""
+"在“常规 > 选项”中，您将会找到 Docsaway 电子邮件和 Docsaway 密钥。将它们复制到您要配置的邮政提供程序的“DocsAway "
+"详细信息”选项卡。"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In History, you can find documents that were sent both in TEST or LIVE "
+"environment. This can help you to test your account. Be careful to correctly"
+" select the environment in your postal provider in Odoo."
+msgstr "在“历史记录”中，您可找到在“测试”或 LIVE 环境下发送的文件。这能够帮助您测试账户。注意在 Odoo 的邮政提供程序中正确选择环境。"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_name
+msgid "Name of the docsaway account."
+msgstr "Docsaway账户的名字"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_volume
+msgid "Number of pages printed by Docsaway."
+msgstr "由Docsaway打印的页数。"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:71
+#, python-format
+msgid ""
+"Please configure your DocsAway Print Provider Account. See in Settings > "
+"Print Provider. More information on www.docsaway.com ."
+msgstr "请配置 DocsAway 打印提供程序账户。详见“设置 > 打印提供程序”。更多信息请浏览 www.docsaway.com。"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Please try again later."
+msgstr "请稍后再尝试"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order
+msgid "Print Order"
+msgstr "打印订单"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order_wizard
+msgid "Print Order Wizard"
+msgstr "打印订单向导"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_provider
+msgid "Print Provider"
+msgstr "打印服务商"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_reference
+msgid "Reference code of Docsaway account."
+msgstr "Docsaway帐户的参考代码。"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"The 'Update' button will update this field, once your Docsaway Configuration"
+" is set up."
+msgstr "Docsaway 配置一经设置，“更新”按钮将会更新此字段。"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:105
+#, python-format
+msgid "Unknown Error"
+msgstr "未知错误"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:56
+#, python-format
+msgid ""
+"You must configure your Docsaway Account : the Docsaway Email and Docsaway "
+"Key are required. You will find them on www.docsaway.com"
+msgstr "你必须设置Docsaway帐户：Docsaway的电子邮件和关键是必填的。你可以在www.docsaway.com找到它们"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:61
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account, since you "
+"are in Production Mode."
+msgstr "您的信用卡提供程序过小。由于您处于生产模式，因此请配置您的账户（> 设置 > 打印提供程序），并在您的账户中添加若干张信用卡。"

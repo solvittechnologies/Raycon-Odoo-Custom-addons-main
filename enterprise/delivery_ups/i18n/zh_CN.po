@@ -1,0 +1,267 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_ups
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# Bo Cao, 2017
+# 珠海-杜哥 <liangjia@qq.com>, 2017
+# e2f <projects@e2f.com>, 2018
+# keecome <7017511@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: keecome <7017511@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_delivery_carrier
+msgid "Carrier"
+msgstr "承运商"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "厘米"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "EPL"
+msgstr "EPL"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Inches"
+msgstr "英寸"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Kilograms"
+msgstr "千克"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_product_packaging
+msgid "Packaging"
+msgstr "包装"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:207
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "请至少提供一个项目去发货"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Pounds"
+msgstr "英镑"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "SPL"
+msgstr "SPL"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:175
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "装运N° %s已经被取消"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:139
+#, python-format
+msgid "Shipment created into UPS <br/> <b>Tracking Number : </b>%s"
+msgstr "运货创建为USPS<br/><b>运单号：</b>%s"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:146
+#, python-format
+msgid "Shipping label for packages"
+msgstr "装运的包装标签"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:182
+#, python-format
+msgid ""
+"The address of your company is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"公司的地址缺失或错误。\n"
+"（缺少字段：%s）"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:192
+#, python-format
+msgid ""
+"The address of your warehouse is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr "公司仓库的地址缺失或者错误（缺失字段：%s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:212
+#, python-format
+msgid ""
+"The delivery cannot be done because the weight of your product is missing."
+msgstr "因为产品重量缺失所以交货无法完成"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:209
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr "因为产品重量缺失所以估计价格不能被计算"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:202
+#, python-format
+msgid ""
+"The recipient address is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"收件人地址缺失或错误\n"
+"(丢失字段: %s)"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day"
+msgstr "UPS第二天"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day AM"
+msgstr "UPS第二天早晨"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 3-day Select"
+msgstr "选择UPS 3-日达"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_access_number
+msgid "UPS AccessLicenseNumber"
+msgstr "UPS 访问授权许可号"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_be
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_be_product_product
+msgid "UPS BE"
+msgstr "UPS BE"
+
+#. module: delivery_ups
+#: model:ir.ui.view,arch_db:delivery_ups.view_delivery_carrier_form_with_provider_ups
+msgid "UPS Configuration"
+msgstr "UPS配置"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_packaging_id
+msgid "UPS Default Packaging Type"
+msgstr "UPS 默认包装类型"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Ground"
+msgstr "UPS陆运"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_label_file_type
+msgid "UPS Label File Type"
+msgstr "UPS 标签文件类型"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day"
+msgstr "UPS次日达"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day AM"
+msgstr "UPS次日达早晨"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day Air Saver"
+msgstr "UPS空运次日达"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_passwd
+msgid "UPS Password"
+msgstr "UPS 密码"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Saver"
+msgstr "普通UPS"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_service_type
+msgid "UPS Service Type"
+msgstr "UPS服务方式"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_shipper_number
+msgid "UPS Shipper Number"
+msgstr "UPS运单号"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Standard"
+msgstr "UPS 标准"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_us
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_us_product_product
+msgid "UPS US"
+msgstr "UPS US"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_username
+msgid "UPS Username"
+msgstr "UPS 用户名"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Expedited"
+msgstr "UPS 全球快捷"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express"
+msgstr "UPS全球快捷"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Freight"
+msgstr ""
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Plus"
+msgstr "UPS全球特快加急"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_dimension_unit
+msgid "Units for UPS Package Size"
+msgstr "UPS包装尺寸单位"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_weight_unit
+msgid "Ups package weight unit"
+msgstr "UPS包装重量单位"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "ZPL"
+msgstr "ZPL"

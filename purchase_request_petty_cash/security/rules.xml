@@ -1,0 +1,17 @@
+<odoo>
+	<data>
+		<record id="petty_cash_location_user_rule" model="ir.rule">
+		    <field name="name">Petty Cash Location User Rule</field> 
+		    <field ref="kay_petty_cash.model_kay_petty_cash" name="model_id"/>
+		    <field name="domain_force">[('location.store_kepper.id','=',user.id)]</field>   
+		    <field name="groups" eval="[(4, ref('posh_multilocation.group_store_keeper'))]"/>
+		</record>
+		
+		<record id="petty_cash_location_project_manager_rule" model="ir.rule">
+		    <field name="name">Petty Cash Location Project Manager Rule</field> 
+		    <field ref="kay_petty_cash.model_kay_petty_cash" name="model_id"/>
+		    <field name="domain_force">[('location.branch_manager.id','=',user.id)]</field>   
+		    <field name="groups" eval="[(4, ref('stock.group_stock_inventory_project_manager'))]"/>
+		</record>
+	</data>
+</odoo>

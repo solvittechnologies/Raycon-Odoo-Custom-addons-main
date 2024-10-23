@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<div t-name="web_studio.IconCreator" class="o_web_studio_icon_creator">
+    <h5>Create your Icon</h5>
+    <div class="o_web_studio_icon">
+        <div class="o_app_icon"><i/></div>
+    </div>
+    <div class="o_web_studio_selectors">
+        <div class="o_web_studio_selector" data-type="background_color"/>
+        <div class="o_web_studio_selector" data-type="color"/>
+        <div class="o_web_studio_selector" data-type="icon"><i/></div>
+    </div>
+</div>
+
+<div t-name="web_studio.IconCreator.ColorPalette" class="o_web_studio_palette">
+    <t t-foreach="widget.available_colors" t-as="color">
+        <div class="o_web_studio_selector" t-att-style="'background-color: ' + color" t-att-data-color="color"/>
+    </t>
+</div>
+
+<div t-name="web_studio.IconCreator.IconPalette" class="o_web_studio_palette">
+    <t t-foreach="widget.available_icons" t-as="icon">
+        <div class="o_web_studio_selector"><i t-att-class="icon"/></div>
+    </t>
+</div>
+
+</templates>

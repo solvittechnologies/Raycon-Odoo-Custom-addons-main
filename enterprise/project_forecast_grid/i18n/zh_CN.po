@@ -1,0 +1,224 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_forecast_grid
+# 
+# Translators:
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# Ted Wang <feiyuwang2012@gmail.com>, 2016
+# e2f <projects@e2f.com>, 2018
+# keecome <7017511@qq.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 14:58+0000\n"
+"PO-Revision-Date: 2016-09-29 14:58+0000\n"
+"Last-Translator: keecome <7017511@qq.com>, 2018\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:29
+#, python-format
+msgid ""
+"A project must have a start date to use a forecast grid, found no start date"
+" for {project.display_name}"
+msgstr "项目必须有使用预测网格的开始日期，发现{project.display_name}没有开始日期"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:47
+#, python-format
+msgid ""
+"A project must have an end date to use a forecast grid, found no end date "
+"for {project.display_name"
+msgstr "项目必须有截止日期才能使用预测网格，发现 {project.display_name} 没有截止日期."
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign"
+msgstr "分配"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_assign
+msgid "Assign user on a task"
+msgstr "为任务分配用户"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_assign
+msgid "Assign user on task"
+msgstr "在任务上分配用户"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_project
+msgid "By Project"
+msgstr "按 项目"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid_by_user
+msgid "By User"
+msgstr "按 用户"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:20
+#, python-format
+msgid ""
+"Can only be used for forecasts not spanning multiple months, found "
+"%(forecast_count)d forecast(s) spanning across months in %(project_name)s"
+msgstr "只能用于不跨越多个月份的预测，发现  %(forecast_count)d  月份的预测有：  %(project_name)s "
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project.py:41
+#, python-format
+msgid "Forecast"
+msgstr "预测"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_project
+msgid "Forecast By Project"
+msgstr "按项目预测"
+
+#. module: project_forecast_grid
+#: model:ir.actions.act_window,name:project_forecast_grid.action_project_forecast_grid_by_user
+msgid "Forecast By User"
+msgstr "按用户预测"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid ""
+"Forecasting on a project requires that the project\n"
+"                        have start and end dates"
+msgstr "项目的预测要求项目具有开始和结束日期。"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:25
+#, python-format
+msgid ""
+"Forecasting over a project only supports monthly forecasts (got step {})"
+msgstr "项目的预测只支持每月预测（获得步骤(got step {})）"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.project_forecast_gantt
+msgid "Gantt"
+msgstr "甘特"
+
+#. module: project_forecast_grid
+#: model:ir.ui.menu,name:project_forecast_grid.menu_project_forecast_grid
+msgid "Grid"
+msgstr "网络"
+
+#. module: project_forecast_grid
+#: code:addons/project_forecast_grid/models/project_forecast.py:63
+#, python-format
+msgid ""
+"Grid adjustment for project forecasts only supports the 'start_date' columns"
+" field and the 'resource_hours' cell field, got respectively "
+"%(column_field)r and %(cell_field)r"
+msgstr ""
+"项目预测的网格调整仅支持 'start_date' 列字段和 'resource_hours' 细胞字段，获得各自的 %(column_field)r "
+"和 %(cell_field)r"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment___last_update
+msgid "Last Modified on"
+msgstr "最后修改日"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Month"
+msgstr "月"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Monthly Forecast"
+msgstr "每月预测"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_project
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_project_id
+#: model:ir.ui.view,arch_db:project_forecast_grid.project_forecast_grid
+msgid "Project"
+msgstr "项目"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "Project Dates"
+msgstr "项目日期"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Project Forecast By User"
+msgstr "用户的项目预测"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_task_id
+msgid "Task"
+msgstr "任务"
+
+#. module: project_forecast_grid
+#: model:ir.model.fields,field_description:project_forecast_grid.field_project_forecast_assignment_user_id
+msgid "User"
+msgstr "用户"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_set_dates
+msgid "View Forecast"
+msgstr "查看预测"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Week"
+msgstr "周"
+
+#. module: project_forecast_grid
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_project
+#: model:ir.ui.view,arch_db:project_forecast_grid.view_project_forecast_grid_by_user
+msgid "Year"
+msgstr "年"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"
+
+#. module: project_forecast_grid
+#: model:ir.model,name:project_forecast_grid.model_project_forecast_assignment
+msgid "project.forecast.assignment"
+msgstr "project.forecast.assignment"

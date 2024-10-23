@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    	<!-- form view -->
+        <record id="view_partial_payment_invoice_form" model="ir.ui.view">
+            <field name="name">view.partial.payment.invoice.form</field>
+            <field name="model">partial.payment.invoice</field>
+            <field name="arch" type="xml">
+                <form string="Partial Payment Invoice">
+                	<header>
+                        <button name="action_post" class="oe_highlight" states="draft" string="Confirm" type="object"/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,posted"/>                        
+                    </header>
+                   <sheet>
+						<group>
+							<group>
+								<field name="payment_type" required = "1"/>
+								<field name="partner_id" required = "1"/>
+														
+							</group>
+							<group>
+								<field name="payment_date" required = "1"/>
+								<field name = "journal_id" required = "1"/>							
+							</group>
+						</group>
+						<notebook>
+                        <page string="Invoice Payment line">
+                            <field name = "partial_payment_invoice_line_ids">
+                                <tree string="Material lines" editable="bottom">
+                                	<field name = "partner_id" invisible = "1"/>
+                                    <field name="invoice_id" domain="[('partner_id', '=', partner_id), ('state', '=', 'open')]" />
+									<field name="invoice_amount"/>
+									<field name="residual_amount"/>
+									<field name="amount" required = "1"/>   
+                                </tree>
+
+                            </field>
+
+                        </page>
+
+                    </notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="view_partial_payment_invoice_list" model="ir.ui.view">
+            <field name="name">view.partial.payment.invoice.list</field>
+            <field name="model">partial.payment.invoice</field>
+            <field name="arch" type="xml">
+                <tree string="Partial Payment Invoice List">
+					<field name="payment_date"/>								
+					<field name="payment_type"/>
+					<field name="partner_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="action_view_partial_payment_invoice" model="ir.actions.act_window">
+            <field name="name">Partial Payment Invoice</field>
+            <field name="res_model">partial.payment.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_partial_payment_invoice_list"/>
+            <field name="target">current</field>
+        </record>
+        
+		<menuitem action="action_view_partial_payment_invoice" 
+						name="Partial Payment Invoice"		
+						id="menu_partial_payment_invoice" 
+						parent="account.menu_finance_payables" 
+						sequence="10"/>		
+	</data>
+</odoo>

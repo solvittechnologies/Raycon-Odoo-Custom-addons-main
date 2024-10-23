@@ -1,0 +1,205 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_taxcloud
+# 
+# Translators:
+# son dang <son.dang@doda100.com>, 2016
+# Hoang Loc Le Huu <loclhh@gmail.com>, 2016
+# Phạm Lân <phamquanglan@gmail.com>, 2016
+# fanha99 <fanha99@hotmail.com>, 2016
+# Martin Trigaux, 2016
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2018
+# Dao Nguyen <trucdao.uel@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:35+0000\n"
+"Last-Translator: Dao Nguyen <trucdao.uel@gmail.com>, 2019\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: account_taxcloud
+#: model:ir.model,name:account_taxcloud.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_res_company_tic_category_id
+msgid "Default TIC Code"
+msgstr "Mã TIC mặc định"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_config_settings_tic_category_id
+msgid "Default TIC Code *"
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.model.fields,help:account_taxcloud.field_account_config_settings_tic_category_id
+#: model:ir.model.fields,help:account_taxcloud.field_res_company_tic_category_id
+msgid ""
+"Default TICs(Taxabilty information codes) code to get sales tax from "
+"TaxCloud by product category."
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_tax_state_ids
+msgid "Federal States"
+msgstr "Liên bang"
+
+#. module: account_taxcloud
+#: model:ir.model,name:account_taxcloud.model_account_fiscal_position
+msgid "Fiscal Position"
+msgstr "Vị thế tài chính"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: account_taxcloud
+#: model:ir.ui.view,arch_db:account_taxcloud.account_taxcloud_tic_category_search
+msgid "Product TIC Categories"
+msgstr "Danh mục sản phẩm TIC"
+
+#. module: account_taxcloud
+#: model:ir.model,name:account_taxcloud.model_product_template
+msgid "Product Template"
+msgstr "Mẫu sản phẩm"
+
+#. module: account_taxcloud
+#: model:ir.ui.view,arch_db:account_taxcloud.account_config_settings_taxcloud_inherit
+msgid "Sync TaxCloud Category(TIC)"
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.actions.act_window,name:account_taxcloud.account_taxcloud_tic_category_action
+#: model:ir.ui.menu,name:account_taxcloud.menu_taxcloud_tic_category_action
+msgid "TIC Categories"
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_tax_tic_category_ids
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_template_tic_category_id
+#: model:ir.ui.view,arch_db:account_taxcloud.account_taxcloud_tic_category_tree
+msgid "TIC Category"
+msgstr "Danh mục TIC"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_code
+msgid "TIC Category Code"
+msgstr "Mã danh mục TIC"
+
+#. module: account_taxcloud
+#: model:ir.ui.view,arch_db:account_taxcloud.account_taxcloud_tic_category_search
+msgid "TIC Code"
+msgstr "Mã TIC"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_product_tic_category_description
+msgid "TIC Description"
+msgstr "Mô tả TIC"
+
+#. module: account_taxcloud
+#: model:ir.ui.view,arch_db:account_taxcloud.account_config_settings_taxcloud_inherit
+msgid "TaxCloud"
+msgstr "TaxCloud"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_config_settings_taxcloud_api_id
+msgid "TaxCloud API ID"
+msgstr "TaxCloud API ID"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_config_settings_taxcloud_api_key
+msgid "TaxCloud API KEY"
+msgstr "TaxCloud API KEY"
+
+#. module: account_taxcloud
+#: model:ir.ui.view,arch_db:account_taxcloud.account_config_settings_taxcloud_inherit
+msgid "TaxCloud Configuration"
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.model.fields,help:account_taxcloud.field_product_template_tic_category_id
+msgid ""
+"TaxCloud uses Taxability Information Codes (TIC) to make sure each item in "
+"your catalog is taxed at the right rate (or, for tax-exempt items, not taxed"
+" at all), so it’s important to make sure that each item is assigned a TIC. "
+"If you can’t find the right tax category for an item in your catalog, you "
+"can assign it to the 'General Goods and Services' TIC, 00000. TaxCloud "
+"automatically assigns products to this TIC as a default, so unless you've "
+"changed an item's TIC in the past, it should already be set to 00000."
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.ui.view,arch_db:account_taxcloud.product_template_taxcloud_inherit_form
+msgid "Taxcloud Configuration"
+msgstr ""
+
+#. module: account_taxcloud
+#: model:ir.model,name:account_taxcloud.model_account_fiscal_position_tax
+msgid "Taxes Fiscal Position"
+msgstr "Vị thế tài chính thuế"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_is_taxcloud
+msgid "Use TaxCloud API"
+msgstr "Sử dụng TaxCloud API"
+
+#. module: account_taxcloud
+#: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_tax_zip_codes
+msgid "Zip"
+msgstr "Mã bưu chính"
+
+#. module: account_taxcloud
+#: code:addons/account_taxcloud/models/product.py:27
+#, python-format
+msgid "[%s] %s"
+msgstr "[%s] %s"
+
+#. module: account_taxcloud
+#: model:ir.model,name:account_taxcloud.model_account_config_settings
+msgid "account.config.settings"
+msgstr "account.config.settings"
+
+#. module: account_taxcloud
+#: model:ir.model,name:account_taxcloud.model_product_tic_category
+msgid "product.tic.category"
+msgstr ""

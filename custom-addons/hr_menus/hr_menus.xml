@@ -1,0 +1,17 @@
+<odoo>
+        <data>
+
+        <menuitem id="hr_menus" sequence="1" name="Human Resources"  web_icon="hr,static/description/icon.png" />
+        <menuitem id="hr.menu_hr_root" parent="hr_menus" sequence="0"  name="Employees"/>
+        <menuitem id="hr_payroll.menu_hr_payroll_root" parent="hr_menus" sequence="1" name="Payroll"  />
+        <menuitem id="hr_holidays.menu_hr_holidays_root" parent="hr_menus" sequence="5" name="Leave Management"    />
+        <menuitem id="hr_expense.menu_hr_expense_root" parent="hr_menus" sequence="6"  name="Staff Requests" active="false"/>
+        <menuitem id="account.menu_finance_receivables" parent="account.account_account_menu" sequence="7"  name="Customer Invoices" />
+       <menuitem id="hr_expense.menu_hr_expense_my_expenses" name="Staff Requests" sequence="1" parent="hr_expense.menu_hr_expense_root" groups="base.group_user" active="false"/>    
+<!--        <menuitem id="hr_attendance.timesheet_menu_root" parent="hr_menus" sequence="3" name="Time Sheet"   groups="make_invisible"/>-->
+<!--        <menuitem id="hr_attendance.menu_hr_attendance_root" parent="hr_menus" sequence="4" name="Attendance" groups="make_invisible"/>-->
+
+<!--        <menuitem id="project.menu_main_pm" parent="hr_menus" sequence="6" name="LPM"  groups="make_invisible" />-->
+
+    </data>
+</odoo>

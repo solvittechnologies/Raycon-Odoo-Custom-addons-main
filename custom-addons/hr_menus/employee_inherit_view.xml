@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="hr_employee_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="country_id" position="before">
+                    <field name="Title"/>
+                    <field name="Position"/>
+                    <field name="Year"/>
+                    <field name="Lga"/>
+                    <field name="State_Origin"/>
+
+                </field>
+
+                <field name="address_home_id" position="after">
+                    <field name="email"/>
+                    <field name="phone_no"/>
+                    <field name="postal_address"/>
+                    <field name="business_no"/>
+                    <field name="tax_id"/>
+                    <field name="nhf_no"/>
+                </field>
+
+                <group name="birth" position="after">
+                        <group string="Reference 1">
+                            <field name ="reference_name"/>
+                            <field name="reference_address"/>
+                            <field name="reference_email"/>
+                            <field name="reference_phone_number"/>
+                            <field name="reference_occupation"/>
+                            <field name="reference_employer_details"/>
+                            <field name="relationship_duration_with_reference"/>
+                       </group>
+
+                        <group string="Reference 2">
+                            <field name ="reference_name"/>
+                            <field name="reference_address"/>
+                            <field name="reference_email"/>
+                            <field name="reference_phone_number"/>
+                            <field name="reference_occupation"/>
+                            <field name="reference_employer_details"/>
+                            <field name="relationship_duration_with_reference"/>
+                       </group>
+
+
+                        <group name="guarantor" string="Can these references serve as a guarantor?" >
+                                <!--<label for="reference_is_guarantor"/>-->
+                                <h4> Mark if true: <field name="reference_is_guarantor"/></h4>
+                        </group>
+                </group>
+
+                <xpath expr="//field[@name='reference_is_guarantor']" position="after">
+                <seperator String="Guarantor"/>
+                    <field name="guarantor" attrs = "{'invisible':[('reference_is_guarantor','=',True)]}">
+                    <tree editable = "bottom">
+                        <field name="guarantor_name"/>
+                        <field name="guarantor_address"/>
+                        <field name="guarantor_occupation"/>
+                        <field name="guarantor_employer_details"/>
+                        <field name="relationship_duration_with_guarantor"/>
+                    </tree>
+                    <form>
+                        <group col="4">
+                            <field name="guarantor_name"/>
+                            <field name="guarantor_address"/>
+                            <field name="guarantor_occupation"/>
+                            <field name="guarantor_employer_details"/>
+                            <field name="relationship_duration_with_guarantor"/>
+                        </group>
+                    </form>
+                    </field>
+
+                </xpath>
+
+                <xpath expr="//group[@name='guarantor']" position="after">
+                    <group name="residency" string="Residency And Languages">
+                        <field name = "states_lived_in"/>
+                        <field name = "languages"/>
+                        <field name = "will_to_serve"/>
+                        <field name = "reason_for_not_serving_in_Nigeria" attrs="{'invisible':[('will_to_serve','=',True)]}"/>
+                    </group>
+
+
+                <separator string="Professional Memberships And Trainings"/>
+                    <field name = "employee_professional_membership">
+                     <tree editable ="bottom">
+                        <field name = "professional_membership"/>
+                        <field name = "date"/>
+                     </tree>
+                     <form>
+                        <group col="4">
+                        <field name = "professional_membership"/>
+                        <field name = "date"/>
+                        </group>
+                     </form>
+
+                    </field>
+
+                <separator string="Record Of Working Experience"/>
+                    <h4> Write a detailed job description for each position you held</h4>
+                    <group>
+                    <field name = "number_of_companies_employee_worked" string="Number of previous companies"/>
+                    </group>
+                    <field name = "employee_working_experience">
+                        <tree editable = "bottom">
+                            <field name ="from_year"/>
+                            <field name ="to_year"/>
+                            <field name ="name_of_employer"/>
+                            <field name ="address_of_employer"/>
+                            <field name ="employer_email"/>
+                            <field name ="position_held"/>
+                            <field name ="total_renumeration_per_annum"/>
+                            <field name ="job_description"/>
+                            <field name ="reason_for_leaving"/>
+                        </tree>
+                    </field>
+
+
+                <separator string="Give a detailed breakdown of your current renumeration package"/>
+                    <field name="employee_current_renumeration" >
+                        <tree editable = "bottom">
+                            <field name="item"/>
+                            <field name="amount"/>
+                        </tree>
+                    </field>
+
+                <separator string="Medical History"/>
+                    <field name = "employee_medical_history">
+                        <tree editable = "bottom">
+                           <field name = "any_dissability"/>
+                           <field name = "serious_illness"/>
+                           <field name ="type_of_serious_illness"/>
+                           <field name = "recurrent_illness"/>
+                           <field name = "type_of_recurrent_illness"/>
+                           <field name = "undergo_medical_test"/>
+                        </tree>
+                    </field>
+
+                <separator string="Other Information" />
+                    <field name ="employee_hobbies_socials">
+                            <tree editable = "bottom">
+                                <field name ="hobbies"/>
+                                <field name = "socials"/>
+                            </tree>
+                    </field>
+                <field name="user_uid"/>
+                <field name ="employee_likes_dislikes">
+                    <tree editable="bottom">
+                        <field name ="likes"/>
+                        <field name = "dislikes"/>
+                    </tree>
+                </field>
+
+                </xpath>
+
+<!--                <xpath expr="//page[@name='personal_information']" position="attributes">-->
+<!--                        <attribute name="string">My Info</attribute>-->
+<!--                </xpath>-->
+
+                <xpath expr="//page[@name='personal_information']" position="attributes">
+                        <attribute name="attrs">{'invisible':[('user_uid','!=',True)]}</attribute>
+                </xpath>
+
+                <xpath expr="//page[@name='hr_settings']" position="attributes">
+                        <attribute name="invisible">0</attribute>
+                </xpath>
+
+
+
+            </field>
+        </record>
+
+    <record id="hr.menu_hr_department_tree" model="ir.ui.menu">
+        <field name="sequence">1</field>
+    </record>
+
+
+
+
+</odoo>

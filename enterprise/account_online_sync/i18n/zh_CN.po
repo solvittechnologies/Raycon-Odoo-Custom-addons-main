@@ -1,0 +1,425 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_online_sync
+# 
+# Translators:
+# Jeffery CHEN <jeffery9@gmail.com>, 2016
+# liAnGjiA <liangjia@qq.com>, 2016
+# hman tsao <herman.tsao@gmail.com>, 2016
+# Ted Wang <feiyuwang2012@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Ted Wang <feiyuwang2012@gmail.com>, 2016\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"<i class=\"fa fa-plus-circle\" aria-hidden=\"true\"/> <span> Add a new bank "
+"to the system</span>"
+msgstr "<i class=\"fa fa-plus-circle\" aria-hidden=\"true\"/> <span> 向系统中添加新银行</span>"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"<strong>Well done!</strong>\n"
+"                  Your banking institution is now synchronized with Odoo and a total of"
+msgstr ""
+"<strong>非常好!</strong>\n"
+"您的银行机构现在与Odoo同步，总共"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_number
+msgid "Account number"
+msgstr "账户号码"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_account_online_journal_ids
+msgid "Account online journal ids"
+msgstr "网络账户日记张ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_account_online_provider_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_online_provider_id
+msgid "Account online provider id"
+msgstr "网络账户提供者ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_action_required
+msgid "Action required"
+msgstr "必须采取行动的"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Additional information"
+msgstr "附加信息"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:57
+#, python-format
+msgid "An error occurred during online synchronization"
+msgstr "在线同步期间发生错误"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Associate to journal"
+msgstr "关联到日记帐"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_balance
+msgid "Balance"
+msgstr "余额"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Bank Accounts"
+msgstr "银行帐户"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "银行对账单"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "银行对账单行"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,help:account_online_sync.action_online_provider_account
+msgid "Click to add an online bank to the system."
+msgstr "单击以在系统中添加网上银行。"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Close"
+msgstr "关闭"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_status_code
+msgid "Code to identify problem"
+msgstr "识别问题的代码"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_company_id
+msgid "Company id"
+msgstr "公司 id"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Configure"
+msgstr "设置"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_count_account_online_journal
+msgid "Count account online journal"
+msgstr "网络账户日记帐数目"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_sync_date
+msgid "Fetch transaction from"
+msgstr "从中获取事务"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_provider_identifier
+msgid ""
+"ID of the banking institution in third party server used for debugging "
+"purpose"
+msgstr "用于调试目的的第三方服务器中的银行机构ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_provider_account_identifier
+msgid "ID used to identify provider account in third party server"
+msgstr "ID用于标识第三方服务器中的提供商帐户"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_journal
+msgid "Interface for online account journal"
+msgstr "在线帐户日志界面"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_journal
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_journal_ids
+msgid "Journal"
+msgstr "日记账"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_journal_id
+msgid "Journal id"
+msgstr "日记账 id"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard___last_update
+msgid "Last Modified on"
+msgstr "最后修改日"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_write_uid
+msgid "Last Updated by"
+msgstr "最后更新人"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_last_refresh
+msgid "Last refresh"
+msgstr "上次刷新"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_last_sync
+msgid "Last synchronization"
+msgstr "最近同步"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Manual Refresh"
+msgstr "手动刷新"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_message
+msgid "Message"
+msgstr "消息"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_provider_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_name
+msgid "Name"
+msgstr "名字"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Next sync:"
+msgstr "下一同步:"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_next_synchronization
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_next_refresh
+msgid "Next synchronization"
+msgstr "下一个同步"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_number_added
+msgid "Number added"
+msgstr "添加数量"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_account_online_journal_id
+msgid "Online Account"
+msgstr "在线账户"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line_online_identifier
+msgid "Online Identifier"
+msgstr "网上标识"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_online_provider_account
+msgid "Online Provider Account"
+msgstr "在线提供商帐户"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Online Sync configuration"
+msgstr "在线同步配置"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_account_online_wizard_form
+#: model:ir.ui.menu,name:account_online_sync.menu_action_online_provider_account
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Online Synchronization"
+msgstr "在线同步"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_account_online_journal_id
+msgid "Online account"
+msgstr "在线帐户"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_online_identifier
+msgid "Online identifier"
+msgstr "在线鉴定"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:251
+#, python-format
+msgid "Opening statement : first synchronization"
+msgstr "开张对账单：首先同步"
+
+#. module: account_online_sync
+#: selection:account.online.provider,provider_type:0
+msgid "Plaid"
+msgstr "Plaid"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Problem during synchronization"
+msgstr "同步期间出现问题"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_account_identifier
+msgid "Provider account identifier"
+msgstr "提供商帐户标识符"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_provider
+msgid "Provider for online account synchronization"
+msgstr "在线帐户同步的提供商"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_identifier
+msgid "Provider identifier"
+msgstr "提供者标识符"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_type
+msgid "Provider type"
+msgstr "提供商类型"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_status_code
+msgid "Status code"
+msgstr "状态代码"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_synchronization_status
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_status
+msgid "Synchronization status"
+msgstr "同步状态"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Synchronize now"
+msgstr "立即同步"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_message
+msgid "Techhnical message from third party provider that can help debugging"
+msgstr "来自第三方提供商的技术消息，可以帮助调试"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:58
+#, python-format
+msgid "The following error happened during the synchronization: %s"
+msgstr "在同步期间发生以下错误：%s"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_action_required
+msgid "True if user needs to take action by updating account"
+msgstr "如果用户需要通过更新帐户采取操作，则为true"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:122
+#, python-format
+msgid "Unimplemented"
+msgstr "未实现"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Update Credentials"
+msgstr "更新证明"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_journal_synchronization_status
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_status
+msgid "Update status of provider account"
+msgstr "更新服务商账号的状态"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "View problem"
+msgstr "查看问题"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_wizard
+msgid "Wizard for online account synchronization"
+msgstr "在线帐户同步向导"
+
+#. module: account_online_sync
+#: selection:account.online.provider,provider_type:0
+msgid "Yodlee"
+msgstr "Yodlee公司"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_balance
+msgid "balance of the account sent by the third party provider"
+msgstr "由第三方提供商发送的帐户余额"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"bank accounts have been retrieved.\n"
+"                  You can associate those bank accounts to a journal in order to automatically retrieve the latest statements from your bank."
+msgstr ""
+"银行账户已被检索。\n"
+"您可以将这些银行帐户与日记张相关联，以便自动检索您银行的最新报表。"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_online_identifier
+msgid "id use to identify account in provider system"
+msgstr "id用于在提供商系统中识别帐户"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_provider_name
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_name
+msgid "name of the banking institution"
+msgstr "银行机构名称"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_wizard_number_added
+msgid "number of accounts added from call to new_institution"
+msgstr "通过调用new_institution添加的帐户数"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_wizard_count_account_online_journal
+msgid ""
+"technical field used to hide account_online_journal_id if no institution has"
+" been loaded in the system"
+msgstr "用于隐藏技术字段account_online_journal_id 如果系统中未加载任何机构"

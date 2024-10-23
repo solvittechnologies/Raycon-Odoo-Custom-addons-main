@@ -1,0 +1,109 @@
+<odoo>
+  <data>
+   
+    <record model="ir.actions.act_window" id="inventory_return_form">
+      <field name="name">Inventory Return</field>
+      <field name="res_model">return.invetory</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+              Add a new Inventory Return
+          </p>
+          <p>
+              Manage What goes in and out of your Inventory
+          </p>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="inventory_return_form_1">
+      <field name="name">Inventory Request</field>
+      <field name="model">return.invetory</field>
+      <field name="arch" type="xml">
+          <tree>
+
+              <field name="name" string='Release Name'/>
+              <field name='date' string="Date Returned"/>
+
+          </tree>
+      </field>
+  </record>
+
+
+  <record model="ir.ui.view" id="inventory_return_form_2">
+    <field name="name">Inventory Return Form</field>
+    <field name="model">return.invetory</field>
+    <field name="arch" type="xml">
+        <form string="Idea form">
+            <header>
+                <button name="submit_request" string="Submit" attrs="{'invisible':[('state','!=', 'draft')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="approve" string="Approve" attrs="{'invisible':[('state','!=', 'request')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <button name="finalize" string="Confirm"  attrs="{'invisible':[('state','!=', 'Approve')]}" class="oe_highlight" type="object"
+                        groups="base.group_user"/>
+                <field name="state" widget="statusbar" nolabel="1"/>
+            </header>
+            <sheet>
+                <group colspan="4">
+                    <group colspan="2" col="4">
+
+                        <separator string="Return Data" colspan="4"/>
+
+                        <field name="name" string="Release Name"/>
+                        <field name="partner" string="Receive Name" colspan="2"/>
+                        <field name="source_location" string="Source Location"/>
+                        <field name="destination" string="Destination"/>
+                        <field name="date" string="Date"/>
+                        <field name="date_return" string="Return Date"/>
+
+                    </group>
+                    <separator string="Return Items" colspan="4"/>
+                    <notebook colspan="4">
+                        <page string="return_line">
+
+                            <field
+                                    name="return_line"
+                                    nolabel="1"
+                                    widget="one2many"
+                                    mode="tree,kanban"
+                                    wiget="section_and_note_many2one"
+                                    string="Return Line">
+
+                                <tree string="Return Item lines" editable="bottom">
+                                    <control>
+                                        <create string="Add a line"/>
+                                        <create string="Add a section"
+                                                context="{'default_display_type': 'line_section'}"/>
+                                    </control>
+                                    <field name="product" string="Product"/>
+                                    <field name="qty_req" string="Quantity"/>
+                                    <field name="description" string="Description"/>
+                                </tree>
+
+                            </field>
+
+                        </page>
+
+                    </notebook>
+                    <!-- <group class="oe_subtotal_footer oe_right">
+                        <field name="estimated_amount" readonly="1"/>
+                        <field name="actual_amount" cols="2" readonly="1"/>
+                        <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                    </group>
+                    <group>
+                        <field name="cost_of_boq" readonly="1"/>
+                        <field name="budget_amount" readonly="1" String="Budget Amount"/>
+                        <field name="difference" readonly="1" class="oe_subtotal_footer_separator"/>
+                    </group> -->
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+    <!-- <menuitem sequence="30" name="Inventory Return" id="inventory_return" parent="inventory_management" action="inventory_return_form"/> -->
+
+
+  </data>
+</odoo>

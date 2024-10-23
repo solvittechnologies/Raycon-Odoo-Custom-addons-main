@@ -1,0 +1,947 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * stock_barcode
+# 
+# Translators:
+# Martin Trigaux, 2016
+# Duy Pham <phamduy1812@gmail.com>, 2016
+# Su Pham Nghiep Vu <nghiepvusupham58@gmail.com>, 2017
+# thanh nguyen <thanhnguyen.icsc@gmail.com>, 2018
+# fanha99 <fanha99@hotmail.com>, 2018
+# Duy BQ <duybq86@gmail.com>, 2018
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 13:42+0000\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "(make sure your scanner uses carriage return suffix)"
+msgstr "(đảm bảo máy quét của bạn sử dụng hậu tố trả về số vận chuyển)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+").\n"
+"                            Then, print it via the <i>Print</i> menu and stick it in a visible and convenient place."
+msgstr ""
+").\n"
+"                            Sau đó, in nó qua trình đơn <i>In</i> và dán nó vào vị trí dễ thấy và thuận tiện."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Actions barcodes:</strong> use the barcodes from"
+msgstr "<strong>Tác vụ mã vạch:</strong> dùng mã vạch từ"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>EAN-13 barcodes:</strong> used by most retail products, they cannot be made\n"
+"                            up without proper authorization: you must pay the International\n"
+"                            Article Numbering Association a fee in exchange for an EAN code\n"
+"                            sequence (that's why no two products in a store will ever have the\n"
+"                            same EAN code). Still, as Odoo supports any string as a barcode, so\n"
+"                            you can always define your own barcode format for internal use."
+msgstr ""
+"<strong>EAN-13 barcodes:</strong> được dùng cho nhiều sản phẩm bán lẻ, chúng không thể tạo\n"
+"                             quyền xác thực, mà chi có thể thực hiện được khi bạn trả tiền cho Hiệp hội\n"
+"                             Quản lý Barcode một khoản phí để đổi lấy ký tự  mã EAN (đó là lý do\n"
+"                             vì sao không có 2 sản phẩm cùng một mã từ cùng một kho).  Tuy nhiên, \n"
+"                             Hệ thống hỗ trợ một chuỗi với một mã vạch, do đó bạn luôn có thể \n"
+"                             xác định định dạng mã vạch của riêng mình để sử dụng nội bộ."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Enjoy your Inventory management!</strong>"
+msgstr "<strong>Tận hưởng quản lý Kho hàng của bạn!</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>From the Barcode application:</strong>"
+msgstr "<strong>Từ ứng dụng Mã vạch:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Good location nomenclature:</strong> <i>warehouse short name - location short name - (Corridor X - Shelf Y - Height Z) </i><br/>\n"
+"                                Example: A032-025-133 (Note that you can use any string in the barcode field)"
+msgstr ""
+"<strong>Danh mục vị trí tốt:</strong> <i>Tên viết tắt kho hàng - tên viết tắt địa điểm - (Hành lang X - Kệ Y - Chiều cao Z) </i><br/>\n"
+"Ví dụ: A032-025-133 (Lưu ý rằng bạn có thể sử dụng bất kỳ chuỗi nào trong trường mã vạch)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Lots Numbers</strong> can be encoded from incoming shipments, "
+"internal moves and outgoing deliveries:"
+msgstr ""
+"<strong>Số Lô hàng</strong>có thể được mã hóa từ các lô hàng đến, di chuyển "
+"nội bộ và giao hàng đi: "
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Product variants:</strong> be careful to add barcodes directly on "
+"the variant, and not the template product (otherwise you won't be able to "
+"differentiate them)."
+msgstr ""
+"<strong>Biến thể sản phẩm:</strong> hãy cẩn thận để thêm mã vạch trực tiếp "
+"vào biến thể chứ không phải sản phẩm mẫu (nếu không bạn sẽ không thể phân "
+"biệt chúng)."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan barcodes on picking lists:</strong> suitable if a significant "
+"percentage of your products do not have a barcode on them."
+msgstr ""
+"<strong>Quét theo danh sách lấy hàng:</strong>phù hợp nếu một tỷ lệ phần "
+"trăm đáng kể các sản phẩm của bạn không có mã vạch trên chúng."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan barcodes on products:</strong> suitable if all your products "
+"already have a barcode"
+msgstr ""
+"<strong>Quét mã vạch trên sản phẩm:</strong>phù hợp nếu tất cả các sản phẩm "
+"của bạn đã có mã vạch"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>Scan lots or serial numbers:</strong> this is more time consuming, "
+"but allows for a full traceability of the parts. It's usually used by "
+"manufacturers of sensitive products."
+msgstr ""
+"<strong>Quét lô hàng hoặc số sê-ri:</strong> điều này tốn nhiều thời gian "
+"hơn, nhưng cho phép truy xuất đầy đủ các bộ phận. Nó thường được sử dụng bởi"
+" các nhà sản xuất các sản phẩm nhạy cảm."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>Test your configuration:</strong>"
+msgstr "<strong>Kiểm tra cấu hình của bạn:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>The next step is to assign barcodes to your products,</strong> by "
+"setting the right value in the Barcode field of the Product form."
+msgstr ""
+"<strong>Bước tiếp theo là gán mã vạch cho sản phẩm của bạn,</strong> bằng "
+"cách đặt giá trị phù hợp trong trường Mã vạch của biểu mẫu Sản phẩm."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>To attribute a barcode to a Location,</strong> simply enter one on "
+"the Location form (accessible from your"
+msgstr ""
+"<strong>Để gán mã vạch cho một Vị trí,</strong> chỉ cần nhập mã vạch vào "
+"biểu mẫu Vị trí (có thể truy cập từ"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>To make an Internal Transfer:</strong>"
+msgstr "<strong>Tạo một dịch chuyển nội bộ:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>To process Delivery Orders from a computer or mobile "
+"device:</strong>"
+msgstr ""
+"<strong> Tiến trình xử lý Đơn giao hàng từ một máy tính hoặc "
+"smartphone:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>To process printed Delivery Orders:</strong>"
+msgstr "<strong>Tiến trình xử lý Đơn hàng phân phối đã in:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "<strong>We've tested a few devices for you:</strong>"
+msgstr "<strong>Chúng tôi đã thử nghiệm một vài thiết bị cho bạn:</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"<strong>What is the difference between Lots and Serial Numbers?</strong>"
+msgstr "<strong>Sự khác nhau giữa Lô hàng và Số sơ-ri là gì?</strong>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Automatic carriage return"
+msgstr "Tự động trả lại hàng"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Automatic carriage return: <span class=\"label\">OFF</span>"
+msgstr "Tự động trả lại hàng: <span class=\"label\">TẮT</span>"
+
+#. module: stock_barcode
+#: model:ir.actions.client,name:stock_barcode.stock_barcode_action_main_menu
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory_line_product_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_pack_operation_product_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_scrap_product_barcode
+#: model:ir.ui.menu,name:stock_barcode.stock_barcode_menu
+msgid "Barcode"
+msgstr "Mã vạch"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:8
+#, python-format
+msgid "Barcode Scanning"
+msgstr "Quét mã vạch"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Before we start, you should choose your working process. There are three "
+"suitable approaches to work with barcodes:"
+msgstr ""
+"Trước khi bắt đầu, bạn nên chọn quy trình làm việc của mình. Có ba cách tiếp"
+" cận phù hợp để làm việc với mã vạch:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"But better yet is to transform this naming into a barcode that can be "
+"scanned easily and without error."
+msgstr ""
+"Nhưng tốt hơn là chuyển đổi tên này thành một mã vạch có thể được quét dễ "
+"dàng và không có lỗi."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"By default, Odoo has a 50 milliseconds delay between each successive scan "
+"(it helps avoid accidental double scanning). If you want to suppress this "
+"delay, you can configure your scanner to insert a carriage return symbol at "
+"the end of each barcode. This is usually the default configuration and can "
+"be explicitly configured by scanning a specific barcode in your scanner user"
+" manual ('CR suffix ON', 'Apply Enter for suffix', etc.)"
+msgstr ""
+"Theo mặc định, Hệ thống có độ trễ 50 mili giây giữa mỗi lần quét liên tiếp "
+"(giúp tránh việc quét hai lần ngẫu nhiên). Nếu bạn muốn ngăn chặn sự chậm "
+"trễ này, bạn có thể cấu hình máy quét của bạn để chèn một biểu tượng trở về "
+"vận chuyển ở cuối mỗi mã vạch. Đây thường là cấu hình mặc định và có thể "
+"được định cấu hình rõ ràng bằng cách quét mã vạch cụ thể trong hướng dẫn sử "
+"dụng máy quét của bạn ('CR suffix ON', 'Apply Enter for suffix', v.v.)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Choose a USB barcode scanner if you plan to scan products at the computer "
+"station"
+msgstr ""
+"Chọn một máy quét mã vạch USB nếu bạn dự tính dùng để quét sản sản phẩm với "
+"máy tính"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Click on 'Inventory'"
+msgstr "Bấm vào tồn kho"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_config_view_form_inherit_stock_barcode
+msgid "Configure Product Barcodes"
+msgstr "Cấu hình mã vạch sản phẩm"
+
+#. module: stock_barcode
+#: model:web.planner,tooltip_planner:stock_barcode.planner_barcode
+msgid "Configure and learn how to use your Barcode Scanner."
+msgstr "Cấu hình và học cách sử dụng Máy quét mã vạch của bạn."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Congratulations, you're ready to go live!"
+msgstr "Thật tuyệt vời, bạn đã sẵn sàng chạy thực tế!"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:42
+#, python-format
+msgid ""
+"Do you want to permanently remove this message ?\n"
+"                It won't appear anymore, so make sure you don't need the barcodes sheet or you have a copy."
+msgstr ""
+"Bạn có muốn xoá vĩnh viễn thông điệp này không?\n"
+"                Nó sẽ không xuất hiện nữa, vì vậy hãy đảm bảo bạn không cần bảng mã vạch hoặc bạn có một bản sao."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:45
+#, python-format
+msgid "Don't show this message again"
+msgstr "Đừng hiển thị lại thông điệp này"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"For the Odoo Team,<br/>\n"
+"                        Fabien Pinckaers, Founder"
+msgstr ""
+"Đội kỹ thuật hệ thống,<br/>\n"
+" Fabien Pinckaers, Founder"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Go for a wireless scanner if you want to scan products at different "
+"locations"
+msgstr ""
+"Truy cập máy quét không dây nếu bạn muốn quét sản phẩm tại các vị trí khác "
+"nhau"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Here, you have three options:"
+msgstr "Tại đây, bạn có ba tùy chọn:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If this product should be manage by lots, a window opens to help you scan "
+"the lots / serial numbers"
+msgstr ""
+"Nếu sản phẩm này phải được quản lý bởi lô hàng, một cửa sổ sẽ mở ra để giúp "
+"bạn quét các số lô/số sơ-ri"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If you have a static computer station, it's better to use 'pistols' formats "
+"as they are more practical to handle and aim."
+msgstr ""
+"Nếu bạn có một trạm máy tính tĩnh, tốt hơn là sử dụng các định dạng 'Máy cầm"
+" tay' khi chúng thực tế hơn để xử lý và nhắm đến."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"If you use a mobile device, you may prefer a smaller format that is "
+"connected in Bluetooth."
+msgstr ""
+"Nếu bạn sử dụng thiết bị di động, bạn có thể thích định dạng nhỏ hơn được "
+"kết nối trong Bluetooth."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "In Odoo, there are two types of internal transfers:"
+msgstr "Trong Hệ thống, có hai loại dịch chuyển nội bộ:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "In the barcode interface, scan the products you want create a lot from"
+msgstr ""
+"rong giao diện mã vạch, quét các sản phẩm bạn muốn tạo ra rất nhiều từ"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Inateck BCST-20:"
+msgstr "Inateck BCST-20:"
+
+#. module: stock_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_inventory_line_product_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_pack_operation_product_barcode
+#: model:ir.model.fields,help:stock_barcode.field_stock_scrap_product_barcode
+msgid "International Article Number used for product identification."
+msgstr "Mã số quốc tế được sử dụng để xác định sản phẩm"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:20
+#: model:ir.model,name:stock_barcode.model_stock_inventory
+#, python-format
+msgid "Inventory"
+msgstr "Tồn kho"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "Chi tiết kiểm kho"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Keyboard layout"
+msgstr "Bố cục bàn phím"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:51
+#, python-format
+msgid "Leave it"
+msgstr "Thoát ra"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "List of Locations"
+msgstr "Danh sách địa điểm"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Load all the Delivery Orders marked as \"To Do\", and open the first one."
+msgstr ""
+"Tải tất cả các đơn đặt hàng phân phối được đánh dấu là \"Cần làm\" và mở đơn"
+" hàng đầu tiên."
+
+#. module: stock_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_pack_operation_location_processed
+msgid "Location processed"
+msgstr ""
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Lot numbers are attributed to several identical products, so each time you "
+"scan a Lot Number, Odoo will add one on the product count."
+msgstr ""
+"Số lô được quy cho một số sản phẩm giống hệt nhau, vì vậy mỗi lần bạn quét "
+"Số lô, Odoo sẽ thêm một số vào số lượng sản phẩm."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Motorola CS3000:"
+msgstr "Motorola CS3000:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Motorola DS4208-SR:"
+msgstr "Motorola DS4208-SR:"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Move to the next Delivery Order to process by clicking on the top-right "
+"right arrow or scanning the Pager-Next barcode action."
+msgstr ""
+"Chuyển sang Đơn hàng phân phối tiếp theo để xử lý bằng cách nhấp vào mũi tên"
+" phải trên cùng bên phải hoặc quét hành động mã vạch Pager-Next."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Naming the locations within your warehouse(s) is crucial for a good "
+"inventory management."
+msgstr ""
+"Đặt tên các địa điểm trong kho của bạn là rất quan trọng để quản lý hàng tồn"
+" kho tốt."
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.stock_inventory_action_new_inventory
+msgid "New Inventory"
+msgstr "Kho mới"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:69
+#, python-format
+msgid "No internal picking type. Please configure one in warehouse settings."
+msgstr ""
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:54
+#, python-format
+msgid "No lot found"
+msgstr "Không tìm thấy Lô hàng"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:23
+#, python-format
+msgid "No picking corresponding to barcode %(barcode)s"
+msgstr "Không có giao nhận tương ứng với mã vạch %(barcode)s"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/controllers/main.py:21
+#, python-format
+msgid "No picking or location corresponding to barcode %(barcode)s"
+msgstr "Không có giao nhận hoặc địa điểm tương ứng với mã vạch %(barcode)s"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Note that Bluetooth connections are suitable for maximum 30 feet (10 meters)"
+" so you will have to scan products nearby the computer station."
+msgstr ""
+"Lưu ý rằng các kết nối Bluetooth phù hợp với tối đa 30 feet (10 mét), do đó "
+"bạn sẽ phải quét các sản phẩm gần trạm máy tính."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Now that all the flows have been tested and configured, it's time to go into"
+" production. Do a few delivery orders as an example with your workers and "
+"train them on your favorite process."
+msgstr ""
+"Bây giờ tất cả các luồng đã được kiểm tra và cấu hình, đã đến lúc đi vào sản"
+" xuất. Thực hiện một vài đơn đặt hàng giao hàng làm ví dụ với nhân viên của "
+"bạn và đào tạo họ về quy trình yêu thích của bạn."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Odoo supports most USB, Wireless and Bluetooth barcode scanners (as they all"
+" emulate a keyboard)."
+msgstr ""
+"Hệ thống hỗ trợ các máy quét mã vạch thuột loại USB, Wireless và Bluetooth "
+"(tất cả chúng đều mô phỏng bàn phím)."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"On the opposite, a Serial Number is unique, and represented by only one "
+"barcode, sticked on only one item. This means that Odoo won't accept "
+"scanning the same Serial Number more than once per operation."
+msgstr ""
+"Ngược lại, Số sê-ri là duy nhất và được biểu thị bằng một mã vạch, chỉ được "
+"dán trên một mục. Điều này có nghĩa là Hệ thống sẽ không chấp nhận quét cùng"
+" một Số sê-ri nhiều lần cho mỗi thao tác."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once it's fully working, give us some feedback: we love to hear from our "
+"customer. It would be great if you can send a photo of your warehouse to"
+msgstr ""
+"Khi nó hoạt động hoàn toàn, hãy cho chúng tôi một số phản hồi: chúng tôi "
+"muốn nghe từ khách hàng của mình. Nó sẽ là tuyệt vời nếu bạn có thể gửi một "
+"bức ảnh của nhà kho của bạn để"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you scan the next product or the validate barcode, the window will "
+"close automatically"
+msgstr ""
+"Khi bạn quét sản phẩm tiếp theo hoặc mã vạch hợp lệ, cửa sổ sẽ tự động đóng "
+"lại"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you scanned all products, scan the Validate barcode action to finish "
+"the operation."
+msgstr ""
+"Khi bạn đã quét tất cả các sản phẩm, hãy quét hành động Mã vạch xác thực để "
+"hoàn tất thao tác."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Once you start processing your delivery orders, scan the barcode on the top-"
+"right corner of the document to load the right record on the screen."
+msgstr ""
+"Khi bạn bắt đầu xử lý đơn đặt hàng phân phối của mình, hãy quét mã vạch ở "
+"góc trên cùng bên phải của tài liệu để tải bản ghi phù hợp trên màn hình."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:19
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_action_kanban
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_type_action_kanban
+#, python-format
+msgid "Operations"
+msgstr "Thao tác"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_pack_operation
+msgid "Packing Operation"
+msgstr "Hoạt động đóng gói"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Pick up and scan each listed product."
+msgstr "Lấy và quét từng sản phẩm được liệt kê."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Pick up and scan the products"
+msgstr "Lấy và quét các sản phẩm"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.stock_picking_action_form
+msgid "Picking"
+msgstr "Giao nhận"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/picking_barcode_handler.js:39
+#, python-format
+msgid "Picking %s"
+msgstr "Giao nhận %s"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_web_planner
+msgid "Planner"
+msgstr "Planner"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Print delivery orders of the day by selecting all documents from the \"To "
+"Do\" list and print \"Picking Lists\" from the top menu."
+msgstr ""
+"In lệnh giao hàng trong ngày bằng cách chọn tất cả các tài liệu từ \"Cần "
+"làm\" Danh sách in \"Danh sách lấy hàng\" từ trình đơn trên cùng"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Print this barcode"
+msgstr "In mã vạch này"
+
+#. module: stock_barcode
+#: model:ir.actions.act_window,name:stock_barcode.product_action_barcodes
+#: model:ir.ui.view,arch_db:stock_barcode.product_view_list_barcodes
+msgid "Product Barcodes"
+msgstr "Mã vạch sản phẩm"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/stock_barcode.js:48
+#, python-format
+msgid "Remove it"
+msgstr "Xóa nó"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:18
+#, python-format
+msgid "Scan a document to open it."
+msgstr "Quét tài liệu để mở nó"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:18
+#, python-format
+msgid "Scan a location to create a new transfer from this location."
+msgstr "Quét một địa điểm để tạo di chuyển mới từ địa điểm này"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan a lot barcode, type one manually or leave empty to generate one "
+"automatically"
+msgstr ""
+"Quét mã vạch lô hàng, nhập mã vạch theo cách thủ công hoặc để trống để tự "
+"động tạo mã vạch"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan all the products of the location (if you have 5 identical articles, "
+"scan it 5 times, or use the keyboard to set the quantity)"
+msgstr ""
+"Quét tất cả các sản phẩm của vị trí (nếu bạn có 5 sản phẩm giống nhau, hãy "
+"quét nó 5 lần hoặc sử dụng bàn phím để đặt số lượng)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan or enter each barcode by manually editing the products or"
+msgstr ""
+"Quét hoặc nhập từng mã vạch bằng cách chỉnh sửa thủ công các sản phẩm hoặc"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the bracode here"
+msgstr "Quét mã vạch ở đây"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the destination location"
+msgstr "Quét địa điểm đích"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Scan the location's barcode"
+msgstr "Quét mã vạch địa điểm"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Scan the source location, starting from the home of the barcode application"
+msgstr "Quét Vị trí nguồn, tại trang chủ của ứng dụng Mã vạch"
+
+#. module: stock_barcode
+#: model:ir.model.fields,field_description:stock_barcode.field_stock_inventory_scan_location_id
+msgid "Scanned Location"
+msgstr "Quét địa điểm"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Set barcodes at the initial import of your products or"
+msgstr "Đặt mã vạch khi nhập sản phẩm của bạn hoặc"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:275
+#, python-format
+msgid ""
+"The barcode \"%(barcode)s\" doesn't correspond to a proper product, package "
+"or location."
+msgstr ""
+"Mã vạch \"%(barcode)s\" không tương ứng với một sản phẩm, gói hàng hoặc địa "
+"điểm."
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/js/picking_barcode_handler.js:39
+#, python-format
+msgid "The picking is %s and cannot be edited."
+msgstr "Giao nhận này thì %s và không thể chỉnh sửa"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_picking_type
+msgid "The picking type determines the picking view"
+msgstr ""
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Then, scan the barcode of every product, or scan the barcode of the product "
+"on the picking line if the barcode on the product is not easily accessible, "
+"visible or is missing."
+msgstr ""
+"Sau đó, quét mã vạch của mỗi sản phẩm hoặc quét mã vạch của sản phẩm trên "
+"vạch chọn nếu mã vạch trên sản phẩm không dễ dàng truy cập, hiển thị hoặc bị"
+" thiếu."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"There are two approaches to process delivery orders: you can either work on "
+"printed documents (and scan lines on the documents), or on a screen (and "
+"scan products directly)."
+msgstr ""
+"Có hai cách để xử lý các lệnh giao hàng: bạn có thể làm việc trên các tài "
+"liệu được in (và quét các dòng trên tài liệu), hoặc trên màn hình (và quét "
+"các sản phẩm trực tiếp)."
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:55
+#, python-format
+msgid ""
+"There is no production lot for \"%(product)s\" corresponding to "
+"\"%(barcode)s\""
+msgstr "Không có Lô hàng sản xuất \"%(product)s\" nào tướng ứng với \"%(barcode)s\""
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Those created by a worker (for example, through the internal transfer area "
+"of the dashboard)."
+msgstr ""
+"Những người được tạo ra bởi một công nhân (ví dụ, thông qua khu vực chuyển "
+"giao nội bộ của bảng điều khiển)."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Those initiated automatically by the system (for example, a quality control)"
+msgstr ""
+"Các hệ thống được khởi động tự động bởi hệ thống (ví dụ: kiểm soát chất "
+"lượng)"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "To Do"
+msgstr "Cần làm"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "To Receive"
+msgstr "Nhận Hàng"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_picking
+msgid "Transfer"
+msgstr "Chuyển hàng"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.stock_picking_type_kanban
+msgid "Transfers"
+msgstr "Chuyển khoản"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"USB only, omnidirectional (eliminates the need to align bar code and "
+"scanner), rugged design, about $250"
+msgstr ""
+"Chỉ USB, đa hướng (loại bỏ sự cần thiết phải căn chỉnh mã vạch và máy quét),"
+" thiết kế chắc chắn, khoảng $ 250"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "USB, Wireless or Bluetooth?"
+msgstr "USB, Wireless or Bluetooth?"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Use our"
+msgstr "Use our"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Validate the Transfer to finish it"
+msgstr "Xác nhận việc chuyển để hoàn thành nó"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:10
+#, python-format
+msgid ""
+"We have created a few demo data and barcodes for you to explore the "
+"features. Print the"
+msgstr ""
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"When you've picked all the items, click the Validate button or scan the "
+"Validate barcode action to finish the Operation."
+msgstr ""
+"Khi bạn đã chọn tất cả các mục, hãy nhấp vào nút Xác thực hoặc quét hành "
+"động Mã vạch xác thực để hoàn thành Thao tác."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"When you've scanned all the items of the location, validate the inventory "
+"manually or by scanning the 'Validate' barcode ("
+msgstr ""
+"Khi bạn đã quét tất cả các mục của vị trí, hãy xác thực tồn kho theo cách "
+"thủ công hoặc bằng cách quét mã vạch 'Xác thực' ("
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Which scanner format?"
+msgstr "Định dạng máy quét nào?"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "Wireless and USB, laser, rational choice, about $50"
+msgstr "Không dây và USB, laser, lựa chọn hợp lý, khoảng 50 đô la"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:274
+#, python-format
+msgid "Wrong barcode"
+msgstr "Mã vạch không đúng"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"You can set up a computer station or have the worker use a mobile device "
+"connected through wireless (phone, tablet or scanner with integrated "
+"screen)."
+msgstr ""
+"Bạn có thể thiết lập một trạm máy tính hoặc nhờ nhân viên sử dụng thiết bị "
+"di động được kết nối qua mạng không dây (điện thoại, máy tính bảng hoặc máy "
+"quét với màn hình tích hợp)."
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:23
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:38
+#, python-format
+msgid "You have already scanned the serial number \"%(barcode)s\""
+msgstr "Bạn đã quét số sơ-ri \"%(barcode)s\" này rồi"
+
+#. module: stock_barcode
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:22
+#: code:addons/stock_barcode/models/inherited_stock_picking.py:37
+#, python-format
+msgid "You have entered this serial number already"
+msgstr "Bạn đã nhận số sơ-ri này rồi"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"You've decided to implement barcodes in your company? Great idea. This tool "
+"will help you setup the environment to make it work."
+msgstr ""
+"Bạn đã quyết định triển khai mã vạch trong công ty của mình? Ý tưởng tuyệt "
+"vời. Công cụ này sẽ giúp bạn thiết lập môi trường để làm cho nó hoạt động."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"Your barcode scanner needs to be configured to use the same keyboard layout "
+"as your operating system. Otherwise, your scanner won't translate characters"
+" correctly (replacing a 'A' with a 'Q' for example). Most scanners are "
+"configured by scanning the appropriate barcode in the user's manual."
+msgstr ""
+"Máy quét mã vạch của bạn cần phải được định cấu hình để sử dụng bố cục bàn "
+"phím giống như hệ điều hành của bạn. Nếu không, máy quét của bạn sẽ không "
+"dịch các ký tự một cách chính xác (thay thế chữ 'A' bằng chữ 'Q' chẳng hạn)."
+" Hầu hết các máy quét được cấu hình bằng cách quét mã vạch thích hợp trong "
+"sách hướng dẫn sử dụng."
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "available here"
+msgstr "có sẵn ở đây"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "compact wireless, about $250"
+msgstr "nhỏ gọn không dây, khoảng $ 250"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "fast scanning interface"
+msgstr "giao diện quét nhanh"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "feedback@mail.odoo.com"
+msgstr "feedback@tencongty.com"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
+#, python-format
+msgid "stock barcodes sheet"
+msgstr "bảng mã vạch kho"
+
+#. module: stock_barcode
+#: model:ir.model,name:stock_barcode.model_stock_scrap
+msgid "stock.scrap"
+msgstr "stock.scrap"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "then scan it, the result should be <i>YES IT WORKS.</i>"
+msgstr "sau đó quét nó, kết quả sẽ là <i>VÂNG NÓ HOẠT ĐỘNG.</i>"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid "this document"
+msgstr "tài liệu này"
+
+#. module: stock_barcode
+#. openerp-web
+#: code:addons/stock_barcode/static/src/xml/stock_barcode.xml:14
+#, python-format
+msgid "to check out what this module can do !"
+msgstr "để kiểm tra những gì module này có thể làm!"
+
+#. module: stock_barcode
+#: model:ir.ui.view,arch_db:stock_barcode.barcode_planner
+msgid ""
+"to launch actions in Odoo like Save, Next Item or Validate instead of using "
+"your mouse or keyboard."
+msgstr ""
+"để khởi chạy các hành động trong Hệ thống như Lưu, Mục tiếp theo hoặc Xác "
+"thực thay vì sử dụng chuột hoặc bàn phím của bạn."

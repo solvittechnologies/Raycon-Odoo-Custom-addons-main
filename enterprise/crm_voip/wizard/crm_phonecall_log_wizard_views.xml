@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <!-- wizard to change the log of calls -->
+    <record id="wizard_change_log_form_view" model="ir.ui.view">
+      <field name="name">phonecall.log.wizard.form</field>
+      <field name="model">crm.phonecall.log.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Edit the log">
+          <group>
+            <group>
+              <div attrs="{'invisible': [('partner_name', '=', False)]}">
+                <field name="partner_image_small" widget="image" class="oe_avatar oe_left"/>
+                <div style="display: block;">
+                  <h2><field name="partner_name"/></h2>
+                  <field attrs="{'invisible': [('partner_email','=',False)]}" name="partner_email"/>
+                  <div attrs="{'invisible': [('opportunity_name', '=', 'No opportunity linked')]}">
+                    <field name="opportunity_name"/>
+                    <span>&#160;:&#160;<field name="opportunity_planned_revenue" class="oe_inline"/>&#160;at&#160;<field name="opportunity_probability" class="oe_inline"/>%</span>
+                  </div>
+                </div>
+              </div>
+            </group>
+
+            <group attrs="{'invisible': [('opportunity_name', '=', 'No opportunity linked')]}">
+              <label for="next_activity_id"/>
+              <div class="o_row">
+                <field name="next_activity_id"
+                  options="{'no_create': True, 'no_open': True}"/>
+                <field name="new_date_action" attrs="{'invisible': [('next_activity_id', '=', False)]}" placeholder="Choose a date..."/>
+              </div>
+              <div class="o_row">
+                <field name="new_title_action" placeholder="e.g. Discuss proposal"
+                  attrs="{'invisible': [('next_activity_id', '=', False)]}"/>
+              </div>
+            </group>
+            <group>
+              <label for="reschedule_option"/>
+              <div>
+                <field name="reschedule_option" widget="radio" nolabel="1"/>
+                <field name="reschedule_date" nolabel="1" attrs="{'invisible': [('reschedule_option', '!=', 'custom')], 'required':[('reschedule_option', '=','custom')]}"/>
+              </div>
+            </group>
+          </group>
+          <separator colspan="2" string="Call Summary"/>
+          <field name="show_duration" attrs="{'invisible': True}"/>
+          <field name="custom_duration" widget="float_time" attrs="{'invisible': [('show_duration', '=', False)], 'required':[('show_duration', '=',True)]}" class="oe_inline"/> 
+          <span attrs="{'invisible': [('show_duration', '=', False)], 'required':[('show_duration', '=',True)]}">min(s)</span>
+          <group>
+            <field name="description" nolabel="1" placeholder="Description..."/>
+          </group>
+          <footer>
+            <button name="save" type="object"
+                string="Save" class="oe_highlight"/>
+            <button name="save_go_opportunity" type="object" attrs="{'invisible': [('opportunity_name', '=', 'No opportunity linked')]}"
+                string="Save and Open the Opportunity" class="oe_highlight"/>
+            <button class="oe_button oe_form_button oe_link" special="cancel" string="Discard"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+</odoo>

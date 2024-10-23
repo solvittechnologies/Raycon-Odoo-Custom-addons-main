@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data>
+
+    <record id="stock_picking_view_form_inherit_stock_barcode" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <form position="inside">
+                <field name="_barcode_scanned" widget="picking_barcode_handler"/>
+            </form>
+            <xpath expr="//field[@name='pack_operation_product_ids']/tree" position="inside">
+                <field name="product_barcode" invisible="1"/>
+                <field name="location_processed" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='pack_operation_product_ids']/kanban" position="inside">
+                <field name="product_barcode" invisible="1"/>
+                <field name="location_processed" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='pack_operation_pack_ids']/tree" position="inside">
+                <field name="location_processed" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='pack_operation_product_ids']//field[@name='qty_done']" position="attributes">
+                <attribute name="options">{'barcode_events': True}</attribute>
+                <attribute name="widget">field_float_scannable</attribute>
+            </xpath>
+            <xpath expr="//button[@name='do_new_transfer']" position="attributes">
+                <attribute name="barcode_trigger">validate</attribute>
+            </xpath>
+            <xpath expr="//button[@name='do_print_picking']" position="attributes">
+                <attribute name="barcode_trigger">print</attribute>
+            </xpath>
+            <xpath expr="//button[@name='put_in_pack']" position="attributes">
+                <attribute name="barcode_trigger">put-in-pack</attribute>
+            </xpath>
+            <xpath expr="//button[@name='button_scrap']" position="attributes">
+                <attribute name="barcode_trigger">button_scrap</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="stock_pack_operation_inherit_lot" model="ir.ui.view">
+        <field name="name">stock.pack.operation.inherit.lot.form</field>
+        <field name="model">stock.pack.operation</field>
+        <field name="inherit_id" ref="stock.view_pack_operation_lot_form"/>
+        <field name="arch" type="xml">
+            <form position="inside">
+                <field name="_barcode_scanned" widget="barcode_handler"/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_pack_operation_lot_form_inherit_stock_barcode" model="ir.ui.view">
+        <field name="name">stock.pack.operation.lots.form.inherit</field>
+        <field name="model">stock.pack.operation</field>
+        <field name="inherit_id" ref="stock.view_pack_operation_lot_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='save']" position="attributes">
+                <attribute name="barcode_trigger">validate</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</data></odoo>

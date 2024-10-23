@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem   id="menu_payroll_reports"
+                name="Reports"
+                parent="hr_payroll.menu_hr_payroll_root"
+                sequence="99"
+                groups="hr_payroll.group_hr_payroll_manager"
+                />
+    <!--
+    <record id="action_report_payslipbatch" model="ir.actions.act_window">
+        <field name="name">Payslip Batch Report</field>
+        <field name="res_model">hr.payslip.line</field>
+        <field name="view_type">tree</field>
+    </record>
+    <menuitem   id="menu_report_payslipbatch"
+                name="Payslip Batch Report"
+                parent="menu_payroll_reports"
+                sequence="1"
+                groups="hr_payroll.group_hr_payroll_manager"
+                action="action_report_payslipbatch"
+                />
+    -->
+    <menuitem   id="menu_allpaysliplines"
+                name="All Payslip Lines"
+                parent="menu_payroll_reports"
+                sequence="1000"
+                groups="hr_payroll.group_hr_payroll_manager"
+                action="action_allpaysliplines"
+                />
+    
+</odoo>

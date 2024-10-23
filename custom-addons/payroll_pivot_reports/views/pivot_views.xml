@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    
+    <record id="pivot_payslip_lines" model="ir.ui.view">
+        <field name="name">Payroll Report Pivot View</field>
+        <field name="model">hr.payslip.line</field>
+        
+        <field name="arch" type="xml">
+            
+            <pivot string="Monthly Payslips">
+                <field name="slip_date_to" type="row" interval="month" />
+                <field name="slip_id" string="Payslip" type="row" />
+                
+                <field name="name" string="Payslip Line Name" type="col" />
+                <field name="total" type="measure" widget="monetary" />
+            </pivot>
+            
+        </field>
+    </record>
+    
+    <act_window id="action_allpaysliplines"
+        name="Full Payroll Report"
+        res_model="hr.payslip.line"
+        view_mode="pivot"
+        domain="[('appears_on_payslip', '=', True), ('is_aggregate', '=', False), ('slip_state', '=', 'done')]"
+        view_id="pivot_payslip_lines"
+        />
+    
+    <act_window id="action_paysliplines_beforelast"
+        name="Month before last"
+        res_model="hr.payslip.line"
+        view_mode="pivot"
+        domain="[('appears_on_payslip', '=', True), ('is_aggregate', '=', False), ('slip_state', '=', 'done'), ('slip_date_to','&lt;',(context_today()-relativedelta(months=1)).strftime('%Y-%m-01') ), ('slip_date_to','&gt;=',(context_today()-relativedelta(months=2)).strftime('%Y-%m-01') ) ]"
+        view_id="pivot_payslip_lines"
+        />
+    <act_window id="action_paysliplines_last"
+        name="Last Month"
+        res_model="hr.payslip.line"
+        view_mode="pivot"
+        domain="[('appears_on_payslip', '=', True), ('is_aggregate', '=', False), ('slip_state', '=', 'done'), ('slip_date_to','&lt;',time.strftime('%Y-%m-01') ), ('slip_date_to','&gt;=',(context_today()-relativedelta(months=1)).strftime('%Y-%m-01') ) ]"
+        view_id="pivot_payslip_lines"
+        />
+    <act_window id="action_paysliplines_current"
+        name="Current Month"
+        res_model="hr.payslip.line"
+        view_mode="pivot"
+        domain="[('appears_on_payslip', '=', True), ('is_aggregate', '=', False), ('slip_state', '=', 'done'), ('slip_date_to','&lt;',(context_today()+relativedelta(months=1)).strftime('%Y-%m-01') ), ('slip_date_to','&gt;=',time.strftime('%Y-%m-01') ) ]"
+        view_id="pivot_payslip_lines"
+        />
+    
+</odoo>

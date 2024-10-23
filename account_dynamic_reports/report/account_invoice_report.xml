@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_invoice_document_inherit_tax_changes" inherit_id="account.report_invoice_document">
+            <!-- HTML Preview for mobile responsive -->
+            <xpath expr="//t[@t-foreach='o.amount_by_group']" position="replace">
+                <t t-foreach="o.tax_line_ids" t-as="tax_id">
+                    <tr style="">
+                        <td><span t-esc="tax_id.name"/></td>
+                        <td class="text-right o_price_total">
+                            <span t-esc="tax_id.amount_total" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                        </td>
+                    </tr>
+                </t>
+            </xpath>
+            <xpath expr="//p[@t-if='o.comment']" position="before">
+                <p id="total_in_words" class="mb16">
+                    <strong>Total (In Words): </strong>
+                    <span t-field="o.amount_total_words"/>
+                </p>
+        </xpath>
+        </template>
+		
+    </data>
+</odoo>

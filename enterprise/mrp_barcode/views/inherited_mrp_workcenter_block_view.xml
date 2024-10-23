@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="mrp_workcenter_block_wizard_form_inherit_barcode" model="ir.ui.view">
+        <field name="name">mrp.workcenter.productivity.form.inherit.barcode</field>
+        <field name="model">mrp.workcenter.productivity</field>
+        <field name="inherit_id" ref="mrp.mrp_workcenter_block_wizard_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='button_block']" position="attributes">
+                <attribute name="barcode_trigger">button_block</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

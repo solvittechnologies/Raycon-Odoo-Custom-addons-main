@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="salaries_excel_sheet_form_view" model="ir.ui.view">
+            <field name="name">salaries.excel.sheet.form.view</field>
+            <field name="model">salaries.excel.sheet</field>
+            <field name="arch" type="xml">
+                <form string="Salaries Excel Sheet Form">
+                    <header>
+                        <button name="generate_excel" type="object" string="Generate Excel" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <label for="date_from" string="Period"/>
+                                <div>
+                                    <field name="date_from" class="oe_inline"/> - <field name="date_to" class="oe_inline"/>
+                                </div>
+                                <field name="month"/>
+                                <field name="employee_tag"/>
+                            </group>
+                            <group>
+                                <field name="location_id"/>
+                                <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Lines" name="lines">
+                                <field name="line_ids" nolabel="1">
+                                    <tree string="Custom Lines" editable="bottom">
+                                        <field name="transaction_reference_number"/>
+                                        <field name="beneficiary_name" />
+                                        <field name="payment_amount"/>
+                                        <field name="payment_due_date" />
+                                        <field name="beneficiary_code" />
+                                        <field name="beneficiary_account_number" />
+                                        <field name="beneficiary_bank_sort_code" />
+                                        <field name="debit_account_number" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="salaries_excel_sheet_tree_view" model="ir.ui.view">
+            <field name="name">salaries.excel.sheet.tree.view</field>
+            <field name="model">salaries.excel.sheet</field>
+            <field name="arch" type="xml">
+                <tree string="Salaries Excel Tree">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="salaries_excel_sheet_act_window" model="ir.actions.act_window">
+            <field name="name">Salaries Excel Sheet</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">salaries.excel.sheet</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Salaries Excel Sheet" id="salaries_excel_sheet_menu"
+                  parent="fastra_hr_customize.menu_hr_payslip_custom_main"
+                  action="salaries_excel_sheet_act_window"/>
+
+    </data>
+</odoo>

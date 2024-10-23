@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--<record id="view_account_analytic_account_form_inherit" model="ir.ui.view">
+                <field name="name">analytic.analytic.account.form.inherit</field>
+                <field name="model">account.analytic.account</field>
+                <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//field[@name='currency_id']" position="after">
+                        <field name="location"/>
+                    </xpath>
+                </field>
+        </record>-->
+
+
+        <record id="view_purchase_order_form_inherit" model="ir.ui.view">
+            <field name="name">purchase.purchase.order.form.inherit</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_order']" position="after">
+                    <field name="location" />
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="view_stock_picking_form_inherit" model="ir.ui.view">
+            <field name="name">stock picking.form.inherit</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="dest_store" invisible="1" />
+                    <field name="source_store" invisible="1" />
+                    <field name="current_manager" invisible="1" />
+                </xpath>
+                <xpath expr="//button[@name='action_assign']" position="after">
+                    <button name="dummy_release" string="Release Products" groups="alm_multi_location.group_store_keeper" type="object" attrs="{'invisible' : ['|',('source_store', '=',False),('state','not in',['assigned','partially_avaliable'])]}" class="oe_highlight" />
+                    <button name="do_new_transfer" string="Receive Products" groups="alm_multi_location.group_store_keeper" type="object" class="oe_highlight" attrs="{'invisible': ['|',('dest_store','=',False),('state','not in',['assigned','released'])]}" />
+                    <button name="do_new_transfer" string="Validate" states="assigned,released" groups="stock.group_stock_manager" type="object" class="oe_highlight" />
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="view_stock_location_form_inherit" model="ir.ui.view">
+            <field name="name">stock location form inherit</field>
+            <field name="model">stock.location</field>
+            <field name="inherit_id" ref="stock.view_location_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="store_keeper" />
+                    <field name="branch_manager" />
+                    <field name="branch_accountant" />
+                </xpath>
+            </field>
+        </record>
+
+
+        <!-- <record id="view_stock_location_form_inherit_9999" model="ir.ui.view">
+            <field name="name">stock location form inherit</field>
+            <field name="model">stock.location</field>
+            <field name="inherit_id" ref="stock.view_location_tree2"/>
+            <field name="domain">['|', ('store_keeper.partner_id.id', '=', user.partner_id.id), ('branch_accountant', '=', user.partner_id.id)]</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='']" position="attributes">
+                    <attribute name="domain">['|', ('store_keeper.partner_id.id', '=', user.partner_id.id), ('branch_accountant', '=', user.partner_id.id)]</attribute>
+                </xpath> 
+            </field>
+        </record> -->
+
+
+        <record model="ir.ui.view" id="view_transfer_request_form">
+            <field name="name">transfer.request.form</field>
+            <field name="model">internal.transfer.request</field>
+            <field name="arch" type="xml">
+                <form string="Internal Transfer Request">
+                    <header>
+                        <button name="button_draft" states="to_approve,rejected,done" string="Reset" type="object" groups="purchase_request.group_purchase_request_user" />
+                        <button name="button_to_approve" states="draft" string="Request Approval" type="object" class="oe_highlight" groups="purchase_request.group_purchase_request_user" />
+                        <button name="button_approved" states="to_approve" string="Approve" type="object" class="oe_highlight" groups="stock.group_stock_manager, alm_multi_location.group_waseem_custom_group" />
+                        <button name="button_done" states="approved" string="Done" type="object" class="oe_highlight" groups="stock.group_store_keeper" />
+                        <button name="button_rejected" states="to_approve" string="Reject" type="object" groups="stock.group_stock_manager, alm_multi_location.group_waseem_custom_group" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,to_approve,approved,done,rejected" statusbar_colors='{"approved":"blue"}' />
+                    </header>
+
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button type="object" name="action_view_purchase_request_line" class="oe_stat_button" attrs="{'invisible':[('line_count', '=', 0)]}" icon="fa-list">
+                                <field name="line_count" widget="statinfo" string="Lines" />
+                            </button>
+                        </div>
+                        <!--                        <div class="oe_edit_only">-->
+                        <!--                            <label for="name" class="oe_inline"/>-->
+                        <!--                            <label for="origin" class="oe_inline"/>-->
+                        <!--                        </div>-->
+
+                        <h1>
+                            <field name="is_editable" invisible="1" />
+                            <!-- <field name="name" class="oe_inline"
+                                   attrs="{'readonly': [('is_editable','=',False)]}"/> -->
+                            <!-- <label string="," /> -->
+                            <!-- <field name="origin" class="oe_inline"
+                                    attrs="{'readonly': [('is_editable','=',False)]}" />-->
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="is_editable" invisible="1" />
+                                <field name="requested_by" readonly="1" />
+                                <field name="assigned_to" readonly="1" />
+                            </group>
+
+                            <group>
+                                <field name="description" attrs="{'readonly': [('is_editable','=', False)]}" />
+                                <!-- <field name="releasing_location" attrs= "{'invisible':[('state', 'in', 'draft')]}"
+                                 groups = "stock.group_stock_manager"/>-->
+                            </group>
+
+                            <group>
+                                <field name="date_start" attrs="{'readonly': [('is_editable','=', False)]}" />
+                                <field name="request_location" />
+                                <!-- <field name="picking_type_id"
+                                        attrs="{'readonly': [('is_editable','=', False)]}"/>-->
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Products">
+                                <field name="line_ids">
+                                    <tree decoration-muted="cancelled == True">
+                                        <field name="product_id" />
+                                        <field name="name" />
+                                        <field name="product_qty" />
+                                        <field name="product_uom_id" />
+                                        <field name="analytic_account_id" groups="analytic.group_analytic_accounting" />
+                                        <field name="analytic_tag" groups="analytic.group_analytic_accounting" />
+                                        <field name="releasing_location" groups="stock.group_stock_manager, alm_multi_location.group_waseem_custom_group" />
+                                        <field name="date_required" />
+                                        <field name="cancelled" invisible="1" />
+                                        <field name="is_editable" invisible="1" />
+                                    </tree>
+                                    <form>
+                                        <sheet>
+                                            <group>
+                                                <group>
+                                                    <field name="is_editable" invisible="1" />
+                                                    <field name="product_id" />
+                                                    <field name="name" />
+                                                    <label for="product_qty" attrs="{'readonly': [('is_editable', '=' , False)]}" />
+                                                    <div>
+                                                        <field name="product_qty" class="oe_inline" />
+                                                        <field name="product_uom_id" groups="product.group_uom" class="oe_inline" />
+                                                    </div>
+                                                    <field name="analytic_account_id" groups="analytic.group_analytic_accounting" />
+
+                                                    <field name="analytic_tag" groups="analytic.group_analytic_accounting" />
+
+                                                    <field name="releasing_location" groups="stock.group_stock_manager,  alm_multi_location.group_waseem_custom_group" />
+
+                                                    <field name="date_required" attrs="{'readonly': [('is_editable', '=', 'False')]}" />
+                                                    <field name="cancelled" />
+                                                </group>
+                                            </group>
+                                            <notebook></notebook>
+                                        </sheet>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <!--                    <div class="oe_chatter">-->
+                    <!--                        <field name="message_follower_ids" widget="mail_followers"/>-->
+                    <!--                        <field name="message_ids" widget="mail_thread"/>-->
+                    <!--                    </div>-->
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_internal_request_tree">
+            <field name="name">internal.request.tree</field>
+            <field name="model">internal.transfer.request</field>
+            <field name="arch" type="xml">
+                <tree decoration-bf="message_needaction==True" decoration-info="state in ('draft','to_approve')" decoration-muted="state in ('rejected')" string="Internal Transfer Request">
+                    <field name="message_needaction" invisible="1" />
+                    <field name="name" />
+                    <field name="date_start" />
+                    <field name="requested_by" />
+                    <field name="request_location" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_internal_request_search" model="ir.ui.view">
+            <field name="name">internal.request.list.select</field>
+            <field name="model">internal.transfer.request</field>
+            <field name="arch" type="xml">
+                <search string="Search Internal Transfer Request">
+                    <field name="name" string="Purchase Request" />
+                    <!--                    <separator/>-->
+                    <field name="state" />
+                    <filter name="unassigned" string="Unassigned" domain="[('assigned_to','=', False)]" help="Unassigned Request" />
+                    <filter name="state_draft" string="Draft" domain="[('state','=','draft')]" help="Request is to be approved" />
+                    <filter name="state_to_approve" string="To Approve" domain="[('state','=','to_approve')]" help="Request is to be approved" />
+                    <filter name="state_approved" string="Approved" domain="[('state','=','approved')]" help="Request is approved" />
+                    <filter name="state_approved" string="Approved" domain="[('state','=','approved')]" help="Request is approved" />
+                    <filter name="state_rejected" string="Rejected" domain="[('state','=','rejected')]" help="Request is rejected" />
+                    <filter name="state_done" string="Done" domain="[('state','=','done')]" help="Request is done" />
+                    <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]" />
+                    <!--                    <filter domain="[('assigned_to','=', uid)]"-->
+                    <!--                            help="Assigned to me"/>-->
+                    <!--                    <filter domain="[('requested_by','=', uid)]"-->
+                    <!--                            help="My requests"/>-->
+                    <!--                    <field name="requested_by"/>-->
+                    <!--                    <field name="assigned_to"/>-->
+                    <!--                    <group expand="0" string="Group By...">-->
+                    <!--                        <filter string="Requested by" icon="terp-personal"-->
+                    <!--                                domain="[]"-->
+                    <!--                                context="{'group_by':'requested_by'}"/>-->
+                    <!--                        <filter string="Assigned to" icon="terp-personal"-->
+                    <!--                                domain="[]"-->
+                    <!--                                context="{'group_by':'assigned_to'}"/>-->
+                    <!--                        <filter string="Start Date" icon="terp-go-month" domain="[]"-->
+                    <!--                                context="{'group_by':'date_start'}"/>-->
+                    <!--                        <filter string="Location" icon="terp-personal" domain="[]"-->
+                    <!--                                context="{'group_by':'request_location'}"/>-->
+
+                    <!--                    </group>-->
+                </search>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="transfer_request_form_action">
+            <field name="name">Inventory Requests</field>
+            <!--       <field name="type">ir.actions.act_window</field>-->
+            <field name="res_model">internal.transfer.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--            <field name="search_view_id" ref="view_internal_request_search"/>-->
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to start a new internal transfer request process.
+                </p>
+                <p>
+                    An internal transfer request is an instruction to request for
+                    a certain quantity of materials services from other location stores, so that they are
+                    available at a certain point in time.
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inventory_reques_assigned_to_me_form_action">
+            <field name="name">IR Approved By Me</field>
+            <field name="res_model">internal.transfer.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[( 'assigned_to' , '=' , uid)]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to start a new internal transfer request process.
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_internal_transfer_request" parent="stock.menu_stock_warehouse_mgmt" groups="base.group_user" action="transfer_request_form_action" />
+
+        <!--        <menuitem-->
+        <!--                id="menu_inventory_request_assigned_to_me"-->
+        <!--                parent="stock.menu_stock_warehouse_mgmt"-->
+        <!--                groups="stock.group_stock_manager,alm_multi_location.group_waseem_custom_group"-->
+        <!--                action="inventory_reques_assigned_to_me_form_action"/>-->
+
+
+        <!-- explicit list view definition -->
+        <!--
+        <record model="ir.ui.view" id="alm-multi-location.list">
+          <field name="name">alm-multi-location list</field>
+          <field name="model">alm-multi-location.alm-multi-location</field>
+          <field name="arch" type="xml">
+            <tree>
+              <field name="name"/>
+              <field name="value"/>
+              <field name="value2"/>
+            </tree>
+          </field>
+        </record>
+        -->
+
+        <!-- actions opening views on models -->
+        <!--
+        <record model="ir.actions.act_window" id="alm-multi-location.action_window">
+          <field name="name">alm-multi-location window</field>
+          <field name="res_model">alm-multi-location.alm-multi-location</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+        -->
+
+        <!-- server action to the one above -->
+        <!--
+        <record model="ir.actions.server" id="alm-multi-location.action_server">
+          <field name="name">alm-multi-location server</field>
+          <field name="model_id" ref="model_alm-multi-location_alm-multi-location"/>
+          <field name="code">
+            action = {
+              "type": "ir.actions.act_window",
+              "view_mode": "tree,form",
+              "res_model": self._name,
+            }
+          </field>
+        </record>
+        -->
+
+        <!-- Top menu item -->
+        <!--
+        <menuitem name="alm-multi-location" id="alm-multi-location.menu_root"/>
+        -->
+        <!-- menu categories -->
+        <!--
+        <menuitem name="Menu 1" id="alm-multi-location.menu_1" parent="alm-multi-location.menu_root"/>
+        <menuitem name="Menu 2" id="alm-multi-location.menu_2" parent="alm-multi-location.menu_root"/>
+        -->
+        <!-- actions -->
+        <!--
+        <menuitem name="List" id="alm-multi-location.menu_1_list" parent="alm-multi-location.menu_1"
+                  action="alm-multi-location.action_window"/>
+        <menuitem name="Server to list" id="alm-multi-location" parent="alm-multi-location.menu_2"
+                  action="alm-multi-location.action_server"/>
+        -->
+
+
+    </data>
+</odoo>

@@ -1,0 +1,266 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_ups
+# 
+# Translators:
+# krnkris <krnkris@freemail.hu>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: Martin Trigaux <mat@odoo.com>, 2016\n"
+"Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_delivery_carrier
+msgid "Carrier"
+msgstr "Fuvarozó"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "Centiméter"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "EPL"
+msgstr "EPL"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Inches"
+msgstr "Inches"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Kilograms"
+msgstr "Kilogramm"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_product_packaging
+msgid "Packaging"
+msgstr "Csomagolás"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:207
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Kérem válasszon legalább egy szállítandó tételt."
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Pounds"
+msgstr "Pounds"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "SPL"
+msgstr "SPL"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:175
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "N° %s sz. szállítmányt érvénytelenítettük"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:139
+#, python-format
+msgid "Shipment created into UPS <br/> <b>Tracking Number : </b>%s"
+msgstr "Szállítmány létrehozva az UPS-ben <br/> <b>Követési szám : </b>%s"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:146
+#, python-format
+msgid "Shipping label for packages"
+msgstr "Szállítási etikett a csomaghoz"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:182
+#, python-format
+msgid ""
+"The address of your company is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"A vállalata címe hiányzik vagy rosszul kitöltött.\n"
+"(Hiányzó mező(k) : %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:192
+#, python-format
+msgid ""
+"The address of your warehouse is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"A raktárépületének a címe hiányzik vagy rosszul kitöltött.\n"
+"(Hiányzó mező(k) : %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:212
+#, python-format
+msgid ""
+"The delivery cannot be done because the weight of your product is missing."
+msgstr "A szállítás nem végezhető el, mert hiányzik a termék súlya."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:209
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is"
+" missing."
+msgstr "A körülbelüli ár nem számítható ki, mert hiányzik a termék súlya."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:202
+#, python-format
+msgid ""
+"The recipient address is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"A címzett hiányzik vagy rosszul kitöltött.\n"
+"(Hiányzó mező(k) : %s)"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day"
+msgstr "UPS 2napos"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day AM"
+msgstr "UPS 2-dik nap délelőttre"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 3-day Select"
+msgstr "UPS 3-napos választható"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_access_number
+msgid "UPS AccessLicenseNumber"
+msgstr "UPS HozzáférésiLiszencSzám"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_be
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_be_product_product
+msgid "UPS BE"
+msgstr "UPS BE"
+
+#. module: delivery_ups
+#: model:ir.ui.view,arch_db:delivery_ups.view_delivery_carrier_form_with_provider_ups
+msgid "UPS Configuration"
+msgstr "UPS beállítások"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_packaging_id
+msgid "UPS Default Packaging Type"
+msgstr "UPS alapértelmezett csomag típus"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Ground"
+msgstr "UPS földi"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_label_file_type
+msgid "UPS Label File Type"
+msgstr "UPS  Felirat fájl típus"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day"
+msgstr "UPS következő napos"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day AM"
+msgstr "UPS következő nap délelőtt"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day Air Saver"
+msgstr "UPS következő napi légi szolgálat"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_passwd
+msgid "UPS Password"
+msgstr "UPS jelszó"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Saver"
+msgstr "UPS törékeny"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_service_type
+msgid "UPS Service Type"
+msgstr "UPS Szolgáltatástípus"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_shipper_number
+msgid "UPS Shipper Number"
+msgstr "UPS szállító száma"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Standard"
+msgstr "UPS Általános"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_us
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_us_product_product
+msgid "UPS US"
+msgstr "UPS US"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_username
+msgid "UPS Username"
+msgstr "UPS Felhasználói név"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Expedited"
+msgstr "UPS Egész világra szállító"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express"
+msgstr "UPS Világra kiterjesztett Expressz"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Freight"
+msgstr "UPS Világra kiterjesztett Expressz szállítás"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Plus"
+msgstr "UPS Világra kiterjesztett Expressz Plusz"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_dimension_unit
+msgid "Units for UPS Package Size"
+msgstr "UPS csomag méret mértékegységei"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_weight_unit
+msgid "Ups package weight unit"
+msgstr "Ups csomag súly mértékegység"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_label_file_type:0
+msgid "ZPL"
+msgstr "ZPL"

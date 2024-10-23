@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="group_purchase_level_1" model="res.groups">
+            <field name="name">Purchase Approval Level 1</field>
+            <field name="category_id" ref="fastra_purchase_approval.module_category_purchase_approve_level_management"/>
+        </record>
+
+        <record id="group_purchase_level_2" model="res.groups">
+            <field name="name">Purchase Approval Level 2</field>
+            <field name="category_id" ref="fastra_purchase_approval.module_category_purchase_approve_level_management"/>
+        </record>
+
+        <record id="group_purchase_level_3" model="res.groups">
+            <field name="name">Purchase Approval Level 3</field>
+            <field name="category_id" ref="fastra_purchase_approval.module_category_purchase_approve_level_management"/>
+        </record>
+
+        <record id="group_purchase_level_4" model="res.groups">
+            <field name="name">Purchase Approval Level 4</field>
+            <field name="category_id" ref="fastra_purchase_approval.module_category_purchase_approve_level_management"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,230 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_account
+# 
+# Translators:
+# Batzul B <batzul.active@gmail.com>, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# Uurdmunkh Ulam-Orgikh <uurdmunkh.u@gmail.com>, 2017
+# nasaaskii <nasaaskii@gmail.com>, 2017
+# BATKHUYAG GANBOLD <gbatkhuyag@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: BATKHUYAG GANBOLD <gbatkhuyag@gmail.com>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid ", from"
+msgstr ", -с"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Operations</strong>"
+msgstr "<strong>Үйл Ажиллагааны Нийт Зардал</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Raw Materials</strong>"
+msgstr "<strong>Түүхий Эдийн Нийт Зардал</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Scraps</strong>"
+msgstr "<strong>Хаягдлын Нийт Зардал</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Unit Cost</strong>"
+msgstr "<strong>Нэгжийн Зардал</strong>"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_costs_hour_account_id
+msgid "Analytic Account"
+msgstr "Шинжилгээний Данс"
+
+#. module: mrp_account
+#: model:ir.actions.report.xml,name:mrp_account.action_cost_struct_mrp_production
+#: model:ir.ui.view,arch_db:mrp_account.mrp_production_form_inherit_view6
+#: model:ir.ui.view,arch_db:mrp_account.product_product_inherit_form_view_cost_structure
+msgid "Cost Analysis"
+msgstr "Зардлын Шинжилгээ"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_productivity_cost_already_recorded
+msgid "Cost Recorded"
+msgstr "Бүртгэгдсэн Зардал"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost Structure"
+msgstr "Зардлын Бүтэц"
+
+#. module: mrp_account
+#: model:ir.actions.report.xml,name:mrp_account.action_cost_struct_product_template
+msgid "Cost Structure Analysis"
+msgstr "Зардлын Бүтцийн Шинжилгээ"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost for"
+msgstr "Зардал"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost of Operations"
+msgstr "Үйл Ажиллагааны Зардал"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost of Scraps"
+msgstr "Хаягдлын Зардал"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_costs_hour
+msgid "Cost per hour"
+msgstr "Цагт гарах зардал"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost/hour"
+msgstr "Зардал/Цаг"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_workcenter_view_inherit
+msgid "Costing Information"
+msgstr "Зардлын Мэдээлэл"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_cost_structure_display_name
+#: model:ir.model.fields,field_description:mrp_account.field_report_product_template_cost_structure_display_name
+msgid "Display Name"
+msgstr "Дэлгэцийн Нэр"
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_costs_hour_account_id
+msgid ""
+"Fill this only if you want automatic analytic accounting entries on "
+"production orders."
+msgstr ""
+"Бүтээгдэхүүний нэгж захиалгын санхүүгийн автомат дүн шинжилгээ хийхийг "
+"хүссэн тохиолдолд үүнийг бөглөнө үү."
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_cost_structure_id
+#: model:ir.model.fields,field_description:mrp_account.field_report_product_template_cost_structure_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_cost_structure___last_update
+#: model:ir.model.fields,field_description:mrp_account.field_report_product_template_cost_structure___last_update
+msgid "Last Modified on"
+msgstr "Сүүлд Өөрчлөгдсөн"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Үйлдвэрлэлийн Захиалга"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Operation"
+msgstr "Ажиллагаа"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Operator"
+msgstr "Оператор"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Quantity"
+msgstr "Тоо хэмжээ"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Raw Materials"
+msgstr "Түүхий эд материал"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Scraps"
+msgstr "Гологдолууд"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Some of the Manufacturing Order(s) selected are not done yet"
+msgstr "Сонгогдсон Захиалга(ууд)-с зарим нь үйлдвэрлэгдээгүй байна"
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_costs_hour
+msgid "Specify cost of work center per hour."
+msgstr "Ажлын Төвийн цагийн зардлыг тодорхой заана уу."
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_productivity_cost_already_recorded
+msgid ""
+"Technical field automatically checked when a ongoing production posts "
+"journal entries for its costs. This way, we can record one production's cost"
+" multiple times and only consider new entries in the work centers time "
+"lines."
+msgstr ""
+"Үйлдвэрлэлийн явцад журналаас зардал нь орсон тохиолдолд Техникийн талбар нь"
+" автоматаар чагтлагдана. Ингэснээр үйлдэрлэлийн зарлдыг олон удаа "
+"оруулахгүйгээр, зөвхөн Ажлын Төвийн цагийн дэвтэрт шинэ өгөдлийг оруулах "
+"үйлдэл шаардана."
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Total Cost"
+msgstr "Нийт Өртөг"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Unit Cost"
+msgstr "Нэгж өртөг"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_workcenter
+msgid "Work Center"
+msgstr "Дамжлага"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_workcenter_productivity
+msgid "Workcenter Productivity Log"
+msgstr "Дамжлагын Бүтээмж Хөтөлгөө"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Working Time"
+msgstr "Ажлын Цаг"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "hours"
+msgstr "цаг"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "manufacturing order(s)."
+msgstr "үйлдвэрлэлийн захиалга(ууд)"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_report_mrp_cost_structure
+msgid "report.mrp_cost_structure"
+msgstr "тайлан.mrp_зардал_бүтэц"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_report_product_template_cost_structure
+msgid "report.product_template_cost_structure"
+msgstr "тайлан.бүтээгдэхүүн_загварчлал_зардал_бүтэц"

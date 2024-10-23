@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report
+                id="report_account_voucher_receipt"
+                model="account.voucher"
+                string="Print Receipt"
+                menu="False"
+                name="posh_multilocation.report_account_voucher_receipt_template"
+                file="posh_multilocation.report_account_voucher_receipt_template"
+                print_report_name="'Receipt - %s' % object.number"
+                report_type="qweb-pdf"/>
+
+        <template id="report_account_voucher_receipt_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div>
+                                <span><b>Purchase Receipt:</b></span><br/>
+                                <h2><t t-esc="doc.number"/></h2>
+                            </div>
+                            <div class="row" style="width:100%">
+                                <div class="col-6">
+                                    <span><b>Vendor:</b></span>
+                                    <p t-if="doc.partner_id"><t t-esc="doc.partner_id.name"/></p>
+
+                                    <span><b>Payment:</b></span>
+                                    <p t-field="doc.pay_now"/>
+
+                                    <span><b>Payment Method:</b></span>
+                                    <p t-if="doc.payment_journal_id"><t t-esc="doc.payment_journal_id.name"/></p>
+
+                                    <span><b>Bill Reference:</b></span>
+                                    <p t-if="doc.reference"><t t-esc="doc.reference"/></p>
+                                </div>
+                                <div class="col-6" style="width:50%">
+                                    <span><b>Journal:</b></span>
+                                    <p t-if="doc.journal_id"><t t-esc="doc.journal_id.name"/></p>
+
+                                    <span><b>Bill Date:</b></span>
+                                    <p t-field="doc.date" t-options='{"widget": "date","format": "dd-MM-yyyy"}'/>
+
+                                    <span><b>Payment Memo:</b></span>
+                                    <p><t t-esc="doc.name"/></p>
+
+                                    <span><b>Beneficiary Account Number:</b></span>
+                                    <p t-if="doc.beneficiary_account_id"><t t-esc="doc.beneficiary_account_id.acc_number"/></p>
+
+                                    <span><b>Bank Name:</b></span>
+                                    <p t-if="doc.bank_id"><t t-esc="doc.bank_id.name"/></p>
+                                </div>
+                            </div>
+                            <table class="table table-sm o_main_table" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">Product</th>
+                                        <th class="text-left">Description</th>
+                                        <th class="text-left">Account</th>
+                                        <th class="text-left">Project</th>
+                                        <th class="text-left">Quantity</th>
+                                        <th class="text-left">Unit Price</th>
+                                        <th class="text-left">Tax</th>
+                                        <th class="text-left">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="sale_tbody">
+                                    <t t-foreach="doc.line_ids" t-as="line">
+                                        <tr>
+                                            <td><span t-field="line.product_id.name"/></td>
+                                            <td><span t-field="line.name"/></td>
+                                            <td><span t-field="line.account_id.name"/></td>
+                                            <td><span t-field="line.account_analytic_id.name"/></td>
+                                            <td><span t-field="line.quantity"/></td>
+                                            <td><span t-field="line.price_unit"/></td>
+                                            <td>
+                                                <span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_ids))"/>
+                                            </td>
+                                            <td><span t-field="line.price_subtotal"/></td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+                            <div class="clearfix">
+                                <div id="total" class="row" name="total">
+                                    <div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
+                                        <table class="table table-sm">
+                                            <tr class="border-black o_total">
+                                                <td>
+                                                    <strong>Tax Amount</strong>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="doc.tax_amount"/>
+                                                </td>
+                                            </tr>
+                                            <tr class="border-black o_total">
+                                                <td>
+                                                    <strong>Total</strong>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span t-field="doc.amount"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
